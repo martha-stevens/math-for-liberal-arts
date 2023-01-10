@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="example example-like"><div class="para">To see why not over-rounding is so important, suppose you were investing $1000 at 5% interest compounded monthly for 30 years.</div>
+<div class="displaymath process-math">
+\begin{align*}
+P_0 \amp = 5000\\
+r \amp = 0.05\\
+k \amp = 12\\
+N \amp = 30
+\end{align*}
+</div>
+<div class="para">Here is the effect of rounding this to different values:</div> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.1.17<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">r/k rounded to:</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Gives <span class="process-math">\(P_{30}\)</span> to be:</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Error</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.004</td>
+<td class="c m b0 r0 l0 t0 lines">$4208.59</td>
+<td class="c m b0 r0 l0 t0 lines">$259.15</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.0042</td>
+<td class="c m b0 r0 l0 t0 lines">$4521.45</td>
+<td class="c m b0 r0 l0 t0 lines">$53.71</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.00417</td>
+<td class="c m b0 r0 l0 t0 lines">$4473.09</td>
+<td class="c m b0 r0 l0 t0 lines">$5.35</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.004167</td>
+<td class="c m b0 r0 l0 t0 lines">$4468.28</td>
+<td class="c m b0 r0 l0 t0 lines">$0.54</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.0041667</td>
+<td class="c m b0 r0 l0 t0 lines">$4467.80</td>
+<td class="c m b0 r0 l0 t0 lines">$0.06</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">no rounding</td>
+<td class="c m b0 r0 l0 t0 lines">$4467.74</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure> <div class="para">If you’re working in a bank, of course you wouldn’t round at all.  For our purposes, the answer we got by rounding to 0.00417, three significant digits, is close enough - $5 off of $4500 isn’t too bad.  Certainly keeping that fourth decimal place wouldn’t have hurt.</div></article></body>
+</html>

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Chapter Test</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math for Liberal Arts">
+<meta property="book:author" content="RRCC Math Department">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-book.html"><span class="title">Math for Liberal Arts</span></a></h1>
+<p class="byline">RRCC Math Department</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="exercises-finance.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="Finance.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="Stats.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="attribution.html" class="internal"><span class="title">Attributions</span></a></div></li>
+<li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ProbSolve.html" class="internal"><span class="codenumber">1</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-problemsolve-percent.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Percents</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-proportion.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Proportions and Rates</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-geometry.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometry</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-estimate.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Problem Solving and Estimating</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-1.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-setbasics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Basics</span></a></div></li>
+<li><div class="toc-item"><a href="section-setoperations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Set Operations</span></a></div></li>
+<li><div class="toc-item"><a href="section-setsvenndiagrams.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Venn Diagrams</span></a></div></li>
+<li><div class="toc-item"><a href="section-setssurveyproblems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Survey Problems</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="sets-ch-test.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Logic</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-logic-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Logic</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-1" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Boolean Logic</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-2" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-3" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-4" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Statements in Symbolic Form.</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-truthtables.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Truth Tables</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-5" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables: Conjuction (and), Disjunction (or), Negation (not)</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-6" class="internal"><span class="codenumber">3.2.2</span> <span class="title">De Morgan's Laws</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-conditional.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-7" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Truth Tables: Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-8" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Alternate Forms of Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-9" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Biconditional Statements</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-arguments.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Arguments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-10" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Argument Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-11" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Evaluating Dedutive Arguments with Truth Tables</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-12" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Forms of Arguments</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-13" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Logical Fallacies in Common Language</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-logic.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="logic-ch-test.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Growth.html" class="internal"><span class="codenumber">4</span> <span class="title">Algebraic Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Linear Growth</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-algebra-variation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Modeling Using Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-14" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Solving Direct Variation Problems</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-15" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Solving Inverse Variation Prolblems</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-growth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="algebra-ch-test.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Finance.html" class="internal"><span class="codenumber">5</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-finance-interest.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-16" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-17" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Compound Interest</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-finance-annuities.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Annuities</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-payout.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Payout Annuities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-finance-loans.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Loans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-18" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Loans</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-19" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Amortization Schedules</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-20" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-21" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Which Equation to Use?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-finance.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="finance-ch-test.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Stats.html" class="internal"><span class="codenumber">6</span> <span class="title">Statistics</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-stats-samples.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Populations, Samples and Data Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-samplingmethods.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Sampling Methods and Sampling Bias</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-experiments.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-10.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="stats-ch-test.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Data.html" class="internal"><span class="codenumber">7</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-data-graphs.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Presenting Data Graphically</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-mean.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Measures of Central Tendency</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-spread.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-data.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-data.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Counting.html" class="internal"><span class="codenumber">8</span> <span class="title">Counting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-counting-basic.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Basic Counting</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-permutation.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Permutations</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-combinations.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-counting.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-counting.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Probability.html" class="internal"><span class="codenumber">9</span> <span class="title">Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-basics.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Basics</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-prob-events.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Working with Events</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-22" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Complementary Events</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-23" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Probability of two independent events</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-prob-conditional.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Conditional Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-24" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Conditional Probability</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-25" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Bayes Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-prob-counting.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Probability using Permutations and Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-ev.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Expected Value</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-prob.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="prob-ch-test.html" class="internal"><span class="codenumber">9.7</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Normal.html" class="internal"><span class="codenumber">10</span> <span class="title">Normal Distributions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-normal-understanding.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Understanding Normal Distributions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-26" class="internal"><span class="codenumber">10.1.1</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-27" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-normal-empirical.html" class="internal"><span class="codenumber">10.2</span> <span class="title">The Empirical Rule</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-zscores.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-normal.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="normal-ch-test.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Voting.html" class="internal"><span class="codenumber">11</span> <span class="title">Voting Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-preference.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Preference Schedules</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-plurality.html" class="internal"><span class="codenumber">11.2</span> <span class="title">The Plurality Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-28" class="internal"><span class="codenumber">11.2.1</span> <span class="title">Plurality</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-29" class="internal"><span class="codenumber">11.2.2</span> <span class="title">What's Wrong with Plurality?</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-30" class="internal"><span class="codenumber">11.2.3</span> <span class="title">Insincere Voting</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-irv.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Instant Runoff Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-31" class="internal"><span class="codenumber">11.3.1</span> <span class="title">Instant Runoff Voting (IRV)</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-32" class="internal"><span class="codenumber">11.3.2</span> <span class="title">What's Wrong with IRV?</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-borda.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Borda Count</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-33" class="internal"><span class="codenumber">11.4.1</span> <span class="title">Borda Count</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-34" class="internal"><span class="codenumber">11.4.2</span> <span class="title">What's Wrong with Borda Count</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-copeland.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Copeland's Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-35" class="internal"><span class="codenumber">11.5.1</span> <span class="title">Copeland's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-36" class="internal"><span class="codenumber">11.5.2</span> <span class="title">What's Wrong with Copeland's Method?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-voting-arrow.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Where's the Fair Method?</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-approval.html" class="internal"><span class="codenumber">11.7</span> <span class="title">Approval Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-37" class="internal"><span class="codenumber">11.7.1</span> <span class="title">Approval Voting</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-38" class="internal"><span class="codenumber">11.7.2</span> <span class="title">What's Wrong wtih Approval Voting?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-voting.html" class="internal"><span class="codenumber">11.8</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-voting.html" class="internal"><span class="codenumber">11.9</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Apportion.html" class="internal"><span class="codenumber">12</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-apportion-hamilton.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Hamilton's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-jefferson.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Jefferson's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-webster.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Webster's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-hunthill.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-apportion.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-apportion.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="finance-ch-test"><h2 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">5.6</span> <span class="title">Chapter Test</span>
+</h2>
+<article class="exercise exercise-like" id="exercise-321"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1368">
+<div class="para">$1000 is placed in an account for 5 years that pays 9% interest.</div>
+<ol class="lower-alpha">
+<li id="li-635"><div class="para" id="p-derived-li-635">Calculate the simple interest earned.</div></li>
+<li id="li-636"><div class="para" id="p-derived-li-636">Calculate the interested earned if it compounded daily.</div></li>
+</ol>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-180" id="answer-180"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-180"><div class="answer solution-like"><div class="para logical" id="p-1369"><ol class="lower-alpha">
+<li id="li-637"><div class="para" id="p-derived-li-637">$450</div></li>
+<li id="li-638"><div class="para" id="p-derived-li-638">$568.23</div></li>
+</ol></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like"><div class="para logical" id="p-1370"><ol class="lower-alpha">
+<li id="li-639"><div class="para" id="p-derived-li-639">Using the simple interest formula, <span class="process-math">\(I = P_0rt\text{,}\)</span> we can compute the interest with <span class="process-math">\(P_0 = 1000\text{,}\)</span> <span class="process-math">\(r = 0.09\text{,}\)</span> and <span class="process-math">\(t = 5\text{.}\)</span><div class="displaymath process-math">
+\begin{equation*}
+I = 1000(0.09)(5) = 450
+\end{equation*}
+</div>
+</div></li>
+<li id="li-640"><div class="para" id="p-derived-li-640">Using the compound interest formula, <span class="process-math">\(P_n = P_0 \left( 1 + \frac{r}{k} \right)^{Nk}\text{,}\)</span> we can compute the future value of the account with <span class="process-math">\(P_0 = 1000\text{,}\)</span> <span class="process-math">\(r = 0.09\text{,}\)</span> <span class="process-math">\(k = 365\)</span>and <span class="process-math">\(N = 5\text{.}\)</span><div class="displaymath process-math">
+\begin{equation*}
+P_n = 1000\left(1 + \frac{0.09}{365}\right)^{5 \cdot 365} = 1568.23
+\end{equation*}
+</div>To find the interest subtract the initial investment from the future value:<div class="displaymath process-math">
+\begin{equation*}
+I = 1568.23 - 1000 = 568.23
+\end{equation*}
+</div>
+</div></li>
+</ol></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-322"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para" id="p-1371">Judy has placed money in an account that pays 10% interest compounded monthly. After 3 years, she has $1617.82 in the account. How much money to she put in the account?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-181" id="answer-181"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-181"><div class="answer solution-like"><div class="para" id="p-1372">$1200</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like"><div class="para logical" id="p-1373">
+<div class="para">Use the compound interest formula, <span class="process-math">\(P_n = P_0\left(1 + \frac{r}{k}\right)^{Nk}\text{,}\)</span> to solve for <span class="process-math">\(P_0\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1617.82 = P_0 \left(1 + \frac{0.10}{12}\right)^{3 \cdot 12}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1617.82 = P_0 \left(1.348181842\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_0 = \frac{1617.82}{1.348181842}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_0 = 1200
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-323"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="para" id="p-1374">You are paying off your large-screen TV that cost $3,000 with 24 monthly payments of $162.50. What is the annual simple interest rate that you are being charged?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-182" id="answer-182"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-182"><div class="answer solution-like"><div class="para" id="p-1375">15%</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-94" id="solution-94"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-94"><div class="solution solution-like">
+<div class="para" id="p-1376">We will need to use the simple interest formula, <span class="process-math">\(I = P_0rt\text{,}\)</span> to solve for r. But first compute the amount of interest you are paying.</div> <div class="para" id="p-1377">24 payments of $162.50 is: <span class="process-math">\(25 \cdot 162.50 = 3900\)</span>
+</div> <div class="para" id="p-1378">You borrowed $3,000 so you paid $900 in interest over 2 years (24 months).</div>
+<div class="displaymath process-math">
+\begin{equation*}
+900 = 3000(r)(2)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+900 = 6000r
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r = 900 \div 6000 = 0.15
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r = 15\%
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-324"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1379">
+<div class="para">Kate has started a college fund for her daughter by putting money into an annuity that pays 6% interest.</div>
+<ol class="lower-alpha">
+<li id="li-641"><div class="para" id="p-derived-li-641">If she puts in $50 each month, how much money will she have in 18 years?</div></li>
+<li id="li-642"><div class="para" id="p-derived-li-642">If she wants to have $50,000 after 18 years of making monthly payments, what must her monthly payment be?</div></li>
+</ol>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-183" id="answer-183"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-183"><div class="answer solution-like"><div class="para logical" id="p-1380"><ol class="lower-alpha">
+<li id="li-643"><div class="para" id="p-derived-li-643">$19,367.66</div></li>
+<li id="li-644"><div class="para" id="p-derived-li-644">$129.08</div></li>
+</ol></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-95" id="solution-95"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-95"><div class="solution solution-like"><div class="para logical" id="p-1381">
+<div class="para">In both parts, we will be using the annuity formula, <span class="process-math">\(P_n = \frac{d\left(\left(1 + 
+\frac{r}{k}\right)^{Nk}-1\right)}{\left(\frac{r}{k}\right)}\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="li-645"><div class="para" id="p-derived-li-645">To find the future value in 18 years:<div class="displaymath process-math">
+\begin{equation*}
+P_n = \frac{50\left(\left(1 + 
+\frac{0.06}{12}\right)^{18\cdot 12}-1\right)}{\left(\frac{0.06}{12}\right)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_n = 19367.66
+\end{equation*}
+</div>
+</div></li>
+<li id="li-646"><div class="para" id="p-derived-li-646">To solve for d:<div class="displaymath process-math">
+\begin{equation*}
+50000 = \frac{d\left(\left(1 + 
+\frac{0.06}{12}\right)^{18 \cdot 12}-1\right)}{\left(\frac{0.06}{12}\right)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+50000 = d\left(387.3531944\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d = \frac{50000}{387.3531944}=129.08
+\end{equation*}
+</div>
+</div></li>
+</ol>
+</div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-325"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para" id="p-1382">You want to be able to withdraw $40,000 each year for 20 years from your retirement account.  If your account earns 7% interest, how much do you need to save for your retirement?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-184" id="answer-184"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-184"><div class="answer solution-like">$423,760.57</div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-96" id="solution-96"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-96"><div class="solution solution-like">
+<div class="para" id="p-1383">We will use the payout annuity formula, <span class="process-math">\(P_0 = \frac{d\left(1 - \left(1 + 
+\frac{r}{k}\right)^{-Nk}\right)}{\left(\frac{r}{k}\right)}\text{,}\)</span> since we are taking money out of an account.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_0 = \frac{40000\left(1 - \left(1 + 
+\frac{0.07}{1}\right)^{-20 \cdot 1}\right)}{\left(\frac{0.07}{1}\right)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_0 = \frac{40000\left(1 - \left(1.07\right)^{-20}\right)}{0.07}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_0 = 423,760.57
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-326"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1384">
+<div class="para">Ben purchases a car for $18,395.</div>
+<ol class="lower-alpha">
+<li id="li-647"><div class="para" id="p-derived-li-647">If sales tax is 6.5% of the purchase price, find the amount of the sales tax.</div></li>
+<li id="li-648"><div class="para" id="p-derived-li-648">If the car license fee is 1.2% of the purchase price, find the amount of the license fee.</div></li>
+<li id="li-649"><div class="para" id="p-derived-li-649">If Ben makes a $2500 down payment, find the amount of the loan that he will need.</div></li>
+<li id="li-650"><div class="para" id="p-derived-li-650">Ben gets an amortized loan at 7.5% interest for 4 years.  What will his monthly payments be?</div></li>
+</ol>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-185" id="answer-185"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-185"><div class="answer solution-like"><div class="para logical" id="p-1385"><ol class="lower-alpha">
+<li id="li-651"><div class="para" id="p-derived-li-651">$1,195.68</div></li>
+<li id="li-652"><div class="para" id="p-derived-li-652">$220.74</div></li>
+<li id="li-653"><div class="para" id="p-derived-li-653">$17,311.42</div></li>
+<li id="li-654"><div class="para" id="p-derived-li-654">$418.57</div></li>
+</ol></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-97" id="solution-97"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-97"><div class="solution solution-like"><div class="para logical" id="p-1386"><ol class="lower-alpha">
+<li id="li-655"><div class="para" id="p-derived-li-655"><span class="process-math">\(\displaystyle 0.065 \cdot 18395 = 1195.68\)</span></div></li>
+<li id="li-656"><div class="para" id="p-derived-li-656"><span class="process-math">\(\displaystyle 0.012 \cdot 18395 = 220.74\)</span></div></li>
+<li id="li-657"><div class="para" id="p-derived-li-657"><span class="process-math">\(\displaystyle 18395 + 1195.68 + 220.74 - 2500 = 17311.42\)</span></div></li>
+<li id="li-658"><div class="para" id="p-derived-li-658">Use the loans formula, <span class="process-math">\(P_0 = \frac{d\left(1 - \left(1 + 
+\frac{r}{k}\right)^{-Nk}\right)}{\left(\frac{r}{k}\right)}\text{,}\)</span> to solve for the amount the payment (d).<div class="displaymath process-math">
+\begin{equation*}
+17311.42 = \frac{d\left(1 - \left(1 + 
+\frac{0.075}{12}\right)^{-4\cdot 12}\right)}{\left(\frac{0.075}{12}\right)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+17311.42 = d \left(41.35837114\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d = 17311.42 \div 41.35837114 = 418.57
+\end{equation*}
+</div>
+</div></li>
+</ol></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-327"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para" id="p-1387">Complete the first two lines of the amortization table for a $250,000 mortgage at 4.5% interest. Assume it is a 30 year mortgage. <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Payment Number</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Monthly Payment</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Interest</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Paid on Principal</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Loan Balance</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original has-tabular" data-refid="hk-answer-186" id="answer-186"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-186"><div class="answer solution-like"><div class="para" id="p-1388"><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Payment Number</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Monthly Payment</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Interest</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Paid on Principal</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Loan Balance</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">$1,266.71</td>
+<td class="c m b0 r0 l0 t0 lines">$937.50</td>
+<td class="c m b0 r0 l0 t0 lines">$329.21</td>
+<td class="c m b0 r0 l0 t0 lines">$249,670.79</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">$1,266.71</td>
+<td class="c m b0 r0 l0 t0 lines">$936.27</td>
+<td class="c m b0 r0 l0 t0 lines">$330.44</td>
+<td class="c m b0 r0 l0 t0 lines">$249,340.35</td>
+</tr>
+</table></div></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-98" id="solution-98"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-98"><div class="solution solution-like">
+<div class="para logical" id="p-1389">
+<div class="para">Use the loans formula, <span class="process-math">\(P_0 = \frac{d\left(1 - \left(1+\frac{r}{k}\right)^{-Nk}\right)}
+{\left(\frac{r}{k}\right)}\)</span> to solve for the monthly payment, d.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+250000 = \frac{d\left(1 - \left(1+\frac{0.045}{12}\right)^{-360}\right)}
+{\left(\frac{0.045}{12}\right)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+250000 = d(197.361159)
+\end{equation*}
+</div>
+<div class="para">\</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d = 250000 \div 197.361159 = 1266.71
+\end{equation*}
+</div>
+</div> <div class="para logical" id="p-1390">
+<div class="para">To find the interest owed during the first month, compute <span class="process-math">\(I = P_0 rt\)</span> for one month (or <span class="process-math">\(\frac{1}{12}\)</span> year).</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = 250000 \left(0.045\right)\left(\frac{1}{12}\right) = 937.50
+\end{equation*}
+</div>
+</div> <div class="para" id="p-1391">If $937.50 of the first payment is interest, then <span class="process-math">\(1266.71 - 937.50 = 329.21\)</span> will go toward the balance of the loan.</div> <div class="para" id="p-1392">After the first payment, the balance will be reduced by $329.21. The new balance is <span class="process-math">\(250,000 - 329.21 = 249,670.79.\)</span>
+</div> <div class="para logical" id="p-1393">
+<div class="para">The interest owed during the second month is computed using that new balance of the loan:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = 249670.79 \left(0.045\right)\left(\frac{1}{12}\right) = 936.27
+\end{equation*}
+</div>
+</div> <div class="para" id="p-1394">Then the amount that will go toward the balance of the loan is <span class="process-math">\(1266.71 - 936.27 = 330.44\text{.}\)</span> The balance of the loan is now <span class="process-math">\(249,670.79 - 330.44 = 249,340.35\text{.}\)</span>
+</div>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-328"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1395">
+<div class="para">Julia puts $100 in an account that pays 4% interest (compounded yearly) every year for 10 years. Then she lets her money sit in the account, without making payments, for another 15 years.</div>
+<ol class="lower-alpha">
+<li id="li-659"><div class="para" id="p-derived-li-659">How much money will she have in the account?</div></li>
+<li id="li-660"><div class="para" id="p-derived-li-660">How much interest did she earn?</div></li>
+</ol>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-187" id="answer-187"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-187"><div class="answer solution-like"><div class="para logical" id="p-1396"><ol class="lower-alpha">
+<li id="li-661"><div class="para" id="p-derived-li-661">$2,162.23</div></li>
+<li id="li-662"><div class="para" id="p-derived-li-662">$1,162.23</div></li>
+</ol></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-99" id="solution-99"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-99"><div class="solution solution-like">
+<div class="para" id="p-1397">First, use the annuity formula to compute the amount of money she will have after 10 years of making deposits.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_n = \frac{100\left(\left(1+\frac{0.04}{1}\right)^{10 \cdot 1}-1\right)}{\left(\frac{0.04}{1}\right)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_n = \frac{100\left(\left(1.04\right)^{10}-1\right)}{0.04}=1200.61
+\end{equation*}
+</div>
+<div class="para" id="p-1398">Then use the compound interest formula to find the future value of $1200.61 is after sitting in the account for 15 years.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_n = 1200.61\left(1+\frac{0.04}{1}\right)^{15 \cdot 1}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_n = 1200.61\left(1.04\right)^{15}=2162.23
+\end{equation*}
+</div>
+<div class="para logical" id="p-1399">
+<div class="para">The total amount in the account will be $2,162.23.  Julia made a total of 10 payments of $100 into the account.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+10 \cdot 100 = 1000
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = 2162.23 - 1000 = 1162.23
+\end{equation*}
+</div>
+<div class="para">She earned $1,162.23 in interest.</div>
+</div>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-329"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para logical" id="p-1400">
+<div class="para">Geoff borrow $2,000 at 8% simple interest.</div>
+<ol class="lower-alpha">
+<li id="li-663"><div class="para" id="p-derived-li-663">If he takes out a 4-year loan, what will his monthly payments be?</div></li>
+<li id="li-664"><div class="para" id="p-derived-li-664">If he takes a 3-year loan, what will his monthly payments be?</div></li>
+<li id="li-665"><div class="para" id="p-derived-li-665">How much money will he save (over the life of the loan) if he takes the 3-year loan instead of the 4-year loan?</div></li>
+</ol>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-188" id="answer-188"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-188"><div class="answer solution-like"><div class="para logical" id="p-1401"><ol class="lower-alpha">
+<li id="li-666"><div class="para" id="p-derived-li-666">$55</div></li>
+<li id="li-667"><div class="para" id="p-derived-li-667">$68.89</div></li>
+<li id="li-668"><div class="para" id="p-derived-li-668">$160</div></li>
+</ol></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-100" id="solution-100"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-100"><div class="solution solution-like"><div class="para logical" id="p-1402"><ol class="lower-alpha">
+<li id="li-669">
+<div class="para" id="p-1403">First compute the interest charged:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = P_0rt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = 2000 \left(0.08\right) \left(4\right) = 640
+\end{equation*}
+</div>
+<div class="para" id="p-1404">Geoff will have to pay back 2000 + 640 = $2,640 in 48 monthly payments.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2640 \div 48 = 55
+\end{equation*}
+</div>
+<div class="para" id="p-1405">His monthly payments will be $55.</div>
+</li>
+<li id="li-670">
+<div class="para" id="p-1406">If it is a 3-year loan, the interest charged will be:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = 2000 \left(0.08\right)\left(3\right)=480
+\end{equation*}
+</div>
+<div class="para" id="p-1407">He will have to pay back 2000 + 480 = 2480 in 36 monthly payments.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2480 \div 36 = 68.89
+\end{equation*}
+</div>
+<div class="para" id="p-1408">His monthly payments will be $68.89</div>
+</li>
+<li id="li-671"><div class="para" id="p-derived-li-671">He is paying a total of $2,480 with the 3-year loan and $2,640 with the 4-year loan. If he takes the 3-year loan, he will save <span class="process-math">\(2640-2480 = \$160\text{.}\)</span>
+</div></li>
+</ol></div></div></div>
+</div></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="exercises-finance.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="Stats.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

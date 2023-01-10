@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Probability using Permutations and Combinations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math for Liberal Arts">
+<meta property="book:author" content="RRCC Math Department">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-book.html"><span class="title">Math for Liberal Arts</span></a></h1>
+<p class="byline">RRCC Math Department</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-prob-conditional.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="Probability.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="section-prob-ev.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="attribution.html" class="internal"><span class="title">Attributions</span></a></div></li>
+<li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ProbSolve.html" class="internal"><span class="codenumber">1</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-problemsolve-percent.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Percents</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-proportion.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Proportions and Rates</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-geometry.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometry</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-estimate.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Problem Solving and Estimating</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-1.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-setbasics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Basics</span></a></div></li>
+<li><div class="toc-item"><a href="section-setoperations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Set Operations</span></a></div></li>
+<li><div class="toc-item"><a href="section-setsvenndiagrams.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Venn Diagrams</span></a></div></li>
+<li><div class="toc-item"><a href="section-setssurveyproblems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Survey Problems</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="sets-ch-test.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Logic</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-logic-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Logic</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-1" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Boolean Logic</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-2" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-3" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-4" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Statements in Symbolic Form.</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-truthtables.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Truth Tables</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-5" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables: Conjuction (and), Disjunction (or), Negation (not)</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-6" class="internal"><span class="codenumber">3.2.2</span> <span class="title">De Morgan's Laws</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-conditional.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-7" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Truth Tables: Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-8" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Alternate Forms of Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-9" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Biconditional Statements</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-arguments.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Arguments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-10" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Argument Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-11" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Evaluating Dedutive Arguments with Truth Tables</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-12" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Forms of Arguments</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-13" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Logical Fallacies in Common Language</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-logic.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="logic-ch-test.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Growth.html" class="internal"><span class="codenumber">4</span> <span class="title">Algebraic Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Linear Growth</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-algebra-variation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Modeling Using Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-14" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Solving Direct Variation Problems</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-15" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Solving Inverse Variation Prolblems</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-growth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="algebra-ch-test.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Finance.html" class="internal"><span class="codenumber">5</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-finance-interest.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-16" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-17" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Compound Interest</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-finance-annuities.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Annuities</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-payout.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Payout Annuities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-finance-loans.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Loans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-18" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Loans</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-19" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Amortization Schedules</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-20" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-21" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Which Equation to Use?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-finance.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="finance-ch-test.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Stats.html" class="internal"><span class="codenumber">6</span> <span class="title">Statistics</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-stats-samples.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Populations, Samples and Data Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-samplingmethods.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Sampling Methods and Sampling Bias</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-experiments.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-10.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="stats-ch-test.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Data.html" class="internal"><span class="codenumber">7</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-data-graphs.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Presenting Data Graphically</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-mean.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Measures of Central Tendency</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-spread.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-data.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-data.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Counting.html" class="internal"><span class="codenumber">8</span> <span class="title">Counting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-counting-basic.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Basic Counting</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-permutation.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Permutations</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-combinations.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-counting.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-counting.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Probability.html" class="internal"><span class="codenumber">9</span> <span class="title">Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-basics.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Basics</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-prob-events.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Working with Events</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-22" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Complementary Events</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-23" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Probability of two independent events</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-prob-conditional.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Conditional Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-24" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Conditional Probability</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-25" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Bayes Theorem</span></a></div></li>
+</ul>
+</li>
+<li class="active"><div class="toc-item"><a href="section-prob-counting.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Probability using Permutations and Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-ev.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Expected Value</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-prob.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="prob-ch-test.html" class="internal"><span class="codenumber">9.7</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Normal.html" class="internal"><span class="codenumber">10</span> <span class="title">Normal Distributions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-normal-understanding.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Understanding Normal Distributions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-26" class="internal"><span class="codenumber">10.1.1</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-27" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-normal-empirical.html" class="internal"><span class="codenumber">10.2</span> <span class="title">The Empirical Rule</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-zscores.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-normal.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="normal-ch-test.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Voting.html" class="internal"><span class="codenumber">11</span> <span class="title">Voting Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-preference.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Preference Schedules</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-plurality.html" class="internal"><span class="codenumber">11.2</span> <span class="title">The Plurality Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-28" class="internal"><span class="codenumber">11.2.1</span> <span class="title">Plurality</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-29" class="internal"><span class="codenumber">11.2.2</span> <span class="title">What's Wrong with Plurality?</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-30" class="internal"><span class="codenumber">11.2.3</span> <span class="title">Insincere Voting</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-irv.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Instant Runoff Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-31" class="internal"><span class="codenumber">11.3.1</span> <span class="title">Instant Runoff Voting (IRV)</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-32" class="internal"><span class="codenumber">11.3.2</span> <span class="title">What's Wrong with IRV?</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-borda.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Borda Count</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-33" class="internal"><span class="codenumber">11.4.1</span> <span class="title">Borda Count</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-34" class="internal"><span class="codenumber">11.4.2</span> <span class="title">What's Wrong with Borda Count</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-copeland.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Copeland's Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-35" class="internal"><span class="codenumber">11.5.1</span> <span class="title">Copeland's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-36" class="internal"><span class="codenumber">11.5.2</span> <span class="title">What's Wrong with Copeland's Method?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-voting-arrow.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Where's the Fair Method?</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-approval.html" class="internal"><span class="codenumber">11.7</span> <span class="title">Approval Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-37" class="internal"><span class="codenumber">11.7.1</span> <span class="title">Approval Voting</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-38" class="internal"><span class="codenumber">11.7.2</span> <span class="title">What's Wrong wtih Approval Voting?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-voting.html" class="internal"><span class="codenumber">11.8</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-voting.html" class="internal"><span class="codenumber">11.9</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Apportion.html" class="internal"><span class="codenumber">12</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-apportion-hamilton.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Hamilton's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-jefferson.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Jefferson's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-webster.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Webster's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-hunthill.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-apportion.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-apportion.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-prob-counting"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">9.4</span> <span class="title">Probability using Permutations and Combinations</span>
+</h2>
+<article class="objectives goal-like" id="objectives-32"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc"><li id="li-1047"><div class="para" id="p-derived-li-1047">Use permutations and combinations to calculate probabilities</div></li></ul></article><div class="para" id="p-2178">We can use permutations and combinations to help us answer more complex probability questions.</div>
+<article class="example example-like" id="example-212"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2179">A 4 digit PIN number is selected. What is the probability that there are no repeated digits?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-157" id="solution-157"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-157"><div class="solution solution-like">
+<div class="para" id="p-2180">There are 10 possible values for each digit of the PIN (namely: 0,1,2,3,4,5,6,7,8,9), so there are <span class="process-math">\(10\cdot 10 \cdot 10 \cdot 10=10^4=10000\)</span> total possible PIN numbers.</div> <div class="para" id="p-2181">To have no repeated digits, all four digits would have to be different, which is selecting without replacement. We could either compute <span class="process-math">\(10 \cdot 9 \cdot 8 \cdot 7\text{,}\)</span> or notice that this is the same as the permutation <span class="process-math">\(_{10}P_{4}=5040\text{.}\)</span>
+</div> <div class="para" id="p-2182">The probability of no repeated digits is the number of 4 digit PIN numbers with no repeated digits divided by the total number of 4 digit PIN numbers. This probability is <span class="process-math">\(\frac{_{10}P_{4}}{10^4}=
+\frac{5040}{10000}=0.504\text{.}\)</span>
+</div>
+</div></div></article><article class="example example-like" id="example-213"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.2</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2183">In a certain state's lottery, 48 balls numbered 1 through 48 are placed in a machine and six of them are drawn at random. If the six numbers drawn match the numbers that a player had chosen, the player wins $1,000,000. In this lottery, the order the numbers are drawn in doesn’t matter. Compute the probability that you win the million-dollar prize if you purchase a single lottery ticket.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-158" id="solution-158"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-158"><div class="solution solution-like"><div class="para logical" id="p-2184">
+<div class="para">In order to compute the probability, we need to count the total number of ways six numbers can be drawn, and the number of ways the six numbers on the player’s ticket could match the six numbers drawn from the machine. Since there is no stipulation that the numbers be in any particular order, the number of possible outcomes of the lottery drawing is <span class="process-math">\(_{48}C_{6}=12,271,512\text{.}\)</span> Of these possible outcomes, only one would match all six numbers on the player’s ticket, so the probability of winning the grand prize is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{_{6}C_{6}}{_{48}C_{6}}=\frac{1}{12271512}\approx 0.0000000815
+\end{equation*}
+</div>
+</div></div></div></article><article class="example example-like" id="example-214"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2185">In the state lottery from the previous example, if five of the six numbers drawn match the numbers that a player has chosen, the player wins a second prize of $1,000. Compute the probability that you win the second prize if you purchase a single lottery ticket.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-159" id="solution-159"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-159"><div class="solution solution-like">
+<div class="para" id="p-2186">As above, the number of possible outcomes of the lottery drawing is <span class="process-math">\(_{48}C_{6}=12,271,512\text{.}\)</span> In order to win the second prize, five of the six numbers on the ticket must match five of the six winning numbers; in other words, we must have chosen five of the six winning numbers and one of the 42 losing numbers. The number of ways to choose 5 out of the 6 winning numbers is given by <span class="process-math">\(_{6}C_{5}=6\)</span> and the number of ways to choose 1 out of the 42 losing numbers is given by <span class="process-math">\(_{42}C_{1}=42\text{.}\)</span> Thus the number of favorable outcomes is then given by the Basic Counting Rule: <span class="process-math">\(_{6}C_{5}\cdot _{42}C_{1}=6\cdot 42=252\text{.}\)</span>
+</div> <div class="para" id="p-2187">So the probability of winning the second prize is <span class="process-math">\(\frac{252}{12271512} \approx 0.0000205\)</span>
+</div>
+</div></div></article><article class="problem example-like" id="problem-53"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">9.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h3> <div class="para" id="p-2188">A multiple-choice question on an economics quiz contains 10 questions with five possible answers each. Compute the probability of randomly guessing the answers and getting 9 questions correct.</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-259" id="answer-259"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-259"><div class="answer solution-like">
+<div class="para" id="p-2189">There are <span class="process-math">\(5^{10}=9,765,625\)</span> different ways the exam can be answered. There are 10 possible locations for the one missed question, and in each of those locations there are 4 wrong answers, so there are 40 ways the test could be answered with one wrong answer.</div> <div class="para" id="p-2190">P(9 answers correct)=<span class="process-math">\(\frac{40}{5^{10}} \approx 0.0000041\)</span> chance.</div>
+</div></div></article><article class="example example-like" id="example-215"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.5</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2191">Compute the probability of randomly drawing five cards from a deck and getting exactly one Ace.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-160" id="solution-160"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-160"><div class="solution solution-like">
+<div class="para" id="p-2192">In many card games (such as poker) the order in which the cards are drawn is not important (since the player may rearrange the cards in his hand any way he chooses); in the problems that follow, we will assume that this is the case unless otherwise stated. Thus we use combinations to compute the possible number of 5-card hands, <span class="process-math">\(_{52}C_{5}\text{.}\)</span> This number will go in the denominator of our probability formula, since it is the number of possible outcomes.</div> <div class="para" id="p-2193">For the numerator, we need the number of ways to draw one Ace and four other cards (none of them Aces) from the deck. Since there are four Aces and we want exactly one of them, there will be <span class="process-math">\(_{4}C_{1}\)</span> ways to select one Ace; since there are 48 non-Aces and we want 4 of them, there will be <span class="process-math">\(_{48}C_{4}\)</span> ways to select the four non-Aces. Now we use the Basic Counting Rule to calculate that there will be <span class="process-math">\(_{4}C_{1}\cdot _{48}C_{4}\)</span> ways to choose one ace and four non-Aces.</div> <div class="para" id="p-2194">Putting this all together, we have P(one Ace)<span class="process-math">\(=\frac{_{4}C_{1} \cdot _{48}C_{4}}
+{_{52}C_{5}}=\frac{778320}{2598960} \approx 0.299\)</span>
+</div>
+</div></div></article><article class="example example-like" id="example-216"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.6</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2195">Compute the probability of randomly drawing five cards from a deck and getting exactly two Aces.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-161" id="solution-161"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-161"><div class="solution solution-like">
+<div class="para" id="p-2196">The solution is similar to the previous example, except now we are choosing 2 Aces out of 4 and 3 non- Aces out of 48; the denominator remains the same:</div> <div class="para" id="p-2197">P(two Aces)=<span class="process-math">\(\frac{_{4}C_{2}\cdot _{48}C_{3}}{_{52}C_{5}}=\frac{103776}{2598960}
+\approx 0.0399\)</span>
+</div>
+</div></div></article><div class="para" id="p-2198">It is useful to note that these card problems are remarkably similar to the lottery problems discussed earlier.</div>
+<article class="problem example-like" id="problem-54"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">9.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h3> <div class="para" id="p-2199">Compute the probability of randomly drawing five cards from a deck of cards and getting three Aces and two Kings.</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-260" id="answer-260"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-260"><div class="answer solution-like"><span class="process-math">\(\frac{_{4}C_{3}\cdot _{4}C_{2}}{_{52}C_{5}}=\frac{24}{2598960} \approx 0.0000092\)</span></div></div></article><div class="para" id="p-2200">Let's take a pause to consider a famous problem in probability theory:</div>
+<div class="para" id="p-2201">Suppose you have a room full of 30 people. What is the probability that there is at least one shared birthday?</div>
+<div class="para" id="p-2202">Take a guess at the answer to the above problem. Was your guess fairly low, like around 10%? That seems to be the intuitive answer (<span class="process-math">\(\frac{30}{365}\text{,}\)</span> perhaps?). Let's see if we should listen to our intuition. Let's start with a simpler problem, however.</div>
+<article class="example example-like" id="example-217"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.8</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2203">Suppose three people are in a room. What is the probability that there is at least one shared birthday among these three people?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-162" id="solution-162"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-162"><div class="solution solution-like">
+<div class="para" id="p-2204">There are a lot of ways there could be at least one shared birthday. Fortunately there is an easier way. We ask ourselves “What is the alternative to having at least one shared birthday?” In this case, the alternative is that there are no shared birthdays. In other words, the alternative to “at least one” is having none. In other words, since this is a complementary event,</div> <div class="para" id="p-2205">P(at least one)=1-P(none)</div> <div class="para" id="p-2206">We will start, then, by computing the probability that there is no shared birthday. Let's imagine that you are one of these three people. Your birthday can be anything without conflict, so there are 365 choices out of 365 for your birthday. What is the probability that the second person does not share your birthday? There are 365 days in the year (let's ignore leap years) and removing your birthday from contention, there are 364 choices that will guarantee that you do not share a birthday with this person, so the probability that the second person does not share your birthday is <span class="process-math">\(\frac{364}{365}\text{.}\)</span>
+</div> <div class="para" id="p-2207">Now we move to the third person. What is the probability that this third person does not have the same birthday as either you or the second person? There are 363 days that will not duplicate your birthday or the second person's, so the probability that the third person does not share a birthday with the first two is <span class="process-math">\(\frac{363}{365}\text{.}\)</span>
+</div> <div class="para" id="p-2208">We want the second person not to share a birthday with you and the third person not to share a birthday with the first two people, so we use the multiplication rule:</div> <div class="para" id="p-2209">P(no shared birthday)=<span class="process-math">\(\frac{365}{365} \cdot \frac{364}{365} \cdot \frac{363}{365} \approx 
+0.9918\)</span>
+</div> <div class="para" id="p-2210">and then subtract from 1 to get</div> <div class="para" id="p-2211">P(shared birthday)= 1 - P(no shared birthday)=<span class="process-math">\(1-0.9918=0.0082\text{.}\)</span>
+</div> <div class="para" id="p-2212">This is a pretty small number, so maybe it makes sense that the answer to our original problem will be small. Let's make our group a bit bigger.</div>
+</div></div></article><article class="example example-like" id="example-218"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.9</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2213">Suppose five people are in a room. What is the probability that there is at least one shared birthday among these five people?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-163" id="solution-163"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-163"><div class="solution solution-like">
+<div class="para" id="p-2214">Continuing the pattern of the previous example, the answer should be</div> <div class="para" id="p-2215">P(shared birthday)=<span class="process-math">\(1-\frac{365}{365} \cdot \frac{364}{365} \cdot \frac{363}{365}
+\cdot \frac{362}{365}\cdot \frac{361}{365} \approx 0.0271\)</span>
+</div> <div class="para" id="p-2216">Note that we could rewrite this more compactly as P(shared birthday)= <span class="process-math">\(1-\frac{_{365}P_{5}}{365^5}\approx 0.0271\)</span> which makes it a bit easier to type into a calculator or computer, and which suggests a nice formula as we continue to expand the population of our group.</div>
+</div></div></article><article class="example example-like" id="example-219"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.4.10</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-2217">Suppose 30 people are in a room. What is the probability that there is at least one shared birthday among these 30 people?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-164" id="solution-164"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-164"><div class="solution solution-like">
+<div class="para" id="p-2218">Here we can calculate P(shared birthday)=<span class="process-math">\(1-\frac{_{365}P_{30}}{365^{30}} \approx 0.706\)</span>
+</div> <div class="para" id="p-2219">which gives us the surprising result that when you are in a room with 30 people there is a 70% chance that there will be at least one shared birthday!</div>
+</div></div></article><div class="para" id="p-2220">If you like to bet, and if you can convince 30 people to reveal their birthdays, you might be able to win some money by betting a friend that there will be at least two people with the same birthday in the room anytime you are in a room of 30 or more people. (Of course, you would need to make sure your friend hasn't studied probability!) You wouldn't be guaranteed to win, but you should win more than half the time.</div>
+<article class="problem example-like" id="problem-55"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">9.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h3> <div class="para" id="p-2221">Suppose 10 people are in a room. What is the probability that there is at least one shared birthday among these 10 people?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-261" id="answer-261"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-261"><div class="answer solution-like">P(shared birthday)=<span class="process-math">\(1-\frac{_{365}P_{10}}{365^{10}} \approx 0.117\)</span>
+</div></div></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-prob-conditional.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-prob-ev.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

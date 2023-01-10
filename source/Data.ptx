@@ -1,0 +1,3444 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Data" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Describing Data</title>
+        <introduction>
+            <p>Once we have collected data from surveys or experiments, we need to summarize and present the data in a way 
+                that will be meaningful to the reader. We will begin with graphical presentations of data then explore 
+                numerical summaries of data.</p>
+    </introduction>
+    
+    <section xml:id = "section-data-graphs">
+        <title>Presenting Data Graphically</title>
+        
+        <objectives>
+            <ul>
+                <li>Create and frequency tables for data sets</li>
+                <li>Create and read bar graphs and histograms</li>
+                <li>Interpret pie charts</li>
+            </ul>
+        </objectives>
+
+        
+        <p>Categorical, or qualitative, data are pieces of information that allow us to classify the objects under 
+            investigation into various categories. We usually begin working with categorical data by summarizing the data 
+            into a frequency table.</p>
+
+        <definition><title>Frequency Table</title>
+            <p>A frequency table is a table with two columns. One column lists the categories, and another for the 
+                frequencies with which the items in the categories occur (how many items fit into each category).</p>
+        </definition>
+        
+        <example>
+            <p>An insurance company determines vehicle insurance premiums based on known risk factors. If a person is 
+                considered a higher risk, their premiums will be higher. One potential factor is the color of your car. The 
+                insurance company believes that people with some color cars are more likely to get in accidents. To research 
+                this, they examine police reports for recent total-loss collisions. The data is summarized in the frequency 
+                table below.</p>
+            
+            <table>
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Color</cell>
+                   <cell>Frequency</cell>
+              </row>
+              <row>
+                   <cell>Blue</cell>
+                   <cell>25</cell>
+              </row>
+              <row>
+                    <cell>Green</cell>
+                    <cell>52</cell>
+              </row>
+              <row>
+                   <cell>Red</cell>
+                   <cell>41</cell>
+              </row>
+              <row>
+                    <cell>White</cell>
+                    <cell>36</cell>
+              </row>
+              <row>
+                   <cell>Black</cell>
+                   <cell>39</cell>
+              </row>
+              <row>
+                    <cell>Grey</cell>
+                    <cell>23</cell>
+              </row>
+         </tabular>
+</table>
+        </example>
+
+        <p>Sometimes we need an even more intuitive way of displaying data. This is where charts and graphs come in. There 
+            are many, many ways of displaying data graphically, but we will concentrate on one very useful type of graph 
+            called a bar graph. In this section we will work with bar graphs that display categorical data; the next section 
+            will be devoted to bar graphs that display quantitative data.</p>
+
+        <definition><title>Bar graph</title>A bar graph is a graph that displays a bar for each category with the length of 
+            each bar indicating the frequency of that category.
+        </definition>
+
+        <p>To construct a bar graph, we need to draw a vertical axis and a horizontal axis. The vertical direction will have 
+            a scale and measure the frequency of each category; the horizontal axis has no scale in this instance. The 
+            construction of a bar chart is most easily described by use of an example.</p>
+
+        <example>
+            <p>Using our car data from above, note the highest frequency is 52, so our vertical axis needs to go from 0 to 
+                52, but we might as well use 0 to 55, so that we can put a hash mark every 5 units:</p>
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image width = "50%" xml:id="bargraph1">
+                <description>A bar graph with colors of cars on the horizontal axis and frequencies on the vertical
+                    axis.</description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={Blue, Green, Red, White, Black, Grey},
+                xtick={data},
+                xtick pos=left,
+                ytick pos=left,
+                ymajorgrids,
+                title = {Vehicle Color Involved in Total-Loss Collison},
+                ylabel = {Frequency},
+                scaled y ticks = false,
+                ytick={0,5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55},
+                axis line style={Gray},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (Blue,25) 
+                    (Green,52) 
+                    (Red,41)
+                    (White, 36)
+                    (Black, 39)
+                    (Grey, 23)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+            </figure>
+            <p>Notice that the height of each bar is determined by the frequency of the corresponding color. The horizontal 
+                gridlines are a nice touch, but not necessary. In practice, you will find it useful to draw bar graphs using 
+                graph paper, so the gridlines will already be in place, or using technology. Instead of gridlines, we might 
+                also list the frequencies at the top of each bar, like this:</p>
+            
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+            
+              <image width = "50%" xml:id="bargraph2">
+                  <description>A bar graph with colors of cars on the horizontal axis, frequencies on the vertical
+                      axis, and the freuencies labeled on top of each bar.</description>
+            <latex-image >
+                
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={Blue, Green, Red, White, Black, Grey},
+                xtick=data, nodes near coords, nodes near coords align={vertical},  
+                xtick pos=left,
+                ytick pos=left,
+                scaled y ticks = false,
+                ytick={0,5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55},
+                axis line style={Gray},
+                title = {Vehicle Color Involved in Total-Loss Collison},
+                ylabel = {Frequency},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (Blue,25) 
+                    (Green,52) 
+                    (Red,41)
+                    (White, 36)
+                    (Black, 39)
+                    (Grey, 23)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+                
+            </figure>
+
+        </example>
+        
+        <p>In this case, our chart might benefit from being reordered from largest to smallest frequency values. This 
+            arrangement can make it easier to compare similar values in the chart, even without gridlines. When we arrange 
+            the categories in decreasing frequency order like this, it is called a Pareto chart.</p>
+        
+        <definition><title>Pareto chart</title>
+            A Pareto chart is a bar graph ordered from highest to lowest frequency.
+        </definition>
+
+        <example>
+            <p>Transforming our bar graph from earlier into a Pareto chart, we get:</p>
+        <figure>
+            <caption>Image Credit: RRCC</caption>
+         <image width = "50%" xml:id="bargraph3">
+             <description>The bar graph is organized so the color (Green) with the largest frequncy (52) is listed
+                 first. The frequencies decrease from left to right.</description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={Green, Red, Black, White, Blue, Grey},
+                xtick=data, nodes near coords, nodes near coords align={vertical},  
+                xtick pos=left,
+                ytick pos=left,
+                scaled y ticks = false,
+                title = {Vehicle Color Involved in Total-Loss Collison},
+                ylabel = {Frequency},
+                ytick={0,5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55},
+                axis line style={Gray},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (Blue,25) 
+                    (Green,52) 
+                    (Red,41)
+                    (White, 36)
+                    (Black, 39)
+                    (Grey, 23)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+            </figure>
+            
+        </example>
+        
+        <example>
+            <p>In a survey, adults were asked whether they personally worried about a variety of environmental concerns. The 
+                numbers (out of 1012 surveyed) who indicated that they worried “a great deal” about some selected concerns 
+                are summarized below. Create a bar graph to illustrate this data.</p>
+            
+            <table >
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Environmental Issue</cell>
+                   <cell>Frequency</cell>
+              </row>
+              <row>
+                   <cell>Pollution of drinking water</cell>
+                   <cell>597</cell>
+              </row>
+              <row>
+                    <cell>Contamination of soil by toxic waste</cell>
+                    <cell>526</cell>
+              </row>
+             <row>
+                   <cell>Air pollution</cell>
+                   <cell>455</cell>
+              </row>
+              <row>
+                    <cell>Global warming</cell>
+                    <cell>354</cell>
+              </row>
+         </tabular>
+        </table>
+
+            <solution>
+
+                <p>This data could be shown graphically in a bar graph:</p>
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+                 <image width = "50%" xml:id="bargraph4">
+                     <description>A bar graph with water pollution, toxic waster, air pollution, and 
+                         global warming on the horiztonal axis and frequencies of each on the vertical axis.
+                     </description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={Water Pollution, Toxic Waste, Air Pollution, Global Warming},
+                xtick=data, 
+                x tick label style={font=\small,text width=1.7cm,align=center},
+                xtick pos=left,
+                ytick pos=left,
+                ymajorgrids,
+                scaled y ticks = false,
+                title = {Environmental Worries},
+                ylabel = {Frequency},
+                ytick={0, 100, 200, 300, 400, 500, 600},
+                axis line style={Gray},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (Toxic Waste, 526) 
+                    (Water Pollution, 597) 
+                    (Air Pollution, 455)
+                    (Global Warming, 354)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+                </figure>
+                
+            </solution>
+        </example>
+        
+        <p>To show relative sizes, it is common to use a pie chart.</p>
+
+        <definition><title>Pie Chart</title>
+            <p>A pie chart is a circle with wedges cut of varying sizes marked out like slices of pie or pizza. The relative 
+                sizes of the wedges correspond to the relative frequencies of the categories.</p>
+        </definition>
+
+        <example><p>For our vehicle color data, a pie chart might look like this:</p>
+            
+            <image width = "50%" source = "images/120_Data_Screenshot1.png">
+                <description>A pie chart with six wedges--one corresponding to each color of car from the 
+                    previous examples. The size of the wedge corresponds to the relative size of the 
+                    frequency.</description>
+                
+            </image>
+            
+            <p>Pie charts can often benefit from including frequencies or relative frequencies (percents) in the chart next 
+                to the pie slices. Often having the category names next to the pie slices also makes the chart clearer.</p>
+            
+            <image width ="50%" source = "images/120_Data_Screenshot2.png">
+                <description>The same pie chart as in the previous example, but with freqencies and colors listed 
+                    next to each wedge.</description>
+                
+            </image>
+        </example>
+        
+        <example>
+            <p>The pie chart to the right shows the percentage of voters supporting each candidate running for a local 
+                senate seat.</p>
+
+            <p>If there are 20,000 voters in the district, the pie chart shows that about 11% of those, about 2,200 voters, 
+                support Reeves.</p>
+            
+            <image width = "50%" source = "images/120_Data_Screenshot3.png">
+                <description>A pie chart with three wedges labeled: Ellison (46%), Douglas (43%) and Reeves (11%)
+                </description>
+                
+            </image>
+            
+        </example>
+        
+        <p>Pie charts look nice, but are harder to draw by hand than bar charts since to draw them accurately we would need 
+            to compute the angle each wedge cuts out of the circle, then measure the angle with a protractor. Computers are 
+            much better suited to drawing pie charts. Common software programs like Microsoft Word or Excel, OpenOffice.org 
+            Write or Calc, or Google Docs are able to create bar graphs, pie charts, and other graph types. There are also 
+            numerous online tools that can create graphs.</p>
+        
+        <problem><title>Try It Now</title>
+            <p>Create a bar graph and a pie chart to illustrate the grades on a history exam below.</p>
+
+            <p>A: 12 students, B: 19 students, C: 14 students, D: 4 students, F: 5 students</p>
+            
+            <answer>
+                <image source = "images/120_Data_TryNow_Screenshot1.png">
+                    <description>A bar graph with A, B, C, D, and F on the horizontal axis and frequencies of each 
+                        on the vertical axis. A pie chart with five wedges: A (22%), B (36%), C (26%), D (7%) and 
+                        F (9%)</description>
+                    
+                </image>
+            </answer>
+        </problem>
+        
+        <p>Don’t get fancy with graphs! People sometimes add features to graphs that don’t help to convey their information. 
+            For example, 3-dimensional bar charts like the one shown below are usually not as effective as their two-
+            dimensional counterparts.</p>
+        
+        <image width = "50%" source = "images/120_Data_Screenshot4.png">
+            <description>A 3-dimensional bar graph corresponding the same data as the car colors and collisons from 
+                earlier.</description>
+            
+        </image>
+
+        <p>Here is another way that fanciness can lead to trouble. Instead of plain bars, it is tempting to substitute 
+            meaningful images. This type of graph is called a pictogram.</p>
+        
+        <p>A <term>pictogram</term> is a statistical graphic in which the size of the picture is intended to represent the 
+            frequencies or size of the values being represented.</p>
+
+        <example>
+
+            <p>A labor union might produce the graph to show the difference between the average manager salary 
+                and the average worker salary.</p>
+            <image width = "30%" source = "images/120_Data_Screenshot5.png">
+                <description>A large bag of money labeled manager salaries next to a bag of labeled that is half 
+                    as tall labeled worker salaries.</description>
+            </image>
+
+            <p>Looking at the picture, it would be reasonable to guess that the manager salaries is 4 times as large as the 
+                worker salaries - the area of the bag looks about 4 times as large. However, the manager salaries are in 
+                fact only twice as large as worker salaries, which were reflected in the picture by making the manager bag 
+                twice as tall.</p>
+            
+        </example>
+
+        <p>Another distortion in bar charts results from setting the baseline to a value other than zero. The baseline is 
+            the bottom of the vertical axis, representing the least number of cases that could have occurred in a category. 
+            Normally, this number should be zero.</p>
+        
+        <example>
+            <p>Compare the two graphs below showing support for same-sex marriage rights from a poll taken in December 
+                2008. The difference in the vertical scale on the first graph suggests a different story than the true 
+                differences in percentages; the second graph makes it look like twice as many people oppose marriage rights 
+                as support it.</p>
+            
+            <image source = "images/120_Data_Screenshot6.png">
+                <description>The first graph has a bar labeled support that starts at 0 and ends at 45 and a bar 
+                    labeled oppose that starts at 0 and ends at 55. The second graph has a bar from support that starts 
+                    at 40 and ends at 45, and an oppose bar that starts at 40 and ends at 55.</description>
+            </image>
+            
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>A poll was taken asking people if they agreed with the positions of the 4 candidates for a county office. 
+                Does the pie chart present a good representation of this data? Explain.</p>
+            <image width = "50%" source = "images/120_Data_Screenshot7.png">
+                <description>A pie chart with four wedges: Nguyen (42%), McKee (35%), Jones (64%) and Brown (52%).
+                </description>
+            </image>
+            
+            <answer>While the pie chart accurately depicts the relative size of the people agreeing with each candidate, the 
+                chart is confusing, since usually percents on a pie chart represent the percentage of the pie the slice 
+                represents.</answer>
+        </problem>
+        
+        <p>Quantitative, or numerical, data can also be summarized into frequency tables.</p>
+        
+        <example>
+            <p>A teacher records scores on a 20-point quiz for the 30 students in his class. The scores are:</p>
+
+            <p>19 20 18 18 17 18 19 17 20 18 20 16 20 15 17</p>
+            <p>12 18 19 18 19 17 20 18 16 15 18 20 5 0 0</p>
+
+            <p>These scores could be summarized into a frequency table by grouping like values:</p>
+            
+            <table>
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Score</cell>
+                   <cell>Frequency</cell>
+              </row>
+              <row>
+                   <cell>0</cell>
+                   <cell>2</cell>
+              </row>
+              <row>
+                    <cell>5</cell>
+                    <cell>1</cell>
+              </row>
+               <row>
+                   <cell>12</cell>
+                   <cell>1</cell>
+              </row>
+              <row>
+                    <cell>15</cell>
+                    <cell>2</cell>
+              </row>
+              <row>
+                   <cell>16</cell>
+                   <cell>2</cell>
+              </row>
+              <row>
+                    <cell>17</cell>
+                    <cell>4</cell>
+              </row>
+               <row>
+                   <cell>18</cell>
+                   <cell>8</cell>
+              </row>
+              <row>
+                    <cell>19</cell>
+                    <cell>4</cell>
+              </row>
+                <row>
+                    <cell>20</cell>
+                    <cell>6</cell>
+              </row>
+         </tabular>
+</table>
+
+            <p>Using this table, it would be possible to create a standard bar chart from this summary, like we did for 
+                categorical data:</p>
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+             <image width = "50%" xml:id="bargraph5">
+                 <description>A bar graph with scores on the horizontal axis and corresponding frequencies on the 
+                     vertical axis.</description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={5, 12, 15, 16, 17, 18, 19, 20},
+                xtick=data, 
+                xtick pos=left,
+                ytick pos=left,
+                title = {Score},
+                ylabel = {Frequency},
+                scaled y ticks = false,
+                ymajorgrids,
+                ytick={0, 1, 2, 3, 4, 5, 6, 7, 8},
+                axis line style={Gray},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (5, 2) 
+                    (12, 1) 
+                    (15, 1)
+                    (16, 2)
+                    (17, 4)
+                    (18, 8)
+                    (19, 4)
+                    (20, 6)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+            </figure>
+            
+    <p>However, since the scores are numerical values, this chart doesn’t really make sense; the first and second bars are 
+        five values apart, while the later bars are only one value apart. It would be more correct to treat the horizontal 
+        axis as a number line. This type of graph is called a histogram.</p>
+            
+        </example>
+        
+        <definition><title>Histogram</title>
+            <p>A histogram is like a bar graph, but where the horizontal axis is a number line</p>
+        </definition>
+        
+        <example>
+            
+            <p>For the values above, a histogram would look like:</p>
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image width = "75%" xml:id = "histogram1">
+                <description>The horizontal axis is a number line with evenly spaced tick marks. Bars for test scores
+                    that are next to each other are touching.</description>
+                <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+                 width = \textwidth,
+                    height = 0.75\textwidth,
+                    ymin=0, ymax=8,
+                    xmin = 0, xmax = 21,
+                    minor y tick num = 1,
+                    minor x tick num = 1,
+                       ymajorgrids,
+                    title = {Score},
+                ylabel = {Frequency},
+                    xtick distance = 1,
+            ]
+            \addplot+[ybar interval,mark=no, fill=blue!25] plot coordinates {
+                    (0, 0)
+                    (1, 0)
+                    (2, 0)
+                    (3, 0)
+                    (4, 0)
+                    (5, 2) (6, 0) (7, 0) (8, 0) (9, 0) (10, 0) (11, 0)
+                    (12, 1) (13, 0) (14, 0)
+                    (15, 1)
+                    (16, 2)
+                    (17, 4)
+                    (18, 8)
+                    (19, 4)
+                    (20, 6)
+                    (21, 0)
+                   };
+            \end{axis}
+            \end{tikzpicture}
+           
+                    </latex-image>
+            </image>
+            </figure> 
+        </example>
+        
+        <p>Notice that in the histogram, a bar represents values on the horizontal axis from that on the left hand-side of 
+            the bar up to, but not including, the value on the right hand side of the bar. Some people choose to have bars 
+            start at <m>\frac{1}{2}</m> values to avoid this ambiguity.</p>
+        
+        <figure>
+            <caption>Image Credit: RRCC</caption>
+        <image width = "75%" xml:id = "histogram2">
+            <description>The same histogram as in the previous image, but with tick marks placed in the middle of each 
+                bar, rather than to the sides.</description>
+                <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+                  width = \textwidth,
+                    height = 0.75\textwidth,
+                ymin=0, ymax=8,
+                    xmin = 0, xmax = 21,
+                    ybar interval,
+                minor y tick num = 1,
+                minor x tick num = 1,
+                    ymajorgrids,
+                    title = {Score},
+                ylabel = {Frequency},
+            ]
+            \addplot+[ybar interval,mark=no] plot coordinates {
+                    (0, 0)
+                    (1, 0)
+                    (2, 0)
+                    (3, 0)
+                    (4, 0)
+                    (5, 2) (6, 0) (7, 0) (8, 0) (9, 0) (10, 0) (11, 0)
+                    (12, 1) (13, 0) (14, 0)
+                    (15, 1)
+                    (16, 2)
+                    (17, 4)
+                    (18, 8)
+                    (19, 4)
+                    (20, 6)
+                    (21, 0)
+                   };
+            \end{axis}
+            \end{tikzpicture}
+           
+                    </latex-image>
+            </image>
+        </figure>   
+
+            
+            
+        <p>Unfortunately, not a lot of common software packages can correctly graph a histogram. About the best you can do 
+            in Excel or Word is a bar graph with no gap between the bars and spacing added to simulate a numerical 
+            horizontal axis.</p>
+
+        <p>If we have a large number of widely varying data values, creating a frequency table that lists every possible 
+            value as a category would lead to an exceptionally long frequency table, and probably would not reveal any 
+            patterns. For this reason, it is common with quantitative data to group data into class intervals.</p>
+        
+        <definition><title>Class Intervals</title>
+            <p>Class intervals are groupings of the data. In general, we define class intervals so that:</p>
+            <p>
+            <ul>
+                <li>Each interval is equal in size. For example, if the first class contains values from 120-129, the second 
+                    class should include values from 130-139.</li>
+                <li>We have somewhere between 5 and 20 classes, typically, depending upon the number of data we’re working 
+                    with.</li>
+            </ul>
+            </p>
+        </definition>
+        
+        <example>
+            <p>Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight 
+                data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of 
+                263-121 = 142. We could create 7 intervals with a width of around 20, 14 intervals with a width of around 
+                10, or somewhere in between. Often time we have to experiment with a few possibilities to find something 
+                that represents the data well. Let us try using an interval width of 15. We could start at 121, or at 120 
+                since it is a nice round number.</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Interval</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>120 - 134</cell>
+                        <cell>4</cell>
+                    </row>
+                     <row>
+                        <cell>135 - 149</cell>
+                        <cell>14</cell>
+                    </row>
+                     <row>
+                        <cell>150 - 164</cell>
+                        <cell>16</cell>
+                    </row>
+                     <row>
+                        <cell>165 - 179</cell>
+                        <cell>28</cell>
+                    </row>
+                     <row>
+                        <cell>180 - 194</cell>
+                        <cell>12</cell>
+                    </row>
+                     <row>
+                        <cell>195 - 209</cell>
+                        <cell>8</cell>
+                    </row>
+                     <row>
+                        <cell>210 - 224</cell>
+                        <cell>7</cell>
+                    </row>
+                     <row>
+                        <cell>225 - 239</cell>
+                        <cell>6</cell>
+                    </row>
+                     <row>
+                        <cell>240 - 254</cell>
+                        <cell>2</cell>
+                    </row>
+                     <row>
+                        <cell>255 - 269</cell>
+                        <cell>3</cell>
+                    </row>
+                </tabular>
+            </table>
+                        
+            <p>A histogram of this data would look like:</p>
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+             <image width = "50%" xml:id = "histogram3">
+                 <description>A histogram with weights on the horizontal axis and frequencies on the vertical axis.
+                 </description>
+                <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            ymin=0, ymax=30,
+                    xmin = 120, xmax = 270,
+            minor y tick num = 5,
+                    xtick distance = 15,
+                    title = {Weights (pounds)},
+                ylabel = {Frequency},
+            ]
+            \addplot+[ybar interval,mark=no, fill=blue!25] plot coordinates {
+                    (120, 4)
+                    (135, 14)
+                    (150, 16)
+                    (165, 28)
+                    (180, 12)
+                    (195, 8)
+                    (210, 7)
+                    (225, 6)
+                    (240, 2)
+                    (255, 3)
+                    (270, 0)
+                    (275, 0)
+                   };
+            \end{axis}
+            \end{tikzpicture}
+           
+                    </latex-image>
+            </image>
+            </figure>
+       
+        <p>Other graph types such as pie charts are possible for quantitative data. The usefulness of different graph types 
+            will vary depending upon the number of intervals and the type of data being represented. For example, a pie 
+            chart of our weight data is difficult to read because of the quantity of intervals we used.</p>
+            
+            <image width = "50%" source = "images/120_Data_Screenshot8.png">
+                <description>A pie chart with 10 wedges--one corresponding to each class interval.</description>
+            </image>
+            
+        </example>
+        
+        <problem><title>Try It Now</title>
+            
+            <p>The total cost of textbooks for the term was collected from 36 students. Create a histogram for this 
+                data.</p>
+
+            <p>$140 $160 $160 $165 $180 $220 $235 $240 $250 $260 $280 $285</p>
+
+            <p>$285 $285 $290 $300 $300 $305 $310 $310 $315 $315 $320 $320</p>
+
+            <p>$330 $340 $345 $350 $355 $360 $360 $380 $395 $420 $460 $460</p>
+            
+            <answer>
+                <p>Using a class intervals of size 55, we can group our data into six intervals:</p>
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Cost Interval</cell>
+                            <cell>Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>$140 - 194</cell>
+                            <cell>5</cell>
+                        </row>
+                         <row>
+                            <cell>$195 - 249</cell>
+                            <cell>3</cell>
+                        </row>
+                          <row>
+                            <cell>$250 - 304</cell>
+                            <cell>9</cell>
+                        </row>
+                         <row>
+                            <cell>$305 - 359</cell>
+                            <cell>12</cell>
+                        </row>
+                          <row>
+                            <cell>$360 - 414</cell>
+                            <cell>4</cell>
+                        </row>
+                         <row>
+                            <cell>$415 - 469</cell>
+                            <cell>3</cell>
+                        </row>
+                    </tabular>
+                </table>
+
+                <p>We can use the frequency distribution to generate the histogram.</p>
+             <figure>
+                 <caption>Image Credit: RRCC</caption>
+             <image width = "50%" xml:id = "histogram4">
+                 <description>A histogram with the class intervals from the table above on the horizontal 
+                     axis and frequencies on the vertical axis.</description>
+                <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            ymin=0, ymax=15,
+                    xmin = 140, xmax = 470,
+            minor y tick num = 5,
+                    xtick ={140, 195, 250, 305, 360, 415, 470},
+                    title = {Cost (Dollars)},
+                ylabel = {Frequency},
+                    ymajorgrids,
+            ]
+            \addplot+[ybar interval,mark=no, fill=blue!25] plot coordinates {
+                    (140, 5)
+                    (195, 3)
+                    (250, 9)
+                    (305, 12)
+                    (360, 4)
+                    (415, 3)
+                    (470, 0)
+                   };
+            \end{axis}
+            \end{tikzpicture}
+           
+                    </latex-image>
+            </image>
+                </figure>
+            </answer>
+        </problem>
+        
+        <p>When collecting data to compare two groups, it is desirable to create a graph that compares quantities.</p>
+
+        <example>
+
+            <p>The data below came from a task in which the goal is to move a computer mouse to a target on the screen as 
+                fast as possible. On 20 of the trials, the target was a small rectangle; on the other 20, the target was a 
+                large rectangle. Time to reach the target was recorded on each trial.</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Interval (milliseconds)</cell>
+                        <cell> Frequency, Small Target</cell>
+                        <cell>Frequency, Large Target</cell>
+                    </row>
+                    <row>
+                        <cell>300 - 399</cell>
+                        <cell>0</cell>
+                        <cell>0</cell>
+                    </row>
+                    <row>
+                        <cell>400 - 499</cell>
+                        <cell>1</cell>
+                        <cell>5</cell>
+                    </row>
+                      <row>
+                        <cell>500 - 599</cell>
+                        <cell>3</cell>
+                        <cell>10</cell>
+                    </row>
+                    <row>
+                        <cell>600 - 699</cell>
+                        <cell>6</cell>
+                        <cell>5</cell>
+                    </row>
+                      <row>
+                        <cell>700 - 799</cell>
+                        <cell>5</cell>
+                        <cell>0</cell>
+                    </row>
+                    <row>
+                        <cell>800 - 899</cell>
+                        <cell>4</cell>
+                        <cell>0</cell>
+                    </row>
+                      <row>
+                        <cell>900 - 999</cell>
+                        <cell>0</cell>
+                        <cell>0</cell>
+                    </row>
+                    <row>
+                        <cell>1000 - 1099</cell>
+                        <cell>1</cell>
+                        <cell>0</cell>
+                    </row>
+                      <row>
+                        <cell>1100 - 1199</cell>
+                        <cell>0</cell>
+                        <cell>0</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <p>One option to represent this data would be a comparative histogram or bar chart, in which bars for the small 
+                target group and large target group are placed next to each other.</p>
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image xml:id = "histogram5">
+                <description>A histogram with bars for the small target in blue, next to bars for the target
+                    in red.</description>
+                <latex-image>
+            
+            \begin{tikzpicture}
+  \begin{axis}[
+      width=15cm, height=8cm,
+      grid=major,
+      grid style={dashed,gray!30},
+     xtick distance = 100,
+    tick align = outside,
+      ybar interval = 0.8,
+                    title = {Reaction Time (milliseconds)},
+                ylabel = {Frequency},
+              ]
+                    
+    \addplot[mark=no, fill=blue!25] plot coordinates {
+                    (300, 0)
+                    (400, 1)
+                    (500, 3)
+                    (600, 6)
+                    (700, 5)
+                    (800, 4)
+                    (900, 0)
+                    (1000, 1)
+                    (1100, 0)
+                   };
+     \addplot[mark=no, fill=red!25] plot coordinates {
+                    (300, 0)
+                    (400, 5)
+                    (500, 10)
+                    (600, 5)
+                    (700, 0)
+                    (800, 0)
+                    (900, 0)
+                    (1000, 0)
+                    (1100, 0)
+                   };
+          \legend{Small Target, Large Target}
+         \end{axis}
+        \end{tikzpicture}
+                    
+                    </latex-image>
+            </image>
+            </figure>
+        </example>
+        
+        <definition><title>Frequency Polygon</title>
+            <p>An alternative representation is a frequency polygon. A frequency polygon starts out like a histogram, but 
+                instead of drawing a bar, a point is placed in the midpoint of each interval at height equal to the 
+                frequency. Typically the points are connected with straight lines to emphasize the distribution of the data.
+            </p>
+        </definition>
+        
+        <example>
+            <p>This graph makes it easier to see that reaction times were generally shorter for the larger target, and that 
+                the reaction times for the smaller target were more spread out.</p>
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+             <image xml:id="frequencypolygon">
+                 <description>Points are plotted in blue corresponding to the frequencies of the small target and then 
+                     connected with line segments. The same is done on the same axes in red with the data for 
+                     the large target.</description>
+    <latex-image >
+        \begin{tikzpicture}
+        \pgfplotsset{scaled y ticks=false}
+        \begin{axis}[
+        xlabel = {Reaction Time (Milliseconds)},
+        ylabel = {Frequency},
+        xmin = 300, xmax = 1200, ymin = 0, ymax = 12,
+        xtick distance = 100, ytick distance = 1,
+        grid = both,
+        minor tick num = 1,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        width = \textwidth,
+        height = 0.75\textwidth]
+        
+        
+        \addplot [color = blue, mark = *, mark size = 3pt] coordinates{
+        (350,0) (450,1) (550,3) (650, 6) (750, 5) (850,4) (950, 0) (1050, 1) (1150, 0)
+        };
+        
+        \addplot [color = red, mark = *, mark size = 3pt] coordinates{
+        (350,0) (450,5) (550,10) (650,5) (750, 0) (850,0) (950, 0) (1050, 0) (1150, 0)
+        };
+        
+        \legend{Small Target, Large Target}
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+            </figure>
+            
+        </example>
+        
+        
+
+
+    </section>
+    
+    <section xml:id = "section-data-mean"><title>Measures of Central Tendency</title>
+        
+         <objectives>
+            <ul>
+                <li>Compute the mean, median, and mode of data sets</li>
+            </ul>
+        </objectives>
+        
+        <p>It is often desirable to use a few numbers to summarize a distribution. One important aspect of a distribution is 
+            where its center is located. Measures of central tendency are discussed first. A second aspect of a distribution 
+            is how spread out it is. In other words, how much the data in the distribution vary from one another. The next 
+            section describes measures of variability.</p>
+        
+        <p>Let's begin by trying to find the most "typical" value of a data set.</p>
+
+        <p>Note that we just used the word "typical" although in many cases you might think of using the word "average." We 
+            need to be careful with the word "average" as it means different things to different people in different 
+            contexts. One of the most common uses of the word "average" is what mathematicians and statisticians call the 
+            arithmetic mean, or just plain old mean for short. "Arithmetic mean" sounds rather fancy, but you have likely 
+            calculated a mean many times without realizing it; the mean is what most people think of when they use the word 
+            "average".</p>
+
+        <definition><title>Mean</title>
+            <p>The mean of a set of data is the sum of the data values divided by the number of values.</p>
+        </definition>
+
+        <example>
+            <p>Marci’s exam scores for her last math class were: 79, 86, 82, 94. What is the mean of those values?</p>
+
+            <solution>
+                <me>\frac{79+86+82+94}{4} = 85.25</me>
+                <p>Typically we round means to one more decimal place than the original data had. In this case, we would 
+                    round 85.25 to 85.3.</p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 
+                2000 season are shown below.</p>
+
+            <p>37 33 33 32 29 28 28 23 22 22 22 21 21 21 20</p>
+
+            <p>20 19 19 18 18 18 18 16 15 14 14 14 12 12 9 6</p>
+
+            <solution>
+                <p>Adding these values, we get 634 total TDs. Dividing by 31, the number of data values, we get 
+                    <m>\frac{634}{31}=20.4516</m>. It would be appropriate to round this to 20.5.</p>
+
+                <p>It would be most correct for us to report that “The mean number of touchdown passes thrown in the NFL 
+                    in the 2000 season was 20.5 passes,” but it is not uncommon to see the more casual word “average” used 
+                    in place of "mean"</p>
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>The price of a jar of peanut butter at 5 stores was: $3.29, $3.59, $3.79, $3.75, and $3.99. Find the mean 
+                price.</p>
+            
+            <answer>Adding the prices and dividing by 5 we get the mean price: $3.682</answer>
+        </problem>
+        
+        <example>
+            <p>The one hundred families in a particular neighborhood are asked their annual household income, to the 
+                nearest $5 thousand dollars. The results are summarized in a frequency table below. Find the mean
+            annual household income.</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Income (thousands of dollars)</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>15</cell>
+                        <cell>6</cell>
+                    </row>
+                      <row>
+                        <cell>20</cell>
+                        <cell>8</cell>
+                    </row>
+                    <row>
+                        <cell>25</cell>
+                        <cell>11</cell>
+                    </row>
+                      <row>
+                        <cell>30</cell>
+                        <cell>17</cell>
+                    </row>
+                    <row>
+                        <cell>35</cell>
+                        <cell>19</cell>
+                    </row>
+                      <row>
+                        <cell>40</cell>
+                        <cell>20</cell>
+                    </row>
+                    <row>
+                        <cell>45</cell>
+                        <cell>12</cell>
+                    </row>
+                      <row>
+                        <cell>50</cell>
+                        <cell>7</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <solution>
+                <p>Calculating the mean by hand could get tricky if we try to type in all 100 values:</p>
+
+                <me>\frac{15+ \ldots +15+20+ \ldots +20+25+ \ldots+25+\ldots}{100}</me>
+
+                <p>We could calculate this more easily by noticing that adding 15 to itself six times is the same as 
+                    <m>15\cdot 6=90</m>. Using this simplification, we get</p>
+
+                <me>\frac{15 \cdot 6+20 \cdot 8+25\cdot 11+30\cdot 17+35\cdot 19+40\cdot 20+
+                    45\cdot 12+50 \cdot 7}{100}=\frac{3390}{100}=33.9</me>
+                
+                <p>The mean household income of our sample is 33.9 thousand dollars ($33,900).</p>
+                
+            </solution>
+        </example>
+        
+        <example>
+            <p>Extending off the last example, suppose a new family moves into the neighborhood example that has a 
+                household income of $5 million ($5000 thousand). What is the mean household income?</p>
+
+            <solution>
+                 <me>\frac{15 \cdot 6+20 \cdot 8+25\cdot 11+30\cdot 17+35\cdot 19+40\cdot 20+
+                    45\cdot 12+50 \cdot 7 + 5000}{101}=\frac{8390}{101}=83.069</me>
+
+                <p>While 83.1 thousand dollars ($83,069) is the correct mean household income, it no longer represents a 
+                    “typical” value.</p>
+                
+            </solution>
+        </example>
+
+                <p>Imagine the data values on a see-saw or balance scale. The mean is the value that keeps the data in 
+                    balance, like in the picture below.</p>
+                
+                <image source = "images/120_Data_Screenshot9.png">
+        <description>A scale with one large block to left of the fulcrum and two smaller blocks to the 
+            right of the fulcrum.</description></image>
+
+                <p>If we graph our household data, the $5 million data value is so far out to the right that the mean has 
+                    to adjust up to keep things in balance.</p>
+                
+                <image source = "images/120_Data_Screenshot10.png">
+        <description>A fourth block has been added to the scale, much further to the right than the others.
+            The moves the center of balance so the orginal three blocks are to the left of the fulcrum
+            and the new block is to the right of the fulcrum.</description></image>
+
+        <p>For this reason, when working with data that have outliers - values far outside the primary grouping - it is 
+            common to use a different measure of center, the median.</p>
+        
+        <definition><title>Median</title>
+            <p>The <term>median</term> is the value separating the higher half of a dataset from the lower lower half
+                of the dataset.</p>
+            <p>To find the median, begin by listing the data in order from smallest to largest, or largest to 
+                smallest.</p>
+            <p>If the number of data values, <m>N</m>, is odd, then the median is the middle data value. This value can be 
+                found by rounding <m>\frac{N}{2}</m> up to the next whole number.</p>
+
+            <p>If the number of data values is even, there is no one middle value, so we find the mean of the two middle 
+                values (values <m>\frac{N}{2}</m> and <m>\frac{N}{2}+1</m>).</p>
+        </definition>
+
+            <example>
+                <p>Returning to the football touchdown data, we would start by listing the data in order. Luckily, it was 
+                    already in decreasing order, so we can work with it without needing to reorder it first.</p>
+
+                <p>37 33 33 32 29 28 28 23 22 22 22 21 21 21 20</p>
+
+                <p>20 19 19 18 18 18 18 16 15 14 14 14 12 12 9 6</p>
+
+                <solution>
+
+                    <p>Since there are 31 data values, an odd number, the median will be the middle number, the 16th data 
+                        value (<m>\frac{31}{2} = 15.5</m>), round up to 16, leaving 15 values below and 15 above). The 
+                        16th data 
+                        value is 20, so the median number of touchdown passes in the 2000 season was 20 passes. Notice 
+                        that for this data, the median is fairly close to the mean we calculated earlier, 20.5.</p>
+                </solution>
+            </example>
+        
+        <example>
+            <p>Find the median of these quiz scores: 5 10 8 6 4 8 2 5 7 7</p>
+
+            <solution>
+                <p>We start by listing the data in order: 2 4 5 5 6 7 7 8 8 10</p>
+
+                <p>Since there are 10 data values, an even number, there is no one middle number. So we find the mean of 
+                    the two middle numbers, 6 and 7, and get <m>\frac{6+7}{2}=6.5</m></p>
+                
+                <p>The median quiz score was 6.5.</p>
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99. Find the 
+                median price.</p>
+            
+            <answer>First we put the data in order: $3.29, $3.59, $3.75, $3.79, $3.99. Since there are an odd number of 
+                data, the median will be the middle value, $3.75.</answer>
+        </problem>
+        
+        <example>
+            <p>Let us return now to our original household income data</p>
+             <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Income (thousands of dollars)</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>15</cell>
+                        <cell>6</cell>
+                    </row>
+                      <row>
+                        <cell>20</cell>
+                        <cell>8</cell>
+                    </row>
+                    <row>
+                        <cell>25</cell>
+                        <cell>11</cell>
+                    </row>
+                      <row>
+                        <cell>30</cell>
+                        <cell>17</cell>
+                    </row>
+                    <row>
+                        <cell>35</cell>
+                        <cell>19</cell>
+                    </row>
+                      <row>
+                        <cell>40</cell>
+                        <cell>20</cell>
+                    </row>
+                    <row>
+                        <cell>45</cell>
+                        <cell>12</cell>
+                    </row>
+                      <row>
+                        <cell>50</cell>
+                        <cell>7</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <p>What is the median household income?</p>
+            
+            <solution>
+                <p>Here we have 100 data values. If we didn’t already know that, we could find it by adding the 
+                    frequencies. Since 100 is an even number, we need to find the mean of the middle two data values - the 
+                    50th and 51st data values. </p>
+                    
+                    <p>To find these, we can assign a number to each of the data values
+                    based on its position.  The first 6 values are $15, so values 1 - 6 are $15 thousand.  The next
+                    8 data values are $20 thousand.  <m>8 + 6 = 14</m>, so values 7 - 14 are $20 thousand.  The rest 
+                is summarized in the table:</p>
+
+                <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Income (thousands of dollars)</cell>
+                        <cell>Frequency</cell>
+                        <cell>Values</cell>
+                    </row>
+                    <row>
+                        <cell>15</cell>
+                        <cell>6</cell>
+                        <cell>1 - 6</cell>
+                    </row>
+                      <row>
+                        <cell>20</cell>
+                        <cell>8</cell>
+                          <cell>7 - (6 + 8) = 7 - 14</cell>
+                    </row>
+                    <row>
+                        <cell>25</cell>
+                        <cell>11</cell>
+                        <cell>15 - (14 + 11) = 15 - 25</cell>
+                    </row>
+                      <row>
+                        <cell>30</cell>
+                        <cell>17</cell>
+                          <cell>26 - (25 + 17) = 26 - 42</cell>
+                    </row>
+                    <row>
+                        <cell>35</cell>
+                        <cell>19</cell>
+                        <cell>43 - (42 + 19) = 43 - 61</cell>
+                    </row>
+                      <row>
+                        <cell>40</cell>
+                        <cell>20</cell>
+                          <cell>62 - (61 + 20) = 62 - 81</cell>
+                    </row>
+                    <row>
+                        <cell>45</cell>
+                        <cell>12</cell>
+                        <cell>82 - (81 + 12) = 82 - 93</cell>
+                    </row>
+                      <row>
+                        <cell>50</cell>
+                        <cell>7</cell>
+                          <cell>94 - (93 + 7) = 94 - 100</cell>
+                    </row>
+                </tabular>
+            </table>
+
+                <p>From this we can tell that values 50 and 51 will be $35 thousand, and the mean of these two values is 
+                    $35 thousand. The median income in this neighborhood is $35 thousand.</p>
+            </solution>
+        </example>
+        
+        <example><p>If we add in the new neighbor with a $5 million household income, then there will be 101 data values, 
+            and the 51st value will be the median. As we discovered in the last example, the 51st value is $35 thousand. 
+            Notice that the new neighbor did not affect the median in this case. The median is not swayed as much by 
+            outliers as the mean is.</p>
+        </example>
+
+        <p>In addition to the mean and the median, there is one other common measurement of the "typical" value of a data 
+            set: the mode.</p>
+
+        <definition><title>Mode</title>
+            <p>The <term>mode</term> is the element of the data set that occurs most frequently.</p>
+        </definition>
+
+        <p>The mode is fairly useless with data like weights or heights where there are a large number of possible values. 
+            The mode is most commonly used for categorical data, for which median and mean cannot be computed.</p>
+
+        <example>
+            <p>In our vehicle color survey, we collected the data</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Color</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>Blue</cell>
+                        <cell>3</cell>
+                    </row>
+                    <row>
+                        <cell>Green</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell>Red</cell>
+                        <cell>4</cell>
+                    </row>
+                    <row>
+                        <cell>White</cell>
+                        <cell>3</cell>
+                    </row>
+                    <row>
+                        <cell>Black</cell>
+                        <cell>2</cell>
+                    </row>
+                    <row>
+                        <cell>Grey</cell>
+                        <cell>3</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <p>For this data, Green is the mode, since it is the data value that occurred the most frequently.</p>
+            
+        </example>
+
+            <p>It is possible for a data set to have more than one mode if several categories have the same frequency, or 
+                no modes if each every category occurs only once.</p>
+
+        <problem><title>Try It Now</title>
+            <p>Reviewers were asked to rate a product on a scale of 1 to 5. Find</p>
+            <p>
+            <ol label = "a">
+            <li>The mean rating</li>
+                <li>The median rating</li>
+            <li>The mode rating</li>
+            </ol>
+            </p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Rating</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>1</cell>
+                        <cell>4</cell>
+                    </row>
+                       <row>
+                        <cell>2</cell>
+                        <cell>8</cell>
+                    </row>
+                       <row>
+                        <cell>3</cell>
+                        <cell>7</cell>
+                    </row>
+                       <row>
+                        <cell>4</cell>
+                        <cell>3</cell>
+                    </row>
+                       <row>
+                        <cell>5</cell>
+                        <cell>1</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <answer>
+                <p>
+                <ol label = "a">
+                    <li>The mean is <m>\frac{1\cdot 4+2 \cdot 8+3 \cdot 7+4 \cdot 3+5 \cdot 1}{23} = 2.5</m></li>
+                    <li>There are 23 data values, so the median will be the 12th data value. Ratings of 1 are the first 4 
+                        values, while a rating of 2 are the next 8 values, so the 12th value will be a rating of 2. The 
+                        median is 2.</li>
+                    <li>The mode is the most frequent rating. The mode rating is 2.</li>
+                </ol>
+                </p>
+            </answer>
+        </problem>
+
+ 
+    </section>
+    
+    <section xml:id = "section-data-spread">
+        
+         <objectives>
+            <ul>
+                <li>Compute the range of a data set</li>
+                <li>Compute sample and population standard deviations</li>
+                <li>Use the coefficient of variation to compare standard deviations</li>
+                <li>Create a five-number summary of a data set</li>
+                <li>Create a box plot for a data set</li>
+            </ul>
+        </objectives>
+        
+        <title>Measures of Variation</title>
+    
+    <p>Consider these three sets of quiz scores:</p>
+
+    <p>Section A: 5 5 5 5 5 5 5 5 5 5</p>
+    <p>Section B: 0 0 0 0 0 10 10 10 10 10</p>
+    <p>Section C: 4 4 4 5 5 5 5 6 6 6</p>
+
+    <p>All three of these sets of data have a mean of 5 and median of 5, yet the sets of scores are clearly quite 
+        different. In section A, everyone had the same score; in section B half the class got no points and the other half 
+        got a perfect score, assuming this was a 10-point quiz. Section C was not as consistent as section A, but not as 
+        widely varied as section B.</p>
+
+    <p>In addition to the mean and median, which are measures of the "typical" or "middle" value, we also need a measure 
+        of how "spread out" or varied each data set is.</p>
+
+    <p>There are several ways to measure this "spread" of the data. The first is the simplest and is called the range.</p>
+
+    <definition><title>Range</title>
+        <p>The range is the difference between the maximum value and the minimum value of the data set.</p>
+    </definition>
+
+    <example>
+        <p>Using the quiz scores from above,</p>
+
+        <p>For section A, the range is 0 since both maximum and minimum are 5 and <m>5-5=0</m></p>
+
+        <p>For section B, the range is 10 since <m>10-0=10</m></p>
+
+        <p>For section C, the range is 2 since <m>6-4=2</m></p>
+    </example>
+
+    <p>In the last example, the range seems to be revealing how spread out the data is. However, suppose we add a fourth 
+        section, Section D, with scores 0 5 5 5 5 5 5 5 5 10.</p>
+
+    <p>This section also has a mean and median of 5. The range is 10, yet this data set is quite different than Section B. 
+        To better illuminate the differences, we’ll have to turn to more sophisticated measures of variation.</p>
+    
+    <note><title>Standard Deviation</title>
+        <p>The standard deviation is a measure of variation based on measuring how far each data value deviates, or is \
+            different, from the mean. A few important characteristics:</p>
+        <p>
+        <ul>
+            <li>Standard deviation is always positive. Standard deviation will be zero if all the data values are equal, 
+                and will get larger as the data spreads out.</li>
+            <li>Standard deviation has the same units as the original data.</li>
+            <li>Standard deviation, like the mean, can be highly influenced by outliers.</li>
+        </ul>
+        </p>
+    </note>
+    
+    <p>Using the data from section D, we could compute for each data value the difference between the data value and the 
+        mean:</p>
+    
+    <table>
+        <tabular halign = "center">
+            <row header = "yes" bottom = "minor">
+                <cell>data value</cell>
+                <cell>deviation: data value - mean</cell>
+            </row>
+            <row>
+                <cell>0</cell>
+                <cell><m>0 - 5 = -5</m></cell>
+            </row>
+             <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>5</cell>
+                <cell><m>5 - 5 = 0</m></cell>
+            </row>
+              <row>
+                <cell>10</cell>
+                <cell><m>10 - 5 = 5</m></cell>
+            </row>
+        </tabular>
+    </table>
+    
+    <p>We would like to get an idea of the "average" deviation from the mean, but if we find the average of the values in 
+        the second column the negative and positive values cancel each other out (this will always happen), so to prevent 
+        this we square every value in the second column:</p>
+
+    <p>We then add the squared deviations up to get <m>25+0+0+0+0+0+0+0+0+25=50</m>. Ordinarily we would then divide by 
+        the number of scores, <m>n</m>, (in this case, 10) to find the mean of the deviations. But we only do this if the 
+        data set represents a population; if the data set represents a sample (as it almost always does), we instead 
+        divide by <m>n-1</m> (in this case, <m>10-1=9</m>).</p>
+    
+    <p>So in our example, we would have <m>\frac{50}{10}=5</m> if section D represents a population and <m>\frac{50}{9}=
+        5.56</m> if section D represents a sample. These values (5 and 5.56) are called, respectively, the population 
+        variance and the sample variance for section D.</p>
+
+    <p>Variance can be a useful statistical concept, but note that the units of variance in this instance would be points-
+        squared since we squared all of the deviations. What are points-squared? Good question. We would rather deal with 
+        the units we started with (points in this case), so to convert back we take the square root and get:</p>
+    
+        <p>population standard deviation = <m>\sqrt{\frac{50}{10}}=\sqrt{5} \approx 2.2</m></p>
+
+        <p>sample standard deviation = <m>\sqrt{\frac{50}{9}} \approx 2.4</m></p>
+
+    <p>If we are unsure whether the data set is a sample or a population, we will usually assume it is a sample, and we 
+        will round answers to one more decimal place than the original data, as we have done above.</p>
+    
+    <note><title>Computing Standard Deviation</title>
+        <p>To compute standard deviation:</p>
+        <p>
+        <ol label = "1">
+            <li>Find the deviation of each data from the mean. In other words, subtract the mean from the data value.</li>
+            <li>Square each deviation.</li>
+            <li>Add the squared deviations.</li>
+            <li>Divide by <m>n</m>, the number of data values, if the data represents a whole population; divide by 
+                <m>n-1</m>, if the data is from a sample.</li>
+            <li>Compute the square root of the result.</li>
+        </ol>
+        </p>
+    </note>
+
+    <example>
+
+        <p>Computing the standard deviation for Section B above, we first calculate that the mean is 5. Using a table can 
+            help keep track of your computations for the standard deviation:</p>
+        
+        <table>
+        <tabular halign = "center">
+            <row header = "yes" bottom = "minor">
+                <cell>data value</cell>
+                <cell>deviation</cell>
+                <cell>deviation squared</cell>
+            </row>
+            <row>
+                <cell>0</cell>
+                <cell><m>0 - 5 = -5</m></cell>
+                <cell><m>\left(-5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>0</cell>
+                <cell><m>0 - 5 = -5</m></cell>
+                <cell><m>\left(-5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>0</cell>
+                <cell><m>0 - 5 = -5</m></cell>
+                <cell><m>\left(-5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>0</cell>
+                <cell><m>0 - 5 = -5</m></cell>
+                <cell><m>\left(-5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>0</cell>
+                <cell><m>0 - 5 = -5</m></cell>
+                <cell><m>\left(-5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>10</cell>
+                <cell><m>10 - 5 = 5</m></cell>
+                <cell><m>\left(5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>10</cell>
+                <cell><m>10 - 5 = 5</m></cell>
+                <cell><m>\left(5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>10</cell>
+                <cell><m>10 - 5 = 5</m></cell>
+                <cell><m>\left(5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>10</cell>
+                <cell><m>10 - 5 = 5</m></cell>
+                <cell><m>\left(5\right)^2 = 25</m></cell>
+            </row>
+             <row>
+                <cell>10</cell>
+                <cell><m>10 - 5 = 5</m></cell>
+                <cell><m>\left(5\right)^2 = 25</m></cell>
+            </row>
+            </tabular>
+        </table>
+        
+        <p>Assuming this data represents a population, we will add the squared deviations, divide by 10, the number of 
+            data values, and compute the square root:</p>
+        
+        <me>\sqrt{\frac{25+25+25+25+25+25+25+25+25+25}{10}} = \sqrt{\frac{250}{10}} = \sqrt{25} = 5 </me>
+        
+        <p>Notice that the standard deviation of this data set is much larger than that of section D since the data in 
+            this set is more spread out.</p>
+             
+    </example>
+        <p>For comparison, the standard deviations of all four sections are:</p>
+        
+        <p>Section A: 5 5 5 5 5 5 5 5 5 5; Standard Deviation = 0</p>
+        <p>Section B: 0 0 0 0 0 10 10 10 10 10; Standard Deviation = 5</p>  
+        <p>Section C: 4 4 4 5 5 5 5 6 6 6; Standard Devation = 0.8</p>  
+        <p>Section D: 0 5 5 5 5 5 5 5 5 10; Standard Deviation = 2.2</p>
+
+        <problem><title>Try It Now</title>
+            <p>The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99. Find the 
+                standard deviation of the prices.</p>
+            <answer>$0.261</answer>
+        </problem>
+        
+        <p>If we want to compare standard deviations of different datasets, with different means, we have to compute
+            the <term>coefficient of varation</term>. The coefficient of variation gives information about how large the 
+            standard deviation is relative to the mean.</p>
+        
+        <definition><title>Coefficient of Variation</title>
+            <p>For a dataset with a mean value of <m>\mu</m> and and standard deviation of <m>s</m>, the coefficient
+                of variation is:</p>
+            <me>CV = \frac{s}{\mu} \cdot 100\%</me>
+        </definition>
+        
+        <example>
+            <p>You are comparing stock prices for two different stocks over the past year.</p>
+            <p>Stock A has mean price of $3.50 per share with a standard deviation of $0.30.</p>
+            <p>Stock B has mean price of $8 per share with a standard deviation of $0.50.</p>
+            
+            <p>
+            <ol label = "a">
+                <li><p>Compute the coefficient of variation for each stock.</p></li>
+                
+                <li><p>Which stock had more consistent prices over the past year?</p></li>
+            </ol>
+            </p>
+            
+            <solution>
+                <p>
+                <ol label = "a">
+                    <li><me>CV_A = \frac{0.30}{3.50} = 0.086 = 8.6\%</me>
+                    <me>CV_B = \frac{0.50}{8} = 0.0625 = 6.25\%</me>
+                        <p>Stock A has a CV of 8.6% and Stock B has a CV of 6.25%</p></li>
+                    <li><p>Since Stock A has a larger CV, it had prices that were more
+                    spread out.  Therefore, Stock B had more consistent prices over the 
+                        past year.</p></li>
+                </ol>
+                </p>
+            </solution>
+                
+
+        </example>
+        
+        <p>Where standard deviation is a measure of variation based on the mean, quartiles are based on the median.</p>
+
+        <defintion><title>Quartiles</title>
+            <p>Quartiles are values that divide the data in quarters.</p>
+            <p>The first quartile (<m>Q_1</m>) is the value so that 25% of the data values are below it; the third 
+                quartile (<m>Q_3</m>) is the value so that 75% of the data values are below it. You may have guessed that 
+                the second quartile is the same as the median, since the median is the value so that 50% of the data 
+                values are below it.</p>
+
+            <p>This divides the data into quarters; 25% of the data is between the minimum and <m>Q_1</m>, 25% is between 
+                <m>Q_1</m> and the median, 25% is between the median and <m>Q_3</m>, and 25% is between <m>Q_3</m> and the 
+                maximum value.</p>
+        </defintion>
+        
+        <p>While quartiles are not a 1-number summary of variation like standard deviation, the quartiles are used with 
+            the median, minimum, and maximum values to form a 5 number summary of the data.</p>
+
+        <definition><title>Five number summary</title><p>The five number summary takes this form:</p>
+            <p>Minimum, <m>Q_1</m>, Median, <m>Q_3</m>, Maximum</p>
+        </definition>
+
+            <p>To find the first quartile, we need to find the data value so that 25% of the data is below it. If <m>n</m> 
+                is the number of data values, we compute a locator by finding 25% of <m>n</m>. If this locator is a 
+                decimal value, we round up, and find the data value in that position. If the locator is a whole number, we 
+                find the mean of the data value in that position and the next data value. This is identical to the process 
+                we used to find the median, except we use 25% of the data values rather than half the data values as the 
+                locator.</p>
+            
+             <note><title>Finding <m>Q_1</m></title>
+                <p>To find the first quartile, <m>Q_1</m>:</p>
+                <p>Begin by ordering the data from smallest to largest</p>
+                <p>Compute the locator: <m>L=0.25n</m></p>
+                <p>If L is a decimal value: Round up to <m>L+</m></p>
+                <p>Use the data value in the <m>L+^{th}</m> position</p>
+                <p>If L is a whole number: Find the mean of the data values in the <m>L^{th}</m> and <m>L+1^{th}</m> 
+                    positions.</p>
+            </note>
+           
+
+            <note><title>Finding <m>Q_3</m></title>
+                <p>To find the third quartile, <m>Q_3</m>:</p>
+                <p>Use the same procedure as for <m>Q_1</m>, but with locator:<m>L=0.75n</m></p>
+            </note>
+
+            <p>Examples should help make this clearer.</p>
+        
+        <example>
+            <p>Suppose we have measured 9 females and their heights (in inches), sorted from smallest to largest are:</p>
+
+            <p>59 60 62 64 66 67 69 70 72</p>
+
+            <p>To find the first quartile we first compute the locator: 25% of 9 is <m>L=0.25\cdot 9=2.25</m>. 
+                Since this value is not a whole number, we round up to 3.</p> 
+            <p>The first quartile will be the third data value: 62 inches.</p>
+
+            <p>To find the third quartile, we again compute the locator: 75% of 9 is <m>0.75 \cdot 9=6.75</m>. Since this 
+                value is not a whole number, we round up to 7.</p>
+            <p>The third quartile will be the seventh data value: 69 inches.</p>
+        </example>
+        
+        <example>
+            <p>Suppose we had measured 8 females and their heights (in inches), sorted from smallest to largest are:</p>
+
+            <p>59 60 62 64 66 67 69 70</p>
+
+            <p>To find the first quartile we first compute the locator: 25% of 8 is <m>L=0.25(8)=2</m>.</p> 
+            
+            <p>Since this value is a whole number, we will find the mean of the 2nd and 3rd data values: 
+                <m>\frac{60+62}{2} = 61</m>, so the first quartile is 61 inches.</p>
+            
+            <p>The third quartile is computed similarly, using 75% instead of 25%. <m>L=0.75(8)=6</m>.</p> 
+            
+            <p>This is a whole number, so we will find the mean of the 6th and 7th data values: <m>\frac{67+69}{2}=68</m>,
+                so <m>Q_3</m> is 68.</p>
+        </example>
+        
+        <p>Note that the median could be computed the same way, using 50%.</p>
+
+        <p>The 5-number summary combines the first and third quartile with the minimum, median, and maximum values.</p>
+
+        <example>
+            <p>For the 9 female sample, the median is 66, the minimum is 59, and the maximum is 72. The 5 number summary 
+                is: 59, 62, 66, 69, 72.</p>
+
+            <p>For the 8 female sample, the median is 65, the minimum is 59, and the maximum is 70, so the 5 number 
+                summary would be: 59, 61, 65, 68, 70.</p>
+        </example>
+        
+        <example>
+            <p>Returning to our quiz score data. In each case, the first quartile locator is <m>0.25\cdot 10=2.5</m>, so 
+                the first quartile will be the 3rd data value, and the third quartile will be the 8th data value. Creating 
+                the five-number summaries:</p>
+
+            <p>Section A: 5 5 5 5 5 5 5 5 5 5; 5-number summary: 5, 5, 5, 5, 5</p>
+            <p>Section B: 0 0 0 0 0 10 10 10 10 10; 5-number summary: 0, 0, 5, 10, 10</p>
+            <p>Section C: 4 4 4 5 5 5 5 6 6 6; 5-number summary: 4, 4, 5, 6, 6</p>
+            <p>Section D: 0 5 5 5 5 5 5 5 5 10; 5-number summary: 0, 5, 5, 5, 10</p>
+        </example>
+
+        <p>Of course, with a relatively small data set, finding a five-number summary is a bit silly, since the summary 
+            contains almost as many values as the original data.</p>
+        
+        <problem><title>Try It Now</title>
+            <p>The total cost of textbooks for the term was collected from 36 students. Find the 5 number summary of this 
+                data.</p>
+
+            <p>$140 $160 $160 $165 $180 $220 $235 $240 $250 $260 $280 $285</p>
+
+            <p>$285 $285 $290 $300 $300 $305 $310 $310 $315 $315 $320 $320</p>
+
+            <p>$330 $340 $345 $350 $355 $360 $360 $380 $395 $420 $460 $460</p>
+            
+            <answer>The 5 number summary of this data is: $140, $255, $307.50, $347.50, $460</answer>
+            
+        </problem>
+        
+        <example>
+            <p>Returning to the household income data from earlier, create the five-number summary.</p>
+            
+             <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Income (thousands of dollars)</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>15</cell>
+                        <cell>6</cell>
+                    </row>
+                      <row>
+                        <cell>20</cell>
+                        <cell>8</cell>
+                    </row>
+                    <row>
+                        <cell>25</cell>
+                        <cell>11</cell>
+                    </row>
+                      <row>
+                        <cell>30</cell>
+                        <cell>17</cell>
+                    </row>
+                    <row>
+                        <cell>35</cell>
+                        <cell>19</cell>
+                    </row>
+                      <row>
+                        <cell>40</cell>
+                        <cell>20</cell>
+                    </row>
+                    <row>
+                        <cell>45</cell>
+                        <cell>12</cell>
+                    </row>
+                      <row>
+                        <cell>50</cell>
+                        <cell>7</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <solution>
+                <p>By adding the frequencies, we can see there are 100 data values represented in the table. In Example 
+                    20, we found the median was $35 thousand. We can see in the table that the minimum income is $15 
+                    thousand, and the maximum is $50 thousand.</p>
+                
+                <p>To find <m>Q_1</m>, we calculate the locator: <m>L = 0.25\left(100\right) = 25</m>. This is a whole 
+                    number, so <m>Q_1</m> will be the mean of the 25th and 26th data values.</p>
+
+                <p>Counting up in the data as we did before,</p>
+                 <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Income (thousands of dollars)</cell>
+                        <cell>Frequency</cell>
+                        <cell>Values</cell>
+                    </row>
+                    <row>
+                        <cell>15</cell>
+                        <cell>6</cell>
+                        <cell>1 - 6</cell>
+                    </row>
+                      <row>
+                        <cell>20</cell>
+                        <cell>8</cell>
+                        <cell>7 - 14</cell>
+                    </row>
+                    <row>
+                        <cell>25</cell>
+                        <cell>11</cell>
+                        <cell>15 - 25</cell>
+                    </row>
+                      <row>
+                        <cell>30</cell>
+                        <cell>17</cell>
+                          <cell>26 - 42</cell>
+                    </row>
+                    <row>
+                        <cell>35</cell>
+                        <cell>19</cell>
+                        <cell>43 - 61</cell>
+                    </row>
+                      <row>
+                        <cell>40</cell>
+                        <cell>20</cell>
+                          <cell>62 - 81</cell>
+                    </row>
+                    <row>
+                        <cell>45</cell>
+                        <cell>12</cell>
+                        <cell>82 - 93</cell>
+                    </row>
+                      <row>
+                        <cell>50</cell>
+                        <cell>7</cell>
+                          <cell>94 - 100</cell>
+                    </row>
+                </tabular>
+            </table>
+               
+                <p>The 25th data value is $25 thousand, and the 26th data value is $30 thousand, so <m>Q_1</m> will be the 
+                    mean of these: <m>\frac{25+30}{2}=\$27.5</m> thousand.</p>
+                
+                <p>To find <m>Q_3</m>, we calculate the locator: <m>L=0.75\left(100\right)=75</m>. This is a whole number, 
+                    so <m>Q_3</m> will be the mean of the 75th and 76th data values. Looking at our table above, we can
+                    see that both the 75th and 76th data values are $40 thousand, so <m>Q_3</m> will be $40 thousand.</p>
+
+                <p>Putting these values together into a five-number summary, we get: 15, 27.5, 35, 40, 50</p>
+
+                <p>Note that the 5 number summary divides the data into four intervals, each of which will contain about 
+                    25% of the data. In the previous example, that means about 25% of households have income between $40 
+                    thousand and $50 thousand.</p>
+            </solution>
+        </example>
+
+        <p>For visualizing data, there is a graphical representation of a 5-number summary called a box plot, or box and 
+            whisker graph.</p>
+        
+        <note><title>Box Plot</title>
+            <p>A box plot is a graphical representation of a five-number summary.</p>
+        </note>
+        
+        <p>To create a box plot, a number line is first drawn. A box is drawn from the first quartile to the third 
+            quartile, and a line is drawn through the box at the median. “Whiskers” are extended out to the minimum and 
+            maximum values.</p>
+
+        <example>
+
+            <p>The box plot below is based on the 9 female height data with 5 number summary:</p>
+
+            <p>59, 62, 66, 69, 72</p>
+            
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image xml:id ="boxplot1">
+                <description>A box is drawn from 62 to 69, with whiskers that extend from 59 to 72. A line
+                    is drawn through the box at 66.</description>
+                <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[ width = \textwidth,
+                height = 0.25\textwidth,
+                    ]
+            \addplot+ [
+                boxplot prepared={
+                lower whisker=59,
+                lower quartile=62,
+                median=66,
+                upper quartile=69,
+                upper whisker=72,
+                },]
+            coordinates{ };
+                    
+
+            \end{axis}
+
+            \end{tikzpicture}
+                    </latex-image>
+            </image>
+            </figure>
+        </example>
+        
+        <example>
+            <p>The box plot below is based on the household income data with 5 number summary:</p>
+
+            <p>15, 27.5, 35, 40, 50</p>
+           
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+           <image xml:id ="boxplot2">
+               <description>A box is drawn from 27.5 to 40, with whiskers extending from 15 to 50. A line is drawn 
+                   through the box at 35.</description>
+               
+                <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[ width = \textwidth,
+                height = 0.25\textwidth,
+                    ]
+            \addplot+ [
+                boxplot prepared={
+                lower whisker=15,
+                lower quartile=27.5,
+                median=35,
+                upper quartile=40,
+                upper whisker=50,
+                },]
+                    coordinates { };
+            \end{axis}
+
+            \end{tikzpicture}
+                    </latex-image>
+            </image>
+            </figure>
+
+            
+        </example>
+        
+        <example>
+            <p>The box plot of service times (in minutes) for two fast-food restaurants is shown below.</p>
+            
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image xml:id ="boxplot3">
+                <description>The box for Store 2 is drawn from 1.1 to 5.7 with whiskers extending from 0.5 to 9.6. A line 
+                    goes through the box at 2.1. The box for Store 1 is drawn from 1.8 to 2.9 with whiskers 
+                    extending from 0.7 to 6.3. A line goes through the box at 2.3</description>
+                <latex-image>
+             \begin{tikzpicture}
+            \begin{axis}[ width = \textwidth,
+                height = 0.5\textwidth,
+                    ytick = {1 , 2},
+                    yticklabels = {Store 2, Store 1},
+                    ]
+            \addplot+ [
+                boxplot prepared={
+                lower whisker=0.5, 
+                lower quartile=1.1,
+                median=2.1,
+                upper quartile=5.7, 
+                upper whisker=9.6,
+                },]
+                    coordinates { }
+                     [above, font=\tiny]
+node at
+(boxplot box cs: \boxplotvalue{lower whisker},1)
+{\pgfmathprintnumber{\boxplotvalue{lower whisker}}}
+node at
+(boxplot box cs: \boxplotvalue{lower quartile},1)
+{\pgfmathprintnumber{\boxplotvalue{lower quartile}}}
+node[left] at
+(boxplot box cs: \boxplotvalue{median},0.5)
+{\pgfmathprintnumber{\boxplotvalue{median}}}
+node at
+(boxplot box cs: \boxplotvalue{upper quartile},1)
+{\pgfmathprintnumber{\boxplotvalue{upper quartile}}}
+node at
+(boxplot box cs: \boxplotvalue{upper whisker},1)
+{\pgfmathprintnumber{\boxplotvalue{upper whisker}}};
+                    
+                    \addplot+ [
+                boxplot prepared={
+                lower whisker=0.7, 
+                lower quartile=1.8,
+                median=2.3,
+                upper quartile=2.9, 
+                upper whisker=6.3,
+                },]
+                    coordinates { }
+                    [above, font=\tiny]
+node at
+(boxplot box cs: \boxplotvalue{lower whisker},1)
+{\pgfmathprintnumber{\boxplotvalue{lower whisker}}}
+node at
+(boxplot box cs: \boxplotvalue{lower quartile},1)
+{\pgfmathprintnumber{\boxplotvalue{lower quartile}}}
+node[left] at
+(boxplot box cs: \boxplotvalue{median},0.5)
+{\pgfmathprintnumber{\boxplotvalue{median}}}
+node at
+(boxplot box cs: \boxplotvalue{upper quartile},1)
+{\pgfmathprintnumber{\boxplotvalue{upper quartile}}}
+node at
+(boxplot box cs: \boxplotvalue{upper whisker},1)
+{\pgfmathprintnumber{\boxplotvalue{upper whisker}}};
+                    
+            \end{axis}
+
+            \end{tikzpicture}
+                </latex-image>
+            </image>
+            </figure>
+
+            <p>While store 2 had a slightly shorter median service time (2.1 minutes vs. 2.3 minutes), store 2 is less 
+                consistent, with a wider spread of the data.</p>
+
+            <p>At store 1, 75% of customers were served within 2.9 minutes, while at store 2, 75% of customers were served 
+                within 5.7 minutes.</p>
+
+            <p>Which store should you go to in a hurry? That depends upon your opinions about luck - 25% of customers at 
+                store 2 had to wait between 5.7 and 9.6 minutes.</p>
+        </example>
+        
+        <example>
+            <p>The boxplot below is based on the birth weights (in kg) of infants with severe idiopathic respiratory 
+distress syndrome (SIRDS).   The boxplot is separated to show the birth weights of infants 
+                who survived and those that did not.</p>
+            
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+            
+    <image xml:id ="boxplot4">
+        <description>The box for those who survived goes from 1.7 to 2.9 with whiskers extending from 1.15 
+            to 3.6. A line is drawn through the box at 2.3. The box for those who died is drawn from 1.2 to 2.25
+            with whiskers extending from 1.05 to 2.7. A line is drawn through the box at 1.6.</description>
+                <latex-image>
+             \begin{tikzpicture}
+            \begin{axis}[ width = \textwidth,
+                height = 0.5\textwidth,
+                    ytick = {1 , 2},
+                    yticklabels = {Died, Survived},
+                    ]
+            \addplot+ [
+                boxplot prepared={
+                lower whisker=1.05, 
+                lower quartile=1.2,
+                median=1.6,
+                upper quartile=2.25, 
+                upper whisker=2.7,
+                },]
+                    coordinates { };
+                    
+                    \addplot+ [
+                boxplot prepared={
+                lower whisker=1.15, 
+                lower quartile=1.7,
+                median=2.3,
+                upper quartile=2.9, 
+                upper whisker=3.6,
+                },]
+                    coordinates { };
+                    
+            \end{axis}
+
+            \end{tikzpicture}
+                </latex-image>
+            </image> 
+            </figure>
+ 
+<p>Comparing the two groups, the boxplot reveals that the birth weights of the infants that died 
+appear to be, overall, smaller than the weights of infants that survived.  In fact, we can see 
+that the median birth weight of infants that survived is the same as the third quartile of the 
+    infants that died.</p> 
+ 
+<p>Similarly, we can see that the first quartile of the survivors is larger than the median weight 
+of those that died, meaning that over 75% of the survivors had a birth weight larger than the 
+    median birth weight of those that died.</p>  
+ 
+<p>Looking at the maximum value for those that died and the third quartile of the survivors, we 
+can see that over 25% of the survivors had birth weights higher than the heaviest infant that 
+    died.</p>
+ 
+<p>The box plot gives us a quick, albeit informal, way to determine that birth weight is quite 
+    likely linked to survival of infants with SIRDS.</p>
+        </example>
+
+    </section>
+    
+    <exercises xml:id = "exercises-data">
+        
+    <exercise xml:id = "data-ex-1">
+        <statement><p>Scores on a Math test are listed below.</p>
+            <p>80, 90, 50, 100, 50, 80, 90, 70, 70, 30, 70, 80, 100, 80, 60, 70, 70, 
+                100, 80, 60, 70, 60, 50, 50</p>
+            <p>
+            <ol label = "a">
+                <li>Complete the frequency table for the Math test scores</li>
+                <li>Construct a bar graph of the data</li>
+                <li>Construct a pie chart of the data</li>
+            </ol>
+            </p>
+        </statement>
+    </exercise>
+
+        <exercise xml:id = "data-ex-2">
+            <statement><p>A group of adults where asked how many cars they had in their household. Their 
+                results are listed below.</p>
+                <p>1, 1, 4, 2, 2, 1, 2, 3, 1, 2, 2, 2, 3, 1, 3, 2, 1, 1, 4, 1, 2, 1, 2, 2</p>
+                <p>
+                <ol label = "a">
+                    <li>Complete the frequency table for the car number data</li>
+                    <li>Construct a bar graph of the data</li>
+                    <li>Construct a pie chart of the data</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-3">
+            <statement><p>A group of adults were asked how many children they have in their families. The bar graph 
+                shows the number of adults who indicated each number of children.</p>
+                <figure xml:id = "data_exercise_graph1">
+                    <caption>Image Credit: RRCC</caption>
+                <image width = "50%" xml:id="bargraph_exercise1">
+                    <description>Bars labeled with numbers of children of 0, 1, 2, 3, 4, and 5 have corresponding 
+                        frequencies of 
+                    5, 3, 4, 2, 0 and 1</description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={0, 1, 2, 3, 4, 5},
+                xtick=data,  
+                xtick pos=left,
+                ytick pos=left,
+                scaled y ticks = false,
+                ymajorgrids,
+                ylabel = {Frequency},
+                xlabel = {Number of Children},
+                ytick={0,1, 2, 3, 4, 5, 6},
+                axis line style={Gray},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (0, 5) 
+                    (1, 3) 
+                    (2, 4)
+                    (3, 2)
+                    (4, 0)
+                    (5, 1)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+                    </figure>
+                
+                <p>
+                <ol label = "a">
+                    <li>How many adults were questioned?</li>
+                    <li>What percentage of the adults questioned had 0 children?</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>15</li>
+                        <li>33%</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "data-ex-4">
+            <statement><p>Jasmine was interested in how many days it would take an order from an online store
+                to arrive at her door. The graph below shows the data she collected.</p>
+                <figure xml:id = "data_exercise_graph2">
+                    <caption>Image Credit: RRCC</caption>
+                <image width = "50%" xml:id = "bargraph_exercise2">
+                    <description>A bars labeled with the shipping times 1, 2, 3, 4, and 5 have corresponding frequencies of 
+                        4, 8, 6, 0 and 1.</description>
+                <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={1, 2, 3, 4, 5},
+                xtick=data,  
+                xtick pos=left,
+                ytick pos=left,
+                scaled y ticks = false,
+                ymajorgrids,
+                ylabel = {Frequency},
+                xlabel = {Shipping Time (Days)},
+                ytick={0,1, 2, 3, 4, 5, 6, 7, 8},
+                axis line style={Gray},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates { 
+                    (1, 4) 
+                    (2, 8)
+                    (3, 6)
+                    (4, 0)
+                    (5, 1)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+                </figure>
+                
+                <p>
+                <ol label = "a">
+                    <li>How many orders did she place?</li>
+                    <li>What percentage of orders arrived in one day?</li>
+                </ol>
+                </p>
+                
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-5">
+            <statement><p>
+                The bar graph below shows the percentage of students who received each letter grade on their last 
+                English paper. The class contains 20 students. What number of students earned an A on their paper?</p>
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+                 <image width = "50%" xml:id="bargraph_exercise3">
+                     <description>Bars labeled A, B, C, and D have corresponding frequencies of 
+                         25, 35, 25, and 15.</description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={A, B, C, D},
+                xtick=data,  
+                xtick pos=left,
+                ytick pos=left,
+                scaled y ticks = false,
+                ytick={0,10,20,30,40,50},
+                ymajorgrids,
+                ylabel = {Frequency (Percentage)},
+                xlabel = {Grade},
+                axis line style={Gray},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (A,25) 
+                    (B,35) 
+                    (C,25)
+                    (D, 15)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+                </figure>
+            </statement>
+            
+            <answer>5</answer>
+        </exercise>
+        
+        <exercise xml:id = "data-ex-6">
+            <statement><p>Kori categorized her spending for this month into four categories: Rent, Food, Fun, and Other. 
+                The percents she spent in each category are pictured here. If she spent a total of $2600 this month, how 
+                much did she spend on rent?</p>
+                <image width = "50%" source = "images/120_Data_Exercise_Screenshot1.png">
+                <description>A pie chart with four wedges labeled: Fun (16%), Food (24%), Rent (26%)
+                    and Other (34%)</description></image>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "data-ex-7">
+            <statement>
+                <p>The data below gives the price (in dollars) of a gallon of gasoline at several gas stations in the 
+                    area.</p>
+                
+                <p>2.54, 2.78, 3.23, 3.56, 2.98, 2.77, 3.15, 3.24, 3.35, 2.87, 2.49, 2.63, 3.15</p>
+                
+                <p>
+                <ol label = "a">
+                    <li>Group the data into class intervals of width 50 cents, starting at $2.00.</li>
+                    <li>Create a histogram of the data.</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-8">
+            <statement>
+                <p>A rec center counted the number of people using the center once every hour on Sundays to decide if it 
+            should reduce its hours.  The results they obtained are summarized in the graph below.</p>
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+
+                <image width = "50%" xml:id="bargraph_exercise4">
+                    <description>Bars with labeled with numbers of vistors of 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and
+                        12 have corresponding frequencies of 7, 8, 5, 0, 3, 8, 10, 7, 9, 5, 0, 3 and 2.</description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12},
+                xtick=data,  
+                xtick pos=left,
+                ytick pos=left,
+                scaled y ticks = false,
+                ytick={0, 2, 4, 6, 8, 10, 12},
+                ymajorgrids,
+                axis line style={Gray},
+                xlabel = {Number of Visitors},
+                ylabel = {Frequency},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                    (0, 7)
+                (1, 8) (2, 5) (3, 0)
+                (4, 3) (5, 8) (6, 10)
+                (7, 7) (8, 9) (9, 5)
+                (10, 0) (11, 3) (12, 2)
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+                </figure>
+                
+                <p>
+                <ol label = "a">
+                    <li>What was the smallest number of visitors in the rec center and how many times did it occur?</li>
+                    <li>For how many hours were visitors counted?</li>
+                    <li>For what percent of the hours counted were there fewer than 5 visitors in the rec center?</li>
+                    <li>If you were deciding whether to reduce hours on Sundays would you want any additional 
+                        information?</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-9">
+            <statement><p>For the dataset:  {2, 5, 8, 10, 15, 25, 25}</p>
+                <p>
+                <ol label = "a">
+                    <li>Find the mean</li>
+                    <li>Find the median</li>
+                    <li>Find the mode</li>
+                    <li>Find the first quartile</li>
+                    <li>Find the third quartile</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>12.86</li>
+                        <li>10</li>
+                        <li>25</li>
+                        <li>5</li>
+                        <li>25</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "data-ex-10">
+            <statement>
+                <p>The table shows Joe’s golf scores from last week:</p>
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Golf Score</cell>
+                            <cell>Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>2</cell>
+                            <cell>6</cell>
+                        </row>
+                         <row>
+                            <cell>3</cell>
+                            <cell>8</cell>
+                        </row>
+                         <row>
+                            <cell>4</cell>
+                            <cell>11</cell>
+                        </row>
+                         <row>
+                            <cell>5</cell>
+                            <cell>4</cell>
+                        </row>
+                         <row>
+                            <cell>6</cell>
+                            <cell>3</cell>
+                        </row>
+                         <row>
+                            <cell>7</cell>
+                            <cell>1</cell>
+                        </row>
+                         <row>
+                            <cell>8</cell>
+                            <cell>2</cell>
+                        </row>
+                         <row>
+                            <cell>10</cell>
+                            <cell>1</cell>
+                        </row>
+                    </tabular>
+                </table>
+                <p>
+                <ol label = "a">
+                    <li>What was the total number of holes of golf that Joe played last week?</li>
+                    <li>What was Joe’s average golf score?</li>
+                    <li>What was Joe’s median golf score?</li>
+                </ol>
+                </p>
+                
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-11">
+            <statement>
+                <p>The graph represents the number of stars earned by 150 performers in a talent competition.  What was 
+                    the mean number of stars earned?</p>
+                
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+                 <image width = "50%" xml:id="bargraph_exercise5">
+                     <description>Bars labeled with 1, 2, 3, 4, and 5 stars have corresponding frequencies of 
+                         20, 25, 40, 35, and 30.</description>
+            <latex-image >
+            \begin{tikzpicture}
+ 
+            \begin{axis} [ybar,
+                symbolic x coords={1, 2, 3, 4, 5},
+                xtick=data,  
+                xtick pos=left,
+                ytick pos=left,
+                scaled y ticks = false,
+                ytick={0, 5, 10, 15, 20, 25, 25, 30, 35, 40, 45},
+                ymajorgrids,
+                axis line style={Gray},
+                xlabel = {Number of Stars},
+                ylabel = {Frequency},
+                every tick/.append style={Gray},]
+                
+                \addplot coordinates {
+                (1, 20) (2, 25) (3, 40)
+                (4, 35) (5, 30) 
+                            };
+            \end{axis}
+ 
+            \end{tikzpicture}
+            </latex-image>
+    </image>
+                </figure>
+            </statement>
+            
+            <answer>3.2</answer>
+        </exercise>
+
+        <exercise xml:id = "data-ex-12">
+            <statement>
+                <p>The scores on a 50-point multiple choice exam are given in the following frequency table.</p>
+                
+                 <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Exam Score</cell>
+                            <cell>Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>38</cell>
+                            <cell>6</cell>
+                        </row>
+                         <row>
+                            <cell>40</cell>
+                            <cell>2</cell>
+                        </row>
+                         <row>
+                            <cell>41</cell>
+                            <cell>5</cell>
+                        </row>
+                         <row>
+                            <cell>43</cell>
+                            <cell>2</cell>
+                        </row>
+                         <row>
+                            <cell>45</cell>
+                            <cell>1</cell>
+                        </row>
+                         <row>
+                            <cell>46</cell>
+                            <cell>1</cell>
+                        </row>
+                         <row>
+                            <cell>49</cell>
+                            <cell>2</cell>
+                        </row>
+                         <row>
+                            <cell>50</cell>
+                            <cell>4</cell>
+                        </row>
+                     </tabular>
+                </table>
+                <p>
+                <ol label = "a">
+                    <li>What was the mean score on the exam?</li>
+                    <li>The median score?</li>
+                    <li>The first quartile?</li>
+                    <li>The third quartile?</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-13">
+            <statement><p>A group of diners were asked how much they would pay for a meal. Their responses were:</p>
+                <p>$7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00</p>
+                <p>
+                <ol label = "a">
+                    <li>Find the mean</li>
+                    <li>Find the median</li>
+                    <li>Write the 5-number summary for this data</li>
+                    <li>Find the standard deviation of this data</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>$7.78</li>
+                        <li>$7.75</li>
+                        <li>$7.00, $7.375, $7.75, $8.125, $9.00</li>
+                        <li>0.637</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "data-ex-14">
+            <statement><p>You recorded the time in seconds it took for 8 participants to solve a puzzle. The times 
+                were:</p> 
+                <p>15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.</p>
+                
+                <p>
+                <ol label = "a">
+                    <li>Find the mean</li>
+                    <li>Find the median</li>
+                    <li>Write the 5-number summary for this data</li>
+                    <li>Find the standard deviation of this data</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-15">
+            <statement><p>Refer back to the bar graph about the group of adults who were asked about the
+                number of children they have.</p>
+                <xref ref = "data_exercise_graph1" />
+                <p>
+                <ol label = "a">
+           
+                    <li>Compute the mean number of children for the group surveyed</li>
+                    <li>Compute the median number of children for the group surveyed</li>
+                    <li>Write the 5-number summary for this data.</li>
+                    <li>Create box plot.</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>1.4667</li>
+                        <li>Median is 8th data value: 1 child</li>
+                        <li>0,0 1,2,5</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise xml:id = "data-ex-16">
+            <statement><p>Refer back to bar graph analyzing the number shipping days for an online order to arrive.</p>
+                <xref ref = "data_exercise_graph2" />
+                <p>
+                <ol label = "a">
+                    <li>Compute the mean number of shipping days</li>
+                    <li>Compute the median number of shipping days</li>
+                    <li>Write the 5-number summary for this data.</li>
+                    <li>Create box plot.</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+           
+       <exercise xml:id = "data-ex-17">
+           <statement>
+               <p>The box plot below shows salaries for Actuaries and CPAs. </p>
+               
+               <figure>
+                   <caption>Image Credit: RRCC</caption>
+                                   
+        <image xml:id ="boxplot_exercise1">
+            <description>The box for CPA is drawn from 40 to 90 with whiskers extending from 30 to 100. A line is 
+                drawn through the box at 75. The box for the Actuary is drawn from 75 to 95 with whiskers 
+                extending from 40 to 105. A line is drawn through the box at 90.</description>
+                <latex-image>
+             \begin{tikzpicture}
+            \begin{axis}[ width = \textwidth,
+                height = 0.5\textwidth,
+                    ytick = {1 , 2},
+                    yticklabels = {Actuary, CPA},
+                    ]
+            \addplot+ [
+                boxplot prepared={
+                lower whisker=40, 
+                lower quartile=75,
+                median=90,
+                upper quartile=95, 
+                upper whisker=105,
+                },]
+                    coordinates { };
+                    
+                    \addplot+ [
+                boxplot prepared={
+                lower whisker=30, 
+                lower quartile=40,
+                median=75,
+                upper quartile=90, 
+                upper whisker=100,
+                },]
+                    coordinates { };
+                    
+            \end{axis}
+
+            \end{tikzpicture}
+                </latex-image>
+            </image>
+               </figure>
+               <p>
+               <ol label = "a">
+                   <li>Kendra makes the median salary for an Actuary.Kelsey makes the first quartile salary for a CPA. 
+                       Who makes more money? How much more?</li>
+                   <li>What percentage of actuaries makes more than the median salary of a CPA?</li>
+               </ol>
+               </p>
+           </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-18">
+            <statement>
+                <p>The dataset below summarizes the starting salaries of 20 recent graduates. Find the standard deviation 
+                    of this dataset.</p>
+                 <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Salary</cell>
+                            <cell>Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>20,000</cell>
+                            <cell>1</cell>
+                        </row>
+                         <row>
+                            <cell>30,000</cell>
+                            <cell>4</cell>
+                        </row>
+                         <row>
+                            <cell>40,000</cell>
+                            <cell>5</cell>
+                        </row>
+                         <row>
+                            <cell>50,000</cell>
+                            <cell>9</cell>
+                        </row>
+                         <row>
+                            <cell>150,000</cell>
+                            <cell>1</cell>
+                        </row>
+                     </tabular>
+                </table>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-19">
+            <statement>The test scores in a history class had a mean of 76% with a standard deviation of 4%.  If an A 
+                is given to anyone with a test score 2 standard deviations above the mean, what is the cutoff score to 
+                earn an A?</statement>
+            
+            <answer>84%</answer>
+        </exercise>
+
+        <exercise xml:id = "data-ex-20">
+            <statement>
+                <p>A manager of a human resources department is investigating the number of sick days employees took 
+                    during 
+                    the last year. For employees in marketing, the average number of sick days was 4.5 with a standard 
+                    deviation of 2. For those in accounting the mean number of sick days was 5.8 with a standard
+                    deviation of 3. Compute and compare the coefficients of variation for each set of data.</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-21">
+            <statement>Ellen’s average commute time is 30 minutes with a standard deviation of 8 minutes. Zac’s commute 
+                takes an average of 45 minutes with a standard deviation of 10 minutes. Whose commute has more consistent 
+                times?
+                
+            </statement>
+            
+            <hint>Compare the coefficients of variation.</hint>
+            <answer>Zac's commute times are more consistent. (The coefficent of variation is 0.22 for Zac and 0.27 for Ellen.)</answer>
+        </exercise>
+
+
+        <exercise xml:id = "data-ex-22">
+            <statement><p>Studies are often done by pharmaceutical companies to determine the effectiveness of a 
+                treatment program. Suppose that a new AIDS antibody drug is currently under study. It is given to 
+                patients once the AIDS symptoms have revealed themselves. Of interest is the average length of time in 
+                months patients live once starting the treatment. Two researchers each follow a different set of 40 AIDS 
+                patients from the start of treatment until their deaths. The following data (in months) are 
+                collected.</p>
+
+                <p>Researcher 1: 3; 4; 11; 15; 16; 17; 22; 44; 37; 16; 14; 24; 25; 15; 26; 27; 33; 29; 35; 44; 13; 21; 
+                    22; 10; 12; 8; 40; 32; 26; 27; 31; 34; 29; 17; 8; 24; 18; 47; 33; 34</p>
+
+                <p>Researcher 2: 3; 14; 11; 5; 16; 17; 28; 41; 31; 18; 14; 14; 26; 25; 21; 22; 31; 2; 35; 44; 23; 21; 21; 
+                    16; 12; 18; 41; 22; 16; 25; 33; 34; 29; 13; 18; 24; 23; 42; 33; 29</p>
+                <p>
+                <ol label = "a">
+                    <li>Create comparative histograms of the data</li>
+                    <li>Create comparative boxplots of the data</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-23">
+            <statement>
+                <p>A graph appears below showing the number of adults and children who prefer each type of soda. There 
+                    were 130 adults and kids surveyed. Discuss some ways in which the graph below could be improved.</p>
+                
+                <image width = "50%" source = "images/120_Data_Exercise_Screenshot2.png">
+                <description>A 3-dimensional bar graph compares the number of adults and number of who
+                    prefer Coke, Diet Coke, Sprite, and Cherry Coke. The vertical axis starts at 20 and 
+                    goes up 45. Frequncies are not labeled but can be estimated.</description></image>
+                
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "data-ex-24">
+            <statement>
+                <p>Make up three data sets with 5 numbers each that have:</p>
+                <p>
+                <ol label = "a">
+                    <li>the same mean but different standard deviations.</li>
+                    <li>the same mean but different medians.</li>
+                    <li>the same median but different means.</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+    </exercises>
+    
+    <exercises xml:id = "ch-test-data"><title>Chapter Test</title>
+        
+        <exercise>
+            <statement>
+                <p>A group of voters was surveyed about the issues that are most important to them. The results 
+                    are summarized in the table.
+                    
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Number of Respondants</cell>
+                                <cell>Most Important Issue</cell>
+                            </row>
+                            <row>
+                                <cell>38</cell>
+                                <cell>Economy</cell>
+                            </row>
+                            <row>
+                                <cell>14</cell>
+                                <cell>Climate Change</cell>
+                            </row>
+                            <row>
+                                <cell>25</cell>
+                                <cell>Healthcare</cell>
+                            </row>
+                            <row>
+                                <cell>12</cell>
+                                <cell>Immigration</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    
+                    <ol label = "a">
+                        <li>How many people were surveyed?</li>
+                        <li>Create a bar graph to display this data.</li>
+                        <li>Create a pie chart to display this data.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>89</li>
+                        <li>
+                            <image source = "images/bar-graph-ch-test.png"></image>
+                        </li>
+                        <li>
+                            <image source = "images/pie-chart-ch-test.png"></image>
+                        </li>
+                    </ol>
+                </p>
+            </answer>
+            
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Scores on a test are given below. Organize this data into class intervals with a width of 5, 
+                    starting at 30.  Create a histogram for the data.</p>
+                
+                <p>48, 53, 32, 41, 46, 33, 42, 51, 36, 37, 47, 39, 54, 33, 48, 40, 36, 35, 49, 52, 39, 44</p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Greater than or equal to</cell>
+                                <cell right = "minor">Less than</cell>
+                                <cell>Frequency</cell>
+                            </row>
+                            <row>
+                                <cell>30</cell>
+                                <cell right = "minor">35</cell>
+                                <cell>3</cell>
+                            </row>
+                            <row>
+                                <cell>35</cell>
+                                <cell right = "minor">40</cell>
+                                <cell>6</cell>
+                            </row>
+                            <row>
+                                <cell>40</cell>
+                                <cell right = "minor">45</cell>
+                                <cell>4</cell>
+                            </row>
+                            <row>
+                                <cell>45</cell>
+                                <cell right = "minor">50</cell>
+                                <cell>5</cell>
+                            </row>
+                            <row>
+                                <cell>50</cell>
+                                <cell right = "minor">55</cell>
+                                <cell>4</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    
+                     <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image width = "75%" xml:id = "histogram-ch-test">
+                <description>A histogram that corresponds to the frequency table.</description>
+                <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+                 width = \textwidth,
+                    height = 0.75\textwidth,
+                    ymin=0, ymax=8,
+                    xmin = 0, xmax = 60,
+                    minor y tick num = 1,
+                    minor x tick num = 1,
+                       ymajorgrids,
+                    title = {Score},
+                ylabel = {Frequency},
+                    xlabel = {Test Scores},
+                    xtick distance = 5,
+            ]
+            \addplot+[ybar interval,mark=no, fill=blue!25] plot coordinates {
+                    (0, 0)
+                    (5, 0)
+                    (10, 0)
+                    (15, 0)
+                    (20, 0)
+                    (25, 0)
+                    (30, 3)
+                    (35, 6)
+                    (40, 4)
+                    (45, 5)
+                    (50, 4)
+                    (55, 0)
+                    (60, 0)
+                   };
+            \end{axis}
+            \end{tikzpicture}
+           
+                    </latex-image>
+            </image>
+            </figure> 
+                </p>
+            </answer>
+            
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>For the dataset:</p>
+                
+                <me>\{ 8, 4, 8, 9, 8, 7, 3, 2, 1, 9, 8 \}</me>
+                
+                <p>
+                    <ol label = "a">
+                        <li>Find mean, median, and mode.</li>
+                        <li>Give the 5-number summary.</li>
+                        <li>Find sample standard deviation.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li><p>The mean is the sum of the values, divided by the number of values:</p>
+                            <me>\mu = \frac{8+4+8+9+8+7+3+2+1+9+8}{11} = \frac{67}{11}=6.09</me></li>
+                        <p>The median is the middle number. The values (in order, from smallest to largest) are:</p>
+                        <me>\{1, 2, 3, 4, 7, 8, 8, 8, 8, 9, 9 \}</me>
+                        <p>There are 11 numbers, so the 6th value is the median. <m>M = 8</m></p>
+                        <p>The mode is the value that occurs most frequently. The mode is 8.</p>
+                        <li><p>The five-number summary consists of the max, min, median, 1st quartile and 3rd quartile.
+                            </p>
+                            <p>Maximum = 9, Minimum = 1, Median = 8.</p>
+                            <p>To find the 1st quartile, <m>L = 0.25(11) = 2.75</m>. We round up and look at the 3rd value. 
+                                <m>Q_1 = 3</m>.</p>
+                            <p>To find the 3rd quartile, <m>L = 0.75(11) = 8.25</m>. We round up and look at the 9th value.
+                                <m>Q_3 = 8</m>.</p>
+                        </li>
+                        <li>
+                            <p>We will added up squared deviations, divide by 10 (<m>n - 1</m>) and then take the square root of 
+                                the result.</p>
+                            <table>
+                                <tabular halign = "center">
+                                         <row header = "yes" bottom = "minor">
+                                             <cell right = "minor">Frequency</cell>
+                                             <cell right = "minor"><m>x</m></cell>
+                                             <cell right = "minor"><m>x - \mu</m></cell>
+                                             <cell><m>(x - \mu)^2</m></cell>
+                                    </row>
+                                    <row>
+                                        <cell right = "minor">1</cell>
+                                        <cell right = "minor">1</cell>
+                                        <cell right = "minor"><m>1 - 6.09 = -5.09</m></cell>
+                                        <cell><m>(-5.09)^2=25.9081</m></cell>
+                                    </row>
+                                    <row>
+                                        <cell right = "minor">1</cell>
+                                        <cell right = "minor">2</cell>
+                                        <cell right = "minor"><m>2 - 6.09 = -4.09</m></cell>
+                                        <cell><m>(-4.09)^2=16.7281</m></cell>
+                                    </row>
+                                    <row>
+                                        <cell right = "minor">1</cell>
+                                        <cell right = "minor">3</cell>
+                                        <cell right = "minor"><m>3 - 6.09 = -3.09</m></cell>
+                                        <cell><m>(-3.09)^2=9.5481</m></cell>
+                                    </row>
+                                    <row>
+                                        <cell right = "minor">1</cell>
+                                        <cell right = "minor">4</cell>
+                                        <cell right = "minor"><m>4 - 6.09 = -2.09</m></cell>
+                                        <cell><m>(-2.09)^2=4.3681</m></cell>
+                                    </row>
+                                    <row>
+                                        <cell right = "minor">1</cell>
+                                        <cell right = "minor">7</cell>
+                                        <cell right = "minor"><m>7 - 6.09 = 0.91</m></cell>
+                                        <cell><m>(0.91)^2=0.8281</m></cell>
+                                    </row>
+                                    <row>
+                                        <cell right = "minor">4</cell>
+                                        <cell right = "minor">8</cell>
+                                        <cell right = "minor"><m>8 - 6.09 = 1.91</m></cell>
+                                        <cell><m>(1.91)^2=3.6481</m></cell>
+                                    </row>
+                                    <row>
+                                        <cell right = "minor">2</cell>
+                                        <cell right = "minor">9</cell>
+                                        <cell right = "minor"><m>9 - 6.09 = 2.91</m></cell>
+                                        <cell><m>(2.91)^2=8.4681</m></cell>
+                                    </row>
+                                </tabular>
+                            </table>
+                            <p>The sum of the squared deviations is:
+                                <me>25.9081+16.7281+9.5481+4.3681+0.8281+4\cdot 3.6481+2 \cdot 8.4681=88.9091</me>
+                                Divide by <m>n-1=10</m> and take the square root:
+                                <me>\sqrt{\frac{88.9091}{10}}=2.98</me>
+                            </p>
+                                    
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li><m>\mu = 6.09</m>, <m>M = 8</m>, mode <m>=8</m></li>
+                        <li>Min = 1, Q1 = 3, Median = 8, Q3 = 8, Max = 9</li>
+                        <li>2.98</li>
+                    </ol>
+                </p>
+            </answer>
+                        
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>The table below gives the heights (in inches) of a women’s basketball team.
+                    
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Height</cell>
+                                <cell>Frequency</cell>
+                            </row>
+                            <row>
+                                <cell>64</cell>
+                                <cell>1</cell>
+                            </row>
+                            <row>
+                                <cell>65</cell>
+                                <cell>2</cell>
+                            </row>
+                             <row>
+                                <cell>67</cell>
+                                <cell>3</cell>
+                            </row>
+                            <row>
+                                <cell>68</cell>
+                                <cell>6</cell>
+                            </row>
+                             <row>
+                                <cell>69</cell>
+                                <cell>4</cell>
+                            </row>
+                            <row>
+                                <cell>70</cell>
+                                <cell>5</cell>
+                            </row>
+                             <row>
+                                <cell>72</cell>
+                                <cell>1</cell>
+                            </row>
+                            <row>
+                                <cell>73</cell>
+                                <cell>1</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    
+                    <ol label = "a">
+                        <li>Find the mean height.</li>
+                        <li>Find the median height.</li>
+                        <li>Find the first and third quartile.</li>
+                        <li>Find the population standard deviation.</li>
+                        <li>Create a box-and-whiskers plot.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>68.4 inches</li>
+                        <li>68 inches</li>
+                        <li><m>Q_1 = 67, Q_3 = 70</m></li>
+                        <li>2.06 inches</li>
+                        <li>See solution.</li>
+                    </ol>
+                </p>
+            </answer>
+            
+             <solution>
+                <p>
+                    <ol label = "a">
+                        <li>There are <m>n = 1+2+3+6+4+5+1+1=23</m>values.
+                        <me>\mu = \frac{1\cdot 64 + 2\cdot 65 + 3 \cdot 67 + 6 \cdot 68 + 4 \cdot 69 + 5
+                            \cdot 70 + 1 \cdot 72 + 1 \cdot 73}{23}</me>
+                            <me>\mu = \frac{1574}{23}=68.4</me></li>
+                        <li><p>There are <m>n = 23</m> values. To find the median, <m>L = 0.5(23) = 11.5</m>.
+                            Round up and look at the 12th value.</p>
+                        <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Height</cell>
+                                <cell>Frequency</cell>
+                                <cell>Values</cell>
+                            </row>
+                            <row>
+                                <cell>64</cell>
+                                <cell>1</cell>
+                                <cell>1</cell>
+                            </row>
+                            <row>
+                                <cell>65</cell>
+                                <cell>2</cell>
+                                <cell>2 - 3</cell>
+                            </row>
+                             <row>
+                                <cell>67</cell>
+                                <cell>3</cell>
+                                 <cell>4 - 6</cell>
+                            </row>
+                            <row>
+                                <cell>68</cell>
+                                <cell>6</cell>
+                                <cell>7 - 12</cell>
+                            </row>
+                             <row>
+                                <cell>69</cell>
+                                <cell>4</cell>
+                                 <cell>13 - 16</cell>
+                            </row>
+                            <row>
+                                <cell>70</cell>
+                                <cell>5</cell>
+                                <cell>17 - 21</cell>
+                            </row>
+                             <row>
+                                <cell>72</cell>
+                                <cell>1</cell>
+                                 <cell>22</cell>
+                            </row>
+                            <row>
+                                <cell>73</cell>
+                                <cell>1</cell>
+                                <cell>23</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                            
+                            <p>The 12th value is 68. <m>M = 68</m>.</p>
+                        
+                        
+                        </li>
+                        <li><p>To find the 1st quartile, <m>L = 0.25(23)=5.75</m>. Round up and look at the 6th value.
+                            <m>Q_1 = 67</m>.</p>
+                            <p>To find the 3rd quartile, <m>L = 0.75(23) = 17.25</m>. Round up and look at the 18th value.
+                                <m>Q_3 = 70</m>.</p></li>
+                        <li><p>To find the population standard deviation, add up squared deviations from the mean, divide
+                            by the number values in the dataset, and take the square root.</p>
+                        <table>
+                            <tabular halign = "center">
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">Frequency</cell>
+                                    <cell right = "minor"><m>x</m></cell>
+                                    <cell right = "minor"><m>x - \mu</m></cell>
+                                    <cell><m>(x-\mu)^2</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">1</cell>
+                                    <cell right = "minor"><m>64</m></cell>
+                                    <cell right = "minor"><m>64 - 68.4 = -4.4</m></cell>
+                                    <cell><m>(-4.4)^2 = 19.36</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">2</cell>
+                                    <cell right = "minor"><m>65</m></cell>
+                                    <cell right = "minor"><m>65 - 68.4 = -3.4</m></cell>
+                                    <cell><m>(-3.4)^2 = 11.56</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">3</cell>
+                                    <cell right = "minor"><m>67</m></cell>
+                                    <cell right = "minor"><m>67 - 68.4 = -1.4</m></cell>
+                                    <cell><m>(-1.4)^2 = 1.96</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">6</cell>
+                                    <cell right = "minor"><m>68</m></cell>
+                                    <cell right = "minor"><m>68 - 68.4 = -0.4</m></cell>
+                                    <cell><m>(-0.4)^2 = 0.16</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">4</cell>
+                                    <cell right = "minor"><m>69</m></cell>
+                                    <cell right = "minor"><m>69 - 68.4 = 0.6</m></cell>
+                                    <cell><m>(0.6)^2 = 0.36</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">5</cell>
+                                    <cell right = "minor"><m>70</m></cell>
+                                    <cell right = "minor"><m>70 - 68.4 = 1.6</m></cell>
+                                    <cell><m>(1.6)^2 = 2.56</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">1</cell>
+                                    <cell right = "minor"><m>72</m></cell>
+                                    <cell right = "minor"><m>72 - 68.4 = 3.6</m></cell>
+                                    <cell><m>(3.6)^2 = 12.96</m></cell>
+                                </row>
+                                <row header ="yes" bottom = "minor">
+                                    <cell right = "minor">1</cell>
+                                    <cell right = "minor"><m>73</m></cell>
+                                    <cell right = "minor"><m>73 - 68.4 = 4.6</m></cell>
+                                    <cell><m>(4.6)^2 = 21.16</m></cell>
+                                </row>
+                            </tabular>
+                            </table>
+                            
+                            <p>Add up the squared deviations, by multiplyig them by their frequencies:</p>
+                            
+                            <me>1 \cdot 19.36+2\cdot 11.56+3 \cdot 1.96 + 6\cdot 0.16 + 4\cdot 0.36+5\cdot 2.56 + 
+                                1\cdot 12.96 + 1 \cdot 21.16 = 97.68</me>
+                            
+                            <p>Then divide by <m>n = 23</m> and take the square root:</p>
+                            
+                            <me>\sqrt{\frac{97.68}{23}}=2.06</me>
+                                    
+                                    
+                                    </li>
+                        <li>The box will extend from <m>Q_1 = 67</m> to <m>Q_3 = 70</m> with a line drawn at the median,
+                            <m>M = 68</m>.  The whiskers extend from the minimum value of <m>64</m> to the maximum value of 
+                            <m>73</m>.
+                         <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image xml:id ="boxplot-answer-ch-test">
+                <description>The answer to this part of the exercise.</description>
+                <latex-image>
+             \begin{tikzpicture}
+            \begin{axis}[ width = \textwidth,
+                height = 0.25\textwidth,
+                     ytick = {1},
+                    yticklabels = {Heights},
+                    ]
+            \addplot+ [
+                boxplot prepared={
+                lower whisker=64,
+                lower quartile=67,
+                median=68,
+                upper quartile=70,
+                upper whisker=73,
+                },]
+            coordinates{ };
+                    
+
+            \end{axis}
+
+            \end{tikzpicture}
+                </latex-image>
+            </image>
+            </figure>
+                        
+                        
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+                        
+            
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>The box plots below show the ages of both men and women Olympic gymnasts. Use the box plots to 
+                    answer the following questions.</p>
+                
+                <figure>
+                <caption>Image Credit: RRCC</caption>
+            <image xml:id ="boxplot-ch-test">
+                <description>The female Olympic gymnast box goes from 16 to 19 with whiskers
+                extending from 14 to 24. A line is drawn at 17.  The male Olympic gymnast
+                box goes from 21 to 26 with whiskers extending from 16 to 32. A line is drawn at 23.</description>
+                <latex-image>
+             \begin{tikzpicture}
+            \begin{axis}[ width = \textwidth,
+                height = 0.5\textwidth,
+                    ytick = {1 , 2},
+                    yticklabels = {Male, Female},
+                    ]
+            \addplot+ [
+                boxplot prepared={
+                lower whisker=16, 
+                lower quartile=21,
+                median=23,
+                upper quartile=26, 
+                upper whisker=32,
+                },]
+                    coordinates { }
+                     ;
+                    
+                    \addplot+ [
+                boxplot prepared={
+                lower whisker=14, 
+                lower quartile=16,
+                median=17,
+                upper quartile=19, 
+                upper whisker=24,
+                },]
+                    coordinates { }
+               ;
+                    
+            \end{axis}
+
+            \end{tikzpicture}
+                </latex-image>
+            </image>
+                </figure>
+                
+                <p>
+                    <ol label ="a">
+                        <li>What is the median age of a female Olympic gymnast?</li>
+                        <li>25% of the female gymnasts are ___ or older.</li>
+                        <li>____ % of the male gymnasts are 23 or younger.</li>
+                        <li>Which gender has a larger range in ages of athletes?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>17</li>
+                        <li>16</li>
+                        <li>50%</li>
+                        <li>Male gymnast ages have a larger range.</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>The mean price of a dozen eggs is $2.19 with a standard deviation of $0.09. The mean price of 
+                    a pound of chicken is $5.89 with a standard deviation of $0.15. Which item had more 
+                    variability in prices? Explain.</p>
+            </statement>
+            
+            <solution>
+                <p>The coefficient of variation for the eggs is:
+                    <me>CV = \frac{s}{\mu} \times 100\% = \frac{0.09}{2.19} \times 100\% = 4.1\%</me>
+                    
+                    The coefficient of varation for the chicken is:
+                    
+                    <me>CV = \frac{0.15}{5.89} \times 100\% = 2.5\%</me>
+                    
+                    Since the coefficient of varation is larger for the eggs, there is more variability in 
+                    egg prices than chicken.</p>
+            </solution>
+            
+            <answer>The eggs have a larger variability in price because they have a larger 
+                coefficient of variation.</answer>
+        </exercise>
+
+        
+    </exercises>
+    
+    
+    
+</chapter>

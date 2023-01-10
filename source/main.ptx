@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- This is the main file of the pretext template book provided -->
+<!-- by the `pretext new book` command.  The main.ptx here always-->
+<!-- starts with <pretext> tags.  In this example, the main file -->
+<!-- just imports other .ptx files which contain content. Open   -->
+<!-- those files to see more pretext features                    -->
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./meta_docinfo.ptx" />
+
+  <!-- The <book> tags wrap all the content.  Change the @xml:id   -->
+  <!-- to some short (non-spaced) description of your book         -->
+  <book xml:id="my-book">
+    <!-- The book needs a title and can have a subtitle  -->
+    <title>Math for Liberal Arts</title>
+  
+
+  
+    <xi:include href="./frontmatter.ptx" />
+
+    <xi:include href="./ProblemSolving.ptx" />
+    <xi:include href="./Sets.ptx"/>
+    <xi:include href="./Logic.ptx" />
+    <xi:include href="./GrowthModels.ptx" />
+    <xi:include href="./Finance.ptx" />
+    <xi:include href="./Statistics.ptx" />
+    <xi:include href="./Data.ptx" />
+    <xi:include href="./Counting.ptx" />
+    <xi:include href="./Probability.ptx" />
+    <xi:include href="./Normal.ptx" />
+    <xi:include href="./Voting.ptx" />
+    <xi:include href="./Apportion.ptx" />
+  
+ <!--   <xi:include href="./meta_backmatter.ptx" /> -->
+  </book>
+</pretext>

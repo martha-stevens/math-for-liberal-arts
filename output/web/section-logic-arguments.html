@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Arguments</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math for Liberal Arts">
+<meta property="book:author" content="RRCC Math Department">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-book.html"><span class="title">Math for Liberal Arts</span></a></h1>
+<p class="byline">RRCC Math Department</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-logic-conditional.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="Logic.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="exercises-logic.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="attribution.html" class="internal"><span class="title">Attributions</span></a></div></li>
+<li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ProbSolve.html" class="internal"><span class="codenumber">1</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-problemsolve-percent.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Percents</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-proportion.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Proportions and Rates</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-geometry.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometry</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-estimate.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Problem Solving and Estimating</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-1.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-setbasics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Basics</span></a></div></li>
+<li><div class="toc-item"><a href="section-setoperations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Set Operations</span></a></div></li>
+<li><div class="toc-item"><a href="section-setsvenndiagrams.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Venn Diagrams</span></a></div></li>
+<li><div class="toc-item"><a href="section-setssurveyproblems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Survey Problems</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="sets-ch-test.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Logic</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-logic-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Logic</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-1" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Boolean Logic</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-2" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-3" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-4" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Statements in Symbolic Form.</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-truthtables.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Truth Tables</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-5" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables: Conjuction (and), Disjunction (or), Negation (not)</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-6" class="internal"><span class="codenumber">3.2.2</span> <span class="title">De Morgan's Laws</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-conditional.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-7" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Truth Tables: Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-8" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Alternate Forms of Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-9" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Biconditional Statements</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="section-logic-arguments.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Arguments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-10" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Argument Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-11" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Evaluating Dedutive Arguments with Truth Tables</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-12" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Forms of Arguments</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-13" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Logical Fallacies in Common Language</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-logic.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="logic-ch-test.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Growth.html" class="internal"><span class="codenumber">4</span> <span class="title">Algebraic Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Linear Growth</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-algebra-variation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Modeling Using Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-14" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Solving Direct Variation Problems</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-15" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Solving Inverse Variation Prolblems</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-growth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="algebra-ch-test.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Finance.html" class="internal"><span class="codenumber">5</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-finance-interest.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-16" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-17" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Compound Interest</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-finance-annuities.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Annuities</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-payout.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Payout Annuities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-finance-loans.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Loans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-18" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Loans</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-19" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Amortization Schedules</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-20" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-21" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Which Equation to Use?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-finance.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="finance-ch-test.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Stats.html" class="internal"><span class="codenumber">6</span> <span class="title">Statistics</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-stats-samples.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Populations, Samples and Data Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-samplingmethods.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Sampling Methods and Sampling Bias</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-experiments.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-10.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="stats-ch-test.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Data.html" class="internal"><span class="codenumber">7</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-data-graphs.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Presenting Data Graphically</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-mean.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Measures of Central Tendency</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-spread.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-data.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-data.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Counting.html" class="internal"><span class="codenumber">8</span> <span class="title">Counting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-counting-basic.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Basic Counting</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-permutation.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Permutations</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-combinations.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-counting.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-counting.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Probability.html" class="internal"><span class="codenumber">9</span> <span class="title">Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-basics.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Basics</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-prob-events.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Working with Events</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-22" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Complementary Events</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-23" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Probability of two independent events</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-prob-conditional.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Conditional Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-24" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Conditional Probability</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-25" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Bayes Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-prob-counting.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Probability using Permutations and Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-ev.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Expected Value</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-prob.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="prob-ch-test.html" class="internal"><span class="codenumber">9.7</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Normal.html" class="internal"><span class="codenumber">10</span> <span class="title">Normal Distributions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-normal-understanding.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Understanding Normal Distributions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-26" class="internal"><span class="codenumber">10.1.1</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-27" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-normal-empirical.html" class="internal"><span class="codenumber">10.2</span> <span class="title">The Empirical Rule</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-zscores.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-normal.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="normal-ch-test.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Voting.html" class="internal"><span class="codenumber">11</span> <span class="title">Voting Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-preference.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Preference Schedules</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-plurality.html" class="internal"><span class="codenumber">11.2</span> <span class="title">The Plurality Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-28" class="internal"><span class="codenumber">11.2.1</span> <span class="title">Plurality</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-29" class="internal"><span class="codenumber">11.2.2</span> <span class="title">What's Wrong with Plurality?</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-30" class="internal"><span class="codenumber">11.2.3</span> <span class="title">Insincere Voting</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-irv.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Instant Runoff Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-31" class="internal"><span class="codenumber">11.3.1</span> <span class="title">Instant Runoff Voting (IRV)</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-32" class="internal"><span class="codenumber">11.3.2</span> <span class="title">What's Wrong with IRV?</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-borda.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Borda Count</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-33" class="internal"><span class="codenumber">11.4.1</span> <span class="title">Borda Count</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-34" class="internal"><span class="codenumber">11.4.2</span> <span class="title">What's Wrong with Borda Count</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-copeland.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Copeland's Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-35" class="internal"><span class="codenumber">11.5.1</span> <span class="title">Copeland's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-36" class="internal"><span class="codenumber">11.5.2</span> <span class="title">What's Wrong with Copeland's Method?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-voting-arrow.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Where's the Fair Method?</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-approval.html" class="internal"><span class="codenumber">11.7</span> <span class="title">Approval Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-37" class="internal"><span class="codenumber">11.7.1</span> <span class="title">Approval Voting</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-38" class="internal"><span class="codenumber">11.7.2</span> <span class="title">What's Wrong wtih Approval Voting?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-voting.html" class="internal"><span class="codenumber">11.8</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-voting.html" class="internal"><span class="codenumber">11.9</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Apportion.html" class="internal"><span class="codenumber">12</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-apportion-hamilton.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Hamilton's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-jefferson.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Jefferson's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-webster.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Webster's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-hunthill.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-apportion.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-apportion.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-logic-arguments"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Arguments</span>
+</h2>
+<article class="objectives goal-like" id="objectives-12"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-340"><div class="para" id="p-derived-li-340">Identify inductive and deductive reasoning.</div></li>
+<li id="li-341"><div class="para" id="p-derived-li-341">Evaluate arguments with truth tables.</div></li>
+<li id="li-342"><div class="para" id="p-derived-li-342">Discover forms of valid and invalid arguments.</div></li>
+<li id="li-343"><div class="para" id="p-derived-li-343">Discuss logical fallacies.</div></li>
+</ul></article><section class="introduction" id="introduction-22">A logical argument is a claim that a set of premises support a conclusion. This section will define the different arguments types and discuss how truth tables can be used to determine whether an arugment is valid or invalid.</section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">Argument Types</span>
+</h3>
+<div class="para" id="p-571">There are two general types of arguments:</div>
+<div class="para" id="p-572">An <dfn class="terminology">inductive argument</dfn> uses a collection of specific examples as its premises and uses them to propose a general conclusion.</div>
+<div class="para" id="p-573">A <dfn class="terminology">deductive argument</dfn> uses a collection of general statements as its premises and uses them to propose a specific situation as the conclusion.</div>
+<article class="example example-like" id="example-68"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-574">The argument “when I went to the store last week I forgot my purse, and when I went today I forgot my purse. I always forget my purse when I go the store” is an inductive argument.</div> <div class="para logical" id="p-575">
+<div class="para">The premises are:</div>
+<ul class="disc">
+<li id="li-344"><div class="para" id="p-derived-li-344">I forgot my purse last week</div></li>
+<li id="li-345"><div class="para" id="p-derived-li-345">I forgot my purse today</div></li>
+</ul>
+</div> <div class="para logical" id="p-576">
+<div class="para">The conclusion is:</div>
+<ul class="disc"><li id="li-346"><div class="para" id="p-derived-li-346">I always forget my purse</div></li></ul>
+</div> <div class="para" id="p-577">Notice that the premises are specific situations, while the conclusion is a general statement. In this case, this is a fairly weak argument, since it is based on only two instances.</div></article><article class="example example-like" id="example-69"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-578">The argument “every day for the past year, a plane flies over my house at 2:00 P.M. A plane will fly over my house every day at 2:00 P.M.” is a stronger inductive argument, since it is based on a larger set of evidence. While it is not necessarily true—the airline may have cancelled its afternoon flight—it is probably a safe bet.</div></article><article class="note remark-like" id="note-12"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating inductive arguments.</span>
+</h4> <div class="para" id="p-579">An inductive argument is never able to prove the conclusion true, but it can provide either weak or strong evidence to suggest that it may be true.</div></article><div class="para" id="p-580">Many scientific theories, such as the big bang theory, can never be proven. Instead, they are inductive arguments supported by a wide variety of evidence. Usually in science, an idea is considered a hypothesis until it has been well tested, at which point it graduates to being considered a theory. Common scientific theories, like Newton’s theory of gravity, have all stood up to years of testing and evidence, though sometimes they need to be adjusted based on new evidence, such as when Einstein proposed the theory of general relativity</div>
+<div class="para" id="p-581">A deductive argument is more clearly valid or not, which makes it easier to evaluate.</div>
+<article class="note remark-like" id="note-13"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating deductive arguments.</span>
+</h4> <div class="para" id="p-582">A deductive argument is considered valid if, assuming that all the premises are true, the conclusion follows logically from those premises. In other words, when the premises are all true, the conclusion must be true.</div></article></section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">Evaluating Dedutive Arguments with Truth Tables</span>
+</h3>
+<div class="para" id="p-583">Arguments can also be analyzed using truth tables, although this can be a lot of work.</div>
+<div class="para" id="p-584">To analyze an argument with a truth table:</div>
+<div class="para logical" id="p-585"><ol class="decimal">
+<li id="li-347"><div class="para" id="p-derived-li-347">Represent each of the premises and the conclusion symbolically</div></li>
+<li id="li-348"><div class="para" id="p-derived-li-348">Create truth tables for each premise and for the conclusion.</div></li>
+<li id="li-349"><div class="para" id="p-derived-li-349">The argument is valid if and only if the conclusion is true when all premises are true.</div></li>
+</ol></div>
+<article class="example example-like" id="example-70"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-586">Consider the argument</div> <div class="para" id="p-587">Premise: If you bought bread, then you went to the store.</div> <div class="para" id="p-588">Premise: You bought bread.</div> <div class="para" id="p-589">Conclusion: You went to the store.</div> <div class="para" id="p-590">While this example is fairly obviously a valid argument, we can analyze it by representing the argument symbolically and then creating truth tables for the premises and conclusion.</div> <div class="para" id="p-591">We’ll let b represent “you bought bread” and s represent “you went to the store”. Then the argument becomes:</div> <div class="para" id="p-592">Premise: <span class="process-math">\(b \to s\)</span>
+</div> <div class="para" id="p-593">Premise: <span class="process-math">\(b\)</span>
+</div> <div class="para" id="p-594">Conclusion: <span class="process-math">\(s\)</span>
+</div> <figure class="table table-like" id="table-20"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.4.6<span class="period">.</span></span><span class="space"> </span>Verifying an Argument</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Variable 1: <span class="process-math">\(b\)</span>
+</th>
+<th scope="col" class="c m b1 r1 l0 t0 lines">Variable 2: <span class="process-math">\(s\)</span>
+</th>
+<th scope="col" class="c m b1 r1 l0 t0 lines">Premise 1: <span class="process-math">\(b\)</span>
+</th>
+<th scope="col" class="c m b1 r1 l0 t0 lines">Premise 2: <span class="process-math">\(b \to s\)</span>
+</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Conclusion: <span class="process-math">\(s\)</span>
+</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines"><em class="alert">T</em></td>
+<td class="c m b0 r1 l0 t0 lines"><em class="alert">T</em></td>
+<td class="c m b0 r0 l0 t0 lines"><em class="alert">T</em></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure> <div class="para" id="p-595">The only row where both premises are true is the first one.  The conclusion is also true in the first row. Since the conclusion is true when both premises are true, this is a valid argument.</div></article><article class="problem example-like" id="problem-18"><h4 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h4> <div class="para" id="p-596">Use truth tables to determine whether the argument is valid:</div> <div class="para" id="p-597">If I have a shovel, I can dig a hole.</div> <div class="para" id="p-598">I dug a hole.</div> <div class="para" id="p-599">Therefore, I had a shovel.</div> <a href="" data-knowl="" class="id-ref answer-knowl original has-tabular" data-refid="hk-answer-92" id="answer-92"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-92"><div class="answer solution-like">
+<div class="para" id="p-600">Let s represent "I have shovel" and d represent "I dug a hole."</div> <div class="para" id="p-601">In symbolic form, the argument is:</div> <div class="para" id="p-602"><span class="process-math">\(s \to d\)</span></div> <div class="para" id="p-603"><span class="process-math">\(d\)</span></div> <div class="para" id="p-604"><span class="process-math">\(s\)</span></div> <div class="para" id="p-605">The truth tables for this argument are:</div> <figure class="table table-like" id="table-21"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.4.8<span class="period">.</span></span><span class="space"> </span>Verifying an Argument</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Variable 1: <span class="process-math">\(s\)</span>
+</th>
+<th scope="col" class="c m b1 r1 l0 t0 lines">Variable 2: <span class="process-math">\(d\)</span>
+</th>
+<th scope="col" class="c m b1 r1 l0 t0 lines">Premise 1: <span class="process-math">\(s \to d\)</span>
+</th>
+<th scope="col" class="c m b1 r1 l0 t0 lines">Premise 2: <span class="process-math">\(d\)</span>
+</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Conclusion: <span class="process-math">\(s\)</span>
+</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines"><em class="alert">T</em></td>
+<td class="c m b0 r1 l0 t0 lines"><em class="alert">T</em></td>
+<td class="c m b0 r0 l0 t0 lines"><em class="alert">T</em></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines"><em class="alert">T</em></td>
+<td class="c m b0 r1 l0 t0 lines"><em class="alert">T</em></td>
+<td class="c m b0 r0 l0 t0 lines"><em class="alert">F</em></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r1 l0 t0 lines">T</td>
+<td class="c m b0 r1 l0 t0 lines">F</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div></figure> <div class="para" id="p-606">Both premises are true in both the first and third rows of the table.  However, the conclusion is false in the third row. Since there is a situation where both premises are true and the conclusion is false (the third row of the table), this is an invalid argument.</div>
+</div></div></article></section><section class="subsection" id="subsection-12"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">Forms of Arguments</span>
+</h3>
+<div class="para" id="p-607">Rather than making a truth table for every argument, we may be able to recognize certain common forms of arguments that are valid (or invalid). If we can determine that an argument fits one of the common forms, we can immediately state whether it is valid or invalid.</div>
+<article class="definition definition-like" id="definition-17"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.9</span><span class="period">.</span><span class="space"> </span><span class="title">Law of Detachment.</span>
+</h4> <div class="para" id="p-608">The law of detachment applies when a conditional and its antecedent are given as premises, and the consequent is the conclusion.</div> <div class="para" id="p-609">The general form is:</div> <div class="para" id="p-610">Premise: <span class="process-math">\(p \to q\)</span>
+</div> <div class="para" id="p-611">Premise: <span class="process-math">\(p\)</span>
+</div> <div class="para" id="p-612">Conclusion: <span class="process-math">\(q\)</span>
+</div></article><article class="example example-like" id="example-71"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-613">Recall this argument from an earlier example:</div> <div class="para" id="p-614">Premise: If you bought bread, then you went to the store.</div> <div class="para" id="p-615">Premise: You bought bread.</div> <div class="para" id="p-616">Conclusion: You went to the store.</div> <div class="para" id="p-617">In symbolic form:</div> <div class="para" id="p-618">Premise: <span class="process-math">\(b \to s\)</span>
+</div> <div class="para" id="p-619">Premise: <span class="process-math">\(b\)</span>
+</div> <div class="para" id="p-620">Conclusion: <span class="process-math">\(s\)</span>
+</div> <div class="para" id="p-621">This argument has the structure described by the law of detachment. (The second premise and the conclusion are simply the two parts of the first premise detached from each other.) Instead of making a truth table, we can say that this argument is valid by stating that it satisfies the law of detachment.</div></article><article class="definition definition-like" id="definition-18"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">Law of Contraposition.</span>
+</h4> <div class="para" id="p-622">The law of contraposition applies when a conditional and the negation of its consequent are given as premises, and the negation of its antecedent is the conclusion.</div> <div class="para" id="p-623">The general form is:</div> <div class="para" id="p-624">Premise: <span class="process-math">\(p \to q\)</span>
+</div> <div class="para" id="p-625">Premise: <span class="process-math">\(\sim q\)</span>
+</div> <div class="para" id="p-626">Conclusion: <span class="process-math">\(\sim p\)</span>
+</div></article><div class="para" id="p-627">Notice that the second premise and the conclusion look like the contrapositive of the first premise, <span class="process-math">\(\sim q \to \sim p\text{,}\)</span> but they have been detached. You can think of the law of contraposition as a combination of the law of detachment and the fact that the contrapositive is logically equivalent to the original statement.</div>
+<article class="example example-like" id="example-72"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-628">Premise: If I drop my phone into the swimming pool, my phone will be ruined.</div> <div class="para" id="p-629">Premise: My phone isn’t ruined.</div> <div class="para" id="p-630">Conclusion: I didn’t drop my phone into the swimming pool.</div> <div class="para" id="p-631">If we let d = I drop the phone in the pool and r = the phone is ruined, then we can represent the argument this way:</div> <div class="para" id="p-632">Premise: <span class="process-math">\(d \to r\)</span>
+</div> <div class="para" id="p-633">Premise: <span class="process-math">\(\sim r\)</span>
+</div> <div class="para" id="p-634">Conclusion: <span class="process-math">\(\sim d\)</span>
+</div> <div class="para" id="p-635">The form of this argument matches what we need to invoke the law of contraposition, so it is a valid argument.</div></article><article class="problem example-like" id="problem-19"><h4 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.4.13</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h4> <div class="para" id="p-636">Is this argument valid?</div> <div class="para" id="p-637">Premise: If you brushed your teeth before bed, then your toothbrush will be wet.</div> <div class="para" id="p-638">Premise: Your toothbrush is dry.</div> <div class="para" id="p-639">Conclusion: You didn’t brush your teeth before bed.</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-93" id="answer-93"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-93"><div class="answer solution-like">Yes, by the Law of Contraposition</div></div></article><article class="definition definition-like" id="definition-19"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.14</span><span class="period">.</span><span class="space"> </span><span class="title">The Transitive Property.</span>
+</h4> <div class="para" id="p-640">The transitive property has as its premises a series of conditionals, where the consequent of one is the antecedent of the next. The conclusion is a conditional with the same antecedent as the first premise and the same consequent as the final premise.</div> <div class="para" id="p-641">The general form is:</div> <div class="para" id="p-642">Premise: <span class="process-math">\(p \to q\)</span>
+</div> <div class="para" id="p-643">Premise: <span class="process-math">\(q \to r\)</span>
+</div> <div class="para" id="p-644">Conclusion: <span class="process-math">\(p \to r\)</span>
+</div></article><article class="example example-like" id="example-73"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.15</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-645">Premise: If a soccer player commits a reckless foul, she will receive a yellow card.</div> <div class="para" id="p-646">Premise: If Hayley receives a yellow card, she will be suspended for the next match.</div> <div class="para" id="p-647">Conclusion: If Hayley commits a reckless foul, she will be suspended for the next match.</div> <div class="para" id="p-648">If we let r = committing a reckless foul, y = receiving a yellow card, and s = being suspended, then our argument looks like this:</div> <div class="para" id="p-649">Premise <span class="process-math">\(r \to y\)</span>
+</div> <div class="para" id="p-650">Premise <span class="process-math">\(y \to s\)</span>
+</div> <div class="para" id="p-651">Conclusion: <span class="process-math">\(r \to s\)</span>
+</div> <div class="para" id="p-652">This argument has the exact structure required to use the transitive property, so it is a valid argument.</div></article><article class="definition definition-like" id="definition-20"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.16</span><span class="period">.</span><span class="space"> </span><span class="title">Dijunctive Syllogism.</span>
+</h4> <div class="para" id="p-653">In a disjunctive syllogism, the premises consist of an or statement and the negation of one of the options. The conclusion is the other option.</div> <div class="para" id="p-654">The general form is:</div> <div class="para" id="p-655">Premise: <span class="process-math">\(p \vee q\)</span>
+</div> <div class="para" id="p-656">Premise: <span class="process-math">\(\sim p\)</span>
+</div> <div class="para" id="p-657">Conclusion: <span class="process-math">\(q\)</span>
+</div></article><div class="para" id="p-658">The order of the two parts of the disjunction isn’t important. In other words, we could have the premises <span class="process-math">\(p \vee q\)</span> and <span class="process-math">\(\sim q\text{,}\)</span> and the conclusion <span class="process-math">\(p\text{.}\)</span>
+</div>
+<article class="example example-like" id="example-74"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.17</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-659">Premise: I can either drive or take the train.</div> <div class="para" id="p-660">Premise: I refuse to drive.</div> <div class="para" id="p-661">Conclusion: I will take the train.</div> <div class="para" id="p-662">If we let d = I drive and t = I take the train, then the symbolic representation of the argument is:</div> <div class="para" id="p-663">Premise <span class="process-math">\(d \vee t\)</span>
+</div> <div class="para" id="p-664">Premise <span class="process-math">\(\sim d\)</span>
+</div> <div class="para" id="p-665">Conclusion: <span class="process-math">\(t\)</span>
+</div> <div class="para" id="p-666">This argument is valid because it has the form of a disjunctive syllogism. I have two choices, and one of them is not going to happen, so the other one must happen.</div></article><div class="para" id="p-667">Keep in mind that, when you are determining the validity of an argument, you must assume that the premises are true. If you don’t agree with one of the premises, you need to keep your personal opinion out of it. Your job is to pretend that the premises are true and then determine whether they force you to accept the conclusion. You may attack the premises in a court of law or a political discussion, of course, but here we are focusing on the structure of the arguments, not the truth of what they actually say.</div>
+<div class="para" id="p-668">We have just looked at four forms of valid arguments; there are two common forms that represent invalid arguments, which are also called <em class="emphasis">fallacies</em>.</div>
+<article class="definition definition-like" id="definition-21"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.18</span><span class="period">.</span><span class="space"> </span><span class="title">Fallacy of the Converse.</span>
+</h4> <div class="para" id="p-669">The fallacy of the converse arises when a conditional and its consequent are given as premises, and the antecedent is the conclusion.</div> <div class="para" id="p-670">The general form is:</div> <div class="para" id="p-671">Premise: <span class="process-math">\(p \to q\)</span>
+</div> <div class="para" id="p-672">Premise: <span class="process-math">\(q\)</span>
+</div> <div class="para" id="p-673">Conclusion: <span class="process-math">\(p\)</span>
+</div></article><div class="para" id="p-674">Notice that the second premise and the conclusion look like the converse of the first premise, <span class="process-math">\(q \to p\text{,}\)</span> but they have been detached. The fallacy of the converse incorrectly tries to assert that the converse of a statement is equivalent to that statement.</div>
+<article class="example example-like" id="example-75"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.19</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-675">Premise: If I drink coffee after noon, then I have a hard time falling asleep that night.</div> <div class="para" id="p-676">Premise: I had a hard time falling asleep last night.</div> <div class="para" id="p-677">Conclusion: I drank coffee after noon yesterday.</div> <div class="para" id="p-678">If we let c = I drink coffee after noon and h = I have a hard time falling asleep, then our argument looks like this:</div> <div class="para" id="p-679">Premise: <span class="process-math">\(c \to h\)</span>
+</div> <div class="para" id="p-680">Premise: <span class="process-math">\(h\)</span>
+</div> <div class="para" id="p-681">Conclusion: <span class="process-math">\(c\)</span>
+</div> <div class="para" id="p-682">This argument uses converse reasoning, so it is an invalid argument. There could be plenty of other reasons why I couldn’t fall asleep: I could be worried about money, my neighbors might have been setting off fireworks, etc.</div></article><article class="definition definition-like" id="definition-22"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.20</span><span class="period">.</span><span class="space"> </span><span class="title">Fallacy of the Converse.</span>
+</h4> <div class="para" id="p-683">The fallacy of the inverse occurs when a conditional and the negation of its antecedent are given as premises, and the negation of the consequent is the conclusion.</div> <div class="para" id="p-684">The general form is:</div> <div class="para" id="p-685">Premise: <span class="process-math">\(p \to q\)</span>
+</div> <div class="para" id="p-686">Premise: <span class="process-math">\(\sim p\)</span>
+</div> <div class="para" id="p-687">Conclusion: <span class="process-math">\(\sim q\)</span>
+</div></article><div class="para" id="p-688">Again, notice that the second premise and the conclusion look like the inverse of the first premise, <span class="process-math">\(\sim p \to \sim q\text{,}\)</span> but they have been detached. The fallacy of the inverse incorrectly tries to assert that the inverse of a statement is equivalent to that statement.</div>
+<article class="example example-like" id="example-76"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.21</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-689">Premise: If you listen to the Grateful Dead, then you are a hippie.</div> <div class="para" id="p-690">Premise: Sky doesn’t listen to the Grateful Dead.</div> <div class="para" id="p-691">Conclusion: Sky is not a hippie.</div> <div class="para" id="p-692">If we let g = listen to the Grateful Dead and h = is a hippie, then this is the argument:</div> <div class="para" id="p-693">Premise: <span class="process-math">\(g \to h\)</span>
+</div> <div class="para" id="p-694">Premise: <span class="process-math">\(\sim g\)</span>
+</div> <div class="para" id="p-695">Conclusion: <span class="process-math">\(\sim h\)</span>
+</div> <div class="para" id="p-696">This argument is invalid because it uses inverse reasoning. The first premise does not imply that all hippies listen to the Grateful Dead; there could be some hippies who listen to Phish instead.</div></article><div class="para" id="p-697">Of course, arguments are not limited to these six basic forms; some arguments have more premises, or premises that need to be rearranged before you can see what is really happening. There are plenty of other forms of arguments that are invalid. If an argument doesn’t seem to fit the pattern of any of these common forms, though, you may want to use a Venn diagram or a truth table instead.</div>
+<div class="para" id="p-698">Lewis Carroll, author of Alice’s Adventures in Wonderland, was a math and logic teacher, and wrote two books on logic. In them, he would propose premises as a puzzle, to be connected using syllogisms. The following example is one such puzzle.</div>
+<article class="example example-like" id="example-77"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.22</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-699">Solve the puzzle. In other words, find a logical conclusion from these premises.</div> <div class="para" id="p-700">All babies are illogical.</div> <div class="para" id="p-701">Nobody is despised who can manage a crocodile.</div> <div class="para" id="p-702">Illogical persons are despised.</div> <div class="para" id="p-703">Let b = is a baby, d = is despised, i = is illogical, and m = can manage a crocodile. Then we can write the premises as:</div> <div class="para" id="p-704"><span class="process-math">\(b \to i\)</span></div> <div class="para" id="p-705"><span class="process-math">\(m \to \sim d\)</span></div> <div class="para" id="p-706"><span class="process-math">\(i \to d\)</span></div> <div class="para" id="p-707">Writing the second premise correctly can be a challenge; it can be rephrased as “If you can manage a crocodile, then you are not despised.”</div> <div class="para" id="p-708">Using the transitive property with the first and third premises, we can conclude that <span class="process-math">\(b \to d\text{;}\)</span> that all babies are despised. Using the contrapositive of the second premise, <span class="process-math">\(d \to \sim m\text{,}\)</span> we can then use the transitive property with <span class="process-math">\(b \to d\)</span> to conclude that <span class="process-math">\(b \to \sim m\text{;}\)</span> that babies cannot manage crocodiles. While it is silly, this is a logical conclusion from the given premises.</div></article><article class="problem example-like" id="problem-20"><h4 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.4.23</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h4> <div class="para" id="p-709">Is this argument valid?</div> <div class="para" id="p-710">Premise: If I go to the party, I’ll be really tired tomorrow.</div> <div class="para" id="p-711">Premise: If I go to the party, I’ll get to see friends.</div> <div class="para" id="p-712">Conclusion: If I don’t see friends, I won’t be tired tomorrow</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-94" id="answer-94"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-94"><div class="answer solution-like">
+<div class="para" id="p-713">Let p = go to party, t = be tired, and f = see friends.</div> <div class="para" id="p-714">Premise: <span class="process-math">\(p \to t\)</span>
+</div> <div class="para" id="p-715">Premise: <span class="process-math">\(p \to f\)</span>
+</div> <div class="para" id="p-716">Conclusion: <span class="process-math">\(\sim f \to \sim t\)</span>
+</div> <div class="para" id="p-717">We could try to rewrite the second premise using the contrapositive to state <span class="process-math">\(\sim f \to \sim p\text{,}\)</span> but that does not allow us to form a syllogism. If I don’t see friends, then I didn’t go the party, but that is not sufficient to claim I won’t be tired tomorrow. Maybe I stayed up all night watching movies.</div>
+</div></div></article></section><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">Logical Fallacies in Common Language</span>
+</h3>
+<div class="para" id="p-718">In the previous discussion, we saw that logical arguments can be invalid when the premises are not true, when the premises are not sufficient to guarantee the conclusion, or when there are invalid chains in logic. There are a number of other ways in which arguments can be invalid, a sampling of which are given here.</div>
+<article class="definition definition-like" id="definition-23"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.24</span><span class="period">.</span><span class="space"> </span><span class="title">Ad hominem.</span>
+</h4> <div class="para" id="p-719">An ad hominem argument attacks the person making the argument, ignoring the argument itself.</div></article><article class="example example-like" id="example-78"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.25</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-720">“Jane says that whales aren’t fish, but she’s only in the second grade, so she can’t be right.”</div> <div class="para" id="p-721">Here the argument is attacking Jane, not the validity of her claim, so this is an ad hominem argument.</div></article><article class="example example-like" id="example-79"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.26</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-722">“Jane says that whales aren’t fish, but everyone knows that they’re really mammals. She’s so stupid.”</div> <div class="para" id="p-723">This certainly isn’t very nice, but it is not ad hominem since a valid counterargument is made along with the personal insult.</div></article><article class="definition definition-like" id="definition-24"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.27</span><span class="period">.</span>
+</h4>Appeal to ignorance <div class="para" id="p-724">This type of argument assumes something it true because it hasn’t been proven false</div></article><article class="example example-like" id="example-80"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.28</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-725">“Nobody has proven that photo isn’t of Bigfoot, so it must be Bigfoot.”</div></article><article class="definition definition-like" id="definition-25"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.29</span><span class="period">.</span><span class="space"> </span><span class="title">Appeal to authority.</span>
+</h4> <div class="para" id="p-726">These arguments attempt to use the authority of a person to prove a claim. While often authority can provide strength to an argument, problems can occur when the person’s opinion is not shared by other experts, or when the authority is irrelevant to the claim.</div></article><article class="example example-like" id="example-81"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.30</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-727">“A diet high in bacon can be healthy; Doctor Atkins said so.”</div> <div class="para" id="p-728">Here, an appeal to the authority of a doctor is used for the argument. This generally would provide strength to the argument, except that the opinion that eating a diet high in saturated fat runs counter to general medical opinion. More supporting evidence would be needed to justify this claim.</div></article><article class="example example-like" id="example-82"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.31</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-729">“Jennifer Hudson lost weight with Weight Watchers, so their program must work.”</div> <div class="para" id="p-730">Here, there is an appeal to the authority of a celebrity. While her experience does provide evidence, it provides no more than any other person’s experience would.</div></article><article class="definition definition-like" id="definition-26"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.32</span><span class="period">.</span><span class="space"> </span><span class="title">Appeal to consequence.</span>
+</h4> <div class="para" id="p-731">An appeal to consequence concludes that a premise is true or false based on whether the consequences are desirable or not.</div></article><article class="example example-like" id="example-83"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.33</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-732">“Humans will travel faster than light: faster-than-light travel would be beneficial for space travel.”</div></article><article class="definition definition-like" id="definition-27"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.34</span><span class="period">.</span><span class="space"> </span><span class="title">False dilemma.</span>
+</h4> <div class="para" id="p-733">A false dilemma argument falsely frames an argument as an “either or” choice, without allowing for additional options.</div></article><article class="example example-like" id="example-84"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.35</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-734">“Either those lights in the sky were an airplane or aliens. There are no airplanes scheduled for tonight, so it must be aliens.”</div> <div class="para" id="p-735">This argument ignores the possibility that the lights could be something other than an airplane or aliens.</div></article><article class="definition definition-like" id="definition-28"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.36</span><span class="period">.</span><span class="space"> </span><span class="title">Circular reasoning.</span>
+</h4> <div class="para" id="p-736">Circular reasoning is an argument that relies on the conclusion being true for the premise to be true.</div></article><article class="example example-like" id="example-85"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.37</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-737">“I shouldn’t have gotten a C in that class; I’m an A student!”</div> <div class="para" id="p-738">In this argument, the student is claiming that because they’re an A student, though shouldn’t have gotten a C. But because they got a C, they’re not an A student.</div></article><article class="definition definition-like" id="definition-29"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.38</span><span class="period">.</span><span class="space"> </span><span class="title">Post hoc (post hoc ergo propter hoc).</span>
+</h4> <div class="para" id="p-739">A post hoc argument claims that because two things happened sequentially, then the first must have caused the second.</div></article><article class="example example-like" id="example-86"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.39</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-740">“Today I wore a red shirt, and my football team won! I need to wear a red shirt every time they play to make sure they keep winning.”</div></article><article class="definition definition-like" id="definition-30"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.40</span><span class="period">.</span><span class="space"> </span><span class="title">Straw man.</span>
+</h4> A straw man argument involves misrepresenting the argument in a less favorable way to make it easier to attack.</article><article class="example example-like" id="example-87"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.41</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-741">“Senator Jones has proposed reducing military funding by 10%. Apparently he wants to leave us defenseless against attacks by terrorists”</div> <div class="para" id="p-742">Here the arguer has represented a 10% funding cut as equivalent to leaving us defenseless, making it easier to attack Senator Jones’ position.</div></article><article class="definition definition-like" id="definition-31"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.42</span><span class="period">.</span><span class="space"> </span><span class="title">Correlation implies causation.</span>
+</h4> <div class="para" id="p-743">Similar to post hoc, but without the requirement of sequence, this fallacy assumes that just because two things are related one must have caused the other. Often there is a third variable not considered.</div></article><article class="example example-like" id="example-88"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.43</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-744">“Months with high ice cream sales also have a high rate of deaths by drowning. Therefore, ice cream must be causing people to drown.”</div> <div class="para" id="p-745">This argument is implying a causal relation, when really both are more likely dependent on the weather; that ice cream and drowning are both more likely during warm summer months.</div></article><article class="problem example-like" id="problem-21"><h4 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.4.44</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h4> <div class="para" id="p-746">Identify the logical fallacy in each of the arguments</div> <div class="para logical" id="p-747"><ol class="lower-alpha">
+<li id="li-350"><div class="para" id="p-derived-li-350">Only an untrustworthy person would run for office. The fact that politicians are untrustworthy is proof of this.</div></li>
+<li id="li-351"><div class="para" id="p-derived-li-351">Since the 1950s, both the atmospheric carbon dioxide level and obesity levels have increased sharply. Hence, atmospheric carbon dioxide causes obesity.</div></li>
+<li id="li-352"><div class="para" id="p-derived-li-352">The oven was working fine until you started using it, so you must have broken it.</div></li>
+<li id="li-353"><div class="para" id="p-derived-li-353">You can’t give me a D in the class because I can’t afford to retake it.</div></li>
+<li id="li-354"><div class="para" id="p-derived-li-354">The senator wants to increase support for food stamps. He wants to take the taxpayers’ hard-earned money and give it away to lazy people. This isn’t fair, so we shouldn’t do it.</div></li>
+</ol></div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-95" id="answer-95"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-95"><div class="answer solution-like"><div class="para logical" id="p-748"><ol class="lower-alpha">
+<li id="li-355"><div class="para" id="p-derived-li-355">Circular</div></li>
+<li id="li-356"><div class="para" id="p-derived-li-356">Correlation does not imply causation</div></li>
+<li id="li-357"><div class="para" id="p-derived-li-357">Post hoc</div></li>
+<li id="li-358"><div class="para" id="p-derived-li-358">Appeal to consequence</div></li>
+<li id="li-359"><div class="para" id="p-derived-li-359">Staw man</div></li>
+</ol></div></div></div></article><div class="para" id="p-749">It may be difficult to identify one particular fallacy for an argument. Consider this argument: “Emma Watson says she’s a feminist, but she posed for these racy pictures. I’m a feminist, and no self-respecting feminist would do that.” Could this be ad hominem, saying that Emma Watson has no self-respect? Could it be appealing to authority because the person making the argument claims to be a feminist? Could it be a false dilemma because the argument assumes that a woman is either a feminist or not, with no gray area in between?</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-logic-conditional.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="exercises-logic.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

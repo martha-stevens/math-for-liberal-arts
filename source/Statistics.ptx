@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Stats" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+
+
+        
+ <!-- Statistics****************************************************************
+       
+************************************************************************************************-->
+    <title>Statistics</title>
+        <introduction>
+            <p>This chapter looks at how statistics are collected and some of the potiential sources of bias.</p>
+            
+         
+         </introduction>
+    
+    <section xml:id = "section-stats-samples">
+        <title>Populations, Samples and Data Types</title>
+        
+        <objectives>
+            <ul>
+                <li>Define populations and samples</li>
+                <li>Compare quantitative and categorical data</li>
+            </ul>
+        </objectives>
+        
+        <p>Like most people, you probably feel that it is important to "take control of your life." But what does this 
+                mean? Partly it means being able to properly evaluate the data and claims that bombard you every day. If you 
+                cannot distinguish good from faulty reasoning, then you are vulnerable to manipulation and to decisions that 
+                are not in your best interest. Statistics provides tools that you need in order to react intelligently to 
+                information you hear or read. In this sense, Statistics is one of the most important things that you can 
+                study.</p>
+
+            <p>To be more specific, here are some claims that we have heard on several occasions. (We are not saying that 
+                each one of these claims is true!)</p>
+        
+        <p>
+            
+            <ul>
+                <li>4 out of 5 dentists recommend Dentyne.</li>
+                <li>Almost 85% of lung cancers in men and 45% in women are tobacco-related.</li>
+                <li>Condoms are effective 94% of the time.</li>
+                <li>Native Americans are significantly more likely to be hit crossing the streets than are people of 
+                    other ethnicities.</li>
+                <li>People tend to be more persuasive when they look others directly in the eye and speak loudly and 
+                    quickly.</li>
+                <li>Women make 75 cents to every dollar a man makes when they work the same job.</li>
+                <li>A surprising new study shows that eating egg whites can increase one's life span.</li>
+                <li>People predict that it is very unlikely there will ever be another baseball player with a batting 
+                    average over 400.</li>
+                <li>There is an 80% chance that in a room full of 30 people that at least two people will share the same 
+                    birthday.</li>
+                <li>79.48% of all statistics are made up on the spot.</li>
+            </ul>
+        </p>
+
+            <p>All of these claims are statistical in character. We suspect that some of them sound familiar; if not, we bet 
+                that you have heard other claims like them. Notice how diverse the examples are; they come from psychology, 
+                health, law, sports, business, etc. Indeed, data and data-interpretation show up in discourse from virtually 
+                every facet of contemporary life.</p>
+
+            <p>Statistics are often presented in an effort to add credibility to an argument or advice. You can see this by 
+                paying attention to television advertisements. Many of the numbers thrown about in this way do not represent 
+                careful statistical analysis. They can be misleading, and push you into decisions that you might find cause 
+                to regret. For these reasons, learning about statistics is a long step towards taking control of your life. 
+                (It is not, of course, the only step needed for this purpose.) These chapters will help you learn 
+                statistical essentials. It will make you into an intelligent consumer of statistical claims.</p>
+
+            <p>You can take the first step right away. To be an intelligent consumer of statistics, your first reflex must 
+                be to question the statistics that you encounter. The British Prime Minister Benjamin Disraeli famously 
+                said, "There are three kinds of lies -- lies, damned lies, and statistics." This quote reminds us why it is 
+                so important to understand statistics. So let us invite you to reform your statistical habits from now on. 
+                No longer will you blindly accept numbers or findings. Instead, you will begin to think about the numbers, 
+                their sources, and most importantly, the procedures used to generate them.</p>
+
+            <p>We have put the emphasis on defending ourselves against fraudulent claims wrapped up as statistics. Just as 
+                important as detecting the deceptive use of statistics is the appreciation of the proper use of statistics. 
+                You must also learn to recognize statistical evidence that supports a stated conclusion. When a research 
+                team is testing a new treatment for a disease, statistics allows them to conclude based on a relatively 
+                small trial that there is good evidence their drug is effective. Statistics allowed prosecutors in the 
+                1950’s and 60’s to demonstrate racial bias existed in jury panels. Statistics are all around you, sometimes 
+                used well, sometimes not. We must learn how to distinguish the two cases.</p>
+                
+        <p>Before we begin gathering and analyzing data we need to characterize the population we are studying. If we want 
+            to study the amount of money spent on textbooks by a typical first-year college student, our population might be 
+            all first-year students at your college. Or it might be:</p>
+         <p>
+        <ul>
+            <li>All first-year community college students in the state of Washington.</li>
+            <li>All first-year students at public colleges and universities in the state of Washington.</li>
+            <li>All first-year students at all colleges and universities in the state of Washington.</li>
+            <li>All first-year students at all colleges and universities in the entire United States.</li>
+        </ul> </p>
+        
+        <definition><title>Population</title>
+            <p>The <term>population</term> of a study is the group the collected data is intended to describe.</p>
+        </definition>
+
+        <p>Sometimes the intended population is called the target population, since if we design our study badly, the 
+            collected data might not actually be representative of the intended population.</p>
+
+        <p>Why is it important to specify the population? We might get different answers to our question as we vary the 
+            population we are studying. First-year students at the University of Washington might take slightly more diverse 
+            courses than those at your college, and some of these courses may require less popular textbooks that cost more; 
+            or, on the other hand, the University Bookstore might have a larger pool of used textbooks, reducing the cost of 
+            these books to the students. Whichever the case (and it is likely that some combination of these and other 
+            factors are in play), the data we gather from your college will probably not be the same as that from the 
+            University of Washington. Particularly when conveying our results to others, we want to be clear about the 
+            population we are describing with our data.</p>
+        
+        <example>
+            <p>A newspaper website contains a poll asking people their opinion on a recent news article. What is the 
+                population?</p>
+
+            <solution><p>While the target (intended) population may have been all people, the real population of 
+                the survey is readers of the website.</p>
+
+                <p>If we were able to gather data on every member of our population, say the average (we will define 
+                    "average" more carefully in a subsequent section) amount of money spent on textbooks by each first-year 
+                    student at your college during the 2009-2010 academic year, the resulting number would be called a 
+                    parameter.</p>
+            </solution>
+        </example>
+        
+        <definition>
+            <title>Parameter</title>
+            <p>A <term>parameter</term> is a value (average, percentage, etc.) calculated using all the data 
+                from a population.</p>
+        </definition>
+
+        <p>We seldom see parameters, however, since surveying an entire population is usually very time-consuming and 
+            expensive, unless the population is very small or we already have the data collected.</p>
+        
+        <definition><title>Census</title>
+            <p>A survey of an entire population is called a <term>census</term>.</p>
+        </definition>
+
+        <p>You are probably familiar with two common censuses: the official government Census that attempts to count the 
+            population of the U.S. every ten years, and voting, which asks the opinion of all eligible voters in a district. 
+            The first of these demonstrates one additional problem with a census: the difficulty in finding and getting 
+            participation from everyone in a large population, which can bias, or skew, the results.</p>
+
+        <p>There are occasionally times when a census is appropriate, usually when the population is fairly small. For 
+            example, if the manager of Starbucks wanted to know the average number of hours her employees worked last week, 
+            she should be able to pull up payroll records or ask each employee directly.</p>
+
+        <p>Since surveying an entire population is often impractical, we usually select a sample to study.</p>
+
+        <definition><title>Sample</title>
+            <p>A <term>sample</term> is a smaller subset of the entire population, ideally one that is fairly representative 
+                of the whole population.</p>
+        </definition>
+
+            <p>We will discuss sampling methods in greater detail in a later section. For now, let us assume that samples 
+                are chosen in an appropriate manner. If we survey a sample, say 100 first-year students at your college, and 
+                find the average amount of money spent by these students on textbooks, the resulting number is called a 
+                statistic.</p>
+            
+            <definition><title>Statistic</title>
+                <p>A <term>statistic</term> is a value (average, percentage, etc.) calculated using the data from a sample.
+                </p>
+            </definition>
+            
+            <example>
+
+                <p>A researcher wanted to know how citizens of Tacoma felt about a voter initiative. To study this, she goes 
+                    to the Tacoma Mall and randomly selects 500 shoppers and asks them their opinion. 60% indicate they are 
+                    supportive of the initiative. What is the sample and population? Is the 60% value a parameter or a 
+                    statistic?</p>
+
+                <solution>
+                    <p>The sample is the 500 shoppers questioned. The population is less clear. While the intended 
+                        population of this survey was Tacoma citizens, the effective population was mall shoppers. There is 
+                        no reason to assume that the 500 shoppers questioned would be representative of all Tacoma 
+                        citizens.</p>
+
+
+                    <p>The 60% value was based on the sample, so it is a statistic.</p>
+                </solution>
+            </example>
+
+            <problem><title>Try It Now</title>
+                <p>To determine the average length of trout in a lake, researchers catch 20 fish and measure them. What is 
+                    the sample and population in this study?</p>
+                
+                <answer>The sample is the 20 fish caught. The population is all fish in the lake. The sample may be somewhat 
+                    unrepresentative of the population since not all fish may be large enough to catch the bait.</answer>
+            </problem>
+
+            <problem><title>Try It Now</title>
+                <p>A college reports that the average age of their students is 28 years old. Is this a statistic or a 
+                    parameter?</p>
+                
+                <answer>This is a parameter, since the college would have access to data on all students (the population).
+                </answer>
+            </problem>
+            
+        <p>Once we have gathered data, we might wish to classify it. Roughly speaking, data can be classified as categorical 
+            data or quantitative data.</p>
+        
+        <definition><title>Quantitative and Categorical Data</title>
+            <p>Categorical (qualitative) data are pieces of information that allow us to classify the objects under 
+                investigation into various categories.</p>
+            <p>Quantitative data are responses that are numerical in nature and with which we can perform meaningful 
+                arithmetic calculations.</p>
+        </definition>
+
+        <example>
+            <p>We might conduct a survey to determine the name of the favorite movie that each person in a math class saw in 
+                a movie theater.</p>
+
+            <p>When we conduct such a survey, the responses would look like: Finding Nemo, The Hulk, or Terminator 3: Rise 
+                of the Machines. We might count the number of people who give each answer, but the answers themselves do not 
+                have any numerical values: we cannot perform computations with an answer like "Finding Nemo." This would be 
+                categorical data.</p>
+        </example>
+        
+        <example>
+            <p>A survey could ask the number of movies you have seen in a movie theater in the past 
+                12 months (0, 1, 2, 3, 4, ...)</p>
+
+            <p>This would be quantitative data.</p>
+        </example>
+        
+
+        <p>Other examples of quantitative data would be the running time of the movie you saw most recently (104 minutes, 
+            137 minutes, 104 minutes, ...) or the amount of money you paid for a movie ticket the last time you went to a 
+            movie theater ($5.50, $7.75, $9, ...).</p>
+
+        <p>Sometimes, determining whether or not data is categorical or quantitative can be a bit trickier.</p>
+
+        <example><p>Suppose we gather respondents' ZIP codes in a survey to track their geographical location.</p>
+
+            <p>ZIP codes are numbers, but we can't do any meaningful mathematical calculations with them (it doesn't make 
+                sense to say that 98036 is "twice" 49018 — that's like saying that Lynnwood, WA is "twice" Battle Creek, MI, 
+                which doesn't make sense at all), so ZIP codes are really categorical data.</p>
+        </example>
+        
+        <example>
+            <p>A survey about the movie you most recently attended includes the question "How would you rate the movie you 
+                just saw?" with these possible answers:</p>
+
+            <p>1 - it was awful</p>
+            <p>2 - it was just OK</p>
+            <p>3 - I liked it</p>
+            <p>4 - it was great</p>
+            <p>5 - best movie ever!</p>
+
+            <p>Again, there are numbers associated with the responses, but we can't really do any calculations with them: a 
+                movie that rates a 4 is not necessarily twice as good as a movie that rates a 2, whatever that means; if two 
+                people see the movie and one of them thinks it stinks and the other thinks it's the best ever it doesn't 
+                necessarily make sense to say that "on average they liked it."</p>
+            
+        </example>
+
+        <p>As we study movie-going habits and preferences, we shouldn't forget to specify the population under 
+            consideration. If we survey 3-7 year-olds the runaway favorite might be Finding Nemo. 13-17 year-olds might 
+            prefer Terminator 3. And 33-37 year-olds might prefer...well, Finding Nemo.</p>
+
+        <problem><title>Try It Now</title>
+            <p>Classify each measurement as categorical or quantitative:
+            <ol label = "a">
+                <li>Eye color of a group of people
+                    </li>
+                <li>Daily high temperature of a city over several weeks
+                    </li>
+                <li>Annual income
+                    </li>
+            </ol> </p>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Categorical</li>
+                        <li>Quantitative</li>
+                        <li>Quantitative</li>
+                    </ol>
+                </p>
+            </answer>
+        </problem>
+
+    </section>
+    
+    <section xml:id = "section-stats-samplingmethods">
+        <title>Sampling Methods and Sampling Bias</title>
+        <objectives>
+            <ul>
+                <li>Compare sampling methods, such as simple random sampling, quota sampling, and 
+                    convienence sampling</li>
+                <li>Discuss potiential sources of bias in sampling</li>
+            </ul>
+        </objectives>
+        
+        <p>As we mentioned in a previous section, the first thing we should do before conducting a survey is to identify the 
+            population that we want to study. Suppose we are hired by a politician to determine the amount of support he has 
+            among the electorate should he decide to run for another term. What population should we study? Every person in 
+            the district? Not every person is eligible to vote, and regardless of how strongly someone likes or dislikes the 
+            candidate, they don't have much to do with him being re-elected if they are not able to vote.</p>
+
+        <p>What about eligible voters in the district? That might be better, but if someone is eligible to vote but does not 
+            register by the deadline, they won't have any say in the election either. What about registered voters? Many 
+            people are registered but choose not to vote. What about "likely voters?"</p>
+
+        <p>This is the criteria used in much political polling, but it is sometimes difficult to define a "likely voter." Is 
+            it someone who voted in the last election? In the last general election? In the last presidential election? 
+            Should we consider someone who just turned 18 a "likely voter?" They weren't eligible to vote in the past, so 
+            how do we judge the likelihood that they will vote in the next election?</p>
+
+        <p>In November 1998, former professional wrestler Jesse "The Body" Ventura was elected governor of Minnesota. Up 
+            until right before the election, most polls showed he had little chance of winning. There were several 
+            contributing factors to the polls not reflecting the actual intent of the electorate:</p>
+         <p>
+        <ul>
+            <li>Ventura was running on a third-party ticket and most polling methods are better suited to a two-candidate 
+                race.</li>
+            <li>Many respondents to polls may have been embarrassed to tell pollsters that they were planning to vote for a 
+                professional wrestler.</li>
+            <li>The mere fact that the polls showed Ventura had little chance of winning might have prompted some people to 
+                vote for him in protest to send a message to the major-party candidates.</li>
+        </ul> </p>
+
+        <p>But one of the major contributing factors was that Ventura recruited a substantial amount of support from young 
+            people, particularly college students, who had never voted before and who registered specifically to vote in the 
+            gubernatorial election. The polls did not deem these young people likely voters (since in most cases young 
+            people have a lower rate of voter registration and a turnout rate for elections) and so the polling samples were 
+            subject to sampling bias: they omitted a portion of the electorate that was weighted in favor of the winning 
+            candidate.</p>
+        
+        <definition><title>Sampling Bias</title>
+            <p>A sampling method is biased if every member of the population doesn’t have equal likelihood of being in the 
+                sample.</p>
+        </definition>
+
+        <p>So even identifying the population can be a difficult job, but once we have identified the population, how do we 
+            choose an appropriate sample? Remember, although we would prefer to survey all members of the population, this 
+            is usually impractical unless the population is very small, so we choose a sample. There are many ways to sample 
+            a population, but there is one goal we need to keep in mind: we would like the sample to be representative of 
+            the population.</p>
+
+        <p>Returning to our hypothetical job as a political pollster, we would not anticipate very accurate results if we 
+            drew all of our samples from among the customers at a Starbucks, nor would we expect that a sample drawn 
+            entirely from the membership list of the local Elks club would provide a useful picture of district-wide support 
+            for our candidate.</p>
+
+        <p>One way to ensure that the sample has a reasonable chance of mirroring the population is to employ randomness. 
+            The most basic random method is simple random sampling.</p>
+        
+        <definition><title>Simple Random Sample</title>
+            <p>A random sample is one in which each member of the population has an equal probability of being chosen. A 
+                simple random sample is one in which every member of the population and any group of members has an equal 
+                probability of being chosen.</p>
+        </definition>
+
+        <example>
+            <p>If we could somehow identify all likely voters in the state, put each of their names on a piece of paper, 
+                toss the slips into a (very large) hat and draw 1000 slips out of the hat, we would have a simple random 
+                sample.</p>
+        </example>
+
+        <p>In practice, computers are better suited for this sort of endeavor than millions of slips of paper and extremely 
+            large headgear.</p>
+
+        <p>It is always possible, however, that even a random sample might end up not being totally representative of the 
+            population. If we repeatedly take samples of 1000 people from among the population of likely voters in the state 
+            of Washington, some of these samples might tend to have a slightly higher percentage of Democrats (or 
+            Republicans) than does the general population; some samples might include more older people and some samples 
+            might include more younger people; etc. In most cases, this sampling variability is not significant.</p>
+
+        <definition><title>Sampling Variability</title>
+            <p>The natural variation of samples is called sampling variability.</p>
+        </definition>
+
+        <p>This is unavoidable and expected in random sampling, and in most cases is not an issue.</p>
+
+        <p>To help account for variability, pollsters might instead use a stratified sample.</p>
+
+        <definition><title>Stratified Sampling</title>
+            <p>In stratified sampling, a population is divided into a number of subgroups (or strata). Random samples are 
+                then taken from each subgroup with sample sizes proportional to the size of the subgroup in the population.
+            </p>
+        </definition>
+
+        <example>
+            <p>Suppose in a particular state that previous data indicated that the electorate was comprised of 39% 
+                Democrats, 37% Republicans and 24% independents. In a sample of 1000 people, they would then expect to get 
+                about 390 Democrats, 370 Republicans and 240 independents. To accomplish this, they could randomly select 
+                390 people from among those voters known to be Democrats, 370 from those known to be Republicans, and 240 
+                from those with no party affiliation.</p>
+        </example>
+
+        <p>Stratified sampling can also be used to select a sample with people in desired age groups, a specified mix ratio 
+            of males and females, etc. A variation on this technique is called quota sampling.</p>
+        
+        <definition><title>Quota Sampling</title>
+            <p>Quota sampling is a variation on stratified sampling, wherein samples are collected in each subgroup until 
+                the desired quota is met.</p>
+        </definition>
+
+        <example>
+            <p>Suppose the pollsters call people at random, but once they have met their quota of 390 Democrats, they only 
+                gather people who do not identify themselves as a Democrat.</p>
+        </example>
+
+        <p>You may have had the experience of being called by a telephone pollster who started by asking you your age, 
+            income, etc. and then thanked you for your time and hung up before asking any "real" questions. Most likely, 
+            they already had contacted enough people in your demographic group and were looking for people who were older or 
+            younger, richer or poorer, etc. Quota sampling is usually a bit easier than stratified sampling, but also does 
+            not ensure the same level of randomness.</p>
+
+        <p>Another sampling method is cluster sampling, in which the population is divided into groups, and one or more 
+            groups are randomly selected to be in the sample.</p>
+        
+        <definition><title>Cluster Sampling</title>
+            <p>In cluster sampling, the population is divided into subgroups (clusters), and a set of subgroups are selected 
+                to be in the sample.</p>
+        </definition>
+
+        <example>
+            <p>If the college wanted to survey students, since students are already divided into classes, they could 
+                randomly select 10 classes and give the survey to all the students in those classes. This would be cluster 
+                sampling.</p>
+        </example>
+
+        <definition><title>Systematic Sampling</title>
+            <p>In systematic sampling, every nth member of the population is selected to be in the sample.</p>
+        </definition>
+
+        <example>
+            <p>To select a sample using systematic sampling, a pollster calls every 100th name in the phone book.</p>
+            <p>Systematic sampling is not as random as a simple random sample (if your name is Albert Aardvark and your 
+                sister Alexis Aardvark is right after you in the phone book, there is no way you could both end up in the 
+                sample) but it can yield acceptable samples.</p>
+        </example>
+
+        <p>Perhaps the worst types of sampling methods are convenience samples and voluntary response samples.</p>
+        
+        <definition><title>Convenience Sampling and Voluntary Response Sampling</title>
+            <p>Convenience sampling is samples chosen by selecting whoever is convenient.</p>
+
+            <p>Voluntary response sampling is allowing the sample to volunteer.</p>
+        </definition>
+
+        <example>
+            <p>A pollster stands on a street corner and interviews the first 100 people who agree to speak to him. This is a 
+                convenience sample.</p>
+        </example>
+
+        <example>
+            <p>A website has a survey asking readers to give their opinion on a tax proposal. This is a self-selected 
+                sample, or voluntary response sample, in which respondents volunteer to participate.</p>
+        </example>
+
+        <p>Usually voluntary response samples are skewed towards people who have a particularly strong opinion about the 
+            subject of the survey or who just have way too much time on their hands and enjoy taking surveys.</p>
+
+        <problem><title>Try It Now</title>
+            <p>In each case, indicate what sampling method was used:
+            <ol label = "a">
+                <li>Every 4th person in the class was selected
+                    </li>
+                <li>A sample was selected to contain 25 men and 35 women
+                    </li>
+                <li>Viewers of a new show are asked to vote on the show’s website
+                    </li>
+                <li>A website randomly selects 50 of their customers to send a satisfaction survey to
+                    </li>
+                <li>To survey voters in a town, a polling company randomly selects 10 city blocks, and interviews everyone 
+                    who lives on those blocks.
+                    </li>
+            </ol> </p>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Systematic</li>
+                        <li>Stratified or Quota</li>
+                        <li>Voluntary Response</li>
+                        <li>Simple Random</li>
+                        <li>Cluster</li>
+                    </ol>
+                </p>
+            </answer>
+        </problem>
+   
+        <p>There are number of ways that a study can be ruined before you even start collecting data. The first we have 
+            already explored - sampling or selection bias, which is when the sample is not representative of the population. 
+            One example of this is voluntary response bias, which is bias introduced by only collecting data from those who 
+            volunteer to participate. This is not the only potential source of bias.</p>
+        
+        <note><title>Sources of bias</title>
+            <p>Some sources of bias in studies are:
+            <ul>
+                <li>Sampling bias - when the sample is not representative of the population</li>
+                <li>Voluntary response bias - the sampling bias that often occurs when the sample is volunteers</li>
+                <li>Self-interest study - bias that can occur when the researchers have an interest in the outcome</li>
+                <li>Response bias - when the responder gives inaccurate responses for any reason</li>
+                <li>Perceived lack of anonymity - when the responder fears giving an honest answer might negatively 
+                    affect them</li>
+                <li>Loaded questions - when the question wording influences the responses</li>
+                <li>Non-response bias - when people refusing to participate in the study can influence the 
+                    validity of the outcome</li>
+                </ul> </p>
+        </note>
+
+        <example>
+            <p>Consider a recent study which found that chewing gum may raise math grades in teenagers[1]. This study was 
+                conducted by the Wrigley Science Institute, a branch of the Wrigley chewing gum company. This is an example 
+                of a self-interest study; one in which the researches have a vested interest in the outcome of the study. 
+                While this does not necessarily ensure that the study was biased, it certainly suggests that we should 
+                subject the study to extra scrutiny.
+            </p>
+        </example>
+
+        <example>
+            <p>A survey asks people “when was the last time you visited your doctor?” This might suffer from response bias, 
+                since many people might not remember exactly when they last saw a doctor and give inaccurate responses.</p>
+        </example>
+
+        <p>Sources of response bias may be innocent, such as bad memory, or as intentional as pressuring by the pollster. 
+            Consider, for example, how many voting initiative petitions people sign without even reading them.</p>
+
+        <example>
+            <p>A survey asks participants a question about their interactions with members of other races. Here, a perceived 
+                lack of anonymity could influence the outcome. The respondent might not want to be perceived as racist even 
+                if they are, and give an untruthful answer.</p>
+        </example>
+
+        <example>
+            <p>An employer puts out a survey asking their employees if they have a drug abuse problem and need treatment 
+                help. Here, answering truthfully might have consequences; responses might not be accurate if the employees 
+                do not feel their responses are anonymous or fear retribution from their employer.</p>
+        </example>
+
+        <example>
+            <p>A survey asks “do you support funding research of alternative energy sources to reduce our reliance on high-
+                polluting fossil fuels?” This is an example of a loaded or leading question - questions whose wording leads 
+                the respondent towards an answer.</p>
+        </example>
+
+        <p>Loaded questions can occur intentionally by pollsters with an agenda, or accidentally through poor question 
+            wording. Also a concern is question order, where the order of questions changes the results. A psychology 
+            researcher provides an example:</p>
+
+        <blockquote>My favorite finding is this: we did a study where we asked students, 'How satisfied are you with your 
+            life? 
+            How often do you have a date?' The two answers were not statistically related - you would conclude that there is 
+            no relationship between dating frequency and life satisfaction. But when we reversed the order and asked, 'How 
+            often do you have a date? How satisfied are you with your life?' the statistical relationship was a strong one. 
+            You would now conclude that there is nothing as important in a student's life as dating frequency.</blockquote>
+
+        <example>
+            <p>A telephone poll asks the question “Do you often have time to relax and read a book?”, and 50% of the people 
+                called refused to answer the survey. It is unlikely that the results will be representative of the entire 
+                population. This is an example of non-response bias, introduced by people refusing to participate in a study 
+                or dropping out of an experiment. When people refuse to participate, we can no longer be so certain that our 
+                sample is representative of the population.</p>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>In each situation, identify a potential source of bias:
+            <ol label = "a">
+                <li>A survey asks how many sexual partners a person has had in the last year
+               </li>
+                <li>A radio station asks readers to phone in their choice in a daily poll.
+                   </li>
+                <li>A substitute teacher wants to know how students in the class did on their last test. The teacher asks 
+                    the 10 students sitting in the front row to state their latest test score.
+                </li>
+                <li>High school students are asked if they have consumed alcohol in the last two weeks.
+                </li>
+                <li>The Beef Council releases a study stating that consuming red meat poses little cardiovascular risk.</li>
+                <li>A poll asks “Do you support a new transportation tax, or would you prefer to see our public 
+                    transportation system fall apart?”</li>
+            </ol> </p>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Response bias - historically, men are likely to over-report, and women are likely to 
+                            under-report to this question.</li>
+                        <li>Voluntary response bias - the sample is self-selected</li>
+                        <li>Sampling bias - the sample may not be representative of the whole class</li>
+                        <li>Lack of anonymity</li>
+                        <li>Self-interest study</li>
+                        <li>Loaded question</li>
+                    </ol>
+                </p>
+            </answer>
+        </problem>
+    </section>
+    
+    <section xml:id="section-stats-experiments">
+        <title>Experiments</title>
+        
+        <objectives>
+             <ul>
+                <li>Discuss case studies and experiments</li>
+            </ul>
+        </objectives>
+        
+        <p>So far, we have primarily discussed observational studies - studies in which conclusions would be drawn from 
+            observations of a sample or the population. In some cases these observations might be unsolicited, such as 
+            studying the percentage of cars that turn right at a red light even when there is a “no turn on red” sign. In 
+            other cases the observations are solicited, like in a survey or a poll.</p>
+
+        <p>In contrast, it is common to use experiments when exploring how subjects react to an outside influence. In an 
+            experiment, some kind of treatment is applied to the subjects and the results are measured and recorded.</p>
+        
+        <definition><title>Observational Studies and Experiments</title>
+            <p>An observational study is a study based on observations or measurements. An experiment is a study in which 
+                the effects of a treatment are measured.</p>
+        </definition>
+
+        <p>Here are some examples of experiments:
+        <ul>
+            <li>A pharmaceutical company tests a new medicine for treating Alzheimer’s disease by administering the drug to 
+                50 elderly patients with recent diagnoses. The treatment here is the new drug.</li>
+            <li>A gym tests out a new weight loss program by enlisting 30 volunteers to try out the program. The treatment 
+                here is the new program.</li>
+            <li>You test a new kitchen cleaner by buying a bottle and cleaning your kitchen. The new cleaner is the 
+                treatment.</li>
+            <li>A psychology researcher explores the effect of music on temperament by measuring people’s temperament while 
+                listening to different types of music. The music is the treatment.</li>
+        </ul> </p>
+
+        <problem><title>Try It Now</title>
+            <p>Is each scenario describing an observational study or an experiment?
+            <ol label = "a">
+                <li>The weights of 30 randomly selected people are measured
+                
+                </li>
+                <li>Subjects are asked to do 20 jumping jacks, and then their heart rates are measured
+                   
+                </li>
+                <li>Twenty coffee drinkers and twenty tea drinkers are given a concentration test
+              
+                </li>
+            </ol> </p>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Observational study</li>
+                        <li>Experiment; the treatment is the jumping jacks</li>
+                        <li>Experiment; the treatments are coffee and tea</li>
+                    </ol>
+                </p>
+            </answer>
+        </problem>
+
+        <p>When conducting experiments, it is essential to isolate the treatment being tested.</p>
+
+        <example>
+            <p>Suppose a middle school (junior high) finds that their students are not scoring well on the state’s 
+                standardized math test. They decide to run an experiment to see if an alternate curriculum would improve 
+                scores. To run the test, they hire a math specialist to come in and teach a class using the new curriculum. 
+                To their delight, they see an improvement in test scores.</p>
+        </example>
+
+        <p>The difficulty with this scenario is that it is not clear whether the curriculum is responsible for the 
+            improvement, or whether the improvement is due to a math specialist teaching the class. This is called 
+            confounding - when it is not clear which factor or factors caused the observed effect. Confounding is the 
+            downfall of many experiments, though sometimes it is hidden.</p>
+        
+        <definition><title>Confounding</title>
+            <p>Confounding occurs when there are two potential variables that could have caused the outcome and it is not 
+                possible to determine which actually caused the result.</p>
+        </definition>
+
+        <example>
+            <p>A drug company study about a weight loss pill might report that people lost an average of 8 pounds while 
+                using their new drug. However, in the fine print you find a statement saying that participants were 
+                encouraged to also diet and exercise. It is not clear in this case whether the weight loss is due to the 
+                pill, to diet and exercise, or a combination of both. In this case confounding has occurred.
+            </p>
+        </example>
+
+        <example>
+            <p>Researchers conduct an experiment to determine whether students will perform better on an arithmetic test if 
+                they listen to music during the test. They first give the student a test without music, then give a similar 
+                test while the student listens to music. In this case, the student might perform better on the second test, 
+                regardless of the music, simply because it was the second test and they were warmed up.</p>
+        </example>
+
+        <p>There are a number of measures that can be introduced to help reduce the likelihood of confounding. The primary 
+            measure is to use a control group.</p>
+
+        <definition><title>Control Group</title>
+            <p>When using a control group, the participants are divided into two or more groups, typically a control group 
+                and a treatment group. The treatment group receives the treatment being tested; the control group does not 
+                receive the treatment.</p>
+        </definition>
+
+        <p>Ideally, the groups are otherwise as similar as possible, isolating the treatment as the only potential source of 
+            difference between the groups. For this reason, the method of dividing groups is important. Some researchers 
+            attempt to ensure that the groups have similar characteristics (same number of females, same number of people 
+            over 50, etc.), but it is nearly impossible to control for every characteristic. Because of this, random 
+            assignment is very commonly used.</p>
+
+        <example>
+            <p>To determine if a two day prep course would help high school students improve their scores on the SAT test, a 
+                group of students was randomly divided into two subgroups. The first group, the treatment group, was given a 
+                two day prep course. The second group, the control group, was not given the prep course. Afterwards, both 
+                groups were given the SAT.</p>
+        </example>
+
+        <example>
+            <p>A company testing a new plant food grows two crops of plants in adjacent fields, the treatment group 
+                receiving the new plant food and the control group not. The crop yield would then be compared. By growing 
+                them at the same time in adjacent fields, they are controlling for weather and other confounding factors.
+            </p>
+        </example>
+
+        <p>Sometimes not giving the control group anything does not completely control for confounding variables. For 
+            example, suppose a medicine study is testing a new headache pill by giving the treatment group the pill and the 
+            control group nothing. If the treatment group showed improvement, we would not know whether it was due to the 
+            medicine in the pill, or a response to have taken any pill. This is called a placebo effect.</p>
+        
+        <definition><title>Placebo Effect</title>
+            <p>The placebo effect is when the effectiveness of a treatment is influenced by the patient’s perception of how 
+                effective they think the treatment will be, so a result might be seen even if the treatment is ineffectual.
+            </p>
+        </definition>
+
+        <example>
+            <p>A study found that when doing painful dental tooth extractions, patients told they were receiving a strong 
+                painkiller while actually receiving a saltwater injection found as much pain relief as patients receiving a 
+                dose of morphine.</p>
+        </example>
+        
+        <p>To control for the placebo effect, a placebo, or dummy treatment, is often given to the control group. This way, 
+            both groups are truly identical except for the specific treatment given.</p>
+
+        <definition><title>Placebo and Placebo controlled experiments</title>
+            <p>A placebo is a dummy treatment given to control for the placebo effect. An experiment that gives the control 
+                group a placebo is called a placebo controlled experiment.</p>
+        </definition>
+
+        <example>
+            <p>In a study for a new medicine that is dispensed in a pill form, a sugar pill could be used as a placebo.</p>
+            <p>In a study on the effect of alcohol on memory, a non-alcoholic beer might be given to the control group as a 
+                placebo.</p>
+            <p>In a study of a frozen meal diet plan, the treatment group would receive the diet food, and the control could 
+                be given standard frozen meals stripped of their original packaging.</p>
+        </example>
+        
+        <p>In some cases, it is more appropriate to compare to a conventional treatment than a placebo. For example, in a 
+            cancer research study, it would not be ethical to deny any treatment to the control group or to give a placebo 
+            treatment. In this case, the currently acceptable medicine would be given to the control group, sometimes called 
+            a comparison group in this case. In our SAT test example, the non-treatment group would most likely be 
+            encouraged to study on their own, rather than be asked to not study at all, to provide a meaningful comparison.
+        </p>
+
+        <p>When using a placebo, it would defeat the purpose if the participant knew they were receiving the placebo.</p>
+
+        <definition><title>Blind Studies</title>
+            <p>A blind study is one in which the participant does not know whether or not they are receiving the treatment 
+            or a placebo. A double-blind study is one in which those interacting with the participants don’t know who is in 
+            the treatment group and who is in the control group.</p>
+        </definition>
+        
+    <example>
+        <p>In a study about anti-depression medicine, you would not want the psychological evaluator to know whether the 
+            patient is in the treatment or control group either, as it might influence their evaluation, so the experiment 
+            should be conducted as a double-blind study.</p>
+        </example>
+
+        <p>It should be noted that not every experiment needs a control group.</p>
+
+        <example>
+            <p>If a researcher is testing whether a new fabric can withstand fire, she simply needs to torch multiple 
+                samples of the fabric - there is no need for a control group.</p>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>To test a new lie detector, two groups of subjects are given the new test. One group is asked to answer all 
+                the questions truthfully, and the second group is asked to lie on one set of questions. The person 
+                administering the lie detector test does not know what group each subject is in.</p>
+
+            <p>Does this experiment have a control group? Is it blind, double-blind, or neither?</p>
+            
+            <answer>The truth-telling group could be considered the control group, but really both groups are treatment 
+                groups here, since it is important for the lie detector to be able to correctly identify lies, and also not 
+                identify truth telling as lying. This study is blind, since the person running the test does not know what 
+                group each subject is in.</answer>
+        </problem>
+        
+    </section>
+    
+    <exercises>
+        <exercise xml:id = "stats-ex-1">
+            <statement> <p>A political scientist surveys 28 of the current 106 representatives in a state's congress. Of them, 
+                14 said they were supporting a new education bill, 12 said there were not supporting the bill, and 2 were 
+                undecided.
+                <ol label = "a">
+                    <li>What is the population of this survey?</li>
+                    <li>What is the size of the population?</li>
+                    <li>What is the size of the sample?</li>
+                    <li>Give the sample statistic for the proportion of voters surveyed who said they were supporting the 
+                        education bill.</li>
+                    <li>Based on this sample, we might expect how many of the representatives to support the education 
+                        bill?</li>
+                </ol> </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Population is the current representatives in the state’s congress</li>
+                        <li>106</li>
+                        <li>the 28 representatives surveyed</li>
+                        <li><m>\frac{1}{2}</m></li>
+                        <li>53 representatives</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-2">
+            <statement> <p>The city of Raleigh has 9500 registered voters. There are two candidates for city council in an 
+                upcoming election: Brown and Feliz. The day before the election, a telephone poll of 350 randomly selected 
+                registered voters was conducted. 112 said they'd vote for Brown, 207 said they'd vote for Feliz, and 31 were 
+                undecided.
+                <ol label = "a">
+                    <li>What is the population of this survey?</li>
+                    <li>What is the size of the population?</li>
+                    <li>What is the size of the sample?</li>
+                    <li>Give the sample statistic for the proportion of voters surveyed who said they'd vote for Brown.</li>
+                    <li>Based on this sample, we might expect how many of the 9500 voters to vote for Brown?</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "stats-ex-3">
+            <statement>
+                <p>As part of a math project, a student take a container filled with red and green candies that 
+                    are well-mixed. The student pulls out 30 candies with the goal of estimating the number of 
+                    red candies in the jar. Of the 30 candies, 12 of them are red. 
+                    <ol label = "a">
+                        <li>Describe the target population.</li>
+                        <li>Describe the sample.</li>
+                        <li>What sampling method is used?</li>
+                        <li>Give the sample statistic for the proportion of candies that are red.</li>
+                        <li>If the jar contains 800 candies, esimate how many of them are red.</li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-4">
+            <statement>Identify the most relevant source of bias in this situation: A survey asks the following: Should the 
+                mall prohibit loud and annoying rock music in clothing stores catering to teenagers?</statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-5">
+            <statement>Identify the most relevant source of bias in this situation: To determine opinions on voter support 
+                for a downtown renovation project, a surveyor randomly questions people working in downtown businesses.
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-6">
+            <statement>Identify the most relevant source of bias in this situation: A survey asks people to report their 
+                actual income and the income they reported on their IRS tax form.</statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-7">
+            <statement>Identify the most relevant source of bias in this situation: A survey randomly calls people from the 
+                phone book and asks them to answer a long series of questions.</statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-8">
+            <statement>Identify the most relevant source of bias in this situation: A survey asks the following: Should the 
+                death penalty be permitted if innocent people might die?</statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-9">
+            <statement>Identify the most relevant source of bias in this situation: A study seeks to investigate whether a 
+                new pain medication is safe to market to the public. They test by randomly selecting 300 men from a set of 
+                volunteers.</statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-10">
+            <statement>In a study, you ask the subjects their age in years. Is this data qualitative or quantitative?
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-11">
+            <statement>In a study, you ask the subjects their gender. Is this data qualitative or quantitative?
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-12">
+            <statement>Does this describe an observational study or an experiment: The temperature on randomly selected days 
+                throughout the year was measured.
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-13">
+            <statement>Does this describe an observational study or an experiment? A group of students are told to listen to 
+                music while taking a test and their results are compared to a group not listening to music.
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-14">
+            <statement>In a study, the sample is chosen by separating all cars by size, and selecting 10 of each size 
+                grouping. What is the sampling method?
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-15">
+            <statement>In a study, the sample is chosen by writing everyone’s name on a playing card, shuffling the deck, 
+                then choosing the top 20 cards. What is the sampling method?
+                </statement>
+        </exercise>
+        
+        <exercise xml:id = "stats-ex-16">
+            <statement>
+                <p>A researcher wants to study the effectiveness of a "test-taking-energy-drink". They select 1,000
+                    volunteers from colleges around the country and divide them into two groups. Those enrolled in 
+                    English classes were given the real drink, and those enrolled in math classes were given a fake 
+                    drink. None of the students knew which drink they were getting, but the researchers knew. The
+                    researchers compared test scores of both groups of students and concluded that the student 
+                    who received the test-taking drink performed significantly betters on tests.
+                    <ol label = "a">
+                        <li>Describe the target population.</li>
+                        <li>Describe the control group and the treatment group in this experiment.</li>
+                        <li>Is this experiment blind? Double-blind?</li>
+                        <li>Why might the results of this experiment be unreliable?</li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-17">
+            <statement> <p>A team of researchers is testing the effectiveness of a new HPV vaccine. They randomly divide the 
+                subjects into two groups. Group 1 receives new HPV vaccine, and Group 2 receives the existing HPV vaccine. 
+                The patients in the study do not know which group they are in.
+                <ol label = "a">
+                    <li>Which is the treatment group?</li>
+                    <li>Which is the control group (if there is one)?</li>
+                    <li>Is this study blind, double-blind, or neither?</li>
+                    <li>Is this best described as an experiment, a controlled experiment, or a placebo 
+                        controlled experiment?</li>
+                </ol> </p>
+                </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Group 1, receiving the vaccine</li>
+                        <li>Group 2 is acting as a control group. They are not receiving the treatment (new vaccine).
+                        </li>
+                        <li>The study is at least blind. We are not provided enough information to determine if it is 
+                            double-blind.</li>
+                        <li>This is a controlled experiment.</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-18">
+            <statement> <p>For the clinical trials of a weight loss drug containing Garcinia cambogia the subjects were randomly 
+                divided into two groups. The first received an inert pill along with an exercise and diet plan, while the 
+                second received the test medicine along with the same exercise and diet plan. The patients do not know which 
+                group they are in, nor do the fitness and nutrition advisors.
+                <ol label = "a">
+                    <li>Which is the treatment group?</li>
+                    <li>Which is the control group (if there is one)?</li>
+                    <li>Is this study blind, double-blind, or neither?</li>
+                    <li>Is this best described as an experiment, a controlled experiment, or a placebo 
+                        controlled experiment?</li>
+                </ol> </p>
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-19">
+            <statement> <p>A teacher wishes to know whether the males in his/her class have more conservative attitudes than the 
+                females. A questionnaire is distributed assessing attitudes.
+                <ol label = "a">
+                    <li>Is this a sampling or a census?</li>
+                    <li>Is this an observational study or an experiment?</li>
+                    <li>Are there any possible sources of bias in this study?</li>
+                </ol> </p>
+                </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Census</li>
+                        <li>Observational study</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-20">
+            <statement> <p>A study is conducted to determine whether people learn better with spaced or massed practice. 
+                Subjects volunteer from an introductory psychology class. At the beginning of the semester 12 subjects 
+                volunteer and are assigned to the massed-practice group. At the end of the semester 12 subjects volunteer 
+                and are assigned to the spaced-practice condition.
+                <ol label = "a">
+                    <li>Is this a sampling or a census?</li>
+                    <li>Is this an observational study or an experiment?</li>
+                    <li>This study involves two kinds of non-random sampling: (1) Subjects are not randomly sampled from 
+                        some specified population and (2) Subjects are not randomly assigned to groups. Which problem is 
+                        more serious? What affect on the results does each have?</li>
+                </ol> </p>
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-21">
+            <statement>A farmer believes that playing Barry Manilow songs to his peas will increase their yield. Describe a 
+                controlled experiment the farmer could use to test his theory.
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-22">
+            <statement>A sports psychologist believes that people are more likely to be extroverted as adults if they played 
+                team sports as children. Describe two possible studies to test this theory. Design one as an observational 
+                study and the other as an experiment. Which is more practical?
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-23">
+            <statement> <p>Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment 
+                program. Suppose that a new AIDS antibody drug is currently under study. It is given to patients once the 
+                AIDS symptoms have revealed themselves. Of interest is the average length of time in months patients live 
+                once starting the treatment. Two researchers each follow a different set of 50 AIDS patients from the start 
+                of treatment until their deaths.
+                <ol label = "a">
+                    <li>What is the population of this study?</li>
+                    <li>List two reasons why the data may differ.</li>
+                    <li>Can you tell if one researcher is correct and the other one is incorrect? Why?</li>
+                    <li>Would you expect the data to be identical? Why or why not?</li>
+                    <li>If the first researcher collected her data by randomly selecting 40 states, then selecting 1 person 
+                        from each of those states. What sampling method is that?</li>
+                    <li>If the second researcher collected his data by choosing 40 patients he knew. What sampling method 
+                        would that researcher have used? What concerns would you have about this data set, based upon the 
+                        data collection method?</li>
+                </ol> </p>
+                </statement>
+        </exercise>
+
+        <exercise xml:id = "stats-ex-24">
+            <statement>Find a newspaper or magazine article, or the online equivalent, describing the results of a recent 
+                study (the results of a poll are not sufficient). Give a summary of the study’s findings, then analyze 
+                whether the article provided enough information to determine the validity of the conclusions. If not, 
+                produce a list of things that are missing from the article that would help you determine the validity of the 
+                study. Look for the things discussed in the text: population, sample, randomness, blind, control, placebos, 
+                etc.
+                </statement>
+        </exercise>
+
+
+        
+    </exercises>
+    
+     <exercises xml:id = "stats-ch-test"><title>Chapter Test</title>
+        
+        <exercise>
+            <statement>
+                <p>To determine how community college students feel about current events, three history classes 
+                    at City College are surveyed.
+                    
+                    <ol label = "a">
+                        <li>Describe the target population of this study.</li>
+                        <li>Describe the sample of this study.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>The target population is all community college students.</li>
+                        <li>The sample is the three history classes at City College that are surveyed.</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>Classify each measurement as categorical or quantitative:
+                    <ol label = "a">
+                        <li>Height of basketball players</li>
+                        <li>Astrological sign of movie stars</li>
+                        <li>Average annual snowfall in Denver</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Quantitative</li>
+                        <li>Categorical</li>
+                        <li>Quantitative</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+            <p>In each situation, indicate the type of sampling used:
+                <ol label = "a">
+                    <li>Every 25th shopper receives a survey.</li>
+                    <li>Readers are asked to give their opinion on a local tax by commenting on a tweet.</li>
+                    <li>The front row of a concert is asked to rate the performance.</li>
+                    <li>A researcher calls registered voters until they have talked to 50 men and 50 women.</li>
+                    <li>Student names are drawn out of hat to participate in a survey.</li>
+                </ol>
+            </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Systematic Sampling</li>
+                        <li>Convenience Sampling</li>
+                        <li>Convenience Sampling</li>
+                        <li>Quota Sampling</li>
+                        <li>Simple Random Sampling</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercisegroup>
+            <introduction>In each situation identify a potential source of bias.</introduction>
+            
+            <exercise>
+                <statement>
+                    <p>The front row of a concert is asked to rate the performance.</p>
+                </statement>
+                
+                <answer>
+                    <p>
+                        This survey may have sampling bias because those in the front row aren’t representative 
+                        of everyone at the concert. It is possible that those in the front row had a different 
+                        expericence (better sound, etc) than those sitting in other locations.</p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>An oil company releases a study that stating that all changes to global temperatures are 
+                        due to natural variability.</p>
+                </statement>
+                
+                <answer>
+                    <p>This is a self-interest study and may have bias because oil companies are impacted the 
+                        fact that the use of fossil fuels are resulting in climate change.</p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Readers are asked to give their opinion on a local tax by commenting on a tweet.</p>
+                </statement>
+                
+                <answer><p>This survey may have non-response bias. Typically, only those who feel very strongly 
+                    about an issue will make comments about it. Those with opinions in the middle are less likely 
+                    to respond. We are also only asking Twitter users, who are predominately male and most likely 
+                    to be age 25 - 34.</p></answer>
+                </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Customers are asked, “Did you enjoy our excellent delivery service?”</p>
+                </statement>
+                
+                <answer>
+                    <p>This is a loaded question—the question implies that the service is excellent and doesn’t 
+                        allow for the respondent to decide the quality of the delivery service. </p>
+                </answer>
+            </exercise>
+            
+        </exercisegroup>
+        
+        <exercise>
+            <statement>
+                <p>Is the scenario describing an observational study or an experiment?</p>
+                <p>
+                    A study took a sample of adult and asked them about their morning habits. The data showed 
+                    that people who drink coffee were more likely to go to bed later than those who didn’t drink 
+                    coffee.</p>
+            </statement>
+            
+            <answer><p>This is an observational study.</p></answer>
+        </exercise>
+
+
+<exercise>
+    <statement>
+        <p>How could we create observational study to test whether those who drink coffee go to bed later than 
+            those who don’t?</p>
+    </statement>
+    
+    <answer><p>We could select a group of people and assign half of them to drink coffee and the other half to 
+        not drink any coffee. We would ask the participants to record their bedtimes and compare the results.
+        </p></answer>
+    
+        </exercise>
+        
+        <exercise>
+            <statement>
+            <p>You want to determine if a vegetarian diet has an effect on blood pressure.  You recruit 100 
+                volunteers and randomly assign each a non-vegetarian diet plan or a vegetarian diet plan. At the 
+                end of two months, you record the original and final blood pressures for volunteer.
+                <ol label = "a">
+                    <li>Is this an observational study or experiment?</li>
+                    <li>Describe the control group and the treatment group.</li>
+                </ol>
+            </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Experiment</li>
+                        <li>The control group is those who were assigned the non-vegetarian diet and the 
+                            treatment group is those who were assigned the vegetarian diet.</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>To determine whether a new exercise program will reduce blood pressure, a researchers selects 
+                    100 students to participate in an experiment. Students who live on campus are asked to 
+                    participate in the exercise program; those who don’t live on campus do not participate in the 
+                    exercise program. 
+                    <ol label = "a">
+                        <li>Describe the control group and the treatment group.</li>
+                        <li>Is this a blind or double-blind study?</li>
+                        <li>Why might the results of this study be unreliable?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>The control group is the students who don’t live on campus and aren’t not 
+                            participating in the exercise program. The treatment group is those who live on 
+                            campus and participate in the exercise program.</li>
+                        <li>No. Participants, as well as researchers, will know if they're are doing the exercise 
+                            program.</li>
+                        <li>Confounding variables may impact the results. Other factors, like age, gender, 
+                            weight, etc impact blood pressure. It is possible that those who live on campus have 
+                            different demographics than those who don’t live on campus.</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+    </exercises>
+    
+
+                
+    </chapter>

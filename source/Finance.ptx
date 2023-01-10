@@ -1,0 +1,2313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Finance" xmlns:xi="http://www.w3.org/2001/XInclude">
+ <!-- Finance****************************************************************
+       
+************************************************************************************************-->
+
+    <title>Finance</title>
+        <introduction>
+            <p>We have to work with money every day.  While balancing your checkbook or calculating 
+                your monthly expenditures on espresso requires only arithmetic, when we start saving, 
+                planning for retirement, or need a loan, we need more mathematics.  </p>
+                   
+            <p>This chapter covers the mathematics involved in computing interest, working with annuities,
+              and amortized loans.</p>
+            
+            
+                
+         </introduction>
+ 
+    <section xml:id="section-finance-interest"><title>Simple and Compound Interest</title>
+        
+        <subsection><title>Simple Interest</title>
+            
+            <objectives>
+                <ul>
+                <li>Set up and solve simple interest problems</li>
+                <li>Set up and solve compound interest problems</li>
+                <li>Compare simple and compound interest</li>
+            </ul>
+            </objectives>
+            
+            <p>Discussing interest starts with the <term>principal</term>, or amount your account starts with.  This could 
+                be a starting investment, or the starting amount of a loan.  Interest, in its most simple form, is 
+                calculated as a percent of the principal.</p>  
+            <p>For example, if you borrowed $100 from a friend and agree to repay it with 5% interest, then the amount of 
+                interest you would pay would just be 5% of 100:  $100(0.05) = $5.  
+                The total amount you would repay would be $105, the original principal plus the interest. </p>
+            
+            <definition><title>Simple One-time Interest</title>
+                <p>Simple interest can be computed with:
+                    <me>I = P_0rt</me>
+                    <me>A = P_0 + I = P_0 + P_0rt = P_0\left(1+rt\right)</me>
+                    where,</p>
+
+                <p>I is the interest</p>
+                <p>A is the end amount: principal plus interest</p>
+                <p><m>P_0</m> is the principal (starting amount)</p>
+                <p>r is the interest rate (in decimal form.  Example: 5% = 0.05)</p>
+            </definition>
+            
+            <example>
+                <p>A friend asks to borrow $300 and agrees to repay it in 30 days with 3% interest.  How much 
+                    interest will you earn?</p>
+                
+                <solution>
+                    <p><m>P_0 = \$300</m> (the principal)</p>
+                    <p><m>r = 0.03</m> (3% interest rate)</p>
+                    <p><m>I = \$300\left(0.03\right) = \$9</m></p>
+                    <p>You will earn $9 interest.</p>
+                </solution>
+            </example>
+            
+            <p>One-time simple interest is only common for extremely short-term loans.  For longer term 
+                loans, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis.  In 
+                that case, interest would be earned regularly.  For example, bonds are essentially a loan made 
+                to the bond issuer (a company or government) by you, the bond holder.  In return for the 
+                loan, the issuer agrees to pay interest, often annually.  Bonds have a maturity date, at which 
+                time the issuer pays back the original bond value.</p> 
+            
+            
+            <example><p>Suppose your city is building a new park, and issues bonds to raise the money to build it.  
+                You obtain a $1,000 bond that pays 5% interest annually that matures in 5 years.   How much 
+                interest will you earn?</p>
+                
+                <solution><p>Each year, you would earn 5% interest:  $1000(0.05) = $50 in interest.  So over the course of 
+                    five years, you would earn a total of $250 in interest.  When the bond matures, you would 
+                    receive back the $1,000 you originally paid, leaving you with a total of $1,250.</p>
+                </solution>
+            </example>
+            
+            <p>We can generalize this idea of simple interest over time.</p>
+ 
+            <definition><title>Simple Interest over Time</title>
+                <p>To compute simple sinterest over time,
+                    <me>I = P_0rt</me>
+                    <me>A = P_0 + I = P_0 + P_0rt = P_0\left(1 + rt\right)</me>
+                    where,
+                </p>
+
+                <p>I is the interest</p>
+                <p>A is the end amount: principal plus interest</p>
+                <p><m>P_0</m> is the principal (starting amount)</p>
+                <p>r is the interest rate in decimal form</p>
+                <p>t is time</p>
+ 
+                <p>The units of measurement (years, months, etc.) for the time should match the time 
+                period for the interest rate.</p>
+            </definition>
+ 
+            <definition><title>APR - Annual Percentage Rate</title>
+                <p>Interest rates are usually given as an annual percentage rate (APR) - the total interest 
+                    that will be paid in the year.  If the interest is paid in smaller time increments, the APR 
+                    will be divided up.</p>
+ 
+                <p>For example, a 6% APR paid monthly would be divided into twelve 0.5% payments. 
+                    A 4% annual rate paid quarterly would be divided into four 1% payments.</p>
+            </definition>
+            
+            <example>
+                 <p>Treasury Notes (T-notes) are bonds issued by the federal government to cover its expenses.  
+                    Suppose you obtain a $1,000 T-note with a 4% annual rate, paid semi-annually, with a 
+                     maturity in 4 years.  How much interest will you earn?</p>
+ 
+                <solution><p>Since interest is being paid semi-annually (twice a year), the 4% interest will be divided into 
+                    two 2% payments.</p>
+ 
+                    <p><m>P_0 = \$1000</m>   the principal</p>
+                    <p><m>r = 0.02</m>    2% rate per half-year</p>
+                    <p><m>t = 8</m>     4 years = 8 half-years</p>
+                    <p><m>I = \$1000\left(0.02\right)\left(8\right) = \$160.</m></p>
+                    <p>You will earn $160 interest total over the four years.</p>
+                </solution>
+            </example>
+            
+            <problem><title>Try It Now</title>
+                 <p>A loan company charges $30 interest for a one month loan of $500.  Find the annual interest 
+                     rate they are charging.</p>
+                
+                <answer>72% interest</answer>
+                
+                <solution>Using <m>I = P_0rt</m>, we get <m>30 = 500\cdot r \cdot 1</m>.  Solving, we get r = 0.06, or 6%.  
+                    Since the time was monthly, this is the monthly interest.  
+                    The annual rate would be 12 times this: 72% interest.</solution>
+            </problem>
+
+        </subsection>
+        
+        <subsection><title>Compound Interest</title>
+            <p>With simple interest, we were assuming that we pocketed the interest when we received it.  
+                In a standard bank account, any interest we earn is automatically added to our balance, and 
+                we earn interest on that interest in future years.  This reinvestment of interest is called 
+                compounding.</p> 
+ 
+            <p>Suppose that we deposit $1000 in a bank account offering 3% interest, compounded monthly.  
+                How will our money grow?</p>
+ 
+
+            <p>The 3% interest is an annual percentage rate (APR) - the total interest to be paid during the 
+                year.  Since interest is being paid monthly, each month, we will earn 12
+                %3 = 0.25% per month.</p>
+ 
+
+            <p>In the first month,</p>
+            <md>
+                <mrow>P_0 \amp = \$1000</mrow> 
+                <mrow>r \amp = 0.0025</mrow>
+                <mrow>I \amp = \$1000 \left(0.0025 \right) = \$2.50</mrow> 
+                <mrow>A \amp = \$1000 + \$2.50 = \$1002.50</mrow>
+            </md>
+            <p>In the first month, we will earn $2.50 in interest, raising our account balance to $1002.50.</p>
+            
+            <p>In the second month,</p>
+                <md>
+                    <mrow>P_0 \amp = \$1002.50 </mrow>
+                    <mrow>I \amp = \$1002.50 \left(0.0025\right) = \$2.51</mrow>
+                    <mrow>A \amp = \$1002.50 + \$2.51 = \$1005.01</mrow>
+                </md>
+                
+            <p>Notice that in the second month we earned more interest than we did in the first month.  This 
+                is because we earned interest not only on the original $1000 we deposited, but we also earned 
+                interest on the $2.50 of interest we earned the first month.  This is the key advantage that 
+                compounding of interest gives us.</p>
+            
+            <p><xref ref="table-compoundint">Table</xref> does this computation for a few more months.</p>
+            
+            <table xml:id="table-compoundint">
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Month</cell>
+                   <cell>Starting Balance</cell>
+                  <cell>Interest Earned</cell>
+                  <cell>Ending Balance</cell>
+              </row>
+              <row>
+                   <cell>1</cell>
+                   <cell>1000</cell>
+                  <cell>2.50</cell>
+                  <cell>1002.50</cell>
+              </row>
+              <row>
+                    <cell>2</cell>
+                    <cell>1002.50</cell>
+                  <cell>2.51</cell>
+                  <cell>1005.01</cell>
+              </row>
+             <row>
+                 <cell>3</cell>
+                 <cell>1005.01</cell>
+                 <cell>2.51</cell>
+                 <cell>1007.52</cell>
+             </row>
+              <row>
+                 <cell>4</cell>
+                 <cell>1007.52</cell>
+                 <cell>2.52</cell>
+                 <cell>1010.04</cell>
+             </row>
+              <row>
+                 <cell>5</cell>
+                 <cell>1010.04</cell>
+                 <cell>2.53</cell>
+                 <cell>1012.57</cell>
+             </row>z
+              <row>
+                 <cell>6</cell>
+                 <cell>1012.57</cell>
+                 <cell>2.53</cell>
+                 <cell>1015.10</cell>
+             </row>
+              <row>
+                 <cell>7</cell>
+                 <cell>1015.10</cell>
+                 <cell>2.54</cell>
+                 <cell>1017.64</cell>
+             </row>
+              <row>
+                 <cell>8</cell>
+                 <cell>1017.54</cell>
+                 <cell>2.54</cell>
+                 <cell>1020.18</cell>
+             </row>
+              <row>
+                 <cell>9</cell>
+                 <cell>1020.18</cell>
+                 <cell>2.55</cell>
+                 <cell>1022.73</cell>
+             </row>
+              <row>
+                 <cell>10</cell>
+                 <cell>1022.73</cell>
+                 <cell>2.56</cell>
+                 <cell>1025.29</cell>
+             </row>
+              <row>
+                 <cell>11</cell>
+                 <cell>1025.29</cell>
+                 <cell>2.56</cell>
+                 <cell>1027.85</cell>
+             </row>
+              <row>
+                 <cell>12</cell>
+                 <cell>1027.85</cell>
+                 <cell>2.57</cell>
+                 <cell>1030.42</cell>
+             </row>
+         </tabular>
+        </table>
+        
+            
+        <p>To find an equation to represent this, if Pm represents the amount of money after m months, 
+            then we could write the recursive equation:</p> 
+ 
+            <p><m>P_0 = \$1000</m></p> 
+            <p><m>P_m = \left(1+0.0025 \right)P_{m-1}</m></p> 
+ 
+
+        <p>You probably recognize this as the recursive form of exponential growth.  If not, we could go 
+        through the steps to build an explicit equation for the growth:</p>
+            
+        <md>
+            <mrow>P_0 \amp= \$1000</mrow>
+            <mrow>P_1 \amp= 1.0025P_0 = 1.0025 \left(1000\right)</mrow> 
+            <mrow>P_2 \amp= 1.0025P_1 = 1.0025 \left(1.0025 \left(1000\right)\right) = 1.0025^2 \left(1000\right)</mrow> 
+            <mrow>P_3 \amp= 1.0025P_2 = 1.0025 \left(1.0025^2\left(1000\right)\right) = 1.0025^3\left(1000\right)</mrow> 
+            <mrow>P_4 \amp= 1.0025P_3 = 1.0025 \left(1.0025^3\left(1000\right)\right) = 1.0025^4\left(1000\right)</mrow>
+        </md>
+ 
+
+            <p>Observing a pattern, we could conclude</p>
+ 
+
+            <me>P_m = \left(1.0025\right)^m\left(\$1000\right)</me> 
+ 
+
+            <p>Notice that the $1000 in the equation was P0, the starting amount.  We found 1.0025 by 
+            adding one to the growth rate divided by 12, since we were compounding 12 times per year.     
+                Generalizing our result, we could write</p>
+                
+                <me>P_m = P_0 \left(1 + \frac{r}{k}\right)^m</me>
+         
+            <p>In this formula:</p> 
+            <p><m>m</m> is the number of compounding periods (months in our example)</p>
+            <p><m>r</m> is the annual interest rate </p>
+            <p><m>k</m> is the number of compounds per year.</p>
+ 
+
+            <p>While this formula works fine, it is more common to use a formula that involves the number of years, 
+                rather than the number of compounding periods.  If <m>N</m> is the number of years, then  
+                <m>m = N k</m>.  Making this change gives us the standard formula for compound interest.</p>
+            
+            
+            <definition><title>Compound Interest</title>
+                <p>The compound interest formula is:</p>
+                <me>P_N = P_0 \left( 1 + \frac{r}{k} \right)^{Nk}</me>
+
+                <p><m>P_N</m>  is the balance in the account after <m>N</m> years.</p>
+                <p><m>P_0</m>  is the starting balance of the account (also called initial deposit, or principal)</p>
+                <p><m>r</m> is the annual interest rate in decimal form </p>
+                <p><m>k</m> is the number of compounding periods in one year.   </p>
+            </definition>
+ 
+
+            <p>If the compounding is done annually (once a year), <m>k = 1</m>.</p> 
+            <p>If the compounding is done quarterly, <m>k = 4</m>.</p> 
+            <p>If the compounding is done monthly, <m>k = 12</m>.</p>
+            <p>If the compounding is done daily, <m>k = 365</m>.</p>
+            
+            <p>The most important thing to remember about using this formula is that it assumes that we put 
+                money in the account once and let it sit there earning interest.</p>
+            
+            <example>
+                <p>A certificate of deposit (CD) is a savings instrument that many banks offer.  It usually gives a 
+                    higher interest rate, but you cannot access your investment for a specified length of time.  
+                    Suppose you deposit $3000 in a CD paying 6% interest, compounded monthly.  How much 
+                    will you have in the account after 20 years?</p>
+                
+                <solution>
+                    <p>In this example, </p> 
+                    <p><m>P_0 = \$3000</m> (the initial deposit)</p>
+                    <p><m>r = 0.06</m> (6% annual rate)</p>
+                    <p><m>k = 12</m> (12 months in 1 year)</p>
+                    <p><m>N = 20</m> (since we’re looking for how much we’ll have after 20 years)</p>
+                    
+                    <me>P_{20} = 3000 \left(1 + \frac{.06}{12}\right)^{20 \cdot 12} = \$9930.61</me>
+                </solution>
+            </example>
+            
+            <p>Let us compare the amount of money earned from compounding against the amount you 
+                would earn from simple interest.</p>
+            
+            <table >
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Years</cell>
+                   <cell>Simple Interest ($15/month)</cell>
+                  <cell>6% Compound Monthly</cell>
+              </row>
+              <row>
+                   <cell>5</cell>
+                   <cell>$3900</cell>
+                  <cell>$4046.55</cell>
+              </row>
+              <row>
+                    <cell>10</cell>
+                    <cell>$4800</cell>
+                  <cell>$5458.19</cell>
+              </row>
+             <row>
+                   <cell>15</cell>
+                   <cell>$5700</cell>
+                  <cell>$7362.28</cell>
+              </row>
+              <row>
+                    <cell>20</cell>
+                    <cell>$6600</cell>
+                  <cell>$9930.61</cell>
+              </row>
+             <row>
+                   <cell>25</cell>
+                   <cell>$7500</cell>
+                  <cell>$13,394.91</cell>
+              </row>
+              <row>
+                    <cell>30</cell>
+                    <cell>$8400</cell>
+                  <cell>$18,067.73</cell>
+              </row>
+             <row>
+                   <cell>35</cell>
+                   <cell>$9300</cell>
+                  <cell>$24,370.65</cell>
+              </row>
+         </tabular>
+            </table>
+            
+            <figure>
+  <image xml:id="finance1">
+      <caption>Image Credit: RRCC</caption>
+      <description>Values of the account over time are plotted. When there is simple interest, the graph is 
+          linear. If the interested is compounded the graph is exponential.</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+        \pgfplotsset{scaled y ticks=false}
+        \begin{axis}[
+        xlabel = {Years},
+        ylabel = {Dollars},
+        xmin = 0, xmax = 35, ymin = 0, ymax = 25000,
+        xtick distance = 5,
+        yticklabel style={/pgf/number format/fixed},
+        grid = none,
+        width = \textwidth,
+        height = 0.75\textwidth]
+        
+        \addplot [color = blue, mark = *, mark size = 3pt] coordinates{
+        (0,3000) (5,3900) (10,4800) (15, 5700) (20, 6600) (25,7500) (30, 8400) (35, 9300)
+        };
+        
+        \addlegendentry{Simple Interest}
+        
+        \addplot [color = red, mark = *, mark size = 3pt] coordinates{
+        (0,3000) (5,4047) (10,5458) (15, 7362) (20, 9931) (25,13395) (30, 18068) (35, 24371)
+        };
+        
+        \addlegendentry{Compound Interest}
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+                
+
+</figure>
+
+            <p>As you can see, over a long period of time, compounding makes a large difference in the 
+                account balance.  You may recognize this as the difference between linear growth and 
+                exponential growth.</p>
+            
+            <note><title>Evaluating exponents on the calculator</title>
+                <p>When we need to calculate something like <m>5^3</m> it is easy enough to just multiply 
+                    <m>5\cdot 5 \cdot 5=125</m>.  But when we need to calculate something like <m>1.005^{240}</m>, 
+                    it would be very tedious to calculate this by multiplying 1.005 by itself 240 times!  
+                    So to make things easier, we can harness the power of our scientific calculators.</p>  
+ 
+                <p>Most scientific calculators have a button for exponents.  It is typically either labeled 
+                    like:</p>
+                <p> <alert>^</alert>, <alert><m>y^x</m></alert>, or <alert><m>x^y</m></alert></p>
+ 
+                <p>To evaluate <m>1.005^{240}</m>  we'd type <kbd>1.005</kbd> <kbd>^</kbd> <kbd>240</kbd>. 
+                    Try it out - you should get something around 3.3102044758.</p>
+                    </note>
+            
+            <example>
+                <p>You know that you will need $40,000 for your child’s education in 18 years.  If your account 
+                    earns 4% compounded quarterly, how much would you need to deposit now to reach your 
+                    goal?</p>
+ 
+                <solution><p>In this example, we’re looking for <m>P_0</m>.</p>
+                    <p><m>r = 0.04</m></p>
+                    <p><m>k = 4</m> (4 quarters in 1 year)</p>
+                    <p><m>N = 18</m></p>
+                    <p><m>P_{18} = \$40,000</m></p>
+ 
+                    <p>In this case, we’re going to have to set up the equation, and solve for <m>P_0</m>.</p>
+                        <md>
+                            <mrow>40000 \amp =P_0 \left( 1 + \frac{0.04}{4}\right)^{4 \cdot 18}</mrow>
+                            <mrow>4000 \amp = P_0 \left( 2.0471 \right)</mrow>
+                            <mrow>P_0 \amp = \frac{40000}{2.0471}=19539.84</mrow>
+                    </md>
+                    <p>So you would need to deposit $19,539.84 now to have $40,000 in 18 years.</p>
+                </solution>
+            </example>
+            
+            <note><title>Rounding</title>
+                <p>It is important to be very careful about rounding when calculating things with 
+                exponents.  In general, you want to keep as many decimals during calculations as you 
+                can.  Be sure to keep at least 3 significant digits (numbers after any leading zeros).  
+                Rounding 0.00012345 to 0.000123 will usually give you a “close enough” answer, but 
+                    keeping more digits is always better.</p>
+            </note>
+            
+            <example>
+                <p>To see why not over-rounding is so important, suppose you were investing $1000 at 5% 
+                    interest compounded monthly for 30 years.</p>
+                <md>
+                    <mrow>P_0 \amp = 5000</mrow>
+                    <mrow>r \amp = 0.05</mrow>
+                    <mrow>k \amp = 12</mrow>
+                    <mrow>N \amp = 30</mrow>
+                </md>
+                
+                <p>Here is the effect of rounding this to different values:</p>
+                <table >
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>r/k rounded to:</cell>
+                  <cell>Gives <m>P_{30}</m> to be:</cell>
+                  <cell>Error</cell>
+              </row>
+              <row>
+                   <cell>0.004</cell>
+                   <cell>$4208.59</cell>
+                  <cell>$259.15</cell>
+              </row>
+              <row>
+                    <cell>0.0042</cell>
+                    <cell>$4521.45</cell>
+                  <cell>$53.71</cell>
+              </row>
+              <row>
+                   <cell>0.00417</cell>
+                   <cell>$4473.09</cell>
+                  <cell>$5.35</cell>
+              </row>
+              <row>
+                    <cell>0.004167</cell>
+                    <cell>$4468.28</cell>
+                  <cell>$0.54</cell>
+              </row>
+              <row>
+                   <cell>0.0041667</cell>
+                   <cell>$4467.80</cell>
+                  <cell>$0.06</cell>
+              </row>
+              <row>
+                    <cell>no rounding</cell>
+                    <cell>$4467.74</cell>
+                  <cell></cell>
+              </row>
+         </tabular>
+</table>
+ 
+        <p>If you’re working in a bank, of course you wouldn’t round at all.  For our purposes, the 
+            answer we got by rounding to 0.00417, three significant digits, is close enough - $5 off of 
+            $4500 isn’t too bad.  Certainly keeping that fourth decimal place wouldn’t have hurt.</p>
+                
+            </example>
+            
+            <note><title>Using your Calculator</title>
+                <p>In many cases, you can avoid rounding completely by how you enter things in your 
+                    calculator. For example, in the example above, we needed to calculate</p>
+                
+                <me>P_{30} = 1000 \left( 1 + \frac{0.05}{12}\right)^{12 \cdot 30}</me>
+                 
+                <p>We can quickly calculate 12×30 = 360, giving</p>
+                
+                <me>P_{30} = 1000 \left( 1 + \frac{0.05}{12} \right)^{360}</me>
+                
+                <p>Now we can use the calculator:</p>
+                
+                <table >
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Type This</cell>
+                   <cell>Calculator Shows</cell>
+              </row>
+              <row>
+                  <cell>0.05 <kbd>/</kbd> 12 <kbd>=</kbd></cell>
+                   <cell>0.00416666666667</cell>
+              </row>
+              <row>
+                  <cell><kbd>+</kbd>1<kbd>=</kbd></cell>
+                    <cell>1.00416666666667</cell>
+              </row>
+             <row>
+                 <cell><kbd>^</kbd>360 <kbd>=</kbd></cell>
+                 <cell>4.46774431400613</cell>
+             </row>
+             <row>
+                 <cell><kbd>x</kbd>1000<kbd>=</kbd></cell>
+                 <cell>4467.74431400613</cell>
+             </row>
+         </tabular>
+</table>
+                
+                <p>The previous steps were assuming you have a “one operation at a time” calculator; a 
+more advanced calculator will often allow you to type in the entire expression to be 
+                    evaluated.  If you have a calculator like this, you will probably just need to enter: </p>
+                
+                <p> 1000 <kbd>x</kbd> <kbd>(</kbd> 1 + 0.05 <kbd>/</kbd> 12 <kbd>)</kbd> <kbd>^</kbd>360 <kbd>=</kbd></p>
+                
+            </note>
+
+        </subsection>
+        
+        
+    </section>
+    
+    <section xml:id="section-finance-annuities">
+        <title>Annuities</title>
+        
+        <objectives>
+            <ul>
+                <li>Solve applications involving annuities</li>
+            </ul>
+        </objectives>
+        
+        <p>For most of us, we aren’t able to put a large sum of money in the bank today. Instead, we
+            save for the future by depositing a smaller amount of money from each paycheck into the
+            bank. This idea is called a savings annuity. Most retirement plans like 401k plans or IRA
+            plans are examples of savings annuities.</p>
+        
+         <p>An annuity can be described recursively in a fairly simple way. Recall that basic compound
+            interest follows from the relationship</p>
+        
+        <me>P_m = \left(1 + \frac{r}{k}\right) P_{m-1}</me>
+
+        <p>For a savings annuity, we simply need to add a deposit, <m>d</m>, to the account with each
+        compounding period:</p>
+            
+            <me>P_m = \left( 1 + \frac{r}{k}\right) P_{m-1} + d</me>
+
+        <p>Taking this equation from recursive form to explicit form is a bit trickier than with
+        compound interest. It will be easiest to see by working with an example rather than working
+            in general.</p>
+        
+        <p>Suppose we will deposit $100 each month into an account paying 6% interest. We assume
+            that the account is compounded with the same frequency as we make deposits unless stated
+            otherwise. In this example:</p>
+        
+        <p><m>r = 0.06</m> (6%)</p>
+        <p><m>k = 12</m> (12 compounds/deposits per year)</p>
+        <p><m>d = \$100</m> (our deposit per month)</p>
+        
+        <p>Writing out the recursive equation gives</p>
+        
+        <me>P_m = \left(1 + \frac{0.06}{12}\right)P_{m-1} + 100 = \left(1.005\right)P_{m-1} + 100</me>
+
+        <p>Assuming we start with an empty account, we can begin using this relationship:</p>
+        
+        <md>
+            <mrow>P_0 \amp= 0</mrow>
+            <mrow>P_1 \amp = \left(1.005\right)P_0+100=100</mrow>
+            <mrow>P_2 \amp= \left(1.005\right)P_1 + 100=\left(1.005\right)100+100=100 \left( 1.005 \right) + 100</mrow>
+            <mrow>P_3 \amp= \left(1.005\right)P_2+100=\left(1.005 \right)\left(100\left( 1.005\right) + 100 \right) +100 =
+            100\left( 1.005 \right)^2 + 100\left(1.005 \right) + 100</mrow>
+        </md>
+
+        <p>Continuing this pattern, after m deposits, we’d have saved:</p>
+        
+        <me>P_m = 100\left(1.005\right)^{m-1} + 100\left(1.005\right)^{m-2}+ \ldots + 100\left(1.005\right) + 100</me>
+
+        <p>In other words, after <m>m</m> months, the first deposit will have earned compound interest for <m>m-1</m>
+            months. The second deposit will have earned interest for <m>m-2</m> months. Last months deposit
+            would have earned only one month worth of interest. The most recent deposit will have
+            earned no interest yet.</p>
+        
+        <p>This equation leaves a lot to be desired, though - it doesn’t make calculating the ending
+                balance any easier! To simplify things, multiply both sides of the equation by 1.005, and distribute on 
+        on the right side of the equation:</p>
+        
+        <me>1.005P_m = 100\left(1.005\right)^{m}+100\left(1.005\right)^{m-1} + \ldots + 100\left(1.005\right)^2 + 100\left(1.005\right)</me>
+
+
+        <p>Now we’ll line this up with like terms from our original equation, and subtract each side</p>
+        
+        <md>
+            <mrow>1.005P_m \amp= 100\left(1.005\right)^m +\amp 100\left(1.005\right)^{m-1} \amp+ \ldots \amp+ 
+                100\left(1.005\right)</mrow>
+            <mrow>P_m \amp= \amp 100\left(1.005\right)^{m-1}+\amp \ldots \amp+
+                100\left(1.005\right) + 100</mrow>
+        </md>
+        
+        <p>Almost all the terms cancel on the right hand side when we subtract, leaving</p>
+        
+        <me>1.005P_m - P_m = 100\left(1.005\right)^m - 100</me>
+        
+        <p>Solving for <m>P_m</m></p>
+        
+        <me>0.005P_m = 100\left(1.005^m - 1\right)</me>
+        <me>P_m = \frac{100\left(1.005^m -1\right)}{0.005}</me>
+        
+        <p>Replacing <m>m</m> months with <m>12N</m>, where <m>N</m> is measured in years, gives</p>
+        
+        <me>P_N = \frac{100\left(1.005^{12N} -1\right)}{0.005}</me>
+        
+        <p>Recall 0.005 was r/k and 100 was the deposit d. 12 was k, the number of deposit each year.
+            Generalizing this result, we get the saving annuity formula.</p>
+        
+        <definition><title>Annuity Formula</title>
+            <p>To compute the value of an annutiy after <m>N</m> years,</p>
+            <me>P_N = \frac{d\left(\left(1+\frac{r}{k}\right)^{Nk}-1\right)}{\left(\frac{r}{k}\right)}</me>
+            <p><m>P_N</m> is the balance in the account after <m>N</m> years.</p>
+            <p><m>d</m> is the regular deposit (the amount you deposit each year, each month, etc.)</p>
+            <p><m>r</m> is the annual interest rate in decimal form.</p>
+            <p><m>k</m> is the number of compounding periods in one year.</p>
+            <p>If the compounding frequency is not explicitly stated, assume there are the same
+                number of compounds in a year as there are deposits made in a year.</p>
+        </definition>
+        
+        <p>For example, if the compounding frequency isn’t stated:</p>
+        <p>If you make your deposits every month, use monthly compounding, k = 12.</p>
+        <p>If you make your deposits every year, use yearly compounding, k = 1, etc.</p>
+        
+        <note><title>When do you use this?</title>
+            <p>Annuities assume that you put money in the account on a regular schedule (every
+                month, year, quarter, etc.) and let it sit there earning interest.</p>
+            <p>Compound interest assumes that you put money in the account once and let it sit there
+                earning interest.</p>
+            <p>Compound interest: One deposit</p>
+            <p>Annuity: Many deposits.</p>
+        </note>
+        
+        <example>
+            <p>A traditional individual retirement account (IRA) is a special type of retirement account in
+                which the money you invest is exempt from income taxes until you withdraw it. If you
+                deposit $100 each month into an IRA earning 6% interest, how much will you have in the
+                account after 20 years?</p>
+            
+            <solution><p>In this example,</p>
+                <md>
+                    <mrow>d \amp= \$100</mrow>
+                    <mrow>r \amp= 0.06</mrow>
+                    <mrow>k \amp= 12</mrow>
+                    <mrow>N \amp = 20</mrow>
+                </md>
+                
+                <p>Putting this into the equation:</p>
+                
+                <me>P_N =\frac{100\left( \left(1+\frac{0.06}{12}\right)^{20\cdot 12} - 1\right)}{\left(\frac{.06}{12}\right)}</me>
+                <me>P_N =\frac{100 \left( \left(1.005\right)^{240}-1\right)}{0.005}</me>
+                <me>P_N =\frac{100\left(3.310 - 1\right)}{0.005}</me>
+                <me>P_N =\frac{100\left(2.210\right)}{0.005}=\$46200</me>
+                
+                <p>The account will grow to $46,200 after 20 years.</p>
+                <p>Notice that you deposited into the account a total of $24,000 ($100 a month for 240 months).
+                The difference between what you end up with and how much you put in is the interest
+                earned. In this case it is $46,200 - $24,000 = $22,200.</p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>You want to have $200,000 in your account when you retire in 30 years. Your retirement
+                account earns 8% interest. How much do you need to deposit each month to meet your
+                retirement goal?</p>
+            
+            <solution><p>In this example, we are looking for <m>d</m>.</p>
+                
+                <md>
+                    <mrow>r \amp = 0.08</mrow>
+                    <mrow>k \amp = 12</mrow>
+                    <mrow>N \amp = 30</mrow>
+                    <mrow>P_{30} \amp = \$200000</mrow>
+                </md>
+                
+                <p>In this case, we’re going to have to set up the equation, and solve for d.</p>
+                
+                <me>200000 = \frac{d \left( \left( 1+\frac{0.08}{12}\right)^{30 \cdot 12}-1\right)}{\left(\frac{.08}{12}\right)}</me>
+                
+                <me>200000 = \frac{d \left( \left(1.00667\right)^{360} - 1\right)}{0.00667}</me>
+                
+                <me>200000 = d \left(1491.57\right)</me>
+                
+                <me>d = \frac{200000}{1491.57} = \$134.09</me>
+                
+                <p>So you would need to deposit $134.09 each month to have $200,000 in 30 years if your
+                    account earns 8% interest.</p>
+                
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>A more conservative investment account pays 3% interest. If you deposit $5 a day into this
+                account, how much will you have after 10 years? How much is from interest?</p>
+            
+            <answer>
+                <p>We will have <m>P_{10}= \$21,282.07</m> after 10 years.</p>
+                <p><m>\$3,032.07</m> is from interest.</p>
+            </answer>
+            
+        </problem>
+                
+               
+    </section>
+    
+    <section xml:id = "section-finance-payout"><title>Payout Annuities</title>
+        <objectives>
+            <ul>
+                <li>Solve applications involving payout annuities</li>
+            </ul>
+        </objectives>
+        
+        <p>In the last section you learned about annuities. In an annuity, you start with nothing, put
+            money into an account on a regular basis, and end up with money in your account.</p>
+       
+        <p>In this section, we will learn about a variation called a Payout Annuity. With a payout
+            annuity, you start with money in the account, and pull money out of the account on a regular
+            basis. Any remaining money in the account earns interest. After a fixed amount of time, the
+            account will end up empty.</p>
+        
+        <p>Payout annuities are typically used after retirement. Perhaps you have saved $500,000 for
+            retirement, and want to take money out of the account each month to live on. You want the
+            money to last you 20 years. This is a payout annuity. The formula is derived in a similar
+            way as we did for savings annuities. The details are omitted here.</p>
+        
+        <definition><title>Payout Annuity Formula</title>
+            <p>To compute the balance at the beginning of a payout annuity with regular withdrawals of d,</p>
+            <me>P_0=\frac{d \left(1 - \left(1+\frac{r}{k}\right)^{-Nk}\right)}{\left(\frac{r}{k}\right)}</me>
+            <p><m>P_0</m> is the balance in the account at the beginning (starting amount, or principal).</p>
+            <p><m>d</m> is the regular withdrawal (the amount you take out each year, each month, etc.)</p>
+            <p><m>r</m> is the annual interest rate (in decimal form. Example: 5% = 0.05)</p>
+            <p><m>k</m> is the number of compounding periods in one year.</p>
+            <p><m>N</m> is the number of years we plan to take withdrawals</p>
+        </definition>
+        
+        <p>Like with annuities, the compounding frequency is not always explicitly given, but is
+            determined by how often you take the withdrawals.</p>
+        
+        <note><title>When do you use this?</title>
+            <p>Payout annuities assume that you take money from the account on a regular schedule
+                (every month, year, quarter, etc.) and let the rest sit there earning interest.</p>
+            <p>Compound interest: One deposit</p>
+            <p>Annuity: Many deposits.</p>
+            <p>Payout Annuity: Many withdrawals</p>
+        </note>
+        
+        <example>
+            <p>After retiring, you want to be able to take $1000 every month for a total of 20 years from
+                your retirement account. The account earns 6% interest. How much will you need in your
+                account when you retire?</p>
+            
+            <solution>
+                <p>In this example,</p>
+                <md>
+                    <mrow>d \amp = 1000</mrow>
+                    <mrow>r \amp = 0.06 </mrow>
+                    <mrow>k \amp = 12</mrow>
+                    <mrow>N \amp = 20</mrow>
+                </md>
+                
+                <p>We’re looking for <m>P_0</m>; how much money needs to be in the account at the beginning.
+                    Putting this into the equation:</p>
+                
+                <me>P_0=\frac{1000\left(1 - \left(1+\frac{0.06}{12}\right)^{-20 \cdot 12}\right)}{\left(\frac{0.06}{12}\right)}</me>
+                
+                <me>P_0=\frac{1000\left(1- \left(1.005\right)^{-240}\right)}{0.005}</me>
+                
+                <me>P_0 = \$139,600</me>
+                
+                <p>You will need to have $139,600 in your account when you retire.</p>
+
+                <p>Notice that you withdrew a total of $240,000 ($1000 a month for 240 months). The
+                    difference between what you pulled out and what you started with is the interest earned. In
+                    this case it is $240,000 - $139,600 = $100,400 in interest.</p>
+            </solution>
+        </example>
+        
+        <note><title>Evaluating negative exponents on your calculator</title>
+            <p>With these problems, you need to raise numbers to negative powers. Most calculators
+            have a separate button for negating a number that is different than the subtraction
+                button. Some calculators label this <kbd>(-)</kbd> , some with <kbd>+/-</kbd>. The button is often near the
+                <kbd>=</kbd> key or the decimal point.</p>
+            
+            <p>If your calculator displays operations on it (typically a calculator with multiline
+                display), to calculate <m>1.005^{-240}</m> you'd type something like: 1.005 <kbd>^</kbd> <kbd>(-)</kbd> 240</p>
+            
+            <p>If your calculator only shows one value at a time, then usually you hit the <kbd>(-)</kbd> key after
+                a number to negate it, so you'd hit: 1.005 <kbd>^</kbd> 240 <kbd>(-)</kbd> <kbd>=</kbd></p>
+            
+            <p>Give it a try - you should get <m>1.005^{-240} = 0.302096</m></p>
+            
+        </note>
+        
+        <example>
+            <p>You know you will have $500,000 in your account when you retire. You want to be able to
+                take monthly withdrawals from the account for a total of 30 years. Your retirement account
+                earns 8% interest. How much will you be able to withdraw each month?</p>
+            
+            <solution>
+                <p>In this example, we’re looking for d.</p>
+                
+                <md>
+                    <mrow>r \amp= 0.08</mrow>
+                    <mrow>k \amp= 12</mrow>
+                    <mrow>N \amp = 30</mrow>
+                    <mrow>P_0 \amp = 500,000</mrow>
+                </md>
+                
+                <p>In this case, we’re going to have to set up the equation, and solve for d.</p>
+                
+                <me>500000 = \frac{d\left(1 - \left(1 + \frac{0.08}{12}\right)^{-30\cdot 12}\right)}{\left(\frac{0.08}{12}\right)}</me>
+                <me>500000 = \frac{d\left(1 - \left(1.00667\right)^{-360}\right)}{0.00667}</me>
+                
+                <me>500000 = d \left(136.232 \right)</me>
+                
+                <me>d = \frac{500000}{136.232}=\$3670.21</me>
+                
+                <p>You would be able to withdraw $3,670.21 each month for 30 years.</p>
+                
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>A donor gives $100,000 to a university, and specifies that it is to be used to give annual
+                scholarships for the next 20 years. If the university can earn 4% interest, how much can they
+                give in scholarships each year?</p>
+            
+            <answer><p>Solving for d gives $7,358.18 each year that they can give in scholarships.</p>
+
+                <p>It is worth noting that usually donors instead specify that only interest is to be used for
+                    scholarship, which makes the original donation last indefinitely. If this donor had specified
+                    that, $100,000(0.04) = $4,000 a year would have been available.</p>
+                
+            </answer>
+        </problem>
+                     
+    </section>
+    
+    <section xml:id="section-finance-loans"><title>Loans</title>
+        
+        <objectives>
+            <ul>
+                <li>Solve applications involving amortized loans</li>
+                <li>Create amortization schedules</li>
+                <li>Compute the remaining loan balance</li>
+            </ul>
+        </objectives>
+        
+        <introduction>In the last section, you learned about payout annuities.
+In this section, you will learn about conventional loans (also called amortized loans or
+installment loans). Examples include auto loans and home mortgages. These techniques do
+not apply to payday loans, add-on loans, or other loan types where the interest is calculated
+            up front.</introduction>
+        
+        <subsection><title>Loans</title>
+            <p>One great thing about loans is that they use exactly the same formula as a payout annuity. To
+see why, imagine that you had $10,000 invested at a bank, and started taking out payments
+while earning interest as part of a payout annuity, and after 5 years your balance was zero.
+Flip that around, and imagine that you are acting as the bank, and a car lender is acting as
+you. The car lender invests $10,000 in you. Since you’re acting as the bank, you pay
+            interest. The car lender takes payments until the balance is zero.</p>
+        
+            <definition><title>Loans Formula</title>
+            <p>The loans formula is</p>
+            <me>P_0=\frac{d\left(1 - \left(1+\frac{r}{k}\right)^{-Nk}\right)}{\left(\frac{r}{k}\right)}</me>
+            <p><m>P_0</m> is the balance in the account at the beginning (the principal, or amount of the loan).</p>
+            <p><m>d</m> is your loan payment (your monthly payment, annual payment, etc)</p>
+            <p><m>r</m> is the annual interest rate in decimal form.</p>
+            <p><m>k</m> is the number of compounding periods in one year.</p>
+            <p><m>N</m> is the length of the loan, in years</p>
+        </definition>
+        
+        <p>Like before, the compounding frequency is not always explicitly given, but is determined by
+            how often you make payments.</p>
+
+        <note><title>When do you use this?</title>
+            <p>The loan formula assumes that you make loan payments on a regular schedule (every
+    month, year, quarter, etc.) and are paying interest on the loan.</p>
+            <p>Compound interest: One deposit</p>
+            <p>Annuity: Many deposits.</p>
+            <p>Payout Annuity: Many withdrawals</p>
+            <p>Loans: Many payments</p>
+        </note>
+        
+        <example>
+            <p>You can afford $200 per month as a car payment. If you can get an auto loan at 3% interest
+for 60 months (5 years), how expensive of a car can you afford? In other words, what
+                amount loan can you pay off with $200 per month?</p>
+            
+            <solution>
+                <p>In this example,</p>
+                <p><m>d = \$200</m> the monthly loan payment</p>
+                <p><m>r = 0.03</m> 3% annual rate</p>
+                <p><m>k = 12</m> since we’re doing monthly payments, we’ll compound monthly</p>
+                <p><m>N = 5</m> since we’re making monthly payments for 5 years</p>
+                <p>We’re looking for <m>P_0</m>, the starting amount of the loan.</p>
+                
+                <me>P_0=\frac{200\left(1 - \left(1+\frac{0.03}{12}\right)^{-5\cdot 12}\right)}{\left( \frac{0.03}{12}\right)}</me>
+                
+                <me>P_0 = \frac{200\left(1-\left(1.0025\right)^{-60}\right)}{0.0025}</me>
+                
+                <me>P_0 = 11,120</me>
+                
+                <p>You can afford a $11,120 loan.</p>
+
+                <p>You will pay a total of $12,000 ($200 per month for 60 months) to the loan company. The
+difference between the amount you pay and the amount of the loan is the interest paid. In
+                    this case, you’re paying $12,000-$11,120 = $880 interest total.</p>
+                
+            </solution>
+            
+        </example>
+        
+        <example>
+            <p>You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%,
+                and the loan is for 30 years. How much will your monthly payments be?</p>
+
+            <solution><p>In this example, we’re looking for d.</p>
+                <p><m>r = 0.06</m> 6% annual rate</p>
+                <p><m>k = 12</m> since we’re paying monthly</p>
+                <p><m>N = 30</m> 30 years</p>
+                <p><m>P_0 = \$140,000</m> the starting loan amount</p>
+
+                <p>In this case, we’re going to have to set up the equation, and solve for d.</p>
+                
+                <me>140000 = \frac{d\left(1 - \left(1 + \frac{0.06}{12}\right)^{-30\cdot 12}\right)}{\left(\frac{0.06}{12}\right)}</me>
+                <me>140000 = \frac{d\left(1 - \left(1.005\right)^{-360}\right)}{0.005}</me>
+                
+                <me>140000 = d \left(166.792 \right)</me>
+                
+                <me>d = \frac{140000}{166.792}=\$839.37</me>
+                
+                <p>You will make payments of $839.37 per month for 30 years. </p>
+
+                <p>You’re paying a total of $302,173.20 to the loan company: $839.37 per month for 360
+months. You are paying a total of $302,173.20 - $140,000 = $162,173.20 in interest over the
+                    life of the loan. </p>
+                
+            </solution>
+            
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>Janine bought $3,000 of new furniture on credit. Because her credit score isn’t very good,
+                the store is charging her a fairly high interest rate on the loan: 16%. If she agreed to pay off
+                the furniture over 2 years, how much will she have to pay each month?</p>
+            
+            <answer><p>Solving for d gives $146.89 as monthly payments.</p>
+
+                <p>In total, she will pay $3,525.36 to the store, meaning she will pay $525.36 in interest over the
+                    two years.</p>
+            </answer>
+        </problem>
+            
+        </subsection>
+        
+        <subsection><title>Amortization Schedules</title>
+            <p>Consider a 5-year loan for $10,000 with yearly payments.  If the interest rate is 12%,
+                we can compute the yearly payments.  But how much interest are we paying each year?  How much of our payments are 
+                going toward the principal of the loan?</p>
+                
+                <p>We can create a table, also called an <term>amortization schedule</term> to show 
+                    how the interest is spread out over the payments of the loan.</p>
+            
+            <p>First, using the loans formula, we can solve for <m>d</m>, or the amount of each payment.</p>
+            
+            <me>10000 = \frac{d\left(1 - \left(1 + \frac{.12}{1}\right)^{-5 \cdot 1}\right)}{\left(\frac{.12}{1}\right)}</me>
+            
+            <me>10000 = \frac{d \left(1 - \left(1.12\right)^{-5}\right)}{.12}</me>
+            
+            <me>10000 = d \left(3.6048 \right)</me>
+            
+            <me>d = 10000 \div 3.6048 = 2774.08</me>
+            
+            <p>We will make 5 annual payments of $2,774.08.  That means, we are paying a total of
+                <m>2774.08 \times 5 = 13870.40</m> to pay off this loan. Since we borrowed
+                $10,000, the difference is interest. $13,870.40 - $10,000 = $3,870.40.</p>
+            
+            <p>Since we owe more money at the beginning of the loan, we should expect to pay more interest in beginning. We 
+                can see how this works in <xref ref="table-amort">Table</xref> below.</p>
+            
+            <table xml:id = "table-amort">
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Payment</cell>
+                   <cell>Amount of Payment</cell>
+                  <cell>Interest</cell>
+                  <cell>Paid to Principal</cell>
+                  <cell>New Balance</cell>
+              </row>
+              <row>
+                   <cell>1</cell>
+                   <cell>$2,774.08</cell>
+                  <cell>$1,200</cell>
+                  <cell>$1,574.08</cell>
+                  <cell>$8,425.92</cell>     
+              </row>
+              <row>
+                    <cell>2</cell>
+                    <cell>$2,774.08</cell>
+                  <cell>$1,011.11</cell>
+                  <cell>$1,762.97</cell>
+                  <cell>$6,662.95</cell>    
+              </row>
+              <row>
+                   <cell>3</cell>
+                   <cell>$2,774.08</cell>
+                  <cell>$799.55</cell>
+                  <cell>$1,974.53</cell>
+                  <cell>$4,688.42</cell>     
+              </row>
+              <row>
+                    <cell>4</cell>
+                    <cell>$2,774.08</cell>
+                  <cell>$562.61</cell>
+                  <cell>$2,211.47</cell>
+                  <cell>$2,476.95</cell>    
+              </row>
+             <row>
+                    <cell>5</cell>
+                    <cell>$2,774.08</cell>
+                  <cell>$297.23</cell>
+                  <cell>$2,476.85</cell>
+                  <cell>$0.10</cell>    
+              </row>
+         </tabular>
+</table>
+            
+            <p>Before we make our first payment, we owe $10,000.  We will pay 12% annual interest on that amount:
+                <me>I = \$10000\cdot .12 \cdot 1 = \$1200</me>
+                which is $1,200. That means $1,200 of our first payment is interest.  The rest of the $2,774.08 will go 
+                toward the principal of the loan.</p>
+            
+            <p>Since $2,774.08 - $1,200 = $1,574.08, the balance (or principal) of the loan will be reduced by
+                $1,574.08</p>
+            
+            <p>After our first payment, the balance of the loan is $10,000 - $1,574.08 = $8,425.92</p>
+            
+            <p>This information is summarized in the first row of the amortization schedule in
+                <xref ref="table-amort"></xref>.</p>
+            
+            <p>To determine the interest in that second payment, we have to take 12% of the new balance ($8.425.92):
+                <me>I = \$8,425.92 \cdot .12 \cdot 1 = \$1,011.11</me>
+            </p>
+            
+            <p>In the second payment, $2,774.08 - $1,011.11 = $1,762.97 will reduce the balance of the loan.  That means,
+                the balance of the loan after the second payment is: $8.425.92 - $1,792.97 = $6,662.95</p>
+            
+            <p>To find the interest in the third payment we can take 12% of this new balance--$6,662.95.</p>
+            
+            <p>We can continue this pattern to complete the rest of the table.</p>
+            
+            <p>The remaining balance of 10 cents at the end of the loan is a result of rounding that was 
+                used to compute the loan payments. A lender wouldn't actually do any rounding, and the entire balance of the loan would
+                be paid off at the end of the 5 years.</p>
+            
+            <example><p>Create the first two lines of an amortization schedule for a 30-year mortgage for $150,000 at 6% 
+                interest with monthly payments.</p>
+                
+                <solution><p>
+                    First we need to find the amount of the monthly payment (or d) using our loans formula:</p>
+                    
+                    <me>150000 = \frac{d\left(1 - \left(1 + \frac{0.06}{12}\right)^{-30\cdot 12}\right)}{\left(\frac{0.06}{12}\right)}</me>
+                <me>150000 = \frac{d\left(1 - \left(1.005\right)^{-360}\right)}{0.005}</me>
+                
+                <me>150000 = d \left(166.792 \right)</me>
+                
+                <me>d = \frac{150000}{166.792}=\$899.32</me>
+                
+               <p>Now we can compute the amount of interest owed during that first month of the loan. Using our
+                   simple interest formula,</p>
+                    <me>I = P_0 r t</me>
+                    <me>I = 150000 \left( 0.06 \right) \left(\frac{1}{12}\right)</me>
+                    <me>I = 750</me>
+                    
+                    <p>Recall, that <m>t</m> is measured in years. One month = <m>\frac{1}{12}</m> year.</p>
+                    <p>This means $750 of our first payment is interest.  The rest, $899.32 - $750 = $149.32, 
+                        will go toward the balance of the loan.</p>
+                    
+                    <p>The new balance of the loan can be obtained by subtracting $149.32 from $150,000 to get 
+                        $149,850.68.</p>
+                    
+                    <p>The first line of the amortization schedule is:</p>
+                    
+                    <table >
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Payment</cell>
+                   <cell>Amount of Payment</cell>
+                  <cell>Interest</cell>
+                  <cell>Paid to Principal</cell>
+                  <cell>New Balance</cell>
+              </row>
+              <row>
+                   <cell>1</cell>
+                   <cell>$899.32</cell>
+                  <cell>$750</cell>
+                  <cell>$149.32</cell>
+                  <cell>$149,850.68</cell>     
+              </row>
+                        </tabular>
+                    </table>
+                    
+                    <p>Now we repeat the process to fill out the second line of table. To compute the amount of interest 
+                        owed during the second month of the loan, we can use the
+                   simple interest formula,</p>
+                    <me>I = P_0 r t</me>
+                    <me>I = 149,850.68\left( 0.06 \right) \left(\frac{1}{12}\right)</me>
+                    <me>I = 749.25</me>
+                    
+                    <p>Notice that we still <m>\frac{1}{12}</m> year for <m>t</m> because we are interested in the interest
+                        that we owe over one month (specifically the second month) of the loan.</p>
+                    <p>This means $749.25 of our second payment is interest.  The rest, $899.32 - $749.25 = $150.07, 
+                        will go toward the balance of the loan.</p>
+                    
+                    <p>The new balance of the loan can be obtained by subtracting $150.07 from $149,850.68 to get 
+                        $149,700.61.</p>
+                    
+                    <p>Now we have the first two lines of the amortization schedule in the table.</p>
+                    
+                 
+                    
+                      <table >
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Payment</cell>
+                   <cell>Amount of Payment</cell>
+                  <cell>Interest</cell>
+                  <cell>Paid to Principal</cell>
+                  <cell>New Balance</cell>
+              </row>
+              <row>
+                   <cell>1</cell>
+                   <cell>$899.32</cell>
+                  <cell>$750</cell>
+                  <cell>$149.32</cell>
+                  <cell>$149,850.68</cell>     
+              </row>
+             <row>
+                   <cell>2</cell>
+                   <cell>$899.32</cell>
+                  <cell>$749.25</cell>
+                  <cell>$150.07</cell>
+                  <cell>$149,700.61</cell>     
+              </row>
+                        </tabular>
+                    </table>
+                    
+                </solution>
+            </example>
+                    
+                    
+                      
+                
+                
+            
+        </subsection>
+        
+        <subsection><title>Remaining Loan Balance</title>
+            <p>With loans, it is often desirable to determine what the remaining loan balance will be after
+some number of years. For example, if you purchase a home and plan to sell it in five years,
+you might want to know how much of the loan balance you will have paid off and how much
+                you have to pay from the sale.</p>
+
+            <p>To determine the remaining loan balance after some number of years, we first need to know
+the loan payments, if we don’t already know them. Remember that only a portion of your
+loan payments go towards the loan balance; a portion is going to go towards interest. For
+example, if your payments were $1,000 a month, after a year you will not have paid off
+                $12,000 of the loan balance.</p>
+            
+            <p>To determine the remaining loan balance, we can think “how much loan will these loan
+                payments be able to pay off in the remaining time on the loan?”</p>
+            
+            <example>
+                <p>If a mortgage at a 6% interest rate has payments of $1,000 a month, how much will the loan
+                    balance be 10 years from the end the loan?</p>
+
+                <solution>
+                    <p>To determine this, we are looking for the amount of the loan that can be paid off by $1,000 a
+                        month payments in 10 years. In other words, we’re looking for <m>P_0</m> when</p>
+                    <p><m>d = \$1,000</m> the monthly loan payment</p>
+                    <p><m>r = 0.06</m> 6% annual rate</p>
+                    <p><m>k = 12</m> since we’re doing monthly payments, we’ll compound monthly</p>
+                    <p><m>N = 10</m> since we’re making monthly payments for 10 more years</p>
+                    
+                    <me>P_0=\frac{1000\left(1 - \left(1+\frac{0.06}{12}\right)^{-10\cdot 12}\right)}{\left( \frac{0.06}{12}\right)}</me>
+                
+                <me>P_0 = \frac{1000\left(1-\left(1.005\right)^{-120}\right)}{0.005}</me>
+                
+                <me>P_0 = 90,073.45</me>
+                    
+                   
+                    <p>The loan balance with 10 years remaining on the loan will be $90,073.45</p>
+                </solution>
+            </example>
+
+            <p>Often times answering remaining balance questions requires two steps:
+               <ol label = "1">
+                   <li>Calculating the monthly payments on the loan</li>
+                   <li>Calculating the remaining loan balance based on the remaining time on the loan</li>
+                </ol>
+            </p>
+            
+            <example>
+                <p>A couple purchases a home with a $180,000 mortgage at 4% for 30 years with monthly
+                    payments. What will the remaining balance on their mortgage be after 5 years?</p>
+
+                <solution><p>First we will calculate their monthly payments.
+                    We’re looking for d.</p>
+                    <p><m>r = 0.04</m> 4% annual rate</p>
+                    <p><m>k = 12</m> since they’re paying monthly</p>
+                    <p><m>N = 30</m> years</p>
+                    <p><m>P_0 = \$180,000</m> the starting loan amount</p>
+                    <p>We set up the equation and solve for d.</p>
+                    
+                    <me>180000 = \frac{d\left(1 - \left(1 + \frac{0.04}{12}\right)^{-30\cdot 12}\right)}{\left(\frac{0.04}{12}\right)}</me>
+                <me>180000 = \frac{d\left(1 - \left(1.00333\right)^{-360}\right)}{0.00333}</me>
+                
+                <me>180000 = d \left(209.562 \right)</me>
+                
+                <me>d = \frac{180000}{209.562}=\$858.93</me>
+                    
+                    <p>Now that we know the monthly payments, we can determine the remaining balance. We
+                    want the remaining balance after 5 years, when 25 years will be remaining on the loan, so we
+                    calculate the loan balance that will be paid off with the monthly payments over those 25
+                    years.</p>
+                        <p><m>d = \$858.93</m> the monthly loan payment we calculated above</p>
+                        <p><m>r = 0.04</m> 4% annual rate</p>
+                        <p><m>k = 12</m> since they’re doing monthly payments</p>
+                        <p><m>N = 25</m> since they'd be making monthly payments for 25 more years</p>
+                        
+                        <me>P_0=\frac{858.93\left(1 - \left(1+\frac{0.04}{12}\right)^{-25\cdot 12}\right)}{\left(\frac{0.04}{12}\right)}</me>
+                
+                <me>P_0 = \frac{858.93\left(1-\left(1.00333\right)^{-300}\right)}{0.00333}</me>
+                
+                <me>P_0 = 162,758</me>
+                        
+                        <p>The loan balance after 5 years, with 25 years remaining on the loan, will be $162,758</p>
+
+                        <p>Over that 5 years, the couple has paid off $180,000 - $162,758 = $17,242 of the loan balance.
+                            They have paid a total of $858.93 a month for 5 years (60 months), for a total of $51,535.80,
+                            so $51,535.80 - $17,242 = $34,292.80 of what they have paid so far has been interest.</p>
+                        
+                        </solution>
+                
+                </example>
+                    
+                
+            
+        </subsection>
+        
+        <subsection><title>Which Equation to Use?</title>
+            
+            <p>When presented with a finance problem (on an exam or in real life), you're usually not told
+what type of problem it is or which equation to use. Here are some hints on deciding which
+                equation to use based on the wording of the problem.</p>
+
+            <p>The easiest types of problem to identify are loans. Loan problems almost always include
+words like: "loan", "amortize" (the fancy word for loans), "finance (a car)", or "mortgage" (a
+home loan). Look for these words. If they're there, you're probably looking at a loan
+problem. To make sure, see if you're given what your monthly (or annual) payment is, or if
+                you're trying to find a monthly payment.</p>
+
+            <p>If the problem is not a loan, the next question you want to ask is: "Am I putting money in an
+account and letting it sit, or am I making regular (monthly/annually/quarterly) payments or
+withdrawals?" If you're letting the money sit in the account with nothing but interest
+changing the balance, then you're looking at a compound interest problem. The exception
+would be bonds and other investments where the interest is not reinvested; in those cases
+                you’re looking at simple interest.</p>
+            
+            <p>If you're making regular payments or withdrawals, the next questions is: "Am I putting
+money into the account, or am I pulling money out?" If you're putting money into the
+account on a regular basis (monthly/annually/quarterly) then you're looking at a
+basic Annuity problem. Basic annuities are when you are saving money. Usually in an
+                annuity problem, your account starts empty, and has money in the future.</p>
+
+            <p>If you're pulling money out of the account on a regular basis, then you're looking at a Payout
+Annuity problem. Payout annuities are used for things like retirement income, where you
+start with money in your account, pull money out on a regular basis, and your account ends
+                up empty in the future.</p>
+
+            <p>Remember, the most important part of answering any kind of question, money or otherwise,
+is first to correctly identify what the question is really asking, and to determine what
+                approach will best allow you to solve the problem.</p>
+            
+            <problem><title>Try It Now</title>
+                <p>For each of the following scenarios, determine if it is a compound interest problem, a savings
+                    annuity problem, a payout annuity problem, or a loans problem. Then solve each problem.</p>
+                
+                <p>
+                
+                <ol label ="a">
+
+                    <li>Marcy received an inheritance of $20,000, and invested it at 6% interest. She is
+                        going to use it for college, withdrawing money for tuition and expenses each
+                        quarter. How much can she take out each quarter if she has 3 years of school left?</li>
+
+                    <li>Paul wants to buy a new car. Rather than take out a loan, he decides to save $200 a month 
+                        in an account earning 3% interest compounded monthly. How
+                        much will he have saved up after 3 years?</li>
+
+                    <li>Keisha is managing investments for a non-profit company. They want to invest
+                        some money in an account earning 5% interest compounded annually with the
+                        goal to have $30,000 in the account in 6 years. How much should Keisha
+                        deposit into the account?</li>
+
+                    <li>Miao is going to finance new office equipment at a 2% rate over a 4 year term.
+                         If she can afford monthly payments of $100, how much new equipment can she
+                        buy?</li>
+
+                    <li>How much would you need to save every month in an account earning 4%
+                        interest to have $5,000 saved up in two years?</li>
+                    
+                </ol>
+                </p>
+                
+                <answer>
+                    <p>
+                        <ol label = "a">
+                            <li>This is a payout annuity problem. She can pull out $1833.60 a quarter</li>
+                            <li>This is a savings annuity problem. He will have saved up $7,524.11</li>
+                            <li>This is compound interest problem. She would need to deposit $22,386.46</li>
+                            <li>This is a loans problem. She can buy $4,609.33 of new equipment.</li>
+                            <li>This is a savings annuity problem. You would need to save $200.46 each month</li>
+                        </ol>
+                    </p>
+                </answer>
+            </problem>
+            
+        </subsection>
+        
+        
+        
+    </section>
+    
+            
+<!-- Beginning of Exercises for Sets****************************************************************
+      
+************************************************************************************************-->
+<exercises xml:id="exercises-finance">
+    
+    <!--SIMPLE INTEREST********************************************-->
+    
+    <exercise xml:id = "finance-ex-1">
+        <statement>Paul borrowed $1500 at 21% simple interest. What is the total amount to be repaid 55 days later?
+        </statement>
+        <answer>$1,547.47</answer>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-2">
+        <statement>Quincy borrowed $5,550 at 14.5% simple interest. What is the total amount to be repaid 3 years later?
+        </statement>
+    </exercise>
+                
+<exercise xml:id = "finance-ex-3">
+    <statement>If $1,000 is invested at 8% simple interest, how will it take for the investment to grow to $1500?
+    </statement>
+    <answer>6.25 years</answer>
+</exercise>
+    
+    <exercise xml:id = "finance-ex-4">
+        <statement>Owen buys a bond that pays 4% simple interest for $500.  How long will it take for that bond
+            to grow to a value of $550.</statement>
+    </exercise>
+    
+<exercise xml:id = "finance-ex-5">
+    <statement>Randy invests $350 at simple interest for 5 years. At the end of 5 years, he has $490.  What simple interest rate did he invest at?
+    </statement>
+    <answer>8%</answer>
+</exercise>
+    
+    
+<exercise xml:id = "finance-ex-6">
+    <statement>Serge wants to save $5,000 for a vacation in 3 years. How much should  he invest at 8% simple interest to reach his goal?
+    </statement>
+</exercise>
+    
+
+    <exercise xml:id = "finance-ex-7">
+        <statement>Suppose you obtain a $3,000 T-note with a 3% annual rate, paid quarterly, with
+            maturity in 5 years. How much interest will you earn?
+        </statement>
+        <answer>$450</answer>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-8">
+        <statement>A T-bill is a type of bond that is sold at a discount over the face value. For example,
+            suppose you buy a 13-week T-bill with a face value of $10,000 for $9,800. This
+            means that in 13 weeks, the government will give you the face value, earning you
+            $200. What annual interest rate have you earned?
+        </statement>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-9">
+        <statement>Suppose you are looking to buy a $5000 face value 26-week T-bill. If you want to
+        earn at least 1% annual interest, what is the most you should pay for the T-bill?
+        </statement>
+        <answer>$4,975.12</answer>
+    </exercise>
+    
+    <!--COMPOUND INTEREST*******************************************-->
+
+    <exercise xml:id = "finance-ex-10">
+        <statement><p>If $20,000 is invested at 5.9% interest for 30 years, find the future value if the interest is:
+            <ol label = "a">
+                <li>simple</li>
+                <li>compounded annually</li>
+                <li>compounded monthly</li>
+                <li>compounded daily</li>
+            </ol>
+            </p>
+        </statement>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-11">
+        <statement>You deposit $300 in an account earning 5% interest compounded annually. How
+much will you have in the account in 10 years?
+        </statement>
+        <answer>$488.67</answer>
+    </exercise>
+
+    <exercise xml:id = "finance-ex-12">
+        <statement>How much will $1000 deposited in an account earning 7% interest compounded
+annually be worth in 20 years?
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "finance-ex-13">
+        <statement><p>You deposit $2000 in an account earning 3% interest compounded monthly.
+            <ol label ="a">
+                <li>How much will you have in the account in 20 years?</li>
+                <li>How much interest will you earn?</li>
+            </ol>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ol label = "a">
+                    <li>$3,641.51</li>
+                    <li>$1,641.51</li>
+                </ol>
+            </p>
+        </answer>
+    </exercise>
+
+    <exercise xml:id = "finance-ex-14">
+        <statement><p>You deposit $10,000 in an account earning 4% interest compounded monthly.
+            <ol label = "a">
+                <li>How much will you have in the account in 25 years?</li>
+                <li>How much interest will you earn?</li>
+            </ol>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "finance-ex-15">
+        <statement>How much would you need to deposit in an account now in order to have $6,000 in
+the account in 8 years? Assume the account earns 6% interest compounded monthly.
+        </statement>
+        <answer>$3,717.14</answer>
+    </exercise>
+
+    <exercise xml:id = "finance-ex-16">
+        <statement>How much would you need to deposit in an account now in order to have $20,000 in
+the account in 4 years? Assume the account earns 5% interest compounded quarterly.
+        </statement>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-17">
+        <statement>Tray wants to earn $200 in interest on a $700 investment after two years. If the interest is compounded monthly, 
+            what interest rate must he invest at?</statement>
+        
+        <answer>12.6%</answer>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-18">
+        <statement>
+            You have $2,000 to invest, and want it to grow to $3,000 in two years. What interest
+rate (compounded annually) would you need to find to make this possible?
+        </statement>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-19">
+        <statement>
+            You have $5,000 to invest, and want it to grow to $20,000 in ten years. What interest
+rate (compounded annually) would you need to find to make this possible?
+        </statement>
+        <answer>14.9%</answer>
+    </exercise>
+    
+    <!--ANNUITIES*****************************-->
+
+    <exercise xml:id = "finance-ex-20">
+        <statement><p>You deposit $200 each month into an account earning 3% interest compounded
+            monthly.
+            <ol label ="a">
+                <li>How much will you have in the account in 30 years?</li>
+                <li>How much total money will you put into the account?</li>
+                <li>How much total interest will you earn?</li>
+            </ol>
+            </p>
+        </statement>
+    </exercise>
+    
+<exercise xml:id = "finance-ex-21">
+    <statement>
+        <p>You deposit $1000 each year into an account earning 8% compounded annually.
+        <ol label = "a">
+            <li>How much will you have in the account in 10 years?</li>
+            <li>How much total money will you put into the account?</li>
+            <li>How much total interest will you earn?</li>
+        </ol>
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>$14,486.56</li>
+                <li>$10,000</li>
+                <li>$4,486.56</li>
+            </ol>
+        </p>
+    </answer>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-22">
+        <statement><p>Jose has determined he needs to have $800,000 for retirement in 30 years. His
+account earns 6% interest.
+<ol label ="a">
+<li>How much would he need to deposit in the account each month?</li>
+<li>How much total money will he put into the account?</li>
+<li>How much total interest will he earn?</li>
+</ol>
+            </p>
+</statement>
+</exercise>
+
+<exercise xml:id = "finance-ex-23">
+    <statement><p>
+        You wish to have $3000 in 2 years to buy a fancy new stereo system. How much
+        should you deposit each quarter into an account paying 8% compounded quarterly?</p>
+    </statement>
+    
+    <answer>$349.53</answer>
+</exercise>
+    
+    <exercise xml:id = "finance-ex-24">
+        <statement><p>
+            Suppose you invest $50 a month for 5 years into an account earning 8% compounded
+monthly. After 5 years, you leave the money, without making additional deposits, in
+            the account for another 25 years. How much will you have in the end?</p>
+        </statement>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-25">
+        <statement><p>
+            If you make
+deposits of $50 a month for 25 years into an account earning 8% compounded
+            monthly, how much will you have in the end?</p>
+        </statement>
+        <answer>$47,551.32</answer>
+    </exercise>
+    
+    <!--PAYOUT ANNUITIES*******************************-->
+
+<exercise xml:id = "finance-ex-26">
+    <statement>
+        <p>You want to be able to withdraw $30,000 each year for 25 years. Your account earns
+        8% interest.
+        <ol label ="a">
+            <li>How much do you need in your account at the beginning?</li>
+            <li>How much total money will you pull out of the account?</li>
+            <li>How much of that money is interest?</li>
+        </ol>
+        </p>
+    </statement>
+</exercise>
+
+<exercise xml:id = "finance-ex-27">
+    <statement>
+        <p>How much money will I need to have at retirement so I can withdraw $60,000 a year
+for 20 years from an account earning 8% compounded annually?
+<ol label = "a">
+<li>How much do you need in your account at the beginning?</li>
+<li>How much total money will you pull out of the account?</li>
+<li>How much of that money is interest?</li>
+</ol>
+        </p>
+</statement>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>$589,088.84</li>
+                <li>$1,200,000</li>
+                <li>$610,911.16</li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
+
+<exercise xml:id = "finance-ex-28">
+    <statement><p>You have $500,000 saved for retirement. Your account earns 6% interest. How
+much will you be able to pull out each month, if you want to be able to take
+        withdrawals for 20 years?</p>
+</statement>
+</exercise>
+ 
+<exercise xml:id = "finance-ex-29">
+    <statement><p>
+        Loren already knows that he will have $500,000 when he retires. If he sets up a
+payout annuity for 30 years in an account paying 10% interest, how much could the
+        annuity provide each month?</p>
+</statement>
+    
+    <answer>$4,387.86</answer>
+</exercise>
+    
+    <exercise xml:id = "finance-ex-30">
+        <statement><p>
+            Mike plans to make contributions to his retirement account for 15 years. After the
+last contribution, he will start withdrawing $10,000 a quarter for 10 years. Assuming
+Mike's account earns 8% compounded quarterly, how large must his quarterly
+            contributions be during the first 15 years, in order to accomplish his goal?</p>
+        </statement>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-31">
+        <statement><p>
+            Kendra wants to be able to make withdrawals of $60,000 a year for 30 years after
+retiring in 35 years. How much will she have to save each year up until retirement if
+            her account earns 7% interest?</p>
+        </statement>
+        
+        <answer>$5,386</answer>
+    </exercise>
+    
+    <!--LOANS********************************-->
+
+<exercise xml:id = "finance-ex-32">
+    <statement><p>You can afford a $700 per month mortgage payment. You’ve found a 30 year loan at
+5% interest.
+<ol label = "a">
+<li>How big of a loan can you afford?</li>
+<li>How much total money will you pay the loan company?</li>
+<li>How much of that money is interest?</li>
+        </ol></p>
+</statement>
+</exercise>
+
+<exercise xml:id = "finance-ex-33">
+    <statement><p>Marie can afford a $250 per month car payment. She’s found a 5 year loan at 7%
+interest.
+<ol label="a">
+<li>How expensive of a car can she afford?</li>
+<li>How much total money will she pay the loan company?</li>
+<li>How much of that money is interest?</li>
+        </ol></p>
+</statement>
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>$12,625.50</li>
+                <li>$15,000</li>
+                <li>$2,374.50</li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
+
+<exercise xml:id = "finance-ex-34">
+    <statement><p>You want to buy a $25,000 car. The company is offering a 2% interest rate for 48
+        months (4 years). What will your monthly payments be?</p>
+</statement>
+</exercise>
+
+<exercise xml:id = "finance-ex-35">
+    <statement><p>You decide finance a $12,000 car at 3% compounded monthly for 4 years. What will
+your monthly payments be? How much interest will you pay over the life of the
+        loan?</p>
+</statement>
+    <answer>$265.61 per month; $749.28 in interest</answer>
+</exercise>
+
+    <exercise xml:id = "finance-ex-36">
+    <statement>
+        <p>You want to buy a $200,000 home. You plan to pay 10% as a down payment, and
+take out a 30 year loan for the rest.
+<ol label="a">
+<li>How much is the loan amount going to be?</li>
+<li>What will your monthly payments be if the interest rate is 5%?</li>
+<li>What will your monthly payments be if the interest rate is 6%?</li>
+            </ol></p>
+</statement>
+</exercise>
+
+<exercise xml:id = "finance-ex-37">
+    <statement>
+        <p>Lynn bought a $300,000 house, paying 10% down, and financing the rest at 6%
+interest for 30 years.
+<ol label="a">
+<li>Find her monthly payments.</li>
+<li>How much interest will she pay over the life of the loan?</li>
+            </ol></p>
+</statement>
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>$1,618.79</li>
+                <li>$312,764.40</li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
+
+<exercise xml:id = "finance-ex-38">
+    <statement><p>Emile bought a car for $24,000 three years ago. The loan had a 5 year term at 3%
+        interest rate, making monthly payments. How much does he still owe on the car?</p>
+</statement>
+</exercise>
+
+<exercise xml:id = "finance-ex-39">
+    <statement><p>A friend bought a house 15 years ago, taking out a $120,000 mortgage at 6% for 30
+        years, making monthly payments. How much does she still owe on the mortgage?</p></statement>
+    <answer>$85,258.54</answer>
+</exercise>
+    
+    <exercise xml:id = "finance-ex-40">
+        <statement><p>Suppose your gross monthly income is $5,500. If your bank will allow you to pay up to 36% of your
+            gross monthly income for a monthly house payment, what is the maximum loan you can obtain if the 
+            rate for a 30-year mortgage is 4.25%?</p>
+        </statement>
+    </exercise>
+    
+    <exercise xml:id = "finance-ex-41">
+    <statement><p>Complete the first 3 lines of an amortization schedule for a 30-year mortgage of $200,000
+        at 3.9% interest. Assume monthly payments.</p>
+    </statement>
+        <answer>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Payment</cell>
+                        <cell>Amount of Payment</cell>
+                        <cell>Interest</cell>
+                        <cell>Paid to Principal</cell>
+                        <cell>New Balance</cell>
+                    </row>
+                    <row>
+                        <cell>1</cell>
+                        <cell>$943.34</cell>
+                        <cell>$650</cell>
+                        <cell>$293.34</cell>
+                        <cell>$199,706.66</cell>
+                    </row>
+                    <row>
+                        <cell>2</cell>
+                        <cell>$943.34</cell>
+                        <cell>$649.05</cell>
+                        <cell>$294.29</cell>
+                        <cell>$199,412.37</cell>
+                    </row>
+                    <row>
+                        <cell>3</cell>
+                        <cell>$943.34</cell>
+                        <cell>$648.09</cell>
+                        <cell>$295.25</cell>
+                        <cell>$199,117.12</cell>
+                    </row>
+                </tabular>
+            </table>
+        </answer>
+</exercise>
+
+<exercise xml:id = "finance-ex-42">
+    <statement>
+        <p>Complete the first 3 lines of an amortization schedule for a 5-year loan of $10,000
+            at 15% interest. Assume monthly payments.</p>
+    </statement>s
+</exercise>
+
+<exercise xml:id = "finance-ex-43">
+    <statement>
+        <p>Consider a 30-year mortgage of $418,000 at 4.375%
+        <ol label ="a">
+            <li>What are the monthly payments?</li>
+            <li>What is the total amount of interest that will be paid over the life of the loan?</li>
+            <li>Suppose you reduce the term of the loan to 20 years. What will the monthly payments be?</li>
+            <li>How much will you save over the life of the loan if you take the 20-year loan instead of the 
+                30-year loan?</li>
+            </ol></p>
+        </statement>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>$2087.01</li>
+                <li>$333,323.60</li>
+                <li>$2616.35</li>
+                <li>=$123,399.60</li>
+            </ol>
+        </p>
+    </answer>
+    </exercise>
+    
+    <exercisegroup>
+        <introduction><p>Suppose that 10 years ago you bought a home for $110,000, paying 10% as a down 
+            payment, and financing the rest at 9% interest for 30 years.</p></introduction>
+        <exercise xml:id = "finance-ex-44">
+            <statement>
+                <p>Let's consider your existing mortgage:
+                <ol label = "a">
+                    <li>How much money did you pay as your down payment?</li>
+                    <li>How much money was your mortgage (loan) for?</li>
+                    <li>What is your current monthly payment? </li>
+                    <li>How much total interest will you pay over the life of the loan?</li>
+                    </ol></p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "finance-ex-45">
+            <statement><p>This year, you check your loan balance. Only part of your payments have 
+                been going to pay down the loan; the rest has been going towards interest. You see that you 
+                still have $88,536 left to pay on your loan. Your house is now valued at $150,000.
+                <ol label = "a">
+                    <li>How much of the loan have you paid off? (i.e., how much have you reduced the 
+                        loan balance by? Keep in mind that interest is charged each month - it's not part of the 
+                        loan balance.)</li>
+                    <li>How much money have you paid to the loan company so far?</li>
+                    <li>How much interest have you paid so far?</li>
+                    <li>How much equity do you have in your home (equity is value minus remaining debt)</li>
+                </ol></p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "finance-ex-46">
+            <statement><p>Since interest rates have dropped, you consider refinancing your mortgage at a 
+                lower 6% rate.
+                <ol label = "a">
+                    <li>If you took out a new 30 year mortgage at 6% for your remaining loan balance, 
+                        what would your new monthly payments be?</li>
+                    <li>How much interest will you pay over the life of the new loan?</li>
+                </ol></p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "finance-ex-47">
+            <statement><p>Notice that if you refinance, you are going to be making payments on your home for 
+                another 30 years. In addition to the 10 years you've already been paying, that's 40 years total.
+                <ol label = "a">
+                    <li>How much will you save each month because of the lower monthly payment?</li>
+                    <li>How much total interest will you be paying?</li>
+                    <li>Does it make sense to refinance? (there isn't a correct answer to this 
+                        question. Just give your opinion and your reason.)</li>
+                </ol></p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+        
+    
+    
+                 
+</exercises>
+    
+    <exercises xml:id="finance-ch-test"><title>Chapter Test</title>
+        
+        
+        
+         <exercise>
+            <statement>
+                <p>$1000 is placed in an account for 5 years that pays 9% interest.
+                    <ol label = "a">
+                        <li>Calculate the simple interest earned.</li>
+                        <li>Calculate the interested earned if it compounded daily.</li>
+                    </ol>
+                </p>
+            </statement>
+             
+             <solution>
+                 <p>
+                     <ol label = "a">
+                         <li>Using the simple interest formula, <m>I = P_0rt</m>, we can compute the interest
+                             with <m>P_0 = 1000</m>, <m>r = 0.09</m>, and <m>t = 5</m>.
+                             <me>I = 1000(0.09)(5) = 450</me>
+                         </li>
+                         <li>Using the compound interest formula, <m>P_n = P_0 \left( 1 + \frac{r}{k} \right)^{Nk}</m>, 
+                             we can compute the future value of the account
+                             with <m>P_0 = 1000</m>, <m>r = 0.09</m>, <m>k = 365</m>and <m>N = 5</m>.
+                             <me>P_n = 1000\left(1 + \frac{0.09}{365}\right)^{5 \cdot 365} = 1568.23</me>
+                             To find the interest subtract the initial investment from the future value:
+                             <me>I = 1568.23 - 1000 = 568.23</me>
+                         </li>
+                     </ol>
+                 </p>
+             </solution>
+             
+             <answer>
+                 <p>
+                     <ol label = "a">
+                         <li>$450</li>
+                         <li>$568.23</li>
+                     </ol>
+                 </p>
+             </answer>
+                             
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>Judy has placed money in an account that pays 10% interest compounded monthly. 
+                    After 3 years, she has $1617.82 in the account. How much money to she put 
+                    in the account?
+                </p>
+            </statement>
+             
+             <solution>
+                 <p>Use the compound interest formula, <m>P_n = P_0\left(1 + \frac{r}{k}\right)^{Nk}</m>, to solve for 
+                     <m>P_0</m>.
+                     
+                     <me>1617.82 = P_0 \left(1 + \frac{0.10}{12}\right)^{3 \cdot 12}</me>
+                     <me>1617.82 = P_0 \left(1.348181842\right)</me>
+                     <me>P_0 = \frac{1617.82}{1.348181842}</me>
+                     <me>P_0 = 1200</me>
+                 </p>
+             </solution>
+             
+             <answer>
+                 <p>$1200</p>
+             </answer>
+                
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>You are paying off your large-screen TV that cost $3,000 with 24 monthly payments of 
+                    $162.50. What is the annual simple interest rate that you are being charged?
+                </p>
+            </statement>
+             
+             <solution>
+                 <p>We will need to use the simple interest formula, <m>I = P_0rt</m>, to solve for r.
+                     But first compute the amount of interest you are paying.</p>
+                 
+                 <p>24 payments of $162.50 is: <m>25 \cdot 162.50 = 3900</m></p>
+                 
+                 <p>You borrowed $3,000 so you paid $900 in interest over 2 years (24 months).</p>
+                 
+                 <me>900 = 3000(r)(2)</me>
+                 <me>900 = 6000r</me>
+                 <me>r = 900 \div 6000 = 0.15</me>
+                 <me>r = 15\%</me>
+             </solution>
+             
+             <answer><p>15%</p></answer>
+        
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>Kate has started a college fund for her daughter by putting money into an 
+                    annuity that pays 6% interest.
+                    <ol label = "a">
+                        <li>If she puts in $50 each month, how much money will she have in 18 years?</li>
+                        <li>If she wants to have $50,000 after 18 years of making monthly 
+                        payments, what must her monthly payment be?</li>
+                    </ol>
+                </p>
+            </statement>
+             
+             <solution>
+                 <p>In both parts, we will be using the annuity formula, <m>P_n = \frac{d\left(\left(1 + 
+                     \frac{r}{k}\right)^{Nk}-1\right)}{\left(\frac{r}{k}\right)}</m>.
+                     <ol label = "a">
+                         <li>To find the future value in 18 years:
+                             <me>P_n = \frac{50\left(\left(1 + 
+                     \frac{0.06}{12}\right)^{18\cdot 12}-1\right)}{\left(\frac{0.06}{12}\right)}</me>
+                             <me>P_n = 19367.66</me>
+                         </li>
+                         
+                         <li>To solve for d:
+                             <me>50000 = \frac{d\left(\left(1 + 
+                     \frac{0.06}{12}\right)^{18 \cdot 12}-1\right)}{\left(\frac{0.06}{12}\right)}</me>
+                             <me>50000 = d\left(387.3531944\right)</me>
+                             <me>d = \frac{50000}{387.3531944}=129.08</me>
+                         </li>
+                     </ol>
+                 </p>
+             </solution>
+             
+             <answer>
+                 <p>
+                     <ol label = "a">
+                         <li>$19,367.66</li>
+                         <li>$129.08</li>
+                     </ol>
+                 </p>
+             </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>You want to be able to withdraw $40,000 each year for 20 years from your retirement account.  If your 
+                    account earns 7% interest, how much do you need to save for your retirement?</p>
+            </statement>
+            
+            <solution>
+                <p>We will use the payout annuity formula, <m>P_0 = \frac{d\left(1 - \left(1 + 
+                    \frac{r}{k}\right)^{-Nk}\right)}{\left(\frac{r}{k}\right)}</m>, 
+                    since we are taking money out of an account.</p>
+                
+                <me>P_0 = \frac{40000\left(1 - \left(1 + 
+                    \frac{0.07}{1}\right)^{-20 \cdot 1}\right)}{\left(\frac{0.07}{1}\right)}</me>
+                
+                <me>P_0 = \frac{40000\left(1 - \left(1.07\right)^{-20}\right)}{0.07}</me>
+                <me>P_0 = 423,760.57</me>
+            </solution>
+            
+            <answer>$423,760.57</answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>Ben purchases a car for $18,395.
+                    <ol label = "a">
+                        <li>If sales tax is 6.5% of the purchase price, find the amount of the sales tax.</li>
+                        <li>If the car license fee is 1.2% of the purchase price, find the amount of the license fee.
+                        </li> 
+                        <li>If Ben makes a $2500 down payment, find the amount of the loan that he will need.</li>
+                        <li>Ben gets an amortized loan at 7.5% interest for 4 years.  What will his monthly payments 
+                            be?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li><m>0.065 \cdot 18395 = 1195.68</m></li>
+                        <li><m>0.012 \cdot 18395 = 220.74</m></li>
+                        <li><m>18395 + 1195.68 + 220.74 - 2500 = 17311.42</m></li>
+                        <li>Use the loans formula, <m>P_0 = \frac{d\left(1 - \left(1 + 
+                    \frac{r}{k}\right)^{-Nk}\right)}{\left(\frac{r}{k}\right)}</m>, 
+                            to solve for the amount the payment (d).
+                            
+                            <me>17311.42 = \frac{d\left(1 - \left(1 + 
+                                \frac{0.075}{12}\right)^{-4\cdot 12}\right)}{\left(\frac{0.075}{12}\right)}</me>
+                            
+                            <me>17311.42 = d \left(41.35837114\right)</me>
+                            <me>d = 17311.42 \div 41.35837114 = 418.57</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>$1,195.68</li>
+                        <li>$220.74</li>
+                        <li>$17,311.42</li>
+                        <li>$418.57</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+ 
+
+        <exercise>
+            <statement>
+                <p>Complete the first two lines of the amortization table for a $250,000 mortgage at 4.5% interest. 
+                    Assume it is a 30 year mortgage. 
+                     <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Payment Number</cell>
+                            <cell>Monthly Payment</cell>
+                            <cell>Interest</cell>
+                            <cell>Paid on Principal</cell>
+                            <cell>Loan Balance</cell>
+                        </row>
+                        <row>
+                            <cell>1</cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell></cell>
+                        </row>
+                        <row>
+                            <cell>2</cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell></cell>
+                        </row>
+                    </tabular>
+                    
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                     <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Payment Number</cell>
+                            <cell>Monthly Payment</cell>
+                            <cell>Interest</cell>
+                            <cell>Paid on Principal</cell>
+                            <cell>Loan Balance</cell>
+                        </row>
+                        <row>
+                            <cell>1</cell>
+                            <cell>$1,266.71</cell>
+                            <cell>$937.50</cell>
+                            <cell>$329.21</cell>
+                            <cell>$249,670.79</cell>
+                        </row>
+                        <row>
+                            <cell>2</cell>
+                            <cell>$1,266.71</cell>
+                            <cell>$936.27</cell>
+                            <cell>$330.44</cell>
+                            <cell>$249,340.35</cell>
+                        </row>
+                    </tabular>
+                </p>
+            </answer>
+            
+            <solution>
+                <p>Use the loans formula, <m>P_0 = \frac{d\left(1 - \left(1+\frac{r}{k}\right)^{-Nk}\right)}
+                    {\left(\frac{r}{k}\right)}</m> to solve for the monthly payment, d.
+                    
+                    <me>250000 = \frac{d\left(1 - \left(1+\frac{0.045}{12}\right)^{-360}\right)}
+                        {\left(\frac{0.045}{12}\right)}</me>
+                    
+                    <me>250000 = d(197.361159)</me>\
+                    <me>d = 250000 \div 197.361159 = 1266.71</me>
+                </p>
+                
+                <p>To find the interest owed during the first month, compute <m>I = P_0 rt</m> for one month (or
+                    <m>\frac{1}{12}</m> year).
+                    <me>I = 250000 \left(0.045\right)\left(\frac{1}{12}\right) = 937.50</me>
+                </p>
+                
+                <p>If $937.50 of the first payment is interest, then <m>1266.71 - 937.50 = 329.21</m>
+                    will go toward the balance of the loan.</p>
+                
+                <p>After the first payment, the balance will be reduced by $329.21. The new balance is
+                    <m>250,000 - 329.21 = 249,670.79.</m></p>
+                
+                <p>The interest owed during the second month is computed using that new balance of the loan:
+                    <me>I = 249670.79 \left(0.045\right)\left(\frac{1}{12}\right) = 936.27</me>
+                </p>
+                
+                <p>Then the amount that will go toward the balance of the loan is <m>1266.71 - 936.27 = 330.44</m>.
+                    The balance of the loan is now <m>249,670.79 - 330.44 = 249,340.35</m>.</p>
+            </solution>
+               
+                    
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>Julia puts $100 in an account that pays 4% interest (compounded yearly) every year for 10 years. 
+                    Then she lets her money sit in the account, without making payments, for another 15 years.
+                    <ol label = "a">
+                        <li>How much money will she have in the account?</li>
+                        <li>How much interest did she earn?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>First, use the annuity formula to compute the amount of money she will have after 10 years of 
+                    making deposits.</p>
+                
+                <me>P_n = \frac{100\left(\left(1+\frac{0.04}{1}\right)^{10 \cdot 1}-1\right)}{\left(\frac{0.04}{1}\right)}</me>
+                <me>P_n = \frac{100\left(\left(1.04\right)^{10}-1\right)}{0.04}=1200.61</me>
+                
+                <p>Then use the compound interest formula to find the future value of $1200.61 is after sitting in the 
+                    account for 15 years.</p>
+                
+                <me>P_n = 1200.61\left(1+\frac{0.04}{1}\right)^{15 \cdot 1}</me>
+                <me>P_n = 1200.61\left(1.04\right)^{15}=2162.23</me>
+                
+                <p>The total amount in the account will be $2,162.23.  Julia made a total of 10 payments of $100 into the account. 
+                    <me>10 \cdot 100 = 1000</me>
+                    <me>I = 2162.23 - 1000 = 1162.23</me>
+                    She earned $1,162.23 in interest.</p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>$2,162.23</li>
+                        <li>$1,162.23</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>Geoff borrow $2,000 at 8% simple interest.
+                    <ol label = "a">
+                        <li>If he takes out a 4-year loan, what will his monthly payments be?</li>
+                        <li>If he takes a 3-year loan, what will his monthly payments be?</li>
+                        <li>How much money will he save (over the life of the loan) if he takes the 
+                            3-year loan instead of the 4-year loan?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            <p>First compute the interest charged:</p>
+                            <me>I = P_0rt</me>
+                                <me>I = 2000 \left(0.08\right) \left(4\right) = 640</me>
+                            <p>Geoff will have to pay back 2000 + 640 = $2,640 in 48 monthly payments.</p>
+                            <me>2640 \div 48 = 55</me>
+                            <p>His monthly payments will be $55.</p>
+                        </li>
+                        <li>
+                            <p>If it is a 3-year loan, the interest charged will be:</p>
+                            <me>I = 2000 \left(0.08\right)\left(3\right)=480</me>
+                            <p>He will have to pay back 2000 + 480 = 2480 in 36 monthly payments.</p>
+                            <me>2480 \div 36 = 68.89</me>
+                            <p>His monthly payments will be $68.89</p>
+                        </li>
+                        <li>He is paying a total of $2,480 with the 3-year loan and $2,640 with the 4-year loan.
+                            If he takes the 3-year loan, he will save <m>2640-2480 = \$160</m>.
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>$55</li>
+                        <li>$68.89</li>
+                        <li>$160</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+ 
+        
+    </exercises>
+
+</chapter>

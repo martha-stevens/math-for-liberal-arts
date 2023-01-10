@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Presenting Data Graphically</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math for Liberal Arts">
+<meta property="book:author" content="RRCC Math Department">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-book.html"><span class="title">Math for Liberal Arts</span></a></h1>
+<p class="byline">RRCC Math Department</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="Data.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="Data.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="section-data-mean.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="attribution.html" class="internal"><span class="title">Attributions</span></a></div></li>
+<li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ProbSolve.html" class="internal"><span class="codenumber">1</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-problemsolve-percent.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Percents</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-proportion.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Proportions and Rates</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-geometry.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometry</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-estimate.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Problem Solving and Estimating</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-1.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-setbasics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Basics</span></a></div></li>
+<li><div class="toc-item"><a href="section-setoperations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Set Operations</span></a></div></li>
+<li><div class="toc-item"><a href="section-setsvenndiagrams.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Venn Diagrams</span></a></div></li>
+<li><div class="toc-item"><a href="section-setssurveyproblems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Survey Problems</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="sets-ch-test.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Logic</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-logic-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Logic</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-1" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Boolean Logic</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-2" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-3" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-4" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Statements in Symbolic Form.</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-truthtables.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Truth Tables</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-5" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables: Conjuction (and), Disjunction (or), Negation (not)</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-6" class="internal"><span class="codenumber">3.2.2</span> <span class="title">De Morgan's Laws</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-conditional.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-7" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Truth Tables: Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-8" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Alternate Forms of Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-9" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Biconditional Statements</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-arguments.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Arguments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-10" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Argument Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-11" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Evaluating Dedutive Arguments with Truth Tables</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-12" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Forms of Arguments</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-13" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Logical Fallacies in Common Language</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-logic.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="logic-ch-test.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Growth.html" class="internal"><span class="codenumber">4</span> <span class="title">Algebraic Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Linear Growth</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-algebra-variation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Modeling Using Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-14" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Solving Direct Variation Problems</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-15" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Solving Inverse Variation Prolblems</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-growth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="algebra-ch-test.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Finance.html" class="internal"><span class="codenumber">5</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-finance-interest.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-16" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-17" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Compound Interest</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-finance-annuities.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Annuities</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-payout.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Payout Annuities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-finance-loans.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Loans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-18" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Loans</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-19" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Amortization Schedules</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-20" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-21" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Which Equation to Use?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-finance.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="finance-ch-test.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Stats.html" class="internal"><span class="codenumber">6</span> <span class="title">Statistics</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-stats-samples.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Populations, Samples and Data Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-samplingmethods.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Sampling Methods and Sampling Bias</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-experiments.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-10.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="stats-ch-test.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Data.html" class="internal"><span class="codenumber">7</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li class="active"><div class="toc-item"><a href="section-data-graphs.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Presenting Data Graphically</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-mean.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Measures of Central Tendency</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-spread.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-data.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-data.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Counting.html" class="internal"><span class="codenumber">8</span> <span class="title">Counting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-counting-basic.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Basic Counting</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-permutation.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Permutations</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-combinations.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-counting.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-counting.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Probability.html" class="internal"><span class="codenumber">9</span> <span class="title">Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-basics.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Basics</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-prob-events.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Working with Events</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-22" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Complementary Events</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-23" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Probability of two independent events</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-prob-conditional.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Conditional Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-24" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Conditional Probability</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-25" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Bayes Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-prob-counting.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Probability using Permutations and Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-ev.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Expected Value</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-prob.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="prob-ch-test.html" class="internal"><span class="codenumber">9.7</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Normal.html" class="internal"><span class="codenumber">10</span> <span class="title">Normal Distributions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-normal-understanding.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Understanding Normal Distributions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-26" class="internal"><span class="codenumber">10.1.1</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-27" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-normal-empirical.html" class="internal"><span class="codenumber">10.2</span> <span class="title">The Empirical Rule</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-zscores.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-normal.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="normal-ch-test.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Voting.html" class="internal"><span class="codenumber">11</span> <span class="title">Voting Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-preference.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Preference Schedules</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-plurality.html" class="internal"><span class="codenumber">11.2</span> <span class="title">The Plurality Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-28" class="internal"><span class="codenumber">11.2.1</span> <span class="title">Plurality</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-29" class="internal"><span class="codenumber">11.2.2</span> <span class="title">What's Wrong with Plurality?</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-30" class="internal"><span class="codenumber">11.2.3</span> <span class="title">Insincere Voting</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-irv.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Instant Runoff Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-31" class="internal"><span class="codenumber">11.3.1</span> <span class="title">Instant Runoff Voting (IRV)</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-32" class="internal"><span class="codenumber">11.3.2</span> <span class="title">What's Wrong with IRV?</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-borda.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Borda Count</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-33" class="internal"><span class="codenumber">11.4.1</span> <span class="title">Borda Count</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-34" class="internal"><span class="codenumber">11.4.2</span> <span class="title">What's Wrong with Borda Count</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-copeland.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Copeland's Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-35" class="internal"><span class="codenumber">11.5.1</span> <span class="title">Copeland's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-36" class="internal"><span class="codenumber">11.5.2</span> <span class="title">What's Wrong with Copeland's Method?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-voting-arrow.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Where's the Fair Method?</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-approval.html" class="internal"><span class="codenumber">11.7</span> <span class="title">Approval Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-37" class="internal"><span class="codenumber">11.7.1</span> <span class="title">Approval Voting</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-38" class="internal"><span class="codenumber">11.7.2</span> <span class="title">What's Wrong wtih Approval Voting?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-voting.html" class="internal"><span class="codenumber">11.8</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-voting.html" class="internal"><span class="codenumber">11.9</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Apportion.html" class="internal"><span class="codenumber">12</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-apportion-hamilton.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Hamilton's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-jefferson.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Jefferson's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-webster.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Webster's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-hunthill.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-apportion.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-apportion.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-data-graphs"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">Presenting Data Graphically</span>
+</h2>
+<article class="objectives goal-like" id="objectives-23"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-819"><div class="para" id="p-derived-li-819">Create and frequency tables for data sets</div></li>
+<li id="li-820"><div class="para" id="p-derived-li-820">Create and read bar graphs and histograms</div></li>
+<li id="li-821"><div class="para" id="p-derived-li-821">Interpret pie charts</div></li>
+</ul></article><div class="para" id="p-1578">Categorical, or qualitative, data are pieces of information that allow us to classify the objects under investigation into various categories. We usually begin working with categorical data by summarizing the data into a frequency table.</div>
+<article class="definition definition-like" id="definition-63"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Frequency Table.</span>
+</h3> <div class="para" id="p-1579">A frequency table is a table with two columns. One column lists the categories, and another for the frequencies with which the items in the categories occur (how many items fit into each category).</div></article><article class="example example-like" id="example-144"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1580">An insurance company determines vehicle insurance premiums based on known risk factors. If a person is considered a higher risk, their premiums will be higher. One potential factor is the color of your car. The insurance company believes that people with some color cars are more likely to get in accidents. To research this, they examine police reports for recent total-loss collisions. The data is summarized in the frequency table below.</div> <figure class="table table-like" id="table-36"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Color</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Frequency</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Blue</td>
+<td class="c m b0 r0 l0 t0 lines">25</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Green</td>
+<td class="c m b0 r0 l0 t0 lines">52</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Red</td>
+<td class="c m b0 r0 l0 t0 lines">41</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">White</td>
+<td class="c m b0 r0 l0 t0 lines">36</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Black</td>
+<td class="c m b0 r0 l0 t0 lines">39</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Grey</td>
+<td class="c m b0 r0 l0 t0 lines">23</td>
+</tr>
+</table></div></figure></article><div class="para" id="p-1581">Sometimes we need an even more intuitive way of displaying data. This is where charts and graphs come in. There are many, many ways of displaying data graphically, but we will concentrate on one very useful type of graph called a bar graph. In this section we will work with bar graphs that display categorical data; the next section will be devoted to bar graphs that display quantitative data.</div>
+<article class="definition definition-like" id="definition-64"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Bar graph.</span>
+</h3>A bar graph is a graph that displays a bar for each category with the length of each bar indicating the frequency of that category.</article><div class="para" id="p-1582">To construct a bar graph, we need to draw a vertical axis and a horizontal axis. The vertical direction will have a scale and measure the frequency of each category; the horizontal axis has no scale in this instance. The construction of a bar chart is most easily described by use of an example.</div>
+<article class="example example-like" id="example-145"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1583">Using our car data from above, note the highest frequency is 52, so our vertical axis needs to go from 0 to 52, but we might as well use 0 to 55, so that we can put a hash mark every 5 units:</div> <figure class="figure figure-like" id="figure-11"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/bargraph1.svg" role="img" class="contained" alt="A bar graph with colors of cars on the horizontal axis and frequencies on the vertical axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.6<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para" id="p-1584">Notice that the height of each bar is determined by the frequency of the corresponding color. The horizontal gridlines are a nice touch, but not necessary. In practice, you will find it useful to draw bar graphs using graph paper, so the gridlines will already be in place, or using technology. Instead of gridlines, we might also list the frequencies at the top of each bar, like this:</div> <figure class="figure figure-like" id="figure-12"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/bargraph2.svg" role="img" class="contained" alt="A bar graph with colors of cars on the horizontal axis, frequencies on the vertical axis, and the freuencies labeled on top of each bar."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.7<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure></article><div class="para" id="p-1585">In this case, our chart might benefit from being reordered from largest to smallest frequency values. This arrangement can make it easier to compare similar values in the chart, even without gridlines. When we arrange the categories in decreasing frequency order like this, it is called a Pareto chart.</div>
+<article class="definition definition-like" id="definition-65"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Pareto chart.</span>
+</h3> A Pareto chart is a bar graph ordered from highest to lowest frequency.</article><article class="example example-like" id="example-146"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.9</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1586">Transforming our bar graph from earlier into a Pareto chart, we get:</div> <figure class="figure figure-like" id="figure-13"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/bargraph3.svg" role="img" class="contained" alt="The bar graph is organized so the color (Green) with the largest frequncy (52) is listed first. The frequencies decrease from left to right."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.10<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure></article><article class="example example-like" id="example-147"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.11</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1587">In a survey, adults were asked whether they personally worried about a variety of environmental concerns. The numbers (out of 1012 surveyed) who indicated that they worried “a great deal” about some selected concerns are summarized below. Create a bar graph to illustrate this data.</div> <figure class="table table-like" id="table-37"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.12<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Environmental Issue</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Frequency</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Pollution of drinking water</td>
+<td class="c m b0 r0 l0 t0 lines">597</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Contamination of soil by toxic waste</td>
+<td class="c m b0 r0 l0 t0 lines">526</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Air pollution</td>
+<td class="c m b0 r0 l0 t0 lines">455</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Global warming</td>
+<td class="c m b0 r0 l0 t0 lines">354</td>
+</tr>
+</table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like">
+<div class="para" id="p-1588">This data could be shown graphically in a bar graph:</div> <figure class="figure figure-like" id="figure-14"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/bargraph4.svg" role="img" class="contained" alt="A bar graph with water pollution, toxic waster, air pollution, and global warming on the horiztonal axis and frequencies of each on the vertical axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.13<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure>
+</div></div></article><div class="para" id="p-1589">To show relative sizes, it is common to use a pie chart.</div>
+<article class="definition definition-like" id="definition-66"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">Pie Chart.</span>
+</h3> <div class="para" id="p-1590">A pie chart is a circle with wedges cut of varying sizes marked out like slices of pie or pizza. The relative sizes of the wedges correspond to the relative frequencies of the categories.</div></article><article class="example example-like" id="example-148"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.15</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1591">For our vehicle color data, a pie chart might look like this:</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/120_Data_Screenshot1.png" class="contained" alt="A pie chart with six wedges--one corresponding to each color of car from the previous examples. The size of the wedge corresponds to the relative size of the frequency."></div> <div class="para" id="p-1592">Pie charts can often benefit from including frequencies or relative frequencies (percents) in the chart next to the pie slices. Often having the category names next to the pie slices also makes the chart clearer.</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/120_Data_Screenshot2.png" class="contained" alt="The same pie chart as in the previous example, but with freqencies and colors listed next to each wedge."></div></article><article class="example example-like" id="example-149"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.16</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1593">The pie chart to the right shows the percentage of voters supporting each candidate running for a local senate seat.</div> <div class="para" id="p-1594">If there are 20,000 voters in the district, the pie chart shows that about 11% of those, about 2,200 voters, support Reeves.</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/120_Data_Screenshot3.png" class="contained" alt="A pie chart with three wedges labeled: Ellison (46%), Douglas (43%) and Reeves (11%)"></div></article><div class="para" id="p-1595">Pie charts look nice, but are harder to draw by hand than bar charts since to draw them accurately we would need to compute the angle each wedge cuts out of the circle, then measure the angle with a protractor. Computers are much better suited to drawing pie charts. Common software programs like Microsoft Word or Excel, OpenOffice.org Write or Calc, or Google Docs are able to create bar graphs, pie charts, and other graph types. There are also numerous online tools that can create graphs.</div>
+<article class="problem example-like" id="problem-37"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.1.17</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h3> <div class="para" id="p-1596">Create a bar graph and a pie chart to illustrate the grades on a history exam below.</div> <div class="para" id="p-1597">A: 12 students, B: 19 students, C: 14 students, D: 4 students, F: 5 students</div> <a href="" data-knowl="" class="id-ref answer-knowl original has-image" data-refid="hk-answer-210" id="answer-210"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-210"><div class="answer solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/120_Data_TryNow_Screenshot1.png" class="contained" alt="A bar graph with A, B, C, D, and F on the horizontal axis and frequencies of each on the vertical axis. A pie chart with five wedges: A (22%), B (36%), C (26%), D (7%) and F (9%)"></div></div></div></article><div class="para" id="p-1598">Don’t get fancy with graphs! People sometimes add features to graphs that don’t help to convey their information. For example, 3-dimensional bar charts like the one shown below are usually not as effective as their two- dimensional counterparts.</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/120_Data_Screenshot4.png" class="contained" alt="A 3-dimensional bar graph corresponding the same data as the car colors and collisons from earlier."></div>
+<div class="para" id="p-1599">Here is another way that fanciness can lead to trouble. Instead of plain bars, it is tempting to substitute meaningful images. This type of graph is called a pictogram.</div>
+<div class="para" id="p-1600">A <dfn class="terminology">pictogram</dfn> is a statistical graphic in which the size of the picture is intended to represent the frequencies or size of the values being represented.</div>
+<article class="example example-like" id="example-150"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.18</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1601">A labor union might produce the graph to show the difference between the average manager salary and the average worker salary.</div> <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/images/120_Data_Screenshot5.png" class="contained" alt="A large bag of money labeled manager salaries next to a bag of labeled that is half as tall labeled worker salaries."></div> <div class="para" id="p-1602">Looking at the picture, it would be reasonable to guess that the manager salaries is 4 times as large as the worker salaries - the area of the bag looks about 4 times as large. However, the manager salaries are in fact only twice as large as worker salaries, which were reflected in the picture by making the manager bag twice as tall.</div></article><div class="para" id="p-1603">Another distortion in bar charts results from setting the baseline to a value other than zero. The baseline is the bottom of the vertical axis, representing the least number of cases that could have occurred in a category. Normally, this number should be zero.</div>
+<article class="example example-like" id="example-151"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.19</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1604">Compare the two graphs below showing support for same-sex marriage rights from a poll taken in December 2008. The difference in the vertical scale on the first graph suggests a different story than the true differences in percentages; the second graph makes it look like twice as many people oppose marriage rights as support it.</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/120_Data_Screenshot6.png" class="contained" alt="The first graph has a bar labeled support that starts at 0 and ends at 45 and a bar labeled oppose that starts at 0 and ends at 55. The second graph has a bar from support that starts at 40 and ends at 45, and an oppose bar that starts at 40 and ends at 55."></div></article><article class="problem example-like" id="problem-38"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.1.20</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h3> <div class="para" id="p-1605">A poll was taken asking people if they agreed with the positions of the 4 candidates for a county office. Does the pie chart present a good representation of this data? Explain.</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/120_Data_Screenshot7.png" class="contained" alt="A pie chart with four wedges: Nguyen (42%), McKee (35%), Jones (64%) and Brown (52%)."></div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-211" id="answer-211"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-211"><div class="answer solution-like">While the pie chart accurately depicts the relative size of the people agreeing with each candidate, the chart is confusing, since usually percents on a pie chart represent the percentage of the pie the slice represents.</div></div></article><div class="para" id="p-1606">Quantitative, or numerical, data can also be summarized into frequency tables.</div>
+<article class="example example-like" id="example-152"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.21</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1607">A teacher records scores on a 20-point quiz for the 30 students in his class. The scores are:</div> <div class="para" id="p-1608">19 20 18 18 17 18 19 17 20 18 20 16 20 15 17</div> <div class="para" id="p-1609">12 18 19 18 19 17 20 18 16 15 18 20 5 0 0</div> <div class="para" id="p-1610">These scores could be summarized into a frequency table by grouping like values:</div> <figure class="table table-like" id="table-38"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.22<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Score</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Frequency</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">12</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">15</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">16</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">17</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">18</td>
+<td class="c m b0 r0 l0 t0 lines">8</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">19</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">20</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+</tr>
+</table></div></figure> <div class="para" id="p-1611">Using this table, it would be possible to create a standard bar chart from this summary, like we did for categorical data:</div> <figure class="figure figure-like" id="figure-15"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/bargraph5.svg" role="img" class="contained" alt="A bar graph with scores on the horizontal axis and corresponding frequencies on the vertical axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.23<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para" id="p-1612">However, since the scores are numerical values, this chart doesn’t really make sense; the first and second bars are five values apart, while the later bars are only one value apart. It would be more correct to treat the horizontal axis as a number line. This type of graph is called a histogram.</div></article><article class="definition definition-like" id="definition-67"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.24</span><span class="period">.</span><span class="space"> </span><span class="title">Histogram.</span>
+</h3> <div class="para" id="p-1613">A histogram is like a bar graph, but where the horizontal axis is a number line</div></article><article class="example example-like" id="example-153"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.25</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1614">For the values above, a histogram would look like:</div> <figure class="figure figure-like" id="figure-16"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/histogram1.svg" role="img" class="contained" alt="The horizontal axis is a number line with evenly spaced tick marks. Bars for test scores that are next to each other are touching."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.26<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure></article><div class="para" id="p-1615">Notice that in the histogram, a bar represents values on the horizontal axis from that on the left hand-side of the bar up to, but not including, the value on the right hand side of the bar. Some people choose to have bars start at <span class="process-math">\(\frac{1}{2}\)</span> values to avoid this ambiguity.</div>
+<figure class="figure figure-like" id="figure-17"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/histogram2.svg" role="img" class="contained" alt="The same histogram as in the previous image, but with tick marks placed in the middle of each bar, rather than to the sides."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.27<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure><div class="para" id="p-1616">Unfortunately, not a lot of common software packages can correctly graph a histogram. About the best you can do in Excel or Word is a bar graph with no gap between the bars and spacing added to simulate a numerical horizontal axis.</div>
+<div class="para" id="p-1617">If we have a large number of widely varying data values, creating a frequency table that lists every possible value as a category would lead to an exceptionally long frequency table, and probably would not reveal any patterns. For this reason, it is common with quantitative data to group data into class intervals.</div>
+<article class="definition definition-like" id="definition-68"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.28</span><span class="period">.</span><span class="space"> </span><span class="title">Class Intervals.</span>
+</h3> <div class="para" id="p-1618">Class intervals are groupings of the data. In general, we define class intervals so that:</div> <div class="para logical" id="p-1619"><ul class="disc">
+<li id="li-822"><div class="para" id="p-derived-li-822">Each interval is equal in size. For example, if the first class contains values from 120-129, the second class should include values from 130-139.</div></li>
+<li id="li-823"><div class="para" id="p-derived-li-823">We have somewhere between 5 and 20 classes, typically, depending upon the number of data we’re working with.</div></li>
+</ul></div></article><article class="example example-like" id="example-154"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.29</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1620">Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of 263-121 = 142. We could create 7 intervals with a width of around 20, 14 intervals with a width of around 10, or somewhere in between. Often time we have to experiment with a few possibilities to find something that represents the data well. Let us try using an interval width of 15. We could start at 121, or at 120 since it is a nice round number.</div> <figure class="table table-like" id="table-39"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.30<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Interval</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Frequency</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">120 - 134</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">135 - 149</td>
+<td class="c m b0 r0 l0 t0 lines">14</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">150 - 164</td>
+<td class="c m b0 r0 l0 t0 lines">16</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">165 - 179</td>
+<td class="c m b0 r0 l0 t0 lines">28</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">180 - 194</td>
+<td class="c m b0 r0 l0 t0 lines">12</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">195 - 209</td>
+<td class="c m b0 r0 l0 t0 lines">8</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">210 - 224</td>
+<td class="c m b0 r0 l0 t0 lines">7</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">225 - 239</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">240 - 254</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">255 - 269</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+</tr>
+</table></div></figure> <div class="para" id="p-1621">A histogram of this data would look like:</div> <figure class="figure figure-like" id="figure-18"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/histogram3.svg" role="img" class="contained" alt="A histogram with weights on the horizontal axis and frequencies on the vertical axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.31<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para" id="p-1622">Other graph types such as pie charts are possible for quantitative data. The usefulness of different graph types will vary depending upon the number of intervals and the type of data being represented. For example, a pie chart of our weight data is difficult to read because of the quantity of intervals we used.</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/120_Data_Screenshot8.png" class="contained" alt="A pie chart with 10 wedges--one corresponding to each class interval."></div></article><article class="problem example-like" id="problem-39"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">7.1.32</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h3> <div class="para" id="p-1623">The total cost of textbooks for the term was collected from 36 students. Create a histogram for this data.</div> <div class="para" id="p-1624">$140 $160 $160 $165 $180 $220 $235 $240 $250 $260 $280 $285</div> <div class="para" id="p-1625">$285 $285 $290 $300 $300 $305 $310 $310 $315 $315 $320 $320</div> <div class="para" id="p-1626">$330 $340 $345 $350 $355 $360 $360 $380 $395 $420 $460 $460</div> <a href="" data-knowl="" class="id-ref answer-knowl original has-image has-tabular" data-refid="hk-answer-212" id="answer-212"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-212"><div class="answer solution-like">
+<div class="para" id="p-1627">Using a class intervals of size 55, we can group our data into six intervals:</div> <figure class="table table-like" id="table-40"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.33<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Cost Interval</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Frequency</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">$140 - 194</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">$195 - 249</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">$250 - 304</td>
+<td class="c m b0 r0 l0 t0 lines">9</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">$305 - 359</td>
+<td class="c m b0 r0 l0 t0 lines">12</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">$360 - 414</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">$415 - 469</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+</tr>
+</table></div></figure> <div class="para" id="p-1628">We can use the frequency distribution to generate the histogram.</div> <figure class="figure figure-like" id="figure-19"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/histogram4.svg" role="img" class="contained" alt="A histogram with the class intervals from the table above on the horizontal axis and frequencies on the vertical axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.34<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure>
+</div></div></article><div class="para" id="p-1629">When collecting data to compare two groups, it is desirable to create a graph that compares quantities.</div>
+<article class="example example-like" id="example-155"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.35</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1630">The data below came from a task in which the goal is to move a computer mouse to a target on the screen as fast as possible. On 20 of the trials, the target was a small rectangle; on the other 20, the target was a large rectangle. Time to reach the target was recorded on each trial.</div> <figure class="table table-like" id="table-41"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.1.36<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Interval (milliseconds)</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Frequency, Small Target</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Frequency, Large Target</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">300 - 399</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">400 - 499</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">500 - 599</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">600 - 699</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">700 - 799</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">800 - 899</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">900 - 999</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1000 - 1099</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1100 - 1199</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+</tr>
+</table></div></figure> <div class="para" id="p-1631">One option to represent this data would be a comparative histogram or bar chart, in which bars for the small target group and large target group are placed next to each other.</div> <figure class="figure figure-like" id="figure-20"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/histogram5.svg" role="img" class="contained" alt="A histogram with bars for the small target in blue, next to bars for the target in red."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.37<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure></article><article class="definition definition-like" id="definition-69"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.38</span><span class="period">.</span><span class="space"> </span><span class="title">Frequency Polygon.</span>
+</h3> <div class="para" id="p-1632">An alternative representation is a frequency polygon. A frequency polygon starts out like a histogram, but instead of drawing a bar, a point is placed in the midpoint of each interval at height equal to the frequency. Typically the points are connected with straight lines to emphasize the distribution of the data.</div></article><article class="example example-like" id="example-156"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.39</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-1633">This graph makes it easier to see that reaction times were generally shorter for the larger target, and that the reaction times for the smaller target were more spread out.</div> <figure class="figure figure-like" id="figure-21"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/frequencypolygon.svg" role="img" class="contained" alt="Points are plotted in blue corresponding to the frequencies of the small target and then connected with line segments. The same is done on the same axes in red with the data for the large target."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.40<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="Data.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-data-mean.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

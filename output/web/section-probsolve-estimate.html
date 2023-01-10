@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Problem Solving and Estimating</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math for Liberal Arts">
+<meta property="book:author" content="RRCC Math Department">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-book.html"><span class="title">Math for Liberal Arts</span></a></h1>
+<p class="byline">RRCC Math Department</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-probsolve-geometry.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ProbSolve.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="exercises-1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="attribution.html" class="internal"><span class="title">Attributions</span></a></div></li>
+<li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ProbSolve.html" class="internal"><span class="codenumber">1</span> <span class="title">Problem Solving</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-problemsolve-percent.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Percents</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-proportion.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Proportions and Rates</span></a></div></li>
+<li><div class="toc-item"><a href="section-probsolve-geometry.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Geometry</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="section-probsolve-estimate.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Problem Solving and Estimating</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-1.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Sets.html" class="internal"><span class="codenumber">2</span> <span class="title">Sets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-setbasics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Basics</span></a></div></li>
+<li><div class="toc-item"><a href="section-setoperations.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Set Operations</span></a></div></li>
+<li><div class="toc-item"><a href="section-setsvenndiagrams.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Venn Diagrams</span></a></div></li>
+<li><div class="toc-item"><a href="section-setssurveyproblems.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Survey Problems</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-sets.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="sets-ch-test.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Logic.html" class="internal"><span class="codenumber">3</span> <span class="title">Logic</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-logic-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Logic</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-1" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Boolean Logic</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-2" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-3" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Quantified Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-intro.html#subsection-4" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Statements in Symbolic Form.</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-truthtables.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Truth Tables</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-5" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Truth Tables: Conjuction (and), Disjunction (or), Negation (not)</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-truthtables.html#subsection-6" class="internal"><span class="codenumber">3.2.2</span> <span class="title">De Morgan's Laws</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-conditional.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Conditional Statements</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-7" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Truth Tables: Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-8" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Alternate Forms of Conditional Statements</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-conditional.html#subsection-9" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Biconditional Statements</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-logic-arguments.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Arguments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-10" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Argument Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-11" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Evaluating Dedutive Arguments with Truth Tables</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-12" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Forms of Arguments</span></a></div></li>
+<li><div class="toc-item"><a href="section-logic-arguments.html#subsection-13" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Logical Fallacies in Common Language</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-logic.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="logic-ch-test.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Growth.html" class="internal"><span class="codenumber">4</span> <span class="title">Algebraic Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Linear Growth</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-algebra-variation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Modeling Using Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-14" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Solving Direct Variation Problems</span></a></div></li>
+<li><div class="toc-item"><a href="section-algebra-variation.html#subsection-15" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Solving Inverse Variation Prolblems</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-growth.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="algebra-ch-test.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Finance.html" class="internal"><span class="codenumber">5</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-finance-interest.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-16" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-interest.html#subsection-17" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Compound Interest</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-finance-annuities.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Annuities</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-payout.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Payout Annuities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-finance-loans.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Loans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-18" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Loans</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-19" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Amortization Schedules</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-20" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="section-finance-loans.html#subsection-21" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Which Equation to Use?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-finance.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="finance-ch-test.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Stats.html" class="internal"><span class="codenumber">6</span> <span class="title">Statistics</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-stats-samples.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Populations, Samples and Data Types</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-samplingmethods.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Sampling Methods and Sampling Bias</span></a></div></li>
+<li><div class="toc-item"><a href="section-stats-experiments.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-10.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="stats-ch-test.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Data.html" class="internal"><span class="codenumber">7</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-data-graphs.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Presenting Data Graphically</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-mean.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Measures of Central Tendency</span></a></div></li>
+<li><div class="toc-item"><a href="section-data-spread.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-data.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-data.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Counting.html" class="internal"><span class="codenumber">8</span> <span class="title">Counting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-counting-basic.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Basic Counting</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-permutation.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Permutations</span></a></div></li>
+<li><div class="toc-item"><a href="section-counting-combinations.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-counting.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-counting.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Probability.html" class="internal"><span class="codenumber">9</span> <span class="title">Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-basics.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Basics</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-prob-events.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Working with Events</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-22" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Complementary Events</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-events.html#subsection-23" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Probability of two independent events</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-prob-conditional.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Conditional Probability</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-24" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Conditional Probability</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-conditional.html#subsection-25" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Bayes Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-prob-counting.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Probability using Permutations and Combinations</span></a></div></li>
+<li><div class="toc-item"><a href="section-prob-ev.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Expected Value</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-prob.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="prob-ch-test.html" class="internal"><span class="codenumber">9.7</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Normal.html" class="internal"><span class="codenumber">10</span> <span class="title">Normal Distributions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-normal-understanding.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Understanding Normal Distributions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-26" class="internal"><span class="codenumber">10.1.1</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-understanding.html#subsection-27" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-normal-empirical.html" class="internal"><span class="codenumber">10.2</span> <span class="title">The Empirical Rule</span></a></div></li>
+<li><div class="toc-item"><a href="section-normal-zscores.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-normal.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="normal-ch-test.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Voting.html" class="internal"><span class="codenumber">11</span> <span class="title">Voting Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-preference.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Preference Schedules</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-plurality.html" class="internal"><span class="codenumber">11.2</span> <span class="title">The Plurality Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-28" class="internal"><span class="codenumber">11.2.1</span> <span class="title">Plurality</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-29" class="internal"><span class="codenumber">11.2.2</span> <span class="title">What's Wrong with Plurality?</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-plurality.html#subsection-30" class="internal"><span class="codenumber">11.2.3</span> <span class="title">Insincere Voting</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-irv.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Instant Runoff Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-31" class="internal"><span class="codenumber">11.3.1</span> <span class="title">Instant Runoff Voting (IRV)</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-irv.html#subsection-32" class="internal"><span class="codenumber">11.3.2</span> <span class="title">What's Wrong with IRV?</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-borda.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Borda Count</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-33" class="internal"><span class="codenumber">11.4.1</span> <span class="title">Borda Count</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-borda.html#subsection-34" class="internal"><span class="codenumber">11.4.2</span> <span class="title">What's Wrong with Borda Count</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-voting-copeland.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Copeland's Method</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-35" class="internal"><span class="codenumber">11.5.1</span> <span class="title">Copeland's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-copeland.html#subsection-36" class="internal"><span class="codenumber">11.5.2</span> <span class="title">What's Wrong with Copeland's Method?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-voting-arrow.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Where's the Fair Method?</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-voting-approval.html" class="internal"><span class="codenumber">11.7</span> <span class="title">Approval Voting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-37" class="internal"><span class="codenumber">11.7.1</span> <span class="title">Approval Voting</span></a></div></li>
+<li><div class="toc-item"><a href="section-voting-approval.html#subsection-38" class="internal"><span class="codenumber">11.7.2</span> <span class="title">What's Wrong wtih Approval Voting?</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="exercises-voting.html" class="internal"><span class="codenumber">11.8</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-voting.html" class="internal"><span class="codenumber">11.9</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="Apportion.html" class="internal"><span class="codenumber">12</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-apportion-hamilton.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Hamilton's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-jefferson.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Jefferson's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-webster.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Webster's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-apportion-hunthill.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="exercises-apportion.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="ch-test-apportion.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Chapter Test</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-probsolve-estimate"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Problem Solving and Estimating</span>
+</h2>
+<article class="objectives goal-like" id="objectives-4"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-48"><div class="para" id="p-derived-li-48">Discuss and apply a problem-solving strategy</div></li>
+<li id="li-49"><div class="para" id="p-derived-li-49">Use estimates to solve problems, including cost estimation using applied geometry</div></li>
+</ul></article><div class="para" id="p-142">Finally, we will bring together the mathematical tools we’ve reviewed, and use them to approach more complex problems. In many problems, it is tempting to take the given information, plug it into whatever formulas you have handy, and hope that the result is what you were supposed to find. Chances are, this approach has served you well in other math classes.</div>
+<div class="para" id="p-143">This approach does not work well with real life problems. Instead, problem solving is best approached by first starting at the end: identifying exactly what you are looking for. From there, you then work backwards, asking “what information and procedures will I need to find this?” Very few interesting questions can be answered in one mathematical step; often times you will need to chain together a solution pathway, a series of steps that will allow you to answer the question.</div>
+<article class="note remark-like" id="note-2"><h3 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Problem Solving Process.</span>
+</h3> <div class="para logical" id="p-144"><ol class="decimal">
+<li id="li-50"><div class="para" id="p-derived-li-50">Identify the question you’re trying to answer.</div></li>
+<li id="li-51"><div class="para" id="p-derived-li-51">Work backwards, identifying the information you will need and the relationships you will use to answer that question.</div></li>
+<li id="li-52"><div class="para" id="p-derived-li-52">Continue working backwards, creating a solution pathway.</div></li>
+<li id="li-53"><div class="para" id="p-derived-li-53">If you are missing necessary information, look it up or estimate it. If you have unnecessary information, ignore it.</div></li>
+<li id="li-54"><div class="para" id="p-derived-li-54">Solve the problem, following your solution pathway.</div></li>
+</ol></div></article><div class="para" id="p-145">In most problems we work, we will be approximating a solution, because we will not have perfect information. We will begin with a few examples where we will be able to approximate the solution using basic knowledge from our lives.</div>
+<article class="example example-like" id="example-23"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-146">How many times does your heart beat in a year?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-22"><div class="solution solution-like">
+<div class="para" id="p-147">This question is asking for the rate of heart beats per year. Since a year is a long time to measure heart beats for, if we knew the rate of heart beats per minute, we could scale that quantity up to a year. So the information we need to answer this question is heart beats per minute. This is something you can easily measure by counting your pulse while watching a clock for a minute.</div> <div class="para" id="p-148">Suppose you count 80 beats in a minute. To convert this beats per year:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{80\text{ beat}}{1\text{ minute}} \cdot \frac{60\text{ minutes}}{1\text{ hour}}
+\cdot \frac{24\text{ hours}}{1 \text{day}} \cdot \frac{365\text{ days}}{1\text{ year}}
+= 42,048,000
+\end{equation*}
+</div>
+</div></div></article><article class="example example-like" id="example-24"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-149">How thick is a single sheet of paper? How much does it weigh?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-23" id="solution-23"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-23"><div class="solution solution-like">
+<div class="para" id="p-150">While you might have a sheet of paper handy, trying to measure it would be tricky. Instead we might imagine a stack of paper, and then scale the thickness and weight to a single sheet. If you’ve ever bought paper for a printer or copier, you probably bought a ream, which contains 500 sheets. We could estimate that a ream of paper is about 2 inches thick and weighs about 5 pounds. Scaling these down,</div> <div class="para" id="p-151">
+<span class="process-math">\(\frac{2\text{ inches}}{\text{ream}} \cdot \frac{1 \text{ ream}}{500 \text{ pages}} = 0.004\)</span> inches per sheet</div> <div class="para" id="p-152">
+<span class="process-math">\(\frac{5\text{ pounds}}{\text{ream}} \cdot \frac{1 \text{ ream}}{500 \text{ pages}} = 0.01\)</span> pounds per sheet, or 0.16 ounces per sheet.</div>
+</div></div></article><article class="example example-like" id="example-25"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-153">A recipe for zucchini muffins states that it yields 12 muffins, with 250 calories per muffin. You instead decide to make mini-muffins, and the recipe yields 20 muffins. If you eat 4, how many calories will you consume?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-24" id="solution-24"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-24"><div class="solution solution-like">
+<div class="para" id="p-154">There are several possible solution pathways to answer this question. We will explore one.</div> <div class="para" id="p-155">To answer the question of how many calories 4 mini-muffins will contain, we would want to know the number of calories in each mini-muffin. To find the calories in each mini-muffin, we could first find the total calories for the entire recipe, then divide it by the number of mini-muffins produced. To find the total calories for the recipe, we could multiply the calories per standard muffin by the number per muffin. Notice that this produces a multi-step solution pathway. It is often easier to solve a problem in small steps, rather than trying to find a way to jump directly from the given information to the solution.</div> <div class="para" id="p-156">We can now execute our plan:</div> <div class="para" id="p-157">
+<span class="process-math">\(12\text{ muffins}\cdot \frac{250\text{ calories}}{\text{muffin}}=3000\)</span> calories for the whole recipe.</div> <div class="para" id="p-158">
+<span class="process-math">\(\frac{3000\text{ calories}}{20\text{ mini-muffins}} = 150\)</span> calories per mini-muffin.</div> <div class="para" id="p-159">
+<span class="process-math">\(4\text{ mini-muffins}\cdot 150\text{ calories/mini-muffin}=600\)</span> calories consumed.</div>
+</div></div></article><article class="example example-like" id="example-26"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-160">You need to replace the boards on your deck. About how much will the materials cost?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-25" id="solution-25"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-25"><div class="solution solution-like">
+<div class="para" id="p-161">There are two approaches we could take to this problem: 1) estimate the number of boards we will need and find the cost per board, or 2) estimate the area of the deck and find the approximate cost per square foot for deck boards. We will take the latter approach.</div> <div class="para" id="p-162">For this solution pathway, we will be able to answer the question if we know the cost per square foot for decking boards and the square footage of the deck. To find the cost per square foot for decking boards, we could compute the area of a single board, and divide it into the cost for that board. We can compute the square footage of the deck using geometric formulas. So first we need information: the dimensions of the deck, and the cost and dimensions of a single deck board.</div> <div class="para" id="p-163">Suppose that measuring the deck, it is rectangular, measuring 16 ft by 24 ft, for a total area of <span class="process-math">\(384\text{ ft}^2\text{.}\)</span>
+</div> <div class="para" id="p-164">From a visit to the local home store, you find that an 8 foot by 4 inch cedar deck board costs about $7.50. The area of this board, doing the necessary conversion from inches to feet, is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+8 \text{ feet}\cdot 4 \text{ inches}\cdot \frac{1\text{ foot}}{12\text{ inches}}=2.667\text{ ft}^2
+\end{equation*}
+</div>
+<div class="para" id="p-165">The cost per square foot is then <span class="process-math">\(\$7.50 \div 2.667\text{ ft}^2=\$2.8125\)</span> per square foot.</div> <div class="para" id="p-166">This will allow us to estimate the material cost for the whole 384 square foot deck.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\$384 \text{ ft}^2 \cdot \frac{\$2.8125}{\text{ ft}^2}=\$1080
+\end{equation*}
+</div>
+<div class="para" id="p-167">Of course, this cost estimate assumes that there is no waste, which is rarely the case. It is common to add at least 10% to the cost estimate to account for waste.</div>
+</div></div></article><article class="example example-like" id="example-27"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-168">Is it worth buying a Hyundai Sonata hybrid instead the regular Hyundai Sonata?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-26" id="solution-26"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-26"><div class="solution solution-like">
+<div class="para" id="p-169">To make this decision, we must first decide what our basis for comparison will be. For the purposes of this example, we’ll focus on fuel and purchase costs, but environmental impacts and maintenance costs are other factors a buyer might consider.</div> <div class="para" id="p-170">It might be interesting to compare the cost of gas to run both cars for a year. To determine this, we will need to know the miles per gallon both cars get, as well as the number of miles we expect to drive in a year. From that information, we can find the number of gallons required from a year. Using the price of gas per gallon, we can find the running cost.</div> <div class="para" id="p-171">From Hyundai’s website, the 2013 Sonata will get 24 miles per gallon (mpg) in the city, and 35 mpg on the highway. The hybrid will get 35 mpg in the city, and 40 mpg on the highway.</div> <div class="para" id="p-172">An average driver drives about 12,000 miles a year. Suppose that you expect to drive about 75% of that in the city, so 9,000 city miles a year, and 3,000 highway miles a year.</div> <div class="para" id="p-173">We can then find the number of gallons each car would require for the year.</div> <div class="para" id="p-174">Sonata:</div> <div class="para" id="p-175">
+<span class="process-math">\(9000 \text{ city miles}\cdot \frac{1\text{ gallon}}{24 \text{ city miles}}
++ 3000\text{ hightway miles}\cdot \frac{1\text{ gallon}}{35\text{ highway miles}}=460.7\)</span>gallons.</div> <div class="para" id="p-176">Hybrid:</div> <div class="para" id="p-177">
+<span class="process-math">\(9000 \text{ city miles}\cdot \frac{1\text{ gallon}}{35 \text{ city miles}}
++ 3000\text{ hightway miles}\cdot \frac{1\text{ gallon}}{40\text{ highway miles}}= 332.1\)</span>gallons.</div> <div class="para" id="p-178">If gas in your area averages about $3.50 per gallon, we can use that to find the running cost:</div> <div class="para" id="p-179">Sonata: <span class="process-math">\(460.7 \cdot \$3.50=\$1612.45\)</span>
+</div> <div class="para" id="p-180">Hybrid:  <span class="process-math">\(332.1 \cdot \$3.50 =\$1162.35\)</span>
+</div> <div class="para" id="p-181">The hybrid will save $450.10 a year. The gas costs for the hybrid are about <span class="process-math">\(\frac{\$450.10}{\$1612.45}=0.279=27.9\%\)</span> lower than the costs for the standard Sonata.</div> <div class="para" id="p-182">While both the absolute and relative comparisons are useful here, they still make it hard to answer the original question, since “is it worth it” implies there is some tradeoff for the gas savings. Indeed, the hybrid Sonata costs about $25,850, compared to the base model for the regular Sonata, at $20,895.</div> <div class="para" id="p-183">To better answer the “is it worth it” question, we might explore how long it will take the gas savings to make up for the additional initial cost. The hybrid costs $4965 more. With gas savings of $451.10 a year, it will take about 11 years for the gas savings to make up for the higher initial costs.</div> <div class="para" id="p-184">We can conclude that if you expect to own the car 11 years, the hybrid is indeed worth it. If you plan to own the car for less than 11 years, it may still be worth it, since the resale value of the hybrid may be higher, or for other non-monetary reasons. This is a case where math can help guide your decision, but it can’t make it for you.</div>
+</div></div></article><article class="problem example-like" id="problem-5"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
+</h3> <div class="para" id="p-185">If traveling from Seattle, WA to Spokane WA for a three-day conference, does it make more sense to drive or fly?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="answer solution-like">
+<div class="para" id="p-186">There is not enough information provided to answer the question, so we will have to make some assumptions, and look up some values.</div> <div class="para" id="p-187">Assumptions:</div> <div class="para logical" id="p-188"><ol class="lower-alpha">
+<li id="li-55"><div class="para" id="p-derived-li-55">We own a car. Suppose it gets 24 miles to the gallon. We will only consider gas cost.</div></li>
+<li id="li-56"><div class="para" id="p-derived-li-56">We will not need to rent a car in Spokane, but will need to get a taxi from the airport to the conference hotel downtown and back.</div></li>
+<li id="li-57"><div class="para" id="p-derived-li-57">We can get someone to drop us off at the airport, so we don’t need to consider airport parking.</div></li>
+<li id="li-58"><div class="para" id="p-derived-li-58">We will not consider whether we will lose money by having to take time off work to drive.</div></li>
+</ol></div> <div class="para" id="p-189">Values looked up (your values may be different)</div> <div class="para logical" id="p-190"><ol class="lower-alpha">
+<li id="li-59"><div class="para" id="p-derived-li-59">Flight cost: $184</div></li>
+<li id="li-60"><div class="para" id="p-derived-li-60">Taxi cost: $25 each way (estimate, according to hotel website)</div></li>
+<li id="li-61"><div class="para" id="p-derived-li-61">Driving distance: 280 miles each way</div></li>
+<li id="li-62"><div class="para" id="p-derived-li-62">Gas cost: $3.79 a gallon</div></li>
+</ol></div> <div class="para" id="p-191">Cost for flying: $184 flight cost + $50 in taxi fares = $234.</div> <div class="para" id="p-192">Cost for driving: 560 miles round trip will require 23.3 gallons of gas, costing $88.31.</div> <div class="para" id="p-193">Based on these assumptions, driving is cheaper. However, our assumption that we only include gas cost may not be a good one. Tax law allows you deduct $0.55 (in 2012) for each mile driven, a value that accounts for gas as well as a portion of the car cost, insurance, maintenance, etc. Based on this number, the cost of driving would be $319.</div>
+</div></div></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-probsolve-geometry.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="exercises-1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Sets" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+ <!-- Beginning of the Sets Chapter****************************************************************
+        It is organized into sections with:
+        1. Basic, notation, subsets
+        2. Operations
+        3. Venn Diagrams
+        4. Survey Problems
+        5. Exercises
+************************************************************************************************-->
+            <title>Sets</title>
+               <introduction>
+                <p>In this chapter, we cover set notations, operations with sets, Venn diagrams, and survey problems.
+                   </p>
+                   
+    </introduction>
+                   
+    
+            
+            <section xml:id="section-setbasics">
+                <title>Basics</title>
+                
+                <objectives>
+                    
+                     <ul>
+                        <li>Define sets, subsets, and elements.</li>
+                        <li>Discuss the notation used for sets, subsets, and elements.</li>
+                        <li>Compute cardinal numbers of sets.</li>
+                    </ul>
+                    
+                </objectives>
+                
+                <p>It is natural for us to classify items into groups, or sets, and consider how those sets overlap
+                    with each other. We can use these sets understand relationships between groups, and to
+                    analyze survey data.</p>
+                <p>An art collector might own a collection of paintings, while a music lover might keep a
+                    collection of CDs. Any collection of items can form a <term>set</term>.</p>
+                <definition xml:id="Def-Set">
+                    <title>Set</title>
+                    <p> A <term>set</term> is a collection of distinct objects, called <term>elements</term> of the set</p>
+                    <p>A set can be defined by describing the contents, or by listing the elements of the set,
+                        enclosed in curly brackets.</p>
+                </definition>
+                
+                <example>
+                <p>Some examples of sets defined by describing the contents:
+                    <ol label = "a">
+                        <li>The set of all even numbers</li>
+                        <li>The set of all books written about travel to Chile</li>
+                    </ol>
+                </p>
+                <p>Some examples of sets defined by listing the elements of the set:
+                    <ol label ="a">
+                        <li>{1, 3, 9, 12}</li>
+                        <li>{red, orange, yellow, green, blue, indigo, purple}</li>
+                    </ol>
+                </p>
+                </example>
+                
+                <p>A set simply specifies the contents; order is not important. The set represented by {1, 2, 3} is
+                    equivalent to the set {3, 1, 2}.</p>
+                
+                <remark><title>Notation</title>
+                    <p>Commonly, we will use a variable to represent a set, to make it easier to refer to that set
+                    later.</p>
+                    <p>The symbol <m>\in</m> means <q>is an element of</q>.</p>
+                    <p>A set that contains no elements, { }, is called the empty set and is notated <m>\emptyset</m>.</p>
+                </remark>
+                
+                <example>
+                    <p>Let A = {1, 2, 3, 4}</p>
+                    <p>To notate that 2 is element of the set, we’d write <m>2 \in A</m>.</p>
+                </example>
+                
+                <p>Sometimes a collection might not contain all the elements of a set. For example, Chris owns
+                three Madonna albums. While Chris’s collection is a set, we can also say it is a <term>subset</term> of the
+                larger set of all Madonna albums.</p>
+                
+                <definition xml:id="def-subset"><title>Subset</title>
+                    <p>A <term>subset</term> of a set A is another set that contains only elements from the set A, but may
+                        not contain all the elements of A.</p>
+                    <p>If B is a subset of A, we write <m>B \subseteq A</m></p>
+                    <p>A <term>proper subset</term> is a subset that is not identical to the original set - it contains fewer
+                        elements.</p>
+                    <p>If B is a proper subset of A, we write <m>B \subset A</m></p>
+                </definition>
+                
+                <example>
+                    <p>Consider these three sets</p>
+                    <p><m>A = </m>the set of all even numbers, <m>B = \{2, 4, 6\}</m>, <m>C = \{2, 3, 4, 6\}</m></p>
+                    <p>Here <m>B \subset A</m> since every element of <m>B</m> is also an even number, so is an element of <m>A</m></p>
+                    <p>More formally, we could say <m>B \subset A</m> since if <m>x \in B</m>, then <m>x \in A</m>.</p>
+                    <p>It is also true that <m>B \subset C</m>.</p>
+                    <p>C is not a subset of <m>A</m>, since <m>C</m> contains an element, 3, that is not contained in <m>A</m>.</p>
+                </example>
+                
+                <example>
+                    <p>Suppose a set contains the plays “Much Ado About Nothing”, “MacBeth”, and “A
+                        Midsummer’s Night Dream”. What is a larger set this might be a subset of?</p>
+                    <solution>There are many possible answers here. One would be the set of plays by Shakespeare. This
+                    is also a subset of the set of all plays ever written. It is also a subset of all British literature.</solution>
+                </example>
+                
+                <problem><title>Try It Now</title>
+                    <p>The set <m>A = \{1, 3, 5\}</m>. What is a larger set this might be a subset of?</p>
+                    <answer>There are several answers: The set of all odd numbers less than 10. The set of all odd
+                        numbers. The set of all integers. The set of all real numbers. </answer>
+                </problem>
+                
+                <p>Often times we are interested in the number of items in a set or subset. This is called the 
+                    <term>cardinality</term> of the set.</p>
+                
+                <definition><title>Cardinality</title>
+                    <p>The number of elements in a set is the <term>cardinality</term> of that set.</p>
+                    <p>The cardinality, or cardinal number, of the set A is often notated as <m>n\left(A\right)</m>.</p>
+                </definition>
+                
+                <example>
+                    <p>Find the cardinal number of each set.</p>
+                    <p>
+                    <ol label = "a">
+                        <li><m>A = \{1, 2, 3, 5\}</m></li>
+                        <li><m>B = \emptyset</m></li>    
+                    </ol>
+                    </p>
+                    
+                    <solution>
+                        <p>
+                            <ol label = "a">
+                                <li>There are four elements in set A.  
+                                    The cardinal number of set A is <m>n\left(A\right) = 4</m></li>
+                                <li>Since set B is the empty set, it does not contain any elements. 
+                                    <m>n\left(B\right)=0</m></li>
+                            </ol>
+                        </p>
+                    </solution>
+                </example>
+                
+                <example>
+                    <p>Find the cardinality of the set.</p>
+                    <p><m>A = \{\{1, 2\},3, 5\}</m></p>
+                    <solution>
+                    <p>There are three elements, or objects, in set A. Notice that we count <m>\{1, 2\}</m> as one element.</p>
+                        <p><m>n\left(A\right)=3</m></p></solution>
+                            
+                </example>
+    
+            </section>
+                
+            <section xml:id="section-setoperations"><title>Set Operations</title>
+                
+                <objectives>
+                    
+                    <ul>
+                        <li>Define the set operations: union, intersection, and complement.</li>
+                        <li>Apply set operations to applications.</li>
+                    </ul>
+                    
+                </objectives>
+                
+                
+                <p>Commonly sets interact. For example, you and a new roommate decide to have a house
+                party, and you both invite your circle of friends. At this party, two sets are being combined,
+                though it might turn out that there are some friends that were in both sets.</p>
+                
+                <definition xml:id ="def-operations"><title>Union, Intersection, Complement</title>
+                    <p>The <term>union</term> of two sets contains all the elements contained in either set (or both sets). 
+                        The union is notated <m>A \cup B</m>. 
+                        More formally, <m>x \in A \cup B </m> if <m>x \in A</m> or <m>x \in B</m> (or both).</p>
+                    
+                    <p>The <term>intersection</term> of two sets contains only the elements that are in both sets.
+                        The intersection is notated <m>A \cap B</m>.
+                        More formally, <m>x \in A \cap B \text{ if } x \in A \text{ and } x \in B</m>.</p>
+                    
+                    <p>The <term>complement</term> of a set A contains everything that is not in the set A.
+                        The complement is notated <m>A^C</m> or <m>A'</m>.</p>
+                </definition>
+                
+                <example>
+                    <p>Consider the sets: A = {red, green, blue}, B = {red, yellow, orange}, C = {red, orange, yellow, green, blue, purple}</p>
+                    <p>
+                    <ol label = "a">
+                        <li><p>Find <m>A \cup B</m></p></li>
+                            
+                        <li><p>Find <m>A \cap B</m></p></li>
+                        
+                        <li><p>Find <m>A^C \cap C</m></p></li>
+                    </ol>
+                    </p>
+                    
+                    <solution>
+                        <p>
+                            <ol label = "a">
+                                <li><p>The union contains all the elements in either set: 
+                            <m>A \cup B</m> = {red, green, blue, yellow, orange}</p>
+                                    <p>Notice we only list red once.</p></li>
+                                <li><p>The intersection contains all the elements in both sets: <m>A \cap B</m> = {red}</p></li>
+                                <li><p>Here we’re looking for all the elements that are not in set A and are also in C.
+                                    <m>A^C \cap C</m> = {orange, yellow, purple}</p></li>
+                            </ol>
+                        </p>
+                    </solution>
+                                
+                    
+                </example>
+                
+                <problem><title>Try It Now</title>
+                <p>Consider the sets:</p>   
+                <p>A = {red, green, blue}, B = {red, yellow, orange}, and C = {red, orange, yellow, green, blue, purple}</p>
+                    <p>
+
+                <ol label = "a">
+                    <li>
+                        <p>Find <m>A \cup C</m></p>
+                    
+                    </li>
+                    <li>
+                        <p>Find <m>B^C \cap A</m></p>
+                        
+                    </li>
+                </ol>
+                    </p>
+                    
+                    <answer>
+                        <p>
+                            <ol label = "a">
+                                <li><p><m>A \cup C</m> = {red, orange, yellow, green, blue purple}</p></li>
+                                <li><p><m>B^C \cap A</m> = {green, blue}</p></li>
+                            </ol>
+                        </p>
+                    </answer>
+                    
+            </problem>
+
+            <defintion xml:id="def-universalset"><title>Universal Set</title>
+                <p>A <term>universal set</term> is a set that contains all the elements we are interested in. This would have to be defined by the context.</p>
+                <p>A complement is relative to the universal set, so <m>A^C</m> contains all the elements in the universal set that are not in <m>A</m>.</p>
+            </defintion>
+
+            <example>
+                <p>
+                <ol label ="a">
+                    <li>If we were discussing searching for books, the universal set might be all the books in the library.</li>
+                    <li>If we were grouping your Facebook friends, the universal set would be all your Facebook friends.</li>
+                    <li>If you were working with sets of numbers, the universal set might be all whole numbers, all integers, or all real numbers.</li>
+                </ol>
+                </p>
+            </example>
+
+            <example>
+                <p>Suppose the universal set is <m>U</m> = all whole numbers from 1 to 9. If <m>A=\{1, 2, 4\}</m>, then
+                <me>A^C = \{3, 5, 6, 7, 8, 9\}</me></p>
+            </example>
+
+            <p>As we saw earlier with the expression <m>A^C \cap C</m>, set operations can be grouped together.  Grouping symbols can be used like they are with arithmetic - to force an order of operations.</p>
+
+            <example>
+                <p>Suppose  H = {cat, dog, rabbit, mouse},  F = {dog, cow, duck, pig, rabbit} and W = {duck, rabbit, deer, frog, mouse}</p>
+                <p>
+                <ol label="a">
+                    <li>
+                        <p>Find <m>\left( H \cap F \right) \cup W</m></p>
+
+                    </li>
+                    <li>
+                        <p>Find <m>H \cap \left( F \cup W\right)</m></p>
+                
+                    </li>
+                    <li>
+                        <p>Find <m>\left( H \cap F \right)^C \cap W</m></p>
+                     
+                    </li>
+                </ol>
+                </p>
+                
+                <solution>
+                    <p>
+                        <ol label = "a">
+                            <li><p>We start with the intersection:  <m>H \cap F</m> = {dog, rabbit}.
+                        Now we union that result with W:  
+                            <m>\left( H \cap F\right) \cup W</m> = {dog, duck, rabbit, deer, frog, mouse}</p></li>
+                            <li><p>We start with the union:  <m>F \cup W</m> = {dog, cow, rabbit, duck, pig, deer, frog, mouse}.
+                        Now we intersect that result with H:  
+                                <m>H \cap \left(F \cup W\right)</m> = {dog, rabbit, mouse}</p></li>
+                            <li><p>We start with the intersection:  <m>H \cap F</m> = {dog, rabbit}.
+                        Now we want to find the elements of W that are not in <m>H \cap F</m>
+                                <m>\left( H \cap F \right)^C \cap W</m> = {duck, deer, frog, mouse}</p></li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
+                
+            </section>
+            
+            <section xml:id = "section-setsvenndiagrams"><title>Venn Diagrams</title>
+                
+                <objectives>
+                    
+                     <ul>
+                        <li>Illustrate set operations with Venn diagrams.</li>
+                    </ul>
+                    
+                </objectives>
+                
+                <p>To visualize the interaction of sets, John Venn in 1880 thought to use overlapping circles,
+                building on a similar idea used by Leonhard Euler in the 18th century. These illustrations
+                now called Venn Diagrams. </p>
+                
+                <definition><title>Venn Diagrams</title>
+                    <p>A <term>Venn diagram</term> represents each set by a circle, usually drawn inside of a containing
+                    box representing the universal set. Overlapping areas indicate elements common to
+                        both sets.</p>
+                </definition>
+                
+                <p>Basic Venn diagrams can illustrate the interaction of two or three sets.</p>
+                
+                <example>
+                    <p>Create Venn diagrams to illustrate 
+                        <ol label = "a">
+                            <li><p><m>A \cup B</m></p>
+                                
+                            </li>
+                            <li><p><m>A \cap B</m></p>
+                                
+                            </li>
+                            <li><p><m>A^C \cap B</m></p>
+                                
+                            </li>
+                        </ol>
+                    </p>
+                    
+                    <solution>
+                        <p>
+                            <ol label = "a">
+                                <li><p><m>A \cup B</m> contains all elements in <em>either</em> set.</p>
+                                <image source = "images/120_Sets1_Screenshot.png">
+                                    <description>The union of two sets contains everything in either set.</description>
+                                    </image></li>
+                                <li><p><m>A \cap B</m> contains only those elements in both sets -
+                                    in the overlap of the circles.</p>
+                                <image source = "images/120_Sets2_Screenshot.png"><description>The intersection of two sets
+                                     contains the region in both sets--where they overlap.</description>
+                                    </image></li>
+                                <li><p><m>A^C</m> will contain all elements not in the set A. <m>A^C \cap B</m> will contain the elements 
+                                    in set B that are not in set A.</p>
+                                <image source = "images/120_Sets3_Screenshot.png"><description>The intersection of elements that are 
+                                    not in
+                                    set A and are in set B is the region in set B that is not inside of set A.</description></image>
+                                </li>
+                            </ol>
+                        </p>
+                        </solution>
+                                
+                </example>
+                
+                <example>
+                    <p>Use a Venn diagram to illustrate <m>\left( H \cap F\right)^C \cap W</m></p>
+                    <solution>
+                    <p>We’ll start by identifying everything in the set <m>H \cap F</m></p>
+                    <image source = "images/120_Sets4_Screenshot.png"><description>The intersection of H and F</description>
+                    </image>
+                    <p>Now, <m>\left(H \cap F\right)^C \cap W</m> will contain everything <em>not</em> in the set identified above that
+                         is also in set <m>W</m>.</p>
+                    <image source = "images/120_Sets5_Screenshot.png"><description>All elements that are not in both sets H and F, and 
+                        are
+                        in set W.</description></image>
+                    </solution>
+                </example>
+                
+                <example>
+                    <p>Create an expression to represent the outlined part of the Venn diagram shown.</p>
+                    <image source = "images/120_Sets6_Screenshot.png"><description>Elements in H and F but not in W</description>
+                    </image>
+                    <solution>
+                    <p>The elements in the outlined set are in sets H and F, but are not in set W. So we could represent this set as
+                        <m>H \cap F \cap W^C</m></p></solution>
+                </example>
+                
+                <problem><title>Try It Now</title>
+                    <p>Create an expression to represent the outlined portion of the Venn diagram shown.</p>
+                    <image source = "images/120_Sets7_Screenshot.png"><description>Elements in A or B but not in C</description></image>
+                   
+                    <answer><m>A \cup B \cap C^C</m></answer>    
+                </problem>
+                
+                <problem><title>Try It Now</title>
+                    <p>Let <m>A = \{1, 2, 3, 4, 5, 6\}</m> and <m>B = \{2, 4, 6, 8\}</m>.</p>
+                    <p>Find the cardinality of each:</p>
+                    <p>
+                        <ol label = "a">
+                            <li><p><m>B</m></p>
+                            </li> 
+                            <li><p><m>A \cup B</m></p>
+                            </li>
+                            <li><p><m>A \cap B</m></p>
+                            </li>
+                        </ol>
+                    </p>
+                    
+                    <answer>
+                        <p>
+                            <ol label = "a">
+                                <li>The cardinality of B is 4, since there are 4 elements in the set.</li>
+                                <li>The cardinality of <m>A \cup B</m> is 7, since <m>A \cup B = \{1, 2, 3, 4, 5, 6, 8\}</m>,
+                                    which contains 7 elements.</li>
+                                <li>The cardinality of <m>A \cap B</m> is 3, since <m>A \cap B = \{2, 4, 6\}</m>, which contains
+                                    3 elements.</li>
+                            </ol>
+                        </p>
+                    </answer>
+                </problem>
+            </section>
+            
+            <section xml:id = "section-setssurveyproblems"><title>Survey Problems</title>
+                
+                <objectives>
+                    
+                    <ul>
+                        <li>Solve survey problems with Venn diagrams.</li>
+                    </ul>
+                    
+                </objectives>
+                
+                <p>Sometimes we may be interested in the cardinality of the union or intersection of sets, but not 
+                    know the actual elements of each set. This is common in surveying. </p>
+                
+                <example>
+                    <p>A survey asks 200 people “What beverage do you drink in the morning”, and offers choices:</p>
+                    <p>
+                    <ul>
+                        <li>Tea only</li>
+                        <li>Coffee only</li>
+                        <li>Both coffee and tea</li>
+                    </ul>
+                    </p>
+                    
+                    <p>Suppose 20 report tea only, 80 report coffee only, 40 report both. How many people drink tea in the morning? 
+                        How many people drink neither tea or coffee?</p>
+                    
+                    <solution>
+                    
+                    <p>This question can most easily be answered by creating a Venn diagram. We can see that we can find the people 
+                        who drink tea by adding those who drink only tea to those who drink both: 60 people.</p>
+                    
+                    <p>We can also see that those who drink neither are those not contained in the any of the three other groupings, 
+                        so we can count those by subtracting from the cardinality of the universal set, 200.</p>
+                    
+                    <p><m>200 - 20 - 80 - 40 = 60</m> people who drink neither.</p>
+                    
+                    <image source = "images/120_Sets8_Screenshot.png"><description>Venn Diagram: 80 only coffee; 20
+                        coffee and tea; 20 only tea</description></image>
+                        
+                    </solution>
+                </example>
+                
+                <example>
+                    <p>A survey asks: Which online services have you used in the last month:</p>
+                    <p>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Have used both</li>
+                    </ul>
+                    </p>
+                    <p>The results show 40% of those surveyed have used Twitter, 70% have used Facebook, and 20% have used both. 
+                        How many people have used neither Twitter or Facebook?</p>
+                    
+                    <solution>
+                    
+                    <p>Let T be the set of all people who have used Twitter, and F be the set of all people who have used Facebook. 
+                        Notice that while the cardinality of F is 70% and the cardinality of T is 40%, the cardinality of 
+                        <m>F \cup T</m> is not simply 70% + 40%, since that would count those who use both services twice. 
+                        To find the cardinality of <m>F \cup T</m>, we can add the cardinality of F and the cardinality of T, then 
+                        subtract those in intersection that we’ve counted twice. In symbols,</p>
+                    
+                    <p><m>n\left(F \cup T\right) = n\left(F\right) + n\left(T\right) - n\left(F \cap T\right)</m></p>
+                    <p><m>n\left(F \cup T\right) = 70\% + 40\% - 20\% = 90\%</m></p>
+                    
+                    <p>Now, to find how many people have not used either service, we’re looking for the cardinality of 
+                        <m>\left(F \cup T\right)^C</m></p>
+                    
+                    <p>Since the universal set contains 100% of people and the cardinality of <m>F \cup T = 90\%</m>, 
+                        the cardinality of <m>\left(F \cup T\right)^C</m> must be the other 10%.</p>
+                        
+                    </solution>
+                    
+                </example>
+                
+                <p>The previous example illustrated two important properties</p>
+                
+                <note>
+                    <p>Cardinality Properties</p>
+                    <p><m>n\left(A \cup B\right) = n\left(A\right) + n\left(B\right) - n\left(A \cap B\right)</m></p>
+                    <p><m>n\left(A^C\right) = n\left(U\right) - n\left(A\right)</m></p>
+                </note>
+                
+                <p>Notice that the first property can also be written in an equivalent form by solving for the cardinality of the 
+                    intersection:</p>
+                <p><m>n\left(A \cap B\right) = n\left(A\right) + n\left(B\right) - n\left(A \cup B\right)</m></p>
+                
+                <example>
+                    <p>Fifty students were surveyed, and asked if they were taking a social science (SS), humanities (HM) or a natural 
+                        science (NS) course the next quarter.</p>
+                    <p>
+                    <ul>
+                        <li>21 were taking a SS course</li>
+                        <li>26 were taking a HM course</li>
+                        <li>19 were taking a NS course</li>
+                        <li>9 were taking SS and HM</li>
+                        <li>7 were taking SS and NS</li> 
+                        <li>10 were taking HM and NS</li>
+                        <li>3 were taking all three</li>
+                        <li>7 were taking none</li>
+                    </ul>
+                    </p>
+                    <p>How many students are only taking a SS course?</p>
+                    
+                    <solution>
+                    
+                    <image source ="images/120_Sets9_Screenshot.png"><description>Venn Diagram with various regions 
+                        labeled.</description></image>
+                    
+                    <p>It might help to look at a Venn diagram. From the given data, we know that there are 3 students in region e 
+                        and 7 students in region h.</p>
+                    
+                    <p>Since 7 students were taking a SS and NS course, we know that n(d) + n(e) = 7. Since we know there are 3 
+                        students in region 3, there must be 7 - 3 = 4 students in region d.</p>
+                    
+                    <p>Similarly, since there are 10 students taking HM and NS, which includes regions e and f, there must be 
+                        10 - 3 = 7 students in region f.</p>
+                    
+                    <p>Since 9 students were taking SS and HM, there must be 9 - 3 = 6 students in region b.</p>
+                    
+                    <p>Now, we know that 21 students were taking a SS course. This includes students from regions a, b, d, and e. 
+                        Since we know the number of students in all but region a, we can determine that 21 - 6 - 4 - 3 = 8 students 
+                        are in region a.</p>
+                    
+                    <p>8 students are taking only a SS course.</p>
+                        
+                    </solution>
+                    
+                </example>
+                
+                <problem><title>Try It Now</title>
+                    <p>One hundred fifty people were surveyed and asked if they believed in UFOs, ghosts, and Bigfoot.</p>
+                    <p>
+                    <ul>
+                        <li>43 believed in UFOs</li>
+                        <li>44 believed in ghosts</li>
+                        <li>25 believed in Bigfoot</li>
+                        <li>10 believed in UFOs and ghosts</li>
+                        <li>8 believed in ghosts and Bigfoot</li>
+                        <li>5 believed in UFOs and Bigfoot</li>
+                        <li>2 believed in all three</li>
+                    </ul>
+                    </p>
+                    <p>How many people surveyed believed in none of these things?</p>
+                    
+                    <answer>
+                        <p>Starting with the intersection of all three circles, we work our way out. Since 10 people believe in 
+                            UFOs and Ghosts, and 2 believe in all three, that leaves 8 that believe in only UFOs and Ghosts. We 
+                            work our way out, filling in all the regions. Once we have, we can add up all those regions, getting 91 
+                            people in the union of all three sets. This leaves <m>150 - 91 = 59</m> who believe in none.</p>
+                        <image source = "images/120_Sets10_Screenshot.png"><description>Venn Diagram with labels from the 
+                            problem.</description></image>
+                    </answer>
+                </problem>
+                
+                <example>
+                    <p>A streaming service surveyed the viewing preferences of 50 users. The following information was obtained:</p>
+                    <p>
+                    <ul>
+                        <li>10 want to watch movies, TV shows, and documentaries</li>
+                        <li>16 want to watch movies and documentaries</li>
+                        <li>11 only want to see movies</li>
+                        <li>16 want to see movies but not documentaries</li>
+                        <li>14 want to see TV shows and documentaries</li>
+                        <li>27 want to see TV shows</li>
+                        <li>40 want to see movies or documentaries</li>
+                    </ul>
+                    </p>
+                    <p>Create a Venn diagram to descrive this data. Then determine the number of people who are only interested 
+                        in watching documentaries.</p>
+                    <solution>
+                    <image source ="images/120_Sets11_Screenshot.png"><description>Venn Diagram with labels from the 
+                        problem.</description></image>
+                    
+                    <p>We can start by putting 10 in region e, since 10 people are interested in all three.</p>
+                    
+                    <p>Since 16 people want to see movies and documentaries, regions e and f must add up to 16. 16 - 10 = 6, 
+                        so there are 6 people in region f.</p>
+                    
+                    <p>11 people only want to see movies, so region c must be 11.</p>
+                    
+                    <p>16 want to see movies, but not documentaries. This would include the part of circle M that is not overlapping
+                        with circle D.  Regions b and c must add up to 16. There are 11 people in region c, so b = 16 - 11 = 5.</p>
+                    
+                    <p>14 want to see TV shows and documentaries. Regions d and e add up to 14, so d = 14 - 10 = 4.</p>
+                    
+                    <p>27 want to see TV shows.  Everything in the TV circle must add up to 27--that includes regions a, b, d, and e.
+                        Region a = 27 - 5 - 10 - 4 = 8.</p>
+                    
+                    <p>40 want to see either movies or documentaries. <m>n\left(M \cup D\right)=40</m>, so the regions in sets M or D
+                         must add up to 40. We already know regions b, c, d, e, and f.  Those add up to <m>5+11+4+10+6=36</m>, so there 
+                        must be 4 people in region g.</p>
+                    
+                    <p>Finally, the sum of all the people inside the sets is 48. Since 50 people were surveyed there are 2 people 
+                        in region h.</p>
+                    
+                    <image source ="images/120_Sets12_Screenshot.png"><description>Completed Venn Diagram</description></image>
+                    
+                    <p>The number of people only interested in watch documentaries would be those in region g. There are 4 people only 
+                        interested in documentaries.</p>
+                    </solution>
+                </example>
+                
+            </section>
+            
+<!-- Beginning of Exercises for Sets****************************************************************
+      
+************************************************************************************************-->
+           <exercises xml:id="exercises-sets">
+                
+                <title>Exercises</title>
+                <exercise xml:id="sets-ex-1">
+                    <statement>
+                        <p> List out the elements of the set “The letters of the word Mississippi”</p>
+                    </statement>
+                    
+                    <answer>{m, i, s, p}</answer>
+               </exercise>
+               
+                <exercise xml:id="sets-ex-2">
+                    <statement>
+                        <p>List out the elements of the set “Months of the year"</p>
+                    </statement>
+                </exercise>
+                <exercise xml:id="sets-ex-3">
+                    <statement>
+                        <p>Is <m>\{1, 3, 5\}</m> a subset of the set of odd integers? </p>
+                    </statement>
+                    
+                    <answer>Yes</answer>
+               </exercise>
+                <exercise xml:id="sets-ex-4">
+                    <statement>
+                        <p>Is <m>\{A, B, C\}</m> a subset of the set of letters of the alphabet?</p>
+                    </statement>
+               </exercise>
+               
+               <exercisegroup>
+                    <introduction>
+                        <p>Consider the sets below and indicate if each statement is true or false.</p>
+                        <p><m>A = \{1, 2, 3, 4, 5\}, B = \{1, 3, 5\}, C = \{4, 6\}, U</m> = {numbers from 0 to 10}
+                        </p>
+                    </introduction>
+                   <exercise xml:id="sets-ex-5">
+                       <statement><m>3 \in B</m></statement>
+                       <answer>True. 3 is an element in set B</answer>
+                   </exercise>
+                   <exercise xml:id="sets-ex-6">
+                       <statement><m>5 \in C</m></statement>
+                   </exercise>
+                   <exercise xml:id="sets-ex-7">
+                       <statement><m>B \subset A</m></statement>
+                       <answer>True. All elements in B are also in set A.</answer>
+                   </exercise>
+                   <exercise xml:id="sets-ex-8">
+                       <statement><m>C \subset A</m></statement>
+                   </exercise>
+                   <exercise xml:id="sets-ex-9">
+                       <statement><m>C \subset B</m></statement>
+                       <answer>False. The elements in set C are not in set B.</answer>
+                   </exercise>
+                   <exercise xml:id="sets-ex-10">
+                       <statement><m>C \subset U</m></statement>
+                   </exercise>
+               </exercisegroup>
+               
+               <exercisegroup>
+                    <introduction>
+                        <p>Draw a bag diagram and find the cardinal number of each set.</p>
+                    </introduction>
+                   <exercise xml:id="sets-ex-11">
+                       <statement><m>A=\{3, 4, 8, 9\}</m></statement>
+                       <answer>4</answer>
+                   </exercise>
+                    <exercise xml:id="sets-ex-12">
+                       <statement><m>B=\{\{1,2\}, \{1\}\}</m></statement>
+                   </exercise>
+                    <exercise xml:id="sets-ex-13">
+                       <statement><m>C=\{\emptyset\}</m></statement>
+                        <answer>1</answer>
+                   </exercise>
+                   <exercise xml:id="sets-ex-14">
+                       <statement><m>A=\{\{a,b\}, c, d\}</m></statement>
+                   </exercise>
+                    <exercise xml:id="sets-ex-15">
+                       <statement><m>P=\{\{\{x\}\}\}</m></statement>
+                        <answer>1</answer>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-16">
+                       <statement><m>S = \{ \}</m></statement>
+                    </exercise>
+                   
+               </exercisegroup>
+           
+            
+            <exercise xml:id="sets-ex-17">
+                <statement>List all subsets of <m>S=\{ \text{math,history,English}\}</m></statement>
+                <answer>{ }, {math}, {history}, {English}, {math, history}, {math, English}, 
+                    {history, English}, {math, history, English}</answer>
+            </exercise>
+               
+               <exercise xml:id="sets-ex-18">
+                   <statement>List all subsets of <m>P = </m>{tea, muffin, cookie}</statement>
+               </exercise>
+            
+             <exercise xml:id="sets-ex-19">
+                 <statement>How many subsets does <m>A=</m>{Colorado, Utah, Wyoming, Montana, Idaho} have?
+                </statement>
+                 <answer>32</answer>
+            </exercise>
+               
+               <exercise xml:id="sets-ex-20">
+                   <statement>How many subsets does <m>B = </m>{lily, daisy, sunflower, rose, iris, daffodil} have?
+                       How many of those subsets are proper subsets?</statement>
+               </exercise>
+            
+            <exercisegroup>
+                <introduction>
+                    <p>Use the sets below to find the following</p>
+                    <p><m>A = \{1, 3, 5, 7\}, B = \{1, 2, 3, 4\}, C = \{5, 7, 9\}, U =\{1, 2, 3, 4, 5, .., 10\}</m></p>
+                </introduction>
+                <exercise xml:id="sets-ex-21">
+                    <statement><m>A \cup B</m></statement>
+                    <answer>{1, 2, 3, 4, 5, 7}</answer>
+                </exercise>
+                 <exercise xml:id="sets-ex-22">
+                    <statement><m>A \cap B</m></statement>
+                </exercise>
+                 <exercise xml:id="sets-ex-23">
+                    <statement><m>A \cap C</m></statement> 
+                     <answer>{5, 7}</answer>
+                </exercise>
+                 <exercise xml:id="sets-ex-24">
+                    <statement><m>A \cup C</m></statement>
+                </exercise>
+                
+                <exercise xml:id="sets-ex-25">
+                    <statement><m>B \cup C</m></statement>
+                    <answer>{1, 2, 3, 4, 5, 7, 9}</answer>
+                </exercise>
+                
+                 <exercise xml:id="sets-ex-26">
+                    <statement><m>B \cap C</m></statement>
+                </exercise>
+                 <exercise xml:id="sets-ex-27">
+                    <statement><m>A^C</m></statement>
+                     <answer>{2, 4, 6, 8, 9, 10}</answer>
+                </exercise>
+                 <exercise xml:id="sets-ex-28">
+                    <statement><m>B^C</m></statement>
+                </exercise>
+                 <exercise xml:id="sets-ex-29">
+                    <statement><m>A^C \cap B</m></statement>
+                     <answer>{4}</answer>
+                </exercise>
+                 <exercise xml:id="sets-ex-30">
+                    <statement><m>A^C \cup B</m></statement>
+                </exercise>
+            </exercisegroup>
+               
+             <exercisegroup>
+                <introduction>
+                    <p>Let D = {b, a, c, k}, E = {t, a, s, k}, F = {b, a, t, h}. Using these sets, find the following: </p>
+                </introduction>
+                <exercise xml:id="sets-ex-31">
+                    <statement><m>D^C \cap E</m></statement>
+                    <answer>{t, s}</answer>
+                </exercise>
+                  <exercise xml:id="sets-ex-32">
+                    <statement><m>F^C \cap D</m></statement>
+                </exercise>
+                  <exercise xml:id="sets-ex-33">
+                    <statement><m>\left( D \cap E \right) \cup F</m></statement>
+                      <answer>{a, k, b, t, h}</answer>
+                </exercise>
+                  <exercise xml:id="sets-ex-34">
+                    <statement><m>D \cap \left(E \cup F \right)</m></statement>
+                </exercise>
+                  <exercise xml:id="sets-ex-35">
+                    <statement><m>\left(F \cap E\right)^C \cap D</m></statement>
+                      <answer>{b, c, k}</answer>
+                </exercise>
+                  <exercise xml:id="sets-ex-36">
+                    <statement><m>\left( D \cup E \right)^C \cap F</m></statement>
+                </exercise>
+               </exercisegroup>
+               
+               <exercisegroup>
+                   <introduction>
+                       <p>Create a Venn diagram to illustrate each of the following:</p>
+                   </introduction>
+                   <exercise xml:id="sets-ex-37">
+                       <statement><m>A \cap B^C</m></statement>
+                   </exercise>
+                    <exercise xml:id="sets-ex-38">
+                       <statement><m>A \cup B^C</m></statement>
+                   </exercise>
+                    <exercise xml:id="sets-ex-39">
+                       <statement><m>\left(F \cap E \right) \cup D</m></statement>
+                   </exercise>
+                   <exercise xml:id="sets-ex-40">
+                       <statement><m>\left(D \cup E \right)^C \cap F</m></statement>
+                   </exercise>
+                    <exercise xml:id="sets-ex-41">
+                       <statement><m>\left(F^C \cap E^C \right) \cap D</m></statement>
+                   </exercise>
+                    <exercise xml:id="sets-ex-42">
+                       <statement><m>\left(D \cup E \right) \cup F</m></statement>
+                   </exercise>
+               </exercisegroup>
+               
+               <exercisegroup>
+                   <introduction>
+                       <p>Write an expression for each shaded region.</p>
+                   </introduction>
+                   
+                   <exercise xml:id="sets-ex-43">
+                       <statement>
+                       <image width = "50%" source = "images/120_Sets_Exercise1_Screenshot.png"><description>The shaded region 
+                           includes where B overlaps with either A or C.</description>
+                               </image></statement>
+                       
+                       <answer>One possible answer: <m>\left(A\cap B\right)\cup\left(B\cap C\right)</m>
+                       </answer>
+
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-44">
+                       <statement>
+                       <image width = "50%" source = "images/120_Sets_Exercise2_Screenshot.png"><description>The shaded region
+                           includes the part of set B that does not overlap with any other sets (A or C).</description>
+                           </image></statement>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-45">
+                       <statement>
+                       <image width = "50%" source = "images/120_Sets_Exercise3_Screenshot.png"><description>The shaded region 
+                           include all of set C, as well as the part of set A that does not overlap with set B. </description>
+                           </image></statement>
+                       
+                       <answer><m>\left(A \cap B^C\right)\cup C</m></answer>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-46">
+                       <statement>
+                       <image width = "50%" source = "images/120_Sets_Exercise4_Screenshot.png"><description>The shaded region
+                           includes everything in sets A and B, as well as parts of set A or B that do not overlap 
+                           with set C.</description>
+                           </image></statement>
+                   </exercise>   
+               </exercisegroup>
+               
+               <exercisegroup>
+                   <introduction>
+                       <p>The Venn diagram here shows the cardinality of each set. Use this to find the 
+                           cardinality of each set.</p>
+                       <image width = "50%" source = "images/120_Sets_Exercise5_Screenshot.png"><description>Numbers in the Venn 
+                           diagram are: only A = 7; only A and B = 3; only B = 5; A, B, and C = 1; only A and C = 4; 
+                           only B and C = 2; only C = 8; outside all sets = 6</description>
+                       </image>
+                   </introduction>
+                   
+                   <exercise xml:id="sets-ex-47">
+                       <statement>
+                       <m>n\left(A\right)</m>
+                       </statement>
+                       <answer>15</answer>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-48">
+                       <statement>
+                           <m>n\left(B\right)</m>
+                       </statement>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-49">
+                       <statement>
+                       <m>\left(A \cap C\right)</m>
+                       </statement>
+                       <answer>5</answer>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-50">
+                       <statement>
+                       <m>n\left(B \cup C\right)</m>
+                        </statement>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-51">
+                       <statement>
+                       <m>n\left(A \cap B \cap C^C \right)</m>
+                       </statement>
+                       <answer>3</answer>
+                   </exercise>
+                   
+                   <exercise xml:id="sets-ex-52">
+                       <m>n\left(A \cap B^C \cap C\right)</m>
+                   </exercise>
+               </exercisegroup>
+
+               <exercisegroup>
+                <introduction>
+                    <p>Let <m>A = \{1, 2, 3, 4, 5\}, B = \{1, 3, 4\}, \text{and }C = \{4, 6\}</m></p>
+                    <p>Find the cardinality of the given sets.</p>
+                </introduction>
+                <exercise xml:id="sets-ex-53">
+                    <statement><m>n(A)</m></statement>
+                    <answer>5</answer>
+                </exercise>
+                <exercise xml:id="sets-ex-54">
+                    <statement><m>n(B)</m></statement>
+                </exercise>
+                <exercise xml:id="sets-ex-55">
+                    <statement><m>n(A \cup C)</m></statement>
+                    <answer>6</answer>
+                </exercise>
+                <exercise xml:id="sets-ex-56">
+                    <statement><m>n(A \cap C)</m></statement>
+                </exercise>
+            </exercisegroup>
+
+            <exercise xml:id="sets-ex-57">
+                <statement>If <m>n(G)=20, n(H)=30, n(G \cap H)=5</m>, find <m>n(G \cup H)</m>.
+            </statement>
+                <answer>45</answer>
+            </exercise>
+
+            <exercise xml:id="sets-ex-58">
+                <statement>If <m>n(G) = 5, n(H) = 8, n(G \cap H) = 4</m>, find <m>n(G \cup H)</m>,</statement>
+            </exercise>
+
+            <exercise xml:id="sets-ex-59">
+                <statement><p>A survey was given asking whether they watch movies at home from Netflix, Redbox, or a video store. Use the results to determine how many people use Redbox.
+                <ul>
+                    <li>52 only use Netflix</li>
+                    <li>24 only use a video store</li>
+                    <li>62 only use Redbox</li>
+                    <li>16 use only a video store and Redbox</li>
+                    <li>48 use only Netflix and Redbox</li>
+                    <li>30 use only a video store and Netflix</li>
+                    <li>10 use all three</li>
+                    <li>25 use none of these</li>
+                </ul>
+                </p>
+            </statement>
+                <answer>136</answer>
+            </exercise>
+               
+            <exercise xml:id="sets-ex-60">
+                <statement><p>A survey asked buyers whether color, size, or brand influenced their choice of cell phone. The results are below. How many people were influenced by brand?
+                <ul>
+                    <li>5 said only color</li>
+                    <li>8 only said size</li>
+                    <li>16 only said brand</li>
+                    <li>20 said only color and size</li>
+                    <li>42 said only color and brand</li>
+                    <li>53 said only size and brand</li>
+                    <li>102 said all three</li>
+                    <li>20 said none of these</li>
+                </ul>
+                </p>
+            </statement>
+            </exercise>
+
+            <exercise xml:id="sets-ex-61">
+                <statement><p>Use the given information to complete a Venn diagram, then determine: a) how many students have seen exactly one of these movies, and b) how many had seen only Star Wars.
+                <ul>
+                    <li>18 had seen The Matrix</li>
+                    <li>24 had seen Star Wars</li>
+                    <li>20 had seen Lord of the Rings</li>
+                    <li>10 had seen the Matrix and Star Wars</li>
+                    <li>14 had seen Lord of the Rings and Star Wars</li>
+                    <li>12 had seen the Matrix and Lord of the Rings</li>
+                    <li>6 had seen all three</li>
+                </ul>
+                </p>
+            </statement>
+                <answer>a) 8 b) 6</answer>
+            </exercise>
+
+            <exercise xml:id="sets-ex-62">
+                 <statement><p>A survey asked people what alternative transportation modes they use. Using the data to complete a Venn diagram, then determine: a) what percent of people only ride the bus, and b) how many people don’t use any alternate transportation.
+                    <ul>
+                        <li>30% use the bus</li>
+                        <li>20% ride a bicycle</li>
+                        <li>25% walk</li>
+                        <li>5% use the bus and ride a bicycle</li>
+                        <li>10% ride a bicycle and walk</li>
+                        <li>12% use the bus and walk</li>
+                        <li>2% use all three</li>
+                    </ul>
+                </p></statement>
+            </exercise>
+               
+               <exercise xml:id="sets-ex-63">
+                   <statement>
+                       <p>A group of students was surveyed about the student services they use. The results
+                           are summarized below.
+                           <ul>
+                               <li>6 use the rec center, library, and computer labs</li>
+                               <li>16 use the rec center and library</li>
+                               <li>28 use the library</li>
+                               <li>14 use the library and computer labs</li>
+                               <li>9 use the rec center and computer labs, but not library</li>
+                               <li>23 use the rec center, but not library</li>
+                               <li>18 were using only computer labs</li>
+                               <li>37 were using none of these services</li>
+                           </ul>
+                           <ol label = "a">
+                               <li>How many students were surveyed?</li>
+                               <li>How many students were using only the rec center?</li>
+                               <li>How many students were using computer labs?</li>
+                           </ol>
+                       </p>
+                   </statement>
+                           <answer>
+                               <ol label = "a">
+                                   <li>106</li>
+                                   <li>14</li>
+                                   <li>41</li>
+                               </ol>
+                   </answer>
+               </exercise>
+
+            <exercise xml:id="sets-ex-64">
+                <statement><p>A survey is taken of one hundred people who vacationed at a resort. The following information was obtained,
+                    <ul>
+                        <li>17 took tennis lesson, attended the Saturday night barbecue, and rented a surfboard</li>
+                        <li>28 attended the barbecue and rented a surfboard</li>
+                        <li>24 took tennis lessons and rented a surfboard</li>
+                        <li>42 took tennis lessons, but didn't attend the barbecue</li>
+                        <li>86 took tennis lessons or rented a surfboard</li>
+                        <li>14 only rented a surfboard</li>
+                        <li>14 did none of these things</li>
+                    </ul>
+                    <ol label="a">
+                        <li>How many attended the barbecue?</li>
+                        <li>How many rented a surfboard?</li>
+                    </ol>
+                </p></statement>
+            </exercise>
+            <exercise xml:id="sets-ex-65">
+                <statement><p>A survey was made of 200 city residents to study the use of mass transit facilities. According to the survey:
+                    <ul>
+                        <li>83 did not use mass transit</li>
+                        <li>68 used the train</li>
+                        <li>44 only used the subway</li>
+                        <li>59 used the bus</li>
+                    </ul>
+                </p>
+                <p>Explain how you can use this information to deduce that some residents must use both the bus and train.</p>
+            </statement>
+        </exercise>
+
+         </exercises>
+    
+    <exercises xml:id="sets-ch-test"><title>Chapter Test</title>
+        <exercisegroup>
+            <introduction>Draw a bag diagram and find the cardinal number of each set.</introduction>
+            <exercise>
+                <statement>
+                    <p><m>\{A, B, C, D\}</m></p>
+                </statement>
+                
+                <answer>4</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p><m>\{ \{ 2 \} \}</m></p>
+                </statement>
+                
+                <answer>1</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p><m>\{ \emptyset, 5, \{2, 7\} \}</m></p>
+                </statement>
+                
+                <answer>3</answer>
+            </exercise>
+        </exercisegroup>
+        
+        <exercisegroup>
+            <introduction>Determine whether each statement is true or false. Write a sentence to explain your answer.
+            </introduction>
+            
+            <exercise>
+                <statement>
+                    <p><m>\{3\} \in \{1, 2, 3, 4\}</m></p>
+                </statement>
+                
+                <answer>False. There is an element of 3 in the set, but {3} is not an element of that set.</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p><m>\emptyset \subseteq \{1, 2, 3, 4\}</m></p>
+                </statement>
+                
+                <answer>True. The empty set is always a possible subset.</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p><m>\{3\} \subset \{1, 2, 3, 4\}</m></p>
+                </statement>
+                
+                <answer>True. {3} is a proper subset because it can be created from the elements of 
+                {1, 2, 3, 4}, but it is not equal to {1, 2, 3, 4}.</answer>
+            </exercise>
+            
+            
+            <exercise>
+                <statement>
+                    <p><m>\emptyset \in \{1, 2, 3, 4\}</m></p>
+                </statement>
+                
+                <answer>False. The empty set is not an element of the set {1, 2, 3, 4}.</answer>
+            </exercise>
+        </exercisegroup>
+        
+        <exercisegroup>
+            <introduction>Let U = {2, 4, 6, 8, 10, 12, 14, 16, 18}, A = {2, 6, 10}, B = {6, 10, 16, 18} and C = {14, 16}.  
+                Find each of the following. </introduction>
+            
+            <exercise>
+                <statement>
+                    <p><m>A \cap B</m></p>
+                </statement>
+                
+                <answer>{6, 10}</answer>
+            </exercise>
+            
+             <exercise>
+                <statement>
+                    <p><m>A^c \cap C</m></p>
+                </statement>
+                
+                <answer>{14, 16}</answer>
+            </exercise>
+            
+             <exercise>
+                <statement>
+                    <p><m>A \cup (B \cap C)</m></p>
+                </statement>
+                
+                <answer>{2, 6, 10, 16}</answer>
+            </exercise>
+            
+             <exercise>
+                <statement>
+                    <p><m>B \cup C^c</m></p>
+                </statement>
+                
+                <answer>{2, 4, 6, 8, 10, 12, 16, 18}</answer>
+            </exercise>
+            
+        </exercisegroup>
+
+        <exercisegroup>
+            <introduction>Draw a Venn Diagram to represent the following: </introduction>
+            
+            <exercise>
+                <statement>
+                    <p><m>A \cap B^c</m></p>
+                </statement>
+                
+                <answer>
+                    <image xml:id = "venn-ch-test-1">
+                        <latex-image>
+                        \begin{tikzpicture}[thick,
+    set/.style = { circle, minimum size = 3cm}]
+ 
+% Set A
+\node[set,fill=gray,label={135:$A$}] (A) at (0,0) {};
+ 
+% Set B
+\node[set,fill=white,label={45:$B$}] (B) at (0:2) {};
+ 
+% Circles outline
+\draw (0,0) circle(1.5cm);
+\draw (2,0) circle(1.5cm);
+ 
+
+\end{tikzpicture}
+                            </latex-image>
+                    </image>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p><m>A^c \cup B^c</m></p>
+                </statement>
+                
+                <answer>
+                     <image xml:id = "venn-ch-test-2">
+                        <latex-image>
+                        \begin{tikzpicture}[fill=gray]
+% left hand
+\scope
+\clip (-2,-2) rectangle (0.5,2)
+      (1,0) circle (1);
+\clip (-2,-2) rectangle (0.5,2);
+\fill (-2,-2) rectangle (3,2);
+\endscope
+% right hand
+\scope
+\clip (0.5,-2) rectangle (3,2)
+      (0,0) circle (1);
+\clip (0.5,-2) rectangle (3,2);
+\fill (-2,-2) rectangle (3,2);
+\endscope
+% outline
+\draw (-2,-2) rectangle (3,2);
+\draw (0,0) circle (1)
+      (1,0) circle (1);
+\end{tikzpicture}
+                            </latex-image>
+                    </image>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p><m>(A \cup B) \cap C^c</m></p>
+                </statement>
+                
+                <answer>
+                    <image xml:id="venn-ch-test-3">
+                        <latex-image>
+  \def\firstcircle{(90:1.75cm) circle (2.5cm)}
+  \def\secondcircle{(210:1.75cm) circle (2.5cm)}
+  \def\thirdcircle{(330:1.75cm) circle (2.5cm)}
+
+    \begin{tikzpicture}
+     
+    \fill[gray] \firstcircle;
+     
+    \fill[gray] \secondcircle;
+                            
+       \fill[white] \thirdcircle;                      
+     
+      \draw \firstcircle node[text=black,above] {$A$};
+      \draw \secondcircle node [text=black,below left] {$B$};
+      \draw \thirdcircle node [text=black,below right] {$C$};
+    \end{tikzpicture}
+                            </latex-image>
+                    </image>
+                </answer>
+            </exercise>
+        </exercisegroup>
+        
+        <exercise>
+            <statement><p>The following table gives information about students in the Math Club:</p>
+                <table>
+                    <tabular align = "center">
+                       <row header = "yes" bottom = "minor">
+                           <cell>Student</cell>
+                           <cell>Year</cell>
+                           <cell>Major</cell>
+                           <cell>GPA</cell>
+                        </row>
+                        <row>
+                            <cell>Alice</cell>
+                            <cell>Freshman</cell>
+                            <cell>Computer Science</cell>
+                            <cell>3.0</cell>
+                        </row>
+                        <row>
+                            <cell>Bob</cell>
+                            <cell>Junior</cell>
+                            <cell>Math</cell>
+                            <cell>2.5</cell>
+                        </row>
+                        <row>
+                            <cell>Carol</cell>
+                            <cell>Sophomore</cell>
+                            <cell>Math</cell>
+                            <cell>4.0</cell>
+                        </row>
+                        <row>
+                            <cell>Dave</cell>
+                            <cell>Junior</cell>
+                            <cell>Engineering</cell>
+                            <cell>3.5</cell>
+                        </row>
+                        <row>
+                            <cell>Elisabeth</cell>
+                            <cell>Freshman</cell>
+                            <cell>Engineering</cell>
+                            <cell>3.0</cell>
+                        </row>
+                        <row>
+                            <cell>Frank</cell>
+                            <cell>Senior</cell>
+                            <cell>Computer Science</cell>
+                            <cell>4.0</cell>
+                        </row>
+                        <row>
+                            <cell>George</cell>
+                            <cell>Freshman</cell>
+                            <cell>Math</cell>
+                            <cell>2.0</cell>
+                        </row>
+                        <row>
+                            <cell>Holly</cell>
+                            <cell>Sophomore</cell>
+                            <cell>Engineering</cell>
+                            <cell>3.5</cell>
+                        </row>
+                    </tabular>
+                </table>
+                
+                <p>Let,  U = all students in the math club, M = students majoring in math, G = students with a GPA 
+                    <m>\ge</m> 3.0, and F = students who are Freshman.</p>
+                
+                <p>Describe each set in words.  Then find the set.
+                    <ol label = "a">
+                        <li><m>M \cap G</m></li>
+                        <li><m>M \cup F</m></li>
+                        <li><m>G^c \cap F</m></li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+            <p>
+                <ol label = "a">
+                    <li>Students majoring in math and students with a GPA greater than or equal to 3.0.  {Carol}</li>
+                    <li>Students majoring in math or Freshman.  {Alice, Bob, Carol, Elisabeth, George}</li>
+                    <li>Students without a GPA less than 3.0 and students who are Freshman.  {George}</li>
+                </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>An athletic director of a school has surveyed 200 students.  The results are:
+                    <ul>
+                        <li>140 students like volleyball</li>
+                        <li>120 students like basketball</li>
+                        <li>85 students like both volleyball and basketball</li>
+                    </ul>
+                </p>
+                
+                <p>
+                    <ol label = "a">
+                        <li>How many students like volleyball, but not basketball? </li>
+                        <li>How many like basketball but not volleyball?</li> 
+                        <li>How many do not like either of these sports?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+            <image width = "50%" xml:id = "survey-ch-test-1">
+                    <latex-image>
+                      \begin{venndiagram2sets}[labelA={V},labelB={B},
+                        labelOnlyA={55},labelOnlyB={35},
+                        labelAB={85},
+                        labelNotAB={25}]
+
+                        \end{venndiagram2sets}
+                        </latex-image>
+                </image>
+            </solution>
+            
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>55</li>
+                        <li>35</li>
+                        <li>25</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A music teacher has surveyed 495 students.  The results are below:
+                    <ul>
+                        <li>320 like rap music</li>
+                        <li>395 like rock music</li>
+                        <li>295 like heavy metal</li>
+                        <li>280 like both rap and rock</li>
+                        <li>190 like both rap and heavy metal</li>
+                        <li>245 like both rock and heavy metal</li>
+                        <li>160 like all three</li>
+                    </ul>
+                </p>
+                
+                <p>
+                    <ol label = "a">
+                        <li>How many student like exactly two of the three types of music?</li>
+                        <li>How many like only rock music?</li>
+                        <li>How many like only one of the three types of music?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <image width = "50%" xml:id = "survey-ch-test-2">
+                    <latex-image>
+                      \begin{venndiagram3sets}[labelA={Rock},labelB={Rap}, labelC={HM},
+                        labelOnlyA={30},labelOnlyB={10},labelOnlyC={20},
+                        labelOnlyAB={120},labelOnlyAC={85},labelOnlyBC={30},labelABC={160},
+                        labelNotABC={50}]
+
+                        \end{venndiagram3sets}
+                        </latex-image>
+                </image>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>235</li>
+                        <li>30</li>
+                        <li>60</li>
+                    </ol>
+                </p>
+            </answer>
+            
+        </exercise>
+ 
+
+        <exercise>
+            <statement>
+                <p>The Dean of Academic Services surveyed a group of students about which support services they were 
+                    using. The results were:
+                    <ul>
+                        <li>5 use office hours, tutoring and online study groups</li>
+                        <li>16 use office hours and tutoring</li>
+                        <li>28 use tutoring</li>
+                        <li>14 use tutoring and online study groups</li> 
+                        <li>8 use office hours and online study groups but not tutoring</li>
+                        <li>23 use office hours but not tutoring</li>
+                        <li>18 use only online study groups</li>
+                        <li>37 use none of these services</li>
+                    </ul>
+                </p>
+                <p>
+                    <ol label = "a">
+                        <li>How many students were surveyed?</li>
+                        <li>How many were using only office hours?</li>
+                        <li>How many were using online study groups?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+            <image width = "50%" xml:id = "survey-ch-test-3">
+                    <latex-image>
+                      \begin{venndiagram3sets}[labelA={OH},labelB={T}, labelC={SG},
+                        labelOnlyA={15},labelOnlyB={3},labelOnlyC={18},
+                        labelOnlyAB={11},labelOnlyAC={8},labelOnlyBC={9},labelABC={5},
+                        labelNotABC={37}]
+
+                        \end{venndiagram3sets}
+                        </latex-image>
+                </image>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>106</li>
+                        <li>15</li>
+                        <li>40</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+       
+        
+    </exercises>
+
+
+        </chapter>
+

@@ -1,0 +1,3292 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Voting" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <title>Voting Theory</title>
+    <introduction><p>In many decision making situations, it is necessary to gather the group consensus. This happens when 
+        a group of friends decides which movie to watch, when a company decides which product design to manufacture, and 
+        when a democratic country elects its leaders.</p>
+
+        <p>While the basic idea of voting is fairly universal, the method by which those votes are used to determine a 
+            winner can vary. Amongst a group of friends, you may decide upon a movie by voting for all the movies you’re 
+            willing to watch, with the winner being the one with the greatest approval. A company might eliminate 
+            unpopular designs then revote on the remaining. A country might look for the candidate with the most 
+            votes.</p>
+
+        <p>In deciding upon a winner, there is always one main goal: to reflect the preferences of the people in the most 
+            fair way possible.</p>
+    </introduction>
+    
+    <section xml:id = "section-voting-preference">
+        <title>Preference Schedules</title>
+        <objectives>
+            <ul>
+                <li>Use preference schedules to organize ballots</li>
+            </ul>
+        </objectives>
+        
+        <p>To begin, we’re going to want more information than a traditional ballot normally provides.  
+            A traditional ballot usually asks you to pick your favorite from a list of choices.  This ballot 
+            fails to provide any information on how a voter would rank the alternatives if their first choice was 
+            unsuccessful. </p>
+        
+        <definition><title>Preference Ballot</title>
+            <p>A <term>preference ballot</term> is a ballot in which the voter ranks the choices in order of preference.
+            </p>
+        </definition>
+        
+        <example>
+            <p>A vacation club is trying to decide which destination to visit this year: Hawaii (H), Orlando (O), or 
+                Anaheim (A). Their votes are shown below:</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right = "minor"></cell>
+                        <cell>Bob</cell>
+                        <cell>Ann</cell>
+                        <cell>Mary</cell>
+                        <cell>Alice</cell>
+                        <cell>Eve</cell>
+                        <cell>Omar</cell>
+                        <cell>Lupe</cell>
+                        <cell>Dave</cell>
+                        <cell>Tish</cell>
+                        <cell>Jim</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>A</cell>
+                        <cell>O</cell>
+                        <cell>H</cell>
+                        <cell>A</cell>
+                        <cell>O</cell>
+                        <cell>H</cell>
+                        <cell>O</cell>
+                        <cell>H</cell>
+                        <cell>A</cell>
+                    </row>
+                     <row>
+                        <cell right = "minor">2nd Choice</cell>
+                        <cell>O</cell>
+                        <cell>H</cell>
+                        <cell>H</cell>
+                        <cell>A</cell>
+                        <cell>H</cell>
+                        <cell>H</cell>
+                        <cell>A</cell>
+                        <cell>H</cell>
+                        <cell>A</cell>
+                        <cell>H</cell>
+                    </row>
+                          <row>
+                        <cell right = "minor">3rd Choice</cell>
+                        <cell>H</cell>
+                        <cell>O</cell>
+                        <cell>A</cell>
+                        <cell>O</cell>
+                        <cell>O</cell>
+                        <cell>A</cell>
+                        <cell>O</cell>
+                        <cell>A</cell>
+                        <cell>O</cell>
+                        <cell>O</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <solution>
+                <p>These individual ballots are typically combined into one preference schedule, which shows the number of 
+                    voters in the top row that voted for each option:</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>1</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell>A</cell>
+                            <cell>A</cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                            <cell>H</cell>
+                            <cell>A</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>H</cell>
+                            <cell>O</cell>
+                            <cell>A</cell>
+                            <cell>O</cell>
+                        </row>
+                    </tabular>
+                </table>
+                
+                <p>Notice that by totaling the vote counts across the top of the preference schedule we can recover the 
+                    total number of votes cast: <m>1+3+3+3=10</m> total votes.</p>
+            </solution>
+        </example>
+       
+     
+    </section>
+    
+    <section xml:id = "section-voting-plurality"><title>The Plurality Method</title>
+        <objectives>
+            <ul>
+                <li>Find the winner of an election using the plurality method</li>
+                <li>Determine if an election has a Condorcet candidate</li>
+                <li>Understand whether an election has violated the Condorcet criterion</li>
+            </ul>
+        </objectives>
+        <introduction>The voting method we’re most familiar with in the United States is the plurality method.
+        </introduction>
+        <subsection><title>Plurality</title>
+
+        <definition><title>Plurality Method</title>
+            <p>In this method, the choice with the most first-preference votes is declared the winner. Ties are possible, 
+                and would have to be settled through some sort of run-off vote.</p>
+         </definition>
+
+        <p>This method is sometimes mistakenly called the majority method, or “majority rules”, but it is not necessary for 
+            a choice to have gained a majority of votes to win. A majority is over 50%; it is possible for a winner to have 
+            a plurality without having a majority.</p>
+
+        <example xml:id = "example-voting-plurality">
+            <p>In our election from previous pages, we had the preference table:</p>
+            <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>1</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell>A</cell>
+                            <cell>A</cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                            <cell>H</cell>
+                            <cell>A</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>H</cell>
+                            <cell>O</cell>
+                            <cell>A</cell>
+                            <cell>O</cell>
+                        </row>
+                </tabular>
+                </table>
+            
+            <p>Who wins the election with the plurality method?</p>
+
+            <solution>
+                <p>For the plurality method, we only care about the first choice options. Totaling them up:</p>
+                <p>Anaheim: <m>1+3 = 4</m> first-choice votes</p>
+                <p>Orlando: <m>3</m> first-choice votes</p>
+                <p>Hawaii: <m>3</m> first-choice votes</p>
+
+                <p>Anaheim is the winner using the plurality voting method.</p>
+
+                <p>Notice that Anaheim won with 4 out of 10 votes, 40% of the votes, which is a plurality of the votes, but 
+                    not a majority.</p>
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>Three candidates are running in an election for County Executive: Goings (G), McCarthy (M), and Bunney (B). 
+                The voting schedule is shown below. Which candidate wins under the plurality method?</p>
+            
+            <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>14</cell>
+                            <cell>44</cell>
+                            <cell>20</cell>
+                            <cell>70</cell>
+                            <cell>22</cell>
+                            <cell>80</cell>
+                            <cell>39</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell>M</cell>
+                            <cell>M</cell>
+                            <cell>B</cell>
+                            <cell>B</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                            <cell>M</cell>
+                            <cell>B</cell>
+                            <cell></cell>
+                            <cell>G</cell>
+                            <cell>B</cell>
+                            <cell>M</cell>
+                            <cell></cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>B</cell>
+                            <cell>M</cell>
+                            <cell></cell>
+                            <cell>B</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell></cell>
+                        </row>
+                    </tabular>
+            </table>
+
+            <p>Note: In the third column and last column, those voters only recorded a first-place vote, so we don’t know 
+                who their second and third choices would have been.</p>
+            
+            <answer><p>Using plurality method:</p>
+                <p>G gets <m>44+14+20=78</m> first-choice votes</p>
+                <p>M gets <m>70+22=92</m> first-choice votes</p>
+                <p>B gets <m>80+39=119</m> first-choice votes</p>
+
+                <p>Bunney (B) wins under plurality method.</p>
+            </answer>
+        </problem>
+        </subsection>
+        
+        <subsection><title>What's Wrong with Plurality?</title>
+           <p>The election from <xref ref = "example-voting-plurality" /> may seem totally clean, but there is a problem 
+               lurking that arises whenever there are three or more choices. Looking back at our preference table, how would 
+               our members vote if they only had two choices?</p>
+            
+            <p>Anaheim vs Orlando: 7 out of the 10 would prefer Anaheim over Orlando</p>
+            
+            <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>1</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell><alert>A</alert></cell>
+                            <cell><alert>A</alert></cell>
+                            <cell><alert>O</alert></cell>
+                            <cell>H</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                             <cell><alert>O</alert></cell>
+                            <cell>H</cell>
+                            <cell>H</cell>
+                             <cell><alert>A</alert></cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>H</cell>
+                             <cell><alert>O</alert></cell>
+                            <cell>A</cell>
+                             <cell><alert>O</alert></cell>
+                        </row>
+                    </tabular>
+            </table>
+            
+            <p>Anaheim vs Hawaii: 6 out of 10 would prefer Hawaii over Anaheim</p>
+            <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>1</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell><alert>A</alert></cell>
+                            <cell><alert>A</alert></cell>
+                            <cell>O</cell>
+                            <cell><alert>H</alert></cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                             <cell>O</cell>
+                             <cell><alert>H</alert></cell>
+                             <cell><alert>H</alert></cell>
+                             <cell><alert>A</alert></cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                             <cell><alert>H</alert></cell>
+                             <cell>O</cell>
+                             <cell><alert>A</alert></cell>
+                             <cell>O</cell>
+                        </row>
+                    </tabular>
+            </table>
+           
+            <p>This doesn’t seem right, does it? Anaheim just won the election, yet 6 out of 10 voters, 60% of them, would 
+                have preferred Hawaii! That hardly seems fair. Marquis de Condorcet, a French philosopher, mathematician, 
+                and political scientist wrote about how this could happen in 1785, and for him we name our first fairness 
+                criterion.</p>
+
+            <definition><title>Fairness Criteria</title>
+                <p>The <term>fairness criteria</term> are statements that seem like they should be true in a fair election.
+                </p>
+            </definition>
+
+            <definition><title>Condorcet Criterion</title>
+                <p>If there is a choice that is preferred in every one-to-one comparison with the other choices, that choice 
+                    should be the winner. We call this winner the Condorcet Winner, or <term>Condorcet Candidate</term>.</p>
+            </definition>
+
+            <example>
+                <p>In the election in <xref ref = "example-voting-plurality" /> is there a Condorcet candidate? If so,
+                    who?</p>
+
+                <solution>
+                    <p>We see above that Hawaii is preferred over Anaheim (6 out of 10 people prefer Hawaii to Anaheim). 
+                        Comparing Hawaii to Orlando, we can that 6 out of 10 people ranked Hawaii abover Orlando.</p>
+                    <p>Since Hawaii is preferred in a one-to-one comparison to both other choices, Hawaii is the Condorcet 
+                        Winner.</p>
+                </solution>
+            </example>
+
+            <example xml:id = "example-voting-insincere">
+                <p>Consider a city council election in a district that is historically 60% Democratic voters and 40% 
+                    Republican voters. Even though city council is technically a nonpartisan office, people generally know 
+                    the affiliations of the candidates. In this election there are three candidates: Don and Key, both 
+                    Democrats, and Elle, a Republican. A preference schedule for the votes looks as follows:</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>342</cell>
+                            <cell>214</cell>
+                            <cell>298</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell>Elle</cell>
+                            <cell>Don</cell>
+                            <cell>Key</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                             <cell>Don</cell>
+                             <cell>Key</cell>
+                             <cell>Don</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                             <cell>Key</cell>
+                             <cell>Elle</cell>
+                             <cell>Elle</cell>
+                        </row>
+                    </tabular>
+            </table>
+
+                <p>We can see a total of <m>342+214+298=854</m> voters participated in this election. Computing percentage 
+                    of first place votes:</p>
+                <p>
+                <ul>
+                    <li>Don: <m>214 \div 854=25.1\%</m></li>
+                    <li>Key: <m>298 \div 854=34.9\%</m></li>
+                    <li>Elle: <m>342 \div 854=40.0\%</m></li>
+                </ul>
+                </p>
+                <p>So in this election, the Democratic voters split their vote over the two Democratic candidates, allowing 
+                    the Republican candidate Elle to win under the plurality method with 40% of the vote.</p>
+
+                <p>Analyzing this election closer, we see that it violates the Condorcet Criterion. Analyzing the one-to-one 
+                    comparisons:</p>
+                <p>
+                <ul>
+                    <li>Elle vs Don: 342 prefer Elle; 512 prefer Don: Don is preferred</li>
+                    <li>Elle vs Key: 342 prefer Elle; 512 prefer Key: Key is preferred</li>
+                    <li>Don vs Key: 556 prefer Don; 298 prefer Key: Don is preferred</li>
+                </ul></p>
+                
+                <p>So even though Don had the smallest number of first-place votes in the election, he is the Condorcet 
+                    winner, being preferred in every one-to-one comparison with the other candidates.</p>
+            </example>
+            
+            <problem><title>Try It Now</title>
+                <p>Consider the election in the preference schedule below. Is there a Condorcet winner in this election?</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>14</cell>
+                            <cell>44</cell>
+                            <cell>20</cell>
+                            <cell>70</cell>
+                            <cell>22</cell>
+                            <cell>80</cell>
+                            <cell>39</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell>M</cell>
+                            <cell>M</cell>
+                            <cell>B</cell>
+                            <cell>B</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                            <cell>M</cell>
+                            <cell>B</cell>
+                            <cell></cell>
+                            <cell>G</cell>
+                            <cell>B</cell>
+                            <cell>M</cell>
+                            <cell></cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>B</cell>
+                            <cell>M</cell>
+                            <cell></cell>
+                            <cell>B</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell></cell>
+                        </row>
+                    </tabular>
+                </table>
+                <answer>
+                    <p>Determining the Condorcet Winner:</p>
+                    <p>
+                    <ul>
+                        <li>G vs M: <m>44+14+20=78</m> prefer G, <m>70+22+80=172</m> prefer M: M preferred</li>
+                        <li>G vs B: <m>44+14+20+70=148</m> prefer G, <m>22+80+39=141</m> prefer B: G preferred</li>
+                        <li>M vs B: <m>44+70+22=136</m> prefer M, <m>14+80+39=133</m> prefer B: M preferred</li>
+                        </ul></p>
+
+                            <p>M is preferred over both B and G, so M is the Condorcet winner, based on the information we 
+                                have.</p>
+                    
+                </answer>
+            </problem>
+      
+        </subsection>
+        
+        <subsection><title>Insincere Voting</title>
+            <p>Situations like the one in <xref ref = "example-voting-insincere" /> above, when there are more than one 
+                candidate that share somewhat similar points of view, can lead to insincere voting. Insincere voting is when 
+                a person casts a ballot counter to their actual preference for strategic purposes. In the case above, the 
+                democratic leadership might realize that Don and Key will split the vote, and encourage voters to vote for 
+                Key by officially endorsing him. Not wanting to see their party lose the election, as happened in the 
+                scenario above, Don’s supporters might insincerely vote for Key, effectively voting against Elle.</p>
+        </subsection>
+   
+        
+    </section>
+    
+    <section xml:id = "section-voting-irv">
+        <title>Instant Runoff Voting</title>
+         <objectives>
+            <ul>
+                <li>Find the winner of an election using the instant runoff voting</li>
+                <li>Understand whether an election has violated the monotonicity criterion</li>
+            </ul>
+        </objectives>
+        
+        <introduction>Instant Runoff Voting (IRV), also called Plurality with Elimination, is a modification of the 
+            plurality method that attempts to address the issue of insincere voting.</introduction>
+        
+        <subsection><title>Instant Runoff Voting (IRV)</title>
+            <p>In IRV, voting is done with preference ballots, and a preference schedule is generated. The choice with the 
+                least first-place votes is then eliminated from the election, and any votes for that candidate are 
+                redistributed to the voters’ next choice. This continues until a choice has a majority (over 50%).</p>
+
+            <p>This is similar to the idea of holding runoff elections, but since every voter’s order of preference is 
+            recorded on the ballot, the runoff can be computed without requiring a second costly election.</p>
+
+            <p>This voting method is used in several political elections around the world, including election of members of 
+                the Australian House of Representatives, and was used for county positions in Pierce County, Washington 
+                until it was eliminated by voters in 2009. A version of IRV is used by the International Olympic Committee 
+                to select host nations.</p>
+
+            <example>
+                <p>Consider the preference schedule below, in which a company’s advertising team is voting on five different 
+                advertising slogans, called A, B, C, D, and E here for simplicity.</p>
+                
+                <table>
+  <tabular halign = "center">
+    <row header = "yes" bottom = "minor">
+      <cell></cell>
+      <cell>3</cell>
+      <cell>4</cell>
+      <cell>4</cell>
+      <cell>6</cell>
+      <cell>2</cell>
+      <cell>1</cell>
+    </row>
+    <row>
+      <cell>1st Choice</cell>
+      <cell>B</cell>
+      <cell>C</cell>
+      <cell>B</cell>
+      <cell>D</cell>
+      <cell>B</cell>
+      <cell>E</cell>
+    </row>
+    <row>
+      <cell>2nd Choice</cell>
+      <cell>C</cell>
+      <cell>A</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+      <cell>E</cell>
+      <cell>A</cell>
+    </row>
+    <row>
+      <cell>3rd Choice</cell>
+      <cell>A</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+      <cell>A</cell>
+      <cell>A</cell>
+      <cell>D</cell>
+    </row>
+    <row>
+      <cell>4th Choice</cell>
+      <cell>D</cell>
+      <cell>B</cell>
+      <cell>A</cell>
+      <cell>E</cell>
+      <cell>C</cell>
+      <cell>B</cell>
+    </row>
+    <row>
+      <cell>5th Choice</cell>
+      <cell>E</cell>
+      <cell>E</cell>
+      <cell>E</cell>
+      <cell>B</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+    </row>
+  </tabular>
+</table>
+
+                <p>If this was a plurality election, note that B would be the winner with 9 first-choice votes, compared to 
+                    6 for D, 4 for C, and 1 for E.</p>
+
+                <p>There are total of <m>3+4+4+6+2+1 = 20</m> votes. A majority would be <m>11</m> votes. No one yet has a 
+                    majority, so we proceed to elimination rounds.</p>
+
+                    <p>Round 1: We make our first elimination. Choice A has the fewest first-place votes, so we remove that 
+                        choice.</p>
+                    
+                    
+                    <table>
+  <tabular halign = "center">
+    <row header = "yes" bottom = "minor">
+      <cell>
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        6
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+    <row>
+      <cell>
+        1st Choice
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        E
+      </cell>
+    </row>
+    <row>
+      <cell>
+        2nd Choice
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        
+      </cell>
+    </row>
+    <row>
+      <cell>
+        3rd Choice
+      </cell>
+      <cell>
+        
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        
+      </cell>
+      <cell>
+        
+      </cell>
+      <cell>
+        D
+      </cell>
+    </row>
+    <row>
+      <cell>
+        4th Choice
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+    </row>
+    <row>
+      <cell>
+        5th Choice
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+    </row>
+  </tabular>
+</table>
+
+                    <p>We then shift everyone’s choices up to fill the gaps. There is still no choice with a majority, so 
+                        we eliminate again.</p>
+                    
+                    <table>
+  <tabular halign = "center">
+    <row header = "yes" bottom = "minor">
+      <cell>
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        6
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+    <row>
+      <cell>
+        1st Choice
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        E
+      </cell>
+    </row>
+    <row>
+      <cell>
+        2nd Choice
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        D
+      </cell>
+    </row>
+    <row>
+      <cell>
+        3rd Choice
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+    </row>
+    <row>
+      <cell>
+        4th Choice
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        E
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+    </row>
+                        </tabular>
+                    </table>
+
+                    <p>Round 2: We make our second elimination. Choice E has the fewest first-place votes, so we remove 
+                        that choice, shifting everyone’s options to fill the gaps.</p>
+                    <table>
+  <tabular halign = "center">
+    <row header = "yes" bottom = "minor">
+      <cell>
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        6
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+    <row>
+      <cell>
+        1st Choice
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+    </row>
+    <row>
+      <cell>
+        2nd Choice
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+    </row>
+    <row>
+      <cell>
+        3rd Choice
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+    </row>
+                        </tabular>
+                    </table>
+
+                    <p>Notice that the first and fifth columns have the same preferences now, we can condense those down to 
+                        one column.</p>
+                    
+                    <table>
+  <tabular halign = "center">
+    <row header = "yes" bottom = "minor">
+      <cell>
+      </cell>
+      <cell>
+        5
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        6
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+    <row>
+      <cell>
+        1st Choice
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        D
+      </cell>
+    </row>
+    <row>
+      <cell>
+        2nd Choice
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+    </row>
+    <row>
+      <cell>
+        3rd Choice
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        C
+      </cell>
+    </row>
+                        </tabular>
+                    </table>
+
+                    <p>Now B has 9 first-choice votes, C has 4 votes, and D has 7 votes. Still no majority, so we eliminate 
+                        again.</p>
+
+                    <p>Round 3: We make our third elimination. C has the fewest votes.</p>
+                    
+                    <table>
+  <tabular halign = "center">
+    <row header = "yes" bottom = "minor">
+      <cell>
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        6
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+    <row>
+      <cell>
+        1st Choice
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+    </row>
+    <row>
+      <cell>
+        2nd Choice
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+      <cell>
+        D
+      </cell>
+      <cell>
+        B
+      </cell>
+    </row>
+                        </tabular>
+                    </table>
+                    
+                    <p>Condensing this down:</p>
+                    
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell></cell>
+                                <cell>9</cell>
+                                <cell>11</cell>
+                            </row>
+                            <row>
+                                <cell>1st Choice</cell>
+                                <cell>B</cell>
+                                <cell>D</cell>
+                            </row>
+                            <row>
+                                <cell>2nd Choice</cell>
+                                <cell>D</cell>
+                                <cell>B</cell>
+                            </row>
+                        </tabular>
+                    </table>
+
+                    <p>D has now gained a majority, and is declared the winner under IRV.</p>
+                    </example>
+
+            <problem><title>Try It Now</title>
+                <p>Consider again the election,</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>14</cell>
+                            <cell>44</cell>
+                            <cell>20</cell>
+                            <cell>70</cell>
+                            <cell>22</cell>
+                            <cell>80</cell>
+                            <cell>39</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell>M</cell>
+                            <cell>M</cell>
+                            <cell>B</cell>
+                            <cell>B</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                            <cell>M</cell>
+                            <cell>B</cell>
+                            <cell></cell>
+                            <cell>G</cell>
+                            <cell>B</cell>
+                            <cell>M</cell>
+                            <cell></cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>B</cell>
+                            <cell>M</cell>
+                            <cell></cell>
+                            <cell>B</cell>
+                            <cell>G</cell>
+                            <cell>G</cell>
+                            <cell></cell>
+                        </row>
+                    </tabular>
+                </table>
+
+                <p>Find the winner using IRV.</p>
+                
+                <answer><p>G has the fewest first-choice votes, so is eliminated first. The 20 voters who did not list a 
+                    second choice do not get transferred - they simply get eliminated.</p>
+                    
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell></cell>
+                                <cell>136</cell>
+                                <cell>133</cell>
+                            </row>
+                            <row>
+                                <cell>1st Choice</cell>
+                                <cell>M</cell>
+                                <cell>B</cell>
+                            </row>
+                            <row>
+                                <cell>2nd Choice</cell>
+                                <cell>B</cell>
+                                <cell>M</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    
+                    <p>McCarthy (M) now has a majority, and is declared the winner.</p>
+                </answer>
+            </problem>
+
+        </subsection>
+        
+        <subsection><title>What's Wrong with IRV?</title>
+        
+            <example>
+                <p>Let’s return to our City Council Election. Who wins using the IRV method?</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell></cell>
+                            <cell>342</cell>
+                            <cell>214</cell>
+                            <cell>298</cell>
+                        </row>
+                        <row>
+                            <cell>1st Choice</cell>
+                            <cell>Elle</cell>
+                            <cell>Don</cell>
+                            <cell>Key</cell>
+                        </row>
+                         <row>
+                            <cell>2nd Choice</cell>
+                            <cell>Don</cell>
+                            <cell>Key</cell>
+                            <cell>Don</cell>
+                        </row>
+                         <row>
+                            <cell>3rd Choice</cell>
+                            <cell>Key</cell>
+                            <cell>Elle</cell>
+                            <cell>Elle</cell>
+                        </row>
+                    </tabular>
+                </table>
+                        
+                <solution>
+                    <p>In this election, Don has the smallest number of first place votes, so Don is eliminated in the 
+                        first round. The 214 people who voted for Don have their votes transferred to their second choice, 
+                        Key.</p>
+                    
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell></cell>
+                                <cell>342</cell>
+                                <cell>512</cell>
+                            </row>
+                            <row>
+                                <cell>1st Choice</cell>
+                                <cell>Elle</cell>
+                                <cell>Key</cell>
+                            </row>
+                            <row>
+                                <cell>2nd Choice</cell>
+                                <cell>Key</cell>
+                                <cell>Elle</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                        
+                    <p>So Key is the winner under the IRV method.</p>
+
+                    <p>We can immediately notice that in this election, IRV violates the Condorcet Criterion, since we 
+                        determined earlier that Don was the Condorcet winner. On the other hand, the temptation has been 
+                        removed for Don’s supporters to vote for Key; they now know their vote will be transferred to Key, 
+                        not simply discarded.</p>
+                </solution>
+            </example>
+            
+            <example>
+                <p>Consider the voting system below.</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell></cell>
+                            <cell>37</cell>
+                            <cell>22</cell>
+                            <cell>12</cell>
+                            <cell>29</cell>
+                        </row>
+                        <row>
+                            <cell>1st Choice</cell>
+                            <cell>Adams</cell>
+                            <cell>Brown</cell>
+                            <cell>Brown</cell>
+                            <cell>Carter</cell>
+                        </row>
+                         <row>
+                            <cell>2nd Choice</cell>
+                            <cell>Brown</cell>
+                            <cell>Carter</cell>
+                            <cell>Adams</cell>
+                             <cell>Adams</cell>
+                        </row>
+                         <row>
+                            <cell>3rd Choice</cell>
+                            <cell>Carter</cell>
+                            <cell>Adams</cell>
+                            <cell>Carter</cell>
+                             <cell>Brown</cell>
+                        </row>
+                    </tabular>
+                </table>
+ 
+
+                <p>In this election, Carter would be eliminated in the first round, and Adams would be the winner with 
+                    66 votes to 34 for Brown.</p>
+
+                <p>Now suppose that the results were announced, but election officials accidentally destroyed the ballots 
+                    before they could be certified, and the votes had to be recast. Wanting to “jump on the bandwagon”, 10 
+                    of the voters who had originally voted in the order Brown, Adams, Carter change their vote to favor the 
+                    presumed winner, changing those votes to Adams, Brown, Carter.</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell></cell>
+                            <cell>47</cell>
+                            <cell>22</cell>
+                            <cell>2</cell>
+                            <cell>29</cell>
+                        </row>
+                        <row>
+                            <cell>1st Choice</cell>
+                            <cell>Adams</cell>
+                            <cell>Brown</cell>
+                            <cell>Brown</cell>
+                            <cell>Carter</cell>
+                        </row>
+                         <row>
+                            <cell>2nd Choice</cell>
+                            <cell>Brown</cell>
+                            <cell>Carter</cell>
+                            <cell>Adams</cell>
+                             <cell>Adams</cell>
+                        </row>
+                         <row>
+                            <cell>3rd Choice</cell>
+                            <cell>Carter</cell>
+                            <cell>Adams</cell>
+                            <cell>Carter</cell>
+                             <cell>Brown</cell>
+                        </row>
+                    </tabular>
+                </table>
+                
+                <p>In this re-vote, Brown will be eliminated in the first round, having the fewest first-place votes. After 
+                    transferring votes, we find that Carter will win this election with 51 votes to Adams’ 49 votes! Even 
+                    though the only vote changes made favored Adams, the change ended up costing Adams the election. This 
+                    doesn’t seem right, and introduces our second fairness criterion.</p>
+            </example>
+
+            <definition><title>Monotonicity Criterion</title>
+                <p>If voters change their votes to increase the preference for a candidate, it should not harm that 
+                    candidate’s chances of winning.</p>
+            </definition>
+
+            <p>This criterion is violated by the election in the previous example. Note that even though the criterion is 
+                violated in this 
+                particular election, it does not mean that IRV always violates the criterion; just that IRV has the 
+                potential to violate the criterion in certain elections.</p>
+          
+            
+        </subsection>
+
+        
+    </section>
+    
+    <section xml:id = "section-voting-borda"><title>Borda Count</title>
+         <objectives>
+            <ul>
+                <li>Find the winner of an election using the Borda count</li>
+                <li>Understand whether an election has violated the majority criterion</li>
+            </ul>
+        </objectives>
+        <introduction>Borda Count is another voting method, named for Jean-Charles de Borda, who developed the system in 
+            1770.</introduction>
+
+        <subsection><title>Borda Count</title>
+            <definition><title>Borda Count</title>
+            <p>In this method, points are assigned to candidates based on their ranking; 1 point for last choice, 2 points 
+                for second-to-last choice, and so on. The point values for all ballots are totaled, and the candidate with 
+                the largest point total is the winner.</p>
+            </definition>
+
+            <example xml:id = "example-voting-borda">
+                <p>A group of mathematicians are getting together for a conference. The members are coming from four 
+                    cities: Seattle, Tacoma, Puyallup, and Olympia.</p>
+
+                <p>The votes for where to hold the conference were:</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell></cell>
+                            <cell>51</cell>
+                            <cell>25</cell>
+                            <cell>10</cell>
+                            <cell>14</cell>
+                        </row>
+                        <row>
+                            <cell>1st Choice</cell>
+                            <cell>Seattle</cell>
+                            <cell>Tacoma</cell>
+                            <cell>Puyallup</cell>
+                            <cell>Olympia</cell>
+                        </row>
+                        <row>
+                            <cell>2nd Choice</cell>
+                            <cell>Tacoma</cell>
+                            <cell>Puyallup</cell>
+                            <cell>Tacoma</cell>
+                            <cell>Tacoma</cell>
+                        </row>
+                        <row>
+                            <cell>3rd Choice</cell>
+                            <cell>Olympia</cell>
+                            <cell>Olympia</cell>
+                            <cell>Olympia</cell>
+                            <cell>Puyallup</cell>
+                        </row>
+                        <row>
+                            <cell>4th Choice</cell>
+                            <cell>Puyallup</cell>
+                            <cell>Seattle</cell>
+                            <cell>Seattle</cell>
+                            <cell>Seattle</cell>
+                        </row>
+                    </tabular>
+                </table>
+                
+                <p>Which city will be selected with the Borda count method?</p>
+                
+                <solution>
+                    <p>In each of the 51 ballots ranking Seattle first, Puyallup will be given 1 point, Olympia 2 points, 
+                        Tacoma 3 points, and Seattle 4 points. Multiplying the points per vote times the number of votes 
+                        allows us to calculate points awarded:</p>
+                    
+                    <p>Seattle: <m>51 \cdot 4 + 25 \cdot 1 + 10 \cdot 1 + 14\cdot 1 = 253</m> points</p>
+                    <p>Tacoma: <m>51 \cdot 3 + 25 \cdot 4 + 10 \cdot 3 + 14 \cdot 3 = 325</m> points</p>
+                    <p>Puyallup: <m>51 \cdot 1 + 25 \cdot 3 + 10 \cdot 4 + 14 \cdot 2 = 194</m> points</p>
+                    <p>Olympia: <m>51 \cdot 2 + 25 \cdot 2 + 10 \cdot 2 + 14 \cdot 4 = 228</m> points</p>
+
+
+                    <p>Under the Borda Count method, Tacoma is the winner of this vote.</p>
+                </solution>
+            </example>
+            
+            <problem><title>Try It Now</title>
+                <p>Consider again the election described by the preference schedule.  Who will win using
+                    the Borda count method?</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell></cell>
+                            <cell>14</cell>
+                            <cell>10</cell>
+                            <cell>8</cell>
+                            <cell>4</cell>
+                            <cell>1</cell>
+                        </row>
+                        <row>
+                            <cell>1st Choice</cell>
+                            <cell>Alan</cell>
+                            <cell>Caroline</cell>
+                            <cell>Dawn</cell>
+                            <cell>Boris</cell>
+                            <cell>Caroline</cell>
+                        </row>
+                        <row>
+                            <cell>2nd Choice</cell>
+                            <cell>Boris</cell>
+                            <cell>Boris</cell>
+                            <cell>Caroline</cell>
+                            <cell>Dawn</cell>
+                            <cell>Dawn</cell>
+                        </row>
+                        <row>
+                            <cell>3rd Choice</cell>
+                            <cell>Caroline</cell>
+                            <cell>Dawn</cell>
+                            <cell>Boris</cell>
+                            <cell>Caroline</cell>
+                            <cell>Boris</cell>
+                        </row>
+                        <row>
+                            <cell>4th Choice</cell>
+                            <cell>Dawn</cell>
+                            <cell>Alan</cell>
+                            <cell>Alan</cell>
+                            <cell>Alan</cell>
+                            <cell>Alan</cell>
+                        </row>
+                    </tabular>
+                </table>
+                
+                <answer>
+                    <p>A gets <m>56 + 10 + 8 + 4 + 1 = 79</m> points</p>
+                    <p>B gets <m>42 + 30 + 16 + 16 + 2 = 106</m> points</p>
+                    <p>C gets <m>28 + 40 + 24 + 8 + 4 = 104</m> points</p>
+                    <p>D gets <m>14 + 20 + 32 + 12 + 3 = 81</m> points</p>
+                    <p>So the winner is Boris (B).</p>
+                </answer>
+            </problem>
+        </subsection>
+        
+        <subsection><title>What's Wrong with Borda Count</title>
+            <p>You might have already noticed one potential flaw of the Borda Count from the previous example. In that 
+                example, Seattle had a majority of first-choice votes, yet lost the election! This seems odd, and prompts 
+                our next fairness criterion:</p>
+
+            <definition><title>Majority Criterion</title>
+                <p>If a choice has a majority of first-place votes, that choice should be the winner.</p>
+            </definition>
+
+            <p>The election from <xref ref = "example-voting-borda" /> using the Borda Count violates the Majority 
+                Criterion. Notice also that this 
+                automatically means that the Condorcet Criterion will also be violated, as Seattle would have been 
+                preferred by 51% of voters in any head-to-head comparison.</p>
+
+            <p>Borda count is sometimes described as a consensus-based voting system, since it can sometimes choose a more 
+                broadly acceptable option over the one with majority support. In the example above, Tacoma is probably the 
+                best compromise location. This is a different approach than plurality and instant runoff voting that focus 
+                on first-choice votes; Borda Count considers every voter’s entire ranking to determine the outcome.</p>
+
+            <p>Because of this consensus behavior, Borda Count, or some variation of it, is commonly used in awarding 
+                sports awards. Variations are used to determine the Most Valuable Player in baseball, to rank teams in NCAA 
+                sports, and to award the Heisman trophy.</p>
+                
+                </subsection>
+       
+    </section>
+    
+    <section xml:id = "section-voting-copeland"><title>Copeland's Method</title>
+         <objectives>
+            <ul>
+                <li>Find the winner of an election using Copeland's method</li>
+                <li>Understand whether an election has violated the independence of 
+                    irrelevant alternatives criterion</li>
+            </ul>
+        </objectives>
+        <introduction>So far none of our voting methods have satisfied the Condorcet Criterion. The Copeland Method 
+            specifically attempts to satisfy the Condorcet Criterion by looking at pairwise (one-to-one) comparisons.
+        </introduction>
+        
+        <subsection><title>Copeland's Method</title>
+            
+            <definition><title>Copeland’s Method</title>
+                <p>In this method, each pair of candidates is compared, using all preferences to determine which of the two 
+                    is more preferred. The more preferred candidate is awarded 1 point. If there is a tie, each candidate 
+                    is awarded <m>\frac{1}{2}</m> point. After all pairwise comparisons are made, the candidate with the 
+                    most points, and hence the most pairwise wins, is declared the winner.</p>
+            </definition>
+
+            <p>Variations of Copeland’s Method are used in many professional organizations, including election of the Board 
+                of Trustees for the Wikimedia Foundation that runs Wikipedia.</p>
+                
+
+            <example>
+                <p>Consider our vacation group example from the beginning of the chapter. Determine the winner using 
+                    Copeland’s Method.</p>
+                
+                 <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>1</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell>A</cell>
+                            <cell>A</cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                            <cell>H</cell>
+                            <cell>A</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>H</cell>
+                            <cell>O</cell>
+                            <cell>A</cell>
+                            <cell>O</cell>
+                        </row>
+                </tabular>
+                </table>
+            
+                <solution>
+                    <p>We need to look at each pair of choices, and see which choice would win in a one-to-one comparison.
+                        <ul>
+                            <li>Hawaii vs Orlando</li>
+                            <li>Hawaii vs Anaheim</li>
+                            <li>Anaheim vs Orlando</li>
+                        </ul>
+                    </p>
+                    
+                    
+                        <p>You may recall we did this earlier when determining the Condorcet Winner. For example, comparing 
+                        Hawaii vs Orlando, we see that 6 voters, those shaded below in the first table below, would prefer 
+                        Hawaii to Orlando. Note that Hawaii doesn’t have to be the voter’s first choice - we’re imagining 
+                        that Anaheim wasn’t an option. If it helps, you can imagine removing Anaheim, as in the 
+                        table below.</p>
+                    
+                     <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>1</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st choice</cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">2nd choice</cell>
+                            <cell>O</cell>
+                            <cell>H</cell>
+                            <cell>H</cell>
+                            <cell></cell>
+                        </row>
+                         <row>
+                            <cell right = "minor">3rd choice</cell>
+                            <cell>H</cell>
+                            <cell>O</cell>
+                            <cell></cell>
+                            <cell>O</cell>
+                        </row>
+                </tabular>
+                </table>
+            
+                    <p>Based on this, in the comparison of Hawaii vs Orlando, Hawaii wins, and receives 1 point.</p>
+
+                    <p>Comparing Anaheim to Orlando, the 1 voter in the first column clearly prefers Anaheim, as do the 3 
+                        voters in the second column. The 3 voters in the third column clearly prefer Orlando. The 3 voters 
+                        in the last column prefer Hawaii as their first choice, but if they had to choose between Anaheim 
+                        and Orlando, they'd choose Anaheim, their second choice overall. So, altogether 1+3+3=7 voters 
+                        prefer Anaheim over Orlando, and 3 prefer Orlando over Anaheim. So, comparing Anaheim vs Orlando: 7 
+                        votes to 3 votes: Anaheim gets 1 point.</p>
+
+                    <p>To sumarize:</p>
+                    
+                    <p>Hawaii vs Orlando: 6 votes to 4 votes: Hawaii gets 1 point</p>
+                    <p>Anaheim vs Orlando: 7 votes to 3 votes: Anaheim gets 1 point</p>
+                    <p>Hawaii vs Anaheim: 6 votes to 4 votes: Hawaii gets 1 point</p>
+                    
+                    <p>Hawaii is the winner under Copeland’s Method, having earned the most points.</p>
+                    <p>Notice this process is consistent with our determination of a Condorcet Winner.</p>
+                </solution>
+            </example>
+
+            <example>
+                <p>Consider the advertising group’s vote we explored earlier. Determine the winner using Copeland’s method.
+                </p>
+                
+                <table>
+  <tabular halign = "center">
+    <row header = "yes" bottom = "minor">
+      <cell></cell>
+      <cell>3</cell>
+      <cell>4</cell>
+      <cell>4</cell>
+      <cell>6</cell>
+      <cell>2</cell>
+      <cell>1</cell>
+    </row>
+    <row>
+      <cell>1st Choice</cell>
+      <cell>B</cell>
+      <cell>C</cell>
+      <cell>B</cell>
+      <cell>D</cell>
+      <cell>B</cell>
+      <cell>E</cell>
+    </row>
+    <row>
+      <cell>2nd Choice</cell>
+      <cell>C</cell>
+      <cell>A</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+      <cell>E</cell>
+      <cell>A</cell>
+    </row>
+    <row>
+      <cell>3rd Choice</cell>
+      <cell>A</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+      <cell>A</cell>
+      <cell>A</cell>
+      <cell>D</cell>
+    </row>
+    <row>
+      <cell>4th Choice</cell>
+      <cell>D</cell>
+      <cell>B</cell>
+      <cell>A</cell>
+      <cell>E</cell>
+      <cell>C</cell>
+      <cell>B</cell>
+    </row>
+    <row>
+      <cell>5th Choice</cell>
+      <cell>E</cell>
+      <cell>E</cell>
+      <cell>E</cell>
+      <cell>B</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+    </row>
+  </tabular>
+</table>
+
+                <solution>
+                    <p>With 5 candidates, there are 10 comparisons to make:
+                        <ul>
+                            <li>A vs B: 11 votes to 9 votes: A gets 1 pt</li>
+                            <li>A vs C: 3 votes to 17 votes: C gets 1 pt</li>
+                            <li>A vs D: 10 votes to 10 votes: Both A and D get <m>\frac{1}{2}</m> pt</li> 
+                            <li>A vs E: 17 votes to 3 votes: A gets 1 pt</li>
+                            <li>B vs C: 10 votes to 10 votes: Both B and C get <m>\frac{1}{2}</m> pt</li>
+                            <li>B vs D: 9 votes to 11 votes: D gets 1 pt</li>
+                            <li>B vs E: 13 votes to 7 votes: B gets 1 pt</li>
+                            <li>C vs D: 9 votes to 11 votes: D gets 1 pt</li>
+                            <li>C vs E: 17 votes to 3 votes: C gets 1 pt</li>
+                            <li>D vs E: 17 votes to 3 votes: D gets 1 pt</li>
+
+                        </ul>
+                    </p>
+                    <p>Totaling these up:
+                        <ul>
+                            <li>A = <m>2\frac{1}{2}</m>pts</li>
+                            <li>B = <m>1\frac{1}{2}</m>pts</li>
+                            <li>C = <m>2\frac{1}{2}</m>pts</li>
+                            <li>D = <m>3\frac{1}{2}</m>pts</li>
+                            <li>E = <m>0</m>pts</li>
+                        </ul>
+                    </p>
+ 
+                    <p>Using Copeland’s Method, we declare D as the winner.</p>
+
+                    <p>Notice that in this case, D is not a Condorcet Winner. While Copeland’s method will also select a 
+                        Condorcet Candidate as the winner, the method still works in cases where there is no Condorcet 
+                        Winner.</p>
+                </solution>
+            </example>
+        </subsection>
+        
+        <subsection><title>What's Wrong with Copeland's Method?</title>
+            <p>As already noted, Copeland’s Method does satisfy the Condorcet Criterion. It also satisfies the Majority 
+                Criterion and the Monotonicity Criterion. So is this the perfect method? Well, in a word, no.</p>
+
+            <example>
+                <p>A committee is trying to award a scholarship to one of four students, Anna (A), Brian (B), Carlos (C), 
+                    and Dimitry (D). The votes are shown below:</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>5</cell>
+                            <cell>5</cell>
+                            <cell>6</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st Choice</cell>
+                            <cell>D</cell>
+                            <cell>A</cell>
+                            <cell>C</cell>
+                            <cell>B</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">2nd Choice</cell>
+                            <cell>A</cell>
+                            <cell>C</cell>
+                            <cell>B</cell>
+                            <cell>D</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">3rd Choice</cell>
+                            <cell>C</cell>
+                            <cell>B</cell>
+                            <cell>D</cell>
+                            <cell>A</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">4th Choice</cell>
+                            <cell>B</cell>
+                            <cell>D</cell>
+                            <cell>A</cell>
+                            <cell>C</cell>
+                        </row>
+                    </tabular>
+                </table>
+                
+                <solution>
+                    <p>Making the comparisons:
+                    <ul>
+                        <li>A vs B: 10 votes to 10 votes: A and B both get <m>\frac{1}{2}</m> pt</li>
+                        <li>A vs C: 14 votes to 6 votes: A gets 1 pt</li>
+                        <li>A vs D: 5 votes to 15 votes: D gets 1 pt</li>
+                        <li>B vs C: 4 votes to 16 votes: C gets 1 pt</li>
+                        <li>B vs D: 15 votes to 5 votes: B gets 1 pt</li>
+                        <li>C vs D: 11 votes to 9 votes: C gets 1 pt</li>
+                    </ul></p>
+
+                    <p>Totaling:
+                    <ul>
+                        <li>A has <m>1\frac{1}{2}</m> pts</li>
+                        <li>B has <m>1\frac{1}{2}</m> pts</li>
+                        <li>C has <m>2</m> pts</li>
+                        <li>D has <m>1</m> pt</li>
+                    </ul></p>
+
+                    <p>So Carlos is awarded the scholarship. However, the committee then discovers that Dimitry was not 
+                        eligible for the scholarship (he failed his last math class). Even though this seems like it 
+                        shouldn’t affect the outcome, the committee decides to recount the vote, removing Dimitry from 
+                        consideration. This reduces the preference schedule to:</p>
+                    
+                    <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>5</cell>
+                            <cell>5</cell>
+                            <cell>6</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st Choice</cell>
+                            <cell>A</cell>
+                            <cell>A</cell>
+                            <cell>C</cell>
+                            <cell>B</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">2nd Choice</cell>
+                            <cell>C</cell>
+                            <cell>C</cell>
+                            <cell>B</cell>
+                            <cell>A</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">3rd Choice</cell>
+                            <cell>B</cell>
+                            <cell>B</cell>
+                            <cell>A</cell>
+                            <cell>C</cell>
+                        </row>
+                    </tabular>
+                </table>
+                    <p>
+                    <ul>
+                        <li>A vs B: 10 votes to 10 votes: Both A and B get <m>\frac{1}{2}</m> pt</li>
+                        <li>A vs C: 14 votes to 6 votes: A gets <m>1</m> point</li>
+                        <li>B vs C: 4 votes to 16 votes: C gets <m>1</m> point</li>
+                    </ul></p>
+                       
+                    <p>Totaling:</p>
+                    <ul>
+                        <li>A has <m>1\frac{1}{2}</m> points</li>
+                        <li>C has <m>1</m> point</li>
+                        <li>B has <m>\frac{1}{2}</m> point</li>
+                    </ul>
+                
+                    <p>Suddenly Anna is the winner! This leads us to another fairness criterion.</p>
+                </solution>
+            </example>
+
+            <definition><title>The Independence of Irrelevant Alternatives (IIA) Criterion</title>
+                <p>If a non-winning choice is removed from the ballot, it should not change the winner of the election.</p>
+      
+                <p>
+                Equivalently, if choice A is preferred over choice B, introducing or removing a choice C should not cause B 
+                    to be preferred over A.</p>
+            </definition>
+
+            <p>In the previous example, the IIA Criterion was violated.</p>
+
+            <p>This anecdote illustrating the IIA issue is attributed to Sidney Morgenbesser:</p>
+
+            <blockquote>After finishing dinner, Sidney Morgenbesser decides to order dessert. The waitress tells him he has 
+                two choices: apple pie and blueberry pie. Sidney orders the apple pie. After a few minutes the waitress 
+                returns and says that they also have cherry pie at which point Morgenbesser says "In that case I'll have 
+                the blueberry pie."</blockquote>
+
+            <p>Another disadvantage of Copeland’s Method is that it is fairly easy for the election to end in a tie. For 
+                this reason, Copeland’s method is usually the first part of a more advanced method that uses more 
+                sophisticated methods for breaking ties and determining the winner when there is not a Condorcet Candidate.
+            </p>
+            
+        </subsection>
+        
+    </section>
+    
+    <section xml:id ="section-voting-arrow"><title>Where's the Fair Method?</title>
+         <objectives>
+            <ul>
+                <li>Define Arrow's Impossibility Theorem</li>
+            </ul>
+        </objectives>
+            <p>At this point, you’re probably asking why we keep looking at method after method just to point out that they 
+                are not fully fair. We must be holding out on the perfect method, right?</p>
+
+            <p>Unfortunately, no. A mathematical economist, Kenneth Arrow, was able to prove in 1949 that there is no 
+                voting method that will satisfy all the fairness criteria we have discussed.</p>
+
+            <definition><title>Arrow’s Impossibility Theorem</title>
+                <p>Arrow’s Impossibility Theorem states, roughly, that it is not possible for a voting method to satisfy 
+                    every fairness criteria that we’ve discussed.</p>
+            </definition>
+
+            <p>To see a very simple example of how difficult voting can be, consider the election below:</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right = "minor"></cell>
+                        <cell>5</cell>
+                        <cell>5</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">2nd Choice</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">3rd Choice</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <p>Notice that in this election:
+
+            <ul>
+                <li>10 people prefer A to B</li>
+                <li>10 people prefer B to C</li>
+                <li>10 people prefer C to A</li>
+            </ul></p>
+
+            <p>No matter whom we choose as the winner, 2/3 of voters would prefer someone else! This scenario is dubbed 
+                Condorcet’s Voting Paradox, and demonstrates how voting preferences are not transitive (just because A is 
+                preferred over B, and B over C, does not mean A is preferred over C). In this election, there is no fair 
+                resolution.</p>
+
+            <p>It is because of this impossibility of a totally fair method that Plurality, IRV, Borda Count, Copeland’s 
+                Method, and dozens of variants are all still used. Usually the decision of which method to use is based on 
+                what seems most fair for the situation in which it is being applied.</p>
+        
+    </section>
+    
+    <section xml:id = "section-voting-approval"><title>Approval Voting</title>
+        <subsection><title>Approval Voting</title>
+             <objectives>
+            <ul>
+                <li>Find the winner of an election using approval voting</li>
+            </ul>
+        </objectives>
+        <p>Up until now, we’ve been considering voting methods that require ranking of candidates on a preference ballot. 
+            There is another method of voting that can be more appropriate in some decision making scenarios. With Approval 
+            Voting, the ballot asks you to mark all choices that you find acceptable. The results are tallied, and the 
+            option with the most approval is the winner.</p>
+
+        <example>
+            <p>A group of friends is trying to decide upon a movie to watch. Three choices are provided, and each person is 
+                asked to mark with an “X” which movies they are willing to watch. The results are:</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right = "minor"></cell>
+                        <cell>Bob</cell>
+                        <cell>Ann</cell>
+                        <cell>Marv</cell>
+                        <cell>Alice</cell>
+                        <cell>Eve</cell>
+                        <cell>Omar</cell>
+                        <cell>Lupe</cell>
+                        <cell>Dave</cell>
+                        <cell>Tish</cell>
+                        <cell>Jim</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Titantic</cell>
+                         <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Scream</cell>
+                         <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">The Matrix</cell>
+                         <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <solution>
+                <p>Totaling the results, we find
+                <ul>
+                    <li>Titanic received 5 approvals</li>
+
+                    <li>Scream received 6 approvals</li>
+
+                    <li>The Matrix received 7 approvals</li>
+                </ul></p>
+
+                <p>In this vote, The Matrix would be the winner.</p>
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>Our mathematicians deciding on a conference location from earlier decide to use Approval voting. Their votes 
+                are tallied below. Find the winner using Approval voting.</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right = "minor"></cell>
+                        <cell>30</cell>
+                        <cell>10</cell>
+                        <cell>15</cell>
+                        <cell>20</cell>
+                        <cell>15</cell>
+                        <cell>5</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Seattle</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Tacoma</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Puyallup</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Olympia</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <answer>
+                <p>Using Approval voting, Tacoma is the winner:</p>
+
+                <p>Seattle has  <m>30+10+15+5=60</m> votes</p>
+                <p>Tacoma has  <m>30+15+20+15+5=85</m> votes</p>
+                <p>Puyallup has  <m>10+20+25+5=50</m> votes</p>
+                <p>Olympia has  <m>15+15+5=35</m> votes</p>
+            </answer>
+        </problem>
+        </subsection>
+        
+        <subsection><title>What's Wrong wtih Approval Voting?</title>
+            <p>Approval voting can very easily violate the Majority Criterion.</p>
+
+            <example>
+                <p>Consider the voting schedule:</p>
+                <table>
+                    <tabular halign = "center">
+                        <row header ="yes" bottom = "minor">
+                            <cell right = "minor"></cell>
+                            <cell>80</cell>
+                            <cell>15</cell>
+                            <cell>5</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">1st Choice</cell>
+                            <cell>A</cell>
+                            <cell>B</cell>
+                            <cell>C</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">2nd Choice</cell>
+                            <cell>B</cell>
+                            <cell>C</cell>
+                            <cell>B</cell>
+                        </row>
+                        <row>
+                            <cell right = "minor">3rd Choice</cell>
+                            <cell>C</cell>
+                            <cell>A</cell>
+                            <cell>A</cell>
+                        </row>
+                    </tabular>
+                </table>
+
+                <solution>
+
+                    <p>Clearly A is the majority winner. Now suppose that this election was held using Approval Voting, and 
+                        every voter marked approval of their top two candidates.</p>
+
+                    <p>A would receive approval from 80 voters</p>
+                    <p>B would receive approval from 100 voters</p>
+                    <p>C would receive approval from 20 voters</p>
+                    <p>B would be the winner.</p>
+                    
+                </solution>
+            </example>
+                    
+                    
+                    <p>Some argue that Approval Voting tends to vote the least disliked choice, 
+                        rather than the most liked candidate.</p>
+
+                    <p>Additionally, Approval Voting is susceptible to strategic insincere voting, in which a voter does 
+                        not vote their true preference to try to increase the chances of their choice winning. For example, 
+                        in the movie example above, suppose Bob and Alice would much rather watch Scream. They remove The 
+                        Matrix from their approval list, resulting in a different result.</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right = "minor"></cell>
+                        <cell>Bob</cell>
+                        <cell>Ann</cell>
+                        <cell>Marv</cell>
+                        <cell>Alice</cell>
+                        <cell>Eve</cell>
+                        <cell>Omar</cell>
+                        <cell>Lupe</cell>
+                        <cell>Dave</cell>
+                        <cell>Tish</cell>
+                        <cell>Jim</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Titantic</cell>
+                         <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">Scream</cell>
+                         <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">The Matrix</cell>
+                         <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <p>Totaling the results, we find Titanic received 5 approvals, Scream received 6 approvals, and The Matrix 
+                received 5 approvals. By voting insincerely, Bob and Alice were able to sway the result in favor of their 
+                preference.</p>
+            
+        </subsection>
+
+
+    </section>
+    
+    <exercises xml:id="exercises-voting">
+
+    <exercise xml:id="vote-ex-1">
+        <statement>
+            <p>To decide on a new website design, the designer asks people to rank three designs that have been created (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</p>
+            <p>ABC, ABC, ACB, BAC, BCA, BCA, ACB, CAB, CAB, BCA, ACB, ABC</p>
+        </statement>
+        <answer>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Number of Voters</cell>
+                        <cell>3</cell>
+                        <cell>3</cell>
+                        <cell>1</cell>
+                        <cell>3</cell>
+                        <cell>2</cell>
+                    </row>
+                    <row>
+                         <cell>1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                    </row>
+                    <row>
+                         <cell>2nd Choice</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                    </row>
+                    <row>
+                         <cell>3rd Choice</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                    </row>
+                </tabular>
+            </table>
+        </answer>
+    </exercise>
+
+    <exercise xml:id="vote-ex-2">
+        <statement>
+            <p>To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</p>
+            <p>CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-3">
+        <statement>
+            <p>The planning committee for a renewable energy trade show is trying to decide what city to hold their next show in. The votes are shown below.</p>
+
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right = "minor">Number of voters</cell>
+                        <cell>9</cell>
+                        <cell>19</cell>
+                        <cell>11</cell>
+                        <cell>8</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">1st Choice</cell>
+                        <cell>Buffalo</cell>
+                        <cell>Atlanta</cell>
+                        <cell>Chicago</cell>
+                        <cell>Buffalo</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">2nd Choice</cell>
+                        <cell>Atlanta</cell>
+                        <cell>Buffalo</cell>
+                        <cell>Buffalo</cell>
+                        <cell>Chicago</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">3rd Choice</cell>
+                        <cell>Chicago</cell>
+                        <cell>Chicago</cell>
+                        <cell>Atlanta</cell>
+                        <cell>Atlanta</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+            <ol label = "a">
+                <li>How many voters voted in this election?</li>
+                <li>How many votes are needed for a majority? A plurality?</li>
+                <li>Find the winner under the plurality method.</li>
+<li>Find the winner under the Borda Count Method.</li>
+<li>Find the winner under the Instant Runoff Voting method.</li>
+<li>Find the winner under Copeland’s method.</li>
+</ol></p>
+</statement>
+        
+        <answer>
+            <p>
+                <ol label = "a">
+                    <li>47</li>
+                    <li>24 for majority; 16 for plurality (though a choice would need a minimum of 17 votes to actually 
+                        win under the Plurality method)</li>
+                    <li>Atlanta, with 19 first-choice votes</li>
+                    <li>Atlanta 94, Buffalo 111, Chicago 77. Winner: Buffalo</li>
+                    <li>Chicago eliminated, 11 votes go to Buffalo. Winner: Buffalo</li>
+                    <li>B gets 2 pts, A 1 pt. Buffalo wins.</li>
+                </ol>
+            </p>
+        </answer>
+</exercise>
+
+<exercise xml:id="vote-ex-4">
+        <statement>
+            <p>A non-profit agency is electing a new chair of the board. The votes are shown below.</p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right="minor">Number of voters</cell>
+                        <cell>11</cell>
+                        <cell>5</cell>
+                        <cell>10</cell>
+                        <cell>3</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">1st Choice</cell>
+                        <cell>Atkins</cell>
+                        <cell>Cortez</cell>
+                        <cell>Burke</cell>
+                        <cell>Atkins</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">2nd Choice</cell>
+                        <cell>Cortez</cell>
+                        <cell>Burke</cell>
+                        <cell>Cortez</cell>
+                        <cell>Burke</cell>
+                    </row>
+                    <row>
+                        <cell right = "minor">3rd Choice</cell>
+                        <cell>Burke</cell>
+                        <cell>Atkins</cell>
+                        <cell>Atkins</cell>
+                        <cell>Cortez</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+            <ol label = "a">
+   <li>How many voters voted in this election?</li>
+<li>How many votes are needed for a majority? A plurality?</li>
+<li>Find the winner under the plurality method.</li>
+<li>Find the winner under the Borda Count Method.</li>
+<li>Find the winner under the Instant Runoff Voting method.</li>
+<li>Find the winner under Copeland’s method.</li>
+</ol></p>
+</statement>
+</exercise>
+
+<exercise xml:id="vote-ex-5">
+        <statement>
+            <p>The student government is holding elections for president. There are four candidates (labeled A, B, C, and D for convenience). The preference schedule for the election is:</p>
+
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right = "minor">Number of voters</cell>
+                        <cell>120</cell>
+                        <cell>50</cell>
+                        <cell>40</cell>
+                        <cell>90</cell>
+                        <cell>60</cell>
+                        <cell>100</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">1st Choice</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                        <cell>D</cell>
+                        <cell>A</cell>
+                        <cell>A</cell>
+                        <cell>D</cell>
+                    </row>
+                    <row>
+                        <cell right ="minor">2nd Choice</cell>
+                        <cell>D</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                        <cell>D</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">3rd Choice</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                    </row>
+                    <row>
+                        <cell right ="minor">4th Choice</cell>
+                        <cell>A</cell>
+                        <cell>D</cell>
+                        <cell>C</cell>
+                        <cell>D</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                    </row>
+                </tabular>
+            </table><p>
+            <ol label ="a">
+<li>How many voters voted in this election?</li>
+<li>How many votes are needed for a majority? A plurality?</li>
+<li>Find the winner under the plurality method.</li>
+<li>Find the winner under the Borda Count Method.</li>
+<li>Find the winner under the Instant Runoff Voting method.</li>
+<li>Find the winner under Copeland’s method.</li>
+</ol></p>
+</statement>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>460</li>
+                <li>231 for majority; 116 for plurality</li>
+                <li>A with 150 first choice votes</li>
+                <li>A 1140, B 1060, C 1160, D 1240. Winner: D</li>
+                <li>B eliminated, votes to C. D eliminated, votes to A. Winner: A</li>
+                <li>A 1pt, B 1pt, C 2pt, D 2pt. Tie between C and D. Winner would probably be C since C was 
+                    preferred over D</li>
+            </ol>
+        </p>
+    </answer>
+    
+</exercise>
+
+<exercise xml:id="vote-ex-6">
+        <statement>
+            <p>The homeowners association is deciding a new set of neighborhood standards for architecture, yard maintenance, etc. Four options have been proposed. The votes are:</p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell right ="minor">Number of voters</cell>
+                        <cell>8</cell>
+                        <cell>9</cell>
+                        <cell>11</cell>
+                        <cell>7</cell>
+                        <cell>7</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell right ="minor">1st Choice</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>D</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">2nd Choice</cell>
+                        <cell>C</cell>
+                        <cell>D</cell>
+                        <cell>B</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>D</cell>
+                    </row>
+                    <row>
+                    <cell right ="minor">3rd Choice</cell>
+                    <cell>A</cell>
+                    <cell>C</cell>
+                    <cell>C</cell>
+                    <cell>D</cell>
+                    <cell>C</cell>
+                    <cell>A</cell></row>
+                    <row>
+                        <cell right="minor">4th Choice</cell>
+                        <cell>D</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                        <cell>D</cell>
+                        <cell>B</cell>
+                    </row>
+                </tabular>
+            </table><p>
+            <ol label="a">
+ <li>How many voters voted in this election?</li>
+<li>How many votes are needed for a majority? A plurality?</li>
+<li>Find the winner under the plurality method.</li>
+<li>Find the winner under the Borda Count Method.</li>
+<li>Find the winner under the Instant Runoff Voting method.</li>
+<li>Find the winner under Copeland’s method.</li>
+</ol></p>
+</statement>
+</exercise>
+
+<exercise xml:id="vote-ex-7">
+        <statement>
+            <p>Consider an election with 129 votes.
+            <ol label ="a">
+                <li>If there are 4 candidates, what is the smallest number of votes that a plurality candidate could have?</li>
+                <li>If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?</li>
+            </ol></p>
+        </statement>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>33</li>
+                <li>17</li>
+            </ol>
+        </p>
+    </answer>
+    </exercise>
+
+    <exercise xml:id="vote-ex-8">
+        <statement>
+            <p>Consider an election with 953 votes.
+            <ol label ="a">
+                <li>If there are 7 candidates, what is the smallest number of votes that a plurality candidate could have?</li>
+                <li>If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?</li>
+            </ol></p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-9">
+        <statement>
+            <p>Does this voting system having a Condorcet Candidate? If so, find it.</p>
+            <table>
+                <tabular halign="center">
+                    <row header ="yes" bottom="minor">
+                        <cell right ="minor">Number of voters</cell>
+                        <cell>14</cell>
+                        <cell>15</cell>
+                        <cell>2</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">2nd Choice</cell>
+                        <cell>B</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">3rd Choice</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                        <cell>A</cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+        <answer>Yes, B</answer>
+    </exercise>
+
+    <exercise xml:id="vote-ex-10">
+        <statement>
+            <p>Does this voting system having a Condorcet Candidate? If so, find it.</p>
+            <table>
+                <tabular halign="center">
+                    <row header ="yes" bottom="minor">
+                        <cell right="minor">Number of voters</cell>
+                        <cell>8</cell>
+                        <cell>7</cell>
+                        <cell>6</cell>
+                    </row>
+                <row>
+                    <cell right="minor">1st Choice</cell>
+                    <cell>A</cell>
+                    <cell>C</cell>
+                    <cell>B</cell>
+                </row>
+                <row>
+                    <cell right="minor">2nd Choice</cell>
+                    <cell>B</cell>
+                    <cell>B</cell>
+                    <cell>C</cell>
+                </row>
+                <row>
+                    <cell right="minor">3rd Choice</cell>
+                    <cell>C</cell>
+                    <cell>A</cell>
+                    <cell>A</cell>
+                </row>
+            </tabular>
+        </table>
+    </statement>
+</exercise>
+
+<exercise xml:id="vote-ex-11">
+        <statement>
+            <p>For the preference schedule shown below:</p>
+            <table>
+                <tabular halign="center">
+                    <row header="yes" bottom="minor">
+                        <cell right ="minor"></cell>
+                        <cell>12</cell>
+                        <cell>15</cell>
+                        <cell>9</cell>
+                        <cell>13</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">2nd Choice</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                        <cell>D</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">3rd Choice</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                        <cell>D</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">4th Choice</cell>
+                        <cell>D</cell>
+                        <cell>D</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+            <ol label="a">
+                <li>Determine the winner using the Borda count method.</li>
+                <li>Was the majority criterion violated? Why or why not?</li>
+            </ol></p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-12">
+        <statement>
+            <p>Consider the following preference schedule</p>
+            <table>
+                <tabular halign="center">
+                    <row header="yes" bottom="minor">
+                        <cell right="minor"></cell>
+                        <cell>13</cell>
+                        <cell>10</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">2nd Choice</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">3rd Choice</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                        <cell>A</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+
+            <ol label="a">
+                <li>Who wins using the instant runoff method?</li>
+                <li>If the last 5 voters change their ballots from 'CBA' to 'CAB', who will win using the instant runoff method?</li>
+                <li>Is this a violation of the monotonicity criterion? Explain.</li>
+            </ol></p>
+        </statement>
+    </exercise>
+
+<exercise xml:id="vote-ex-13">
+        <statement>
+            <p>The marketing committee at a company decides to vote on a new company logo. They decide to use approval voting. Their results are tallied below. Each column shows the number of voters with the particular approval vote. Which logo wins under approval voting?</p>
+            <table>
+                <tabular halign="center">
+                    <row header="yes" bottom="minor">
+                        <cell right="minor">Number of voters</cell>
+                        <cell>8</cell>
+                        <cell>7</cell>
+                        <cell>6</cell>
+                        <cell>3</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">A</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell right="minor">B</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">C</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </exercise>
+
+<exercise xml:id="vote-ex-14">
+        <statement>
+            <p>The downtown business association is electing a new chairperson, and decides to use approval voting. The tally is below, where each column shows the number of voters with the particular approval vote. Which candidate wins under approval voting?</p>
+            <table>
+                <tabular halign="center">
+                    <row header="yes" bottom="minor">
+                        <cell right="minor">Number of voters</cell>
+                        <cell>8</cell>
+                        <cell>7</cell>
+                        <cell>6</cell>
+                        <cell>3</cell>
+                        <cell>4</cell>
+                        <cell>2</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">A</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">B</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">C</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                        <cell>X</cell>
+                        <cell></cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-15">
+        <statement>
+            <p>An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and C decided to drop out of the election, which caused B to become the winner, which is the primary fairness criterion violated in this election?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-16">
+        <statement>
+            <p>An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and many people who had voted for C switched their preferences to favor A, which caused B to become the winner, which is the primary fairness criterion violated in this election?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-17">
+        <statement>
+            <p>An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If in a head-to-head comparison a majority of people prefer B to A or C, which is the primary fairness criterion violated in this election?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-18">
+        <statement>
+            <p>An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If B had received a majority of first place votes, which is the primary fairness criterion violated in this election?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-19">
+        <statement>
+            <p>In the election shown below under the Plurality method, explain why voters in the third column might be inclined to vote insincerely. How could it affect the outcome of the election?</p>
+            <table>
+                <tabular halign="center">
+                    <row header="yes" bottom="minor">
+                        <cell right="minor">Number of voters</cell>
+                        <cell>96</cell>
+                        <cell>90</cell>
+                        <cell>10</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">2nd Choice</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">3rd Choice</cell>
+                        <cell>C</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="vote-ex-20">
+        <statement>
+            <p>In the election shown below under the Borda Count method, explain why voters in the second column might be inclined to vote insincerely. How could it affect the outcome of the election?</p>
+            <table>
+                <tabular halign="center">
+                    <row header="yes" bottom="minor">
+                        <cell right="minor">Number of voters</cell>
+                        <cell>20</cell>
+                        <cell>18</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">1st Choice</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">2nd Choice</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">3rd Choice</cell>
+                        <cell>C</cell>
+                        <cell>C</cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </exercise>
+  
+</exercises>
+    
+    <exercises xml:id = "ch-test-voting"><title>Chapter Test</title>
+        
+        <exercisegroup>
+            <introduction>
+                <p>Use the preference table to answer the questions.
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell></cell>
+                                <cell>12</cell>
+                                <cell>15</cell>
+                                <cell>9</cell>
+                                <cell>13</cell>
+                            </row>
+                            <row>
+                                <cell>1st Choice</cell>
+                                <cell>A</cell>
+                                <cell>B</cell> 
+                                <cell>C</cell>
+                                <cell>A</cell>
+                            </row>
+                            <row>
+                                <cell>2nd Choice</cell> 
+                                <cell>B</cell> 
+                                <cell>C</cell>
+                                <cell>B</cell>
+                                <cell>D</cell>
+                            </row>
+                            <row>
+                                <cell>3rd Choice</cell>
+                                <cell>C</cell> 
+                                <cell>A</cell> 
+                                <cell>D</cell> 
+                                <cell>B</cell>
+                            </row>
+                            <row>
+                                <cell>4th Choice</cell>
+                                <cell>D</cell> 
+                                <cell>D</cell>
+                                <cell>A</cell>
+                                <cell>C</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                </p>
+            </introduction>
+            
+            <exercise>
+                <statement>
+                    <p>How many voted in this election?</p>
+                </statement>
+                
+                <answer>49</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>How many votes are needed for a majority?</p>
+                </statement>
+                
+                <answer>25</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Does anyone have a majority? If so, who?</p>
+                </statement>
+                <answer>Yes, A has 25 first place votes.</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Determine the winner using the Borda Count method.</p>
+                </statement>
+                
+                <solution>
+                    <me>A = 12 \cdot 4 + 15 \cdot 2 + 9 \cdot 1 + 13 \cdot 4 = 139</me>
+                    <me>B = 12 \cdot 3 + 15 \cdot 4 + 9 \cdot 3 + 13 \cdot 2 = 149</me>
+                    <me>C = 12 \cdot 2 + 15 \cdot 3 + 9 \cdot 4 + 13 \cdot 1 = 118</me>
+                    <me>D = 12 \cdot 1 + 15 \cdot 1 + 9 \cdot 2 + 13 \cdot 3 = 84</me>
+                    <p>B wins with 149 pts</p>
+                </solution>
+                
+                <answer>B</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Determine the winner using Copeland’s method (pairwise comparisons).</p>
+                </statement>
+                
+                <solution>
+                    <p>A (25) v B (24): A wins</p>
+                    <p>A (25) v C (24): A wins</p>
+                    <p>A (40) v D (9): A wins</p>
+                    <p>B (40) v C (9): B wins</p>
+                    <p>B (36) v D (13): B wins</p>
+                    <p>C (36) v D (13): C wins</p>
+                    <p>A = 3 pts; B = 2 pts; C = 1pt; D = 0 pts</p>
+                    <p>A wins</p>
+                </solution>
+                
+                <answer>A</answer>
+            </exercise>
+            
+        </exercisegroup>
+        
+        <exercisegroup>
+            <introduction>
+                <p>Answer the following questions using the preference schedule
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell></cell>
+                                <cell>15</cell>
+                                <cell>7</cell>
+                                <cell>13</cell>
+                                <cell>5</cell>
+                                <cell>2</cell>
+                            </row>
+                            <row>
+                                <cell>1st</cell>
+                                <cell>T</cell>
+                                <cell>E</cell>
+                                <cell>F</cell>
+                                <cell>P</cell>
+                                <cell>E</cell>
+                            </row>
+                            <row>
+                                <cell>2nd</cell>
+                                <cell>P</cell>
+                                <cell>P</cell>
+                                <cell>G</cell>
+                                <cell>G</cell>
+                                <cell>F</cell>
+                            </row>
+                            <row>
+                                <cell>3rd</cell>
+                                <cell>E</cell>
+                                <cell>G</cell>
+                                <cell>E</cell>
+                                <cell>F</cell>
+                                <cell>G</cell>
+                            </row>
+                            <row>
+                                <cell>4th</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                                <cell>P</cell>
+                                <cell>E</cell>
+                                <cell>P</cell>
+                            </row>
+                            <row>
+                                <cell>5th</cell>
+                                <cell>G</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                </p>
+            </introduction>
+            
+            <exercise>
+                <statement>
+                    <p>Find the winner with the plurality method.</p>
+                </statement>
+                
+                <solution>
+                    <p>T = 15, E = 9, F = 13, P = 5, G =0</p>
+                    <p> T has the most first place votes, T wins.</p>
+                </solution>
+                
+                <answer>T</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Find the winner with the instant runoff method.</p>
+                </statement>
+                
+                <solution>
+                    <p>Round 1: G has 0 first place votes and is eliminated.</p>
+                    <me>T = 15, E = 9, F = 13, P = 5</me>
+                    <p>Round 2: P has the fewest votes and is eliminated. Those five 
+                        votes go to F, since their 2nd choice (G) was already eliminated.</p>
+                    <me>T = 15, E = 9, F = 18</me>
+                    <p>Round 3: E is eliminated. All 9 votes go to F.</p>
+                    <me>T = 15, F = 27</me>
+                    <p>F is the winner.</p>
+                </solution>
+                
+                <answer>F</answer>
+                    
+            </exercise>
+            
+        </exercisegroup>
+
+        <exercisegroup>
+            <introduction>
+                <p>Consider the following preference schedule:
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell></cell>
+                                <cell>80</cell>
+                                <cell>70</cell>
+                                <cell>50</cell>
+                            </row>
+                            <row>
+                                <cell>1st</cell>
+                                <cell>A</cell>
+                                <cell>B</cell>
+                                <cell>C</cell>
+                            </row>
+                            <row>
+                                <cell>2nd</cell>
+                                <cell>C</cell>
+                                <cell>A</cell>
+                                <cell>B</cell>
+                            </row>
+                            <row>
+                                <cell>3rd</cell>
+                                <cell>B</cell>
+                                <cell>C</cell>
+                                <cell>A</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                </p>
+            </introduction>
+            
+            <exercise>
+                <statement>
+                    <p>Is there a Condorcet candidate? If so, who? If not, why not?</p>
+                </statement>
+                
+                <solution>
+                    <p>A (80) v B (120): B wins</p>
+                    <p>A (150) v C (50): A wins</p>
+                    <p>B (70) v C (130): C wins</p>
+                    <p> No one can beat all the other candidates, so there is no Condorcet 
+                        candidate.</p>
+                </solution>
+                
+                <answer>No. No one can beat all other candidates in a head-to-head comparison.
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Who wins using the Borda Count method?</p>
+                </statement>
+                
+                <solution>
+                    <me>A = 80 \cdot 3 + 70 \cdot 2 + 50 \cdot 1 = 430</me>
+                    <me>B = 80 \cdot 1 + 70 \cdot 3 + 50 \cdot 2 = 390</me>
+                    <me>C = 80 \cdot 2 + 70 \cdot 1 = 50 \cdot 3 = 380</me>
+                    <p>A wins</p>
+                </solution>
+                
+                <answer>A</answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>If C drops out of the race, who will using the Borda Count method?
+                        Was one of the fairness criteria violated? If so, which one?</p>
+                </statement>
+                
+                <solution>
+                    <p>The preference schedule is now:
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell></cell>
+                                    <cell>80</cell>
+                                    <cell>70</cell>
+                                    <cell>50</cell>
+                                </row>
+                                <row>
+                                    <cell>1st Choice</cell>
+                                    <cell>A</cell>
+                                    <cell>B</cell>
+                                    <cell>B</cell>
+                                </row>
+                                <row>
+                                    <cell>2nd Choice</cell>
+                                    <cell>B</cell>
+                                    <cell>A</cell>
+                                    <cell>A</cell>
+                                </row>
+                            </tabular>
+                        </table>
+                    </p>
+                    
+                    <me>A = 80 \cdot 2 + 120 \cdot 1 = 280</me>
+                    <me>B = 80 \cdot 1 + 120 \cdot 2 = 320</me>
+                    
+                    <p>B wins</p>
+                    
+                    <p>Since the winner changed when a losing candidate (C), dropped out of the 
+                        race, the IIA (Independence of Irrelevant Alternatives) criterion 
+                        was violated.</p>
+                </solution>
+                
+                <answer>B wins. Since the winner changed when a losing candidate (C), dropped out 
+                    of the 
+                        race, the IIA (Independence of Irrelevant Alternatives) criterion 
+                        was violated.</answer>
+                                        
+            </exercise>
+        </exercisegroup>
+
+        
+    </exercises>
+    
+
+    
+</chapter>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para">Solution 1: One way to solve this problem would be to systematically list each possible meal:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para">
+<div class="para">soup + hamburger</div> <div class="para">soup + fajita</div> <div class="para">salad + sandwich</div> <div class="para">salad + pizza</div> <div class="para">breadsticks + quiche</div>
+</div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para">
+<div class="para">soup + sandwich</div> <div class="para">soup + pizza</div> <div class="para">salad + quiche</div> <div class="para">breadsticks + hamburger</div> <div class="para">breadsticks + fajita</div>
+</div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para">
+<div class="para">soup + quiche</div> <div class="para">salad + hamburger</div> <div class="para">salad + fajita</div> <div class="para">breadsticks + sandwich</div> <div class="para">breadsticks + pizza</div>
+</div></div>
+</div></div> <div class="para">Assuming that we did this systematically and that we neither missed any possibilities nor listed any possibility more than once, the answer would be 15. Thus you could go to the restaurant 15 nights in a row and have a different meal each night.</div> <div class="para">Solution 2: Another way to solve this problem would be to list all the possibilities in a table:</div> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Hamburger</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Fajita</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Sandwich</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Pizza</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Quiche</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">+ breadsticks</td>
+<td class="c m b0 r0 l0 t0 lines">+ breadsticks</td>
+<td class="c m b0 r0 l0 t0 lines">+ breadsticks</td>
+<td class="c m b0 r0 l0 t0 lines">+ breadsticks</td>
+<td class="c m b0 r0 l0 t0 lines">+ breadsticks</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">+ soup</td>
+<td class="c m b0 r0 l0 t0 lines">+ soup</td>
+<td class="c m b0 r0 l0 t0 lines">+ soup</td>
+<td class="c m b0 r0 l0 t0 lines">+ soup</td>
+<td class="c m b0 r0 l0 t0 lines">+ soup</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">+ salad</td>
+<td class="c m b0 r0 l0 t0 lines">+ salad</td>
+<td class="c m b0 r0 l0 t0 lines">+ salad</td>
+<td class="c m b0 r0 l0 t0 lines">+ salad</td>
+<td class="c m b0 r0 l0 t0 lines">+ salad</td>
+</tr>
+</table></div></figure> <div class="para">In each of the cells in the table we could list the corresponding meal: soup + hamburger in the upper left corner, salad + hamburger below it, etc. But if we didn't really care what the possible meals are, only how many possible meals there are, we could just count the number of cells and arrive at an answer of 15, which matches our answer from the first solution. (It's always good when you solve a problem two different ways and get the same answer!)</div> <div class="para">Solution 3: We already have two perfectly good solutions. Why do we need a third? The first method was not very systematic, and we might easily have made an omission. The second method was better, but suppose that in addition to the appetizer and the main course we further complicated the problem by adding desserts to the menu: we've used the rows of the table for the appetizers and the columns for the main courses—where will the desserts go? We would need a third dimension, and since drawing 3-D tables on a 2-D page or computer screen isn't terribly easy, we need a better way in case we have three categories to choose form instead of just two.</div> <div class="para">So, back to the problem in the example. What else can we do? Let's draw a tree diagram. We can abbreviate Breadsticks (B), Soup (SP), and Salad (SD) to make the tree easier to read.</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/counting-tree1.svg" role="img" class="contained" alt="A tree with five inital branches labled hamburger, fajita, pizza, sandwich, and quiche. From each of those five branches is another three branches labeled B, SP, and SD."></div> <div class="para">This is called a "tree" diagram because at each stage we branch out, like the branches on a tree. In this case, we first drew five branches (one for each main course) and then for each of those branches we drew three more branches (one for each appetizer). We count the number of branches at the final level and get (surprise, surprise!) 15.</div> <div class="para">If we wanted, we could instead draw three branches at the first stage for the three appetizers and then five branches (one for each main course) branching out of each of those three branches.</div>
+</div></body>
+</html>

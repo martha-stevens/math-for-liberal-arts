@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Growth" xmlns:xi="http://www.w3.org/2001/XInclude">
+        
+ <!-- Beginning of the Growth Models****************************************************************
+        It is organized into sections with:
+        1.Linear
+        2. Exponential
+        3. Variation
+        5. Exercises
+************************************************************************************************-->
+            <title>Algebraic Models</title>
+               <introduction>
+                <p>Populations of people, animals, and items are growing all around us. By understanding how
+                    things grow, we can better understand what to expect in the future. In this chapter, we focus
+                    on time-dependant change.</p> 
+                   
+                   
+
+                </introduction>
+            
+            <section xml:id="section-algebra-linear"><title>Linear Growth</title>
+                
+                <objectives>
+                    <ul>
+                       <li>Create recursive and explicit linear models</li>
+                       <li>Graph linear models</li>
+                       <li>Apply linear models to real world applications</li>
+                   </ul>
+                </objectives>
+
+                <p>Marco is a collector of antique soda bottles. His collection currently contains 437 bottles.
+                Every year, he budgets enough money to buy 32 new bottles. Can we determine how many
+                bottles he will have in 5 years, and how long it will take for his collection to reach 1000
+                bottles?</p>
+
+                <p>While both of these questions you could probably solve without an equation or formal
+mathematics, we are going to formalize our approach to this problem to provide a means to
+answer more complicated questions.</p>
+
+<p>Suppose that <m>P_n</m> represents the number, or population, of bottles Marco has after n years. So
+<m>P_0</m> would represent the number of bottles now, <m>P_1</m> would represent the number of bottles after
+1 year, <m>P_2</m> would represent the number of bottles after 2 years, and so on. We could describe
+how Marco’s bottle collection is changing using:</p>
+
+<p><m>P_0 = 437</m></p>
+<p><m>P_n = P_{n-1} + 32</m></p>
+
+<p>This is called a recursive relationship. A recursive relationship is a formula which relates
+the next value in a sequence to the previous values. Here, the number of bottles in year n can
+be found by adding 32 to the number of bottles in the previous year, <m>P_{n-1}</m>. Using this
+relationship, we could calculate:</p>
+
+<p><m>P_1 = P_0 + 32 = 437 + 32 = 469</m></p>
+<p><m>P_2 = P_1 + 32 = 469 + 32 = 501</m></p>
+<p><m>P_3 = P_2 + 32 = 501 + 32 = 533</m></p>
+<p><m>P_4 = P_3 + 32 = 533 + 32 = 565</m></p>
+<p><m>P_5 = P_4 + 32 = 565 + 32 = 597</m></p>
+
+<p>We have answered the question of how many bottles Marco will have in 5 years. However,
+solving how long it will take for his collection to reach 1000 bottles would require a lot more
+calculations.</p>
+
+<p>While recursive relationships are excellent for describing simply and cleanly how a quantity
+is changing, they are not convenient for making predictions or solving problems that stretch
+far into the future. For that, a closed or explicit form for the relationship is preferred. An
+explicit equation allows us to calculate <m>P_n</m> directly, without needing to know <m>P_{n-1}</m>. While
+you may already be able to guess the explicit equation, let us derive it from the recursive
+formula. We can do so by selectively not simplifying as we go:</p>
+
+                <p><m>P_1 = 437 + 32 = 437 + 1(32)</m></p>
+<p><m>P_2 = P_1 + 32 = 437 + 32 + 32 = 437 + 2(32)</m></p>
+<p><m>P_3 = P_2 + 32 = (437 + 2(32)) + 32 = 437 + 3(32)</m></p>
+<p><m>P_4 = P_3 + 32 = (437 + 3(32)) + 32 = 437 + 4(32)</m></p>
+
+<p>You can probably see the pattern now, and generalize that</p>
+<p><m>P_n = 437 + n(32) = 437 + 32n</m></p>
+
+<p>Using this equation, we can calculate how many bottles he’ll have after 5 years:</p>
+<p><m>P_5 = 437 + 32(5) = 437 + 160 = 597</m></p>
+
+<p>We can now also solve for when the collection will reach 1000 bottles by substituting in
+1000 for Pn and solving for n</p>
+
+<p><m>1000 = 437 + 32n</m></p>
+<p><m>563 = 32n</m></p>
+<p><m>n = 563 \div 32 = 17.59</m></p>
+
+<p>So Marco will reach 1000 bottles in 18 years.</p>
+
+In the previous example, Marco’s collection grew by<p>
+the same number of bottles every year. This constant
+change is the defining characteristic of linear growth.
+Plotting the values we calculated for Marco’s
+collection, we can see the values form a straight line,
+the shape of linear growth.</p>
+                
+<figure xml:id="fig-tikz">
+  <caption>Image Credit: RRCC</caption>
+  <image xml:id="linear1">
+      <description>A graph of a line connecting the points (0, 437), (1, 469), (2, 501), 
+          (3, 533), (4, 565), and (5, 597).</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[
+        xlabel = {Years from now},
+        ylabel = {Bottles},
+        xmin = 0, xmax = 5, ymin = 0, ymax = 700,
+        xtick distance = 1, ytick distance = 100,
+        grid = both,
+        minor tick num = 1,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        width = \textwidth,
+        height = 0.75\textwidth]
+        
+        \addplot[blue, thick] (x, 32*x+437);
+        
+        \addplot [color = blue, only marks, mark = *, mark size = 3pt] coordinates{
+        (0,437) (1,469) (2,501) (3, 533) (4, 565) (5,597)
+        };
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure>
+
+<definition><title>Linear Growth</title>
+<p>If a quantity starts at size P0 and grows by d every time period, then the quantity after n
+time periods can be determined using either of these relations:</p>
+<p>Recursive form: <m>P_n = P_{n-1} + d</m></p>
+<p>Explicit form: <m>P_n = P_0 + d n</m></p>
+<p>In this equation, <m>d</m> represents the common difference - the amount that the population
+changes each time n increases by 1</p>
+</definition>
+
+<note><title>Connection to Prior Learning</title>
+<p>You may recognize the common difference, d, in our linear equation as slope. In fact, the
+entire explicit equation should look familiar - it is the same linear equation you learned in
+algebra, probably stated as <m>y = mx + b</m>.</p>
+
+<p>In the standard algebraic equation <m>y = mx + b</m>, <m>b</m> was the y-intercept, or the y value when x
+was zero. In the form of the equation we’re using, we are using <m>P_0</m> to represent that initial
+amount.</p>
+
+<p>In the <m>y = mx + b</m> equation, recall that m was the slope. You might remember this as “rise
+over run”, or the change in y divided by the change in x. Either way, it represents the same
+thing as the common difference, <m>d</m>, we are using - the amount the output Pn changes when
+the input n increases by 1.</p>
+
+<p>The equations <m>y = mx + b</m> and <m>P_n = P_0 + d n</m> mean the same thing and can be used the same
+ways, we’re just writing it somewhat differently.</p>
+
+</note>
+
+<example>
+    <p>The population of elk in a national forest was measured to be 12,000 in 2003, and was
+    measured again to be 15,000 in 2007. If the population continues to grow linearly at this
+    rate, what will the elk population be in 2014?</p>
+
+    <solution><p>To begin, we need to define how we’re going to measure <m>n</m>. Remember that <m>P_0</m> is the
+    population when <m>n = 0</m>, so we probably don’t want to literally use the year 0. Since we
+    already know the population in 2003, let us define <m>n = 0</m> to be the year 2003. Then
+    <m>P_0 = 12,000</m>.</p>
+        
+    <p>Next we need to find <m>d</m>. Remember <m>d</m> is the growth per time period, in this case growth per
+    year. Between the two measurements, the population grew by <m>15,000-12,000 = 3,000</m>, but it
+    took 2007-2003 = 4 years to grow that much. To find the growth per year, we can divide:
+    <m>\frac{3000\text{ elk}}{4\text{ years}} = 750</m> elk in 1 year.</p>
+        
+    <p>Alternatively, you can use the slope formula from algebra to determine the common
+    difference, noting that the population is the output of the formula, and time is the input.</p>
+        
+    <me>d = \text{slope}=\frac{\text{change in output}}{\text{change in input}}=\frac{15000-12000}{2007 -2003}=
+    \frac{3000}{4}=750</me>
+        
+    <p>We can now write our equation in whichever form is preferred.</p>
+    <p>Recursive form: 
+        <md><mrow>P_0 \amp = 12,000</mrow>
+        <mrow>P_n \amp = P_{n-1} + 750</mrow>
+        </md>
+    </p>
+        
+    <p>Explicit form:
+        <me>P_n = 12,000 + 750n</me>
+    </p>
+        
+    <p>To answer the question, we need to first note that the year 2014 will be <m>n = 11</m>, since 2014 is
+    11 years after 2003. The explicit form will be easier to use for this calculation:</p>
+    <p><m>P_{11} = 12,000 + 750(11) = 20,250</m> elk</p>
+    </solution>
+                
+</example>
+                
+
+<example>
+    <p>Gasoline consumption in the US has been increasing steadily. Consumption data from 1992
+    to 2004 is shown below</p>
+
+    <p>Find a model for this data, and use it to predict consumption in
+    2016. If the trend continues, when will consumption reach 200 billion gallons?</p>
+
+    <table >
+            <title>Gas Consumption (1992 - 2004)</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell>Year</cell>
+                        <cell>Consumption (billions of gallons</cell>
+                    </row>
+                   <row>
+                        <cell>1992</cell>
+                        <cell>110</cell>
+                    </row>
+                    <row>
+                        <cell>1993</cell>
+                        <cell>111</cell>
+                    </row>
+                    <row>
+                        <cell>1994</cell>
+                        <cell>113</cell>
+                    </row>
+                    <row>
+                        <cell>1995</cell>
+                        <cell>116</cell>
+                    </row>
+                    <row>
+                        <cell>1996</cell>
+                        <cell>118</cell>
+                    </row>
+                    <row>
+                        <cell>1997</cell>
+                        <cell>119</cell>
+                    </row>
+                    <row>
+                        <cell>1998</cell>
+                        <cell>123</cell>
+                    </row>
+                    <row>
+                        <cell>1999</cell>
+                        <cell>125</cell>
+                    </row>
+                    <row>
+                        <cell>2000</cell>
+                        <cell>126</cell>
+                    </row>
+                    <row>
+                        <cell>2001</cell>
+                        <cell>128</cell>
+                    </row>
+                    <row>
+                        <cell>2002</cell>
+                        <cell>131</cell>
+                    </row>
+                    <row>
+                        <cell>2003</cell>
+                        <cell>133</cell>
+                    </row>
+                    <row>
+                        <cell>2004</cell>
+                        <cell>136</cell>
+                    </row>
+            </tabular>
+        </table>
+
+    <p>Plotting this data, it appears to have an
+    approximately linear relationship:</p>
+    
+    <figure>
+        <caption>Image Credit: RRCC</caption>
+  <image xml:id="linear2">
+      <description>A graph containing the points: (1992, 110) (1993, 111) (1994, 113) (1995, 116) (1996, 118) (1997, 119)
+        (1998, 123) (1999, 125) (2000, 126) (2001, 128) (2002, 131) (2003, 133) and (2004, 136). These points lie in a 
+          nearly straight line.</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[
+        xlabel = {Year},
+        ylabel = {Gas Consumption},
+        x tick label style = {/pgf/number format/.cd,%
+        scaled x ticks = false,
+        set thousands separator={},
+        fixed},
+        xmin = 1992, xmax = 2004, ymin = 100, ymax = 140,
+        xtick distance = 2, ytick distance = 10,
+        width = \textwidth,
+        height = 0.75\textwidth]
+        
+        \addplot [color = blue, only marks, mark = *, mark size = 3pt] coordinates{
+        (1992, 110) (1993, 111) (1994, 113) (1995, 116) (1996, 118) (1997, 119)
+        (1998, 123) (1999, 125) (2000, 126) (2001, 128) (2002, 131) (2003, 133) (2004, 136)
+        };
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure>
+
+
+    <p>While there are more advanced statistical
+    techniques that can be used to find an equation
+    to model the data, to get an idea of what is
+    happening, we can find an equation by using
+    two pieces of the data - perhaps the data from
+    1993 and 2003.</p>
+
+    <p>Letting <m>n = 0</m> correspond with 1993 would
+    give <m>P_0 = 111</m> billion gallons.</p>
+
+    <p>To find <m>d</m>, we need to know how much the gas consumption increased each year, on average.
+    From 1993 to 2003 the gas consumption increased from 111 billion gallons to 133 billion
+    gallons, a total change of <m>133 - 111 = 22</m> billion gallons, over 10 years. This gives us an
+    average change of <m>22 \text{ billion gallons} \div 10 \text{ year} = 2.2</m> billion gallons per year.</p>
+
+    <p>Equivalently,
+    <me>
+        d = \frac{\text{change in output}}{\text{change in input}}=\frac{133 - 111}{10-0}=\frac{22}{10} = 2.2</me>
+    </p>
+
+    <p>We can now write our equation in whichever form is preferred.</p>
+    <p>Recursive form:
+<md>
+    <mrow>P_0 \amp = 111</mrow>
+    <mrow>P_n \amp = P_{n-1} + 2.2</mrow>
+</md>
+</p>
+
+<p>Explicit form:
+    <me>P_n = 111 + 2.2n</me></p>
+
+<p>Calculating values using the explicit form and
+plotting them with the original data shows how
+well our model fits the data.</p>
+    
+ <figure>
+     <caption>Image Credit: RRCC</caption>
+  <image xml:id="linear3">
+      <description>When the line found, P = 111+ 2.2n is graphed with the data points, it does not line up
+          perfectly, but fits the data closely.</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[
+        xlabel = {Year},
+        ylabel = {Gas Consumption},
+        x tick label style = {/pgf/number format/.cd,%
+        scaled x ticks = false,
+        set thousands separator={},
+        fixed},
+        xmin = 1992, xmax = 2004, ymin = 100, ymax = 140,
+        xtick distance = 2, ytick distance = 10,
+        width = \textwidth,
+        height = 0.75\textwidth]
+        
+        \addplot[blue, thick, domain=1992:2004] (x, 2.2*x - 4273.6);
+        
+        \addplot [color = blue, only marks, mark = *, mark size = 3pt] coordinates{
+        (1992, 110) (1993, 111) (1994, 113) (1995, 116) (1996, 118) (1997, 119)
+        (1998, 123) (1999, 125) (2000, 126) (2001, 128) (2002, 131) (2003, 133) (2004, 136)
+        };
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure>
+ 
+<p>We can now use our model to make predictions about the future, assuming that the previous
+trend continues unchanged. To predict the gasoline consumption in 2016:</p>
+
+<p><m>n = 23</m> (2016 - 1993 = 23 years later)</p>
+<p><m>P_{23} = 111 + 2.2(23) = 161.6</m></p>
+
+<p>Our model predicts that the US will consume 161.6 billion gallons of gasoline in 2016 if the
+current trend continues.</p>
+
+<p>To find when the consumption will reach 200 billion gallons, we would set <m>P_n = 200</m>, and
+solve for n:</p>
+
+<p>
+    <md>
+        <mrow>111 + 2.2n \amp = 200</mrow>
+        <mrow>111 + 2.2n - 111 \amp = 200 - 111</mrow>
+        <mrow>2.2n \amp = 89</mrow>
+        <mrow>\frac{2.2n}{2.2} \amp = \frac{89}{2.2}</mrow>
+        <mrow>n \amp = 40.4545</mrow>
+    </md>
+</p>
+
+
+<p>This tells us that consumption will reach 200 billion about 40 years after 1993, which would
+be in the year 2033.</p>
+    
+</example>
+
+<example>
+    <p>The cost, in dollars, of a gym membership for n months can be described by the explicit
+    equation <m>P_n = 70 + 30n</m>. What does this equation tell us?</p>
+
+    <solution><p>The value for <m>P_0</m> in this equation is 70, so the initial starting cost is $70. This tells us that
+    there must be an initiation or start-up fee of $70 to join the gym.</p>
+    <p>The value for <m>d</m> in the equation is 30, so the cost increases by $30 each month. This tells us
+    that the monthly membership fee for the gym is $30 a month.</p></solution>
+</example>
+
+<problem><title>Try It Now</title>
+    <p>The number of stay-at-home fathers in Canada has been growing steadily. While the trend
+is not perfectly linear, it is fairly linear. Use the data from 1976 and 2010 to find an explicit
+formula for the number of stay-at-home fathers, then use it to predict the number if 2020.</p>
+
+<table >
+            <title>Number of Stay-at-Home Fathers</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell>Year</cell>
+                        <cell>Number of stay-at-home fathers</cell>
+                    </row>
+                   <row>
+                        <cell>1976</cell>
+                        <cell>20,610</cell>
+                    </row>
+                    <row>
+                        <cell>1984</cell>
+                        <cell>28,725</cell>
+                    </row>
+                    <row>
+                        <cell>1991</cell>
+                        <cell>43,530</cell>
+                    </row>
+                    <row>
+                        <cell>2000</cell>
+                        <cell>47,665</cell>
+                    </row>
+                    <row>
+                        <cell>2010</cell>
+                        <cell>53,555</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <answer><m>P_n = 20610 + 969n</m></answer>
+</problem>
+
+
+<note><title>When good models go bad</title>
+<p>When using mathematical models to predict future behavior, it is important to keep in mind
+that very few trends will continue indefinitely.</p>
+</note>
+
+<example>
+    <p>Suppose a four year old boy is currently 39 inches tall, and you are told to expect him to
+grow 2.5 inches a year.</p>
+<p>We can set up a growth model, with <m>n = 0</m> corresponding to 4 years old.</p>
+<p>Recursive form:</p>
+<md>
+<mrow>P_0 \amp = 39</mrow>
+<mrow>P_n \amp = P_{n-1} + 2.5</mrow>
+</md>
+
+<p>Explicit form:</p>
+<me>P_n = 39 + 2.5n</me>
+
+<p>So at 6 years old, we would expect him to be <m>P_2 = 39 + 2.5(2) = 44</m> inches tall.</p>
+
+<p>Any mathematical model will break down eventually. Certainly, we shouldn’t expect this
+boy to continue to grow at the same rate all his life. If he did, at age 50 he would be
+<m>P_{46} = 39 + 2.5(46) = 154</m> inches tall = 12.8 feet tall!
+</p>
+</example>
+
+<p>When using any mathematical model, we have to consider which inputs are reasonable to
+use. Whenever we extrapolate, or make predictions into the future, we are assuming the
+model will continue to be valid.</p>
+                
+                
+</section>
+            
+<section xml:id = "section-algebra-exponential">
+<title>Exponential Growth</title>
+    
+    <objectives>
+        <ul>
+                       <li>Create recursive and explicit exponential models</li>
+                       <li>Graph exponential models</li>
+                       <li>Apply exponential models to real world applications</li>
+                   </ul>
+        </objectives>
+
+    <p>Suppose that every year, only 10% of the fish in a lake have surviving offspring. If there
+were 100 fish in the lake last year, there would now be 110 fish. If there were 1000 fish in
+the lake last year, there would now be 1100 fish. Absent any inhibiting factors, populations
+of people and animals tend to grow by a percent of the existing population each year.</p>
+
+<p>Suppose our lake began with 1000 fish, and 10% of the fish have surviving offspring each
+year. Since we start with 1000 fish, <m>P_0 = 1000</m>. How do we calculate <m>P_1</m>? The new
+population will be the old population, plus an additional 10%. Symbolically:</p>
+
+<p><m>P_1 = P_0 + 0.10P_0</m></p>
+
+<p>Notice this could be condensed to a shorter form by factoring:</p>
+
+<p><m>P_1 = P_0 + 0.10P_0 = 1P_0 + 0.10P_0 = (1+ 0.10)P_0 = 1.10P_0</m></p>
+
+<p>While 10% is the growth rate, 1.10 is the growth multiplier. Notice that 1.10 can be
+thought of as “the original 100% plus an additional 10%”</p>
+
+<p>For our fish population,</p>
+
+<p><m>P_1 = 1.10(1000) = 1100</m></p>
+
+<p>We could then calculate the population in later years:</p>
+
+<p><m>P_2 = 1.10P_1 = 1.10(1100) = 1210</m></p>
+<p><m>P_3 = 1.10P_2 = 1.10(1210) = 1331</m></p>
+
+<p>Notice that in the first year, the population grew by 100 fish, in the second year, the
+population grew by 110 fish, and in the third year the population grew by 121 fish.
+While there is a constant percentage growth, the actual increase in number of fish is
+increasing each year.</p>
+
+<p>Graphing these values we see that this growth
+doesn’t quite appear linear.</p>
+    
+<figure>
+    <caption>Image Credit: RRCC</caption>
+  <image xml:id="exponential1">
+      <description>The points do not lie in a straight line--instead they are growing at an increasing
+      rate.</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[
+        xlabel = {Years from now},
+        ylabel = {Fish},
+        xmin = 0, xmax = 5, ymin = 800, ymax = 1800,
+        xtick distance = 1, ytick distance = 200,
+        grid = both,
+        minor tick num = 1,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        width = \textwidth,
+        height = 0.75\textwidth]
+       
+        
+        \addplot [color = blue, mark = *, mark size = 3pt] coordinates{
+        (0,1000) (1,1100) (2,1210) (3, 1331) (4, 1464) (5,1611)
+        };
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure>
+
+<p>To get a better picture of how this percentagebased growth affects things, we need an explicit
+form, so we can quickly calculate values further
+out in the future.</p>
+
+<p>Like we did for the linear model, we will start
+building from the recursive equation:</p>
+
+<p><m>P_1 = 1.10P_0 = 1.10 \cdot 1000</m></p>
+<p><m>P_2 = 1.10P_1 = 1.10 \cdot 1.10 \cdot 1000 = 1.10^2 \cdot 1000</m></p>
+<p><m>P_3 = 1.10P_2 = 1.10 \cdot 1.10^2 \cdot 1000 = 1.10^3 \cdot 1000</m></p>
+<p><m>P_4 = 1.10P_3 = 1.10 \cdot 1.10^3 \cdot 1000 = 1.10^4 \cdot 1000</m></p>
+
+<p>Observing a pattern, we can generalize the explicit form to be:</p>
+<p><m>P_n = 1.10^n \cdot 1000</m>, or equivalently, <m>P_n = 1000 \left(1.10 \right)^n</m></p>
+
+<p>From this, we can quickly calculate the number of fish
+in 10, 20, or 30 years:</p>
+
+<p><m>P_{10} = 1000 \left(1.10 \right)^{10} = 2594</m></p>
+<p><m>P_{20} = 1000 \left( 1.10 \right)^{20} = 6727</m></p>
+<p><m>P_{30} = 1000 \left( 1.10 \right)^{30} = 17449</m></p>
+
+<p>Adding these values to our graph reveals a shape that is
+definitely not linear. If our fish population had been
+growing linearly, by 100 fish each year, the population
+would have only reached 4000 in 30 years compared to
+almost 18000 with this percent-based growth, called exponential growth.</p>
+
+    <figure>
+        <caption>Image Credit: RRCC</caption>
+  <image xml:id="exponential2">
+      <description>On a larger scale, the graph does not look linear. Instead it is curving upward, as the values
+          are increasing at faster rates.</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+         \pgfplotsset{scaled y ticks=false}
+        \begin{axis}[
+        xlabel = {Years from now},
+        ylabel = {Fish},
+        xmin = 0, xmax = 30, ymin = 0, ymax = 18000,
+        xtick distance = 5, ytick distance = 3000,
+        grid = both,
+        minor tick num = 1,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        width = \textwidth,
+        height = 0.75\textwidth]
+       
+        
+        \addplot [color = blue, only marks, mark = *, mark size = 3pt] coordinates{
+        (0,1000) (1,1100) (2,1210) (3, 1331) (4, 1464) (5,1611)
+        (10, 2594) (20, 6727) (30, 17449)
+        };
+        
+        \addplot [blue, thick, domain=0:30](x, 1000*1.10^x);
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure>
+
+<p>In exponential growth, the population grows proportional to the size of the population, so as
+the population gets larger, the same percent growth will yield a larger numeric growth.</p>
+
+<definition><title>Exponential Growth</title>
+<p>If a quantity starts at size <m>P_0</m> and grows by <m>R\%</m> (written as a decimal, <m>r</m>) every time
+period, then the quantity after <m>n</m> time periods can be determined using either of these
+relations:</p>
+
+<p>Recursive form:</p>
+<p><m>P_n = \left(1+r \right) P_{n-1}</m></p>
+
+<p>Explicit form:</p>
+<p><m>P_n = P_0 \left(1+r \right)^n</m></p>
+
+<p>We call <m>r</m> the <term>growth rate</term>.</p>
+
+<p>The term <m>\left(1+r \right)</m> is called the <term>growth multiplier</term>, or common ratio.</p>
+</definition>
+
+<example>
+<p>Between 2007 and 2008, Olympia, WA grew almost 3% to a population of 245 thousand
+people. If this growth rate was to continue, what would the population of Olympia be in
+2014?</p>
+
+<solution><p>As we did before, we first need to define what year will correspond to <m>n = 0</m>. Since we know
+the population in 2008, it would make sense to have 2008 correspond to <m>n = 0</m>, so <m>P_0 =
+245000</m>. The year 2014 would then be <m>n = 6</m>.</p>
+
+<p>We know the growth rate is 3%, giving <m>r = 0.03</m>.</p>
+
+<p>Using the explicit form:</p>
+<p><m>P_6 = \left( 1+0.03 \right)^6 (245,000) = 1.19405(245,000) = 292,542.25</m></p>
+<p>The model predicts that in 2014, Olympia would have a population of about 293 thousand
+people.</p>
+</solution>
+</example>
+    
+    
+<note><title>Evaluating Exponents on the Calculator</title>
+    <p>To evaluate expressions like <m>1.03^6</m>, it will be easier to use a calculator than multiply
+    1.03 by itself six times. Most scientific calculators have a button for exponents. It is
+    typically either labeled like:</p>
+
+    <p><alert>^</alert> , <alert><m>y^x</m></alert>, or <alert><m>x^y</m></alert></p>
+
+    <p>To evaluate 1.036 we’d type <kbd>1.03</kbd> <kbd>^</kbd> <kbd>6</kbd>. Try it out - you should get an
+    answer around 1.1940523.</p>
+</note>
+    
+    <problem><title>Try It Now</title>
+        <p>India is the second most populous country in the world, with a population in 2008 of about
+    1.14 billion people. The population is growing by about 1.34% each year. If this trend
+            continues, what will India’s population grow to by 2020?</p>
+        
+        <answer>Using <m>n = 0</m> corresponding with 2008, <m>P_{12} = 1.14 \left(1+0.0134 \right)^{12}</m>
+            = about 1.337 billion people in 2020</answer>
+    </problem>
+    
+    <example>
+        <p>A friend is using the equation <m>P_n = 4600 \left(1.072 \right)^n</m> to predict the annual tuition at a local
+            college. She says the formula is based on years after 2010. What does this equation tell us?</p>
+        
+        <solution><p>In the equation, <m>P_0 = 4600</m>, which is the starting value of the tuition when <m>n = 0</m>. This tells us
+            that the tuition in 2010 was $4,600.</p>
+
+            <p>The growth multiplier is 1.072, so the growth rate is 0.072, or 7.2%. This tells us that the
+                tuition is expected to grow by 7.2% each year.</p>
+            
+            <p>Putting this together, we could say that the tuition in 2010 was $4,600, and is expected to
+                grow by 7.2% each year.</p>
+        </solution>
+        
+    </example>
+    
+    <example>
+        <p>In 1990, the residential energy use in the US was responsible for 962 million metric tons of
+        carbon dioxide emissions. By the year 2000, that number had risen to 1182 million metric
+            tons. If the emissions grow exponentially and continue at the same rate, what will the
+            emissions grow to by 2050?</p>
+        
+        <solution><p>Similar to before, we will correspond <m>n = 0</m> with 1990, as that is the year for the first piece of
+            data we have. That will make <m>P_0 = 962</m> (million metric tons of CO2). In this problem, we are
+            not given the growth rate, but instead are given that <m>P_{10} = 1182</m>.</p>
+            
+            <p>When <m>n = 10</m>, the explicit equation looks like:</p>
+            <p><m>P_{10} = P_0 \left(1+r \right)^{10}</m></p>
+            
+            <p>We know the value for <m>P_0</m>, so we can put that into the equation:</p>
+            <p><m>P_{10} = 962 \left(1+r \right)^{10}</m></p>
+            <p>We also know that <m>P_{10} = 1182</m>, so substituting that in, we get</p>
+            <p><m>1182 = 962 \left(1+r \right)^{10}</m></p>
+            <p>We can now solve this equation for the growth rate, r. Start by dividing by 962.</p>
+            <me>\frac{1182}{962} = \left( 1 + r \right)^{10}</me>
+            <p>Then take the 10th root of both sides:</p>
+            <me> \sqrt[10]{\frac{1182}{962}}=1 + r</me>
+            <p>Finally subtract 1 from both sides</p>
+            <me>r = \sqrt[10]{\frac{1182}{962}}-1</me>
+            <me>r = 0.0208 =  2.08\%</me>
+
+            <p>So if the emissions are growing exponentially, they are growing by about 2.08% per year.
+                We can now predict the emissions in 2050 by finding <m>P_{60}</m></p>
+                
+                <p><m>P_{60} = 962\left( 1+0.0208n \right)^{60} = 3308.4</m> million metric tons of CO2 in 2050</p>
+                </solution>
+                </example>
+    
+    <note><title>Rounding</title>
+        <p>As a note on rounding, notice that if we had rounded the growth rate to 2.1%, our
+        calculation for the emissions in 2050 would have been 3347. Rounding to 2% would
+        have changed our result to 3156. A very small difference in the growth rates gets
+        magnified greatly in exponential growth. For this reason, it is recommended to round
+            the growth rate as little as possible.</p>
+        
+        <p>If you need to round, keep at least three significant digits - numbers after any leading
+        zeros. So 0.4162 could be reasonably rounded to 0.416. A growth rate of 0.001027
+        could be reasonably rounded to 0.00103.</p>
+    </note>
+    
+    <note><title>Evaluating Roots on the calculator</title>
+        <p>In the previous example, we had to calculate the 10th root of a number. This is
+        different than taking the basic square root, <m>\sqrt{}</m>. Many scientific calculators have a button
+            for general roots. It is typically labeled like:</p>
+        
+        <p><m>\sqrt[n]{}</m>, <m>\sqrt[x]{}</m>, or <m>\sqrt[y]{x}</m></p>
+        
+        <p>To evaluate the 3rd root of 8, for example, we’d either type 3 <m>\sqrt[n]{}</m> 8, or 8 <m>\sqrt[n]{}</m> 3,
+        depending on the calculator. Try it on yours to see which to use - you should get an
+            answer of 2.</p>
+        
+        <p>If your calculator does not have a general root button, all is not lost. You can instead
+            use the property of exponents which states that <m>\sqrt[n]{a} = a^{1/n}</m></p>
+
+        <p>So, to compute the 3rd root of 8, you could use your calculator’s exponent key to evaluate <m>8^{1/3}</m>. 
+            To do this, type:</p>
+        
+        <p>8 ^ (1/3)</p>
+
+        <p>The parentheses tell the calculator to divide 1/3 before doing the exponent.</p>
+    </note>
+    
+    <problem><title>Try It Now</title>
+        <p>The number of users on a social networking site was 45 thousand in February when they
+        officially went public, and grew to 60 thousand by October. If the site is growing
+        exponentially, and growth continues at the same rate, how many users should they expect
+            two years after they went public?</p>
+        
+        <answer>106.63 thousand users</answer>
+        <solution>
+            <p>Here we will measure n in months rather than years, with <m>n = 0</m> corresponding to the
+                February when they went public. This gives <m>P_0 = 45</m> thousand. October is 8 months later, so
+                <m>P_8 = 60</m> thousand.</p>
+            
+            <me>60 = 45 \left( 1 + r \right)^8</me>
+            <p>Divide both sides by 45:</p>
+            <me>\frac{60}{45} = \left( 1 + r \right)^8</me>
+            <p>Take the 8th root of both sides:</p>
+            <me>\sqrt[8]{\frac{60}{45}}=1 + r</me>
+            <me>1.0366 = 1 + r</me>
+            <me>0.0366 = r</me>
+            
+            <p>Since r = 0.0366, or 3.66%, the general explicit equation is</p>
+            <me>P_n = 45 \left(1.0366\right)^n</me>
+            
+            <p>Predicting 24 months (2 years) after they went public:</p>
+            
+            <me>P_{24} = 45 \left(1.0366 \right)^{24} = 106.63</me>
+        </solution>
+    </problem>
+    
+    <example>
+        <p>Looking back at the last example, for the sake of comparison, what would the carbon
+            emissions be in 2050 if emissions grow linearly at the same rate?</p>
+        
+        <solution><p>Again we will get <m>n = 0</m> correspond with 1990, giving <m>P_0 = 962</m>. 
+            To find <m>d</m>, we could take the same approach as earlier, noting that the emissions increased by 
+            220 million metric tons in 10 years, giving a common difference of 22 million metric tons each year.</p>
+            
+            <p>Alternatively, we could use an approach similar to that which we used to find the exponential
+                equation. When <m>n = 10</m>, the explicit linear equation looks like:</p>
+                    
+            <me>P_{10} = P_0 + 10d</me>
+            
+            <p>We know the value for <m>P_0</m>, so we can put that into the equation:</p>
+                
+            <me>P_{10} = 962 + 10d</me>
+            
+            <p>Since we know that <m>P_{10} = 1182</m>, substituting that in we get</p>
+            
+            <me>1182 = 962 + 10d</me>
+            
+            <p>We can now solve this equation for the common difference, d.</p>
+            
+            <me>1182 - 962 = 10d</me>
+            <me>220 = 10d</me>
+            <me>d = 22</me>
+            
+            <p>This tells us that if the emissions are changing
+            linearly, they are growing by 22 million metric
+                tons each year.</p>
+                
+            <p>Predicting the emissions in 2050,<m>P_{60} = 962 + 22(60) = 2282</m> million metric tons.</p>
+            
+            <p>You will notice that this number is substantially
+            smaller than the prediction from the exponential
+            growth model. Calculating and plotting more
+                values helps illustrate the differences.</p>
+            
+            <figure>
+                <caption>Image Credit: RRCC</caption>
+          <image xml:id="exponential3">
+              <description>The linear and exponential models are closer together when n is small. But as n gets 
+                  larger, it becomes clear that the exponential function is growing at a faster rate.</description>
+
+        <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[
+        xlabel = {Years after 1990},
+        ylabel = {Emissions (Million Metric Tons)},
+        xmin = 0, xmax = 60, ymin = 0, ymax = 3500,
+        xtick distance = 10, ytick distance = 500,
+        grid = none,
+        minor tick num = 1,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        width = \textwidth,
+        height = 0.75\textwidth]
+       
+        
+        \addplot[blue, thick, domain=0:60] (x, 22*x+962);
+            \addlegendentry{\(P_n = 22n + 962\)}
+            
+        \addplot[red, thick, domain =0:60] (x, 962*1.0208^x);
+            \addlegendentry{\(P_n = 962(1.0208)^n\)}
+            
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure>
+        </solution>
+    </example>
+    
+    <p>So how do we know which growth model to use
+        when working with data? There are two approaches which should be used together whenever
+        possible:</p>
+    
+    <p>
+    
+    <ol label = "1">
+        <li>Find more than two pieces of data. Plot the values, and look for a trend. Does the
+            data appear to be changing like a line, or do the values appear to be curving upwards?</li>
+        <li>Consider the factors contributing to the data. Are they things you would expect to
+        change linearly or exponentially? For example, in the case of carbon emissions, we
+        could expect that, absent other factors, they would be tied closely to population
+            values, which tend to change exponentially.</li>
+        
+    </ol>
+    </p>
+
+</section>
+            
+<!-- The text has examples where we solve for time, as well as logistic growth.  This can be added later if needed**
+***********************************************************************************************************-->
+
+<!--The variation section comes from OpenStax College Algebra****************************-->
+
+<section xml:id ="section-algebra-variation"><title>Modeling Using Variation</title>
+    
+    <objectives>
+                <ul>
+                       <li>Solve direct variation problems</li>
+                       <li>Solve inverse variation problems</li>
+                   </ul>
+            </objectives>
+    
+    <introduction>
+        <p>A used-car company has just offered their best candidate, Nicole, a position in sales. The position offers 16% commission on her sales. Her earnings depend on the amount of her sales. For instance, if she sells a vehicle for $4,600, she will earn $736. She wants to evaluate the offer, but she is not sure how. In this section, we will look at relationships, such as this one, between earnings, sales, and commission rate.</p>
+    </introduction>
+        
+        <subsection><title>Solving Direct Variation Problems</title>
+            
+            
+            <p>In the example above, Nicole’s earnings can be found by multiplying her sales by her commission. The formula 
+                <m>e=0.16s</m> tells us her earnings, <m>e</m>, come from the product of 0.16, her commission, and the sale 
+                price of the vehicle. If we create a table, we observe that as the sales price increases, the earnings increase 
+                as well, which should be intuitive.
+            </p>
+            
+            <table >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell>Sales Price</cell>
+                        <cell><m>e = 0.16 s</m></cell>
+                        <cell>Interpretation</cell>
+                    </row>
+                   <row>
+                        <cell>$4,600</cell>
+                       <cell><m>e = 0.16\cdot 4600 = 736</m></cell>
+                       <cell>A sale of a $4,600 vehicle results in $736 earnings.</cell>
+                    </row>
+                    <row>
+                        <cell>$9,200</cell>
+                        <cell><m>e = 0.16 \cdot 9200= 1472</m></cell>
+                        <cell>A sale of a $9,200 vehicle results in $1472 earnings.</cell>
+                    </row>
+                    <row>
+                        <cell>$18,400</cell>
+                        <cell><m>e = 0.16 \cdot 18400</m></cell>
+                        <cell>A sale of a $18,400 vehicle results in $2944 earnings.</cell>
+                    </row>
+                </tabular>
+            </table>
+            
+            <p>Notice that earnings are a multiple of sales. As sales increase, earnings increase in a predictable way. Double the 
+                sales of the vehicle from $4,600 to $9,200, and we double the earnings from $736 to $1,472. As the input increases, the 
+                output increases as a multiple of the input. A relationship in which one quantity is a constant multiplied by another 
+                quantity is called direct variation. Each variable in this type of relationship varies directly with the other.</p>
+
+            <p>The figure below represents the data for Nicole’s potential earnings. We say that earnings vary directly with the sales 
+                price of the car. The formula <m>y=kx^n</m> is used for direct variation. The value <m>k</m> is a nonzero constant 
+                greater than zero and is called the constant of variation. In this case, <m>k = 0.16</m> and <m>n = 1</m>. </p>
+            
+            <definition><title>Direct Variation</title>
+                <p>If <m>x</m> and <m>y</m> are related by an equation of the form</p>
+                <me>y = kx^n</me>
+                
+                <p>then we say that the relationship is <term>direct variation</term> and <m>y</m> varies directly with, or is 
+                    proportional to, the nth power of <m>x</m>. In direct variation relationships, there is a nonzero constant 
+                    ratio <m>k = \frac{y}{x^n}</m>, where <m>k</m> is called the <term>constant of variation</term>, 
+                    which help defines the relationship between the variables.</p>
+            </definition>
+            
+            <note><title>How To Solve Direct Variation Problems</title>
+                <p>Given a description of a direct variation problem, solve for an unknown.</p>
+                <p>
+                <ol label = "1">
+                    <li>Identify the input, <m>x</m>, and the output, <m>y</m>.</li>
+                    <li>Determine the constant of variation. You may need to divide <m>y</m> by the specified power
+                        of <m>x</m> to determine the constant of variation.</li>
+                    <li>Use the constant of variation to write an equation for the relationship.</li>
+                    <li>Substitute known values into the equation to find the unknown.</li>
+                </ol>
+                    </p>
+            </note>
+            
+            <example>
+                <p>The quantity <m>y</m> varies directly with <m>x</m>. If <m>y=22</m> when <m>x=4</m>, 
+                    find <m>y</m> when <m>x</m> is 6.</p>
+                
+                <solution><p>The general formula for direct variation is</p>
+                    <me>y = kx</me>
+                    
+                    <p>First plug-in <m>y = 22</m> and <m>x = 4</m> and solve for <m>k</m>.</p>
+                        <me>22 = k\cdot 4</me>
+                        <me>k = \frac{22}{4}</me>
+                        <me>k = \frac{11}{2}</me>
+                    
+                    <p>Now use the constant to write an equation that represents this relationship.</p>
+                    <me>y = \frac{11}{2}x</me>
+                    
+                    <p>Substitute <m>x = 6</m> and solve for <m>y</m>.</p>
+                    <me>y = \frac{11}{2}\cdot 6</me>
+                    <me>y = \frac{66}{2}</me>
+                    <me>y = 33</me>
+                </solution>
+            </example>
+            
+            <example>
+                <p>The quantity <m>p</m> varies directly with the square of <m>q</m>. If <m>p=20</m> when <m>q=3</m>, 
+                    find <m>p</m> when <m>q</m> is 6.</p>
+                
+                <solution><p>The general formula for direct variation is
+                    <me>y = kx^2</me>, or in this case:
+                    <me>p = kq^2</me>
+                    </p>
+                    
+                    <p>First plug-in <m>p = 20</m> and <m>q = 3</m> and solve for <m>k</m>.</p>
+                        <me>20 = k\cdot 3^2</me>
+                        <me>20 = k \cdot 9</me>
+                        <me>k = \frac{20}{9}</me>
+                    
+                    <p>Now use the constant to write an equation that represents this relationship.</p>
+                    <me>p = \frac{20}{9}q^2</me>
+                    
+                    <p>Substitute <m>q = 6</m> and solve for <m>p</m>.</p>
+                    <me>p = \frac{20}{9}\cdot 6^2</me>
+                    <me>p = \frac{20}{9}\cdot 36</me>
+                    <me>p = 80</me>
+                </solution>
+            </example>
+            
+        </subsection>
+    
+    <subsection><title>Solving Inverse Variation Prolblems</title>
+        <p>Water temperature in an ocean varies inversely to the water’s depth. The formula <m>T=\frac{14,000}{d}</m> 
+            gives us the temperature in degrees Fahrenheit at a depth in feet below Earth’s surface. 
+            Consider the Atlantic Ocean, which covers 22% of Earth’s 
+            surface. At a certain location, at the depth of 500 feet, the temperature may be 28°F.</p>
+
+        <p>If we create the table below, we observe that, as the depth increases, the water temperature decreases.</p>
+        
+         <table >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell>Depth</cell>
+                        <cell><m>T = \frac{14,000}{d}</m></cell>
+                        <cell>Interpretation</cell>
+                    </row>
+                    <row>
+                        <cell>500 ft</cell>
+                        <cell><m>T = \frac{14,000}{500}=28</m></cell>
+                        <cell>At a depth of 500 ft, the water temperature is <m>28^{\circ} F</m></cell>
+                    </row>
+                    <row>
+                        <cell>1000 ft</cell>
+                        <cell><m>T = \frac{14,000}{1000}=14</m></cell>
+                        <cell>At a depth of 1,000 ft, the water temperature is <m>14^{\circ} F</m></cell>
+                    </row>
+                    <row>
+                        <cell>2000 ft</cell>
+                        <cell><m>T = \frac{14,000}{2000}=7</m></cell>
+                        <cell>At a depth of 2,000 ft, the water temperature is <m>7^{\circ} F</m></cell>
+                    </row>
+             </tabular>
+        </table>
+
+        <p>We notice in the relationship between these variables that, as one quantity increases, the other decreases. 
+            The two quantities are said to be inversely proportional and each term varies inversely with the other. 
+            Inversely proportional relationships are also called inverse variations.</p>
+        
+        <p>For our example, the figure depicts the inverse variation. We say the water temperature varies inversely 
+            with the depth of the water because, as the depth increases, the temperature decreases. 
+            The formula <m>y = \frac{k}{x}</m> for inverse variation in this case uses <m>k=14,000</m>.</p>
+        
+        <definition><title>Inverse Variation</title>
+            <p>If <m>x</m> and <m>y</m> are related by an equation of the form,
+            <me>y = \frac{k}{x^n}</me>
+                where <m>k</m> is a nonzero constant, then we say that <m>y</m> <term>varies inversely</term>
+                with the nth power of <m>x</m>. 
+                In inversely proportional relationships, or inverse variations, there is a constant multiple
+                <m>k = x^n y</m>.</p>
+         </definition>
+        
+        <example>
+                <p>The quantity <m>y</m> varies inversely with the square <m>x</m>. If <m>y=10</m> when <m>x=2</m>, 
+                    find <m>y</m> when <m>x</m> is 4.</p>
+                
+                <solution><p>The general formula for this inverse variation is
+                    <me>y = \frac{k}{x^2}</me>
+                    </p>
+                    
+                    <p>First plug-in <m>y = 10</m> and <m>x = 2</m> and solve for <m>k</m>.</p>
+                        <me>10 = \frac{k}{2^2}</me>
+                        <me>10 = \frac{k}{4}</me>
+                        <me>4\cdot 10 = \frac{k}{4} \cdot 4</me>
+                        <me>k = 40</me>
+                    
+                    <p>Now use the constant to write an equation that represents this relationship.</p>
+                    <me>y = \frac{40}{x^2}</me>
+                    
+                    <p>Substitute <m>x = 4</m> and solve for <m>y</m>.</p>
+                    <me>y = \frac{40}{4^2}</me>
+                    <me>y = \frac{40}{16}</me>
+                    <me>y = \frac{5}{2}</me>
+                </solution>
+            </example>
+        
+        <example>
+            <p>The volume of a gas held at constant temperature varies inversely as the pressure of the gas. 
+                If the volume of a gas is 1200 cubic centimeters when the pressure is 200 millimeters of mercury, 
+                what is the volume when the pressure is 300 millimeters of mercury?</p>
+            
+            <solution>
+                <p>We can expression the fact that "volume varies <em>inversely</em> as pressure" with the equation,
+                    <me>V = \frac{k}{P}</me>
+                </p>
+                
+                <p>Use the <m>V = 1200</m> when <m>P = 200</m> to solve for <m>k</m>:
+                    <me>1200 = \frac{k}{200}</me>
+                    <me>200 \cdot 1200 = \frac{k}{200} \cdot 200</me>
+                    <me>k = 240,000</me>
+                </p>
+                
+                <p>We can write the relationship,
+                    <me>V = \frac{240,000}{P}</me>
+                    and plug in <m>P = 300</m> to find the volume when pressure is 300 millimeters of mercury.</p>
+                
+                <me>V = \frac{240,000}{300}</me>
+                <me>V = 800</me>
+                
+                <p>The volume is 800 cubic centimeters.</p>
+            </solution>
+        </example>
+                
+                
+        
+        
+    </subsection>
+        </section>
+            
+<!-- Beginning of Exercises for Sets****************************************************************
+      
+************************************************************************************************-->
+           <exercises xml:id="exercises-growth">
+                
+            <title>Exercises</title>
+               
+               <exercise xml:id = "algebra-ex-1">
+                   <statement>
+                       <p>Let <m>P_n = P_{n-1} + 18</m>. If <m>P_0 = 50</m>, find 
+                           <m>P_1</m>, <m>P_2</m>, and <m>P_3</m>.</p>
+                   </statement>
+                   <answer><m>P_1 = 68, P_2 = 86, P_3 = 104</m></answer>
+               </exercise>
+               
+    <exercise xml:id = "algebra-ex-2">
+    <statement><p>The population of a city is growing according to the
+        formula,
+        <me>P_n = P_{n-1} + 54</me>
+        <ol label = "a">
+            <li>Complete the table of values.
+                <table >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>n</m></cell>
+                        <cell><m>P_n</m></cell>
+                    </row>
+                   <row>
+                        <cell>0</cell>
+                        <cell>457</cell>
+                    </row>
+                    <row>
+                        <cell>1</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell>2</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell>3</cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell>4</cell>
+                        <cell></cell>
+                    </row>
+                </tabular>
+            </table>
+        </li>
+        <li>Graph your results.</li>
+        <li>Write an explicit equation for <m>P_n</m>.</li>
+        <li>Use your equation to predict the population in 50 years.</li>
+    </ol>
+        </p>
+</statement>
+</exercise>
+  
+               
+ <exercise xml:id = "algebra-ex-3">
+    <statement><p>Marko currently has 20 tulips in his yard. Each year he plants 5 more.
+        <ol label = "a">
+            <li>Write a recursive formula for the number of tulips Marko has.</li>
+            <li>Write an explicit formula for the number of tulips Marko has.</li>
+        </ol></p>
+    </statement>
+     <answer><p>
+         <ol label = "a">
+             <li><m>P_0 = 20, P_n = P_{n-1} + 5</m></li>
+             <li><m>P_n = 20 + 5n</m></li>
+         </ol>
+         </p>
+     </answer>
+
+</exercise>
+
+<exercise xml:id = "algebra-ex-4">
+    <statement><p>Pam is a Disc Jockey. Every week she buys 3 new albums to keep her collection
+current. She currently owns 450 albums.
+        <ol label ="a">
+            <li>Write a recursive formula for the number of albums Pam has.</li>
+            <li>Write an explicit formula for the number of albums Pam has.</li>
+        </ol></p>
+    </statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-5">
+<statement><p>A store’s sales (in thousands of dollars) grow according to the recursive rule
+    <m>P_n=P_{n-1} + 15</m>, with initial population <m>P_0=40</m>.
+    <ol label = "a">
+        <li>Calculate <m>P_1</m> and <m>P_2</m>.</li>
+        <li>Find an explicit formula for <m>P_n</m>.</li>
+        <li>Use your formula to predict the store’s sales in 10 years.</li>
+        <li>When will the store’s sales exceed $100,000?</li>
+    </ol></p>
+</statement>
+    
+    <answer>
+        <p><ol label = "a">
+            <li><m>P_1 = 55, P_2 = 70</m></li>
+            <li><m>P_n = 40 + 15n</m></li>
+            <li>190 thousand dollars</li>
+            <li>n = 4 years</li>
+            </ol>
+        </p>
+    </answer>
+</exercise>
+
+<exercise xml:id = "algebra-ex-6">
+    <statement><p>The number of houses in a town has been growing according to the recursive rule
+    <m>P_n=P_{n-1} + 30</m>, with initial population <m>P_0=200</m>.
+    <ol label = "a">
+        <li>Calculate <m>P_1</m> and <m>P_2</m>.</li>
+        <li>Find an explicit formula for <m>P_n</m>.</li>
+        <li>Use your formula to predict the number of houses in 10 years.</li>
+        <li>When will the number of houses reach 400 houses?</li>
+    </ol></p>
+</statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-7">
+    <statement><p>A population of beetles is growing according to a linear growth model. The initial
+population (week 0) was <m>P_0=3</m>, and the population after 8 weeks is <m>P_8=67</m>.
+    <ol label = "a">
+        <li>Find an explicit formula for the beetle population in week <m>n</m>.</li>
+        <li>After how many weeks will the beetle population reach 187?</li>
+    </ol></p>
+</statement>
+    
+    <answer><p>
+        <ol label = "a">
+            <li><m>P_n = 3+8n</m></li>
+            <li>23 weeks</li>
+        </ol>
+        </p>
+    </answer>
+    
+</exercise>
+
+<exercise xml:id = "algebra-ex-8">
+    <statement><p>The number of streetlights in a town is growing linearly. Four months ago (<m>n = 0</m>)
+    there were 130 lights. Now (<m>n = 4</m>) there are 146 lights. If this trend continues,
+    <ol label = "a">
+        <li>Find an explicit formula for the number of lights in month <m>n</m>.</li>
+        <li>How many months will it take to reach 200 lights?</li>
+    </ol></p>
+</statement>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-9">
+    <statement><p>The revenue of a company (in millions) n years after 2005 is given in the graph.
+         Write an equation that models the revenue n years after 2005.
+    <figure>
+  <image xml:id="growth_exercise1">
+      <caption>Image Credit: RRCC</caption>
+      <description>A linear function that passes through the points (0, 1.5) and (1, 2).</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[
+        xlabel = {Years after 2005},
+        ylabel = {Revenue (millions)},
+        xmin = 0, xmax = 6, ymin = 0, ymax = 8,
+        xtick distance = 1, ytick distance = 1,
+        grid = both,
+        minor tick num = 1,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        width = \textwidth,
+        height = 0.75\textwidth]
+        
+        \addplot[blue, thick, domain =0:6] (x, 0.5*x + 1.5);
+        
+       
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure>
+        </p>
+    
+    
+    </statement>
+    
+</exercise>
+
+<exercise xml:id = "algebra-ex-10">
+    <statement><p>The cost of tuition <m>n</m> years after 2010 is shown in the graph. Write an equation that models
+        the tuition and use your model to predict the tuition in the year 2030.
+   <figure>
+       <caption>Image Credit: RRCC</caption>
+  <image xml:id="growth_exercise2">
+      <description>A linear function that passes through the points (0, 1200) and (2, 1500)</description>
+
+    <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[
+        xlabel = {Years after 2010},
+        ylabel = {Tuition (dollars)},
+        xmin = 0, xmax = 6, ymin = 0, ymax = 3000,
+        xtick distance = 1, ytick distance = 200,
+        grid = both,
+        minor tick num = 1,
+        major grid style = {lightgray},
+        minor grid style = {lightgray!25},
+        width = \textwidth,
+        height = 0.75\textwidth]
+        
+        \addplot[blue, thick, domain=0:6] (x, 1200+150*x);
+       
+        
+        \end{axis}
+        \end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+</figure></p>
+    </statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-11">
+    <statement><p>The number of miles driven after <m>n</m> hours is given by the equation 
+        <m>M_n = 45n</m>.
+        <ol label = "a">
+            <li>What is the common difference?</li>
+            <li>Write a sentence to describe what the common difference is telling us in 
+                this context. Include units.</li>
+        </ol></p>
+    </statement>
+    
+   
+</exercise>
+               
+               
+<exercise xml:id = "algebra-ex-12">
+    <statement><p>The value of a car <m>n</m> years after it was purchased is given by the equation 
+        <m>V_n = 9500-625n</m>.
+        <ol label = "a">
+            <li>What is the common difference?</li>
+            <li>Write a sentence to describe what the common difference is telling us in 
+                this context. Include units.</li>
+        </ol></p>
+    </statement>
+</exercise>
+    
+               
+<exercise xml:id = "algebra-ex-13">
+    <statement><p>Tacoma's population in 2000 was about 200 thousand, and had been growing by
+    about 9% each year.
+    <ol label ="a">
+        <li>Write a recursive formula for the population of Tacoma.</li>
+        <li>Write an explicit formula for the population of Tacoma.</li>
+        <li>If this trend continues, what will Tacoma's population be in 2016?</li>
+    </ol></p>
+</statement>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li><m>P_0 = 200, P_n = 1.09P_{n-1}</m></li>
+                <li><m>P_n = 200\left(1.09\right)^n</m></li>
+                <li><m>P_{16}=200(1.09)^{16}=794.061(\text { thousand })=794,061</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+</exercise>
+
+<exercise xml:id = "algebra-ex-14">
+    <statement><p>Portland's population in 2007 was about 568 thousand, and had been growing by
+    about 1.1% each year.
+    <ol label="a">
+        <li>Write a recursive formula for the population of Portland.</li>
+        <li>Write an explicit formula for the population of Portland.</li>
+        <li>If this trend continues, what will Portland's population be in 2016?</li>
+    </ol></p>
+</statement>
+    
+    
+</exercise>
+
+<exercise xml:id = "algebra-ex-15">
+    <statement><p>Diseases tend to spread according to the exponential growth model. In the early days
+    of AIDS, the growth rate was around 190%. In 1983, about 1700 people in the U.S.
+    died of AIDS. If the trend had continued unchecked, how many people would have
+    died from AIDS in 2005?</p></statement>
+    <answer>25 trillion</answer>
+</exercise>
+
+<exercise xml:id = "algebra-ex-16">
+    <statement><p>The population of the world in 1987 was 5 billion and the annual growth rate was
+    estimated at 2 percent per year. Assuming that the world population follows an
+    exponential growth model, find the projected world population in 2015.</p></statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-17">
+    <statement><p>A bacteria culture is started with 300 bacteria. After 4 hours, the population has
+grown to 500 bacteria. If the population grows exponentially,
+<ol label = "a">
+    <li>Write a recursive formula for the number of bacteria.</li>
+    <li>Write an explicit formula for the number of bacteria.</li>
+    <li>If this trend continues, how many bacteria will there be in 1 day?</li>
+</ol></p>
+</statement>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li><m>P_0 = 300, P_n = 1.136P_{n-1}</m></li>
+                <li><m>P_n = 300\left(1.136 \right)^n</m></li>
+                <li>6400 bacteria</li>
+            </ol>
+        </p>
+    </answer>
+            
+</exercise>
+
+<exercise xml:id = "algebra-ex-18">
+<statement><p>A native wolf species has been reintroduced into a national forest. Originally 200
+wolves were transplanted. After 3 years, the population had grown to 270 wolves. If
+the population grows exponentially,
+<ol label = "a">
+    <li>Write a recursive formula for the number of wolves.</li>
+    <li>Write an explicit formula for the number of wolves.</li>
+    <li>If this trend continues, how many wolves will there be in 10 years?</li>
+</ol></p>
+</statement>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-19">
+    <statement><p>The population of a small town can be described by the equation <m>P_n = 4000 + 70n</m>,
+        where <m>n</m> is the number of years after 2005. Explain in words what this equation tells
+        us about how the population is changing.</p></statement>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-20">
+    <statement><p>The population of a small town can be described by the equation <m>Pn = 4000\left(1.04 \right)^n</m>,
+        where <m>n</m> is the number of years after 2005. Explain in words what this equation tells
+        us about how the population is changing.</p></statement>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-21">
+    <statement><p>A new truck costs $32,000. The car’s value will depreciate over time, which means it
+    will lose value. For tax purposes, depreciation is usually calculated linearly. If the
+    truck is worth $24,500 after three years, write an explicit formula for the value of the
+        car after n years.</p></statement>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-22">
+    <statement><p>Inflation causes things to cost more, and for our money to buy less (hence your
+    grandparents saying, "In my day, you could buy a cup of coffee for a nickel").
+    Suppose inflation decreases the value of money by 5% each year. In other words, if
+    you have $1 this year, next year it will only buy you $0.95 worth of stuff. How much
+        will $100 buy you in 20 years?</p></statement>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-23">
+    <statement><p>Suppose that you have a bowl of 500 M &amp; M candies, and each day you eat <m>\frac{1}{4}</m> of the
+        candies you have. Is the number of candies left changing linearly or exponentially?
+        Write an equation to model the number of candies left after <m>n</m> days. </p></statement>
+</exercise>
+<exercise xml:id = "algebra-ex-24">
+    <statement><p>The table below shows the atmospheric pressure (in millibars) at various altitudes (in kilometers).
+        <table >
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Altitude (n)</cell>
+                   <cell>Pressure (P)</cell>
+              </row>
+              <row>
+                   <cell>0</cell>
+                   <cell>1013</cell>
+              </row>
+              <row>
+                    <cell>2</cell>
+                    <cell>795</cell>
+              </row>
+         </tabular>
+        </table>
+        <ol label = "a">
+            <li>Use the data in the table to find a linear equation that gives the pressure <m>n</m> kilometers
+                above sea-level.</li>
+            <li>Use the data in the table to find an exponential equation that gives the pressure <m>n</m>
+                kilometers above sea-level.</li>
+            <li>If the pressure on top of Mt Everest (which has an altitude of 8.8 km) is 325 mb, is the linear or exponential
+                equation a better model of atmospheric pressure? Explain.</li>
+        </ol></p>
+    </statement>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-25">
+    <statement><p>A small business buys a computer for $4,000. After 4 years, the value of the computer is expected to be $200.
+        <ol label = "a">
+            <li>If the value of the computer decreased linearly, find an explicit linear equation that gives the value
+                of the computer <m>n</m> years after it was purchased.</li>
+            <li>If the value of the computer decreased exponentially, find an equation that gives the value of the
+                computer <m>n</m> years after it was purchased.</li>
+            <li>Use both your linear and exponential model to predict the value of the computer 6 years after it was purchased.
+            Which model do you think is more accurate? Explain.</li>
+        </ol></p>
+    </statement>
+    
+   
+               </exercise>
+               
+               
+<exercise xml:id = "algebra-ex-26">
+    <statement><p>Recursive equations can be very handy for modeling complicated situations for which
+explicit equations would be hard to interpret. As an example, consider a lake in
+which 2000 fish currently reside. The fish population grows by 10% each year, but
+every year 100 fish are harvested from the lake by people fishing.
+        <ol label = "a">
+            <li>Write a recursive equation for the number of fish in the lake after n years.</li>
+            <li>Calculate the population after 1 and 2 years. Does the population appear to be
+                increasing or decreasing?</li>
+            <li>What is the maximum number of fish that could be harvested each year
+                without causing the fish population to decrease in the long run?</li>
+        </ol></p>
+    </statement>
+</exercise>
+
+<exercisegroup>
+    <introduction><p>For the following exercises, write an equation describing the relationship of the given variables.</p></introduction>
+
+    <exercise xml:id = "algebra-ex-27">
+        <statement><p><m>y</m> varies directly as <m>x</m> and when <m>x=6</m>,<m>y=12</m>.</p></statement>
+        
+        <answer><m>y = 2x</m></answer>
+    </exercise>
+
+    <exercise xml:id = "algebra-ex-28">
+        <statement><p><m>y</m> varies directly as the square of <m>x</m> and when <m>x=4</m>, <m>y = 80</m>.</p></statement>
+    </exercise>
+
+   <exercise xml:id = "algebra-ex-29">
+    <statement><p><m>y</m> varies inversely as <m>x</m> and when <m>x=4</m>, <m>y=2</m>.</p></statement>
+          
+</exercise>
+
+<exercise xml:id = "algebra-ex-30">
+    <statement><p><m>y</m> varies inverse as the square of <m>x</m> and when <m>x=3</m>, <m>y=2</m>.</p></statement>
+</exercise>
+
+</exercisegroup>
+               
+<exercise xml:id = "algebra-ex-31">
+    <statement><p>If <m>y</m> varies directly as <m>x</m> and <m>y = 6</m> when <m>x = 2</m>, what is <m>y</m> when <m>x = 10</m>?</p>
+</statement>
+    <answer>30</answer>
+</exercise>
+
+<exercise xml:id = "algebra-ex-32">
+    <statement><p>If <m>v</m> varies directly with the square of <m>w</m> and <m>v = 6</m> when <m>w = 3</m>, 
+    what is <m>v</m> when <m>w = 4</m>?</p>
+</statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-33">
+    <statement><p>If <m>a</m> varies inversely with the square of <m>b</m> and <m>a = 12</m> when <m>b = 2</m>, 
+    what is <m>a</m> when <m>b = 4</m>?</p>
+</statement>
+    <answer>3</answer>
+</exercise>
+
+<exercise xml:id = "algebra-ex-34">
+    <statement><p>If <m>m</m> varies directly with <m>t</m> and <m>m = 12</m> when <m>t = 5</m>, 
+    what is <m>m</m> when <m>t= 8</m>?</p>
+</statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-35">
+    <statement><p>If <m>y</m> varies inversely with <m>x</m> and <m>y = 8</m> when <m>x = 2</m>, 
+    what is <m>y</m> when <m>x = 6</m>?</p>
+</statement>
+    <answer><m>\frac{8}{3}</m></answer>
+</exercise>
+
+<exercise xml:id = "algebra-ex-36">
+    <statement><p>If <m>y</m> varies inversely with <m>x</m> and <m>y = 3</m> when <m>x = 2</m>, 
+    what is <m>x</m> when <m>y = 6</m>?</p>
+</statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-37">
+    <statement><p>The fuel consumption (mpg) of a car varies inversely with its weight. A car that weighs 3800 pounds gets 33 mpg
+on the highway. What would be the fuel consumption of a car that weighs 5500 pounds?</p></statement>
+    <answer>22.8 mpg</answer>
+</exercise>
+
+<exercise xml:id = "algebra-ex-38">
+    <statement><p>The length a spring stretches varies directly with the weight placed at the end of the spring. When a 5-pound
+weight is placed on a spring, it stretches 2 inches. How far would the spring stretch if a 9-pound weight is placed
+on it?</p></statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-39">
+<statement><p>The distance that an object falls varies directly as the square of the time of the fall. If an object falls 16 feet in
+one second, how long for it to fall 144 feet?</p></statement>
+    <answer>3 seconds</answer>
+</exercise>
+
+<exercise xml:id = "algebra-ex-40">
+    <statement><p>The number of hours it takes ice to melt varies inversely with the air temperature. A block of ice melts in 2.5
+hours when the temperature is 54 degrees. How long would it take for the same block to melt if the
+temperature were 45 degrees?</p></statement>
+</exercise>
+
+<exercise xml:id = "algebra-ex-41">
+    <statement><p>The intensity of light measured in foot-candles varies inversely with the square of the distance from the light
+source. Suppose the intensity of a light bulb is 0.1 foot-candles at a distance of 3 meters. Find the intensity at 8
+meters.</p></statement>
+    <answer>0.014 ft-candles</answer>
+</exercise>
+               
+<exercise xml:id = "algebra-ex-42">
+        <statement><p>The weight of an object above the surface of the earth varies inversely with the distance from the center of the earth. If a person weighs 150 pounds when he is on the surface of the earth (3,960 miles from center), find the weight of the person if he is 20 miles above the surface.</p></statement>
+</exercise>
+
+
+               
+</exercises>
+    <exercises xml:id = "algebra-ch-test"><title>Chapter Test</title>
+    
+    <exercise>
+            <statement>
+                <p>The population of a city is growing by 2,000 people per year. If the city has a population of 
+                    42,000 in 2018,
+                    <ol label = "a">
+                        <li>Write a recursive formula for the population n years after 2018.</li>
+                        <li>Write an explicit formula for the population n years after 2018.</li>
+                        <li>Use one of the your formulas to predict the population in 2025.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li><m>P_n = P_{n-1} + 2000; P_0 = 42,000</m></li>
+                        <li><m>P_n = 42,000 + 2000n</m></li>
+                        <li><m>P_7=56,000</m></li>
+                    </ol>
+                </p>
+            </answer>
+            
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>The population of a city is growing by 15% per year. If the city has a population of 
+                    85,000 in 2015,
+                    <ol label = "a">
+                        <li>Write a recursive formula for the population n years after 2015.</li>
+                        <li>Write an explicit formula for the population n years after 2015.</li>
+                        <li>Use one of the your formulas to predict the population in 2030.</li>
+                    </ol>
+                </p>
+            </statement>
+             
+             <answer>
+                <p>
+                    <ol label = "a">
+                        <li><m>P_n = (1.15)P_{n-1}; P_0 = 85,000</m></li>
+                        <li><m>P_n = 85,000(1.15)^n</m></li>
+                        <li><m>P_{25}=691,650</m></li>
+                    </ol>
+                </p>
+            </answer>
+             
+            
+             
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>The average temperature at the surface of the earth is <m>20^{\circ}C</m>. Five kilometers 
+                    below the surface of the earth the temperature is <m>70^{\circ}C</m>.
+                    <ol label = "a">
+                        <li>Write an explicit linear equation that models how temperature depends on 
+                            depth (<m>n</m>) below the surface of the earth.</li>
+                        <li>Use your equation to find the temperature 25 km below the surface of the earth.</li>
+                        <li>Use your equation to predict the dpeth that will correspond with a temperature of
+                            <m>1,000^{\circ}C</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+             
+             <answer>
+                <p>
+                    <ol label = "a">
+                        <li><m>P_n = 20+10n</m></li>
+                        <li>270 degrees C</li>
+                        <li>98 km</li>
+                    </ol>
+                </p>
+            </answer>
+             
+             <solution>
+                 <p>
+                     <ol label = "a">
+                         <li><p>When <m>n = 0</m>, the temperature is 20 degrees, so 
+                             <m>P_0 = 20</m>.</p>
+                             
+                             <p>To find the common difference, we need to find the change in 
+                             temperature per km. Since the temperature increases by 50 degrees
+                                 in 5 km, <m>d = 50 \div 5 = 10</m>.</p>
+                             
+                             <p>We can model linear growth with the formula, 
+                                 <m>P_n = P_0 + dn</m>, so the equation is <m>P_n = 20 + 10n</m>.
+                             </p>
+                         </li>
+                         <li><m>n = 25</m> at 25 km below the surface. <m>P_{25}=20+10\cdot 25 = 270</m>.
+                         </li>
+                         <li><p>We need to find the n-value that corresponds with <m>P_n=10,000</m></p>
+                             <me>10,000 = 20 + 10n</me>
+                             <me>9,980 = 10n</me>
+                             <me>n = 9,980 \div 10 = 998</me>
+                         </li>
+                     </ol>
+                 </p>
+             </solution>
+             
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>In 2016, a gallon of milk was $2.15. Four years later, the price of a gallon of milk was $2.48.
+                    If inflation is a type of exponential growth, find the inflation rate.
+                </p>
+            </statement>
+             
+             <answer>2.5%</answer>
+             
+             <solution>
+                 <p>We can use the exponential model, <m>P_n = P_0(1+r)^n</m> to solve for <m>r</m>.</p>
+                 <me>2.35 = 2.15(1+r)^4</me>
+                 <me>\frac{2.35}{2.15} = (1+r)^4</me>
+                 <me>\sqrt[4]{\frac{2.35}{2.15}} = 1 + r</me>
+                 <me>1.025 = 1 + r</me>
+                 <me>r = 0.025 = 2.5\%</me>
+             </solution>
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>A car is purchased for $18,500. Five year later, the value of the car is $9,900.
+                    <ol label = "a">
+                        <li>Find a linear equation that models the the value of the car with time.</li>
+                        <li>Use your linear equation to predict the value of the car in 10 years.</li>
+                        <li>Find an exponential equation that models the value of the 
+                        car with time.</li>
+                        <li>Use your exponential equation to predict the value of the car in 10 years.</li>
+                    </ol>
+                </p>
+            </statement>
+             
+             <answer>
+                 <p>
+                     <ol label = "a">
+                         <li><m>P_n = 18500 -1720n</m></li>
+                         <li>$1300</li>
+                         <li><m>P_n = 18,500(0.882)^n</m></li>
+                         <li>$5,270.57</li>
+                     </ol>
+                 </p>
+             </answer>
+             
+             <solution>
+                 <p>
+                     <ol label = "a">
+                         <li>The value of the car goes down by <m>18,500 - 9,900 = 8,600</m> in five years.
+                             <m>d = 8,600 \div 5 = 1720</m>. Since the value of the car is decreasing, we 
+                             need a negative common difference. That makes the equation, <m>P_n = 18500 - 1720n</m>
+                         </li>
+                         <li><m>P_{10} = 18500 - 1720 \cdot 10 = 1300</m></li>
+                         <li>Use the equation model, <m>P_n = P_0(1+r)^n</m> to solve for <m>r</m>.
+                             <me>9,900 = 18,500(1+r)^5</me>
+                             <me>\frac{9900}{18500} = (1+r)^5</me>
+                             <me>\sqrt[5]{\frac{9900}{18500}}= 1 + r</me>
+                             <me>0.0882 = 1 + r</me>
+                             <me>P_n = 18500(0.882)^n</me>
+                         </li>
+                         <li><m>P_{10}=18500(0.822)^{10} = 5270.57</m></li>
+                     </ol>
+                 </p>
+             </solution>
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>Assum <m>y</m> varies directly as the square of <m>x</m>. If <m>y = 10</m> when 
+                    <m>x = 2</m>, what is <m>y</m> when <m>x = 4</m>?
+                </p>
+            </statement>
+             
+             <answer>40</answer>
+             
+             <solution>
+                 <p>y varies directly as the square of x: <m>y = k x^2</m>.</p>
+                 <p>Plug in y = 10 and x = 2 to solve for k:</p>
+                 <me>10 = k(2)^2</me>
+                 <me>10 = k\cdot 4</me>
+                 <me>k = \frac{10}{4}=\frac{5}{2}</me>
+                 <p>Plug in x = 4 to answer the question:</p>
+                 <me>y = \frac{5}{2}\cdot 4^2</me>
+                 <me>y = \frac{5}{2} \cdot \frac{16}{1}</me>
+                 <me>y = \frac{80}{2}=40</me>
+             </solution>
+             
+        </exercise>
+        
+         <exercise>
+            <statement>
+                <p>The time it takes to drive to Grand Junction is inversely proportional to your average speed. If Justin averages 60mph, it will take him 4 hours to make the drive.
+                    <ol label = "a">
+                        <li>Write an equation that models this situation.</li>
+                        <li>If Justin hits traffic and averages 50 mph, how long will it take him to the make the drive?</li>
+                    </ol>
+                </p>
+            </statement>
+             
+             <solution>
+                 <p>
+                     <ol label = "a">
+                         <li>Time varies inversely as speed is the relationship, <m>T = \frac{k}{S}</m>. 
+                             Plug in <m>S = 60</m> and <m>T = 4</m> and solve for k:
+                             <me>4 = \frac{k}{60}</me>
+                             <me>4 \cdot 60 = \frac{k}{60} \cdot 60</me>
+                             <me>k = 240</me>
+                             <me>T = \frac{240}{S}</me>
+                         </li>
+                         <li>Plug in <m>S = 50</m> and solve for <m>T</m>.
+                             <me>T = \frac{240}{50}=4.8</me>
+                         </li>
+                     </ol>
+                 </p>
+             </solution>
+             
+             <answer>
+                 <p>
+                     <ol label = "a">
+                         <li><m>T = \frac{240}{S}</m></li>
+                         <li>4.8 hours</li>
+                     </ol>
+                 </p>
+             </answer>
+        </exercise>
+                            
+             
+      
+    </exercises>
+
+</chapter>

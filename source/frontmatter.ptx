@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--******************************************************************** -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+
+    <titlepage>
+
+        <author>
+            <personname>RRCC Math Department</personname>
+            <institution>Red Rocks Community College</institution>
+            <email>martha.stevens@rrcc.edu</email>
+        </author>
+
+
+        <date><today /></date>
+
+    </titlepage>
+    
+     <colophon xml:id="front-colophon">
+
+        <credit>
+            <role>Project Lead</role>
+            <entity>Martha Stevens</entity>
+         </credit>
+         
+          <credit>
+            <role>Attribution</role>
+            <entity>Many sections of this book are derivatives of 
+                <url href = "http://www.opentextbookstore.com/mathinsociety/">Math in Society</url>,
+                by David Lippman et al., used under <url href = "https://creativecommons.org/licenses/by-sa/3.0/us/">
+                CC-BY-SA 3.0</url>. 
+                See the Attributions page for details and other attributions. </entity>
+        </credit>
+        
+
+        <edition>1.1</edition>
+
+        <!--<website>
+            <name><c>Website.Name</c></name>
+            <address>http://rrcc.edu</address>
+        </website>-->
+
+        <copyright>
+            <year>2022</year>
+            <holder>RRCC Math Department</holder>
+            <!--<minilicense></minilicense>-->
+            <shortlicense>This book is licensed under <url href= "https://creativecommons.org/licenses/by-sa/4.0/us/">
+                CC-BY-SA 4.0</url></shortlicense>
+        </copyright>
+
+    </colophon>
+
+    <acknowledgement xml:id="attribution"><title>Attributions</title>
+
+   
+
+        <p>This textbook is adapted from Math in Society, edited by 
+            David Lippman, Pierce College Ft Steilacoom, with some sections 
+            containing slightly modified content from The Normal Distribution by Karen Walters, CK-12 Foundation, found at 
+            Lumen Learning. One setion is derived from Modeling Using Variation in College Algebra by Jay Abramson at Openstax.</p>
+        
+        <p>
+        <ul>
+            <li>
+                <p><xref ref = "ProbSolve" />, <xref ref = "Sets"/>, <xref ref = "Logic" />, <xref ref = "section-algebra-linear" />, 
+                <xref ref = "section-algebra-exponential" />, <xref ref = "Finance" />, <xref ref = "Stats" />,
+                <xref ref = "Data" />, <xref ref = "Counting" />, <xref ref = "Probability" />,
+                <xref ref = "Voting" />, and <xref ref = "Apportion" /> are adapted from, <url href = "https://www.opentextbookstore.com/mathinsociety/">Math in Society</url> on 
+                <url href = "http://www.opentextbookstore.com/">OpenTextBookStore</url> by David Lippman, licensed under a 
+                <url href = "https://creativecommons.org/licenses/by-sa/3.0/us/">CC Attribution-Share Alike 3.0 United States</url>. 
+                    Changes made to the orginal work include:</p>
+                
+                <ul label = "circle">
+                    <li>Dividing counting and probability concepts into two separate chapters that can be taught 
+                        independently.</li>
+                    <li>Adding amortization Schedules to <xref ref = "Finance" />.</li>
+                    <li>Adding an alternate method of completing truth tables to <xref ref = "Logic" />.</li>
+                    <li>Removing logarithms and logistic growth from <xref ref = "Growth" />.</li>
+                    <li>Adding problems to exercise sets.</li>
+                </ul>
+                
+            </li>
+            
+            <li>
+                <p><xref ref = "section-algebra-variation" /> is adapted from <url href = "https://openstax.org/books/college-algebra/pages/5-8-modeling-using-variation">College Algebra: 5.8 Modeling Using Variation</url> by Jay Abramson, <url href = "https://openstax.org">OpenStax</url>, 
+                licensed under 
+                <url href = "https://creativecommons.org/licenses/by/4.0">CC BY 4.0</url>
+                    Changes made to the orginal work include:</p>
+                
+                <ul label = "circle">
+                    <li>Removing joint variation.</li>
+                    <li>Adding problems to exercise sets.</li>
+                </ul>
+            
+            </li>
+            
+            <li>
+                <p><xref ref = "Normal" /> is adapted from <url href = "https://courses.lumenlearning.com/math4libarts/chapter/understanding-normal-distribution/">"The Normal Distribution"</url> by Karen Walters, <url href = "www.ck12.org/">CK-12 Foundation</url> is licensed under 
+                <url href = "https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</url>
+                found at <url href = "https://courses.lumenlearning.com/math4libarts/">"Mathematics for the Liberal Arts"</url> by 
+                Lumen Learning
+                    Changes made to the orginal work include:</p>
+                
+                <ul label = "circle">
+                    <li>Reformatting probabilities as decimals.</li>
+                    <li>Adding problems to exercise sets.</li>
+                </ul>
+            </li>
+            
+        </ul>
+            
+        </p>
+        
+        <p>Learning objectives were added to all sections. Images either came directly from OER sources or were created at RRCC.</p>
+
+
+
+    </acknowledgement>
+
+
+    <preface xml:id="preface">
+        
+        <p>This text is intended for a Math for Liberal Arts course that highlights connections between mathematics and the 
+            society in which we live and is intended for liberal arts majors. 
+                Topics include set theory and logic, mathematical modeling, probability and statistical methods, and 
+            consumer 
+                mathematics.
+            
+        </p>
+    
+        <p>Content from David Lippman's <url href = "http://www.opentextbookstore.com/mathinsociety/">Math in Society</url>
+             (Open Textbook Store), Jay Abramson's 
+            <url href = "https://openstax.org/books/college-algebra/pages/5-8-modeling-using-variation">College Algebra: 5.8 Modeling 
+                Using Variation</url> (Open Stax), and Karen Walter's 
+            <url href = "https://courses.lumenlearning.com/math4libarts/chapter/understanding-normal-distribution/">"The Normal 
+                Distribution"</url> (CK-12 Foundation) have been remixed and slightly modified to align with the curriculum at Red 
+            Rocks Community College. Details can be found in the Attributions page.</p>
+            
+        <p>The exercises at the end of each chapter are intended to supplement webwork problems.</p>
+        
+        <p>We welcome comments, corrections, or suggestions.</p>
+        
+
+
+    </preface>
+
+</frontmatter>

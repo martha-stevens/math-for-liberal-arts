@@ -1,0 +1,3048 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+ <!-- Beginning of the Logic Chapter
+        1. Basic and Notation
+        2. Truth Tables
+        4. Verifying Arguments
+        5. Exercises
+************************************************************************************************-->
+            <title>Logic</title>
+               <introduction>
+                <p>This chapter gives an introduction to logic. It includes notation used, truth tables, conditional 
+                    statements, and verifying arguements.</p>
+                   
+                  
+
+                </introduction>
+            
+    <section xml:id="section-logic-intro"><title>Introduction to Logic</title>
+        <objectives>
+             <ul>
+                       <li>Introduce Boolean logic.</li>
+                        <li>Define conditional statements.</li>
+                        <li>Discuss quantified statements and how to negate them.</li>
+                        <li>Write statements in symbolic form.</li>
+                   </ul>
+        </objectives>
+        
+        <introduction>Logic is, basically, the study of valid reasoning. When searching the internet, we use Boolean 
+            logic - terms like “and” and “or” - to help us find specific web pages that fit in the sets we 
+            are interested in. After exploring this form of logic, we will look at logical arguments and
+            how we can determine the validity of a claim.</introduction>
+        
+        <subsection><title>Boolean Logic</title>
+        
+        <p>We can often classify items as belonging to sets. If you went the library to search for a book 
+            and they asked you to express your search using unions, intersections, and complements of 
+            sets, that would feel a little strange. Instead, we typically using words like “and”, “or”, and 
+            “not” to connect our keywords together to form a search. These words, which form the basis 
+            of Boolean logic, are directly related to our set operations. (Boolean logic was developed by 
+            the 19th-century English mathematician George Boole.)</p>
+        
+        <definition><title>Boolean Logic</title>
+            <p>Boolean logic combines multiple statements that are either true or false into an 
+                expression that is either true or false.</p>
+            <p>In connection to sets, a search is true if the element is part of the set.</p>
+        </definition>
+        
+        <p>Suppose M is the set of all mystery books, and C is the set of all comedy books. If we search 
+            for “mystery”, we are looking for all the books that are an element of the set M; the search is 
+            true for books that are in the set.</p>
+            
+        <p>When we search for “mystery and comedy”, we are looking for a book that is an element of both sets, 
+             in the intersection. If we were to search for “mystery or comedy”, we are looking for a book that is 
+             a mystery, a comedy, or both, which is the union of the sets. If we searched for “not comedy”, we are 
+             looking for any book in the library that is not a comedy, the complement of the set C.</p>
+        
+        <note>
+            <p>Connection to Set Operations</p>
+            
+            <p>A and B: elements in the intersection <m>A \cap B</m></p>
+            <p>A or B: elements in the union <m>A \cup B</m></p>
+            <p>not A: elements in the complement <m>A^C</m></p>
+        </note>
+        
+        <p>Notice here that or is not exclusive. This is a difference between the Boolean logic use of the
+            word and common everyday use. When your significant other asks “do you want to go to the
+            park or the movies?” they usually are proposing an exclusive choice - one option or the
+            other, but not both. In Boolean logic, the or is not exclusive - more like being asked at a
+            restaurant “would you like fries or a drink with that?” Answering “both, please” is an
+            acceptable answer.</p>
+        
+        <example>
+            <p>Suppose we are searching a library database for Mexican universities. Express a reasonable
+                search using Boolean logic.</p>
+            <solution>We could start with the search “Mexico and university”, but would be likely to find results
+                for the U.S. state New Mexico. To account for this, we could revise our search to read:
+                Mexico and university not “New Mexico”.</solution>
+        </example>
+        
+        <p>In most internet search engines, it is not necessary to include the word and; the search engine
+            assumes that if you provide two keywords you are looking for both. In Google’s search, the
+            keyword or has be capitalized as OR, and a negative sign in front of a word is used to
+            indicate not. Quotes around a phrase indicate that the entire phrase should be looked for. The
+            search from the previous example on Google could be written:
+            Mexico university -“New Mexico”.</p>
+        
+        <example>
+            <p>Describe the numbers that meet the condition:</p>
+            <p>even and less than 10 and greater than 0</p>
+            <solution>The numbers that satisfy all three requirements are {2, 4, 6, 8}</solution>
+        </example>
+
+       <p>Sometimes statements made in English can be ambiguous. For this reason, Boolean logic
+           uses parentheses to show precedent, just like in algebraic order of operations.</p>
+        
+        <example>
+            <p>Describe the numbers that meet the condition:</p>
+            <p><em>odd number and less than 20 and greater than 0 and (multiple of 3 or multiple of 5)</em></p>
+            <solution><p>The first three conditions limit us to the set {1, 3, 5, 7, 9, 11, 13, 15, 17, 19}</p>
+            <p>The last grouped conditions tell us to find elements of this set that are also either a multiple
+                of 3 or a multiple of 5. This leaves us with the set {3, 5, 9, 15}</p>
+            <p>Notice that we would have gotten a very different result if we had written</p>
+            <p><em>(odd number and less than 20 and greater than 0 and multiple of 3) or multiple of 5</em></p>
+            <p>The first grouped set of conditions would give {3, 9, 15}. When combined with the last
+                condition, though, this set expands without limits:</p>
+                <p>{3, 5, 9, 15, 20, 25, 30, 35, 40, 45, …}</p></solution>
+        </example>
+        
+        <example>
+            <p>The English phrase “Go to the store and buy me eggs and bagels or cereal” is ambiguous; it
+                is not clear whether the requestors is asking for eggs always along with either bagels or
+                cereal, or whether they’re asking for either the combination of eggs and bagels, or just cereal.</p>
+            <p>For this reason, using parentheses clarifies the intent:</p>
+            <p>Eggs and (bagels or cereal) means Option 1: Eggs and bagels, Option 2: Eggs and cereal</p>
+            <p>(Eggs and bagels) or cereal means Option 1: Eggs and bagels, Option 2: Cereal</p>
+        </example>
+        
+        <p>Be aware that when a string of conditions is written without grouping symbols, it is often
+            interpreted from the left to right, resulting in the latter interpretation.</p>
+            
+        </subsection>
+        
+        <subsection><title>Conditional Statements</title>
+    
+        <p>Beyond searching, Boolean logic is commonly used in spreadsheet applications like Excel to
+            do conditional calculations. A statement is something that is either true or false. A statement
+            like <m>3  \le 5</m> is true; a statement like “a rat is a fish” is false. A statement like
+            <m> x \le 5</m>” is true for some values of x and false for others. When an action is taken or not 
+            depending on the value of a statement, it forms a conditional.</p>
+        
+        <definition><title>Statements and Conditionals</title>
+            <p>A <term>statement</term> is either true or false.</p>
+            <p>A <term>conditional</term> is a compound statement of the form “if p then q” or “if p then q, else s”.</p>
+        </definition>
+        
+        <example>
+            <p>In common language, an example of a conditional statement would be “If it is raining, then
+                we’ll go to the mall. Otherwise we’ll go for a hike.”</p>
+            <p>The statement “If it is raining” is the condition - this may be true or false for any given day.
+                If the condition is true, then we will follow the first course of action, and go to the mall. If
+                the condition is false, then we will use the alternative, and go for a hike.</p>
+        </example>
+        
+<!-- Several Examples with Excel are here...maybe add them later**************************************** -->
+        
+       <example>
+           <p>A parent might say to their child “if you clean your room and take out the garbage, then you
+               can have ice cream.”</p>
+           <p>Here, there are two simpler conditions:
+           <ol label = "1">
+               <li>The child cleaning her room.</li>
+               <li>The child taking out the garbage</li>
+               </ol></p>
+           
+           <p>Since these conditions were joined with and, the combined conditional will be true only if
+                both simpler conditions are true; if either chore is not completed, then the parent’s condition
+               is not met.</p>
+           
+           <p>Notice that if the parent had said “if you clean your room or take out the garbage, then you
+                can have ice cream”, then the child would need to complete only one chore to meet the
+               condition.</p>
+        </example>
+        
+        </subsection>
+        
+         <subsection><title>Quantified Statements</title>
+            <p>Words that describe an entire set, such as “all”, “every”, or “none”, are called universal
+            quantifiers because that set could be considered a universal set. In contrast, words or phrases
+            such as “some”, “one”, or “at least one” are called existential quantifiers because they
+            describe the existence of at least one element in a set.</p>
+
+            <definition><title>Quantifiers</title>
+                <p>A <term>universal quantifier</term> states that an entire set of things share a characteristic.</p>
+                <p>An <term>existential quantifier</term> states that a set contains at least one element.</p>
+            </definition>
+
+            <p>Something interesting happens when we negate - or state the opposite of - a quantified
+            statement.</p>
+
+            <example>
+                <p>Suppose your friend says “Everybody cheats on their taxes.” What is the minimum amount
+                    of evidence you would need to prove your friend wrong?</p>
+                <p>To show that it is not true that everybody cheats on their taxes, all you need is one person who does not cheat on their taxes. It would be perfectly fine to produce more people who do not cheat, but one counterexample is all you need.</p>
+                <p>It is important to note that you do not need to show that absolutely nobody cheats on their taxes.</p>
+            </example>
+
+            <example>
+                <p>Suppose your friend says “One of these six cartons of milk is leaking.” What is the minimum amount of evidence you would need to prove your friend wrong?</p>
+                <solution>In this case, you would need to check all six cartons and show that none of them is leaking. You cannot disprove your friend’s statement by checking only one of the cartons.</solution>
+            </example>
+
+            <p>When we negate a statement with a universal quantifier, we get a statement with an existential quantifier, and vice-versa.</p>
+
+            <note><title>Negating a quantified statement</title>
+            <p>The negation of “all A are B” is “at least one A is not B”.</p>
+            <p>The negation of “no A are B” is “at least one A is B”.</p>
+            <p>The negation of “at least one A is B” is “no A are B”.</p>
+            <p>The negation of “at least one A is not B” is “all A are B”</p>
+            </note>
+
+            <example>
+                <p>“Somebody brought a flashlight.” Write the negation of this statement.</p>
+                <solution>The negation is “Nobody brought a flashlight.”</solution>
+            </example>
+
+            <example>
+                <p>“There are no prime numbers that are even.” Write the negation of this statement.</p>
+                <solution>The negation is “At least one prime number is even.</solution>
+            </example>
+
+            <problem><title>Try It Now</title>
+                <p>Write the negation of “All Icelandic children learn English in school.”</p>
+                <answer>At least one Icelandic child did not learn English in school. </answer>
+            </problem>
+        </subsection>
+        
+        <subsection><title>Statements in Symbolic Form.</title>
+        
+            <p>Before we focus on truth tables, we’re going to introduce some symbols that are commonly
+        used for and, or, and not.</p>
+
+    <note><title>Symbols</title>
+        <p>Some of the symbols that are used for and, or, and not are:</p>
+        <p>The symbol <m>\wedge</m> is used for <em>and</em>: A and B is notated <m>A \wedge B</m></p>
+        <p>The symbol <m>\vee</m> is used for <em>or</em>: A or B is notated <m>A \vee B</m></p>
+        <p>The symbol <m>\sim</m> is used for <em>not</em>: not A is notated <m>\sim A</m></p>
+    </note>
+        
+         <p>You can remember the first two symbols by relating them to the shapes for the union and
+        intersection. <m>A \wedge B</m> would be the elements that exist in both sets, in <m>A \cap B</m>. Likewise, <m>A \vee B</m>
+        would be the elements that exist in either set, in <m>A \cup B</m>. When we are working with sets, we
+        use the rounded version of the symbols; when we are working with statements, we use the
+        pointy version.</p>
+
+
+    <example>
+    <p>Translate each statement into symbolic notation. Let P represent “I like Pepsi” and let C
+    represent “I like Coke”.</p>
+        <p>
+    <ol label = "a">
+        <li>I like Pepsi or I like Coke.
+            </li>
+        <li>I like Pepsi and I like Coke.
+            </li>
+        <li>I do not like Pepsi.
+            </li>
+        <li>It is not the case that I like Pepsi or Coke.
+            </li>
+        <li>I like Pepsi and I do not like Coke.
+            </li>
+            </ol></p>
+        
+        <solution>
+            <p>
+                <ol label = "a">
+                    <li><m>P \vee C</m></li>
+                    <li><m>P \wedge C</m></li>
+                    <li><m>\sim P</m></li>
+                    <li><m>\sim \left( P \vee C \right)</m></li>
+                    <li><m>P \wedge \sim C</m></li>
+                </ol>
+            </p>
+            
+           <p>As you can see, we can use parentheses to organize more complicated statements.</p>  
+            
+        </solution>
+                
+        
+    </example>
+
+    <problem><title>Try It Now</title>
+    <p>Translate “We have carrots or we will not make soup” into symbols. Let C represent “we
+    have carrots” and let S represent “we will make soup”.</p>
+
+    <answer><m>C \vee \sim S</m></answer>
+    </problem>
+            
+        </subsection>
+        
+    </section>
+
+    <section xml:id ="section-logic-truthtables"><title>Truth Tables</title>
+        
+        <objectives>
+             <ul>
+                        <li>Create truth tables for conjunctions, disjunctions, and negations.</li>
+                        <li>Determine if statements are logically equivalent.</li>
+                        <li>Understand and apply DeMorgan’s Laws.</li>
+                   </ul>
+        </objectives>
+
+    <introduction>This section describes how to create truth tables and discusses alternate forms of 
+        conditional statements.</introduction>
+        
+        
+        
+        <subsection><title>Truth Tables: Conjuction (and), Disjunction (or), Negation (not)</title>
+
+    <p>Because complex Boolean statements can get tricky to think about, we can create a truth
+    table to keep track of what truth values for the simple statements make the complex
+    statement true and false.</p>
+
+    <definition><title>Truth Tables</title>
+        <p>A table showing what the resulting truth value of a complex statement is for all the
+        possible truth values for the simple statements.</p>
+    </definition>
+
+    <example>
+        <p>Suppose you’re picking out a new couch, and your significant other says “get a sectional or
+        something with a chaise”.</p>
+        
+        <p>This is a complex statement made of two simpler conditions: “is a sectional”, and “has a
+        chaise”. For simplicity, let’s use S to designate “is a sectional”, and C to designate “has a
+        chaise”.</p>
+        
+        <p>A truth table for this situation would look like this:</p>
+        
+        <table >
+            <title>Truth Table</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>S</m> </cell>
+                        <cell right="minor"><m>C</m> </cell>
+                        <cell><m>S \vee C</m> </cell>
+                    </row>
+                   <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+            </tabular>
+        </table >
+        
+        <p>In the table, T is used for true, and F for false. In the first row, if S is true and C is also true,
+        then the complex statement “S or C” is true. This would be a sectional that also has a chaise,
+        which meets our desire. (Remember that or in logic is not exclusive; if the couch has both
+            features, it meets the condition.)</p>
+
+    </example>
+        
+    <p>In the previous example about the couch, the truth table was really just summarizing what we
+    already know about how the or statement work. The truth tables for the basic and, or, and not
+        statements are shown below.</p>
+    
+    <table >
+            <title>Conjuction</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>A \wedge B</m> </cell>
+                    </row>
+                   <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+            </tabular>
+        </table >
+        
+         <table >
+            <title>Disjuction</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>A \vee B</m> </cell>
+                    </row>
+                   <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+            </tabular>
+        </table >
+        
+         <table >
+            <title>Negation</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell right="minor"><m>A</m> </cell>
+                        <cell><m>\sim A</m> </cell>
+                    </row>
+                   <row>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
+            </tabular>
+        </table >
+        
+        <p>Truth tables really become useful when we analyze more complex Boolean statements</p>
+        
+        <example>
+            <p>Create a truth table for the statement <m>A \vee \sim B</m></p>
+            
+            <solution>
+            <p>When we create the truth table, first list the variables involved. Then rewrite the statement leaving a column for each 
+                part of the statement. </p>
+            
+             <table >
+            <title>Creating a Truth Table: Step 1</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>A</m> </cell>
+                        <cell><m>\vee</m></cell>
+                        <cell><m>\sim B </m></cell>
+                    </row>
+                 </tabular>
+            </table>
+            
+            <p>Then we need to list all the possible truth value combinations for A and B. 
+                Notice how the first column contains 2 Ts followed by 2 Fs, and the second column alternates T, F, T, F. 
+                This pattern ensures that all 4 combinations are considered.</p>
+            
+             <table >
+            <title>Creating a Truth Table: Step 2</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>A</m> </cell>
+                        <cell><m>\vee</m></cell>
+                        <cell><m>\sim B </m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                    </row>
+                 </tabular>
+            </table>
+            
+            <p>Notice that we had change the T's to F's and F's to T's when filling out the column for <m>/sim B</m></p>
+            
+            <p>Finally we can fill out the column with the <m>/vee</m>.  The disjunction is true when at least one of the values in 
+                <m>A</m> or <m>/sim B</m> is true.</p>
+            
+            <table>
+            <title>Creating a Truth Table: Step 3</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>A</m> </cell>
+                        <cell><m>\vee</m></cell>
+                        <cell><m>\sim B </m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+                 </tabular>
+            </table>
+            
+            <p>The last column we completed is our final answer: TTFT</p>
+            
+                <p>The truth table shows that <m>A \vee \sim B</m> is true in three cases and false in one case. If you’re
+        wondering what the point of this is, suppose it is the last day of the baseball season and two
+        teams, who are not playing each other, are competing for the final playoff spot. Anaheim will
+        make the playoffs if it wins its game or if Boston does not win its game. (Anaheim owns the
+        tie-breaker; if both teams win, or if both teams lose, then Anaheim gets the playoff spot.) If A
+                    = Anaheim wins its game and B = Boston wins its game, then <m>A \vee \sim B</m> represents the situation
+        “Anaheim wins its game or Boston does not win its game”. The truth table shows us the
+        different scenarios related to Anaheim making the playoffs. In the first row, Anaheim wins
+        its game and Boston wins its game, so it is true that Anaheim makes the playoffs. In the
+        second row, Anaheim wins and Boston does not win, so it is true that Anaheim makes the
+        playoffs. In the third row, Anaheim does not win its game and Boston wins its game, so it is
+        false that Anaheim makes the playoffs. In the fourth row, Anaheim does not win and Boston
+            does not win, so it is true that Anaheim makes the playoffs.</p>
+            </solution>
+                 
+            
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>Create a truth table for this statement: <m>\sim A \wedge B</m></p>
+            
+            <answer>
+             <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>\sim A</m> </cell>
+                        <cell><m>\wedge</m></cell>
+                        <cell><m>B</m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                    </row>
+                 </tabular>
+            </table>
+            
+                <p>We start by filling out all columns with A's and B's. Then to finish we compare <m>\sim A</m> with <m>B</m>. The 
+                    conjuction (and) is true with both statements are true.  The values in the <m>\wedge</m> column are: FFTF</p>
+            
+            </answer>
+        </problem>
+        
+        
+    <example>
+    <p>Create a truth table for this statement: <m>\left(p \wedge q \right) \vee \sim q</m></p>
+        
+        <solution>
+
+    <p>First create a row for p, q, and each item in the statement. Then fill out all possible combinations values for p and q.</p>
+
+     <table >
+            <title>Creating a Truth Table: Step 1</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>p</m> </cell>
+                        <cell right="minor"><m>q</m> </cell>
+                        <cell>(<m>p</m> </cell>
+                        <cell><m>\wedge</m></cell>
+                        <cell><m>q</m>)</cell>
+                        <cell><m>\vee </m></cell>
+                        <cell><m> \sim q </m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                     <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                     <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                     <row>
+                        <cell>Step 1</cell>
+                        <cell right="minor">Step 1</cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                 </tabular>
+            </table>
+
+            <p>Next fill out the p's and q's in the rest of the table.</p>
+
+            <table >
+            <title>Creating a Truth Table: Step 2</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>p</m> </cell>
+                        <cell right="minor"><m>q</m> </cell>
+                        <cell>(<m>p</m> </cell>
+                        <cell><m>\wedge</m></cell>
+                        <cell><m>q</m>)</cell>
+                        <cell><m>\vee </m></cell>
+                        <cell><m> \sim q </m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                    </row>
+                     <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                    </row>
+                     <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                    </row>
+                     <row>
+                        <cell>Step 1</cell>
+                        <cell right="minor">Step 1</cell>
+                        <cell>Step 2</cell>
+                        <cell></cell>
+                        <cell>Step 2</cell>
+                        <cell></cell>
+                        <cell>Step 2</cell>
+                    </row>
+                 </tabular>
+            </table>
+
+            <p>We work inside the parentheses next; the <m>\wedge</m> symbol means "and" is only true when both p and q are true.</p>
+
+            <table >
+            <title>Creating a Truth Table: Step 3</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>p</m> </cell>
+                        <cell right="minor"><m>q</m> </cell>
+                        <cell>(<m>p</m> </cell>
+                        <cell><m>\wedge</m></cell>
+                        <cell><m>q</m>)</cell>
+                        <cell><m>\vee </m></cell>
+                        <cell><m> \sim q </m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                    </row>
+                     <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                    </row>
+                     <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell></cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell></cell>
+                        <cell>T</cell>
+                    </row>
+                     <row>
+                        <cell>Step 1</cell>
+                        <cell right="minor">Step 1</cell>
+                        <cell>Step 2</cell>
+                        <cell>Step 3</cell>
+                        <cell>Step 2</cell>
+                        <cell></cell>
+                        <cell>Step 2</cell>
+                    </row>
+                 </tabular>
+            </table>
+
+            <p>Finally we compare the result of <m>p \wedge q</m>, which is in the column labeled "Step 3," with the values of <m>\sim q</m>.  We have the <m>\vee</m> symbol, so the statement is true if we have at least one T.</p>
+
+            <table >
+            <title>Creating a Truth Table: Step 4</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>p</m> </cell>
+                        <cell right="minor"><m>q</m> </cell>
+                        <cell>(<m>p</m> </cell>
+                        <cell><m>\wedge</m></cell>
+                        <cell><m>q</m>)</cell>
+                        <cell><m>\vee </m></cell>
+                        <cell><m> \sim q </m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                    </row>
+                     <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+                     <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+                     <row>
+                        <cell>Step 1</cell>
+                        <cell right="minor">Step 1</cell>
+                        <cell>Step 2</cell>
+                        <cell>Step 3</cell>
+                        <cell>Step 2</cell>
+                        <cell>Step 4</cell>
+                        <cell>Step 2</cell>
+                    </row>
+                 </tabular>
+            </table>
+
+            <p>The final answer would be the values in the column labeled "Step 4," TTFT</p>
+            
+        </solution>
+
+        </example>
+            
+        </subsection>
+        
+        <subsection><title>De Morgan's Laws</title>
+            
+        <p>A contemporary of Boole’s, Augustus De Morgan, formalized two rules of logic that had
+        previously been known informally. They allow us to rewrite the negation of a conjunction as
+            a disjunction, and vice-versa.</p>
+            
+        <p>For example, suppose you want to schedule a meeting with two colleagues at 4:30PM on
+        Friday, and you need both of them to be available at that time. What situation would make it
+        impossible to have the meeting? It is NOT the case that colleague a is available AND
+            colleague b is available: <m>\sim \left(a \wedge b\right)</m>. This situation is equivalent to either colleague a NOT
+            being available OR colleague b NOT being available: <m>\sim a \vee \sim b</m>.</p>
+            
+            <definition><title>De Morgan's Laws</title>
+                <p>The negation of a conjunction is equivalent to the disjunction of the negation of the
+                    statements making up the conjunction. To negate an "and" statement, negate each part
+                    and change the "and" to "or".</p>
+                <p><m>\sim \left(p \wedge q \right)</m> is equivalent to <m>\sim p \vee \sim q</m></p>
+                <p>The negation of a disjunction is equivalent to the conjunction of the negation of the
+                    statements making up the disjunction. To negate an "or" statement, negate each part
+                    and change the "or" to "and".</p>
+                <p><m>\sim \left(p \vee q \right)</m> is equivalent to <m>\sim p \wedge \sim q</m></p>
+            </definition>
+            
+            <example>
+                <p>For Valentine’s Day, you did not get your sweetie flowers or candy: Which of the following
+                    statements is logically equivalent?
+                <ol label = "a">
+                    <li>You did not get them flowers or did not get them candy.</li>
+                    <li>You did not get them flowers and did not get them candy.</li>
+                    <li>You got them flowers or got them candy.</li>
+                </ol></p>
+                <solution>
+                    <p>
+                    <ol label = "a">
+                        <li>This statement does not go far enough; it leaves open the possibility that you got them one
+                            of the two things.</li>
+                        <li>This statement is equivalent to the original; <m>\sim \left(f \vee c\right)</m>
+                            is equivalent to <m>\sim f \wedge \sim c</m>.</li>
+                        <li>This statement says that you got them something, but we know that you did not.</li>
+                    </ol></p>
+                </solution>
+            </example>
+            
+            <p>Statements are logically equivalent if they have the same values in a truth table. We can use truth
+                tables to verify DeMorgan's laws.</p>
+            
+            <example>
+                <p>Compare truth tables for <m>\sim p \vee \sim q</m> and <m>\sim \left(p \wedge q\right)</m>. Are the 
+                    statements logically equivalent?</p>
+                
+                <solution>
+                    <p>The truth table for <m>\sim p \vee \sim q</m> is:</p>
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>p</cell>
+                                <cell right="minor">q</cell>
+                                <cell><m>\sim p</m></cell>
+                                <cell><m>\vee</m></cell>
+                                <cell><m>\sim q</m></cell>
+                            </row>
+                            <row>
+                                <cell>T</cell>
+                                <cell right="minor">T</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                            </row>
+                            <row>
+                                <cell>T</cell>
+                                <cell right="minor">F</cell>
+                                <cell>F</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                            </row>
+                            <row>
+                                <cell>F</cell>
+                                <cell right="minor">T</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>
+                            </row>
+                            <row>
+                                <cell>F</cell>
+                                <cell right="minor">F</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                            </row>
+                            <row>
+                                <cell>Step 1</cell>
+                                <cell right="minor">Step 1</cell>
+                                <cell>Step 2</cell>
+                                <cell>Step 3</cell>
+                                <cell>Step 2</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    <p>Notice the values in the column labled "Step 3" are FTTT.</p>
+                    
+                    <p>The truth table for <m>\sim \left( p \wedge q \right)</m> is:</p>
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>p</cell>
+                                <cell right="minor">q</cell>
+                                <cell><m>\sim</m></cell>
+                                <cell>(<m>p</m></cell>
+                                <cell><m>\wedge</m></cell>
+                                <cell><m>q</m>)</cell>
+                            </row>
+                            <row>
+                                <cell>T</cell>
+                                <cell right="minor">T</cell>
+                                <cell>F</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                            </row>
+                            <row>
+                                <cell>T</cell>
+                                <cell right="minor">F</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                            </row>
+                            <row>
+                                <cell>F</cell>
+                                <cell right="minor">T</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                                <cell>T</cell>
+                            </row>
+                            <row>
+                                <cell>F</cell>
+                                <cell right="minor">F</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                            </row>
+                            <row>
+                                <cell>Step 1</cell>
+                                <cell right="minor">Step 1</cell>
+                                <cell>Step 4</cell>
+                                <cell>Step 2</cell>
+                                <cell>Step 3</cell>
+                                <cell>Step 3</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    <p>The values in the column labled "Step 4" are FTTT.</p>
+                    
+                    <p>Both of these statements have truth tables that result in FTTT, so they are 
+                        logically equivalent.</p>
+                </solution>
+            </example>
+                    
+                        
+            
+            <problem><title>Try It Now</title>
+                <p>To serve as the President of the US, a person must have been born in the US, must be at least
+                    35 years old, and must have lived in the US for at least 14 years. What minimum set of
+                    conditions would disqualify someone from serving as President?</p>
+                
+                <answer>Failing to meet just one of the three conditions is all it takes to be disqualified. A person is
+                    disqualified if they were not born in the US, or are not at least 35 years old, or have not
+                    lived in the US for at least 14 years. The key word here is “or” instead of “and”. </answer>
+            </problem>
+            
+        </subsection>
+
+        
+<!-- Skipping examples with three variables... can add those later *****-->
+        
+    </section>
+    
+    <section xml:id = "section-logic-conditional"><title>Conditional Statements</title>
+        <objectives>
+            <ul>
+                <li> Create truth tables for conditional statements.</li>
+                <li>Identify alternate forms of conditional statements, including the inverse, converse, and 
+                    contrapositive.</li>
+                <li>Negate conditional statements.</li>
+                <li>Create truth tables for biconditional statements.</li>
+            </ul>
+        </objectives>
+        
+        <introduction>
+                    <p>We discussed conditional statements earlier, in which we take an action based on the value of
+                the condition. We are now going to look at another version of a conditional, sometimes
+                called an implication, which states that the second part must logically follow from the first.</p>
+        </introduction>
+        
+        <subsection><title>Truth Tables: Conditional Statements</title>
+            
+            <note><title>Conditional</title>
+                <p>A conditional is a logical compound statement in which a statement p, called the
+                    antecedent, implies a statement q, called the consequent.</p>
+                <p>A conditional is written as <m>p \to q</m> and is translated as “if p, then q”.</p>
+                
+            </note>
+            
+             <example>
+            <p>The English statement “If it is raining, then there are clouds is the sky” is a conditional
+            statement. It makes sense because if the antecedent “it is raining” is true, then the consequent
+            “there are clouds in the sky” must also be true.</p>
+
+            </example>
+
+            <p>Notice that the statement tells us nothing of what to expect if it is not raining; there might be
+            clouds in the sky, or there might not. If the antecedent is false, then the consquent becomes
+            irrelevant.</p>
+
+            <example>
+   
+                <p>Suppose you order a team jersey online on Tuesday and want to receive it by Friday so you
+                can wear it to Saturday’s game. The website says that if you pay for expedited shipping, you
+                will receive the jersey by Friday. In what situation is the website telling a lie?</p>
+                <p>There are four possible outcomes:
+                <ol label ="1">
+                    <li>You pay for expedited shipping and receive the jersey by Friday</li>
+                    <li>You pay for expedited shipping and don’t receive the jersey by Friday</li>
+                    <li>You don’t pay for expedited shipping and receive the jersey by Friday</li>
+                    <li>You don’t pay for expedited shipping and don’t receive the jersey by Friday</li>
+                </ol></p>
+
+                <p>Only one of these outcomes proves that the website was lying: the second outcome in which
+                    you pay for expedited shipping but don’t receive the jersey by Friday. The first outcome is
+                    exactly what was promised, so there’s no problem with that. The third outcome is not a lie
+                    because the website never said what would happen if you didn’t pay for expedited shipping;
+                    maybe the jersey would arrive by Friday whether you paid for expedited shipping or not. The
+                    fourth outcome is not a lie because, again, the website didn’t make any promises about when
+                    the jersey would arrive if you didn’t pay for expedited shipping.</p>
+
+            </example>
+            
+            <example>
+                <p>A friend tells you “If you upload that picture to Facebook, you’ll lose your job.” Under what 
+                    conditions can you say that your friend was wrong?</p>
+                
+                <p>There are four possible outcomes:
+                <ol label = "1">
+                    <li>You upload the picture and lose your job</li>
+                    <li>You upload the picture and don’t lose your job</li>
+                    <li>You don’t upload the picture and lose your job</li>
+                    <li>You don’t upload the picture and don’t lose your job</li>
+                </ol></p>
+                
+                <p>There is only one possible case in which you can say your friend was wrong: the second
+                outcome in which you upload the picture but still keep your job. In the last two cases, your
+                friend didn’t say anything about what would happen if you didn’t upload the picture, so you
+                can’t say that their statement was wrong. Even if you didn’t upload the picture and lost your
+                job anyway, your friend never said that you were guaranteed to keep your job if you didn’t
+                    upload the picture; you might lose your job for missing a shift or punching your boss instead.</p>
+                
+            </example>
+            
+            <p>In traditional logic, a conditional is considered true as long as there are no cases in which the
+                antecedent is true and the consequent is false.</p>
+            
+            <table >
+            <title>Truth Table for the Conditional</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>A \to B</m> </cell>
+                    </row>
+                   <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
+            </tabular>
+        </table >
+            
+        </subsection>
+        
+        <subsection><title>Alternate Forms of Conditional Statements</title>
+            
+        <p>For any conditional, there are three related statements, the converse, the inverse, and the
+            contrapositive.</p>
+            
+            <note><title>Statements Related to the Conditional</title>
+                <p>The original conditional is “if p, then q” <m>p \to q</m></p>
+                <p>The converse is “if q, then p” <m>q \to p</m></p>
+                <p>The inverse is “if not p, then not q” <m>\sim p \to \sim q</m></p>
+                <p>The contrapositive is “if not q, then not p” <m>\sim q \to \sim p</m></p>
+            </note>
+            
+            <example>
+                <p>Consider again the conditional “If it is raining, then there are clouds in the sky.” It seems
+                    reasonable to assume that this is true.</p>
+                <p>The converse would be “If there are clouds in the sky, then it is raining.” This is not always
+                    true.</p>
+                <p>The inverse would be “If it is not raining, then there are not clouds in the sky.” Likewise, this
+                    is not always true.</p>
+                <p>The contrapositive would be “If there are not clouds in the sky, then it is not raining.” This
+                    statement is true, and is equivalent to the original conditional.</p>
+            </example>
+            
+            <p>Looking at truth tables, we can see that the original conditional and the contrapositive are
+                logically equivalent, and that the converse and inverse are logically equivalent.</p>
+            
+            <table>
+                <title>Conditional and Related Statements</title>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell></cell>
+                        <cell></cell>
+                        <cell>Conditional</cell>
+                        <cell>Converse</cell>
+                        <cell>Inverse</cell>
+                        <cell>Contrapositive</cell>
+                    </row>
+                   <row>
+                       <cell><m>p</m></cell>
+                       <cell right="minor"><m>q</m></cell>
+                       <cell><m>p \to q</m></cell>
+                       <cell><m>\sim p \to \sim q</m></cell>
+                       <cell><m>q \to p</m></cell>
+                       <cell><m>\sim q \to \sim p</m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                       <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>F</cell>
+                        <cell>F</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                        <cell>T</cell>
+                    </row>
+            </tabular>
+        </table>
+
+<note><title>Equivalence</title>
+                <p>A conditional statement and its contrapositive are logically equivalent.
+                    The converse and inverse of a conditional statement are logically equivalent.</p>
+            </note>
+            
+            <p>In other words, the original statement and the contrapositive must agree with each other; they
+                must both be true, or they must both be false. Similarly, the converse and the inverse must
+                agree with each other; they must both be true, or they must both be false.</p>
+            
+            <p>Be aware that symbolic logic cannot represent the English language perfectly. For example,
+                we may need to change the verb tense to show that one thing occurred before another.</p>
+            
+            <example>
+                <p>Suppose this statement is true: “If I eat this giant cookie, then I will feel sick.” Which of the
+                    following statements must also be true?</p>
+                <p>
+                <ol label = "a">
+                    <li>If I feel sick, then I ate that giant cookie.</li>
+                    <li>If I don’t eat this giant cookie, then I won’t feel sick.</li>
+                    <li>If I don’t feel sick, then I didn’t eat that giant cookie.</li>
+                </ol></p>
+                
+                <solution>
+                    <p>
+                <ol label = "a">
+                    <li>This is the converse, which is not necessarily true. I could feel sick for some other reason,
+                        such as drinking sour milk.</li>
+                    <li>This is the inverse, which is not necessarily true. Again, I could feel sick for some other
+                        reason; avoiding the cookie doesn’t guarantee that I won’t feel sick.</li>
+                    <li>This is the contrapositive, which is true, but we have to think somewhat backwards to
+                    explain it. If I ate the cookie, I would feel sick, but since I don’t feel sick, I must not have
+                        eaten the cookie.</li>
+                </ol></p>
+                
+                <p>Notice again that the original statement and the contrapositive have the same truth value
+                    (both are true), and the converse and the inverse have the same truth value (both are false).</p>
+                    
+                </solution>
+                
+            </example>
+            
+            <problem><title>Try It Now</title>
+                <p>“If you microwave salmon in the staff kitchen, then I will be mad at you.” If this statement is
+                    true, which of the following statements must also be true?
+                <ol label = "a">
+                    <li>If you don’t microwave salmon in the staff kitchen, then I won’t be mad at you.</li>
+                    <li>If I am not mad at you, then you didn’t microwave salmon in the staff kitchen.</li>
+                    <li>If I am mad at you, then you microwaved salmon in the staff kitchen.</li>
+                </ol></p>
+                
+                <answer>Choice b is correct because it is the contrapositive of the original statement.</answer>
+                
+            </problem>
+            
+            <p>Consider the statement “If you park here, then you will get a ticket.” What set of conditions
+                would prove this statement false?
+            
+            <ol label = "a">
+                <li>You don’t park here and you get a ticket.</li>
+                <li>You don’t park here and you don’t get a ticket.</li>
+                <li>You park here and you don’t get a ticket.</li>
+                
+            </ol></p>
+            
+            <p>The first two statements are irrelevant because we don’t know what will happen if you park
+        somewhere else. The third statement, however contradicts the conditional statement “If you
+        park here, then you will get a ticket” because you parked here but didn’t get a ticket. This
+        example demonstrates a general rule; the negation of a conditional can be written as a
+        conjunction: “It is not the case that if you park here, then you will get a ticket” is equivalent
+                to “You park here and you do not get a ticket.”</p>
+            
+            <note><title>The Negation of a Conditional</title>
+                <p>The negation of a conditional statement is logically equivalent to a conjunction of the
+                    antecedent and the negation of the consequent.</p>
+                <p><m>\sim \left(p \to q\right)</m> is equivalent to <m>p \wedge \sim q</m></p>
+            </note>
+            
+            <example>
+                <p>Which of the following statements is equivalent to the negation of “If you don’t grease the
+                    pan, then the food will stick to it” ?
+                
+                <ol label ="a">
+                    <li>I didn’t grease the pan and the food didn’t stick to it.</li>
+                    <li>I didn’t grease the pan and the food stuck to it.</li>
+                    <li>I greased the pan and the food didn’t stick to it.</li>
+                </ol></p>
+                
+                <solution>
+                    <p>
+                    <ol label = "a">
+                        <li>This is correct; it is the conjunction of the antecedent and the negation of the consequent.
+                        To disprove that not greasing the pan will cause the food to stick, I have to not grease the pan
+                        and have the food not stick.</li>
+                        <li>This is essentially the original statement with no negation; the “if…then” has been
+                        replaced by “and”.</li>
+                        <li>This essentially agrees with the original statement and cannot disprove it.</li>
+                    </ol></p>
+                </solution>
+            </example>
+            
+            <problem><title>Try It Now</title>
+                <p>“If you go swimming less than an hour after eating lunch, then you will get cramps.” Which
+                    of the following statements is equivalent to the negation of this statement?
+                <ol label = "a">
+                    <li>I went swimming more than an hour after eating lunch and I got cramps.</li>
+                    <li>I went swimming less than an hour after eating lunch and I didn’t get cramps.</li>
+                    <li>I went swimming more than an hour after eating lunch and I didn’t get cramps.</li>
+                </ol></p>
+                
+                <answer>Choice b is equivalent to the negation; it keeps the first part the same and negates the
+                    second part.</answer>
+            </problem>
+            
+        </subsection>
+        
+        <subsection><title>Biconditional Statements</title>
+            
+            <p>In everyday life, we often have a stronger meaning in mind when we use a conditional
+            statement. Consider “If you submit your hours today, then you will be paid next Friday.”
+            What the payroll rep really means is “If you submit your hours today, then you will be paid
+            next Friday, and if you don’t submit your hours today, then you won’t be paid next Friday.”
+            The conditional statement if t, then p also includes the inverse of the statement: if not t, then
+            not p. A more compact way to express this statement is “You will be paid next Friday if and
+            only if you submit your timesheet today.” A statement of this form is called a <term>biconditional</term>.</p>
+            
+            <note><title>Biconditional</title>
+                <p>A biconditional is a logical conditional statement in which the antecedent and
+                    consequent are interchangeable.</p>
+                <p>A biconditional is written as <m>p \leftrightarrow q</m> and is translated as “p if and only if q”.</p>
+            </note>
+            
+            <p>Because a biconditional statement <m>p \leftrightarrow q</m> is equivalent to <m>\left(p \to q \right) 
+                \wedge \left(q \to p\right)</m>, we may think
+            of it as a conditional statement combined with its converse: if p, then q and if q, then p. The
+            double-headed arrow shows that the conditional statement goes from left to right and from
+            right to left. A biconditional is considered true as long as the antecedent and the consequent
+                have the same truth value; that is, they are either both true or both false.</p>
+            
+            <table >
+            <title>Truth Table for the Biconditional</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell><m>A</m> </cell>
+                        <cell right="minor"><m>B</m> </cell>
+                        <cell><m>A \leftrightarrow B</m> </cell>
+                    </row>
+                   <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
+            </tabular>
+        </table >
+              <p>Notice that the fourth row, where both components are false, is true; if you don’t submit your
+                timesheet and you don’t get paid, the person from payroll told you the truth.</p>
+            
+            <example>
+                <p>Suppose this statement is true: “The garbage truck comes down my street if and only if it is
+                    Thursday morning.” Which of the following statements could be true?
+                <ol label = "a">
+                    <li>It is noon on Thursday and the garbage truck did not come down my street this morning.</li>
+                    <li>It is Monday and the garbage truck is coming down my street.</li>
+                    <li>It is Wednesday at 11:59PM and the garbage truck did not come down my street today.</li>
+                </ol></p>
+                    
+                <solution>
+                    <p>
+                    <ol label = "a">
+                    <li>This cannot be true. This is like the second row of the truth table; it is true that I just
+                    experienced Thursday morning, but it is false that the garbage truck came.</li>
+                    <li>This cannot be true. This is like the third row of the truth table; it is false that it is
+                    Thursday, but it is true that the garbage truck came.</li>
+                    <li>This could be true. This is like the fourth row of the truth table; it is false that it is
+                    Thursday, but it is also false that the garbage truck came, so everything worked out like it
+                    should.</li>
+                    </ol></p>
+                </solution>
+            </example>
+            
+            <problem><title>Try It Now</title>
+                <p>Suppose this statement is true: “I wear my running shoes if and only if I am exercising.”
+                    Determine whether each of the following statements must be true or false.
+                <ol label = "a">
+                    <li>I am exercising and I am not wearing my running shoes.</li>
+                    <li>I am wearing my running shoes and I am not exercising.</li>
+                    <li>I am not exercising and I am not wearing my running shoes.</li>
+                </ol></p>
+                <answer>Choices a and b are false; c is true.</answer>
+            </problem>        
+            
+        </subsection>
+
+
+                
+    </section>
+    
+    <section xml:id ="section-logic-arguments"><title>Arguments</title>
+        
+        <objectives>
+             <ul>
+                       <li>Identify inductive and deductive reasoning.</li>
+                       <li>Evaluate arguments with truth tables.</li>
+                       <li>Discover forms of valid and invalid arguments.</li>
+                       <li>Discuss logical fallacies.</li>
+                   </ul>
+        </objectives>
+        
+       <introduction>A logical argument is a claim that a set of premises support a conclusion. This section will define the different 
+           arguments types and discuss how truth tables can be used 
+           to determine whether an arugment is valid or invalid.</introduction>
+        
+        <subsection><title>Argument Types</title>
+        
+            <p>There are two general types of arguments:</p>
+            <p>An <term>inductive argument</term> uses a collection of specific examples as its premises and uses
+                them to propose a general conclusion.</p>
+            <p>A <term>deductive argument</term> uses a collection of general statements as its premises and uses
+                them to propose a specific situation as the conclusion.</p>
+
+        
+        <example>
+            <p>The argument “when I went to the store last week I forgot my purse, and when I went today I
+                forgot my purse. I always forget my purse when I go the store” is an inductive argument.</p>
+            <p>The premises are:
+            <ul>
+                <li>I forgot my purse last week</li>
+                <li>I forgot my purse today</li>
+            </ul></p>
+            <p>The conclusion is:
+            <ul>
+                <li>I always forget my purse</li>
+            </ul></p>
+            
+            <p>Notice that the premises are specific situations, while the conclusion is a general statement.
+                In this case, this is a fairly weak argument, since it is based on only two instances.</p>
+            
+        </example>
+        
+        <example>
+            <p>The argument “every day for the past year, a plane flies over my house at 2:00 P.M. A plane
+                will fly over my house every day at 2:00 P.M.” is a stronger inductive argument, since it is
+                based on a larger set of evidence. While it is not necessarily true—the airline may have
+                cancelled its afternoon flight—it is probably a safe bet.</p>
+        </example>
+        
+        <note>
+            <title>Evaluating inductive arguments</title>
+            <p>An inductive argument is never able to prove the conclusion true, but it can provide
+                either weak or strong evidence to suggest that it may be true.</p>
+        </note>
+        
+        <p>Many scientific theories, such as the big bang theory, can never be proven. Instead, they are
+        inductive arguments supported by a wide variety of evidence. Usually in science, an idea is
+        considered a hypothesis until it has been well tested, at which point it graduates to being
+        considered a theory. Common scientific theories, like Newton’s theory of gravity, have all
+        stood up to years of testing and evidence, though sometimes they need to be adjusted based
+            on new evidence, such as when Einstein proposed the theory of general relativity</p>
+        
+        <p>A deductive argument is more clearly valid or not, which makes it easier to evaluate.</p>
+        
+        <note><title>Evaluating deductive arguments</title>
+            <p>A deductive argument is considered valid if, assuming that all the premises are true, the
+                conclusion follows logically from those premises. In other words, when the premises
+                are all true, the conclusion must be true. </p>
+        </note>
+            
+        </subsection>
+        
+<!--Evaluating Arguments with Euler Diagrams can be included later **-->
+        
+        <subsection><title>Evaluating Dedutive Arguments with Truth Tables</title>
+            
+            <p>Arguments can also be analyzed using truth tables, although this can be a lot of work.</p>
+
+            <p>To analyze an argument with a truth table:</p>
+            <p>
+            <ol label = "1">
+                <li>Represent each of the premises and the conclusion symbolically</li>
+                <li>Create truth tables for each premise and for the conclusion.</li>
+                <li>The argument is valid if and only if the conclusion is true when all premises are true.</li>
+            </ol></p>
+            
+            <example>
+                <p>Consider the argument</p>
+                <p>Premise: If you bought bread, then you went to the store.</p>
+                <p>Premise: You bought bread.</p>
+                <p>Conclusion: You went to the store.</p>
+                <p>While this example is fairly obviously a valid argument, we can analyze it by representing the argument symbolically 
+                and then creating truth tables for the premises and conclusion.</p>
+                <p>We’ll let b represent “you bought bread” and s represent “you went to the store”. Then the
+                argument becomes:</p>
+                <p>Premise: <m>b \to s</m></p>
+                <p>Premise: <m>b</m></p>
+                <p>Conclusion: <m>s</m></p>
+                
+                 <table >
+            <title>Verifying an Argument</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell>Variable 1: <m>b</m></cell>
+                        <cell right="minor">Variable 2: <m>s</m></cell>
+                        <cell right="minor">Premise 1: <m>b</m></cell>
+                        <cell right="minor">Premise 2: <m>b \to s</m></cell>
+                        <cell>Conclusion: <m>s</m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell right="minor"><alert>T</alert></cell>
+                        <cell right="minor"><alert>T</alert></cell>
+                        <cell><alert>T</alert></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell right="minor">T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell right="minor">F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell right="minor">F</cell>
+                        <cell right="minor">T</cell>
+                        <cell>F</cell>
+                    </row>
+            </tabular>
+        </table >
+                
+                <p>The only row where both premises are true is the first one.  The conclusion is also true in the first row.
+                    Since the conclusion is true when both premises are true, this 
+                    is a valid argument.</p>
+                
+            </example>
+            
+            <problem><title>Try It Now</title>
+                <p>Use truth tables to determine whether the argument is valid:</p>
+                <p>If I have a shovel, I can dig a hole.</p>
+                <p>I dug a hole.</p>
+                <p>Therefore, I had a shovel.</p>
+                
+                <answer>
+                    <p> Let s represent "I have shovel" and d represent "I dug a hole."</p>
+                    <p>In symbolic form, the argument is:</p>
+                    <p><m>s \to d</m></p>
+                    <p><m>d</m></p>
+                    <p><m>s</m></p>
+                    
+                    <p>The truth tables for this argument are:</p>
+                    
+                 <table >
+                <title>Verifying an Argument</title >
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor" >
+                        <cell>Variable 1: <m>s</m></cell>
+                        <cell right="minor">Variable 2: <m>d</m></cell>
+                        <cell right="minor">Premise 1: <m>s \to d</m></cell>
+                        <cell right="minor">Premise 2: <m>d</m></cell>
+                        <cell>Conclusion: <m>s</m></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">T</cell>
+                        <cell right="minor"><alert>T</alert></cell>
+                        <cell right="minor"><alert>T</alert></cell>
+                        <cell><alert>T</alert></cell>
+                    </row>
+                    <row>
+                        <cell>T</cell>
+                        <cell right="minor">F</cell>
+                        <cell right="minor">F</cell>
+                        <cell right="minor">F</cell>
+                        <cell>T</cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">T</cell>
+                        <cell right="minor"><alert>T</alert></cell>
+                        <cell right="minor"><alert>T</alert></cell>
+                        <cell><alert>F</alert></cell>
+                    </row>
+                    <row>
+                        <cell>F</cell>
+                        <cell right="minor">F</cell>
+                        <cell right="minor">T</cell>
+                        <cell right="minor">F</cell>
+                        <cell>F</cell>
+                    </row>
+            </tabular>
+        </table >
+                    
+        <p>Both premises are true in both the first and third rows of the table.  However, the conclusion is false in the third row.
+            Since there is a situation where both premises are true and the conclusion is false (the third row of the table), this is an invalid argument.</p>
+                    
+                </answer>
+            </problem>
+            
+        </subsection>
+        
+       <subsection><title>Forms of Arguments</title>
+        
+<p>Rather than making a truth table for every argument, we may be able to recognize certain
+common forms of arguments that are valid (or invalid). If we can determine that an argument
+fits one of the common forms, we can immediately state whether it is valid or invalid.</p>
+
+<definition><title>Law of Detachment</title>
+<p>The law of detachment applies when a conditional and its antecedent are given as
+premises, and the consequent is the conclusion. </p>
+<p>The general form is:</p>
+<p>Premise: <m>p \to q</m></p>
+<p>Premise: <m>p</m></p>
+<p>Conclusion: <m>q</m></p>
+</definition>
+
+<example>
+    <p>Recall this argument from an earlier example:</p>
+    <p>Premise: If you bought bread, then you went to the store.</p>
+    <p>Premise: You bought bread.</p>
+    <p>Conclusion: You went to the store.</p>
+
+    <p>In symbolic form:</p>
+    <p>Premise: <m>b \to s</m></p>
+    <p>Premise: <m>b</m></p>
+    <p>Conclusion: <m>s</m></p>
+    <p>This argument has the structure described by the law of detachment. (The second premise
+    and the conclusion are simply the two parts of the first premise detached from each other.)
+    Instead of making a truth table, we can say that this argument is valid by stating that it
+    satisfies the law of detachment.</p>
+
+</example>
+
+<definition><title>Law of Contraposition</title>
+<p>The law of contraposition applies when a conditional and the negation of its
+consequent are given as premises, and the negation of its antecedent is the conclusion.</p>
+<p>The general form is:</p>
+<p>Premise: <m>p \to q</m></p>
+<p>Premise: <m>\sim q</m></p>
+<p>Conclusion: <m>\sim p</m></p>
+</definition>
+
+<p>Notice that the second premise and the conclusion look like the contrapositive of the first
+premise, <m>\sim q \to \sim p</m>, but they have been detached. You can think of the law of contraposition
+as a combination of the law of detachment and the fact that the contrapositive is logically
+equivalent to the original statement.</p>
+
+<example>
+    <p>Premise: If I drop my phone into the swimming pool, my phone will be ruined.</p>
+    <p>Premise: My phone isn’t ruined.</p>
+    <p>Conclusion: I didn’t drop my phone into the swimming pool.</p>
+<p>If we let d = I drop the phone in the pool and r = the phone is ruined, then we can represent
+the argument this way:</p>
+<p>Premise: <m>d \to r</m></p>
+<p>Premise: <m>\sim r</m></p>
+<p>Conclusion: <m>\sim d</m></p>
+<p>The form of this argument matches what we need to invoke the law of contraposition, so it is
+a valid argument.</p>
+</example>
+
+<problem><title>Try It Now</title>
+    <p>Is this argument valid?</p>
+<p>Premise: If you brushed your teeth before bed, then your toothbrush will be wet.</p>
+<p>Premise: Your toothbrush is dry.</p>
+<p>Conclusion: You didn’t brush your teeth before bed.</p>
+
+<answer>Yes, by the Law of Contraposition</answer>
+</problem>
+
+<definition><title>The Transitive Property</title>
+
+<p>The transitive property has as its premises a series of conditionals, where the
+consequent of one is the antecedent of the next. The conclusion is a conditional with
+the same antecedent as the first premise and the same consequent as the final premise.</p>
+<p>The general form is:</p>
+<p>Premise: <m>p \to q</m></p>
+<p>Premise: <m>q \to r</m></p>
+<p>Conclusion: <m>p \to r</m></p>
+
+</definition>
+
+<example>
+    <p>Premise: If a soccer player commits a reckless foul, she will receive a yellow card.</p>
+<p>Premise: If Hayley receives a yellow card, she will be suspended for the next match.</p>
+<p>Conclusion: If Hayley commits a reckless foul, she will be suspended for the next match.</p>
+<p>If we let r = committing a reckless foul, y = receiving a yellow card, and s = being
+suspended, then our argument looks like this:</p>
+<p>Premise <m>r \to y</m></p>
+<p>Premise <m>y \to s</m></p>
+<p>Conclusion: <m>r \to s</m></p>
+<p>This argument has the exact structure required to use the transitive property, so it is a valid
+argument.</p>
+</example>
+
+<definition><title>Dijunctive Syllogism</title>
+<p>In a disjunctive syllogism, the premises consist of an or statement and the negation of
+one of the options. The conclusion is the other option. </p>
+<p>The general form is:</p>
+<p>Premise: <m>p \vee q</m></p>
+<p>Premise: <m>\sim p</m></p>
+<p>Conclusion: <m>q</m>
+</p>
+</definition>
+
+<p>The order of the two parts of the disjunction isn’t important. In other words, we could have
+the premises <m>p \vee q</m> and <m>\sim q</m>, and the conclusion <m>p</m>.</p>
+
+<example>
+    <p>Premise: I can either drive or take the train.</p>
+<p>Premise: I refuse to drive.</p>
+<p>Conclusion: I will take the train.</p>
+<p>If we let d = I drive and t = I take the train, then the symbolic representation of the argument
+is:</p>
+<p>Premise <m>d \vee t</m></p>
+<p>Premise <m>\sim d</m></p>
+<p>Conclusion: <m>t</m></p>
+<p>This argument is valid because it has the form of a disjunctive syllogism. I have two choices,
+and one of them is not going to happen, so the other one must happen.</p>
+            
+</example>
+
+<p>Keep in mind that, when you are determining the validity of an argument, you must assume
+that the premises are true. If you don’t agree with one of the premises, you need to keep your
+personal opinion out of it. Your job is to pretend that the premises are true and then
+determine whether they force you to accept the conclusion. You may attack the premises in a
+court of law or a political discussion, of course, but here we are focusing on the structure of
+the arguments, not the truth of what they actually say.</p>
+
+<p>We have just looked at four forms of valid arguments; there are two common forms that
+represent invalid arguments, which are also called <em>fallacies</em>.</p>
+
+<definition><title>Fallacy of the Converse</title>
+<p>The fallacy of the converse arises when a conditional and its consequent are given as
+premises, and the antecedent is the conclusion.</p>
+<p>The general form is:</p>
+<p>Premise: <m>p \to q</m></p>
+<p>Premise: <m>q</m></p>
+<p>Conclusion: <m>p</m></p>
+</definition>
+
+<p>Notice that the second premise and the conclusion look like the converse of the first premise,
+<m>q \to p</m>, but they have been detached. The fallacy of the converse incorrectly tries to assert
+that the converse of a statement is equivalent to that statement.</p>
+
+<example>
+    <p>Premise: If I drink coffee after noon, then I have a hard time falling asleep that night.</p>
+<p>Premise: I had a hard time falling asleep last night.</p>
+<p>Conclusion: I drank coffee after noon yesterday.</p>
+<p>If we let c = I drink coffee after noon and h = I have a hard time falling asleep, then our
+argument looks like this:</p>
+<p>Premise: <m>c \to h</m></p>
+<p>Premise: <m>h</m></p>
+<p>Conclusion: <m>c</m></p>
+<p>This argument uses converse reasoning, so it is an invalid argument. There could be plenty of
+other reasons why I couldn’t fall asleep: I could be worried about money, my neighbors
+might have been setting off fireworks, etc. </p>
+
+</example>
+
+<definition><title>Fallacy of the Converse</title>
+<p>The fallacy of the inverse occurs when a conditional and the negation of its antecedent
+are given as premises, and the negation of the consequent is the conclusion. </p>
+<p>The general form is:</p>
+<p>Premise: <m>p \to q</m></p>
+<p>Premise: <m>\sim p</m></p>
+<p>Conclusion: <m>\sim q</m></p>
+</definition>
+
+<p>Again, notice that the second premise and the conclusion look like the inverse of the first
+premise, <m>\sim p \to \sim q</m>, but they have been detached. The fallacy of the inverse incorrectly tries to
+assert that the inverse of a statement is equivalent to that statement.</p>
+
+<example>
+    <p>Premise: If you listen to the Grateful Dead, then you are a hippie.</p>
+<p>Premise: Sky doesn’t listen to the Grateful Dead.</p>
+<p>Conclusion: Sky is not a hippie.</p>
+<p>If we let g = listen to the Grateful Dead and h = is a hippie, then this is the argument:</p>
+<p>Premise: <m>g \to h</m></p>
+<p>Premise: <m> \sim g</m></p>
+<p>Conclusion: <m>\sim h</m></p>
+<p>This argument is invalid because it uses inverse reasoning. The first premise does not imply
+that all hippies listen to the Grateful Dead; there could be some hippies who listen to Phish
+instead.</p>
+</example>
+
+<p>Of course, arguments are not limited to these six basic forms; some arguments have more
+premises, or premises that need to be rearranged before you can see what is really happening.
+There are plenty of other forms of arguments that are invalid. If an argument doesn’t seem to
+fit the pattern of any of these common forms, though, you may want to use a Venn diagram
+or a truth table instead.</p>
+
+<p>Lewis Carroll, author of Alice’s Adventures in Wonderland, was a math and logic teacher,
+and wrote two books on logic. In them, he would propose premises as a puzzle, to be
+connected using syllogisms. The following example is one such puzzle.</p>
+
+<example>
+    <p>Solve the puzzle. In other words, find a logical conclusion from these premises.</p>
+<p>All babies are illogical.</p>
+<p>Nobody is despised who can manage a crocodile.</p>
+<p>Illogical persons are despised.</p>
+<p>Let b = is a baby, d = is despised, i = is illogical, and m = can manage a crocodile.
+Then we can write the premises as:</p>
+<p><m>b \to i</m></p>
+<p><m>m \to \sim d</m></p>
+<p><m>i \to d</m></p>
+<p>Writing the second premise correctly can be a challenge; it can be rephrased as “If you can
+manage a crocodile, then you are not despised.”</p>
+<p>Using the transitive property with the first and third premises, we can conclude that <m>b \to d</m>;
+that all babies are despised. Using the contrapositive of the second premise, <m>d \to \sim m</m>, we can
+then use the transitive property with <m>b \to d</m> to conclude that <m>b \to \sim m</m>; that babies cannot
+manage crocodiles. While it is silly, this is a logical conclusion from the given premises.</p>
+
+</example>
+
+<problem><title>Try It Now</title>
+    <p>Is this argument valid?</p>
+<p>Premise: If I go to the party, I’ll be really tired tomorrow.</p>
+<p>Premise: If I go to the party, I’ll get to see friends.</p>
+<p>Conclusion: If I don’t see friends, I won’t be tired tomorrow</p>
+
+<answer>
+    <p>Let p = go to party, t = be tired, and f = see friends.</p>
+<p>Premise: <m>p \to t</m></p>
+<p>Premise: <m>p \to f</m></p>
+<p>Conclusion: <m>\sim f \to \sim t</m></p>
+<p>We could try to rewrite the second premise using the contrapositive to state <m>\sim f \to \sim p</m>, but
+that does not allow us to form a syllogism. If I don’t see friends, then I didn’t go the party,
+but that is not sufficient to claim I won’t be tired tomorrow. Maybe I stayed up all night
+watching movies.</p>
+</answer>
+</problem>
+
+</subsection>
+
+<subsection><title>Logical Fallacies in Common Language</title>
+<p>In the previous discussion, we saw that logical arguments can be invalid when the premises
+are not true, when the premises are not sufficient to guarantee the conclusion, or when there
+are invalid chains in logic. There are a number of other ways in which arguments can be
+invalid, a sampling of which are given here.</p>
+
+<definition><title>Ad hominem</title>
+<p>An ad hominem argument attacks the person making the argument, ignoring the
+argument itself.</p>
+</definition>
+
+<example>
+    <p>“Jane says that whales aren’t fish, but she’s only in the second grade, so she can’t be right.”</p>
+<p>Here the argument is attacking Jane, not the validity of her claim, so this is an ad hominem
+argument.</p>
+
+</example>
+
+<example>
+    <p>“Jane says that whales aren’t fish, but everyone knows that they’re really mammals. She’s so
+stupid.”</p>
+<p>This certainly isn’t very nice, but it is not ad hominem since a valid counterargument is made
+along with the personal insult.</p>
+
+</example>
+
+<definition><titl>Appeal to ignorance</titl>
+<p>This type of argument assumes something it true because it hasn’t been proven false</p>
+</definition>
+
+<example>
+    <p>“Nobody has proven that photo isn’t of Bigfoot, so it must be Bigfoot.”</p>
+
+</example>
+
+<definition><title>Appeal to authority</title>
+<p>These arguments attempt to use the authority of a person to prove a claim. While often
+authority can provide strength to an argument, problems can occur when the person’s
+opinion is not shared by other experts, or when the authority is irrelevant to the claim.</p>
+</definition>
+
+<example>
+    <p>“A diet high in bacon can be healthy; Doctor Atkins said so.”</p>
+<p>Here, an appeal to the authority of a doctor is used for the argument. This generally would
+provide strength to the argument, except that the opinion that eating a diet high in saturated
+fat runs counter to general medical opinion. More supporting evidence would be needed to
+justify this claim.</p>
+</example>
+
+<example>
+    <p>“Jennifer Hudson lost weight with Weight Watchers, so their program must work.”</p>
+<p>Here, there is an appeal to the authority of a celebrity. While her experience does provide
+evidence, it provides no more than any other person’s experience would.</p>
+</example>
+
+<definition><title>Appeal to consequence</title>
+<p>An appeal to consequence concludes that a premise is true or false based on whether
+the consequences are desirable or not.</p>
+</definition>
+
+<example>
+<p>“Humans will travel faster than light: faster-than-light travel would be beneficial for space
+travel.”</p>
+</example>
+
+<definition><title>False dilemma</title>
+<p>A false dilemma argument falsely frames an argument as an “either or” choice, without
+allowing for additional options.</p>
+</definition>
+
+<example>
+<p>“Either those lights in the sky were an airplane or aliens. There are no airplanes scheduled for
+tonight, so it must be aliens.”</p>
+<p>This argument ignores the possibility that the lights could be something other than an
+airplane or aliens.</p>
+</example>
+
+<definition><title>Circular reasoning</title>
+<p>Circular reasoning is an argument that relies on the conclusion being true for the
+premise to be true.</p>
+</definition>
+
+<example>
+    <p>“I shouldn’t have gotten a C in that class; I’m an A student!”</p>
+<p>In this argument, the student is claiming that because they’re an A student, though shouldn’t
+have gotten a C. But because they got a C, they’re not an A student.</p>
+</example>
+
+<definition><title>Post hoc (post hoc ergo propter hoc)</title>
+<p>A post hoc argument claims that because two things happened sequentially, then the
+first must have caused the second.</p>
+</definition>
+
+<example>
+<p>“Today I wore a red shirt, and my football team won! I need to wear a red shirt every time
+they play to make sure they keep winning.”</p></example>
+
+<definition><title>Straw man</title>
+A straw man argument involves misrepresenting the argument in a less favorable way
+to make it easier to attack.</definition>
+
+<example>
+<p>“Senator Jones has proposed reducing military funding by 10%. Apparently he wants to leave
+us defenseless against attacks by terrorists”</p>
+<p>Here the arguer has represented a 10% funding cut as equivalent to leaving us defenseless,
+making it easier to attack Senator Jones’ position.</p>
+</example>
+
+<definition><title>Correlation implies causation</title>
+<p>Similar to post hoc, but without the requirement of sequence, this fallacy assumes that
+just because two things are related one must have caused the other. Often there is a
+third variable not considered.</p></definition>
+
+<example>
+<p>“Months with high ice cream sales also have a high rate of deaths by drowning. Therefore,
+ice cream must be causing people to drown.”</p>
+<p>This argument is implying a causal relation, when really both are more likely dependent on
+the weather; that ice cream and drowning are both more likely during warm summer months.</p>
+</example>
+
+<problem><title>Try It Now</title>
+    <p>Identify the logical fallacy in each of the arguments</p>
+    <p>
+    <ol label = "a">
+        <li>Only an untrustworthy person would run for office. The fact that politicians are
+untrustworthy is proof of this.</li>
+<li>Since the 1950s, both the atmospheric carbon dioxide level and obesity levels have
+increased sharply. Hence, atmospheric carbon dioxide causes obesity.</li>
+        <li>The oven was working fine until you started using it, so you must have broken it.</li>
+<li>You can’t give me a D in the class because I can’t afford to retake it.</li>
+<li>The senator wants to increase support for food stamps. He wants to take the taxpayers’
+hard-earned money and give it away to lazy people. This isn’t fair, so we shouldn’t do it. </li>
+</ol></p>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li>Circular</li>
+                <li>Correlation does not imply causation</li>
+                <li>Post hoc</li>
+                <li>Appeal to consequence</li>
+                <li>Staw man</li>
+            </ol>
+        </p>
+    </answer>
+</problem>
+
+<p>It may be difficult to identify one particular fallacy for an argument. Consider this argument:
+“Emma Watson says she’s a feminist, but she posed for these racy pictures. I’m a feminist,
+and no self-respecting feminist would do that.” Could this be ad hominem, saying that Emma
+Watson has no self-respect? Could it be appealing to authority because the person making the
+argument claims to be a feminist? Could it be a false dilemma because the argument assumes
+that a woman is either a feminist or not, with no gray area in between?</p>
+
+
+
+
+
+</subsection>
+
+        
+
+        
+    </section>
+            
+<!-- Beginning of Exercises for Logic****************************************************************
+      
+************************************************************************************************-->
+    <exercises xml:id="exercises-logic"><title>Exercises</title>
+        
+<exercisegroup>
+
+    <introduction>For the exercises below, list the set of integers that satisfy the given conditions.</introduction>
+
+    <exercise xml:id = "logic-ex-1">
+    <statement>A positive multiple of 5 and not a multiple of 2</statement>
+        <answer>{5, 15, 25, ...}</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-2">
+    <statement>Greater than 12 and less than or equal to 18</statement>
+    </exercise>
+    
+</exercisegroup>
+
+<exercisegroup>
+    <introduction>Write the negation of each quantified statement.</introduction>
+    <exercise xml:id = "logic-ex-3">
+    <statement>Everyone failed the quiz today.</statement>
+        <answer>At least one person did not fail the quiz today.</answer>
+    </exercise>
+    <exercise xml:id = "logic-ex-4">
+    <statement>Someone in the car needs to use the restroom.</statement>
+    </exercise>
+    
+    <exercise xml:id = "logic-ex-5">
+        <statement>Some restaurants take reservations.</statement>
+        <answer>No restaurants take reservations.</answer>
+    </exercise>
+    
+    <exercise xml:id = "logic-ex-6">
+        <statement>All students drive to campus.</statement>
+    </exercise>
+</exercisegroup>
+
+<exercise xml:id = "logic-ex-7">
+    <statement><p>Translate each statement from symbolic notation into English sentences. Let A represent
+“Elvis is alive” and let G represent “Elvis gained weight."
+<ol label = "a">
+    <li><m>A \vee G</m></li>
+    <li><m>\sim \left( A \wedge G \right)</m></li>
+    <li><m>G \to \sim A</m></li>
+    <li><m>A \leftrightarrow \sim G</m></li>
+</ol></p>
+</statement>
+    
+    <answer><p>
+        <ol label = "a">
+            <li>Elvis is alive or he gained weight.</li>
+            <li>It is not true that Elvis is alive and gained weight.</li>
+            <li>If Elvis gained weight, then he is not alive.</li>
+            <li>Elvis is alive if and only if he did not gain weight.</li>
+        </ol></p>
+    </answer>
+</exercise>
+        
+        <exercise xml:id = "logic-ex-8">
+            <statement><p>Translate each statement into words if <m>d</m> represents "dessert is included" and 
+                <m>b</m> represents "the bill was less than $20".
+                <ol label = "a">
+                    <li><m>d \wedge b</m></li>
+                    <li><m>\sim \left(d \vee b \right)</m></li>
+                    <li><m>\sim b \rightarrow d</m></li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+<exercise xml:id = "logic-ex-9">
+    <statement><p>Let, p represent "I will attend the hockey game" and let q represent "I will enjoy the hockey game." Let r represent "I will watch a movie at home." Write each statement in symbolic form.
+
+    <ol label ="a">
+        <li>I will attend the hockey game, but I will not enjoy it</li>
+        <li>I’ll either attend the hockey game or watch a movie at home.</li>
+        <li>It is not true that I will attend the hockey game and enjoy it.</li>
+    </ol></p>
+</statement>
+    <answer><p>
+        <ol label = "a">
+            <li><m>p \wedge \sim q</m></li>
+            <li><m>p \vee r </m></li>
+            <li><m>\sim \left(p \wedge q \right)</m></li>
+                </ol>
+        </p>
+    </answer>
+            
+</exercise>
+
+<exercise xml:id = "logic-ex-10">
+    <statement><p>Let p represent "Rent is due on Friday" and q represent "We will go skiing."
+    <p>Translate each statement in symbolic form.</p>
+    <ol label = "a">
+        <li>If rent isn't due on Friday, then we will go skiing.</li>
+        <li>Rent is due on Friday and we will go skiing.</li>
+    </ol></p>
+</statement>
+</exercise>
+
+
+<exercisegroup>
+    <introduction>Create a truth table for each statement.</introduction>
+
+    <exercise xml:id = "logic-ex-11">
+    <statement><m>A \wedge \sim B</m></statement>
+        <answer>FTFF</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-12">
+    <statement><m>\sim \left( p \wedge q \right)</m></statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-13">
+    <statement><m>\sim \left( \sim A \vee B \right)</m></statement>
+        <answer>FTFF</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-14">
+    <statement><m>\left( r \wedge s \right) \vee \sim s</m></statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-15">
+    <statement><m> \left( p \wedge \sim q \right) \wedge p</m></statement>
+        <answer>FTFF</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-16">
+    <statement><m> \left( A \wedge B \right) \to \sim A</m></statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-17">
+    <statement><m>p \vee \left( p \to q \right)</m></statement>
+        <answer>TTTT</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-18">
+    <statement><m>\left( p \wedge q \right) \to p</m></statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-19">
+    <statement><m>\left[ p \wedge \left( p \vee q \right) \right] \to p</m></statement>
+        <answer>TTTT</answer>
+    </exercise>
+    
+</exercisegroup>
+
+
+<exercise xml:id = "logic-ex-20">
+    <statement><p>In this lesson, we have been studying the inclusive or, which allows both A
+and B to be true. The exclusive or does not allow both to be true; it translates to “either A or
+B, but not both.”</p>
+<p>For each situation, decide whether the “or” is most likely exclusive or inclusive.
+<ol label = "a">
+<li>An entrée at a restaurant includes soup or a salad.</li>
+<li>You should bring an umbrella or a raincoat with you.</li>
+<li>We can keep driving on I-5 or get on I-405 at the next exit.</li>
+<li>You should save this document on your computer or a flash drive.</li>
+</ol></p>
+</statement>
+</exercise>
+
+<exercise xml:id = "logic-ex-21">
+    <statement><p>Translate each sentence into if-then form:
+    <ol label = "a">
+        <li>All triangle are polygons.</li>
+        <li>Every dog is happy.</li>
+    </ol></p>
+</statement>
+   
+</exercise>
+
+
+<exercise xml:id = "logic-ex-22">
+    <statement><p>Consider the statement “If you are under age 17, then you cannot attend this movie.”
+    <ol label = "a">
+        <li>Write the converse.</li>
+        <li>Write the inverse.</li>
+        <li>Write the contrapositive.</li>
+    </ol></p>
+</statement>
+</exercise>
+
+<exercise xml:id = "logic-ex-23">
+    <statement>Write the converse of "If you are older than 65, you will qualify for a discount."</statement>
+    <answer>If you qualify for the discount, then you are older than 65.</answer>
+</exercise>
+
+<exercise xml:id = "logic-ex-24">
+    <statement>Write the inverse of "I will go Saturday if I get paid."</statement>
+</exercise>
+
+<exercise xml:id = "logic-ex-25">
+    <statement>Write the contrapositive of "If I don't receive my paycheck tomorrow, I won't pay you back."</statement>
+</exercise>
+
+<exercise xml:id = "logic-ex-26">
+    <statement><p>Assume that the statement “If you swear, then you will get your mouth washed out with
+soap” is true. Which of the following statements must also be true?
+<ol label = "a">
+    <li>If you don’t swear, then you won’t get your mouth washed out with soap.</li>
+    <li>If you don’t get your mouth washed out with soap, then you didn’t swear.</li>
+    <li>If you get your mouth washed out with soap, then you swore.</li>
+</ol></p>
+</statement>
+</exercise>
+
+<exercisegroup>
+    <introduction>Write the negation of each conditional statement.</introduction>
+
+    <exercise xml:id = "logic-ex-27">
+        <statement>If Luke faces Vader, then Obi-Wan cannot interfere.</statement>
+        <answer>Luke faces Vader and Obi-Wan interferes.</answer>
+    </exercise>
+    
+    <exercise xml:id = "logic-ex-28">
+        <statement>If you don’t look both ways before crossing the street, then you will get hit by a car.</statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-29">
+        <statement>If you weren’t talking, then you wouldn’t have missed the instructions.</statement>
+        
+    </exercise>
+    
+</exercisegroup>
+
+<exercise xml:id = "logic-ex-30">
+    <statement><p>Assume that the biconditional statement “You will play in the game if and only if you
+attend all practices this week” is true. Which of the following situations could happen?
+<ol label = "a">
+    <li>You attended all practices this week and didn’t play in the game.</li>
+    <li>You didn’t attend all practices this week and played in the game.</li>
+    <li>You didn’t attend all practices this week and didn’t play in the game.</li>
+</ol></p>
+</statement>
+</exercise>
+
+<exercisegroup>
+    <introduction>Are the following examples of inductive or deductive reasoning?</introduction>
+
+    <exercise xml:id = "logic-ex-31">
+        <statement>Erika brought cookies to class last Thursday, so she will bring cookies this Thursday.</statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-32">
+        <statement>Roberto earned a 94% in math class. Any grade above a 90% gets an A. Therefore, 
+            Roberto will get an A in math class.</statement>
+        </exercise>
+
+        <exercise xml:id = "logic-ex-33">
+            <statement>All even numbers are divisible by 2. Eight is an even number. Therefore, 8 is divisble by 2.
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "logic-ex-34">
+            <statement>My sister didn't go home for Thanksgiving last year, so she won't go home for Thanksgiving this 
+                year.</statement>
+        </exercise>
+
+        <exercise xml:id = "logic-ex-35">
+            <statement>The roses in my backyard have bloomed every other year for the past 10 years. They didn't bloom 
+                last year, so they will bloom this year.</statement>
+        </exercise>
+</exercisegroup>
+
+
+<exercisegroup>
+    <introduction>Use De Morgan’s Laws to rewrite each conjunction as a disjunction, or
+    each disjunction as a conjunction.</introduction>
+    <exercise xml:id = "logic-ex-36">
+    <statement>It is not true that Tina likes Sprite or 7-Up.</statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-37">
+    <statement>It is not the case that you need a dated receipt and your credit card to return this item.</statement>
+        <answer>You don’t need a dated receipt or you don’t need your credit card to return this item.
+        </answer>
+    </exercise>
+    
+</exercisegroup>
+
+<exercisegroup>
+    <introduction>Use truth table to decide whether each argument is valid or invalid.</introduction>
+
+    <exercise xml:id = "logic-ex-38">
+        <statement>All dogs go to heaven. Charlie is a dog. Therefore, Charlie will go to heaven.</statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-39">
+        <statement>If Ronald eats pancakes before his test, he will ace it! Ronald aces his test. 
+            Therefore, he ate pancakes.</statement>
+        <answer>Invalid</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-40">
+        <statement>If you like animals, you'll love my cat. You don't love my cat. Therefore, you don't like animals.
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-41">
+        <statement>If a person is on this reality show, they must be self-absorbed. Laura is not self-absorbed.
+        Therefore, Laura cannot be on this reality show.</statement>
+        <answer>Valid</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-42">
+        <statement>If you are a triathlete, then you have outstanding endurance. LeBron James is not a
+        triathlete. Therefore, LeBron does not have outstanding endurance.</statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-43">
+        <statement>Jamie must scrub the toilets or hose down the garbage cans. Jamie refuses to scrub the
+    toilets. Therefore, Jamie will hose down the garbage cans.</statement>
+        <answer>Valid</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-44">
+    <statement>Every student brought a pencil or a pen. Marcie brought a pencil. Therefore, Marcie did
+    not bring a pen.</statement>
+    </exercise>
+    
+    <exercise xml:id = "logic-ex-45">
+        <statement>If Aaron doesn't buy season tickets for the Seattle Kraken, he won't be able to go to the playoffs.
+            Aaron went to the playoffs. Therefore, he bought season tickets.</statement>
+        <answer>Valid</answer>
+    </exercise>
+    
+    <exercise xml:id = "logic-ex-46">
+        <statement>If you miss the bus, you will be late for work. You didn't miss the bus. Therefore, you 
+            won't be late for work.</statement>
+    </exercise>
+    
+</exercisegroup>
+
+<exercisegroup>
+    <introduction>Write each argument in symbolic form. Then identify the form of the argument. 
+        Is it a valid or invalid argument?</introduction>
+
+    <exercise xml:id = "logic-ex-47">
+        <statement>If the Vikings lose their next game, then the Packers will win. If the Packers win, they will go to the Super Bowl.
+            Therefore, if the Vikings lose, the Packers will go to the Super Bowl.</statement>
+        <answer>Valid; Transistive Property</answer>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-48">
+        <statement>Sal has to work overtime or he won't be able to take Monday off. Sal was able to take Monday off. 
+            Therefore, he worked overtime.</statement>
+    </exercise>
+
+    <exercise xml:id = "logic-ex-49">
+        <statement>If I eat that piece of cake, then I will go to bed happy. I went to bed happy. Therefore, 
+            I ate that piece of cake.</statement>
+        
+        </exercise>
+    
+    <exercise xml:id = "logic-ex-50">
+        <statement>If Erik rents his house, then he can travel next month. Erik didn't rent his house.
+            Therefore, he can't travel next month.</statement>
+    </exercise>
+    
+    </exercisegroup>
+
+    <exercisegroup>
+        <introduction>Name the type of logical fallacy being used.</introduction>
+        <exercise xml:id = "logic-ex-51">
+            <statement>If you don’t want to drive from Boston to New York, then you will have to take the train.
+            </statement>
+            <answer>False dilemma; you could fly, take a bus, hitchhike…</answer>
+        </exercise>
+
+        <exercise xml:id = "logic-ex-52">
+            <statement>New England Patriots quarterback Tom Brady likes his footballs slightly underinflated.
+            The “Cheatriots” have a history of bending or breaking the rules, so Brady must have told
+            the equipment manager to make sure that the footballs were underinflated.</statement>
+        </exercise>
+
+        <exercise xml:id = "logic-ex-53">
+            <statement>Whenever our smoke detector beeps, my kids eat cereal for dinner.</statement>
+        </exercise>
+    </exercisegroup>
+        
+    </exercises>
+    
+    <exercises xml:id = "logic-ch-test"><title>Chapter Test</title>
+            
+            <exercise>
+                <statement>
+                    <p>Write each sentence in symbolic form:
+                        <ol label = "a">
+                            <li>Today is Monday (m) and it is my birthday (b).</li>
+                            <li>If x is divisible by 2 (d), then x is an even number (e).</li>
+                        </ol>
+                    </p>
+                </statement>
+                
+                <answer>
+                    <p>
+                        <ol label = "a">
+                            <li><m>m \wedge b</m></li>
+                            <li><m>d \to e</m></li>
+                        </ol>
+                    </p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Let <m>r</m> represent "the Rockies will win their next game", and <m>w</m> represent
+                        "I will wear my lucky shirt". Write each statement as a sentence in English.
+                        <ol label = "a">
+                            <li><m>w \to r</m></li>
+                            <li><m>\sim \left( r \wedge w \right)</m></li>
+                        </ol>
+                    </p>
+                </statement>
+                
+                 <answer>
+                    <p>
+                        <ol label = "a">
+                            <li>If I wear my lucky shirt, the Rockies will win their next game.</li>
+                            <li>It is not true that the Rockies will win their next game and 
+                            I will wear my lucky shirt.</li>
+                        </ol>
+                    </p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Negate each statement:
+                        <ol label = "a">
+                            <li>All snakes are poisonous.</li>
+                            <li>Some auto mechanics are incompetent.</li>
+                            <li>If Josh works overtime, he will get next Friday off.</li>
+                        </ol>
+                    </p>
+                </statement>
+                
+                 <answer>
+                    <p>
+                        <ol label = "a">
+                            <li>Some snakes are not poisonous.</li>
+                            <li>No auto mechanics are incompetent.</li>
+                            <li>Josh works overtime and he doesn't get next Friday off.</li>
+                        </ol>
+                    </p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Use DeMorgan's Law to write a statement that equivalent to: "It is not true that Carol
+                        has 2 years of experience and a bachelor's degree."</p>
+                </statement>
+                
+                <answer>
+                    <p>Carol doesn't have 2 years of experience or she doesn't have a bachelor's degree.</p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Construct a truth table for
+                        <ol label = "a">
+                            <li><m>\sim \left( p \wedge \sim q \right)</m></li>
+                            <li><m>\left( \sim p \to q \right) \vee \left( \sim q \wedge p \right)</m></li>
+                            <li><m>\sim p \to \left(q \vee p \right)</m></li>
+                        </ol>
+                    </p>
+                </statement>
+                
+                 <answer>
+                    <p>
+                        <ol label = "a">
+                            <li>TFTT</li>
+                            <li>TTTF</li>
+                            <li>TTTF</li>
+                        </ol>
+                    </p>
+                </answer>
+                
+                <solution>
+                    <p>
+                        <ol label = "a">
+                            <li>
+                                <tabular halign = "center">
+                                    <row header = "yes" bottom = "minor">
+                                             <cell>p</cell>
+                                             <cell right = "minor">q</cell>
+                                             <cell><m>\sim</m></cell>
+                                        <cell>(<m>p</m></cell>
+                                             <cell><m>\wedge</m></cell>
+                                             <cell><m>\sim q</m>)</cell>
+                                    </row>
+                                    <row>
+                                             <cell>T</cell>
+                                             <cell right = "minor">T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                    </row>
+                                     <row>
+                                             <cell>T</cell>
+                                             <cell right = "minor">F</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                    </row>
+                                     <row>
+                                             <cell>F</cell>
+                                             <cell right = "minor">T</cell>
+                                             <cell>T</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                    </row>
+                                     <row>
+                                             <cell>F</cell>
+                                             <cell right = "minor">F</cell>
+                                             <cell>T</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                    </row>
+                                </tabular>
+                            </li>
+                              <li>
+                                <tabular halign = "center">
+                                    <row header = "yes" bottom = "minor">
+                                             <cell>p</cell>
+                                             <cell right = "minor">q</cell>
+                                             <cell>(<m>\sim p</m></cell>
+                                            <cell><m>\to</m></cell>
+                                             <cell><m>q)</m></cell>
+                                             <cell><m>\vee</m></cell>
+                                        <cell>(<m>\sim q</m></cell>
+                                        <cell><m>\wedge</m></cell>
+                                        <cell><m>p</m>)</cell>
+                                    </row>
+                                    <row>
+                                             <cell>T</cell>
+                                             <cell right = "minor">T</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                        <cell>F</cell>
+                                        <cell>F</cell>
+                                        <cell>T</cell>
+                                    </row>
+                                     <row>
+                                             <cell>T</cell>
+                                             <cell right = "minor">F</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                          <cell>T</cell>
+                                        <cell>T</cell>
+                                        <cell>T</cell>
+                                    </row>
+                                     <row>
+                                             <cell>F</cell>
+                                             <cell right = "minor">T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                          <cell>F</cell>
+                                        <cell>F</cell>
+                                        <cell>F</cell>
+                                    </row>
+                                     <row>
+                                             <cell>F</cell>
+                                             <cell right = "minor">F</cell>
+                                             <cell>T</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                          <cell>T</cell>
+                                        <cell>F</cell>
+                                        <cell>F</cell>
+                                    </row>
+                                </tabular>
+                            </li>
+                            <li>
+                                <tabular halign = "center">
+                                    <row header = "yes" bottom = "minor">
+                                             <cell>p</cell>
+                                             <cell right = "minor">q</cell>
+                                             <cell><m>\sim p</m></cell>
+                                            <cell><m>\to</m></cell>
+                                             <cell>(<m>q</m></cell>
+                                             <cell><m>\vee</m></cell>
+                                        <cell><m>p</m>)</cell>
+                                    </row>
+                                    <row>
+                                             <cell>T</cell>
+                                             <cell right = "minor">T</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                        <cell>T</cell>
+                                    </row>
+                                     <row>
+                                             <cell>T</cell>
+                                             <cell right = "minor">F</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                             <cell>F</cell>
+                                             <cell>T</cell>
+                                          <cell>T</cell>
+                                    </row>
+                                     <row>
+                                             <cell>F</cell>
+                                             <cell right = "minor">T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                             <cell>T</cell>
+                                          <cell>F</cell>
+                                    </row>
+                                     <row>
+                                             <cell>F</cell>
+                                             <cell right = "minor">F</cell>
+                                             <cell>T</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                             <cell>F</cell>
+                                          <cell>F</cell>
+                                    </row>
+                                </tabular>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </exercise>
+
+            <exercise>
+                <statement>
+                <p>Use truth tables to determine if the statements are equivalent:</p>
+                <p><m>\sim \left( p \wedge \sim q \right)</m></p>
+                <p><m> \sim p \vee q</m></p>
+                </statement>
+                
+                <answer>The statements are logically equivalent because they have the same values in 
+                    truth tables: TFTT</answer>
+                
+                <solution>
+                    <p>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>p</cell>
+                                <cell right = "minor">q</cell>
+                                <cell><m>\sim</m></cell>
+                                <cell>(<m>p</m></cell>
+                                <cell><m>\wedge</m></cell>
+                                <cell right = "minor"><m>\sim q</m>)</cell>
+                                <cell><m>\sim p</m></cell>
+                                <cell><m>\vee</m></cell>
+                                <cell><m>q</m></cell>
+                            </row>
+                            <row>
+                                <cell>T</cell>
+                                <cell right = "minor">T</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>
+                                <cell right = "minor">F</cell>
+                                <cell>F</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>
+                            </row>
+                            <row>
+                                <cell>T</cell>
+                                <cell right = "minor">F</cell>
+                                <cell>F</cell>
+                                <cell>T</cell>
+                                 <cell>T</cell>
+                                <cell right = "minor">T</cell>
+                                  <cell>F</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>        
+                            </row>
+                            <row>
+                                <cell>F</cell>
+                                <cell right = "minor">T</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                                <cell right = "minor">F</cell>
+                                   <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>T</cell>       
+                            </row>
+                            <row>
+                                <cell>F</cell>
+                                <cell right = "minor">F</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>
+                                <cell>F</cell>
+                                <cell right = "minor">T</cell>
+                                   <cell>T</cell>
+                                <cell>T</cell>
+                                <cell>F</cell>       
+                            </row>
+                        </tabular>
+                    </p>
+                </solution>
+                        
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Write the converse, inverse, and contrapositive of the statement, "If the car is red, 
+                        then Alison doesn’t like it."</p>
+                </statement>
+                
+                <answer>
+                    <p>Converse: If Alison doesn't like the car, it is red.</p>
+                    <p>Inverse: If the car is not red, then Alison likes it.</p>
+                    <p>Contrapositive: If Alison likes the car, then it is not red.</p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>Which of the following statements are equivalent?
+                        <ol label = "a">
+                            <li>If it rains, then Erik will go to the movies.</li>
+                            <li>If it doesn’t rain, then Erik won’t go to the movies.</li>
+                            <li>If Erik goes to the movies, then it rained.</li>
+                            <li>If Erik doesn’t go to the movies, then it didn’t rain.</li>
+                        </ol>
+                    </p>
+                </statement>
+                
+                <answer>Statements a and d are equivalent to each other. Statements b and c are equivalent to 
+                    each other.</answer>
+                
+                <solution>
+                    <p>We can write the statements in symbolic form as:
+                        <ol label = "a">
+                            <li><m>r \to m</m></li>
+                            <li><m>\sim r \to \sim m</m></li>
+                            <li><m>m \to r</m></li>
+                            <li><m>\sim m \to \sim r</m></li>
+                        </ol>
+                    </p>
+                    <p>Since the conditional and contrapositive are logically equivalent, statements a and d are 
+                        equivalent. The converse and the inverse are equivalent to each other, so b and c are 
+                        logically equivalent.</p>
+                </solution>
+            </exercise>
+        
+        <exercisegroup>
+            <introduction>
+                <p>Identify the form of each argument. Then determine if the argument is valid or invalid.</p>
+            </introduction>
+            
+            <exercise>
+                <statement>
+                    <p>If you take a vacation, you will be happy.  You take a vacation. Therefore, you are happy.</p>
+                </statement>
+                
+                <answer>
+                    <p>Valid; Law of detachment</p>
+                </answer>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>If Francis enjoys spicy food, then she will like this curry. She likes this curry. 
+                        Therefore, she must enjoy spicy food.</p>
+                </statement>
+                
+                <answer>
+                    <p>Invalid; Fallacy of the converse</p>
+                </answer>
+            </exercise>
+            
+        </exercisegroup>
+        
+        <exercisegroup>
+            <introduction>Write each argument in symbolic form. Then use truth tables to determine whether the 
+                argument is valid or invalid.</introduction>
+            
+            <exercise>
+                <statement>
+                    <p>If I eat this cookie, I will not have cake. I didn't eat this cookie. Therefore, 
+                        I had cake.</p>
+                </statement>
+                
+                <answer>
+                    <p>Invalid argument</p>
+                </answer>
+                
+                <solution>
+                    <p>Let <m>c</m>: I eat this cookie, and <m>k</m>: I will have cake. The argument in symbolic form is:</p>
+                    <me>c \to \sim k</me>
+                    <me>\sim c</me>
+                    <me>\therefore k</me>
+                    
+                    <p>Truth tables for the premises and conclusions are:</p>
+                    
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Variable: c</cell>
+                            <cell right = "minor">Variable: k</cell>
+                            <cell right = "minor">Premise: <m>c \to \sim k</m></cell>
+                            <cell right = "minor">Premise: <m>\sim c</m></cell>
+                            <cell>Conclusion: <m>k</m></cell>
+                        </row>
+                        <row>
+                            <cell>T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">F</cell>
+                            <cell right = "minor">F</cell>
+                            <cell>T</cell>
+                        </row>
+                        <row>
+                            <cell>T</cell>
+                            <cell right = "minor">F</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">F</cell>
+                            <cell>F</cell>
+                        </row>
+                        <row>
+                            <cell>F</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell>T</cell>
+                        </row>
+                        <row>
+                            <cell>F</cell>
+                            <cell right = "minor">F</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell>F</cell>
+                        </row>
+                    </tabular>
+                    
+                    <p>Both premises are true in the last two rows, but the conclusion is false in the last row.
+                        This means the argument is invalid.</p>
+                </solution>
+                    
+                                    
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>If David rents a car, then he will visit his sister. David didn't visit his sister. Therefore,
+                        he didn't rent a car.</p>
+                </statement>
+                
+                <answer>
+                    <p>Valid argument</p>
+                </answer>
+                
+                <solution>
+                    <p>Let <m>r</m>: David rents a car, and <m>v</m>: David visits his sister. 
+                        The argument in symbolic form is:</p>
+                    <me>r \to v</me>
+                    <me>\sim v</me>
+                    <me>\therefore \sim r</me>
+                    
+                    <p>Truth tables for the premises and conclusions are:</p>
+                    
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Variable: r</cell>
+                            <cell right = "minor">Variable: v</cell>
+                            <cell right = "minor">Premise: <m>r \to v</m></cell>
+                            <cell right = "minor">Premise: <m>\sim v</m></cell>
+                            <cell>Conclusion: <m>\sim r</m></cell>
+                        </row>
+                        <row>
+                            <cell>T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">F</cell>
+                            <cell>F</cell>
+                        </row>
+                        <row>
+                            <cell>T</cell>
+                            <cell right = "minor">F</cell>
+                            <cell right = "minor">F</cell>
+                            <cell right = "minor">T</cell>
+                            <cell>F</cell>
+                        </row>
+                        <row>
+                            <cell>F</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">F</cell>
+                            <cell>T</cell>
+                        </row>
+                        <row>
+                            <cell>F</cell>
+                            <cell right = "minor">F</cell>
+                            <cell right = "minor">T</cell>
+                            <cell right = "minor">T</cell>
+                            <cell>T</cell>
+                        </row>
+                    </tabular>
+                    
+                    <p>Both premises are true in the last row only. Since the conclusion is also true in the last row, the
+                        argument is invalid.</p>
+                </solution>
+            </exercise>
+        </exercisegroup>
+        
+        <exercise>
+            <statement>
+                <p>Determine whether each statement is an example of inductive or deductive reasoning.
+                    <ol label = "a">
+                        <li>Omar is using the rules of algebra to find the solution to an equation on a test.</li>
+                        <li>When it snowed last week, campus was closed. If it snows again, campus will close.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Deductive</li>
+                        <li>Inductive</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>Identify the logical fallacy in each argument.
+                <ol label = "a">
+                    <li>You have to give to me raise. Otherwise, I won't be able to pay my bills.</li>
+                    <li>The Denver Broncos are the best football team beacuse there is no team better
+                        than the Broncos.</li>
+                    <li>We can go to out to dinner or eat cereal at home.  The restaurant is too expensive, 
+                        so we must eat cereal for dinner.</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Appeal to consequence</li>
+                        <li>Circular reasoning</li>
+                        <li>False dilemma</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+            
+    </exercises>
+</chapter>
+

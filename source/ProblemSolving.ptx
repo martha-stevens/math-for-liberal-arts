@@ -1,0 +1,1654 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="ProbSolve" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Problem Solving</title>
+        <introduction>
+            <p>In previous math courses, you’ve no doubt run into the infamous “word problems.”
+Unfortunately, these problems rarely resemble the type of problems we actually encounter in
+everyday life. In math books, you usually are told exactly which formula or procedure to
+use, and are given exactly the information you need to answer the question. In real life,
+problem solving requires identifying an appropriate formula or procedure, and determining
+                what information you will need (and won’t need) to answer the question.</p>
+
+<p>In this chapter, we will review several basic but powerful algebraic ideas: percents, rates,
+and proportions. We will then focus on the problem solving process, and explore how to use
+these ideas to solve problems where we don’t have perfect information.</p>
+            
+            
+            
+                
+</introduction>
+
+    <section xml:id="section-problemsolve-percent">
+        
+        <title>Percents</title>
+        
+        <objectives>
+            <ul>
+                <li>Solve percent problems, including percent increase and decrease.</li>
+                <li>Solve applications using percentages such as budgets, sales tax and discounts.</li>
+                <li>Compute relative and absolute change.</li>
+            </ul>
+        </objectives>
+        <p>In the 2004 vice-presidential debates, Edwards's claimed that US forces have suffered "90% 
+            of the coalition casualties" in Iraq.  Cheney disputed this, saying that in fact Iraqi security 
+            forces and coalition allies "have taken almost 50 percent" of the casualties.  Who is correct?  
+            How can we make sense of these numbers?</p>
+ 
+        <p><term>Percent</term> literally means “per 100,” or “parts per hundred.”  When we write 40%, this is 
+            equivalent to the fraction <m>\frac{40}{100}</m> or the decimal 0.40.  
+            Notice that 80 out of 200 and 10 out of 25 are also 40%, since 
+            <me>\frac{80}{200} = \frac{10}{25}  = \frac{40}{100}</me></p>
+        
+        <example>
+            <p>243 people out of 400 state that they like dogs.  What percent is this?</p>
+            
+    <solution>
+                <me>\frac{243}{400} = 0.6075 = \frac{60.75}{100}</me>
+ 
+                <p>This is 60.75%.</p>
+ 
+                <p>Notice that the percent can be found from the equivalent decimal by moving the decimal 
+                    point two places to the right.</p>
+            </solution>     
+        
+        </example>
+        
+        <example>
+            <p>Write each as a percent:  
+                <ol label = "a">
+                    <li><m>\frac{1}{4}</m></li>
+                    
+                    <li><m>0.02</m></li>
+                    
+                    <li><m>2.35</m></li>
+                </ol>
+            </p>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li><m>\frac{1}{4} = 0.25 = 25\%</m></li>
+                        <li><m>2 \%</m></li>
+                        <li><m>235 \%</m></li>
+                    </ol>
+                </p>
+            </answer>
+        </example>
+        
+        <definition><title>Percents</title>
+            <p>If we have a part that is some percent of a whole, then
+                <me>\text{percent}=\frac{\text{part}}{\text{whole}}</me>
+                or equivalently,  
+                <me>\text{part} = \text{percent} \cdot \text{whole}</me>
+                To do the calculations, we write the percent as a decimal.</p>
+        </definition>
+        
+        <example>
+            <p>The sales tax in a town is 9.4%.  How much tax will you pay on a $140 purchase?</p>
+            
+            <solution>
+            
+            <p>Here, $140 is the whole, and we want to find 9.4% of $140.  We start by writing 
+                the percent as a decimal by moving the decimal point two places to the left 
+                (which is equivalent to dividing by 100).</p>
+                <p>We can then compute: 
+                    <me>\text{tax}=0.094 \left( 140 \right) = 13.16</me>
+                    The tax is $13.16</p>
+                
+            </solution>
+            
+        </example>
+        
+        <example>
+            <p>In the news, you hear “tuition is expected to increase by 7% next year.”  If tuition this year 
+                was $1200 per quarter, what will it be next year?</p>
+            
+            <solution>
+            
+           <p>The tuition next year will be the current tuition plus an additional 7%, so it will be 107% of 
+                this year’s tuition: 
+                <me>1200 \left( 1.07 \right) = 1284</me>
+                
+                The tuition will be $1,284.</p>
+ 
+                <p>Alternatively, we could have first calculated 7% of $1200:  
+                    <me>1200 \left(0.07 \right) = 84</me>
+ 
+                    Notice this is not the expected tuition for next year (we could only wish).  
+                    Instead, this is the expected increase, so to calculate the expected tuition, 
+                    we’ll need to add this change to the previous year’s tuition: 
+                    <me>1200 + 84 = 1284</me>
+                    
+                    Again, we get a tuition of $1,284.</p>
+            </solution>
+            
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>A TV originally priced at $799 is on sale for 30% off.  There is then a 9.2% sales tax.  Find 
+                the price after including the discount and sales tax.</p>
+            <answer><p>$799(0.70) = $559.30</p>
+                <p>$559.30(1.092) = $610.76</p></answer>
+        </problem>
+        
+        <example><p>The value of a car dropped from $7400 to $6800 over the last year.  What percent decrease is 
+            this?</p>
+            
+            <solution>
+            
+            <p>To compute the percent change, we first need to find the dollar value change:
+                <me>\$6800-\$7400 = -\$600.</me>  
+                Often we will take the absolute value of this amount, which is called the <term>absolute change</term>:
+                <me>|-600|=600</me>
+                Since we are computing the decrease relative to the starting value, we compute this percent 
+                out of $7400:
+                <me>\frac{600}{7400} = 0.081 = 8.1 \%</me>
+                The value decreased by 8.1%. This is called a <term>relative change</term>. </p>
+                
+            </solution>
+            
+        </example>
+        
+        <definition>
+            <title>Absolute and Relative Change</title>
+            <p>Given two quantities,
+                <me>\text{Absolute Change}=|\text{ending quantity} - \text{starting quantity}|</me>
+                <me>\text{Relative Change} = \frac{\text{absolute change}}{\text{starting quantity}}</me>
+            </p>
+ 
+            <p>Absolute change has the same units as the original quantity.</p>
+            <p>Relative change gives a percent change. </p>
+            <p>The starting quantity is called the base of the percent change. </p>
+        </definition>
+        
+        <p>The base of a percent is very important.  For example, while Nixon was president, it was 
+            argued that marijuana was a “gateway” drug, claiming that 80% of marijuana smokers went on to use 
+            harder drugs like cocaine.  The problem is, this isn’t true.  The true claim is that 80% of harder 
+            drug users first smoked marijuana.  The difference is one of base:  80% of marijuana smokers using hard drugs, 
+            vs. 80% of hard drug users having smoked marijuana. These numbers are not equivalent.  
+            As it turns out, only one in 2,400 marijuana users actually go on to use harder drugs.</p>
+        
+        <example>
+            <p>There are about 75 QFC supermarkets in the U.S.  Albertsons has about 215 stores.  Compare 
+                the size of the two companies.</p>
+            
+            <solution>
+ 
+            <p>When we make comparisons, we must ask first whether an absolute or relative comparison.  
+                The absolute difference is <m>215-75=140</m>.  From this, we could say “Albertsons has 140 
+            more stores than QFC.”  However, if you wrote this in an article or paper, that number does 
+            not mean much.  The relative difference may be more meaningful.  There are two different 
+            relative changes we could calculate, depending on which store we use as the base:</p>
+ 
+            <p>Using QFC as the base,  
+                <me>\frac{140}{75} = 1.867 = 186.7\%</me>
+                
+                This tells us Albertsons is 186.7% larger than QFC.</p>
+            <p>Using Albertsons as the base,  
+                <me>\frac{140}{215}= 0.651 = 65.1\%</me>
+                This tells us QFC is 65.1% smaller than Albertsons.</p>
+            
+            <p>Notice both of these are showing percent differences.  We could also calculate the size of 
+            Albertsons relative to QFC:   
+                <me>\frac{215}{75} = 2.867</me>
+            which tells us Albertsons is 2.867 times the size 
+            of QFC.  Likewise, we could calculate the size of QFC relative to Albertsons: 
+                <me>\frac{75}{215}= 0.349</me>
+                which tells us that QFC is 34.9% of the size of Albertsons.</p>
+                
+            </solution>
+        </example>
+        
+        <example>
+            <p>Suppose a stock drops in value by 60% one week, then increases in value the next week by 
+                75%.  Is the value higher or lower than where it started?</p>
+            
+            <solution>
+ 
+            <p>To answer this question, suppose the value started at $100.  After one week, the value 
+            dropped by 60%: 
+                <me>\$100 - \$100 \cdot 0.60 = \$100 - \$60 = \$40</me> 
+ 
+                In the next week, notice that base of the percent has changed to the new value, $40.</p>
+                <p>Computing the 75% increase: 
+                    <me>\$40 + \$40 \cdot 0.75 = \$40 + \$30 = \$70</me>
+ 
+                In the end, the stock is still $30 lower, or  $30
+                $100 = 30% lower, valued than it started.</p>
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>The U.S. federal debt at the end of 2001 was $5.77 trillion, and grew to $6.20 trillion by the 
+            end of 2002.  At the end of 2005 it was $7.91 trillion, and grew to $8.45 trillion by the end of 2006.
+            Calculate the absolute and relative increase for 2001-2002 and 2005-2006.  Which year saw a larger 
+            increase in federal debt?</p>
+            <answer>
+                <p>2001-2002:  Absolute change: $0.43 trillion.  Relative change: 7.45%</p>
+                <p>2005-2006:  Absolute change: $0.54 trillion.  Relative change: 6.83%</p>
+                <p>2005-2006 saw a larger absolute increase, but a smaller relative increase.</p>
+            </answer>
+        </problem>
+        
+        <example><p>A Seattle Times article on high school graduation rates reported “The number of schools 
+            graduating 60 percent or fewer students in four years - sometimes referred to as “dropout 
+            factories” - decreased by 17 during that time period.  The number of kids attending schools 
+            with such low graduation rates was cut in half.”</p>
+            <p>
+            <ol label = "a">
+                <li><p>Is the “decrease by 17” number a useful comparison?</p></li>
+                
+                <li><p>Considering the last sentence, can we conclude that the number of “dropout factories” was 
+                    originally 34?</p>
+                </li>
+            </ol>
+            </p>
+            
+            <solution>
+                 <p>
+                <ol label = "a">
+                    <li>
+            
+            <p>This number is hard to evaluate, since we have no basis for judging whether this is a larger 
+                    or small change.  If the number of “dropout factories” dropped from 20 to 3, that’d be a 
+                    very significant change, but if the number dropped from 217 to 200, that’d be less of an 
+                improvement.</p></li>
+                    
+                    <li>
+            
+            <p>The last sentence provides relative change which helps put the first sentence in 
+                    perspective.  We can estimate that the number of “dropout factories” was probably 
+                    previously around 34.  However, it’s possible that students simply moved schools rather 
+                    than the school improving, so that estimate might not be fully accurate.</p></li>
+                    
+                </ol> </p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>In the 2004 vice-presidential debates, Edwards's claimed that US forces have suffered "90% 
+                of the coalition casualties" in Iraq.  Cheney disputed this, saying that in fact Iraqi security 
+                forces and coalition allies "have taken almost 50 percent" of the casualties.  Who is correct?</p>
+            
+            <solution>
+ 
+            <p>Without more information, it is hard for us to judge who is correct, but we can easily 
+                conclude that these two percents are talking about different things, so one does not 
+                necessarily contradict the other.  Edward’s claim was a percent with coalition forces as the 
+                base of the percent, while Cheney’s claim was a percent with both coalition and Iraqi security 
+                forces as the base of the percent.  It turns out both statistics are in fact fairly accurate. </p>
+                
+            </solution>
+        </example>
+        
+        <p>We’ll wrap up our review of percents with a couple cautions.  First, when talking about a change of 
+            quantities that are already measured in percents, we have to be careful in how we describe the change.</p>
+        
+        <example><p>A politician’s support increases from 40% of voters to 50% of voters.  Describe the change.</p>
+            
+            <solution>
+ 
+            <p>We could describe this using an absolute change:   
+                <me>|50\% - 40\%| =  10\%</me>
+                Notice that since the original quantities were percents, this change also has the units of percent.</p> 
+                <p>In this case, it is best to describe this as an increase of 10 percentage points.</p> 
+ 
+            <p>In contrast, we could compute the percent change:   
+                <me>\frac{10\%}{40\%}= 0.25= 25\%</me>
+                This is the relative change, and we’d say the politician’s support has increased by 25%.  </p>
+                
+            </solution>
+        </example>
+        
+        <p>Lastly, a caution against averaging percents.</p>
+ 
+        <example><p>A basketball player scores on 40% of 2-point field goal attempts, and on 30% of 3-point of 
+            field goal attempts.  Find the player’s overall field goal percentage. </p>
+            
+            <solution>
+            
+            <p>It is very tempting to average these values, and claim the overall average is 35%, but this is 
+                likely not correct, since most players make many more 2-point attempts than 3-point 
+                attempts.</p>
+            <p>We don’t actually have enough information to answer the question.Suppose the 
+                player attempted 200 2-point field goals and 100 3-point field goals.  Then they made 
+                <m>200\left(0.40\right) = 80</m> 2-point shots and <m>100\left(0.30\right) = 30</m> 3-point shots.  
+                Overall, they made 110 shots out of 300, for a  
+                <me>\frac{110}{300}= 0.367</me>
+                36.7% overall field goal percentage.</p>
+                
+            </solution>
+        </example>
+    </section>
+    
+    <section xml:id = "section-probsolve-proportion"><title>Proportions and Rates</title>
+        
+        <objectives>
+             <ul>
+                <li>Compute rates and unit rates</li>
+                <li>Solve applications with proportions</li>
+                <li>Perform unit conversions</li>
+            </ul>
+        </objectives>
+        
+        <p>If you wanted to power the city of Seattle using wind power, how many windmills would you 
+            need to install?  Questions like these can be answered using rates and proportions.</p>
+        
+        <definition><title>Rates</title>
+            <p>A <term>rate</term> is the ratio (fraction) of two quantities.</p>
+            <p>A <term>unit rate</term> is a rate with a denominator of one.</p>
+        </definition>
+        
+        <example>
+            <p>Your car can drive 300 miles on a tank of 15 gallons.  Express this as a rate.</p>
+            
+            <solution>
+            
+                <p>Expressed as a rate, 
+                    <me>\frac{300 \text{ miles}}{15 \text{ gallons}}</me></p>
+                <p>We can divide to find a unit rate:</p>
+                <me>\frac{20 \text{ miles}}{1 \text{ gallon}} = 20 \frac{\text{miles}}{\text{gallon}}</me>
+                
+                </solution> 
+            
+        </example>
+        
+        <definition><title>Proportion Equation</title>
+            <p>A proportion equation is an equation showing the equivalence of two rates or ratios.</p>
+            <me>\frac{a}{b} = \frac{c}{d}</me>
+            <p>The cross products of a proportion will be equation; that is, <m>a\cdot d = b \cdot c</m></p>
+        </definition>
+        
+        <example>
+            <p>A map scale indicates that <m>\frac{1}{2}</m> inch on the map corresponds with 3 real miles.  How many 
+                miles apart are two cities that are <m>2 \frac{1}{4}</m> inches apart on the map?</p>
+            
+            <solution>
+            
+            <p>We can set up a proportion by setting equal two <m>\frac{\text{map inches}}{\text{real miles}}</m>
+                rates, and introducing a variable, <m>x</m>, to represent the unknown quantity - the 
+                mile distance between the cities.</p>
+                
+                <me>\frac{\frac{1}{2} \text{ inch}}{3 \text{ miles}}=\frac{2 \frac{1}{4} \text{ inch}}{x \text{ miles}}</me>
+                
+                <p>Then we can set the cross products equal to solve:</p>
+                
+                <me>\frac{1}{2}x = \left(2 \frac{1}{4} \right)\cdot 3</me>
+                <me>\frac{1}{2}x = \frac{9}{4} \cdot \frac{3}{1}</me>
+                <me>\frac{1}{2}x = \frac{27}{4}</me>
+                
+                <p>Finally, we can divide both sides by <m>\frac{1}{2}</m> to solve for <m>x</m>.  Recall, dividing by a
+                    fraction is the same as multiplying by its reciprocal.  For example, 
+                    <me> \frac{27}{4} \div \frac{1}{2} = \frac{27}{4}\cdot \frac{2}{1}</me></p>
+                <p>To solve for x, when can divide both sides by <m>\frac{1}{2}</m>, which is equivalent to multiplying 
+                    both sides by 2.</p>
+                
+                <me>\frac{2}{1}\cdot \frac{1}{2}x = \frac{27}{4} \cdot \frac{2}{1}</me>
+                <me>x = \frac{54}{4} = \frac{27}{2} = 13 \frac{1}{2} \text{ miles}</me>
+                
+            </solution>
+            
+        </example>
+        
+        <p>Many proportion problems can also be solved using dimensional analysis, the process of 
+            multiplying a quantity by rates to change the units. </p>
+        
+        <example>
+            <p>Your car can drive 300 miles on a tank of 15 gallons.  How far can it drive on 40 gallons?</p>
+            
+            <solution>
+            
+            <p>We could certainly answer this question using a proportion:
+                <me>\frac{300 \text{ miles}}{15 \text{ gal}} = \frac{x \text{ miles}}{40 \text{ gallons}}</me>
+                
+                </p>
+                
+              <p>However, we earlier found that 300 miles on 15 gallons gives a rate of 20 miles per gallon.  
+                  If we multiply the given 40 gallon quantity by this rate, the gallons unit “cancels” and we’re 
+                  left with a number of miles:</p>
+                
+                <me>\frac{40 \text{ gal}}{1} \cdot \frac{20 \text{ miles}}{\text{gallon}} = 800 \text{ miles}</me>
+                
+                <p>Notice if instead we were asked “how many gallons are needed to drive 50 miles?” we could 
+                    answer this question by inverting the 20 mile per gallon rate so that the miles unit cancels and 
+                    we’re left with gallons:</p>
+                
+                <me>\frac{50 \text{ miles}}{1} \cdot \frac{\text{gallon}}{20 \text{ miles}} = 2.5 \text{ gallons}</me>
+                
+            </solution>
+                
+          
+        </example>
+        
+        <p>Dimensional analysis can also be used to do unit conversions.  Here are some unit 
+            conversions for reference. </p>
+        
+        <note><title>Unit Conversions</title>
+            <p>Some common unit conversions for length are:
+            <ul>
+            <li>1 foot (ft) = 12 inches (in)</li>    
+            <li>1 yard (yd) = 3 feet (ft)</li>
+            <li>1 mile = 5,280 feet</li>
+            <li>1000 millimeters (mm) = 1 meter (m)</li> 
+            <li>100 centimeters (cm) = 1 meter</li>
+            <li>1000 meters (m) = 1 kilometer (km)</li> 
+            <li>2.54 centimeters (cm) = 1 inch</li>
+        </ul> </p>
+
+            <p>Some common unit conversions for weight and mass are:
+            <ul>
+            <li>1 pound (lb) = 16 ounces (oz)</li>
+            <li>1 ton = 2000 pounds</li>
+            <li>1000 milligrams (mg) = 1 gram (g)</li> 
+            <li>1000 grams = 1kilogram (kg)</li>
+            <li>1 kilogram = 2.2 pounds (on earth)</li>
+        </ul> </p>
+        
+            <p> Some common unit conversions for capacity are:
+            <ul>
+            <li>1 cup = 8 fluid ounces (fl oz)</li>  
+            <li>1 pint = 2 cups</li>
+            <li>1 quart = 2 pints = 4 cups</li>   
+            <li>1 gallon = 4 quarts = 16 cups</li>
+            <li>1000 milliliters (ml) = 1 liter (L) </li>
+            </ul> </p>
+        </note>
+        
+        <example>
+            <p>A bicycle is traveling at 15 miles per hour.  How many feet will it cover in 20 seconds?</p> 
+            
+            <solution>
+ 
+            <p>To answer this question, we need to convert 20 seconds into feet.   If we know the speed of 
+                the bicycle in feet per second, this question would be simpler.  Since we don’t, we will need 
+                to do additional unit conversions.  We will need to know that 5280 ft = 1 mile.  We might 
+                start by converting the 20 seconds into hours:</p>
+                
+                <me>\frac{20\text{ sec}}{1} \cdot \frac{1\text{ min}}{60\text{ sec}} \cdot \frac{1\text{ hr}}{60\text{ min}}
+                    = \frac{1}{180}\text{ hour}</me>
+                
+                <p>Now we can multiply by 15 miles/hour to get miles:</p>
+                
+                <me>\frac{1}{180}\text{ hour} \cdot \frac{15 \text{miles}}{1 \text{ hour}}=\frac{1}{12}\text{ mile}</me>
+                
+                <p>Now we convert to feet:</p>
+                
+                <me>\frac{1}{12}\text{ mile} \cdot \frac{5280 \text{ feet}}{1 \text{ mile}} = 440 \text{ feet}</me>
+                
+                <p>We could have also done this in one step:</p>
+                
+                <me>\frac{20\text{ sec}}{1} \cdot \frac{1\text{ min}}{60\text{ sec}} \cdot \frac{1\text{ hr}}{60\text{ min}}
+                    \cdot \frac{15 \text{miles}}{1 \text{ hour}} \cdot 
+                    \frac{5280 \text{ feet}}{1 \text{ mile}} = 440 \text{ feet}</me>
+                
+            </solution>
+                
+           
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>A 1000 foot spool of bare 12-gauge copper wire weighs 19.8 pounds.  How much will 18 
+                inches of the wire weigh, in ounces? </p>
+            
+            <answer>0.475 ounces</answer>
+            
+        </problem>
+        
+        <p>Notice that with the miles per gallon example, if we double the miles driven, we double the 
+            gas used.  Likewise, with the map distance example, if the map distance doubles, the real-life 
+            distance doubles.  This is a key feature of proportional relationships, and one we must 
+            confirm before assuming two things are related proportionally. </p>
+
+        <example>
+            <p>Suppose you’re tiling the floor of a 10 ft by 10 ft room, and find that 100 tiles will be needed.  
+                How many tiles will be needed to tile the floor of a 20 ft by 20 ft room?</p>
+            
+            <solution>
+            
+ 
+                <p>In this case, while the width the room has doubled, the area has quadrupled.  Since the 
+                    number of tiles needed corresponds with the area of the floor, not the width, 400 tiles will be 
+                    needed.  We could find this using a proportion based on the areas of the rooms:</p>
+                
+                <me>\frac{100 \text{ tiles}}{100 \text{sq feet}} = \frac{n \text{ tiles}}{400 \text{sq feet}}</me>
+                
+            </solution>
+
+            
+        </example>
+        
+        <p>Other quantities just don’t scale proportionally at all.</p>
+ 
+        <example><p>Suppose a small company spends $1000 on an advertising campaign, and gains 100 new 
+            customers from it.  How many new customers should they expect if they spend $10,000?</p>
+            
+            <solution>
+ 
+        <p>While it is tempting to say that they will gain 1000 new customers, it is likely that additional 
+            advertising will be less effective than the initial advertising.  For example, if the company is 
+            a hot tub store, there are likely only a fixed number of people interested in buying a hot tub, 
+            so there might not even be 1000 people in the town who would be potential customers. </p>
+                
+            </solution>
+            
+        </example>
+ 
+        <p>Sometimes when working with rates, proportions, and percents, the process can be made 
+            more challenging by the magnitude of the numbers involved.  Sometimes, large numbers are 
+            just difficult to comprehend. </p>
+        
+        <example>
+            <p>Compare the 2010 U.S. military budget of $683.7 billion to other quantities.</p> 
+            
+            <solution>
+ 
+            <p>Here we have a very large number, about $683,700,000,000 written out.  Of course, 
+                imagining a billion dollars is very difficult, so it can help to compare it to other quantities.</p> 
+ 
+            <p>If that amount of money was used to pay the salaries of the 1.4 million Walmart employees 
+                in the U.S., each would earn over $488,000. </p>
+ 
+            <p>There are about 300 million people in the U.S.  The military budget is about $2,200 per 
+                person. </p>
+ 
+            <p>If you were to put $683.7 billion in $100 bills, and count out 1 per second, it would take 216 
+                years to finish counting it. </p>
+                
+            </solution>
+            
+        </example>
+        
+        <example>
+            <p>Compare the electricity consumption per capita in China to the rate in Japan.</p>
+            
+            <solution>
+ 
+
+                <p>To address this question, we will first need data.  
+                    From the CIA website we can find the 
+                electricity consumption in 2011 for China was 4,693,000,000,000 KWH (kilowatt-hours), or 
+                4.693 trillion KWH, while the consumption for Japan was 859,700,000,000, or 859.7 billion 
+                KWH.  To find the rate per capita (per person), we will also need the population of the two 
+                countries.   From the World Bank, 
+                    we can find the population of China is 1,344,130,000, or 
+                1.344 billion, and the population of Japan is 127,817,277, or 127.8 million.</p>
+                
+                <p>Computing the consumption per capita for each country:</p>
+                <p>China: <m>\frac{4,693,000,000,000 \text{ KWH}}{1,344,130,000 \text{ people}} =3491.5</m> 
+                    KWH per person </p>
+                <p>Japan: <m>\frac{859,700,000,000 \text{ KWH}}{127,817,277 \text{ people}}= 6726</m>
+                    KWH per person</p>
+ 
+                <p>While China uses more than 5 times the electricity of Japan overall, because the population 
+                    of Japan is so much smaller, it turns out Japan uses almost twice the electricity per person 
+                    compared to China.</p>
+                
+            </solution>
+
+            
+        </example>
+
+        
+    </section>
+    
+    <section xml:id = "section-probsolve-geometry"><title>Geometry</title>
+        
+        <objectives>
+             <ul>
+                <li>Solve area problems</li>
+                <li>Solve volume problems</li>
+            </ul>
+        </objectives>
+        
+        <p>Geometric shapes, as well as area and volumes, can often be important in problem solving.</p> 
+ 
+        <example><p>You are curious how tall a tree is, but don’t have any way to climb it.  Describe a method for 
+            determining the height. </p>
+            
+            <solution>
+ 
+            <p>There are several approaches we could take.  We’ll use one based on triangles, which 
+            requires that it’s a sunny day.  Suppose the tree is casting a shadow, say 15 ft long.  I can 
+            then have a friend help me measure my own shadow.  Suppose I am 6 ft tall, and cast a 1.5 ft 
+            shadow.  Since the triangle formed by the tree and its shadow has the same angles as the 
+            triangle formed by me and my shadow, these triangles are called <term>similar triangles</term> and their 
+            sides will scale proportionally.  In other words, the ratio of height to width will be the same 
+                in both triangles.  Using this, we can find the height of the tree, which we’ll denote by h.</p>
+                
+                <me>\frac{6\text{ feet tall}}{1.5 \text{ ft shadow}} = \frac{h}{15\text{ ft shadow}}</me>
+                
+                <p>Multiplying both sides by 15, we get h = 60.  The tree is about 60 ft tall.</p>
+                
+            </solution>
+            
+        </example>
+        
+        <p>It may be helpful to recall some formulas for areas and volumes of a few basic shapes.</p>
+        
+        <definition><title>Areas of Basic Shapes</title>
+            <p>The formulas for both area and distance around (perimeter/circumference) of rectangles and 
+                circles are below.</p>
+            <p>A rectangle with length, <m>L</m> and width, <m>W</m> has an area and perimeter of:</p>
+            <image width = "25%" source = "images/rectangle_Screenshot.png"><description>Rectangle</description></image>
+
+            <me>A = LW</me>
+            <me>P = 2L + 2W</me>
+            <p>A circle with radius, <m>r</m> has an area and circumference of:</p>
+            
+            <image width = "25%" source = "images/circle_Screenshot.png"><description>Circle</description></image>
+            
+            <me>A = \pi r^2</me>
+            <me>C = 2\pi r</me>
+        </definition>
+        
+        <definition><title>Volumes of Basic Shapes</title>
+            <p>The formulas for volumes of rectangular boxes and cylinders are below.</p>
+            <p>The volume of a rectangular box with height, <m>H</m>, width, <m>W</m>, and length, <m>L</m> is:</p>
+            <image width = "25%" source = "images/rectangularbox_Screenshot.png"></image>
+            <me>V = LWH</me>
+            <p>The volume of a cylinder with radius, <m>r</m> and height, <m>h</m> is:</p>
+            <image width = "25%" source = "images/cylinder_Screenshot.png"></image>
+            <me>V = \pi r^2 h</me>
+        </definition>
+        
+        <example>
+            <p>If a 12 inch diameter pizza requires 10 ounces of dough, how much dough is needed for a 16 inch pizza?</p>
+            
+            <solution>
+
+            <p>To answer this question, we need to consider how the weight of the dough will scale. The weight 
+                will be based on the volume of the dough. However, since both pizzas will be about the same thickness, the 
+                weight will scale with the area of the top of the pizza. We can find the area of each pizza using the 
+                formula for area of a circle, <m>A= \pi r^2</m>:</p>
+                
+                <p>A 12” pizza has radius 6 inches, so the area will be <m>\pi 6^2</m>= about 113 square inches.</p>
+
+                <p>A 16” pizza has radius 8 inches, so the area will be <m>\pi 8^2</m>= about 201 square inches.</p>
+
+                <p>Notice that if both pizzas were 1 inch thick, the volumes would be 113 in<m>^3</m> and 201 
+                    <m>\text{in}^3</m> respectively, which are at the same ratio as the areas. As mentioned earlier, since 
+                    the thickness is the same for both pizzas, we can safely ignore it</p>
+
+                <p>We can now set up a proportion to find the weight of the dough for a 16” pizza:</p>
+                
+                <me>\frac{10\text{ounces}}{113\text{ in}^2} = \frac{x}{201\text{ in}^2}</me>
+                
+                <p>Multiply both sides by 201</p>
+
+                <p><m>x=201\cdot \frac{10}{113}</m> = about 17.8 ounces of dough for a 16” pizza.</p>
+
+                <p>It is interesting to note that while the diameter is <m>\frac{16}{12}=1.33</m>
+                    times larger, the dough required, which scales with area, is <m>1.33^2=1.78</m> times larger.</p>
+                
+                </solution>
+          
+                </example>
+        
+        <example><p>A company makes regular and jumbo marshmallows. The regular marshmallow has 25 calories. How many calories will the jumbo marshmallow have?</p>
+            <figure>
+                <caption>Photo courtesy <url href = "https://christopherdanielson.wordpress.com">Christopher Danielson</url>.
+                    </caption>
+            <image width = "50%" source = "images/marshmellow_Screenshot.png"></image>
+            </figure>
+            
+            <solution>
+
+            <p>We would expect the calories to scale with volume. Since the marshmallows have cylindrical shapes, 
+                we can use that formula to find the volume. From the grid in the image, we can estimate the radius and 
+                height of each marshmallow.</p>
+                
+                <p>The regular marshmallow appears to have a diameter of about 3.5 units, giving a radius of 1.75 units, and 
+                    a height of about 3.5 units. The volume is about 
+                    <m>\pi \cdot 1.75^2 \cdot 3.5=33.7</m> units<m>^3</m>.</p>
+
+                <p>The jumbo marshmallow appears to have a diameter of about 5.5 units, giving a radius of 2.75 units, 
+                    and a height of about 5 units. The volume is about <m>\pi \cdot 2.75^2 \cdot 5=118.8</m>
+                    units<m>^3</m>.</p>
+
+                <p>We could now set up a proportion, or use rates. The regular marshmallow has 25 calories for 33.7 cubic 
+                    units of volume. The jumbo marshmallow will have:</p>
+                
+                <me>118.8 \text{ units}^3 \cdot \frac{25 \text{ calories}}{33.7 \text{ units}^3}=88.1 \text{ calories}</me>
+
+                <p>It is interesting to note that while the diameter and height are about 1.5 times larger for the jumbo 
+                    marshmallow, the volume and calories are about <m>1.5^3=3.375</m> times larger.</p>
+                
+                </solution>
+                
+           
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>A website says that you’ll need 48 fifty-pound bags of sand to fill a sandbox that measure 8 ft by 8 ft 
+                by 1 ft. How many bags would you need for a sandbox 6ft by 4 ft by 1 ft?</p>
+            
+            <answer>
+                <p>The original sandbox has volume 64 ft<m>^3</m>. The smaller sandbox has volume 24 ft<m>^3</m>.</p>
+                
+                <p>The proportion <m>\frac{48}{64} = \frac{x}{24}</m> results in <m>x=18</m> bags.</p>
+            </answer>
+        </problem>
+            
+            
+    </section>
+    
+    <section xml:id="section-probsolve-estimate"><title>Problem Solving and Estimating</title>
+        
+        <objectives>
+            <ul>
+                <li>Discuss and apply a problem-solving strategy</li>
+                <li>Use estimates to solve problems, including cost estimation using applied geometry</li>
+            </ul>
+        </objectives>
+        
+        <p>Finally, we will bring together the mathematical tools we’ve reviewed, and use them to approach more complex 
+            problems. In many problems, it is tempting to take the given information, plug it into whatever formulas you 
+            have handy, and hope that the result is what you were supposed to find. Chances are, this approach has served 
+            you well in other math classes.</p>
+
+        <p>This approach does not work well with real life problems. Instead, problem solving is best approached by first 
+            starting at the end: identifying exactly what you are looking for. From there, you then work backwards, asking 
+            “what information and procedures will I need to find this?” Very few interesting questions can be answered in 
+            one mathematical step; often times you will need to chain together a solution pathway, a series of steps that 
+            will allow you to answer the question.</p>
+        
+        <note><title>Problem Solving Process</title> <p>
+            <ol label = "1">
+                <li>Identify the question you’re trying to answer.</li>
+                <li>Work backwards, identifying the information you will need and the
+                    relationships you will use to answer that question.</li>
+                <li>Continue working backwards, creating a solution pathway.</li>
+                <li>If you are missing necessary information, look it up or estimate it. If you have unnecessary 
+                    information, ignore it.</li>
+                <li>Solve the problem, following your solution pathway.</li>
+            </ol> </p>
+        </note>
+        
+        <p>In most problems we work, we will be approximating a solution, because we will not have perfect information. We 
+            will begin with a few examples where we will be able to approximate the solution using basic knowledge from our 
+            lives.</p>
+
+        <example><p>How many times does your heart beat in a year?</p>
+            
+            <solution>
+
+            <p>This question is asking for the rate of heart beats per year. Since a year is a long time to 
+                measure heart beats for, if we knew the rate of heart beats per minute, we could scale that quantity up to a 
+                year. So the information we need to answer this question is heart beats per minute. This is something you 
+                can easily measure by counting your pulse while watching a clock for a minute.</p>
+
+                <p>Suppose you count 80 beats in a minute. To convert this beats per year:</p>
+                
+                <me>\frac{80\text{ beat}}{1\text{ minute}} \cdot \frac{60\text{ minutes}}{1\text{ hour}}
+                    \cdot \frac{24\text{ hours}}{1 \text{day}} \cdot \frac{365\text{ days}}{1\text{ year}}
+                    = 42,048,000</me>
+                
+                </solution>
+                
+        
+        </example>
+
+        <example>
+            <p>How thick is a single sheet of paper? How much does it weigh?</p>
+            
+            <solution>
+            
+   
+                <p>While you might have a sheet of paper handy, trying to measure it would be tricky. Instead we might 
+                    imagine a stack of paper, and then scale the thickness and weight to a single sheet. If you’ve ever 
+                    bought paper for a printer or copier, you probably bought a ream, which contains 500 sheets. We could 
+                    estimate that a ream of paper is about 2 inches thick and weighs about 5 pounds. Scaling these down,</p>
+                
+                <p><m>\frac{2\text{ inches}}{\text{ream}} \cdot \frac{1 \text{ ream}}{500 \text{ pages}} = 0.004</m> 
+                    inches per sheet</p>
+                
+                <p><m>\frac{5\text{ pounds}}{\text{ream}} \cdot \frac{1 \text{ ream}}{500 \text{ pages}} = 0.01</m> 
+                     pounds per sheet, or 0.16 ounces per sheet.</p>
+                
+                </solution>
+                
+
+        </example>
+
+        <example>
+            <p>A recipe for zucchini muffins states that it yields 12 muffins, with 250 calories per muffin. You instead 
+                decide to make mini-muffins, and the recipe yields 20 muffins. If you eat 4, how many calories will you 
+                consume?</p>
+            
+            <solution>
+
+
+                <p>There are several possible solution pathways to answer this question. We will explore one.</p>
+
+                <p>To answer the question of how many calories 4 mini-muffins will contain, we would want to know the number 
+                    of calories in each mini-muffin. To find the calories in each mini-muffin, we could first find the total 
+                    calories for the entire recipe, then divide it by the number of mini-muffins produced. To find the total 
+                    calories for the recipe, we could multiply the calories per standard muffin by the number per muffin. 
+                    Notice that this produces a multi-step solution pathway. It is often easier to solve a problem in small 
+                    steps, rather than trying to find a way to jump directly from the given information to the solution.</p>
+
+                <p>We can now execute our plan:</p>
+                
+                <p><m>12\text{ muffins}\cdot \frac{250\text{ calories}}{\text{muffin}}=3000</m> calories for the whole 
+                    recipe.</p>
+
+                <p><m>\frac{3000\text{ calories}}{20\text{ mini-muffins}} = 150</m> calories per mini-muffin.</p>
+
+                <p><m>4\text{ mini-muffins}\cdot 150\text{ calories/mini-muffin}=600</m> calories consumed.</p>
+                
+                </solution>
+                
+  
+            
+        </example>
+
+        <example>
+            <p>You need to replace the boards on your deck. About how much will the materials cost?</p>
+            
+            <solution>
+
+
+
+                <p>There are two approaches we could take to this problem: 1) estimate the number of boards we will need and 
+                    find the cost per board, or 2) estimate the area of the deck and find the approximate cost per square 
+                    foot for deck boards. We will take the latter approach.</p>
+
+                <p>For this solution pathway, we will be able to answer the question if we know the cost per square foot for 
+                    decking boards and the square footage of the deck. To find the cost per square foot for decking boards, 
+                    we could compute the area of a single board, and divide it into the cost for that board. We can compute 
+                    the square footage of the deck using geometric formulas. So first we need information: the dimensions of 
+                    the deck, and the cost and dimensions of a single deck board.</p>
+
+                <p>Suppose that measuring the deck, it is rectangular, measuring 16 ft by 24 ft, for a total area of 
+                    <m>384\text{ ft}^2</m>.</p>
+
+                <p>From a visit to the local home store, you find that an 8 foot by 4 inch cedar deck board costs about 
+                    $7.50. The area of this board, doing the necessary conversion from inches to feet, is:</p>
+
+                <me>8 \text{ feet}\cdot 4 \text{ inches}\cdot \frac{1\text{ foot}}{12\text{ inches}}=2.667\text{ ft}^2</me>
+
+                <p>The cost per square foot is then <m>\$7.50 \div 2.667\text{ ft}^2=\$2.8125</m> per square foot.</p>
+
+                <p>This will allow us to estimate the material cost for the whole 384 square foot deck.</p>
+
+                <me>\$384 \text{ ft}^2 \cdot \frac{\$2.8125}{\text{ ft}^2}=\$1080</me>
+
+                <p>Of course, this cost estimate assumes that there is no waste, which is rarely the case. It is common to 
+                    add at least 10% to the cost estimate to account for waste.</p>
+                
+                </solution>
+
+        </example>
+        
+        <example>
+            <p>Is it worth buying a Hyundai Sonata hybrid instead the regular Hyundai Sonata?</p>
+            
+            <solution>
+
+    
+                <p>To make this decision, we must first decide what our basis for comparison will be. For the purposes of 
+                    this example, we’ll focus on fuel and purchase costs, but environmental impacts and maintenance costs 
+                    are other factors a buyer might consider.</p>
+
+                <p>It might be interesting to compare the cost of gas to run both cars for a year. To determine this, we 
+                    will need to know the miles per gallon both cars get, as well as the number of miles we expect to drive 
+                    in a year. From that information, we can find the number of gallons required from a year. Using the 
+                    price of gas per gallon, we can find the running cost.</p>
+
+                <p>From Hyundai’s website, the 2013 Sonata will get 24 miles per gallon (mpg) in the city, and 35 mpg on the 
+                    highway. The hybrid will get 35 mpg in the city, and 40 mpg on the highway.</p>
+
+                <p>An average driver drives about 12,000 miles a year. Suppose that you expect to drive about 75% of that in 
+                    the city, so 9,000 city miles a year, and 3,000 highway miles a year.</p>
+
+                <p>We can then find the number of gallons each car would require for the year.</p>
+
+                <p>Sonata:</p>
+
+                <p><m>9000 \text{ city miles}\cdot \frac{1\text{ gallon}}{24 \text{ city miles}}
+                    + 3000\text{ hightway miles}\cdot \frac{1\text{ gallon}}{35\text{ highway miles}}=460.7</m>gallons.</p>
+                    
+                <p>Hybrid:</p>
+                
+                <p><m>9000 \text{ city miles}\cdot \frac{1\text{ gallon}}{35 \text{ city miles}}
+                    + 3000\text{ hightway miles}\cdot \frac{1\text{ gallon}}{40\text{ highway miles}}= 332.1</m>gallons.</p>
+
+                <p>If gas in your area averages about $3.50 per gallon, we can use that to find the running cost:</p>
+
+                <p>Sonata: <m>460.7 \cdot \$3.50=\$1612.45</m></p>
+
+                <p>Hybrid:  <m>332.1 \cdot \$3.50 =\$1162.35</m></p>
+
+                <p>The hybrid will save $450.10 a year. The gas costs for the hybrid are about 
+                    <m>\frac{\$450.10}{\$1612.45}=0.279=27.9\%</m> lower than the costs for the standard Sonata.</p>
+
+                <p>While both the absolute and relative comparisons are useful here, they still make it hard to answer the 
+                    original question, since <q>is it worth it</q> implies there is some tradeoff for the gas savings. Indeed, 
+                    the hybrid Sonata costs about $25,850, compared to the base model for the regular Sonata, 
+                    at $20,895.</p>
+
+                <p>To better answer the <q>is it worth it</q> question, we might explore how long it will take the gas savings to 
+                    make up for the additional initial cost. The hybrid costs $4965 more. With gas savings of $451.10 a 
+                    year, it will take about 11 years for the gas savings to make up for the higher initial costs.</p>
+
+                <p>We can conclude that if you expect to own the car 11 years, the hybrid is indeed worth it. If you plan to 
+                    own the car for less than 11 years, it may still be worth it, since the resale value of the hybrid may 
+                    be higher, or for other non-monetary reasons. This is a case where math can help guide your decision, 
+                    but it can’t make it for you.</p>
+                
+                </solution>
+                
+         
+        </example>
+
+        <problem><title>Try It Now</title>
+            <p>If traveling from Seattle, WA to Spokane WA for a three-day conference, does it make more sense to drive 
+            or fly?</p>
+            
+            <answer><p>There is not enough information provided to answer the question, so we will have to make some 
+                assumptions, and look up some values.</p>
+                
+                <p>Assumptions:</p>
+                 <p>
+                <ol label = "a">
+                    <li>We own a car. Suppose it gets 24 miles to the gallon. We will only consider gas cost.</li>
+                    <li>We will not need to rent a car in Spokane, but will need to get a taxi from the airport to the 
+                        conference hotel downtown and back.</li>
+                    <li>We can get someone to drop us off at the airport, so we don’t need to consider airport parking.</li>
+                    <li>We will not consider whether we will lose money by having to take time off work to drive.</li>
+                </ol> </p>
+
+                <p>Values looked up (your values may be different)</p>
+                 <p>
+                <ol label = "a">
+                    <li>Flight cost: $184</li>
+                    <li>Taxi cost: $25 each way (estimate, according to hotel website)</li>
+                    <li>Driving distance: 280 miles each way</li>
+                    <li>Gas cost: $3.79 a gallon</li>
+                </ol> </p>
+                
+                <p>Cost for flying: $184 flight cost + $50 in taxi fares = $234.</p>
+                
+                <p>Cost for driving: 560 miles round trip will require 23.3 gallons of gas, costing $88.31.</p>
+
+                <p>Based on these assumptions, driving is cheaper. However, our assumption that we only include gas cost may 
+                    not be a good one. Tax law allows you deduct $0.55 (in 2012) for each mile driven, a value that accounts 
+                    for gas as well as a portion of the car cost, insurance, maintenance, etc. Based on this number, the 
+                    cost of driving would be $319.</p></answer>
+        </problem>
+
+            
+    </section>
+    
+    <exercises>
+        
+        <exercise>
+            <statement>Out of 230 racers who started the marathon, 212 completed the race, 14 gave up, and 4 were 
+                disqualified. What percentage did not complete the marathon?</statement>
+            
+            <answer><m>7.8 \%</m></answer>
+        </exercise>
+
+        <exercise>
+            <statement>Patrick left an $8 tip on a $50 restaurant bill. What percent tip is that?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>Ireland has a 23% VAT (value-added tax, similar to a sales tax). How much will the VAT be on a 
+                purchase of a 250 euro item?</statement>
+            
+            <answer>57.50 euro</answer>
+        </exercise>
+
+        <exercise>
+            <statement>Employees in 2012 paid 4.2% of their gross wages towards social security (FICA tax), while employers 
+                paid another 6.2%. How much will someone earning $45,000 a year pay towards social security out of their 
+                gross wages?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>A project on Kickstarter.com was aiming to raise $15,000 for a precision coffee press. They ended up 
+                with 714 supporters, raising 557% of their goal. How much did they raise?</statement>
+            
+            <answer>$83,550</answer>
+        </exercise>
+
+        <exercise>
+            <statement>Another project on Kickstarter for an iPad stylus raised 1,253% of their goal, raising a total of 
+                $313,490 from 7,511 supporters. What was their original goal?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>The population of a town increased from 3,250 in 2008 to 4,300 in 2010. Find the absolute and 
+                relative (percent) increase.</statement>
+            
+            <answer>Absolute increase = 1,050; Relative increase = 32.3%</answer>
+        </exercise>
+
+        <exercise>
+            <statement>The number of CDs sold in 2010 was 114 million, down from 147 million the previous year. Find 
+                the absolute and relative (percent) decrease.</statement>
+        </exercise>
+
+        <exercise>
+            <statement> <p>A company wants to decrease their energy use by 15%.
+                <ol label = "a">
+
+                    <li>If their electric bill is currently $2,200 a month, what will their bill be 
+                        if they’re successful?</li>
+                    <li>If their next bill is $1,700 a month, were they successful? Why or why not?</li>
+                </ol> </p>
+            </statement>
+            
+            <answer><p>
+                <ol label ="a">
+                    <li>$1,870</li>
+                    <li>Yes, their bill decreased by more than 15%. (They saw a 22.7% decrease)</li>
+                </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise>
+            <statement><p>A store is hoping an advertising campaign will increase their number of customers by 30%. They 
+                currently have about 80 customers a day.
+                <ol label = "a">
+                    <li>How many customers will they have if their campaign is successful?</li>
+                    <li>If they increase to 120 customers a day, were they successful? Why or why not?</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>An article reports “attendance dropped 6% this year, to 300.” What was the attendance before the 
+                drop?</statement>
+            
+            <answer>319</answer>
+        </exercise>
+
+        <exercise>
+            <statement>An article reports “sales have grown by 30% this year, to $200 million.” What were sales before the 
+                growth?</statement>
+        </exercise>
+
+        <exercise>
+            <statement> <p>The Walden University had 47,456 students in 2010, while Kaplan University had 77,966 students. 
+            Complete the following statements:
+            <ol label = "a">
+                <li>Kaplan’s enrollment was ___% larger than Walden’s.</li>
+                <li>Walden’s enrollment was ___% smaller than Kaplan’s.</li>
+                <li>Walden’s enrollment was ___% of Kaplan’s.</li>
+            </ol> </p>
+        </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>64.3%</li>
+                        <li>39.1%</li>
+                        <li>60.9%</li>
+                    </ol>
+                </p>
+            </answer>
+                        
+                        
+        </exercise>
+
+        <exercise>
+            <statement> <p>In the 2012 Olympics, Usain Bolt ran the 100m dash in 9.63 seconds. Jim Hines won the 1968 Olympic 
+                gold with a time of 9.95 seconds.
+                <ol label = "a">
+                    <li>Bolt’s time was ___% faster than Hines’.</li>
+                    <li>Hine’ time was ___% slower than Bolt’s.</li>
+                    <li>Hine’ time was ___% of Bolt’s.</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>A store has clearance items that have been marked down by 60%. They are having a sale, advertising 
+                an additional 30% off clearance items. What percent of the original price do you end up paying?
+            </statement>
+            
+            <answer>28%</answer>
+        </exercise>
+
+        <exercise>
+            <statement>Which is better: having a stock that goes up 30% on Monday than drops 30% on Tuesday, or a stock 
+                that drops 30% on Monday and goes up 30% on Tuesday? In each case, what is the net percent gain or loss?
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement> <p>Are these two claims equivalent, in conflict, or not comparable because they’re talking about 
+                different things?
+                <ol label = "a">
+                    <li>“16.3% of Americans are without health insurance”</li>
+                    <li>“only 55.9% of adults receive employer provided health insurance”</li>
+                </ol> </p>
+            </statement>
+            
+            <answer>These are not comparable; “a” is using a base of all Americans and is talking about health insurance from any 
+                source, while “b” is using a base of adults and is talking specifically about health insurance provided by employers.
+            </answer>
+        </exercise>
+
+        <exercise>
+            <statement> <p>Are these two claims equivalent, in conflict, or not comparable because they’re talking about 
+                different things?
+                <ol label = "a">
+                    <li>“We mark up the wholesale price by 33% to come up with the retail price”</li>
+                    <li>“The store has a 25% profit margin”</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement> <p>Are these two claims equivalent, in conflict, or not comparable because they’re talking about 
+                different things?
+                <ol label = "a">
+                    <li>“Every year since 1950, the number of American children gunned down has doubled.”</li>
+                    <li>“The number of child gunshot deaths has doubled from 1950 to 1994.”</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement> <p>Are these two claims equivalent, in conflict, or not comparable because they’re talking about 
+                different things?
+                <ol label = "a">
+                    <li>“75 percent of the federal health care law’s taxes would be paid by those earning less than 
+                        $120,000 a year”</li>
+                    <li>“76 percent of those who would pay the penalty [health care law’s taxes] for not having insurance 
+                        in 2016 would earn under $120,000”</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement> <p>Are these two claims equivalent, in conflict, or not comparable because they’re talking about 
+                different things?
+                <ol label ="a">
+                    <li>“The school levy is only a 0.1% increase of the property tax rate.”</li>
+                    <li>“This new levy is a 12% tax hike, raising our total rate to $9.33 per $1000 of value.”</li>
+                </ol> </p>
+            </statement>
+            
+            <answer>These statements are equivalent, if we assume the claim in “a” is a percentage point increase, not a relative 
+                change. Certainly these messages are phrased to convey different opinions of the levy. We are told the new rate will 
+                be $9.33 per $1000, which is 0.933% tax rate. If the original rate was 0.833% (0.1 percentage point lower), then this 
+                would indeed be a 12% relative increase.</answer>
+        </exercise>
+
+        <exercise>
+            <statement>Are the values compared in this statement comparable or not comparable? “Guns have murdered more 
+                Americans here at home in recent years than have died on the battlefields of Iraq and Afghanistan. In 
+                support of the two wars, more than 6,500 American soldiers have lost their lives. During the same period, 
+                however, guns have been used to murder about 100,000 people on American soil”</statement>
+        </exercise>
+
+        <exercise>
+            <statement>A high school currently has a 30% dropout rate. They’ve been tasked to decrease that rate by 20%. 
+                Find the equivalent percentage point drop.</statement>
+            
+            <answer>6 percentage point drop</answer>
+        </exercise>
+
+        <exercise>
+            <statement>A politician’s support grew from 42% by 3 percentage points to 45%. What percent (relative) change 
+                is this?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>Marcy has a 70% average in her class going into the final exam. She says "I need to get a 100% on 
+                this final so I can raise my score to 85%." Is she correct?</statement>
+            
+            <answer>Probably not, unless the final is worth 50% of the overall class grade. If the final was worth 25% of the overall 
+                grade, then a 100% would only raise her average to 77.5%</answer>
+        </exercise>
+
+        <exercise>
+            <statement>Suppose you have one quart of water/juice mix that is 50% juice, and you add 2 quarts of juice. 
+                What percent juice is the final mix?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>Find a unit rate: You bought 10 pounds of potatoes for $4.</statement>
+            
+            <answer>$0.40 per pound or 2.5 pounds/dollar</answer>
+        </exercise>
+        
+        <exercise>
+            <statement>Find a unit rate: Joel ran 1500 meters in 4 minutes, 45 seconds.</statement>
+        </exercise>
+
+        <exercise>
+            <statement>Solve: <m>\frac{2}{5}=\frac{6}{x}</m></statement>
+            
+            <answer><m>x = 15</m></answer>
+        </exercise>
+
+        <exercise>
+            <statement>Solve: <m>\frac{n}{5}=\frac{16}{20}</m>
+            </statement>
+        </exercise>
+        
+        <exercise>
+            <statement>A crepe recipe calls for 2 eggs, 1 cup of flour, and 1 cup of milk. How much flour would you need
+                if you use 5 eggs?</statement>
+            
+            <answer>2.5 cups</answer>
+        </exercise>
+
+        <exercise>
+            <statement>An 8ft length of 4 inch wide crown molding costs $14. How much will it cost to buy 40ft of crown 
+                molding?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>Four 3-megawatt wind turbines can supply enough electricity to power 3000 homes. How many turbines 
+                would be required to power 55,000 homes?</statement>
+            
+            <answer>74 turbines</answer>
+        </exercise>
+
+        <exercise>
+            <statement>A highway had a landslide, where 3,000 cubic yards of material fell on the road, requiring 200 dump 
+                truck loads to clear. On another highway, a slide left 40,000 cubic yards on the road. How many dump truck 
+                loads would be needed to clear this slide?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>Convert 8 feet to inches.</statement>
+            
+            <answer>96 inches</answer>
+        </exercise>
+
+        <exercise>
+            <statement>Convert 6 kilograms to grams.</statement>
+        </exercise>
+
+        <exercise>
+            <statement>A wire costs $2 per meter. How much will 3 kilometers of wire cost?</statement>
+            
+            <answer>$6,000</answer>
+        </exercise>
+        
+        <exercise>
+            <statement>Sugar contains 15 calories per teaspoon. How many calories are in 1 cup of sugar?
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>A car is driving at 100 kilometers per hour. How far does it travel in 2 seconds?
+            </statement>
+            
+            <answer>55.6 meters</answer>
+        </exercise>
+
+        <exercise>
+            <statement>A chain weighs 10 pounds per foot. How many ounces will 4 inches weigh?
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>The table below gives data on three movies. Gross earnings is the amount of money the movie brings 
+                in. Compare the net earnings (money made after expenses) for the three movies.
+                <table xml:id="table-movie">
+         <tabular halign = "center">
+              <row header = "yes" bottom = "minor" >
+                   <cell>Movie</cell>
+                   <cell>Release Date</cell>
+                  <cell>Movie Earnings Budget</cell>
+                  <cell>Gross Earnings</cell>
+              </row>
+              <row>
+                   <cell>Saw</cell>
+                   <cell>10/29/2004</cell>
+                  <cell>$1,200,000</cell>
+                  <cell>$103,096,345</cell>
+              </row>
+             <row>
+                   <cell>Titanic</cell>
+                   <cell>10/29/2004</cell>
+                  <cell>$200,000,000</cell>
+                  <cell>$1,842,879,955</cell>
+              </row>
+             <row>
+                   <cell>Jurassic Park</cell>
+                   <cell>6/11/1993</cell>
+                  <cell>$63,000,000</cell>
+                  <cell>$923,863,984</cell>
+              </row>
+         </tabular>
+</table>
+            </statement>
+        </exercise>
+
+
+        <exercise>
+            <statement>For the movies in the previous problem, which provided the best return on investment?
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>The population of the U.S. is about 309,975,000, covering a land area of 3,717,000 square miles. 
+                The population of India is about 1,184,639,000, covering a land area of 1,269,000 square miles. Compare 
+                the population densities of the two countries.
+                </statement>
+            
+            <answer>The population density of the US is 84 people per square mile. The density of India is about 933 people per square 
+                mile. The density of India is about 11 times greater than that of the U.S.</answer>
+        </exercise>
+
+        <exercise>
+            <statement>The GDP (Gross Domestic Product) of China was $5,739 billion in 2010, and the GDP of Sweden was 
+                $435 billion. The population of China is about 1,347 million, while the population of Sweden is about 9.5 
+                million. Compare the GDP per capita of the two countries.
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>In June 2012, Twitter was reporting 400 million tweets per day. Each tweet can consist of up to 140 
+                characters (letter, numbers, etc.). Create a comparison to help understand the amount of tweets in a year 
+                by imagining each character was a drop of water and comparing to filling something up.</statement>
+        </exercise>
+
+        <exercise>
+            <statement>The photo sharing site Flickr had 2.7 billion photos in June 2012. Create a comparison to 
+                understand this number by assuming each picture is about 2 megabytes in size, and comparing to the data 
+                stored on other media like DVDs, iPods, or flash drives.</statement>
+        </exercise>
+
+        <exercise>
+            <statement> <p>Your chocolate milk mix says to use 4 scoops of mix for 2 cups of milk. After pouring in the milk, 
+                you start adding the mix, but get distracted and accidentally put in 5 scoops of mix. How can you adjust 
+                the mix if:
+                <ol label = "a">
+                    <li>There is still room in the cup?</li>
+                    <li>The cup is already full?</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>A recipe for sabayon calls for 2 egg yolks, 3 tablespoons of sugar, and 14 cup of white wine. After 
+                cracking the eggs, you start measuring the sugar, but accidentally put in 4 tablespoons of sugar. How can 
+                you compensate?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>The Deepwater Horizon oil spill resulted in 4.9 million barrels of oil spilling into the Gulf of 
+                Mexico. Each barrel of oil can be processed into about 19 gallons of gasoline. How many cars could this 
+                have fueled for a year? Assume an average car gets 20 miles to the gallon, and drives about 12,000 miles 
+                in a year.</statement>
+            
+            <answer>The oil in the spill could produce 93.1 million gallons of gasoline. Each car uses about 600 gallons a year. That 
+                would fuel 155,167 cars for a year.</answer>
+        </exercise>
+
+        <exercise>
+            <statement>The store is selling lemons at 2 for $1. Each yields about 2 tablespoons of juice. How much will it 
+                cost to buy enough lemons to make a 9-inch lemon pie requiring 12 cup of lemon juice?
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>A piece of paper can be made into a cylinder in two ways: by joining the short sides together, or 
+                by joining the long sides together. Which cylinder would hold more? How much more?
+            </statement>
+        </exercise>
+                                                         
+    <exercise>
+        <statement>Which of these glasses contains more liquid? How much more?
+            <image width = "50%" source = "images/prob-solve-exercise1-Screenshot.png"></image>
+        </statement>
+    </exercise>
+
+    <exercisegroup>
+        <introduction>In the questions below, estimate 
+            the values by making reasonable approximations for unknown values, or by doing some research to find
+            reasonable values.</introduction>
+
+        <exercise>
+            <statement>Estimate how many gallons of water you drink in a year.</statement>
+            
+            <answer>An answer around 100-300 gallons would be reasonable</answer>
+        </exercise>
+
+        <exercise>
+            <statement>Estimate how many times you blink in a day.</statement>
+        </exercise>
+
+        <exercise>
+            <statement>How much does the water in a 6-person hot tub weigh?</statement>
+        </exercise>
+
+        <exercise>
+            <statement>How many gallons of paint would be needed to paint a two-story house 40 ft long and 30 ft wide?
+            </statement>
+        </exercise>
+
+    </exercisegroup>
+    
+    <exercise>
+        <statement>During the landing of the Mars Science Laboratory Curiosity, it was reported that the signal from the 
+            rover would take 14 minutes to reach earth. Radio signals travel at the speed of light, about 186,000 miles 
+            per second. How far was Mars from Earth when Curiosity landed?</statement>
+        
+        <answer>156 million miles</answer>
+    </exercise>
+
+    <exercise>
+        <statement>It is estimated that a driver takes, on average, 1.5 seconds from seeing an obstacle to reacting by 
+            applying the brake or swerving. How far will a car traveling at 60 miles per hour travel (in feet) before the 
+            driver reacts to an obstacle?</statement>
+    </exercise>
+
+    <exercise>
+        <statement><p>The flash of lightning travels at the speed of light, which is about 186,000 miles per second. The 
+            sound of lightning (thunder) travels at the speed of sound, which is about 750 miles per hour.
+            <ol label ="a">
+                <li>If you see a flash of lightning, then hear the thunder 4 seconds later, how far away is the lightning?
+                </li>
+                <li>Now let’s generalize that result. Suppose it takes n seconds to hear the thunder after a flash of 
+                    lightning. How far away is the lightning, in terms of n?</li>
+            </ol> </p>
+        </statement>
+        
+        <answer>The time it takes the light to reach you is so tiny for any reasonable distance that we can safely ignore it. 750 
+            miles/hr is about 0.21 miles/sec. If the sound takes 4 seconds to reach you, the lightning is about 0.84 miles away. In 
+            general, the lightning will be <m>0.21n</m> miles away, which is often approximated by dividing the number of seconds by 
+            5.</answer>
+    </exercise>
+
+    <exercise>
+        <statement> <p>Sound travels about 750 miles per hour. If you stand in a parking lot near a building and sound a horn, 
+            you will hear an echo.
+            <ol label = "a">
+                <li>Suppose it takes about <m>\frac{1}{2}</m> a second to hear the echo. How far away is the building?
+                </li>
+                <li>Now let’s generalize that result. Suppose it takes n seconds to hear the echo. How far away is the 
+                    building, in terms of n?</li>
+            </ol> </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>It takes an air pump 5 minutes to fill a twin sized air mattress (39 by 8.75 by 75 inches). How long 
+            will it take to fill a queen sized mattress (60 by 8.75 by 80 inches)?
+        </statement>
+        
+        <answer>About 8.2 minutes</answer>
+    </exercise>
+        
+        <exercise>
+            <statement>  <p>It takes your garden hose 20 seconds to fill your 2-gallon watering can. How long will it take to 
+                fill
+                <ol label = "a">
+                    <li>An inflatable pool measuring 3 feet wide, 8 feet long, and 1 foot deep.</li>
+                    <li>A circular inflatable pool 13 feet in diameter and 3 feet deep.</li>
+                </ol> </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>You want to put a 2" thick layer of topsoil for a new 20'x30' garden. The dirt store sells by the 
+                cubic yards. How many cubic yards will you need to order?</statement>
+            
+            <answer>Four cubic yards (or 3.7 if they sell partial cubic yards)</answer>
+        </exercise>
+
+        <exercise>
+            <statement>A box of Jell-O costs $0.50, and makes 2 cups. How much would it cost to fill a swimming pool 4 
+                feet deep, 8 feet wide, and 12 feet long with Jell-O? (1 cubic foot is about 7.5 gallons)</statement>
+        </exercise>
+
+        <exercise>
+            <statement>You read online that a 15 ft by 20 ft brick patio would cost about $2,275 to have professionally 
+                installed. Estimate the cost of having a 18 by 22 ft brick patio installed.</statement>
+        </exercise>
+
+        <exercise>
+            <statement>I was at the store, and saw two sizes of avocados being sold. The regular size sold for $0.88 each, 
+                while the jumbo ones sold for $1.68 each. Which is the better deal?
+                <image width = "50%" source ="images/prob-solve-exercise2-Screenshot.png"></image>
+            </statement>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                The grocery store has bulk pecans on sale, which is great since you’re planning on making 10 pecan pies 
+                for a wedding. Your recipe calls for 1¾ cups pecans per pie. However, in the bulk section there’s only a 
+                scale available, not a measuring cup. You run over to the baking aisle and find a bag of pecans, and look 
+                at the nutrition label to gather some info. How many pounds of pecans should you buy?
+                <image width = "50%" source = "images/prob-solve-exercise3-Screenshot.png"></image>
+            </statement>
+        </exercise>
+        
+        <exercise>
+            <statement>Soda is often sold in 20 ounce bottles. The nutrition label for one of these bottles is shown to 
+                the right. A packet of sugar (the kind they have at restaurants for your coffee or tea) typically contain 
+                4 grams of sugar in the U.S. Drinking a 20 oz soda is equivalent to eating how many packets of sugar?
+                
+                <image width = "50%" source = "images/prob-solve-exercise4-Screenshot.png"></image>
+            </statement>
+        </exercise>
+        
+        <exercisegroup>
+            <introduction>For the next set of questions, first identify the information you need to answer the question, 
+                and then turn to the problem hint to find that information. The details may be imprecise; answer the 
+                question the best you can with the provided information. Be sure to justify your decision.</introduction>
+
+            <exercise>
+                <statement>You’re planning on making 6 meatloafs for a party. You go to the store to buy breadcrumbs, and 
+                    see they are sold by the canister. How many canisters do you need to buy?</statement>
+                
+                <hint>
+                    <p>How much breadcrumbs does the recipe call for? It calls for 1.5 cups of breadcrumbs.</p>
+
+                    <p>How many meatloafs does the recipe make? It makes 1 meatloaf.</p>
+                    
+                    <p>How many servings does that recipe make? It says it serves 8.</p>
+
+                    <p>How big is the canister? It is cylindrical, 3.5 inches across and 7 inches tall.</p>
+
+                    <p>What is the net weight of the contents of 1 canister? 15 ounces.</p>
+
+                    <p>How much does a cup of breadcrumbs weigh? I’m not sure, but maybe something from the nutritional 
+                        label will help.</p>
+                    <image width = "50%" source = "images/prob-solve-exercise5-Screenshot.png"></image>
+                    
+                    <p>How much does a canister cost? $2.39</p>
+                </hint>
+            </exercise>
+
+            <exercise>
+                <statement>Your friend wants to cover their car in bottle caps. How many bottle 
+                    caps are you going to need?</statement>
+                <hint>
+                    <p>What kind of car is that? A 1993 Honda Accord.</p>
+                    <p>How big is that car / what are the dimensions? Here is some details from MSN autos:
+                        <ul>
+                            <li>Weight: 2800lb</li> 
+                            <li>Length: 185.2 in</li>
+                            <li>Width: 67.1 in</li>
+                            <li>Height: 55.2 in</li>
+                        </ul>
+                    </p>
+
+                    <p>How much of the car was covered with caps? Everything but the windows and the underside.</p>
+
+                    <p>How big is a bottle cap? Caps are 1 inch in diameter.</p>
+                </hint>
+            </exercise>
+            
+            <exercise>
+                <statement>You need to buy some chicken for dinner tonight. You found an ad showing that the store across 
+                    town has it on sale for $2.99 a pound, which is cheaper than your usual neighborhood store, which 
+                    sells it for $3.79 a pound. Is it worth the extra drive?</statement>
+                <hint>
+                    <p>How much chicken will you be buying? Four pounds</p>
+                    
+                    <p>How far are the two stores? My neighborhood store is 2.2 miles away, and takes about 7 minutes. The 
+                        store across town is 8.9 miles away, and takes about 25 minutes.</p>
+
+                    <p>What kind of mileage does your car get? It averages about 24 miles per gallon in the city.</p>
+
+                    <p>How many gallons does your car hold? About 14 gallons</p>
+                    
+                    <p>How much is gas? About $3.69/gallon right now.</p>
+                </hint>
+            </exercise>
+
+            <exercise>
+                <statement>Janine is considering buying a water filter and a reusable water bottle rather than buying 
+                    bottled water. Will doing so save her money?</statement>
+                
+                <hint>
+                    <p>How much water does Janine drink in a day? She normally drinks 3 bottles a day, each 16.9 
+                        ounces.</p>
+
+                    <p>How much does a bottle of water cost? She buys 24-packs of 16.9 ounce bottles for $3.99.</p>
+
+                    <p>How much does a reusable water bottle cost? About $10.</p>
+
+                    <p>How long does a reusable water bottle last? Basically forever (or until you lose it).</p>
+
+                    <p>How much does a water filter cost? How much water will they filter? A faucet-mounted filter costs 
+                        about $28. Refill filters cost about $33 for a 3-pack. The box says each filter will filter up to 
+                        100 gallons (378 liters). A water filter pitcher costs about $22. Refill filters cost about $20 
+                        for a 4-pack. The box says each filter lasts for 40 gallons or 2 months. An under-sink filter 
+                        costs $130. Refill filters cost about $60 each. The filter lasts for 500 gallons.</p>
+                    
+                </hint>
+
+            </exercise>
+
+            
+        </exercisegroup>
+        
+        <exercisegroup>
+            <introduction>For the next set of problems, research or make educated estimates for any unknown quantities 
+                needed to answer the question.</introduction>
+
+            <exercise>
+                <statement>You want to travel from Tacoma, WA to Chico, CA for a wedding. Compare the costs and time 
+                    involved with driving, flying, and taking a train. Assume that if you fly or take the train you’ll 
+                    need to rent a car while you’re there. Which option is best?</statement>
+            </exercise>
+
+            <exercise>
+                <statement>You want to paint the walls of a 6ft by 9ft storage room that has one door and one window. You 
+                    want to put on two coats of paint. How many gallons and/or quarts of paint should you buy to paint the 
+                    room as cheaply as possible?</statement>
+            </exercise>
+            
+        </exercisegroup>
+        
+        
+    </exercises>
+    
+    
+    </chapter>

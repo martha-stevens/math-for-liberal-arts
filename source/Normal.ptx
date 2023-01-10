@@ -1,0 +1,3102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Normal" xmlns:xi="http://www.w3.org/2001/XInclude">
+************************************************************************************************-->
+
+    <title>Normal Distributions</title>
+    <introduction>
+    <p>The normal distribution can be found practically everywhere, from the distribution of human heights to IQ scores. 
+    In this chapter, you will learn about applications of normal distributions, the Empirical rule, and the concept and 
+        calculation of z-scores.</p>
+    </introduction>
+    
+    <section xml:id = "section-normal-understanding">
+        <title>Understanding Normal Distributions</title>
+        <objectives>
+            <ul>
+                <li>Introduce and discover properities of normal distributions</li>
+            </ul>
+        </objectives>
+        <introduction>If you knew that the prices of t-shirts sold in an online shopping site were <term>normally 
+            distributed</term>, 
+            and had a mean cost of $10, with a standard deviation of $1.50, how could that information benefit you as you 
+            are looking at various t-shirt prices on the site? How could you use what you know if you were looking to make a 
+            profit by purchasing unusually inexpensive shirts to resell at prices that are more common?</introduction>
+        
+        <subsection><title>The Normal Distribution</title>
+            <p>A distribution is an evaluation of the way that points in a data set are clustered or spread across their 
+                range of values. A normal distribution is a very specific symmetrical distribution that indicates, among 
+                other things, that exactly <m>\frac{1}{2}</m> of the data is below the mean, and <m>\frac{1}{2}</m> is 
+                above, that approximately 68% of the 
+                data is within 1, approximately 95% of the data is within 2, and approximately 99.7% is within 3 standard 
+                deviations of the mean.</p>
+
+            <p>There are a number of reasons that it is important to become familiar with the normal distribution, as you 
+                will discover throughout this chapter. Examples of values associated with normal distribution:</p>
+            <p>
+            <ul>
+                <li>Physical characteristics such as height, weight, arm or leg length, etc.</li>
+                <li>The percentile rankings of standardized testing such as the ACT and SAT</li>
+                <li>The volume of water produced by a river on a monthly or yearly basis</li>
+                <li>The velocity of molecules in an ideal gas</li>
+            </ul></p>
+            
+            <p>Knowing that the values in a set are exactly or approximately normally distributed allows you to get a feel 
+                for how common a particular value might be in that set. Because the values of a normal distribution are 
+                predictably clustered around the mean, you can estimate in short order the rarity of a given value in the 
+                set. In our upcoming lesson on the Empirical Rule, you will see that it is worth memorizing that normally 
+                distributed data has the characteristics mentioned above:</p>
+            <p>
+            <ul>
+                <li>50% of all data points are above the mean and 50% are below</li>
+                <li>Approximately 68% of all data points are within 1 standard deviation of the mean</li>
+                <li>Approximately 95% of all data points are within 2 standard deviations of the mean</li>
+                <li>Approximately 99.7% of all data points are within 3 standard deviations of the mean</li>
+            </ul></p>
+
+            <p>In this lesson, we will be practicing a ‘rough estimate’ of the probability that a value within a given range 
+                will occur in a particular set of data, just to develop an intuition of the use of a normal distribution. In 
+                subsequent lessons, we will become more specific with our estimates. The image below will be used in greater 
+                detail in the lesson on the Empirical Rule, but you may use it as a reference for this lesson also.</p>
+            
+            <figure xml:id ="normal-summary">
+                <caption>Image Credit: RRCC</caption>
+            <image xml:id = "normal-image-1">
+                <description>A bell curve with standard deviations from the mean (-3, -2, -1, 0, 1, 2, and 3) on the
+                    horizontal axis. The region from -3 to -2 is labeled as 2.35%, -2 to -1 is 13.5%, -1 to 0 is 
+                    34%, 0 to 1 is 34%, 1 to 2 is 13.5% and 2 to 3 is 2.35%</description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=Standard deviations, ylabel=Frequency,,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [fill=cyan!20, draw=none, domain=-3.5:3.5] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=-3:-2] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=2:3] {gauss(0,1)} \closedcycle;
+\addplot [fill=blue!20, draw=none, domain=-2:-1] {gauss(0,1)} \closedcycle;
+\addplot [fill=blue!20, draw=none, domain=1:2] {gauss(0,1)} \closedcycle;
+\addplot[] coordinates {(-1,0.4) (1,0.4)};
+\addplot[] coordinates {(-2,0.3) (2,0.3)};
+\addplot[] coordinates {(-3,0.2) (3,0.2)};
+\node[coordinate, pin={68\%}] at (axis cs: 0, 0.35){};
+\node[coordinate, pin={95\%}] at (axis cs: 0, 0.25){};
+\node[coordinate, pin={99.7\%}] at (axis cs: 0, 0.15){};
+\node[coordinate, pin={34\%}] at (axis cs: -0.5, 0){};
+\node[coordinate, pin={34\%}] at (axis cs: 0.5, 0){};
+\node[coordinate, pin={13.5\%}] at (axis cs: 1.5, 0){};
+\node[coordinate, pin={13.5\%}] at (axis cs: -1.5, 0){};
+\node[coordinate, pin={2.35\%}] at (axis cs: 2.5, 0){};
+\node[coordinate, pin={2.35\%}] at (axis cs: -2.5, 0){};
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+            </image>
+            </figure>
+            
+        </subsection>
+        
+        <subsection><title>Examples</title>
+            <p>
+            <ol label = "1">
+                <li>
+                    <p>Human height is commonly considered an approximately normally distributed measure. If the mean height 
+                        of a male adult in the U.S.A. is 5'10", with a standard deviation of 1.5", how common are men with 
+                        heights greater than 6'2"?</p>
+
+                    <p>Since each standard deviation of this normally distributed data is 1.5", and 6'2" is 4" above the 
+                        mean for the population, 6'2" is nearly 3 standard deviations above the mean. That tells us that men 
+                        taller than 6'2" are quite rare in this population.</p>
+                </li>
+                
+                <li>
+                    <p>If the fuel mileage of a particular model of car is normally distributed, with a mean of 26 mpg and a 
+                    standard deviation of 2 mpg, how common are cars with a fuel efficiency of 24 to 25 mpg?</p>
+
+                    <p>We know that approximately 68% of the cars in the population have an efficiency of between 24 and 28 
+                        mpg, since that would be 1 SD below and 1 SD above the mean. That suggests that apx 34% have an 
+                        efficiency of 24 to 26 mpg, so we can say that it is uncommon to see a car with an efficiency 
+                        between 24 and 25 mpg, but not extremely so.</p>
+                </li>
+                
+                <li>
+                    <p>If the maximum jumping height of U.S. high school high jumpers is normally distributed with a mean of 
+                    5'11.5" and a SD of 2.2", how unusual is it to see a high school jumper clear 6'3"?</p>
+
+                    <p>If the mean is 5'11.5", then 1 SD above is 6'1.7" and 2 SD’s is 6'3.9". That means that less than 
+                        2.5% of jumpers 6'3.9", so it would be pretty uncommon to see a high-school competitor exceed 6'3".
+                    </p>
+                </li>
+            </ol></p>
+            
+            <p>For the examples below assume the data to be normally distributed, and describe the rarity of an event using 
+                the following scale:</p>
+            <p>
+            <ul>
+                <li>0% - &lt; 1% probability = very rare</li> 
+                <li>1% - &lt; 5% = rare</li>
+                <li>5% - &lt; 34% = uncommon</li>
+                <li>34% - &lt; 50% = common</li>
+                <li>50% - 100% = likely</li>
+            </ul></p>
+            
+            <example>
+                <p>If the mean (<m>\mu</m>) of the data is 75, and the standard deviation (<m>\sigma</m>) is 5, how common is a value 
+                    between 70 and 75?</p>
+                
+                <solution><p>A value of 70 is only 1 standard deviation below the mean, so a value between 70 and 75 would 
+                    be expected approximately 34% of the time, so it would be common.</p>
+                </solution>
+            </example>
+
+            <example>
+                <p>If the <m>\mu</m> is .02 and the standard deviation is .005, how common is a value 
+                    between .005 and .01?</p>
+                
+                <solution><p>A value of .01 is 2 SD's below the mean, and .005 is 3 SD's below, so we would expect there to 
+                    be about a 2.5% probability of a value occurring in that range. A value between 0.005 and 0.01 would be 
+                    rare.</p>
+                </solution>
+            </example>
+            
+            <problem><title>Try It Now</title>
+                <p>If the mean is 1280 and the standard deviation is 70, how common is a value between 1210 and 1350?</p>
+                
+                <answer>1210 is 1 SD below the mean, and 1350 is 1 SD above the mean, so we would expect approximately 68% 
+                    of the data to be in that range, meaning that is it likely that a value in that range would occur.
+                </answer>
+            </problem>
+
+            <example>
+                <p>If the mean defect rate at a cellphone production plant is 0.1%, with a standard deviation of 0.03%, would 
+                    it seem reasonable for a quality assurance manager to be concerned about 3 defective phones in a single 
+                    1000 unit run?</p>
+                
+                <solution>
+                    <p>0.1% translates into 1 per thousand, with a standard deviation of 3 per ten thousand. That means that 
+                        3 defects in the same thousand is nearly 7 SD’s above the mean, well into the very rare category. 
+                        While it is not impossible for random chance to result in such a value, it would certainly be 
+                        prudent for the manager to investigate.</p>
+                </solution>
+            </example>
+
+
+            
+            <p>Returning to the problem, we started with:</p>
+
+            <blockquote>If you knew that the prices of t-shirts sold in an online shopping site were normally distributed, and had a 
+                mean cost of $10, with a standard deviation of $1.50, how could that information benefit you as you are 
+                looking at various t-shirt styles and designs on the site? How could you use what you know if you were 
+                looking to make a profit by purchasing unusually inexpensive shirts to resell at prices that are more 
+                common?</blockquote>
+
+            <p>By knowing the mean and SD of the shirt prices, and knowing that they are normally distributed, you can 
+                estimate right away if a shirt is priced at a point significantly below the norm. For instance, with this 
+                data, we can estimate that a shirt priced at $7.00 is less expensive than apx 97.5% of all shirts on the 
+                site, and could likely be resold at a profit (assuming there is not something wrong the shirt that is not 
+                obvious from the listing).</p>
+        </subsection>
+        
+    </section>
+    
+    <section xml:id = "section-normal-empirical">
+        <title>The Empirical Rule</title>
+        <objectives>
+            <ul>
+                <li>Use the empirical rule to find probabilities</li>
+            </ul>
+        </objectives>
+        <p>If the price per pound of USDA Choice Beef is normally distributed with a mean of $4.85/lb and a standard 
+           deviation of $0.35/lb, what is the estimated probability that a randomly chosen sample (from a randomly 
+            chosen market) will be between $5.20 and $5.55 per pound?</p>
+        
+        <p>This lesson on the Empirical Rule is an extension of the previous lesson 
+            <xref ref = "section-normal-understanding" />. In the prior lesson, the 
+            goal was to develop an intuition of the interaction between decreased probability and increased distance from 
+            the mean. In this lesson, we will practice applying the Empirical Rule to estimate the specific probability of 
+            occurrence of a sample based on the range of the sample, measured in standard deviations.</p>
+        
+        <p>The graphics below describe the important features of normal distributions. Note how the graph 
+            resembles a bell? Now you know why the normal distribution is also called a “bell curve”.</p>
+        <p>
+        <ul>
+
+            <li>50% of the data is above, and 50% below, the mean of the data
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+             <image width = "50%" xml:id = "normal-image-50">
+                 <description>Both the right half and the left half of the bell curve are labeled as 50%
+                 </description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=Standard deviations, ylabel=Frequency,,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [fill=cyan!20, draw=none, domain=-3.5:3.5] {gauss(0,1)} \closedcycle;
+
+\addplot[&lt;-] coordinates {(-3.5,0.3) (-0.1,0.3)};
+\addplot[->] coordinates {(0.1,0.3) (3.5,0.3)};
+\node[coordinate, pin={50\%}] at (axis cs: 2, 0.3){};
+\node[coordinate, pin={50\%}] at (axis cs: -2, 0.3){};
+
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+            </image>
+                </figure>
+            
+            
+            </li>
+            <li>Approximately 68% of the data occurs within 1 SD of the mean
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+             <image width = "50%" xml:id = "normal-image-68">
+                 <description>The bell curve is divide into four regions with one standard deviation below the mean,
+                     the mean, and one standard deviation above the mean. The regions (from left to right) are labeled
+                     16%, 34%, 34%, 16%.</description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=Standard deviations, ylabel=Frequency,,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [fill=cyan!20, draw=none, domain=-3.5:3.5] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=-3.5:-1] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=1:3.5] {gauss(0,1)} \closedcycle;
+                    
+\addplot[] coordinates {(-1,0.4) (1,0.4)};
+
+\node[coordinate, pin={68\%}] at (axis cs: 0, 0.35){};
+\node[coordinate, pin={16\%}] at (axis cs: 2, 0){};
+\node[coordinate, pin={16\%}] at (axis cs: -2, 0){};
+\node[coordinate, pin={34\%}] at (axis cs: -0.5, 0){};
+\node[coordinate, pin={34\%}] at (axis cs: 0.5, 0){};
+
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+                </image>
+                </figure>
+            
+            
+            </li>
+            <li>Approximately 95% occurs within 2 SD’s of the mean
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+             <image width = "50%" xml:id = "normal-image-95">
+                 <description>The bell curve is divide into four regions with two standard deviations below the mean,
+                     the mean, and two standard deviations above the mean. The regions (from left to right) are labeled
+                     2.5%, 47.5%, 47.5%, 2.5%.</description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=Standard deviations, ylabel=Frequency,,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [fill=cyan!20, draw=none, domain=-3.5:3.5] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=-3.5:-2] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=2:3.5] {gauss(0,1)} \closedcycle;
+                    
+\addplot[] coordinates {(-2,0.4) (2,0.4)};
+
+\node[coordinate, pin={95\%}] at (axis cs: 0, 0.35){};
+\node[coordinate, pin={2.5\%}] at (axis cs: 2.5, 0){};
+\node[coordinate, pin={2.5\%}] at (axis cs: -2.5, 0){};
+\node[coordinate, pin={47.5\%}] at (axis cs: -1, 0){};
+\node[coordinate, pin={47.5\%}] at (axis cs: 1, 0){};
+
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+            </image>
+                </figure>
+            
+            
+            
+            
+            </li>
+            
+            <li>Approximately 99.7% of the data occurs within 3 SD’s of the mean
+                
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+             <image width = "50%" xml:id = "normal-image-997">
+                 <description>The bell curve is divide into four regions with three standard deviations below the mean,
+                     the mean, and three standard deviations above the mean. The regions (from left to right) are labeled
+                     0.15%, 49.85%, 49.85%, 0.15%.</description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=Standard deviations, ylabel=Frequency,,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [fill=cyan!20, draw=none, domain=-4:4] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=-4:-3] {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=3:4] {gauss(0,1)} \closedcycle;
+                    
+\addplot[] coordinates {(-3,0.4) (3,0.4)};
+
+\node[coordinate, pin={99.7\%}] at (axis cs: 0, 0.35){};
+\node[coordinate, pin={0.15\%}] at (axis cs: 3.5, 0){};
+\node[coordinate, pin={0.15\%}] at (axis cs: -3.5, 0){};
+\node[coordinate, pin={49.85\%}] at (axis cs: -1.5, 0){};
+\node[coordinate, pin={49.85\%}] at (axis cs: 1.5, 0){};
+
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+            </image>
+            
+            
+                </figure>
+            
+            </li>
+        </ul></p>
+
+        <p>It is due to the probabilities associated with 1, 2, and 3 SD’s that the Empirical Rule is also known as the 
+            “68-95-99.7 rule”. The graphic from <xref ref = "section-normal-understanding" />
+            is a rather concise summary of the vital statistics of a Normal 
+            Distribution.</p>
+        
+        <xref ref = "normal-summary" />
+        
+        <example>
+            <p>If the diameter of a basketball is normally distributed, with a mean (<m>\mu</m>) of 9", and a standard 
+                deviation (<m>\sigma</m>) 
+                of 0.5", what is the probability that a randomly chosen basketball will have a diameter between 9.5" and 
+                10.5"?</p>
+
+            <solution>
+                <p>Since <m>\sigma = 0.5</m> in and <m>\mu = 9</m> in, we are evaluating the probability that a randomly 
+                    chosen 
+                    ball will have a diameter between 1 and 3 standard deviations above the mean. The graphic below shows 
+                    the portion of the normal distribution included between 1 and 3 SDs:</p>
+                
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+                 <image width = "50%" xml:id = "normal-image-2">
+                     <description>A bell curve has the region from 9.5 inch to 10 inch labeled as 13.5% and the 
+                         region from 10 inch to 10.5 inch labeled as 2.35%</description>
+                     
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+                    xticklabels = {7.5", 8", 8.5", 9", 9.5", 10", 10.5"},
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [domain = -4:4]  {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=2:3] {gauss(0,1)} \closedcycle;
+\addplot [fill=blue!20, draw=none, domain=1:2] {gauss(0,1)} \closedcycle;
+
+\node[coordinate, pin={13.5\%}] at (axis cs: 1.5, 0){};
+\node[coordinate, pin={2.35\%}] at (axis cs: 2.5, 0){};
+\end{axis}
+\end{tikzpicture}
+
+                   
+                </latex-image>
+                </image>
+                </figure>
+                
+                <p>The percentage of the data spanning the 2nd and 3rd SDs is 13.5% + 2.35% = 15.85%</p>
+
+<p>The probability that a randomly chosen basketball will have a diameter between 9.5 and 10.5 inches is 0.1585, which means there is a 15.85% chance the basketball will have a diameter between 9.5 and 10.5 inches.</p>
+                
+            </solution>
+        </example>
+        
+        <example>
+            <p>If the depth of the snow in my yard is normally distributed, with <m>\mu = 2.5</m> inches and <m>\sigma = 
+                .25</m> inches, what is the 
+                probability that a randomly chosen location will have a snow depth between 2.25 and 2.75 inches?</p>
+            
+            <solution>
+                <p>2.25 inches is <m>\mu - 1\sigma</m>, and 2.75 inches is <m>\mu + 1\sigma</m>, so the area encompassed 
+                    approximately represents 34% + 34% = 68%.</p>
+
+                <p>The probability that a randomly chosen location will have a depth between 2.25 and 2.75 inches is .68.
+                </p>
+                
+            </solution>
+        </example>
+        
+        <example>
+            <p>If the height of women in the U.S. is normally distributed with a mean of 5'8" and a standard deviation of  
+                1.5", what is the probability 
+                that a randomly chosen woman in the U.S. is shorter than 5'5"?</p>
+            
+            <solution>
+                <p>This one is slightly different, since we aren’t looking for the probability of a limited range of values. 
+                    We want to evaluate the probability of a value occurring anywhere below 5'5". Since the domain of a 
+                    normal distribution is infinite, we can’t actually state the probability of the portion of the 
+                    distribution on ‘that end’ because it has no ‘end’! What we need to do is add up the probabilities that 
+                    we do know and subtract them from 100% to get the remainder.</p>
+
+                <p>Here is that normal distribution graphic again, with the height data inserted:</p>
+                
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+                <image width = "50%" xml:id = "normal-image-3">
+                    <description>A bell curve has the region from 5 ft 5 inch to 5 ft 6.5 inch labeled as 13.5% and the 
+                         region from 5 ft 6.5 inch to 5 ft  8 inch labeled as 34%. The region above 5 ft 
+                    8 inch is labeled as 50%.</description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    xticklabels = {5'3.5", 5'5", 5'6.5", 5'8", 5'9.5", 5'11", 6'0.5"},
+                    hide y axis,
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [domain = -4:4]  {gauss(0,1)} \closedcycle;
+\addplot [fill=orange!20, draw=none, domain=-1:0] {gauss(0,1)} \closedcycle;
+\addplot [fill=blue!20, draw=none, domain=-2:-1] {gauss(0,1)} \closedcycle;
+\addplot [fill=cyan!20, draw=none, domain=0:3] {gauss(0,1)} \closedcycle;
+\addplot[->] coordinates {(0,0.3) (3.5,0.3)};
+\addplot[&lt;-] coordinates {(-3.5, 0.2) (-2, 0.2)};
+\node[coordinate, pin={50\%}] at (axis cs: 1.5, 0.3){};   
+\node[coordinate, pin={\tiny Heights Below 5'5"}] at (axis cs: -2.5, 0.2){};      
+\node[coordinate, pin={13.5\%}] at (axis cs: -1.5, 0){};
+\node[coordinate, pin={34\%}] at (axis cs: -0.5, 0){};
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+            </image>
+                </figure>
+                
+                <p>Recall that a normal distribution always has 50% of the data on each side of the mean. That indicates 
+                    that 50% of U.S. females are taller than 5'8", and gives us a solid starting point to calculate from. 
+                    There is another 34% between 5'6.5" and 5'8" and a final 13.5% between 5'5" and 5'6.5". Ultimately that 
+                    totals: <m>50\%+34\%+13.5\%=87.5\%</m>.</p>
+
+                <p>Since 87.5% of U.S. females are 5'5" or taller, that leaves 12.5% that are less than 5'5" tall.</p>
+                
+            </solution>
+        </example>
+        
+        <p>Returning to the problem we started with:</p>
+        <blockquote>If the price per pound of USDA Choice Beef is normally distributed with a mean of $4.85/lb and a 
+            standard deviation of $0.35/lb, what is the estimated probability that a randomly chosen sample (from a 
+            randomly chosen market) will be between $5.20 and $5.55 per pound?</blockquote>
+
+        <p>$5.20 is <m>\mu + 1 \sigma</m>, and $5.55 is <m>\mu + 2\sigma</m>, so the probability of a value occurring in 
+            that range is approximately 0.135. There is a 13.5% chance that a value will occur in that range.</p>
+        
+        <problem><title>Try It Now</title>
+            <p>A normally distributed data set has <m>\mu = 10</m> and <m>\sigma = 2.5</m>, what is the probability of 
+                randomly selecting a value greater than 17.5 from the set?</p>
+            
+            <answer><p><m>17.5 = \mu + 3\sigma</m>. Since we are looking for all data above that point, we can 
+                subtract <m>100\% - 99.7\% = 0.3\%</m> to find the percent of data that is outside of 3 standard deviation 
+                from the mean. We are only looking for the data that is above 3 standard deviations, so <m>0.3\% \div 2 = 
+                0.15\%</m>.  There is a 0.15% chance the value will be great than 17.5, or a probability of 0.0015.
+                </p></answer>
+            
+        </problem>
+                
+        <problem><title>Try It Now</title>
+            <p>A normally distributed data set has <m>\mu = .05</m> and <m>\sigma = .01</m>, what is the probability of 
+                randomly choosing a value between .05 and .07 from the set?</p>
+            
+            <answer>  0.05 is the mean, and 0.07 is 2 standard deviations above the mean, so the chnace of a value in 
+                that range is 34% + 13.5% = 47.5%. The probability of a value in that range would be 0.475.</answer>
+        </problem>
+            
+        
+        <problem><title>Try It Now</title><p>A normally distributed data set has a mean of 514 and an unknown standard 
+            deviation, what is the 
+            probability that a randomly selected value will be less than 514?</p>
+  
+            <answer>514 is the mean, so the probability of a value less than that is 0.5.</answer>
+        </problem>
+
+
+
+        
+    </section>
+    
+    <section xml:id = "section-normal-zscores"><title>Z-Scores</title>
+        <objectives>
+            <ul>
+                <li>Compute z-scores</li>
+                <li>Use a z-score table to calculate probabilities</li>
+            </ul>
+        </objectives>
+        <p>Using the Empirical Rule can give you a good idea of the probability of occurrence of a value that happens to 
+            be exactly one, two or three to either side of the mean, but how do you compare the probabilities of values 
+            that are in between standard deviations?</p>
+        
+        <p>Z-scores are related to the Empirical Rule from the standpoint of being a method of evaluating how extreme a 
+            particular value is in a given set. You can think of a z-score as the number of standard deviations there are 
+            between a given value and the mean of the set. While the Empirical Rule allows you to associate the first 
+            three standard deviations with the percentage of data that each SD includes, the z-score allows you to state 
+            (as accurately as you like), just how many SDs a given value is above or below the mean.</p>
+
+        <p>Conceptually, the z-score calculation is just what you might expect, given that you are calculating the number 
+            of SDs between a value and the mean. You calculate the z-score by first calculating the difference between 
+            your value and the mean, and then dividing that amount by the standard deviation of the set. The formula looks 
+            like this:</p>
+        
+        <me>z = \frac{x - \mu}{\sigma}</me>
+        
+        <p>where <m>z</m> is the z-score corresponding to a data value (<m>x</m>) in a normal distribution with a mean 
+            of <m>\mu</m> and a standard deviation of <m>\sigma</m>.</p>
+
+            <p>In this lesson, we will practice calculating the z-score for various values. In the next lesson, we will 
+                learn how to associate the z-score of a value with the probability that the value will occur.</p>
+        
+        <example>
+            <p>What is the z-score of a value of 27, given a set mean of 24, and a standard deviation of 2?</p>
+            
+            <solution>
+                <p>To find the z-score we need to divide the difference between the value, 27, and the mean, 24, by the 
+                    standard deviation of the set, 2.</p>
+                
+                <me>z = \frac{27 - 24}{2} = \frac{3}{2}</me>
+                
+                <p>The z-score of 27 is <m>z = 1.5</m>. This indicates that 27 is 1.5 standard deviations above the mean.
+                </p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>What is the z-score of a value of <m>104.5</m>, in a set with <m>\mu = 125</m> and <m>\sigma = 6.2</m>?</p>
+
+            <solution>
+                <p>Find the difference between the given value and the mean, then divide it by the standard deviation.</p>
+                
+                <me>z = \frac{104.5 - 125}{6.2}= \frac{-20.5}{6.2} = -3.306</me>
+                
+                <p>The z-score of 104.5 is <m>z = -3.306</m>. Note that the z-score is negative, since the measured value, 
+                    <m>104.5</m>, is less than (below) the mean, <m>125</m>.</p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>Find the value represented by a z-score of <m>2.403</m>, given <m>\mu = 63</m> and <m>\sigma=4.25</m>.</p>
+
+            <solution>
+                <p>This one requires that we solve for a missing value rather than for a missing z-score, so we just need 
+                    to fill in our formula with what we know and solve for the missing value:</p>
+                
+                <me>z = \frac{x - \mu}{\sigma}</me>
+                <me>2.403 = \frac{x - 63}{4.25}</me>
+                
+                <p>To solve for <m>x</m>, we can mutliply both sides by <m>4.25</m></p>
+                
+                <me>10.213 = x - 63</me>
+                
+                <me>73.213 = x</me>
+                
+                <p><m>73.213</m> has a z-score of <m>2.403</m>.</p>
+                
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>What is the z-score of the price of a pair of skis that cost $247, if the mean ski price is $279, with a 
+                standard deviation of $16?</p>
+            
+            <answer><m>z = \frac{247 - 279}{16}= -2</m></answer>
+        </problem>
+
+        <problem><title>Try It Now</title>
+            <p>What is the z-score of a 5-scoop ice cream cone if the mean number of scoops is 3, with a standard 
+                deviation of 1 scoop?</p>
+            
+            <answer><m>z = \frac{5 - 3}{1} = 2</m></answer>
+        </problem>
+        
+        <problem><title>Try It Now</title>
+            <p>What is the z-score of the weight of a cow that tips the scales at 825 lbs, if the mean weight for cows of 
+                her type is 1150 lbs, with a standard deviation of 77 lbs?</p>
+            
+            <answer><m>z = \frac{825 - 1150}{77} = -4.2407</m></answer>
+        </problem>
+        
+        <p>Knowing the z-score of a given value is great, but what can you do with it? How does a z-score relate to 
+            probability? What is the probability of occurrence of a z-score less than +2.47?</p>
+        
+        <p>Since z-scores are a measure of the number of SDs between a value and the mean, they can be used to calculate 
+            probability by comparing the location of the z-score to the area under a normal curve either to the left or 
+            right. The area can be calculated using calculus, but we will just use a table to look up the area.</p>
+        
+        <p>In order to find the values for z-scores that aren’t integers, you can use a table like the one below. To find 
+            the value associated with a given z-score, you find the first decimal of your z-score on the left or right 
+            side and then the 2nd decimal of your z-score across the top or bottom of the table. Where they intersect you 
+            will find the decimal expression of the percentage of values that are less than your sample.</p>
+        
+        <table xml:id = "normal-zscoretable">
+            <title>Z-Score Table: Table entries for z represent the area under the normal curve to the left of <m>z</m>, or
+                the probability that a value in a normal distribution is less than <m>z</m>.</title>
+            
+  <tabular halign = "center">
+    <row bottom = "medium">
+      <cell right="medium" >
+        Z
+      </cell>
+      <cell>
+        .00
+      </cell>
+      <cell>
+        .01
+      </cell>
+      <cell>
+        .02
+      </cell>
+      <cell>
+        .03
+      </cell>
+      <cell>
+        .04
+      </cell>
+      <cell>
+        .05
+      </cell>
+      <cell>
+        .06
+      </cell>
+      <cell>
+        .07
+      </cell>
+      <cell>
+        .08
+      </cell>
+      <cell>
+        .09
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        0.0
+      </cell>
+      <cell>
+        .5000
+      </cell>
+      <cell >
+        .5040
+      </cell>
+      <cell >
+        .5080
+      </cell>
+      <cell>
+        .5120
+      </cell>
+      <cell>
+        .5160
+      </cell>
+      <cell>
+        .5200
+      </cell>
+      <cell>
+        .5239
+      </cell>
+      <cell>
+        .5279
+      </cell>
+      <cell>
+        .5319
+      </cell>
+      <cell>
+        .5359
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        0.1
+      </cell>
+      <cell>
+        .5398
+      </cell>
+      <cell>
+        .5438
+      </cell>
+      <cell>
+        .5478
+      </cell>
+      <cell>
+        .5517
+      </cell>
+      <cell>
+        .5557
+      </cell>
+      <cell>
+        .5596
+      </cell>
+      <cell>
+        .5636
+      </cell>
+      <cell>
+        .5675
+      </cell>
+      <cell>
+        .5714
+      </cell>
+      <cell >
+        .5754
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        0.2
+      </cell>
+      <cell >
+        .5793
+      </cell>
+      <cell >
+        .5832
+      </cell>
+      <cell>
+        .5871
+      </cell>
+      <cell>
+        .5910
+      </cell>
+      <cell >
+        .5948
+      </cell>
+      <cell >
+        .5987
+      </cell>
+      <cell >
+        .6026
+      </cell>
+      <cell>
+        .6064
+      </cell>
+      <cell>
+        .6103
+      </cell>
+      <cell>
+        .6141
+      </cell>
+    </row>
+    <row>
+      <cell right="medium"  >
+        0.3
+      </cell>
+      <cell >
+        .6179
+      </cell>
+      <cell>
+        .6217
+      </cell>
+      <cell >
+        .6255
+      </cell>
+      <cell >
+        .6293
+      </cell>
+      <cell >
+        .6331
+      </cell>
+      <cell >
+        .6368
+      </cell>
+      <cell >
+        .6406
+      </cell>
+      <cell >
+        .6443
+      </cell>
+      <cell >
+        .6480
+      </cell>
+      <cell>
+        .6517
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        0.4
+      </cell>
+      <cell >
+        .6554
+      </cell>
+      <cell>
+        .6591
+      </cell>
+      <cell >
+        .6628
+      </cell>
+      <cell>
+        .6664
+      </cell>
+      <cell>
+        .6700
+      </cell>
+      <cell>
+        .6736
+      </cell>
+      <cell>
+        .6772
+      </cell>
+      <cell >
+        .6808
+      </cell>
+      <cell >
+        .6844
+      </cell>
+      <cell >
+        .6879
+      </cell>
+    </row>
+    <row bottom = "minor">
+      <cell right="medium" >
+        0.5
+      </cell>
+      <cell >
+        .6915
+      </cell>
+      <cell >
+        .6950
+      </cell>
+      <cell >
+        .6985
+      </cell>
+      <cell >
+        .7019
+      </cell>
+      <cell >
+        .7054
+      </cell>
+      <cell >
+        .7088
+      </cell>
+      <cell >
+        .7123
+      </cell>
+      <cell >
+        .7157
+      </cell>
+      <cell >
+        .7190
+      </cell>
+      <cell >
+        .7224
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        0.6
+      </cell>
+      <cell >
+        .7258
+      </cell>
+      <cell >
+        .7291
+      </cell>
+      <cell >
+        .7324
+      </cell>
+      <cell >
+        .7357
+      </cell>
+      <cell >
+        .7389
+      </cell>
+      <cell >
+        .7422
+      </cell>
+      <cell >
+        .7454
+      </cell>
+      <cell >
+        .7486
+      </cell>
+      <cell >
+        .7518
+      </cell>
+      <cell >
+        .7549
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        0.7
+      </cell>
+      <cell >
+        .7580
+      </cell>
+      <cell >
+        .7612
+      </cell>
+      <cell >
+        .7642
+      </cell>
+      <cell >
+        .7673
+      </cell>
+      <cell >
+        .7704
+      </cell>
+      <cell >
+        .7734
+      </cell>
+      <cell >
+        .7764
+      </cell>
+      <cell >
+        .7794
+      </cell>
+      <cell >
+        .7823
+      </cell>
+      <cell >
+        .7852
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        0.8
+      </cell>
+      <cell >
+        .7881
+      </cell>
+      <cell >
+        .7910
+      </cell>
+      <cell >
+        .7939
+      </cell>
+      <cell >
+        .7967
+      </cell>
+      <cell >
+        .7996
+      </cell>
+      <cell >
+        .8023
+      </cell>
+      <cell >
+        .8051
+      </cell>
+      <cell >
+        .8079
+      </cell>
+      <cell >
+        .8106
+      </cell>
+      <cell >
+        .8133
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        0.9
+      </cell>
+      <cell >
+        .8159
+      </cell>
+      <cell >
+        .8186
+      </cell>
+      <cell >
+        .8212
+      </cell>
+      <cell >
+        .8238
+      </cell>
+      <cell >
+        .8264
+      </cell>
+      <cell >
+        .8289
+      </cell>
+      <cell >
+        .8315
+      </cell>
+      <cell >
+        .8340
+      </cell>
+      <cell >
+        .8365
+      </cell>
+      <cell >
+        .8389
+      </cell>
+    </row>
+    <row bottom = "minor">
+      <cell right="medium" >
+        1.0
+      </cell>
+      <cell >
+        .8413
+      </cell>
+      <cell >
+        .8438
+      </cell>
+      <cell >
+        .8461
+      </cell>
+      <cell >
+        .8485
+      </cell>
+      <cell >
+        .8508
+      </cell>
+      <cell >
+        .8531
+      </cell>
+      <cell >
+        .8554
+      </cell>
+      <cell >
+        .8577
+      </cell>
+      <cell >
+        .8599
+      </cell>
+      <cell >
+        .8621
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        1.1
+      </cell>
+      <cell >
+        .8643
+      </cell>
+      <cell >
+        .8665
+      </cell>
+      <cell >
+        .8686
+      </cell>
+      <cell >
+        .8708
+      </cell>
+      <cell >
+        .8729
+      </cell>
+      <cell >
+        .8749
+      </cell>
+      <cell >
+        .8771
+      </cell>
+      <cell >
+        .8790
+      </cell>
+      <cell >
+        .8810
+      </cell>
+      <cell >
+        .8830
+      </cell>
+    </row>
+    <row >
+      <cell right="medium"  >
+        1.2
+      </cell>
+      <cell >
+        .8849
+      </cell>
+      <cell >
+        .8869
+      </cell>
+      <cell >
+        .8888
+      </cell>
+      <cell >
+        .8907
+      </cell>
+      <cell >
+        .8925
+      </cell>
+      <cell >
+        .8944
+      </cell>
+      <cell >
+        .8962
+      </cell>
+      <cell >
+        .8980
+      </cell>
+      <cell >
+        .8997
+      </cell>
+      <cell >
+        .9015
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        1.3
+      </cell>
+      <cell >
+        .9032
+      </cell>
+      <cell >
+        .9049
+      </cell>
+      <cell >
+        .9066
+      </cell>
+      <cell >
+        .9082
+      </cell>
+      <cell >
+        .9099
+      </cell>
+      <cell >
+        .9115
+      </cell>
+      <cell >
+        .9131
+      </cell>
+      <cell >
+        .9147
+      </cell>
+      <cell >
+        .9162
+      </cell>
+      <cell >
+        .9177
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        1.4
+      </cell>
+      <cell >
+        .9192
+      </cell>
+      <cell >
+        .9207
+      </cell>
+      <cell >
+        .9222
+      </cell>
+      <cell >
+        .9236
+      </cell>
+      <cell >
+        .9251
+      </cell>
+      <cell >
+        .9265
+      </cell>
+      <cell >
+        .9279
+      </cell>
+      <cell >
+        .9292
+      </cell>
+      <cell >
+        .9306
+      </cell>
+      <cell >
+        .9319
+      </cell>
+    </row>
+    <row bottom = "minor">
+      <cell right="medium" >
+        1.5
+      </cell>
+      <cell >
+        .9332
+      </cell>
+      <cell >
+        .9345
+      </cell>
+      <cell >
+        .9357
+      </cell>
+      <cell >
+        .9370
+      </cell>
+      <cell >
+        .9382
+      </cell>
+      <cell >
+        .9394
+      </cell>
+      <cell >
+        .9406
+      </cell>
+      <cell >
+        .9418
+      </cell>
+      <cell >
+        .9430
+      </cell>
+      <cell >
+        .9441
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        1.6
+      </cell>
+      <cell >
+        .9452
+      </cell>
+      <cell >
+        .9463
+      </cell>
+      <cell >
+        .9474
+      </cell>
+      <cell >
+        .9485
+      </cell>
+      <cell >
+        .9495
+      </cell>
+      <cell >
+        .9505
+      </cell>
+      <cell >
+        .9515
+      </cell>
+      <cell >
+        .9525
+      </cell>
+      <cell >
+        .9535
+      </cell>
+      <cell >
+        .9545
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        1.7
+      </cell>
+      <cell >
+        .9554
+      </cell>
+      <cell >
+        .9564
+      </cell>
+      <cell >
+        .9573
+      </cell>
+      <cell >
+        .9582
+      </cell>
+      <cell >
+        .9591
+      </cell>
+      <cell >
+        .9599
+      </cell>
+      <cell >
+        .9608
+      </cell>
+      <cell >
+        .9616
+      </cell>
+      <cell >
+        .9625
+      </cell>
+      <cell >
+        .9633
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        1.8
+      </cell>
+      <cell >
+        .9641
+      </cell>
+      <cell >
+        .9649
+      </cell>
+      <cell >
+        .9656
+      </cell>
+      <cell >
+        .9664
+      </cell>
+      <cell >
+        .9671
+      </cell>
+      <cell >
+        .9678
+      </cell>
+      <cell >
+        .9686
+      </cell>
+      <cell >
+        .9693
+      </cell>
+      <cell >
+        .9700
+      </cell>
+      <cell >
+        .9706
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        1.9
+      </cell>
+      <cell >
+        .9713
+      </cell>
+      <cell >
+        .9719
+      </cell>
+      <cell >
+        .9726
+      </cell>
+      <cell >
+        .9732
+      </cell>
+      <cell >
+        .9738
+      </cell>
+      <cell >
+        .9744
+      </cell>
+      <cell >
+        .9750
+      </cell>
+      <cell >
+        .9756
+      </cell>
+      <cell >
+        .9762
+      </cell>
+      <cell >
+        .9767
+      </cell>
+    </row>
+    <row bottom = "minor">
+      <cell right="medium" >
+        2.0
+      </cell>
+      <cell >
+        .9773
+      </cell>
+      <cell >
+        .9778
+      </cell>
+      <cell >
+        .9783
+      </cell>
+      <cell >
+        .9788
+      </cell>
+      <cell >
+        .9793
+      </cell>
+      <cell >
+        .9798
+      </cell>
+      <cell >
+        .9803
+      </cell>
+      <cell >
+        .9808
+      </cell>
+      <cell >
+        .9812
+      </cell>
+      <cell >
+        .9817
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        2.1
+      </cell>
+      <cell >
+        .9821
+      </cell>
+      <cell >
+        .9826
+      </cell>
+      <cell >
+        .9830
+      </cell>
+      <cell >
+        .9834
+      </cell>
+      <cell >
+        .9838
+      </cell>
+      <cell >
+        .9842
+      </cell>
+      <cell >
+        .9846
+      </cell>
+      <cell >
+        .9850
+      </cell>
+      <cell >
+        .9854
+      </cell>
+      <cell >
+        .9857
+      </cell>
+    </row>
+    <row>
+      <cell right="medium"  >
+        2.2
+      </cell>
+      <cell >
+        .9861
+      </cell>
+      <cell  >
+        .9865
+      </cell>
+      <cell  >
+        .9868
+      </cell>
+      <cell  >
+        .9871
+      </cell>
+      <cell  >
+        .9875
+      </cell>
+      <cell  >
+        .9878
+      </cell>
+      <cell  >
+        .9881
+      </cell>
+      <cell  >
+        .9884
+      </cell>
+      <cell  >
+        .9887
+      </cell>
+      <cell  >
+        .9890
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        2.3
+      </cell>
+      <cell >
+        .9893
+      </cell>
+      <cell >
+        .9896
+      </cell>
+      <cell >
+        .9898
+      </cell>
+      <cell >
+        .9901
+      </cell>
+      <cell >
+        .9904
+      </cell>
+      <cell >
+        .9906
+      </cell>
+      <cell >
+        .9909
+      </cell>
+      <cell >
+        .9911
+      </cell>
+      <cell >
+        .9913
+      </cell>
+      <cell >
+        .9916
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        2.4
+      </cell>
+      <cell >
+        .9918
+      </cell>
+      <cell >
+        .9920
+      </cell>
+      <cell >
+        .9922
+      </cell>
+      <cell >
+        .9925
+      </cell>
+      <cell >
+        .9927
+      </cell>
+      <cell >
+        .9929
+      </cell>
+      <cell >
+        .9931
+      </cell>
+      <cell >
+        .9932
+      </cell>
+      <cell >
+        .9934
+      </cell>
+      <cell >
+        .9936
+      </cell>
+    </row>
+    <row bottom = "minor">
+      <cell right="medium" >
+        2.5
+      </cell>
+      <cell >
+        .9938
+      </cell>
+      <cell >
+        .9940
+      </cell>
+      <cell >
+        .9941
+      </cell>
+      <cell >
+        .9943
+      </cell>
+      <cell >
+        .9945
+      </cell>
+      <cell >
+        .9946
+      </cell>
+      <cell >
+        .9948
+      </cell>
+      <cell >
+        .9949
+      </cell>
+      <cell >
+        .9951
+      </cell>
+      <cell >
+        .9952
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        2.6
+      </cell>
+      <cell >
+        .9953
+      </cell>
+      <cell >
+        .9955
+      </cell>
+      <cell >
+        .9956
+      </cell>
+      <cell >
+        .9957
+      </cell>
+      <cell >
+        .9959
+      </cell>
+      <cell >
+        .9960
+      </cell>
+      <cell >
+        .9961
+      </cell>
+      <cell >
+        .9962
+      </cell>
+      <cell >
+        .9963
+      </cell>
+      <cell >
+        .9964
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" >
+        2.7
+      </cell>
+      <cell  >
+        .9965
+      </cell>
+      <cell  >
+        .9966
+      </cell>
+      <cell  >
+        .9967
+      </cell>
+      <cell  >
+        .9968
+      </cell>
+      <cell  >
+        .9969
+      </cell>
+      <cell  >
+        .9970
+      </cell>
+      <cell  >
+        .9971
+      </cell>
+      <cell  >
+        .9972
+      </cell>
+      <cell  >
+        .9973
+      </cell>
+      <cell  >
+        .9974
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        2.8
+      </cell>
+      <cell >
+        .9974
+      </cell>
+      <cell >
+        .9975
+      </cell>
+      <cell >
+        .9976
+      </cell>
+      <cell >
+        .9977
+      </cell>
+      <cell >
+        .9977
+      </cell>
+      <cell >
+        .9978
+      </cell>
+      <cell >
+        .9979
+      </cell>
+      <cell >
+        .9980
+      </cell>
+      <cell >
+        .9980
+      </cell>
+      <cell >
+        .9981
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        2.9
+      </cell>
+      <cell >
+        .9981
+      </cell>
+      <cell >
+        .9982
+      </cell>
+      <cell >
+        .9983
+      </cell>
+      <cell >
+        .9983
+      </cell>
+      <cell >
+        .9984
+      </cell>
+      <cell >
+        .9984
+      </cell>
+      <cell >
+        .9985
+      </cell>
+      <cell >
+        .9985
+      </cell>
+      <cell >
+        .9986
+      </cell>
+      <cell >
+        .9986
+      </cell>
+    </row>
+    <row bottom = "minor">
+      <cell right="medium" >
+        3.0
+      </cell>
+      <cell >
+        .9987
+      </cell>
+      <cell >
+        .9987
+      </cell>
+      <cell >
+        .9987
+      </cell>
+      <cell >
+        .9988
+      </cell>
+      <cell >
+        .9988
+      </cell>
+      <cell >
+        .9989
+      </cell>
+      <cell >
+        .9989
+      </cell>
+      <cell >
+        .9989
+      </cell>
+      <cell >
+        .9990
+      </cell>
+      <cell >
+        .9990
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        3.1
+      </cell>
+      <cell >
+        .9990
+      </cell>
+      <cell >
+        .9991
+      </cell>
+      <cell >
+        .9991
+      </cell>
+      <cell >
+        .9991
+      </cell>
+      <cell >
+        .9992
+      </cell>
+      <cell >
+        .9992
+      </cell>
+      <cell >
+        .9992
+      </cell>
+      <cell >
+        .9992
+      </cell>
+      <cell >
+        .9993
+      </cell>
+      <cell >
+        .9993
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        3.2
+      </cell>
+      <cell >
+        .9993
+      </cell>
+      <cell >
+        .9993
+      </cell>
+      <cell >
+        .9994
+      </cell>
+      <cell >
+        .9994
+      </cell>
+      <cell >
+        .9994
+      </cell>
+      <cell >
+        .9994
+      </cell>
+      <cell >
+        .9994
+      </cell>
+      <cell >
+        .9995
+      </cell>
+      <cell >
+        .9995
+      </cell>
+      <cell >
+        .9995
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        3.3
+      </cell>
+      <cell >
+        .9995
+      </cell>
+      <cell >
+        .9995
+      </cell>
+      <cell >
+        .9996
+      </cell>
+      <cell >
+        .9996
+      </cell>
+      <cell >
+        .9996
+      </cell>
+      <cell >
+        .9996
+      </cell>
+      <cell >
+        .9996
+      </cell>
+      <cell >
+        .9996
+      </cell>
+      <cell >
+        .9996
+      </cell>
+      <cell >
+        .9997
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        3.4
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9997
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+    </row>
+    <row >
+      <cell right="medium" >
+        3.5
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+      <cell >
+        .9998
+      </cell>
+    </row>
+  </tabular>
+</table>
+        
+        <p>Z-score tables like the one above describe the probability that a given value, or any value less than it, will 
+            occur in a given set. This particular table assumes you are looking to find the probability associated with a 
+            positive z-score. You may have additional work to do if the z-score is negative.</p>
+        <p>
+        <ul>
+            <li>To find the percentage of values greater than a negative Z score, just look up the matching positive Z 
+                score value.</li>
+            <li>To find the percentage of values less than a negative z-score, subtract the chart value from 1.</li>
+            <li>To find the percentage of values greater than a positive z-score, subtract the chart value from 1.</li>
+        </ul></p>
+        
+        <example>
+            <p>What is the probability that a value with a z-score less than 2.47 will occur in a normal distribution?</p>
+
+            <solution>
+                <p>Scroll up to the table above and find “2.4” on the left or right side. Now move across the table to 
+                    “0.07” on the top or bottom, and record the value in the cell: <m>0.9932</m>. That tells us that 99.32% 
+                    of values in the set are at or below a z-score of 2.47.</p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>What is the probability that a value with a z-score greater than 1.53 will occur in a normal distribution?
+            </p>
+
+            <solution>
+                <p>Scroll up to the table of z-score probabilities again and find the intersection between 1.5 on the left 
+                    or right and 3 on the top or bottom, record the value in the cell: <m>0.937</m>.</p>
+
+                <p>That decimal lets us know that 93.7% of values in the set are below the z-score of 1.53. To find the 
+                    percentage that is above that value, we subtract 0.937 from 1.0 (or 93.7% from 100%), to get 0.063 or 
+                    6.3%.</p>
+                
+            </solution>
+        </example>
+
+
+        <example><p>What is the probability of a random selection being less than 3.65, given a normal distribution with
+            <m>\mu = 5</m> and <m>\sigma = 2.2</m>?</p>
+            
+            <solution>
+                <p>This question requires us to first find the z-score for the value 3.65, then calculate the percentage of 
+                    values below that z-score.</p>
+                <p>
+                <ol label = "1">
+                    <li><p>Find the z-score for 3.65, using the z-score formula:</p>
+                        <me>z = \frac{3.65 - 5}{2.2} = \frac{-1.35}{2.2}=-0.61</me>
+                    </li>
+                    <li>Now we can scroll up to our z-score reference above and find the intersection of 0.6 and 0.01, 
+                        which should be <m>.7291</m>.
+                    </li>
+                    <li>Since this is a negative z-score, and we want the percentage of values below it, we subtract that 
+                        decimal from 1.0 (reference the three steps highlighted by bullet points below the chart if you 
+                        didn’t recall this), to get <m>1 - .7291 = .2709</m></li>
+                    
+                </ol></p>
+
+                <p>There is approximately a 27.09% chance that a value less than 3.65 would occur from a random selection
+                    of a normal distribution with mean 5 and standard deviation 2.2.</p>
+            </solution>
+        </example>
+        
+        <p>Returning to the problem,</p>
+
+        <blockquote>Knowing the z-score of a given value is great, but what can you do with it? How does a z-score relate 
+            to probability? What is the probability of occurrence of a z-score less than 2.47?</blockquote>
+
+        <p>A z-score lets you calculate the probability that a randomly selected value will be greater or less than a 
+            particular value in a set.</p>
+
+        <p>To find the probability of a z-score below +2.47, using a reference such as the table in the lesson above:</p>
+        <p>
+        <ol label = "1">
+            <li>Find 2.4 on the left or right side</li>
+            <li>Move across to 0.07 on the top or bottom.</li>
+            <li>The cell you arrive at says: <m>0.9932</m>, which means that apx 99.32% of the values in a normal 
+                distribution will occur below a z-score of 2.47.</li>
+        </ol></p>
+    
+        <problem><title>Try It Now</title>
+            <p>What is the probability of occurrence of a value with z-score greater than 1.24?</p>
+            
+            <answer>Since this is a positive z-score, we can use the value for z = 1.24 directly from the table: 0.8925
+            </answer>
+        </problem>
+        
+        <problem><title>Try It Now</title>
+            <p>What percent of the data in a normal distribution has z-score below <m>z = -0.23</m>?</p> 
+
+            <answer><p>This is a negative z-score, and we want the percentage of values greater than it, so we need to 
+                subtract the value for z = +0.23 from 1: <m>1 - 0.591 = .409</m>. 40.9% percent of the data in a
+                normal distribution have z-scores less than -0.23.</p></answer>
+        </problem>
+        
+        <p>Do z-score probabilities always need to be calculated as the chance of a value either above or below a given 
+            score? How would you calculate the probability of a z-score between two values?</p>
+        
+        <p>To calculate the probability of getting a value with a z-score between two other z-scores, you can use a 
+            reference table (such as <xref ref ="normal-zscoretable" />) to look up the value for both scores and 
+            subtract them to find the difference.</p>
+        
+        <example><p>What is the probability associated with a z-score between 1.2 and 2.31?</p>
+
+            <solution>
+                <p>To evaluate the probability of a value occurring within a given range, you need to find the probability 
+                    of both the upper and lower values in the range, and subtract to find the difference.</p>
+                
+                <figure>
+                    <caption>Image Credit: RRCC</caption>
+                  <image width = "50%" xml:id = "normal-image-4">
+                      <description>A bell curve with the region below z=1.2 is labeled as 88.49% and the region below 
+                          z=2.31 is labeled as
+                          98.96%.</description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+                    xticklabels = {-3, -2, -1, 0, 1, 2, 3},
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [domain = -4:4]  {gauss(0,1)} \closedcycle;
+\addplot [fill=blue!20, draw=none, domain=1.2:2.31] {gauss(0,1)} \closedcycle;
+\addplot[&lt; -] coordinates {(-3.5,0.2) (1.2,0.2)};
+\addplot[&lt; -] coordinates {(-3.5,0.3) (2.31,0.3)};                   
+\node[coordinate, pin={88.49\%}] at (axis cs: -2, 0.15){};
+\node[coordinate, pin={98.95\%}] at (axis cs: -1.5, 0.25){};
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+                </image>
+                </figure>
+
+                <p>First find z = 1.2 on the z-score probability reference above: <m>.8849</m>. Remember that value 
+                    represents the percentage of values below 1.2.</p>
+
+                <p>Next, find and record the value associated with z = 2.31: <m>.9896</m></p>
+
+                <p>Since approximately 88.49% of all values are below z = 1.2 and approximately 98.96% of all values are 
+                    below z = 2.31, there are 98.96% -88.49% = 10.47% of values between.</p>
+                
+            </solution>
+        </example>
+        
+        <example><p>What is the probability that a random selection will be between 8.45 and 10.25, if it is from a normal 
+            distribution with <m>\mu = 10</m> and <m>\sigma = 2</m>?</p>
+
+            <solution>
+                <p>This question requires us to first find the z-scores for the value 8.45 and 10.25, then calculate the 
+                    percentage of value between them by using values from a z-score reference and finding the difference.
+                </p>
+                <p>
+                <ol label = "1">
+                    <li>Find the z-score for 8.45, using the z-score formula: 
+                        <me>z = \frac{8.45 - 10}{2} = \frac{-1.55}{2} \approx -0.78</me>
+                    </li>
+
+                    <li>Find the z-score for 10.25 the same way:
+                        <me>z = \frac{10.25 - 10}{2} = \frac{0.25}{2} \approx 0.13</me>
+                    </li>
+
+                    <li><p>Now find the percentages for each, using a reference (don’t forget we want the probability of 
+                        values less than our negative score and less than our positive score, so we can find the values 
+                        between):</p>
+                        <me>P\left(Z &lt; -0.78\right) = 1 - 0.7823 = 0.2177</me>
+                        <me>P\left(Z &lt; 0.13 \right) = 0.5517</me>
+                    </li>
+                       
+                    <li><p>At this point, let’s sketch the graph to get an idea what we are looking for:</p>
+                        
+                        <figure>
+                            <caption>Image Credit: RRCC</caption>
+  <image width = "50%" xml:id = "normal-image-5">
+      <description>A bell curve with the region below z=0.13 is labeled as 55.17% and the region below 
+                          z=-0.78 is labeled as
+          21.77%%.</description>
+                <latex-image>
+                    \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left,
+height=6cm, width=10cm,
+xtick={-3, -2, -1, 0, 1, 2, 3}, ytick=\empty,
+                    hide y axis,
+                    xticklabels = {-3, -2, -1, 0, 1, 2, 3},
+enlargelimits=false, clip=false, axis on top,
+grid = major]
+\addplot [domain = -4:4]  {gauss(0,1)} \closedcycle;
+\addplot [fill=blue!20, draw=none, domain=-0.78:0.13] {gauss(0,1)} \closedcycle;
+\addplot[&lt;-] coordinates {(-3.5,0.2) (-0.78,0.2)};
+\addplot[&lt;-] coordinates {(-3.5,0.3) (0.13,0.3)};                   
+\node[coordinate, pin={21.77\%}] at (axis cs: -2, 0.15){};
+\node[coordinate, pin={55.17\%}] at (axis cs: -1.5, 0.25){};
+\end{axis}
+\end{tikzpicture}
+                   
+                </latex-image>
+                </image>
+                        </figure>
+                    </li>
+                    <li><p>Finally, subtract the values to find the difference:</p>
+                        <p><m>.5517 - .2177 = .3340</m> or about 33.4%</p>
+                        <p>There is approximately a 33.4% chance (or 0.334 probability) that a value between 8.45 and 10.25 
+                            would result from a 
+                            random selection of a normal distribution with mean 10 and standard deviation 2.</p>
+                    </li>
+                </ol></p>
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>What is the probability of a z-score between -0.93 and 2.11?</p>
+              <answer>
+                  <p>Using the z-score probability table above, we can see that the probability of a value below -0.93 is 
+                      .1762, and the probability of a value below 2.11 is .9826. Therefore, the probability of a value 
+                      between them is .9826-.1762 = .8064</p>
+            </answer>
+        </problem>
+
+        <problem><title>Try It Now</title>
+            <p>What is P(1.39 &lt; Z &lt; 2.03)?</p>
+            <answer>
+                Using the z-score probability table, we see that the probability of a value below z = 1.39 is .9177, and a 
+                value below z = 2.03 is .9788. That means that the probability of a value between them is .9788 - .9177 = 
+                .0611.
+            </answer>
+        </problem>
+
+        
+    </section>
+
+
+    
+    <exercises xml:id = "exercises-normal">
+        <exercisegroup>
+            <introduction><p>For the exercises below, describe the rarity of an event using the following scale:
+                <ul>
+                    <li>0% - &lt; 1% probability = very rare</li>
+                    <li>1% - &lt; 5% = rare</li>
+                    <li>5% - &lt; 34% = uncommon</li>
+                    <li>34% - &lt; 50% = common</li>
+                    <li>50% - 100% = likely</li>
+                </ul>
+                </p>
+            </introduction>
+
+        <exercise xml:id = "normal-ex-1">
+            <statement>
+                <p>Scores on a certain standardized test have a mean of 500, and a standard deviation of 100. How common is 
+                    a score between 600 and 700?</p>
+            </statement>
+            <answer>Likely</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-2">
+            <statement>
+                <p>Considering a full-grown show-quality male Siberian Husky has a mean weight of 52.5 lbs, with SD of 7.5 
+                    lbs, how common are male huskies in the 37.5 - 45 lbs range?</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-3">
+            <statement>
+                <p>In a population with <m>\mu=125</m>, and <m>\sigma=25</m>, how common are values in the 
+                    <m>125 - 150</m> range?
+                </p>
+            </statement>
+            <answer>Common</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-4">
+            <statement>
+                <p>In a population with <m>\mu =0.0025</m> and <m>\sigma=0.0005</m>, how common are values between 
+                    <m>0.0025</m> 
+                    and <m>0.0030</m>?</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "normal-ex-5">
+            <statement>
+                <p>A 12 oz can of soda has a mean volume of 12 oz, with a standard deviation of .25 oz. How common are cans 
+                    with between 11 and 11.5 oz of soda?</p>
+            </statement>
+            <answer>Rare</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-6">
+            <statement>
+                <p>If <m>\mu = 0.0025</m> and <m>\sigma = 0.0005</m>, how common are values between 0.0045 and 0.005?</p>
+            </statement>
+        </exercise>
+            
+            <exercise xml:id = "normal-ex-7">
+            <statement>
+                <p>The American Robin Redbreast has a mean weight of 77 g, with a standard deviation of 6 g. How common are 
+                    Robins in the 59 g-71 g range?</p>
+            </statement>
+                <answer>Uncommon</answer>
+        </exercise>
+        
+        
+        <exercise xml:id = "normal-ex-8">
+            <statement>
+                <p>Assuming population has a mean of 1130 and a standard deviaton of 5, how common are values between 1125 
+                    and 1135?</p>
+            </statement>
+        </exercise>
+        
+        
+        
+        <exercise xml:id = "normal-ex-9">
+            <statement>
+                <p>A population has <m>\mu=\frac{3}{5}</m> and <m>\sigma=\frac{1}{10}</m>, how common are values between 
+                    <m>\frac{2}{5}</m>
+                    and <m>1</m>?</p>
+            </statement>
+            <answer>Likely</answer>
+        </exercise>
+        </exercisegroup>
+        
+        <exercise xml:id = "normal-ex-10">
+            <statement>
+                <p>Given mean 63 and standard deviation of 168, find the approximate percentage of the distribution that 
+                    lies between -105 and 567.</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-11">
+            <statement>
+                <p>Given standard deviation of 74 and mean of 124, approximately what percentage of the values are greater 
+                    than 198?</p>
+            </statement>
+            <answer>16%</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-12">
+            <statement>
+                <p>Given <m>\sigma = 39</m> and <m>\mu = 101</m>, approximately what percentage of the values are less 
+                    than <m>23</m>?</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-13">
+            <statement>
+                <p>Given a mean of 92 and standard deviation of 189, find the approximate percentage of the distribution 
+                    that lies between -286 and 470.</p>
+            </statement>
+            <answer>95%</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-14">
+            <statement>
+                <p>Approximately what percent of a normal distribution lies between <m>\mu + 1\sigma</m> and <m>\mu
+                    + 2\sigma</m>?</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-15">
+            <statement>
+                <p>Given standard deviation of 113 and mean 81, approximately what percentage of the values are less than 
+                    -145?</p>
+            </statement>
+            <answer>2.5%</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-16">
+            <statement>
+                <p>Given mean 23 and standard deviation 157, find the approximate percentage of the distribution that lies 
+                    between 23 and 337.</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-17">
+            <statement>
+                <p>Given <m>\sigma = 3</m> and <m>\mu = 84</m>, approximately what percentage of the values are less 
+                    than <m>90</m>?</p>
+            </statement>
+            <answer>97.5%</answer>
+        </exercise>
+
+        <exercise xml:id = "normal-ex-18">
+            <statement>
+                <p>Approximately what percent of a normal distribution is between <m>\mu</m> and <m>\mu + 1\sigma</m>?</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-19">
+            <statement>
+                <p>Given mean 118 and standard deviation 145, find the approximate percentage of the distribution that 
+                    lies between -27 and 118.</p>
+            </statement>
+            <answer>34%</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-20">
+            <statement>
+                <p>Given standard deviation of 81 and mean 67, approximately what percentage of values are greater than 
+                    310?</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-21">
+            <statement>
+                <p>Approximately what percent of a normal distribution is less than 2 standard deviations from the 
+                    mean?</p>
+            </statement>
+            <answer>2.5%</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-22">
+            <statement>
+                <p>Given <m>\mu + 1\sigma = 247</m> and <m>\mu + 2\sigma = 428</m>, find the approximate percentage of the 
+                    distribution that lies between <m>66</m> and <m>428</m>.</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-23">
+            <statement>
+                <p>Given <m>\mu - 1\sigma = -131</m> and <m>\mu + 1\sigma = 233</m>, approximately what percentage of the 
+                    values are greater than <m>-495</m>?</p>
+            </statement>
+            <answer>99.85%</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-24">
+            <statement>
+                <p>Suppose people’s heights are normally distributed with a mean of 66 inches and a standard deviation of 
+                    3 inches.
+                <ol label = "a">
+                    <li>What percent of people would you expect to be taller than 66 inches?</li>
+                    <li>What percent of people would you expect to be taller than 69 inches?</li>
+                    <li>What percent of people would you expect to be taller than 72 inches?</li>
+                </ol></p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-25">
+            <statement>
+                <p>300 students take a final exam. The scores are normally distributed with a mean of 75 and a standard 
+                    deviation of 9. Use the 68-95-99.7 rule to determine:
+                <ol label = "a">
+                    <li>How many students scored more than 75 points?</li>
+                    <li>How many students scored more than 84 points?</li>
+                    <li>How many students scored between 66 and 84 points?</li>
+                    <li>2.5% of the students received a score above what value?</li>
+                </ol></p>
+            </statement>
+           
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-26">
+            <statement>
+                <p>The life of batteries are normally distributed with a mean of 215 hours and a standard deviation of 21 
+                    hours. Use the 68-95-99.7 rule to determine:
+                <ol label = "a">
+                    <li>If you randomly select a battery, what is the probability that is will last more than 257 
+                        hours?</li>
+                    <li>If a shipment of 500 batteries, how many would you expect to last less than 194 hours?</li>
+                </ol></p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-27">
+            <statement>
+                <p>Birth weight is normally distributed with a mean of 6.5 pounds and a standard deviation of 1.5 pounds. 
+                    Last year, 445 babies were born at a hospital. Use the 68-95-99.7 rule to determine:
+                <ol label = "a">
+                    <li>How many babies would you expect to weigh more than 8 pounds?</li>
+                    <li>How many babies would you expect to weigh less than 6.5 pounds?</li>
+                    <li>How many babies would you expect to weigh between 6.5 and 8 pounds?</li>
+                    <li>How many babies would you expect to weigh more than 9.5 pounds?</li>
+                </ol></p>
+            </statement>
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>71 babies</li>
+                        <li>223 babies</li>
+                        <li>151 babies</li>
+                        <li>11 babies</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-28">
+            <statement>
+                <p>The number of candies in machine-filled boxes are normally distributed with a mean of 30 candies
+                    and a standard deviation of 1 candy.  Use the 68-95-99.7 rule to determine:
+                    <ol label = "a">
+                        <li>What is the probability that a box of candies will contain more than 32 candies?</li>
+                        <li>What percent of boxes would you expect to contain more than 27 candies?</li>
+                        <li>What percent of boxes would you expect to contain between 32 and 33 candies?</li>
+                        <li>In a shipment of 2,000 boxes, how many would you expect to have less than 28 candies?</li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-29">
+        <statement>
+            <p>Given a distribution with a mean of 70 and standard deviation of 62, find a value with a z-score of -1.82.</p>
+        </statement>
+            <answer>-42.84</answer>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-30">
+        <statement>
+            <p>What does a z-score of 3.4 mean?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-31">
+        <statement>
+            <p>Given a distribution with a mean of 60 and standard deviation of 98, find the z-score of 120.76.</p>
+        </statement>
+        <answer>z = 0.62</answer>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-32">
+        <statement>
+            <p>Given a distribution with a mean of 60 and standard deviation of 21, find a value with a z-score of 2.19.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-33">
+        <statement>
+            <p>Find the z-score of 187.37, given a distribution with a mean of 185 and standard deviation of 1.</p>
+        </statement>
+        <answer>2.37</answer>
+    </exercise>
+        
+         <exercise xml:id = "normal-ex-34">
+        <statement>
+            <p>Find the z-score of 125.18, given a distribution with a mean of 101 and standard deviation of 62.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-35">
+        <statement>
+            <p>What does a z-score of -3.8 mean?</p>
+        </statement>
+        <answer>The value is 3.8 standard deviations below the mean.</answer>
+    </exercise> 
+
+    <exercise xml:id = "normal-ex-36">
+        <statement>
+            <p>Given a distribution with a mean of 117 and standard deviation of 42, find a value with a z-score of -0.94.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-37">
+        <statement>
+            <p>Given a distribution with a mean of 126 and standard deviation of 100, find a value with a z-score of -0.75.
+            </p>
+        </statement>
+        <answer>51</answer>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-38">
+        <statement>
+            <p>Find the z-score of 264.16, given <m>\mu = 188</m> and <m>\sigma = 64</m>.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "normal-ex-39">
+        <statement>
+            <p>Find a value with a z-score of -0.2, given <m>\mu = 145</m> and <m>\sigma = 56</m>.</p>
+        </statement>
+        <answer>133.8</answer>
+    </exercise>
+        
+         <exercise xml:id = "normal-ex-40">
+        <statement>
+            <p>Find a value with a z-score of 1.2, given <m>\mu = 48</m> and <m>\sigma = 5</m>.</p>
+        </statement>
+    </exercise>
+
+    <exercisegroup>
+        <introduction>Find the probabilities, using the z-score table, <xref ref = "normal-zscoretable" /> from
+            <xref ref = "section-normal-zscores" />.
+        </introduction>
+        <exercise xml:id = "normal-ex-41">
+        <statement>What is the probability of a z-score less than +2.02?
+        </statement>
+            <answer>0.9783</answer>
+    </exercise>
+        
+        <exercise xml:id = "normal-ex-42">
+        <statement>
+What is the probability of a z-score less than -1.97?
+</statement>
+</exercise>
+
+    <exercise xml:id = "normal-ex-43">
+        <statement>
+What is the probability of a z-score greater than +2.02?
+</statement>
+        <answer>0.0217</answer>
+</exercise>
+
+<exercise xml:id = "normal-ex-44">
+        <statement>
+What is the probability of a z-score greater than -1.97?
+</statement>
+</exercise>
+        
+        <exercise xml:id = "normal-ex-45">
+        <statement>
+What is the probability of a z-score less than -0.02?
+</statement>
+            <answer>0.492</answer>
+</exercise>
+
+<exercise xml:id = "normal-ex-46">
+        <statement>
+What is the probability of a z-score less than +0.09?
+</statement>
+</exercise>
+
+
+</exercisegroup>
+        
+        <exercise xml:id = "normal-ex-47">
+        <statement>
+What is the probability of the random occurrence of a value greater than 56 from a normally distributed population with mean 62 and standard deviation 4.5?
+</statement>
+            <answer>0.9082</answer>
+</exercise>
+
+<exercise xml:id = "normal-ex-48">
+        <statement>
+What is the probability of a value of 329 or greater, assuming a normally distributed set with mean 290 and standard deviation 32?
+</statement>
+</exercise>
+
+<exercise xml:id = "normal-ex-49">
+        <statement>
+What is the probability of getting a value below 1.2 from the random output of a normally distributed set with 
+<m>\mu = 2.6</m> and <m>\sigma = .9</m>?
+</statement>
+    <answer>0.0594</answer>
+</exercise>
+
+<exercisegroup>
+    <introduction>Find the probabilities, using the z-score table, <xref ref = "normal-zscoretable" /> from 
+    <xref ref = "section-normal-zscores" /></introduction>
+
+    <exercise xml:id = "normal-ex-50">
+        <statement>
+What is the probability of a z-score between +1.99 and +2.02?
+</statement>
+</exercise>
+
+<exercise xml:id = "normal-ex-51">
+        <statement>
+What is the probability of a z-score between -1.99 and +2.02?
+</statement>
+    <answer>0.955</answer>
+</exercise>
+
+<exercise xml:id = "normal-ex-52">
+        <statement>
+What is the probability of a z-score between -1.20 and -1.97?
+</statement>
+</exercise>
+
+<exercise xml:id = "normal-ex-53">
+        <statement>
+What is the probability of a z-score between +2.33 and -0.97?
+</statement>
+    <answer>0.8241</answer>
+</exercise>
+
+<exercise xml:id = "normal-ex-54">
+        <statement>
+What is P(1.42 &lt; Z &lt; 2.01)?
+</statement>
+</exercise>
+
+<exercise xml:id = "normal-ex-55">
+        <statement>
+What is P(1.77 &lt; Z &lt; 2.22)?
+</statement>
+    <answer>0.0252</answer>
+</exercise>
+
+<exercise xml:id = "normal-ex-56">
+        <statement>
+What is P(-2.33 &lt; Z &lt; -1.19)?
+</statement>
+</exercise>
+</exercisegroup>
+
+<exercise xml:id = "normal-ex-57">
+        <statement>
+What is the probability of the random occurrence of a value between 56 and 61 from a normally distributed population with mean 62 and standard deviation 4.5?
+</statement>
+    <answer>0.3211</answer>
+</exercise>
+
+<exercise xml:id = "normal-ex-58">
+        <statement>
+What is the probability of a value between 301 and 329, assuming a normally distributed set with mean 290 and standard deviation 32?
+</statement>
+</exercise>
+        
+        <exercise xml:id = "normal-ex-59">
+            <statement>40% of the data in a normal disribution is above what z-score?
+            </statement>
+            <answer>z = 0.25</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-60">
+            <statement>30% of the data in a normal disribution is above what z-score?
+            </statement>
+        </exercise>
+             
+        
+        <exercise>
+            <statement xml:id = "normal-ex-61">
+                The annual rainfall in a city is normally distributed with a mean of 28.4 inches and a standard    
+                deviation of 1.7 inches. What is the probability that a year will have less than 24 inches of rain?
+            </statement>
+            <answer>0.0048</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-62">
+            <statement>
+                The diameter of a pipe is normally distributed with a mean of 0.5 inches and a standard deviation of 0.04
+                inches. What is the probability that the diameter of a randomly selected pipe will exceed 0.6 inches?
+            </statement>
+        </exercise>
+        
+          <exercise xml:id = "normal-ex-63">
+            <statement>
+                <p>The lifetime of a light bulb is normally distributed with a mean of 95 hours and a standard deviation
+                    of 12 hours.
+                    <ol label = "a">
+                        <li>What percentage of light bulbs will last more than 100 hours?</li>
+                        <li>What percentage of light bulbs will last less than 75 hours?</li>
+                </ol></p>
+            </statement>
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>33.72%</li>
+                        <li>4.75%</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-64">
+            <statement>
+                <p>Grades on a test are normally distributed with a mean of 50 pts and a standard deviation of 8 pts.
+                In a class of 150 students,
+                <ol label = "a">
+                    <li>How many students scored more than 60 pts?</li>
+                    <li>How many students scored between 40 and 60 pts</li>
+                </ol></p>
+            </statement>
+        </exercise>
+        
+       <exercise xml:id = "normal-ex-65">
+            <statement>
+                <p>A pizza place wants to give coupons those with the top 10% of wait times for their 
+                deliveries. Assuming the wait times are normally distributed with a mean delivery time of 30 minutes
+                    and a standard deviation of 8 minutes, what delivery times will earn coupons?</p>
+            </statement>
+            <answer>Those who wait more than 40 minutes (40.24 minutes to be exact) will earn a coupon.</answer>
+        </exercise>
+        
+        <exercise xml:id = "normal-ex-66">
+            <statement>
+                <p>Race times are normally distributed with a mean of 23 minutes and a standard deviation of 4 minutes.
+                    If the top 20% of finishers will move on to the State Championship, what is the cutoff time
+                    for the State Championship?</p>
+            </statement>
+        </exercise>
+        
+       
+        
+        <exercise xml:id = "normal-ex-67">
+            <statement>
+                <p>A pizza place has a mean delivery time of 30 minutes with a standard deviation of 8 minutes. 
+                    Assuming the times are normally distributed, what is the probability that your pizza will be
+                    delivered in less than 20 minutes?</p>
+            </statement>
+        </exercise>
+                
+
+    </exercises>
+    
+    <exercises xml:id = "normal-ch-test"><title>Chapter Test</title>
+        
+        <exercise>
+            <statement>
+                <p>A normal distribution has a mean of 12 and a standard deviation of 3. Use the 68-95-99.7 Rule to find the 
+                    percent of values in the distribution that are:
+                    <ol label = "a">
+                        <li>below 9.</li>
+                        <li>between 12 and 15.</li>
+                        <li>above 6.</li>
+                        <li>below 12.</li>
+                        <li>between 15 and 18.</li>
+                        <li>above 18.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>16%</li>
+                        <li>34%</li>
+                        <li>97.5%</li>
+                        <li>50%</li>
+                        <li>13.5%</li>
+                        <li>2.5%</li>
+                    </ol>
+                </p>
+            </answer>
+            
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A machine fills bags of candy. The number of candies in each bag is normally distributed with a mean of
+                    200 pieces and a standard deviation of 2 pieces. Use the 68-95-99.7 Rule to find the following:
+                    <ol label = "a">
+                        <li>What percent of the bags should have between 200 and 204 pieces in them?</li>
+                        <li>What percent of bags should have at least 198 pieces?</li>
+                        <li>In a shipment of 5,000 bags of candy, how many should have more than 204 pieces?</li>
+                        <li>What is the probability of getting a bag with less than 194 pieces?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>47.5%</li>
+                        <li>84%</li>
+                        <li>125 bags</li>
+                        <li>0.0015</li>
+                    </ol>
+                </p>
+            </answer>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>204 is 2 standard deviations above the mean, so between the mean and 
+                            204 would be <m>95\% \div 2 = 47.5\%</m> of the data.</li>
+                        <li>198 is one standard deviation below the mean. <m>68\% \div 2
+                            =34\%</m>--so 34% of the data lies between 198 and the mean. 
+                            <m>50\% + 34\% = 84 \%</m> of the data lies above 198.</li>
+                        <li>204 is 2 standard deviations of the mean. 2.5% of the data will lie 
+                            above 204. 
+                            <me>0.025 \left(5,000\right) = 125</me>
+                            There should be 125 bag with more than 204 pieces.</li>
+                        <li>196 is 3 standard deviations below the mean.
+                            <me>100\% - 99.7\% = 0.3\%</me>
+                            <me>0.3\% \div 2 = 0.15\%</me>
+                            0.15% of the bag have less than 196 pieces. There is a probability of 
+                            0.0015 that a bag has less than 196 pieces.</li>
+                    </ol>
+                </p>
+            </solution>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>Use a z-score table to find the percentage of value in a normal distribution that are:
+                    <ol label = "a">
+                        <li>above <m>z = 1.45.</m></li>
+                        <li>below <m>z = 0.54</m>.</li>
+                        <li>above <m>z = -1.2</m>.</li>
+                        <li>below <m>z = -0.97</m>.</li>
+                        <li>between <m>z = 1.2</m> and <m>z = 2.4</m>.</li>
+                        <li>between <m>z = -0.65</m> and <m>z = 0.59</m>.</li>
+                        <li>between <m>z = -1.45</m> and <m>z = -1.1</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>92.65% is below <m>z = 1.45</m>. 
+                            <me>100\% - 92.65\% = 7.35\%</me></li>
+                        <li>70.54%</li>
+                        <li>88.49%</li>
+                        <li>83.40% is above <m>z = -0.97</m>.
+                            <me>100\% - 83.40\% = 16.6\%</me></li>
+                        <li>88.49% is below <m>z = 1.2</m> and 99.18% is below 
+                            <m>z = 2.4</m>.
+                            <me>99.18\% - 88.49\% = 10.69\%</me></li>
+                        <li>74.22% is above <m>z = -0.65</m>.
+                            <me>100\% - 74.22\% = 25.78\%</me>
+                            72.24% is below <m>z = 0.59</m>.
+                            <me>72.24\% - 25.78\% = 46.46\%</me></li>
+                        <li>92.65% is above <m>z = -1.45</m> and 86.43% is above <m>z=
+                            -1.1</m>.
+                            <me>92.65\% - 86.43\% = 6.22\%</me></li>
+                    </ol>
+                </p>
+            </solution>
+            
+             
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>7.35%</li>
+                        <li>70.54%</li>
+                        <li>88.49%</li>
+                        <li>16.6%</li>
+                        <li>10.69%</li>
+                        <li>46.46%</li>
+                        <li>6.22%</li>
+                    </ol>
+                </p>
+            </answer>
+            
+            
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A normal distribution has a mean of 21 and a standard deviation of 4. Compute the z-score that corresponds with each raw score:
+                    <ol label = "a">
+                        <li><m>x = 14</m></li>
+                        <li><m>x = 23</m></li>
+                        <li><m>x = 29</m></li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            <me>z = \frac{14 - 21}{4}</me>
+                            <me>z = \frac{-7}{4} = -1.75</me>
+                        </li>
+                        <li>
+                            <me>z=\frac{23-21}{4}</me>
+                            <me>z=\frac{2}{4}=0.5</me>
+                        </li>
+                        <li>
+                            <me>z=\frac{29-21}{4}</me>
+                            <me>z = \frac{8}{4}=2</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>-1.75</li>
+                        <li>0.5</li>
+                        <li>2</li>
+                    </ol>
+                </p>
+            </answer>
+                                
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A normal distribution has a mean of 35 and a standard deviation of 3. Find the raw score that corresponds with each z-score:
+                    <ol labe = "a">
+                    <li><m>z=0.67</m></li>
+                    <li><m>z = 1.5</m></li>
+                    <li><m>z=-0.95</m></li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            <me>0.67 = \frac{x - 35}{3}</me>
+                            <me>0.67 \cdot 3 = x - 35</me>
+                            <me>2.01 = x - 35</me>
+                            <me>x = 37.01</me>
+                        </li>
+                        <li>
+                            <me>1.5 = \frac{x - 35}{3}</me>
+                            <me>1.5 \cdot 3 = x - 35</me>
+                            <me>4.5 = x - 35</me>
+                            <me>x = 39.5</me>
+                        </li>
+                        <li>
+                            <me>-0.95 = \frac{x - 35}{3}</me>
+                            <me>-0.95 \cdot 3 = x - 35</me>
+                            <me>-2.85 = x - 35</me>
+                            <me>x = 32.15</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>37.01</li>
+                        <li>39.5</li>
+                        <li>32.15</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A brand of television has a normal distribution of failures with a mean of 120 months and a standard deviation of 12 months. What is the probability that a television from this brand will fail in less than 100 months?</p>
+            </statement>
+            
+            <solution>
+                <p>First, compute the z-score for <m>x = 100</m>, using <m>\mu = 120</m> and
+                    <m>\sigma = 12</m>.
+                    <me>z = \frac{100-120}{12}=\frac{-20}{12}=-1.67</me>
+                    Next, use a z-score to table to determine that there a probabilty of 0.9525 
+                    that a value will
+                    be above that z-score.</p>
+                
+                <p>The probability that the failure would occur in less than 100 months would 
+                    be:
+                    <me> 1 - 0.9525 = 0.0475</me>
+                </p>
+            </solution>
+            
+            <answer>0.0475</answer>
+        </exercise>
+        
+        
+        <exercise>
+            <statement>
+                <p>A city has a mean annual rainfall of 67 inches with a standard deviation of 10 inches. If the distribution of annual rainfall is normally distributed,
+                    <ol label = "a">
+                        <li>What is the probability a year will have between 60 and 70 inches of rain?</li>
+                        <li>In a 20-year period, how many years would you expect to have over 72 inches of rain?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            <p>First, compute z-scores for both <m>x = 60</m> and <m>x = 70</m>.
+                                <me>z = \frac{60 - 67}{10}=\frac{-7}{10}=-0.7</me>
+                                <me>z = \frac{70-67}{10}=\frac{3}{10}=0.3</me>
+                                Then look up both z-scores in the table.</p>
+                            <p>There is a probability of 0.7580 that a value will be above 
+                                <m>z = -0.7</m>.
+                            <me>1 - 0.7580 = 0.242</me>
+                                There is a probability of 0.242 that a value will be below
+                                that z-score.</p>
+                            <p>There is a probability of 0.6179 that a value will be below 
+                                <m>z = 0.3</m>.
+                                <me>0.6179 - 0.242 = 0.3759</me></p> 
+                            <p>There is a probability of 0.3759 that the annual rainfall will be 
+                                between 60 and 70 inches.</p>
+                        </li>
+                        <li>
+                            <p>The z-score corresponding with <m>x = 72</m> is:
+                                <me>z = \frac{72-67}{10}=\frac{5}{10}=0.5</me>
+                                Using the z-score table, 69.15% of the data lies below
+                                <m>z = 0.5</m>.
+                                <me>100\%-69.15\% = 30.85\%</me>
+                                30.85% of the data lies above that z-score, or 30.85% of the years
+                                studied should have a mean annual rainfall that is more than 
+                                72 inches.</p>
+                            <me>0.3085 \cdot 20 = 6.17</me>
+                            <p>About 6 years.</p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>0.3759</li>
+                        <li>6 years</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>In a power lifting competition, the distribution of total weight lifted has a mean of 1,100 pounds and a standard deviation of 20 pounds. What is the cutoff of total weight lifted for a competitor to finish in the top 30% of the competition?</p>
+            </statement>
+            
+            <solution>
+                <p>70% of the finishers will be below the top 30%. <m>z = 0.52</m> corresponds 
+                    with 0.6985, which is the probability closest to 0.7 in the table.</p>
+                <p>Compute the raw score that corresponds with <m>z = 0.52</m>:
+                    <me>0.52 = \frac{x -1100}{20}</me>
+                    <me>0.52 \cdot 20 = x - 1100</me>
+                    <me>10.4 = x - 1100</me>
+                    <me>x = 1110.4</me>
+                </p>
+                <p>The top 30% of competitors will have lifted 1110.4 pounds or more.</p>
+            </solution>
+            
+            <answer>
+                1110.4 pounds
+            </answer>
+        </exercise>
+                
+        
+    </exercises>
+    
+    
+</chapter>

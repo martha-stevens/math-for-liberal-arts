@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pi:privatesolutions
+  xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+    
+<!-- ***********************************************************************************-->
+<!-- SETS CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+
+    <!--<answer ref="sets-ex-1">
+        <p>{m, i, s, p}</p>
+    </answer>-->
+    
+    <answer ref="sets-ex-2">
+        <p>{january, february, march, april, may, june, july, august, september, october, november,
+        december}</p>
+    </answer>
+    
+    
+    <!--<answer ref="sets-ex-3">
+        <p>Yes</p>
+    </answer>-->
+    
+    <answer ref="sets-ex-4">
+        <p>Yes</p>
+    </answer>
+    
+     <!--<answer ref="sets-ex-5">
+        <p>True</p>
+    </answer>-->
+    
+     <answer ref="sets-ex-6">
+        <p>False</p>
+    </answer>
+    
+     <!--<answer ref="sets-ex-7">
+        <p>True</p>
+    </answer>-->
+    
+     <answer ref="sets-ex-8">
+        <p>False</p>
+    </answer>
+    
+     <!--<answer ref="sets-ex-9">
+        <p>False</p>
+    </answer>-->
+    
+     <answer ref="sets-ex-10">
+        <p>True</p>
+    </answer>
+    
+    <!--<answer ref="sets-ex-11">
+        <p>4</p>
+    </answer>-->
+    
+    <answer ref="sets-ex-12">
+        <p>2</p>
+    </answer>
+    
+    <answer ref="sets-ex-14">
+        <p>3</p>
+    </answer>
+    
+    <answer ref="sets-ex-16">
+        <p>0</p>
+    </answer>
+    
+    <answer ref="sets-ex-18">
+        <p>{}, {tea}, {muffin}, {cookie}, {tea, muffin}, {tea, cookie}, 
+        {muffin, cookie}, {tea, muffin, cookie}</p>
+    </answer>
+    
+    <answer ref="sets-ex-20">
+        <p><m>2^6 = 64</m></p>
+    </answer>
+    
+    <answer ref="sets-ex-22">
+        <p>{1, 3}</p>
+    </answer>
+    
+    <answer ref="sets-ex-24">
+        <p>{1, 3, 5, 7, 9}</p>
+    </answer>
+    
+    <answer ref="sets-ex-26">
+        <p><m>\emptyset</m></p>
+    </answer>
+    
+    <answer ref="sets-ex-28">
+        <p>{5, 6, 7, 8, 9, 10}</p>
+    </answer>
+    
+    <answer ref="sets-ex-30">
+        <p>{1, 2, 3, 4, 6, 8, 9, 10}</p>
+    </answer>
+    
+    <answer ref="sets-ex-32">
+        <p>{c, k}</p>
+    </answer>
+    
+    <answer ref="sets-ex-34">
+        <p>{b, a, k}</p>
+    </answer>
+    
+    <answer ref="sets-ex-36">
+        <p>{h}</p>
+    </answer>
+    
+    <answer ref="sets-ex-44">
+        <p><m>B \cap \left( A \cup C \right)^c</m></p>
+    </answer>
+    
+    <answer ref="sets-ex-46">
+        <p>One possibility: <m>\left(A \cap C^c\right) \cup \left(A \cap B\right) 
+            \cup \left(B \cap C^c\right)</m></p>
+    </answer>
+    
+    <answer ref="sets-ex-48">
+        <p>11</p>
+    </answer>
+    
+    <answer ref="sets-ex-50">
+        <p>23</p>
+    </answer>
+    
+    <answer ref="sets-ex-52">
+        <p>4</p>
+    </answer>
+    
+    <answer ref="sets-ex-54">
+        <p>3</p>
+    </answer>
+    
+    <answer ref="sets-ex-56">
+        <p>1</p>
+    </answer>
+    
+    <answer ref="sets-ex-58">
+        <p>9</p>
+    </answer>
+
+      
+    <answer ref="sets-ex-60">
+        <p>213</p>
+    </answer>
+    
+    
+    <answer ref="sets-ex-62">
+        <p>a. 15%; b. 50%</p>
+    </answer>
+    
+    <answer ref="sets-ex-64">
+        <p><ol label = "a">
+            <li>30</li>
+            <li>49</li>
+            </ol></p>
+    </answer>
+    
+    <answer ref="sets-ex-65">
+        <p>83 did not use any mass transit and 14 people only used the subway--that leaves
+            103 people that are using the train or bus.  <m>n\left(B \cup T\right) = 103</m>
+            However, n(B) = 59 and n(T) = 68.  Since <m>68 + 59 &gt; 103</m>, there must be some people 
+            using both the train and bus.
+    </p>
+    </answer>
+    
+<!-- ***********************************************************************************-->
+<!-- LOGIC CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+
+    <answer ref = "logic-ex-2">
+        <p>{13, 14, 15, 16, 17, 18}</p>
+    </answer>
+    
+    <answer ref = "logic-ex-4">
+        <p>No one in the car needs to use the restroom.</p>
+    </answer>
+    
+    <answer ref = "logic-ex-6">
+        <p>At least on student does not drive to campus.</p>
+    </answer>
+    
+    <answer ref = "logic-ex-8">
+        <p>
+        <ol label = "a">
+            <li>Dessert was included and the bill was less than $20</li>
+            <li>It is not true that dessert is included or the bill was less than $20.</li>
+            <li>If the bill is not less than $20, then dessert is included.</li>
+        </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "logic-ex-10">
+        <p>
+            <ol label = "a">
+                <li><m>\sim p \to q</m></li>
+                <li><m>p \wedge q</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "logic-ex-12">
+        <p>FTTT</p>
+    </answer>
+    
+    <answer ref = "logic-ex-14">
+        <p>TTFT</p>
+    </answer>
+    
+    <answer ref = "logic-ex-16">
+        <p>FTTT</p>
+    </answer>
+    
+    <answer ref = "logic-ex-18">
+        <p>TTTT</p>
+    </answer>
+    
+    <answer ref = "logic-ex-20">
+        <p>
+            <ol label = "a">
+                <li>Exclusive</li>
+                <li>Inclusive</li>
+                <li>Exclusive</li>
+                <li>Inclusive</li>
+            </ol>
+        </p>
+    </answer>
+    
+     <answer ref="logic-ex-21">
+        <p>
+            <ol label = "a">
+                <li>If it is a triangle, then it is a polygon.</li>
+                <li>If it is a dog, then it is happy.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "logic-ex-22">
+        <p>
+            <ol label = "a">
+                <li>If you cannot attend this movie, then you are under age 17.</li>
+                <li>If you are not under age 17, then you can attend this movie.</li>
+                <li>If you can attend this movie, then you are not under age 17.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "logic-ex-24">
+        <p>If I don't get paid, then I won't go Saturday.</p>
+    </answer>
+    
+    <answer ref = "logic-ex-26">
+        <p>b</p>
+    </answer>
+    
+    <answer ref = "logic-ex-28">
+        <p>You don't look both ways and you don't get hit by a car.</p>
+    </answer>
+    
+    <answer ref="logic-ex-29">
+        <p>You weren't talking and you missed the instructions.
+        </p>
+    </answer>
+    
+    <answer ref = "logic-ex-30">
+        <p>c</p>
+    </answer>
+    
+    <answer ref = "logic-ex-31">
+        <p>Inductive</p>
+    </answer>
+    
+    <answer ref = "logic-ex-32">
+        <p>Deductive</p>
+    </answer>
+    
+    <answer ref = "logic-ex-33">
+        <p>Deductive</p>
+    </answer>
+    
+    <answer ref = "logic-ex-34">
+        <p>Inductive</p>
+    </answer>
+    
+    <answer ref = "logic-ex-35">
+        <p>Inductive</p>
+    </answer>
+    
+    <answer ref = "logic-ex-36">
+        <p>Tina does not like Sprite and does not like 7-Up.</p>
+    </answer>
+    
+    <answer ref = "logic-ex-38">
+        <p>Valid</p>
+    </answer>
+    
+    <answer ref = "logic-ex-40">
+        <p>Valid</p>
+    </answer>
+    
+    <answer ref = "logic-ex-42">
+        <p>Invalid</p>
+    </answer>
+    
+    <answer ref = "logic-ex-44">
+        <p>Invalid</p>
+    </answer>
+    
+    <answer ref = "logic-ex-46">
+        <p>Invalid</p>
+    </answer>
+    
+    <answer ref = "logic-ex-48">
+        <p>Valid; Disjunctive Syllogism</p>
+    </answer>
+    
+    <answer ref="logic-ex-49">
+        <p>Invalid; Fallacy of the converse
+        </p>
+    </answer>
+    
+    <answer ref = "logic-ex-50">
+        <p>Invalid; Fallacy of the inverse</p>
+    </answer>
+    
+    <answer ref = "logic-ex-52">
+        <p>Circular reasoning</p>
+    </answer>
+    
+    <answer ref = "logic-ex-54">
+        <p>Correlation implies causation</p>
+    </answer>
+    
+<!-- ***********************************************************************************-->
+<!-- AlGEBRA CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+    
+    <answer ref = "algebra-ex-2">
+        <p>
+            <ol label = "a">
+                <li>511; 565; 619; 673</li>
+                <li>Not shown</li>
+                <li><m>P_n = 457 + 54n</m></li>
+                <li>3157</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-4">
+        <p>
+            <ol label = "a">
+                <li><m>P_n = P_{n-1} + 3, P_0 = 450</m></li>
+                <li><m>P_n = 450 + 3n</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-6">
+        <p>
+            <ol label = "a">
+                <li><m>P_1 = 230, P_2 = 260</m></li>
+                <li><m>P_n = 200+30n</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-8">
+        <p>
+            <ol label = "a">
+                <li><m>P_n = 130 + 4n</m></li>
+                <li>17.5 months</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-9"><m>P_n = 1.5 + 0.5n</m></answer>
+    
+    <answer ref = "algebra-ex-10">
+        <p>
+            <m>P_n = 1200 + 150n, P_{20} = 4200</m>
+        </p>
+    </answer>
+    
+     <answer ref = "algebra-ex-11">
+        <p>
+            <ol label = "a">
+                <li>45</li>
+                <li>The number of miles driven increases by 45 miles/hour.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-12">
+        <p>
+            <ol label = "a">
+                <li>-625</li>
+                <li>The value is going down by $625 per year.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-14">
+        <p>
+            <ol label = "a">
+                <li><m>P_n = \left(1.011\right) P_{n-1}, P_0 = 568</m></li>
+                <li><m>P_n = 568 \left(1.011\right)^n</m></li>
+                <li>626.77 thousand</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-16">
+        <p>8.7 billion
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-18">
+        <p>
+            <ol label = "a">
+                <li><m>P_n = \left(1.105\right)P_{n-1}, P_0 = 200</m></li>
+                <li><m>P_n = 200\left(1.105\right)^n</m></li>
+                <li>543 wolves</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-19">
+        <p>The population was 4,000 in 2005 and is growing by 70 people per year.
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-20">
+        <p>The population was 4,000 in 2005 and is growing by 4% per year.
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-21">
+        <p>
+            <m>P_n = 32000 - 2500n</m>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-22">
+        <p>$35.85
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-23">
+        <p>
+            <m>P_n = 500 \left(\frac{3}{4}\right)^n</m>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-24">
+        <p>
+            <ol label = "a">
+                <li><m>P_n = 1013 - 109n</m></li>
+                <li><m>P_n = 1013\left(0.886\right)^n</m></li>
+                <li>The linear model gives <m>P_{8.8}=53.8</m> and the exponential model gives <m>P_{8.8}=349</m>, so the 
+                    exponential model is better since it gives a value closer to the actual pressure at 8.8 km.</li>
+            </ol>
+        </p>
+    </answer>
+    
+     <answer ref = "algebra-ex-25">
+        <p>
+            <ol label = "a">
+                <li><m>P_n = 4000 - 950n</m></li>
+                <li><m>P_n = 4000\left(0.473 \right)^n</m></li>
+                <li>In the linear model, <m>P_6 = -1700</m>. The exponential model gives, <m>P_6 = 44.80</m>.
+                    It doesn't make sense for the value to be negatives, so the exponential model is 
+                    probabaly more accurate.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-26">
+        <p>
+            <ol label = "a">
+                <li><m>P_n = \left(1.1\right)P_{n-1}-100, P_0 = 2000</m></li>
+                <li><m>P_1 = 2100, P_2 = 2210</m>, the values appear to be increasing.</li>
+                <li>If 200 fish are harvested each year, the population will be constant. More than that and the 
+                    population will decrease.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-28">
+        <p>
+            <m>y = 5x^2</m>
+        </p>
+    </answer>
+    
+       <answer ref="algebra-ex-29"><m>y =\frac{8}{x}</m></answer>
+    
+    <answer ref = "algebra-ex-30">
+        <p>
+            <m>y = \frac{18}{x^2}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-32">
+        <p>
+            <m>\frac{32}{3}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-34">
+        <p>
+            19.2
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-36">
+        <p>
+            1
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-38">
+        <p>
+            3.6 inches
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-40">
+        <p>
+            3 hours
+        </p>
+    </answer>
+    
+    <answer ref = "algebra-ex-42">
+        <p>
+            149.2 lbs
+        </p>
+    </answer>
+
+<!--***********************************************************************************-->
+<!-- FINANCE CHAPTER EXERCISES -->
+<!--***********************************************************************************-->
+    
+    <answer ref = "finance-ex-2">
+        <p>$7964.25
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-4">
+        <p>2.5 years
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-6">
+        <p>$4,032.26
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-8">
+        <p>8.2%
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-10">
+        <p>
+            <ol label = "a">
+                <li>$55,400</li>
+                <li>$111,662.87</li>
+                <li>$116,908.93</li>
+                <li>$117,400.27</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-12">
+        <p>$3869.68
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-14">
+        <p>
+            <ol label = "a">
+                <li>$27,137.65</li>
+                <li>$17,137.65</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-16">
+        <p>
+            $16,394.93
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-18">
+        <p>
+            22.5%
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-20">
+        <p>
+            <ol label = "a">
+                <li>$116,547.38</li>
+                <li>$72,000</li>
+                <li>$44,547.38</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-22">
+        <p>
+            <ol label = "a">
+                <li>$796.40</li>
+                <li>$286,705.51</li>
+                <li>$513,294.49</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-24">
+        <p>
+            $26,966.25
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-26">
+        <p>
+            <ol label ="a">
+                <li>$320,243.29</li>
+                <li>$750,000</li>
+                <li>$429,756.71</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-28">
+        <p>$3582.16
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-30">
+        <p>$2398.52
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-32">
+        <p>
+            <ol label = "a">
+                <li>$130,397.13</li>
+                <li>$252,000</li>
+                <li>$121,602.87</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-34">
+        <p>$542.38
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-36">
+        <p>
+            <ol label = "a">
+                <li>$180,000</li>
+                <li>$966.28</li>
+                <li>$1079.19</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-38">
+        <p>$10,033.45
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-40">
+        <p>$402,488.20
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-42">
+        <p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Payment</cell>
+                        <cell>Interest</cell>
+                        <cell>Paid to Principal</cell>
+                        <cell>New Balance</cell>
+                    </row>
+                    <row>
+                        <cell>$237.90</cell>
+                        <cell>$125</cell>
+                        <cell>$112.90</cell>
+                        <cell>$9887.10</cell>
+                    </row>
+                    <row>
+                        <cell>$237.90</cell>
+                        <cell>$123.59</cell>
+                        <cell>$114.31</cell>
+                        <cell>$9772.79</cell>
+                    </row>
+                    <row>
+                        <cell>$237.90</cell>
+                        <cell>$122.16</cell>
+                        <cell>$115.74</cell>
+                        <cell>$9657.05</cell>
+                    </row>
+                </tabular>
+            </table>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-44">
+        <p>
+            <ol label = "a">
+                <li>$11,000</li>
+                <li>$99,000</li>
+                <li>$796.58</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-45">
+        <p>
+            <ol label = "a">
+                <li>$10,464</li>
+                <li>$95,589.60</li>
+                <li>$85,125.60</li>
+                <li>$61,464</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-46">
+        <p>
+            <ol label = "a">
+                <li>$530.82</li>
+                <li>$102,559.20</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "finance-ex-47">
+        <p>
+            <ol label = "a">
+                <li>$265.76</li>
+                <li>$187,684.80</li>
+            </ol>
+        </p>
+    </answer>
+    
+<!-- ***********************************************************************************-->
+<!-- STATISTICS CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+
+    <answer ref = "stats-ex-2">
+        <p>
+            <ol label = "a">
+                <li>All registered voters in Raliegh</li>
+                <li>9500</li>
+                <li>350</li>
+                <li><m>\frac{112}{350}=\frac{8}{25}</m></li>
+                <li>3040</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-3">
+        <p>
+            <ol label = "a">
+                <li>All candies in the jar</li>
+                <li>30</li>
+                <li>simple random sampling</li>
+                <li><m>\frac{12}{30}=\frac{2}{5}</m></li>
+                <li>320Z</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-4">
+        <p>Leading question bias: the music is described in a negative way.
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-5">
+        <p>Sampling bias: only those who work downtown were surveyed--they might have different opinions than the rest of the
+            target population.
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-6">
+        <p>Response bias: people may not want to answer honestly if they lied on their taxes. 
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-7">
+        <p>Non-response bias: people may not have time to answer a long questionaire.
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-8">
+        <p>Leading question bias: the question makes an argument for one answer.
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-9">
+        <p>Sampling bias: only men were selected, but the target population included all genders.
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-10">
+        <p>Quantitative
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-11">
+        <p>Qualitative
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-12">
+        <p>Observational Study
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-13">
+        <p>Experiment
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-14">
+        <p>Stratified sampling
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-15">
+        <p>Simple random sampling
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-16">
+        <p>
+            <ol label = "a">
+                <li>All test-takers</li>
+                <li>The control group is the set of volunteers enrolled in math classes and the treatment group is
+                    the set of volunteers enrolled in English classes.</li>
+                <li>Blind</li>
+                <li>There may be confounding variables since the treatment and control groups are enrolled 
+                    in different types of classes.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-18">
+        <p>
+            <ol label = "a">
+                <li>The treatment group is the second group--those who received the actual medicine.</li>
+                <li>The control group is the first group--those who received a placebo.</li>
+                <li>Double-blind</li>
+                <li>Placebo controlled experiment</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "stats-ex-20">
+        <p>
+            <ol label = "a">
+                <li>Sampling</li>
+                <li>Experiment</li>
+            </ol>
+        </p>
+    </answer>
+    
+<!-- ***********************************************************************************-->
+<!-- DESCRIBING DATA CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+    
+    <answer ref = "data-ex-1">
+        <p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Test Score</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>30</cell>
+                        <cell>1</cell>
+                    </row>
+                    <row>
+                        <cell>50</cell>
+                        <cell>4</cell>
+                    </row>
+                    <row>
+                        <cell>60</cell>
+                        <cell>3</cell>
+                    </row>
+                    <row>
+                        <cell>70</cell>
+                        <cell>6</cell>
+                    </row>
+                    <row>
+                        <cell>80</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell>90</cell>
+                        <cell>2</cell>
+                    </row>
+                    <row>
+                        <cell>100</cell>
+                        <cell>3</cell>
+                    </row>
+                </tabular>
+            </table>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-2">
+        <p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Number of cars</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>1</cell>
+                        <cell>9</cell>
+                    </row>
+                    <row>
+                        <cell>2</cell>
+                        <cell>10</cell>
+                    </row>
+                    <row>
+                        <cell>3</cell>
+                        <cell>3</cell>
+                    </row>
+                    <row>
+                        <cell>4</cell>
+                        <cell>2</cell>
+                    </row>
+                </tabular>
+            </table>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-4">
+        <p>
+            <ol label = "a">
+                <li>19</li>
+                <li>21%</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-6">
+        <p>$676
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-7">
+        <p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Price</cell>
+                        <cell>Frequency</cell>
+                    </row>
+                    <row>
+                        <cell>$2.00 - $2.50</cell>
+                        <cell>1</cell>
+                    </row>
+                    <row>
+                        <cell>$2.50 - $3.00</cell>
+                        <cell>6</cell>
+                    </row>
+                    <row>
+                        <cell>$3.00 - $3.50</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell>$3.50 - $4.00</cell>
+                        <cell>1</cell>
+                    </row>
+                </tabular>
+            </table>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-8">
+        <p>
+            <ol label = "a">
+                <li>0 people; It occured 7 times</li>
+                <li>67</li>
+                <li>34%</li>
+                <li>I would want to know which times were observed. When were the fewest people at the 
+                rec center, etc.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-10">
+        <p>
+            <ol label = "a">
+                <li>36</li>
+                <li>4.19</li>
+                <li>4</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-12">
+        <p>
+            <ol label = "a">
+                <li>42.96</li>
+                <li><m>x_{12}=41</m></li>
+                <li><m>x_6 = 38</m></li>
+                <li><m>x_{18}=49</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-14">
+        <p>
+            <ol label = "a">
+                <li>20.8</li>
+                <li>19.95</li>
+                <li>{15.2, 19.05, 19.95, 21.95, 29.4}</li>
+                <li>4.07</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-16">
+        <p>
+            <ol label = "a">
+                <li>2.3</li>
+                <li><m>x_{10}=2</m></li>
+                <li>{1, 2, 2, 3, 5}</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-17">
+        <p>
+            <ol label = "a">
+                <li>Kendra makes $50,000 more than Kelsey.</li>
+                <li>75%</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-18">
+        <p>About $26,000
+        </p>
+    </answer>
+    
+    <answer ref = "data-ex-20">
+        <p>The CV for Marketing sick days is 0.44 and for Accounting sick days is 0.52. This means 
+            there was slightly more variablility in the number of sick days that those in accounting took.
+        </p>
+    </answer>
+    
+<!-- ***********************************************************************************-->
+<!-- COUNTING CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+
+     <answer ref = "count-ex-2">
+        <p>48
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-4">
+        <p>
+            <ol label = "a">
+                <li>1296</li>
+                <li>360</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-6">
+        <p>Approximately 208 billion
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-8">
+        <p>
+            <ol label = "a">
+                <li>73,116,160</li>
+                <li>1,406,080</li>
+                <li>70,304,000</li>
+                <li>62,500,000</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-10">
+        <p>24
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-12">
+        <p>35
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-14">
+        <p>581,400
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-16">
+        <p>95,040
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-18">
+        <p>4,060
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-20">
+        <p>6188
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-22">
+        <p>120
+        </p>
+    </answer>
+    
+    <answer ref = "count-ex-24">
+        <p>163,350
+        </p>
+    </answer>
+    
+<!-- ***********************************************************************************-->
+<!-- PROBABILITY CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+
+     <answer ref = "prob-ex-2">
+        <p>
+            <ol label = "a">
+                <li><m>\frac{21}{26}</m></li>
+                <li><m>\frac{5}{26}</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-4">
+        <p><m>\frac{150}{335}=\frac{30}{67}=0.45</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-6">
+        <p>0
+        </p>
+    </answer>  
+    
+    <answer ref = "prob-ex-8">
+        <p>
+            <ol label = "a">
+                <li><m>\frac{27}{81}=\frac{1}{3}</m></li>
+                <li><m>\frac{2}{3}</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-10">
+        <p><m>\frac{1}{3}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-12">
+        <p><m>\frac{1}{4}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-14">
+        <p><m>\frac{51}{52}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-16">
+        <p><m>\frac{1}{4}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-18">
+        <p>0.0441
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-20">
+        <p><m>\frac{10}{325} = \frac{2}{65} = 0.031</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-22">
+        <p>
+            <ol label = "a">
+                <li><m>\frac{1}{156}</m></li>
+                <li><m>\frac{5}{48}</m></li>
+                <li><m>\frac{3}{26}</m></li>
+                <li>0</li>
+                <li><m>\frac{11}{13}</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-24">
+        <p><m>\frac{_{13} C_{2}}{_{52}C_{2}}=\frac{1}{17}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-26">
+        <p>
+            <ol label = "a">
+                <li>0.145</li>
+                <li>0.112</li>
+                <li>0.145</li>
+                <li>0.072</li>
+                <li>0.158</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-28">
+        <p>
+            <ol label = "a">
+                <li><m>\frac{19}{81}=0.235</m></li>
+                <li><m>\frac{51}{81}=\frac{17}{27}=0.63</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-30">
+        <p><m>\frac{12}{14}=\frac{6}{7}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-32">
+        <p><m>\frac{16}{52}=\frac{4}{13}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-34">
+        <p>
+            <ol label = "a">
+                <li><m>\frac{1}{2}</m></li>
+                <li><m>\frac{2}{3}</m></li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-36">
+        <p><m>\frac{1}{6}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-38">
+        <p><m>\frac{2}{5}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-40">
+        <p>
+            <ol label = "a">
+                <li>0.012</li>
+                <li>0.99998</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-42">
+        <p>0.030
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-44">
+        <p>0.5
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-46">
+        <p><m>\frac{1}{32}</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-48">
+        <p><m>_{14}C_{12} \div _{27}C_{12} = 0.000005</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-50">
+        <p><m>_{6}C_{4} \div _{48}C_{4} = 0.000077</m>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-52">
+        <p><m>48 \div _{52}C_{5} = 1.8 \times 10^{-5}</m>
+        </p>
+    </answer>  
+    
+    <answer ref = "prob-ex-54">
+        <p>-0.17; No, you should not play because the expected value is negative.
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-56">
+        <p>$0.41
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-58">
+        <p>$22
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-60">
+        <p>Expected value of playing is $1300. They should play since $1300 > $1000.
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-62">
+        <p>
+            <ol label = "a">
+                <li>0</li>
+                <li>0.0625; You should guess since the expected value is positive</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "prob-ex-63">
+        <p>$6800
+        </p>
+    </answer>  
+
+    
+<!-- ***********************************************************************************-->
+<!-- NORMAL CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+    
+    <answer ref = "normal-ex-2">
+        <p>uncommon
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-4">
+        <p>common
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-6">
+        <p>very rare
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-8">
+        <p>likely
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-10">
+        <p>83.85%
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-12">
+        <p>2.5%
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-14">
+        <p>13.5%
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-16">
+        <p>47.5%
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-18">
+        <p>34%
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-20">
+        <p>0.15%
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-22">
+        <p>47.5%
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-24">
+        <p>
+            <ol label = "a">
+                <li>50%</li>
+                <li>16%</li>
+                <li>2.5%</li>
+            </ol>
+        </p>
+    </answer>
+
+     <answer ref = "normal-ex-25">
+                <p>
+                    <ol label = "a">
+                        <li>150 students</li>
+                        <li>48 students</li>
+                        <li>204 students</li>
+                        <li>93</li>
+                    </ol>
+                </p>
+    </answer>
+    
+    <answer ref = "normal-ex-26">
+        <p>
+            <ol label = "a">
+                <li>0.025</li>
+                <li>80</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-28">
+        <p>
+            <ol label = "a">
+                <li>0.025</li>
+                <li>99.85%</li>
+                <li>2.35%</li>
+                <li>50</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-30">
+        <p>The value is 3.4 standard deviations above the mean.
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-32">
+        <p>105.99
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-34">
+        <p>0.39
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-36">
+        <p>77.52
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-38">
+        <p>1.19
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-40">
+        <p>54
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-42">
+        <p>0.0244
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-44">
+        <p>0.9756
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-46">
+        <p>0.5359
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-48">
+        <p>0.1112
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-50">
+        <p>0.0016
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-52">
+        <p>0.0907
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-54">
+        <p>0.0556
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-56">
+        <p>0.1071
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-58">
+        <p>0.2557
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-60">
+        <p>
+        </p>0.52
+    </answer>
+    
+    <answer ref = "normal-ex-62">
+        <p>0.0062
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-64">
+        <p>
+            <ol label = "a">
+                <li>10.56% = 16 students</li>
+                <li>78.88% = 118 students</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-66">
+        <p>19.64 minutes
+        </p>
+    </answer>
+    
+    <answer ref = "normal-ex-67">
+        <p>0.1056
+        </p>
+    </answer>
+    
+<!-- ***********************************************************************************-->
+<!-- VOTING CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+    
+    <answer ref = "vote-ex-2">
+        <p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>Number of Voters</cell>
+                        <cell>3</cell>
+                        <cell>3</cell>
+                        <cell>2</cell>
+                        <cell>2</cell>
+                        <cell>2</cell>
+                    </row>
+                    <row>
+                        <cell>1st Choice</cell>
+                        <cell>C</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                    </row>
+                    <row>
+                        <cell>2nd Choice</cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                        <cell>B</cell>
+                    </row>  
+                    <row>
+                        <cell>3rd Choice</cell>
+                        <cell>B</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                        <cell>A</cell>
+                        <cell>C</cell>
+                    </row>
+                </tabular>
+            </table>
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-4">
+        <p>
+            <ol label = "a">
+                <li>29</li>
+                <li>15 for a majority; 11 for a plurality (10 would create a tie)</li>
+                <li>Atkins</li>
+                <li>Cortez with 60 pts (A and B both have 57 pts)</li>
+                <li>Burke</li>
+                <li>Cortez</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-6">
+        <p>
+            <ol label = "a">
+                <li>47</li>
+                <li>24 for a majority; 13 for a plurality (12 would create a tie)</li>
+                <li>A</li>
+                <li>B with 128 pts (A has 122, C has 105 and D has 115 pts)</li>
+                <li>A</li>
+                <li>B and D both have 2 pts. D would probably be the winner since it can beat
+                B in a head-to-head competition.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-8">
+        <p>
+            <ol label = "a">
+                <li>137</li>
+                <li>120</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-10">
+        <p>
+            Yes, B
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-11">
+        <p>
+            <ol label = "a">
+                <li>B with 149 pts</li>
+                <li>Yes, A had 25 (more than half) of the first place votes and A did not win.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-12">
+        <p>
+            <ol label = "a">
+                <li>B</li>
+                <li>A</li>
+                <li>No, because the changes made did not favor the orginal winner--B was placed lower on the ballots.</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-13">
+        <p>
+            B
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-14">
+        <p>
+           A
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-15">
+        <p>
+           Independence of Irrelevant Alternatives
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-16">
+        <p>
+           Monotonicity
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-17">
+        <p>
+           Condorcet Criterion
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-18">
+        <p>
+           Majority Criterion
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-19">
+        <p>
+           If they moved B to first place, then B would be the winner.
+        </p>
+    </answer>
+    
+    <answer ref = "vote-ex-20">
+        <p>
+           If they moved A in last place then B would be the winner.
+        </p>
+    </answer>
+    
+    
+<!-- ***********************************************************************************-->
+<!-- APPORTIONMENT CHAPTER EXERCISES -->
+<!-- ************************************************************************************-->
+    
+    <answer ref = "apportion-ex-2">
+        <p>
+            <ol label = "a">
+                <li>M = 8, E = 7, C = 3, B = 2</li>
+                <li>M = 9, E = 7, C = 3, B = 1</li>
+                <li>M = 8, E = 7, C = 3, B = 2</li>
+                <li>M = 8, E = 7, C = 3, B = 2</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "apportion-ex-4">
+        <p>
+            <ol label = "a">
+                <li>AM = 2, MD = 6, PM = 8, EVE = 9</li>
+                <li>AM = 1, MD = 6, PM = 8, EVE = 10</li>
+                <li>AM = 2, MD = 6, PM = 8, EVE = 9</li>
+                <li>AM = 2, MD = 6, PM = 8, EVEN = 9</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "apportion-ex-6">
+        <p>
+            <ol label = "a">
+                <li>A = 19, B = 15, C = 3</li>
+                <li>A = 19, B = 15, C = 3</li>
+                <li>A = 19, B = 15, C = 3</li>
+                <li>A = 19, B = 15, C = 3</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "apportion-ex-8">
+        <p>
+            <ol label = "a">
+                <li>A = 23, B = 16, C = 77, D = 30, E = 21, F = 33</li>
+                <li>A = 22, B = 16, C = 78, D = 30, E = 21, F = 33</li>
+                <li>A = 23, B = 16, C = 77, D = 30, E = 21, F = 33</li>
+                <li>A = 23, B = 16, C = 77, D = 30, E = 21, F = 33</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "apportion-ex-9">
+        <p>
+            <ol label = "a">
+                <li>A = 4, B = 4, C = 2</li>
+                <li>A = 5, B = 5, C = 1</li>
+                <li>Alabama Paradox</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "apportion-ex-10">
+        <p>
+            In 2000, the apportionment is:
+            <ul>
+                <li>Jefferson = 8</li>
+                <li>Clay = 4</li>
+                <li>Madison = 10</li>
+                <li>Jackson = 11</li>
+                <li>Franklin = 17</li>
+            </ul>
+        </p>
+        <p>
+            In 2010, the apportionment is:
+            <ul>
+                <li>Jefferson = 8</li>
+                <li>Clay = 5</li>
+                <li>Madison = 10</li>
+                <li>Jackson = 11</li>
+                <li>Franklin = 16</li>
+            </ul>
+        </p>
+        <p>This illustrates the population paradox--Franklin's population increased while Clay's stayed constant. Yet,
+            Franklin lost a seat and Clay gained a seat.</p>
+    </answer>
+    
+    <answer ref = "apportion-ex-11">
+        <p>
+            <ol label = "a">
+                <li>L = 2, F = 11</li>
+                <li>4 more</li>
+                <li>L = 3, F = 10, New School = 4</li>
+                <li>This is the New States Paradox</li>
+            </ol>
+        </p>
+    </answer>
+    
+    <answer ref = "apportion-ex-12">
+        <p>A = 5, B = 79, C = 20, D = 12
+        </p>
+    </answer>
+    
+</pi:privatesolutions>

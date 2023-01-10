@@ -1,0 +1,2378 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Apportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Apportionment</title>
+    <introduction>
+        <p>Apportionment is the problem of dividing up a fixed number of things among groups of different sizes. In politics, this takes the form of allocating a limited number of representatives amongst voters. This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed. States also face this apportionment problem in defining how to draw districts for state representatives. The apportionment problem comes up in a variety of non-political areas too, though. We face several restrictions in this process:</p>
+
+        <note><title>Apportionment Rules</title>
+            <p>
+<ol label ="1">
+    <li>The things being divided up can exist only in whole numbers.</li>
+    <li>We must use all of the things being divided up, and we cannot use any more.</li>
+    <li>Each group must get at least one of the things being divided up.</li>
+    <li>The number of things assigned to each group should be at least approximately proportional to the population of the 
+        group. (Exact proportionality isn’t possible because of the whole number requirement, but we should try to be close, 
+        and in any case, if Group A is larger than Group B, then Group B shouldn’t get more of the things than Group A 
+        does.)</li>
+            </ol>
+            </p>
+        </note>
+        
+        <p>In terms of the apportionment of the United States House of Representatives, these rules imply:</p>
+        <p>
+        <ol label = "1">
+            <li>We can only have whole representatives (a state can’t have 3.4 representatives)</li>
+            <li>We can only use the (currently) 435 representatives available. If one state gets another representative, 
+                another state has to lose one.</li>
+            <li>Every state gets at least one representative</li>
+            <li>The number of representatives each state gets should be approximately proportional to the state population. 
+                This way, the number of constituents each representative has should be approximately equal.</li>
+        </ol>
+        </p>
+
+        <p>We will look at four ways of solving the apportionment problem. Three of them (Lowndes’s method is the exception) 
+            have been used at various times to apportion the U.S. Congress, although the method currently in use (the 
+            Huntington-Hill method) is significantly more complicated.</p>
+    </introduction>
+    
+    <section xml:id="section-apportion-hamilton"><title>Hamilton's Method</title>
+        <objectives>
+            <ul>
+                <li>Apply Hamilton's method to apportionment problems.</li>
+                <li>Discover the quota rule.</li>
+                <li>Understand paradoxes that can occur in apportionment problems.</li>
+            </ul>
+        </objectives>
+        
+        <p>Alexander Hamilton proposed the method that now bears his name. His method was approved by Congress in 1791, but was vetoed by President Washington. It was later adopted in 1852 and used through 1911. He begins by determining, to several decimal places, how many things each group should get. Since he was interested in the question of Congressional representation, we’ll use the language of states and representatives, so he determines how many representatives each state should get.</p>
+
+        <definition><title>Hamilton’s Method</title>
+            <p>Hamilton's method follows the steps:</p>
+            <p>
+            <ol label = "1">
+                <li>Determine how many people each representative should represent. Do this by dividing the 
+                    total population of all the states by the total number of representatives. This answer is 
+                    called the <term>divisor</term>.</li>
+                <li>Divide each state’s population by the divisor to determine how many representatives it 
+                    should have. Record this answer to several decimal places. This answer is called the 
+                    <term>quota</term>. Since we can only allocate whole representatives, Hamilton resolves the 
+                    whole number problem, as follows:</li>
+                <li>Cut off all the decimal parts of all the quotas (but don’t forget what the decimals were). 
+                    These are called the <term>lower quotas</term>. Add up the remaining whole numbers. This 
+                    answer will always be less than or equal to the total number of representatives (and the 
+                    “or equal to” part happens only in very specific circumstances that are incredibly unlikely 
+                    to turn up).</li>
+                <li>Assuming that the total from the previous step was less than the total number of 
+                    representatives, assign the remaining representatives, one each, to the states whose 
+                    decimal parts of the quota were largest, until the desired total is reached.</li>
+            </ol>
+            </p>
+            <p>Make sure that each state ends up with at least one representative!</p>
+        </definition>
+
+        <p>Note on rounding: Today we have technological advantages that Hamilton (and the others) couldn’t 
+            even have imagined. Take advantage of them, and keep several decimal places.</p>
+
+        <example>
+            <p>The state of Delaware has three counties: Kent, New Castle, and Sussex. The Delaware state House 
+                of Representatives has 41 members. If Delaware wants to divide this representation along county 
+                lines (which is not required, but let’s pretend they do), let’s use Hamilton’s method to 
+                apportion them. The populations of the counties are as follows (from the 2010 Census):</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>County</cell>
+                        <cell>Population</cell>
+                    </row>
+                    <row>
+                        <cell>Kent</cell>
+                        <cell>162,310</cell>
+                    </row>
+                    <row>
+                        <cell>New Castle</cell>
+                        <cell>538,479</cell>
+                    </row>
+                    <row>
+                        <cell>Sussex</cell>
+                        <cell>197,145</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>897,934</cell>
+                    </row>
+                </tabular>
+            </table>
+  
+            <solution>
+                <p>
+                <ol label = "1">
+                    <li>First, we determine the divisor:  <m>897,934\div 41=21,900.82927</m></li>
+
+                    <li>Now we determine each county’s quota by dividing the county’s population by the 
+                        divisor:
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                    <cell>7.4111</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                    <cell>24.5872</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                    <cell>9.0017</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                    <cell></cell>
+                                </row>
+                            </tabular>
+                        </table>
+                    </li>
+                    
+                    <li>Removing the decimal parts of the quotas gives:
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                    <cell>7.4111</cell>
+                                    <cell>7</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                    <cell>24.5872</cell>
+                                    <cell>24</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                    <cell>9.0017</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                    <cell></cell>
+                                    <cell>40</cell>
+                                </row>
+                            </tabular>
+                        </table>
+                    </li>
+
+                    <li>We need 41 representatives and this only gives 40. The remaining one goes to the county 
+                        with the largest decimal part, which is New Castle:
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                    <cell>Final</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                    <cell>7.4111</cell>
+                                    <cell>7</cell>
+                                    <cell>7</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                    <cell>24.5872</cell>
+                                    <cell>24</cell>
+                                    <cell>25</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                    <cell>9.0017</cell>
+                                    <cell>9</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                    <cell></cell>
+                                    <cell>40</cell>
+                                    <cell>41</cell>
+                                </row>
+                            </tabular>
+                        </table>
+                    </li>
+                </ol>
+                </p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>Use Hamilton’s method to apportion the 75 seats of Rhode Island’s House of Representatives among 
+                its five counties.</p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                    <cell>County</cell>
+                    <cell>Population</cell>
+                    </row>
+                    <row>
+                        <cell>Bristol</cell>
+                        <cell>49,875</cell>
+                    </row>
+                    <row>
+                        <cell>Kent</cell>
+                        <cell>166,158</cell>
+                    </row>
+                    <row>
+                        <cell>Newport</cell>
+                        <cell>82,888</cell>
+                    </row>
+                    <row>
+                        <cell>Providence</cell>
+                        <cell>626,667</cell>
+                    </row>
+                    <row>
+                        <cell>Washington</cell>
+                        <cell>126,979</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>1,052,567</cell>
+                    </row>
+                </tabular>
+            </table>
+  
+            <solution>
+                <p>
+                <ol label="1">
+                    <li>The divisor is  <m>1,052,567\div 75=14,034.22667</m></li>
+
+                    <li>Determine each county’s quota by dividing its population by the divisor:
+
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.5538</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>11.8395</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>5.9061</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>44.6528</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.0478</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                </row>
+                            </tabular>
+                        </table>
+                    </li>
+  
+                    <li>Remove the decimal part of each quota:
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.5538</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>11.8395</cell>
+                                    <cell>11</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>5.9061</cell>
+                                    <cell>5</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>44.6528</cell>
+                                    <cell>44</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.0478</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                    <cell>72</cell>
+                                </row>
+                            </tabular>
+                        </table>
+                    </li>
+
+                    <li>We need 75 representatives and we only have 72, so we assign the remaining three, one 
+                        each, to the three counties with the largest decimal parts, which are Newport, Kent, 
+                        and Providence:
+                        
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                    <cell>Final</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.5538</cell>
+                                    <cell>3</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>11.8395</cell>
+                                    <cell>11</cell>
+                                    <cell>12</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>5.9061</cell>
+                                    <cell>5</cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>44.6528</cell>
+                                    <cell>44</cell>
+                                    <cell>45</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.0478</cell>
+                                    <cell>9</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                    <cell>72</cell>
+                                    <cell>75</cell>
+                                </row>
+                            </tabular>
+                        </table>
+                    </li>
+                </ol>
+                </p>
+
+                <p>Note that even though Bristol County’s decimal part is greater than .5, it isn’t big enough 
+                    to get an additional representative, because three other counties have greater decimal 
+                    parts.</p>
+            </solution>
+        </example>
+
+        <p>Hamilton’s method obeys something called the Quota Rule. The Quota Rule isn’t a law of any sort, but 
+            just an idea that some people, including Hamilton, think is a good one.</p>
+
+        <definition><title>Quota Rule</title>
+            <p>The Quota Rule says that the final number of representatives a state gets should be within one 
+                of that state’s quota. Since we’re dealing with whole numbers for our final answers, that means 
+                that each state should either go up to the next whole number above its quota, or down to the 
+                next whole number below its quota.</p>
+        </definition>
+
+        <p>After seeing Hamilton’s method, many people find that it makes sense, it’s not that difficult to use 
+            (or, at least, the difficulty comes from the numbers that are involved and the amount of 
+            computation that’s needed, not from the method), and they wonder why anyone would want another 
+            method. The problem is that Hamilton’s method is subject to several paradoxes. Three of them 
+            happened, on separate occasions, when Hamilton’s method was used to apportion the United States 
+            House of Representatives.</p>
+
+        <p>The <term>Alabama Paradox</term> is named for an incident that happened during the apportionment 
+            that took place after the 1880 census. (A similar incident happened ten years earlier involving the 
+            state of Rhode Island, but the paradox is named after Alabama.) The post-1880 apportionment had 
+            been completed, using Hamilton’s method and the new population numbers from the census. Then it was 
+            decided that because of the country’s growing population, the House of Representatives should be 
+            made larger. That meant that the apportionment would need to be done again, still using Hamilton’s 
+            method and the same 1880 census numbers, but with more representatives. The assumption was that 
+            some states would gain another representative and others would stay with the same number they 
+            already had (since there weren’t enough new representatives being added to give one more to every 
+            state). The paradox is that Alabama ended up losing a representative in the process, even though no 
+            populations were changed and the total number of representatives increased.</p>
+
+        <p>The <term>New States Paradox</term> happened when Oklahoma became a state in 1907. Oklahoma had 
+            enough population to qualify for five representatives in Congress. Those five representatives would 
+            need to come from somewhere, though, so five states, presumably, would lose one representative 
+            each. That happened, but another thing also happened: Maine gained a representative (from New 
+            York).</p>
+
+        <p>The <term>Population Paradox</term> happened between the apportionments after the census of 1900 and 
+            of 1910. In those ten years, Virginia’s population grew at an average annual rate of 1.07%, while 
+            Maine’s grew at an average annual rate of 0.67%. Virginia started with more people, grew at a 
+            faster rate, grew by more people, and ended up with more people than Maine. By itself, that doesn’t 
+            mean that Virginia should gain representatives or Maine shouldn’t, because there are lots of other 
+            states involved. But Virginia ended up losing a representative to Maine.</p>
+        
+        
+    </section>
+    
+    <section xml:id = "section-apportion-jefferson"><title>Jefferson's Method</title>
+        <objectives>
+            <ul>
+                <li>Apply Jefferson's method to apportionment problems.</li>
+            </ul>
+        </objectives>
+        
+        <p>Thomas Jefferson proposed a different method for apportionment. After Washington vetoed Hamilton’s 
+            method, Jefferson’s method was adopted, and used in Congress from 1791 through 1842. Jefferson, of 
+            course, had political reasons for wanting his method to be used rather than Hamilton’s. Primarily, 
+            his method favors larger states, and his own home state of Virginia was the largest in the country 
+            at the time. He would also argue that it’s the ratio of people to representatives that is the 
+            critical thing, and apportionment methods should be based on that. But the paradoxes we saw also 
+            provide mathematical reasons for concluding that Hamilton’s method isn’t so good, and while 
+            Jefferson’s method might or might not be the best one to replace it, at least we should look for 
+            other possibilities.</p>
+
+        <p>The first steps of Jefferson’s method are the same as Hamilton’s method. He finds the same divisor 
+            and the same quota, and cuts off the decimal parts in the same way, giving a total number of 
+            representatives that is less than the required total. The difference is in how Jefferson resolves 
+            that difference. He says that since we ended up with an answer that is too small, our divisor must 
+            have been too big. He changes the divisor by making it smaller, finding new quotas with the new 
+            divisor, cutting off the decimal parts, and looking at the new total, until we find a divisor that 
+            produces the required total.</p>
+
+        <definition><title>Jefferson’s Method</title>
+            <p>
+            <ol label = "1">
+                <li>Determine how many people each representative should represent. Do this by dividing the 
+                    total population of all the states by the total number of representatives. This answer is 
+                    called the <term>standard divisor</term>.</li>
+                <li>Divide each state’s population by the divisor to determine how many representatives it 
+                    should have. Record this answer to several decimal places. This answer is called the 
+                    <term>quota</term>.</li>
+                <li>Cut off all the decimal parts of all the quotas (but don’t forget what the decimals were). 
+                    These are the <term>lower quotas</term>. Add up the remaining whole numbers. This answer 
+                    will always be less than or equal to the total number of representatives.</li>
+                <li>If the total from the previous step was less than the total number of representatives, 
+                    reduce the divisor and recalculate the quota and allocation. Continue doing this until the 
+                    total is equal to the total number of representatives. The divisor we end up using is 
+                    called the <term>modified divisor</term> or <term>adjusted divisor</term>.</li>
+            </ol>
+            </p>
+        </definition>
+
+        <example>
+            <p>We’ll return to Delaware and apply Jefferson’s method. We begin, as we did with Hamilton’s 
+                method, by finding the quotas with the original divisor, <m>21,900.82927</m></p>
+            
+             <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                    <cell>7.4111</cell>
+                                    <cell>7</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                    <cell>24.5872</cell>
+                                    <cell>24</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                    <cell>9.0017</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                    <cell></cell>
+                                    <cell>40</cell>
+                                </row>
+                            </tabular>
+            </table>
+
+            <solution>
+                <p>We need 41 representatives, and this divisor gives only 40. We must reduce the divisor until 
+                    we get 41 representatives. Let’s try <m>21,500</m> as the divisor:</p>
+                
+                 <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                    <cell>7.5493</cell>
+                                    <cell>7</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                    <cell>25.0455</cell>
+                                    <cell>25</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                    <cell>9.1695</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                    <cell></cell>
+                                    <cell>41</cell>
+                                </row>
+                            </tabular>
+                        </table>
+
+                <p>This gives us the required 41 representatives, so we’re done. If we had fewer than 41, we’d 
+                    need to reduce the divisor more. If we had more than 41, we’d need to choose a divisor less 
+                    than the original but greater than the second choice.</p>
+
+                <p>Notice that with the new, lower divisor, the quota for New Castle County (the largest county 
+                    in the state) increased by much more than those of Kent County or Sussex County.</p>
+            </solution>
+        </example>
+
+        <example>
+            <p>We’ll apply Jefferson’s method for Rhode Island. The original divisor of <m>14,034.22667</m> 
+                gave these results:</p>
+            
+            <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.5538</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>11.8395</cell>
+                                    <cell>11</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>5.9061</cell>
+                                    <cell>5</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>44.6528</cell>
+                                    <cell>44</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.0478</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                    <cell>72</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            
+            <solution>
+                <p>We need 75 representatives and we only have 72, so we need to use a smaller divisor. Let’s 
+                    try  <m>13,500</m></p>
+                
+                <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.6944</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>12.3080</cell>
+                                    <cell>12</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>6.1399</cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>46.4198</cell>
+                                    <cell>46</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.4059</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                    <cell>76</cell>
+                                </row>
+                            </tabular>
+                        </table>
+                
+                <p>We’ve gone too far. We need a divisor that’s greater than <m>13,500</m> but less than  
+                    <m>14,034.22667</m>. Let’s try <m>13,700</m>.</p>
+                
+                <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.6405</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>12.1283</cell>
+                                    <cell>12</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>6.0502</cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>45.7421</cell>
+                                    <cell>45</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.2685</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                    <cell>75</cell>
+                                </row>
+                            </tabular>
+                        </table>
+                
+                <p>This works.</p>
+                
+            </solution>
+        </example>
+        
+        <p>Notice, in comparison to Hamilton’s method, that although the results were the same, they came about 
+            in a different way, and the outcome was almost different. Providence County (the largest) almost 
+            went up to 46 representatives before Kent (which is much smaller) got to 12. Although that didn’t 
+            happen here, it can. Divisor-adjusting methods like Jefferson’s are not guaranteed to follow the 
+            quota rule!</p>      
+    </section>
+    
+    <section xml:id = "section-apportion-webster"><title>Webster's Method</title>
+        
+        <objectives>
+            <ul>
+                <li>Apply Webster's method to apportionment problems.</li>
+            </ul>
+        </objectives>
+        
+        <p>Daniel Webster (1782-1852) proposed a method similar to Jefferson’s in 1832. It was adopted by Congress in 1842, 
+            but replaced by Hamilton’s method in 1852. It was then adopted again in 1901. The difference is that Webster 
+            rounds the quotas to the nearest whole number rather than dropping the decimal parts. If that doesn’t produce 
+            the desired results at the beginning, he says, like Jefferson, to adjust the divisor until it does. (In 
+            Jefferson’s case, at least the first adjustment will always be to make the divisor smaller. That is not always 
+            the case with Webster’s method.)</p>
+        
+        <definition><title>Webster’s Method</title>
+            <p>
+            <ol label = "1">
+                <li>Determine how many people each representative should represent. Do this by dividing the total population 
+                    of all the states by the total number of representatives. This answer is called the <term>standard 
+                    divisor</term>.</li>
+                <li>Divide each state’s population by the divisor to determine how many representatives it should have. 
+                    Record this answer to several decimal places. This answer is called the <term>quota</term>.</li>
+                <li>Round all the quotas to the nearest whole number (but don’t forget what the decimals were). Add up the 
+                    remaining whole numbers.</li>
+                <li>If the total from the previous step was less than the total number of representatives, reduce the 
+                    divisor and recalculate the quota and allocation. If the total from the previous step was larger than 
+                    the total number of representatives, increase the divisor and recalculate the quota and allocation. 
+                    Continue doing this until the total in the previous step is equal to the total number of 
+                    representatives. The divisor we end up using is called the <term>modified divisor</term> or 
+                    <term>adjusted divisor</term>.</li>
+            </ol>
+            </p>
+        </definition>
+
+        <example>
+            <p>Again, consider Delaware, with an initial divisor of <m>21,900.82927</m>. Use Webster's method to appotion 
+                the 41 state representatives.</p>
+            <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            
+            <solution>
+            
+            <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                    <cell>7.4111</cell>
+                                    <cell>7</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                    <cell>24.5872</cell>
+                                    <cell>25</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                    <cell>9.0017</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                    <cell></cell>
+                                    <cell>41</cell>
+                                </row>
+                            </tabular>
+                        </table>
+
+                <p>This gives the required total, so we’re done.</p>
+            </solution>
+        </example>
+
+        <example>
+            <p>Again, consider Rhode Island, with an initial divisor of <m>14,034.22667</m>. Use Webster's method
+                to apportion the 75 representatives.</p>
+            
+            <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            
+            <solution>
+                
+                <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.5538</cell>
+                                    <cell>4</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>11.8395</cell>
+                                    <cell>12</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>5.9061</cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>44.6528</cell>
+                                    <cell>45</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.0478</cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                    <cell>76</cell>
+                                </row>
+                            </tabular>
+                        </table>
+
+                <p>This is too many, so we need to increase the divisor. Let’s try <m>14,100</m>.</p>
+
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>County</cell>
+                            <cell>Population</cell>
+                            <cell>Quota</cell>
+                            <cell>Initial</cell>
+                        </row>
+                        <row>
+                        <cell>Bristol</cell>
+                        <cell>49,875</cell>
+                        <cell>3.5372</cell>
+                        <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell>Kent</cell>
+                            <cell>166,158</cell>
+                            <cell>11.7843</cell>
+                            <cell>12</cell>
+                        </row>
+                        <row>
+                            <cell>Newport</cell>
+                            <cell>82,888</cell>
+                            <cell>5.8786</cell>
+                            <cell>6</cell>
+                        </row>
+                        <row>
+                            <cell>Providence</cell>
+                            <cell>626,667</cell>
+                            <cell>5.8786</cell>
+                            <cell>44</cell>
+                        </row>
+                        <row>
+                            <cell>Washington</cell>
+                            <cell>126,979</cell>
+                            <cell>9.0056</cell>
+                            <cell>9</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell>1,052,567</cell>
+                            <cell></cell>
+                            <cell>75</cell>
+                        </row>
+                    </tabular>
+                </table>
+  
+                <p>This works, so we’re done.</p>
+            </solution>
+        </example>
+
+        <p>Like Jefferson’s method, Webster’s method carries a bias in favor of states with large populations, but rounding 
+            the quotas to the nearest whole number greatly reduces this bias. (Notice that Providence County, the largest, 
+            is the one that gets a representative trimmed because of the increased quota.) Also like Jefferson’s method, 
+            Webster’s method does not always follow the quota rule, but it follows the quota rule much more often than 
+            Jefferson’s method does. (In fact, if Webster’s method had been applied to every apportionment of Congress in 
+            all of American history, it would have followed the quota rule every single time.)</p>
+
+        <p>In 1980, two mathematicians, Peyton Young and Mike Balinski, proved what we now call the Balinski-Young 
+            Impossibility Theorem.</p>
+
+        <definition><title>Balinski-Young Impossibility Theorem</title>
+            <p>The Balinski-Young Impossibility Theorem shows that any apportionment method which always follows the quota 
+                rule will be subject to the possibility of paradoxes like the Alabama, New States, or Population paradoxes. 
+                In other words, we can choose a method that avoids those paradoxes, but only if we are willing to give up 
+                the guarantee of following the quota rule.</p>
+        </definition>
+        
+    </section>
+    
+    <section xml:id = "section-apportion-hunthill"><title>Huntington-Hill Method</title>
+        
+        <objectives>
+            <ul>
+                <li>Apply the Huntington-Hill method to apportionment problems.</li>
+            </ul>
+        </objectives>
+        
+        <p>In 1920, no new apportionment was done, because Congress couldn’t agree on the method to be used. They appointed 
+            a committee of mathematicians to investigate, and they recommended the Huntington-Hill Method. They continued 
+            to use Webster’s method in 1931, but after a second report recommending Huntington-Hill, it was adopted in 1941 
+            and is the current method of apportionment used in Congress.</p>
+
+        <p>The Huntington-Hill Method is similar to Webster’s method, but attempts to minimize the percent differences of 
+            how many people each representative will represent.</p>
+        
+        <example>
+            <p>The population of state A is 5.9 million and they have 7 representatives in Congress.
+                State B has a population of 3.8 million and 5 representatives in Congress. Find the average
+                constituency of each state. Which state is more poorly represented?</p>
+            <solution>
+                <p>The average constituency gives the average number of people each member of Congress 
+                    represents. We can take the population and divide it by the number of representatives
+                    to find the average constituency.</p>
+                
+                <me>A = \frac{5,900,000}{7}=842,857</me>
+                
+                <me>B = \frac{3,800,000}{5}=760,000</me>
+                
+                <p>Since the average constituency in state A is larger than state B, state A is more poorly
+                    represented. The representatives in state A represent more people than in state B.</p>
+            </solution>
+        </example>
+        
+    <p>We can discuss how average constituencies are different by computing their absolute difference (this is 
+        called the absolute unfairness) or relative difference (this is called the relative unfairness).</p>
+        
+        <definition>
+            <title>Absolute and Relative Unfairness</title>
+            <p>The <em>average constituency</em> is the population divided by the number of representatives.</p>
+            <me>\text{Ave Constituency}=\frac{\text{Population}}{\text{Number of Representatives}}</me>
+            
+            <p>The <em>Absolute Unfairness</em> of an apportionment is the difference in 
+                average constituencies.</p>
+            
+            <me>\text{Absolute Unfairness}=|\text{Constituency of A}-\text{Constituency of B}|</me>
+            
+            <p>The <em>Relative Unfairness</em> of an apportionment is the percent change in constituencies.</p>
+            
+            <me>\text{Relative Unfairness}=\frac{\text{Absolute Unfairness}}{\text{Smaller Constituency}}</me>
+        </definition>
+        
+         <example>
+            <p>The population of state A is 5.9 million and they have 7 representatives in Congress.
+                State B has a population of 3.8 million and 5 representatives in Congress. Find the absolute 
+             and relative unfairness of this apportionment.</p>
+            <solution>
+                <p>First, find the average constituency of each state.</p>
+                
+                <me>A = \frac{5,900,000}{7}=842,857</me>
+                
+                <me>B = \frac{3,800,000}{5}=760,000</me>
+                
+                <p>The difference in these values is the absolute unfairness. Absolute unfairness should be 
+                a positive number, so take the absolute value of the difference if necessary.</p>
+                
+                <me>\text{AUF}=842,857-760,000 = 82,857</me>
+                
+                <me>\text{RUF}=\frac{82,847}{760,000}=0.109</me>
+                
+                <p>The absolute unfairness is <m>82,857</m> people. The relative unfairness is 
+                    <m>0.109 = 10.9\%</m>.</p>
+            </solution>
+        </example>
+            <p>The Huntington-Hill method minimizes the relative unfairness of the apportionment.</p>
+
+        <definition><title>Huntington-Hill Method</title>
+            <p>
+            <ol label = "1">
+                <li>Determine how many people each representative should represent. Do this by dividing the total 
+                    population of all the states by the total number of representatives. This answer is called the 
+                    <term>standard divisor</term>.</li>
+                <li>Divide each state’s population by the divisor to determine how many representatives it should have. 
+                    Record this answer to several decimal places. This answer is called the <term>quota</term>.</li>
+                <li>Cut off the decimal part of the quota to obtain the lower quota, which we’ll call <m>n</m>.
+                    Compute <m>\sqrt{n\left(n+1\right)}</m>, which is the <term>geometric mean</term> of the lower quota 
+                    and one value higher.</li>
+                <li>If the quota is larger than the geometric mean, round up the quota; if the quota is smaller than the 
+                    geometric mean, round down the quota. Add up the resulting whole numbers to get the initial 
+                    allocation.</li>
+                <li>If the total from the previous step was less than the total number of representatives, reduce the 
+                    divisor and recalculate the quota and allocation. If the total from the previous step was larger than 
+                    the total number of representatives, increase the divisor and recalculate the quota and allocation. 
+                    Continue doing this until the total in the previous step is equal to the total number of 
+                    representatives. The divisor we end up using is called the <term>modified divisor</term>
+                    or <term>adjusted divisor</term>.</li>
+            </ol>
+            </p>
+        </definition>
+        
+        <example>
+            <p>Again, Delaware, with an initial divisor of <m>21,900.82927</m>. Apportion the 41 seats using the
+            Huntington-Hill method.</p>
+            
+            <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            
+            <solution>
+                <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Lower Quota</cell>
+                                    <cell>Geom Mean</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>162,310</cell>
+                                    <cell>7.4111</cell>
+                                    <cell>7</cell>
+                                    <cell><m>\sqrt{7\cdot 8}=7.48</m></cell>
+                                    <cell>7</cell>
+                                </row>
+                                <row>
+                                    <cell>New Castle</cell>
+                                    <cell>538,479</cell>
+                                    <cell>24.5872</cell>
+                                    <cell>24</cell>
+                                    <cell><m>\sqrt{24\cdot 25}=24.49</m></cell>
+                                    <cell>25</cell>
+                                </row>
+                                <row>
+                                    <cell>Sussex</cell>
+                                    <cell>197,145</cell>
+                                    <cell>9.0017</cell>
+                                    <cell>9</cell>
+                                    <cell><m>\sqrt{9\cdot 10}=9.49</m></cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>897,934</cell>
+                                    <cell></cell>
+                                    <cell></cell>
+                                    <cell></cell>
+                                    <cell>41</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            
+                <p>This gives the required total, so we’re done.</p>
+            </solution>
+        </example>
+
+        <example>
+            <p>Again, Rhode Island, with an initial divisor of <m>14,034.22667</m>. Use the Huntington-Hill method to 
+                apportion the 75 seats.</p>
+            
+            <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                </row>
+                            </tabular>
+                        </table>
+            
+            <solution>
+                <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>County</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Lower Quota</cell>
+                                    <cell>Geom Mean</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>Bristol</cell>
+                                    <cell>49,875</cell>
+                                    <cell>3.5538</cell>
+                                    <cell>3</cell>
+                                    <cell><m>\sqrt{3 \cdot 4} = 3.46</m></cell>
+                                    <cell>4</cell>
+                                </row>
+                                <row>
+                                    <cell>Kent</cell>
+                                    <cell>166,158</cell>
+                                    <cell>11.8395</cell>
+                                    <cell>11</cell>
+                                    <cell><m>\sqrt{11 \cdot 12} = 11.49</m></cell>
+                                    <cell>12</cell>
+                                </row>
+                                <row>
+                                    <cell>Newport</cell>
+                                    <cell>82,888</cell>
+                                    <cell>5.9061</cell>
+                                    <cell>5</cell>
+                                    <cell><m>\sqrt{5 \cdot 6} = 4.48</m></cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>Providence</cell>
+                                    <cell>626,667</cell>
+                                    <cell>44.6528</cell>
+                                    <cell>44</cell>
+                                    <cell><m>\sqrt{44 \cdot 45}=44.50</m></cell>
+                                    <cell>45</cell>
+                                </row>
+                                <row>
+                                    <cell>Washington</cell>
+                                    <cell>126,979</cell>
+                                    <cell>9.0478</cell>
+                                    <cell>9</cell>
+                                    <cell><m>\sqrt{9 \cdot 10}=9.49</m></cell>
+                                    <cell>9</cell>
+                                </row>
+                                <row>
+                                    <cell>Total</cell>
+                                    <cell>1,052,567</cell>
+                                    <cell></cell>
+                                    <cell></cell>
+                                    <cell></cell>
+                                    <cell>76</cell>
+                                </row>
+                            </tabular>
+                        </table>
+
+                <p>This is too many, so we need to increase the divisor. Let’s try <m>14,100</m>:</p>
+
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" minor = "bottom">
+                            <cell>County</cell>
+                            <cell>Population</cell>
+                            <cell>Quota</cell>
+                            <cell>Lower Quota</cell>
+                            <cell>Geom Mean</cell>
+                            <cell>Initial</cell>
+                        </row>
+                        <row>
+                            <cell>Bristol</cell>
+                            <cell>49,875</cell>
+                            <cell>3.5372</cell>
+                            <cell>3</cell>
+                            <cell>3.46</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell>Kent</cell>
+                            <cell>166,158</cell>
+                            <cell>11.7843</cell>
+                            <cell>11</cell>
+                            <cell>11.49</cell>
+                            <cell>12</cell>
+                        </row>
+                        <row>
+                            <cell>Newport</cell>
+                            <cell>82,888</cell>
+                            <cell>5.8786</cell>
+                            <cell>5</cell>
+                            <cell>5.48</cell>
+                            <cell>6</cell>
+                        </row>
+                        <row>
+                            <cell>Providence</cell>
+                            <cell>626,667</cell>
+                            <cell>44.4445</cell>
+                            <cell>44</cell>
+                            <cell>44.50</cell>
+                            <cell>44</cell>
+                        </row>
+                        <row>
+                            <cell>Washington</cell>
+                            <cell>126,979</cell>
+                            <cell>9.0056</cell>
+                            <cell>9</cell>
+                            <cell>9.49</cell>
+                            <cell>9</cell>
+                        </row>
+                        <row>
+                            <cell>Total</cell>
+                            <cell>1,052,567</cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell>75</cell>
+                        </row>
+                    </tabular>
+                </table>
+  
+                <p>This works, so we’re done.</p>
+            </solution>
+        </example>
+
+        <p>In both these cases, the apportionment produced by the Huntington-Hill method was the same as those from 
+            Webster’s method.</p>
+
+        <example>
+            <p>Consider a small country with 5 states, two of which are much larger than the others. We need to apportion 
+                70 representatives. We will apportion using both Webster’s method and the Huntington-Hill method.</p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell>State</cell>
+                        <cell>Population</cell>
+                    </row>
+                    <row>
+                        <cell>A</cell>
+                        <cell>300,500</cell>
+                    </row>
+                    <row>
+                        <cell>B</cell>
+                        <cell>200,000</cell>
+                    </row>
+                    <row>
+                        <cell>C</cell>
+                        <cell>50,000</cell>
+                    </row>
+                    <row>
+                        <cell>D</cell>
+                        <cell>38,000</cell>
+                    </row>
+                    <row>
+                        <cell>E</cell>
+                        <cell>21,500</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <solution>
+                <p>The total population is 610,000. Dividing this by the 70 representatives gives the 
+                        divisor: <m>8714.286</m>.</p>
+
+                <p>Dividing each state’s population by the divisor gives the quotas.</p>
+                        
+                        <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>State</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                </row>
+                                <row>
+                                    <cell>A</cell>
+                                    <cell>300,500</cell>
+                                    <cell>34.48361</cell>
+                                </row>
+                                <row>
+                                    <cell>B</cell>
+                                    <cell>200,000</cell>
+                                    <cell>22.95082</cell>
+                                </row>
+                                <row>
+                                    <cell>C</cell>
+                                    <cell>50,000</cell>
+                                    <cell>5.737705</cell>
+                                </row>
+                                <row>
+                                    <cell>D</cell>
+                                    <cell>38,000</cell>
+                                    <cell>4.360656</cell>
+                                </row>
+                                <row>
+                                    <cell>E</cell>
+                                    <cell>21,500</cell>
+                                    <cell>2.467213</cell>
+                                </row>
+                            </tabular>
+                </table>
+                
+                <p>Using <term>Webster’s method</term>, we round each quota to the nearest whole number.</p>
+                
+                <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>State</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>A</cell>
+                                    <cell>300,500</cell>
+                                    <cell>34.48361</cell>
+                                    <cell>34</cell>
+                                </row>
+                                <row>
+                                    <cell>B</cell>
+                                    <cell>200,000</cell>
+                                    <cell>22.95082</cell>
+                                    <cell>23</cell>
+                                </row>
+                                <row>
+                                    <cell>C</cell>
+                                    <cell>50,000</cell>
+                                    <cell>5.737705</cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>D</cell>
+                                    <cell>38,000</cell>
+                                    <cell>4.360656</cell>
+                                    <cell>4</cell>
+                                </row>
+                                <row>
+                                    <cell>E</cell>
+                                    <cell>21,500</cell>
+                                    <cell>2.467213</cell>
+                                    <cell>2</cell>
+                                </row>
+                            </tabular>
+                </table>
+
+                <p>Adding these up, they only total 69 representatives, so we adjust the divisor down. Adjusting the 
+                    divisor down to 8700 gives an updated allocation totaling 70 representatives:</p>
+                
+                 <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>State</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>A</cell>
+                                    <cell>300,500</cell>
+                                    <cell>34.54023</cell>
+                                    <cell>35</cell>
+                                </row>
+                                <row>
+                                    <cell>B</cell>
+                                    <cell>200,000</cell>
+                                    <cell>22.98851</cell>
+                                    <cell>23</cell>
+                                </row>
+                                <row>
+                                    <cell>C</cell>
+                                    <cell>50,000</cell>
+                                    <cell>5.747126</cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>D</cell>
+                                    <cell>38,000</cell>
+                                    <cell>4.367816</cell>
+                                    <cell>4</cell>
+                                </row>
+                                <row>
+                                    <cell>E</cell>
+                                    <cell>21,500</cell>
+                                    <cell>2.471264</cell>
+                                    <cell>2</cell>
+                                </row>
+                            </tabular>
+                        </table>
+
+                <p>Using the <term>Huntington-Hill method</term>, we round down to find the lower quota, then calculate the 
+                    geometric mean based on each lower quota. If the quota is less than the geometric mean, we round down; 
+                    if the quota is more than the geometric mean, we round up.</p>
+                
+                <table>
+                            <tabular halign = "center">
+                                <row header = "yes" bottom = "minor">
+                                    <cell>State</cell>
+                                    <cell>Population</cell>
+                                    <cell>Quota</cell>
+                                    <cell>Lower Quota</cell>
+                                    <cell>Geom Mean</cell>
+                                    <cell>Initial</cell>
+                                </row>
+                                <row>
+                                    <cell>A</cell>
+                                    <cell>300,500</cell>
+                                    <cell>34.48361</cell>
+                                    <cell>34</cell>
+                                    <cell><m>\sqrt{34 \cdot 35} = 34.49638</m></cell>
+                                    <cell>34</cell>
+                                </row>
+                                <row>
+                                    <cell>B</cell>
+                                    <cell>200,000</cell>
+                                    <cell>22.95082</cell>
+                                    <cell>22</cell>
+                                    <cell><m>\sqrt{22 \cdot 23} = 22.49444</m></cell>
+                                    <cell>23</cell>
+                                </row>
+                                <row>
+                                    <cell>C</cell>
+                                    <cell>50,000</cell>
+                                    <cell>5.737705</cell>
+                                    <cell>5</cell>
+                                    <cell><m>\sqrt{5 \cdot 6}=5.477226</m></cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>D</cell>
+                                    <cell>38,000</cell>
+                                    <cell>4.360656</cell>
+                                    <cell>4</cell>
+                                    <cell><m>\sqrt{4\cdot 5}=4.472136</m></cell>
+                                    <cell>4</cell>
+                                </row>
+                                <row>
+                                    <cell>E</cell>
+                                    <cell>21,500</cell>
+                                    <cell>2.467213</cell>
+                                    <cell>2</cell>
+                                    <cell><m>\sqrt{2 \cdot 3}=2.44949</m></cell>
+                                    <cell>3</cell>
+                                </row>
+                            </tabular>
+                </table>
+
+                <p>These allocations add up to 70, so we’re done.</p>
+                
+                <p>Webster's method gave the following apportionment: A = 35, B = 23, C = 6, D = 4, D = 2</p>
+                
+                <p>The Huntington-Hill Method gave: A = 34, B = 23, C = 6, D = 4, E = 3</p>
+
+                <p>Notice that this allocation is different than that produced by Webster’s method. In this case, state E 
+                    got the extra seat instead of state A.</p>
+            </solution>
+        </example>
+
+
+        
+    </section>
+    
+    <exercises xml:id = "exercises-apportion">
+    <exercisegroup>
+        <introduction><p>In the exercises below, determine the apportionment using:</p>
+            <p>
+        <ol label = "a">
+            <li>Hamilton’s Method</li>
+            <li>Jefferson’s Method</li>
+            <li>Webster’s Method</li>
+            <li>Huntington-Hill Method</li>
+        </ol>
+            </p>
+    </introduction>
+
+        <exercise xml:id = "apportion-ex-1">
+            <statement>
+                <p>A college offers tutoring in Math, English, Chemistry, and Biology. The number of students enrolled in each subject is listed below. If the college can only afford to hire 15 tutors, determine how many tutors should be assigned to each subject.</p>
+                <p>
+                <ul>
+                    <li>Math: 330</li> 
+                    <li>English: 265</li> 
+                    <li>Chemistry: 130</li> 
+                    <li>Biology: 70</li>
+                </ul>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Math: 6, English: 5, Chemistry: 3, Biology: 1</li>
+                        <li>Math: 7, English: 5, Chemistry: 2, Biology: 1</li>
+                        <li>Math: 6, English: 5, Chemistry: 3, Biology: 1</li>
+                        <li>Math: 6, English: 5, Chemistry: 3, Biology: 1</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-2">
+            <statement>
+                <p>Reapportion the previous problem if the college can hire 20 tutors.</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-3">
+            <statement>
+                <p>The number of salespeople assigned to work during a shift is apportioned based on the average number of customers during that shift. Apportion 20 salespeople given the information below.</p>
+
+                <table>
+                    <tabular halign="center">
+                        <row header ="yes" bottom="minor">
+                            <cell>Shift</cell>
+                            <cell>Morning</cell>
+                            <cell>Midday</cell>
+                            <cell>Afternoon</cell>
+                            <cell>Evening</cell>
+                        </row>
+                        <row>
+                        <cell>Average number of customers</cell>
+                        <cell>95</cell>
+                        <cell>305</cell>
+                        <cell>435</cell>
+                        <cell>515</cell>
+                    </row>
+                    </tabular>
+                </table>
+            </statement>
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Morning: 1, Midday: 5, Afternoon: 6, Evening: 8</li>
+                        <li>Morning: 1, Midday: 4, Afternoon: 7, Evening: 8</li>
+                        <li>Morning: 1, Midday: 5, Afternoon: 6, Evening: 8</li>
+                        <li>Morning: 1, Midday: 5, Afternoon: 6, Evening: 8</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-4">
+            <statement>
+                <p>Reapportion the previous problem if the store has 25 salespeople.</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-5">
+            <statement>
+                <p>Three people invest in a treasure dive, each investing the amount listed below. The dive results in 36 gold coins. Apportion those coins to the investors.</p>
+                <p>
+                <ul>
+                    <li>Alice: $7,600</li> 
+                    <li>Ben: $5,900</li> 
+                    <li>Carlos: $1,400</li>
+                </ul>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>Alice: 18, Ben: 14, Carlos: 4</li>
+                        <li>Alice: 19, Ben: 14, Carlos: 3</li>
+                        <li>Alice: 19, Ben: 14, Carlos: 3</li>
+                        <li>Alice: 19, Ben: 14, Carlos: 3</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-6">
+            <statement>
+                <p>Reapportion the previous problem if 37 gold coins are recovered.</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-7">
+            <statement>
+                <p>A small country consists of five states, whose populations are listed below. If the legislature has 119 seats, apportion the seats.
+                <ul>
+                    <li>A: 810,000</li> 
+                    <li>B: 473,000</li> 
+                    <li>C: 292,000</li> 
+                    <li>D: 594,000</li> 
+                    <li>E: 211,000</li>
+                </ul>
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>A: 40, B: 24, C: 15, D: 30, E: 10</li>
+                        <li>A: 41, B: 24, C: 14, D: 30, E: 10</li>
+                        <li>A: 40, B: 24, C: 15, D: 30, E: 10</li>
+                        <li>A: 40, B: 24, C: 15, D: 30, E: 10</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-8">
+            <statement>
+                <p>A small country consists of six states, whose populations are listed below. If the legislature has 200 seats, apportion the seats.
+                <ul>
+                    <li>A: 3,411</li> 
+                    <li>B: 2,421</li> 
+                    <li>C: 11,586</li> 
+                    <li>D: 4,494</li> 
+                    <li>E: 3,126</li> 
+                    <li>F: 4,962</li>
+                </ul>
+                </p>
+            </statement>
+        </exercise>
+
+    </exercisegroup>
+
+    <exercise xml:id = "apportion-ex-9">
+            <statement>
+                <p>A small country consists of three states, whose populations are listed below.
+                <ul>
+                    <li>A: 6,000</li> 
+                    <li>B: 6,000</li> 
+                    <li>C: 2,000</li>
+                </ul>
+                </p>
+                
+                <p>
+
+                <ol label="a">
+                    <li>If the legislature has 10 seats, use Hamilton’s method to apportion the seats.</li>
+                    <li>If the legislature grows to 11 seats, use Hamilton’s method to apportion the seats.</li>
+                    <li>Which apportionment paradox does this illustrate?</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-10">
+            <statement>
+                <p>A state with five counties has 50 seats in their legislature. Using Hamilton’s method, apportion the seats based on the 2000 census, then again using the 2010 census. Which apportionment paradox does this illustrate?</p>
+
+                <table>
+                    <tabular halign="center">
+                        <row header="yes" bottom="minor">
+                            <cell>County</cell>
+                            <cell>Population 2000</cell>
+                            <cell>Population 2010</cell>
+                        </row>
+                        <row>
+                            <cell>Jefferson</cell>
+                            <cell>60,000</cell>
+                            <cell>60,000</cell>
+                        </row>   
+                        <row>
+                            <cell>Clay</cell>
+                            <cell>31,200</cell>
+                            <cell>31,200</cell>
+                        </row>
+                        <row>
+                            <cell>Madison</cell>
+                            <cell>69,200</cell>
+                            <cell>72,400</cell>
+                        </row>
+                        <row>
+                            <cell>Jackson</cell>
+                            <cell>81,600</cell>
+                            <cell>81,600</cell>
+                        </row>
+                        <row>
+                        <cell>Franklin</cell>
+                        <cell>118,000</cell>
+                        <cell>118,400</cell>
+                    </row>
+                </tabular>
+            </table>
+        </statement>
+    </exercise>
+
+    <exercise xml:id = "apportion-ex-11">
+            <statement>
+                <p>A school district has two high schools: Lowell, serving 1715 students, and Fairview, serving 7364. The district could only afford to hire 13 guidance counselors.</p>
+                <p>
+                <ol label="a">
+                    <li>Determine how many counselors should be assigned to each school using Hamilton's method.</li>
+                    <li>The following year, the district expands to include a third school, serving 2989 students. Based on the divisor from above, how many additional counselors should be hired for the new school?</li>
+                    <li>After hiring that many new counselors, the district recalculates the reapportion using Hamilton's method. Determine the outcome.</li>
+                    <li>Does this situation illustrate any apportionment issues?</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "apportion-ex-12">
+            <statement>
+                <p>A small country consists of four states, whose populations are listed below. If the legislature has 116 seats, apportion the seats using Hamilton’s method. Does this illustrate any apportionment issues?</p>
+                <p>
+                <ul>
+                    <li>A: 33,700</li> 
+                    <li>B: 559,500</li> 
+                    <li>C: 141,300</li> 
+                    <li>D: 89,100</li>
+                </ul>
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+    
+     <exercises xml:id = "ch-test-apportion"><title>Chapter Test</title>
+        
+        <exercise>
+            <statement>
+                <p>Suppose State A has a population of 935,000 and five representatives. State B 
+                    has a population of 2,343,000 and 11 representatives.
+                    <ol label = "a">
+                        <li>Find the average constituency of each state.</li>
+                        <li>Which state is more poorly represented?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <me>A = \frac{935,000}{5}=187,000</me>
+                <me>B = \frac{2,343,000}{11}=213,000</me>
+                <p>B is more poorly represented, because they have a higher average 
+                    constituency.</p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>A = 187,000 ppl/rep; B = 213,000 ppl/rep</li>
+                        <li>B</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A county task force has 15 members from four different regions. 
+                    The population of each region is listed below.
+                    <ul>
+                        <li>Region 1: 60,400</li>
+                        <li>Region 2: 125,800</li>
+                        <li>Region 3: 82,750</li>
+                        <li>Region 4: 315,200</li>
+                    </ul>
+                    Apportion the 15 members of the task force using:
+                    <ol label = "a">
+                        <li>Hamilton's method.</li>
+                        <li>Jefferson's method.</li>
+                        <li>Webster's method.</li>
+                        <li>Huntington-Hill method.</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            <p>The standard divisor is:
+                                <me>584,000 \div 15 = 38,943.33</me>
+                                
+                                <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Region</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Initial</cell>
+                                            <cell>Final</cell>
+                                        </row>
+                                        <row>
+                                            <cell>1</cell>
+                                            <cell>1.55</cell>
+                                            <cell>1</cell>
+                                            <cell>2</cell>
+                                        </row>
+                                        <row>
+                                            <cell>2</cell>
+                                            <cell>3.23</cell>
+                                            <cell>3</cell>
+                                            <cell>3</cell>
+                                        </row>
+                                        <row>
+                                            <cell>3</cell>
+                                            <cell>2.12</cell>
+                                            <cell>2</cell>
+                                            <cell>2</cell>
+                                        </row>
+                                        <row>
+                                            <cell>4</cell>
+                                            <cell>8.09</cell>
+                                            <cell>8</cell>
+                                            <cell>8</cell>
+                                        </row>
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell>14</cell>
+                                            <cell>15</cell>
+                                        </row>
+                                    </tabular>
+                                </table>
+                                
+                                Region 1 recieved the extra seat because they have the 
+                                largest decimal part.</p>
+                            <p>Region 1 = 2 seats, Region 2 = 3 seats, Region 3 = 2 seats, 
+                                Region 4 = 8 seats</p>
+                        </li>
+                        <li><p>
+                            <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Region</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Initial</cell>
+                    
+                                        </row>
+                                        <row>
+                                            <cell>1</cell>
+                                            <cell>1.55</cell>
+                                            <cell>1</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>2</cell>
+                                            <cell>3.23</cell>
+                                            <cell>3</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>3</cell>
+                                            <cell>2.12</cell>
+                                            <cell>2</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>4</cell>
+                                            <cell>8.09</cell>
+                                            <cell>8</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell>14</cell>
+                                            
+                                        </row>
+                                    </tabular>
+                            </table>
+                            
+                            This is too small, so pick a smaller divisor. Using a 
+                            modified divisor of <m>35,000</m>, the results are:
+                            
+                            <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Region</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Initial</cell>
+                                          
+                                        </row>
+                                        <row>
+                                            <cell>1</cell>
+                                            <cell>1.73</cell>
+                                            <cell>1</cell>
+                                       
+                                        </row>
+                                        <row>
+                                            <cell>2</cell>
+                                            <cell>3.59</cell>
+                                            <cell>3</cell>
+                                           
+                                        </row>
+                                        <row>
+                                            <cell>3</cell>
+                                            <cell>2.36</cell>
+                                            <cell>2</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>4</cell>
+                                            <cell>9.01</cell>
+                                            <cell>9</cell>
+                                     
+                                        </row>
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell>15</cell>
+                                            
+                                        </row>
+                                    </tabular>
+                                </table>
+                            
+                            Region 1 = 1 seat, Region 2 = 3 seats, Region 3 = 2 seats, 
+                                Region 4 = 9 seats</p>
+                        </li>
+                        <li>
+                            <p>
+                                <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Region</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Initial</cell>
+                    
+                                        </row>
+                                        <row>
+                                            <cell>1</cell>
+                                            <cell>1.55</cell>
+                                            <cell>2</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>2</cell>
+                                            <cell>3.23</cell>
+                                            <cell>3</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>3</cell>
+                                            <cell>2.12</cell>
+                                            <cell>2</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>4</cell>
+                                            <cell>8.09</cell>
+                                            <cell>8</cell>
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell>15</cell>
+                                            
+                                        </row>
+                                    </tabular>
+                                </table>
+                                
+                                This gives the required total, so we are done.</p>
+                            <p>Region 1 = 2 seats, Region 2 = 3 seats, Region 3 = 2 seats, 
+                                Region 4 = 8 seats</p>
+                        </li>
+                        <li>
+                            <p>
+                                <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Region</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Lower Quota</cell>
+                                            <cell>Geo Mean</cell>
+                                            <cell>Initial</cell>
+                    
+                                        </row>
+                                        <row>
+                                            <cell>1</cell>
+                                            <cell>1.55</cell>
+                                            <cell>1</cell>
+                                            <cell><m>\sqrt{1\cdot 2}=1.41</m></cell>
+                                            <cell>2</cell>    
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>2</cell>
+                                            <cell>3.23</cell>
+                                            <cell>3</cell>
+                                            <cell><m>\sqrt{3\cdot 4}=3.46</m></cell>
+                                            <cell>3</cell>
+                                        </row>
+                                        <row>
+                                            <cell>3</cell>
+                                            <cell>2.12</cell>
+                                            <cell>2</cell>
+                                            <cell><m>\sqrt{2 \cdot 3}=2.45</m></cell>
+                                            <cell>2</cell>
+                                        </row>
+                                        <row>
+                                            <cell>4</cell>
+                                            <cell>8.09</cell>
+                                            <cell>8</cell>
+                                            <cell><m>\sqrt{8 \cdot 9}=8.49</m></cell>
+                                            <cell>8</cell>
+                                        </row>
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell></cell>
+                                            <cell></cell>
+                                            <cell>15</cell>
+                                            
+                                        </row>
+                                    </tabular>
+                                </table>
+                                
+                                This gives the required total, so we are done.</p>
+                            <p>Region 1 = 2 seats, Region 2 = 3 seats, Region 3 = 2 seats, 
+                                Region 4 = 8 seats</p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li><p>Region 1 = 2 seats, Region 2 = 3 seats, Region 3 = 2 seats, 
+                            Region 4 = 8 seats</p></li>
+                        <li><p>Region 1 = 1 seat, Region 2 = 3 seats, Region 3 = 2 seats, 
+                            Region 4 = 9 seats</p></li>
+                        <li><p>Region 1 = 2 seats, Region 2 = 3 seats, Region 3 = 2 seats, 
+                            Region 4 = 8 seats</p></li>
+                        <li><p>Region 1 = 2 seats, Region 2 = 3 seats, Region 3 = 2 seats, 
+                            Region 4 = 8 seats</p></li>
+                    </ol>
+                </p>
+            </answer>
+                                                  
+                                        
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A regional transportation department has three bus lines: A, B and C. 
+                    The number of passengers that use each line per day are listed below.
+                    <ul>
+                        <li>A: 23,530</li>
+                        <li>B: 5,550</li>
+                        <li>C: 70,920</li>
+                    </ul>
+                    
+                    <ol label = "a">
+                        <li>Use Hamilton’s method to apportion 100 buses.</li>
+                        <li>One year later, the passengers per day was reported to be: A = 
+                            24,030, B = 5,650, and C = 71,100. Re-apportion the 100 buses using 
+                            Hamilton’s method.</li>
+                        <li>Did a paradox occur? If so, which one? If not, why not?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            The standard divisor is <m>100,000 \div 100 = 1000</m>
+                             <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Bus</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Initial</cell>
+                                            <cell>Final</cell>
+                                        </row>
+                                        <row>
+                                            <cell>A</cell>
+                                            <cell>23.53</cell>
+                                            <cell>23</cell>
+                                            <cell>23</cell>
+                                        </row>
+                                        <row>
+                                            <cell>B</cell>
+                                            <cell>5.55</cell>
+                                            <cell>5</cell>
+                                            <cell>6</cell>
+                                        </row>
+                                        <row>
+                                            <cell>C</cell>
+                                            <cell>70.92</cell>
+                                            <cell>70</cell>
+                                            <cell>71</cell>
+                                        </row>
+                                    
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell>98</cell>
+                                            <cell>100</cell>
+                                        </row>
+                                    </tabular>
+                            </table>
+                        </li>
+                        <li>
+                            The standard divisor is <m>100,680 \div 100 = 1006.8</m>
+                             <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Bus</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Initial</cell>
+                                            <cell>Final</cell>
+                                        </row>
+                                        <row>
+                                            <cell>A</cell>
+                                            <cell>23.87</cell>
+                                            <cell>23</cell>
+                                            <cell>24</cell>
+                                        </row>
+                                        <row>
+                                            <cell>B</cell>
+                                            <cell>5.61</cell>
+                                            <cell>5</cell>
+                                            <cell>6</cell>
+                                        </row>
+                                        <row>
+                                            <cell>C</cell>
+                                            <cell>70.52</cell>
+                                            <cell>70</cell>
+                                            <cell>70</cell>
+                                        </row>
+                                    
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell>98</cell>
+                                            <cell>100</cell>
+                                        </row>
+                                    </tabular>
+                                </table>
+                        </li>
+                        <li>
+                            If C grew at a faster rate than A, it would have been the population 
+                            paradox. However, there wasn’t a paradox. Although A gained a bus and 
+                            C lost as bus, that is expected because the number of passengers on A 
+                            grew by about 2% (500 people), but the number of passengers on C grew 
+                            by less than a 1% (180 people).
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                <ol label = "a">
+                    <li>A = 23, B = 6, C = 71</li>
+                    <li>A = 24, B = 6, C = 70</li>
+                    <li>If C grew at a faster rate than A, it would have been the population 
+                            paradox. However, there wasn’t a paradox. Although A gained a bus and 
+                            C lost as bus, that is expected because the number of passengers on A 
+                            grew by about 2% (500 people), but the number of passengers on C grew 
+                        by less than a 1% (180 people).</li>
+                </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>An instructor at a Fitness Center can teach eight classes. A pre-registration 
+                    survey indicates the following interest:
+                    <ul>
+                        <li>66 want to take yoga</li>
+                        <li>39 want to take karate</li>
+                        <li>18 want to take weight training</li>
+                        <li>23 want to take meditation</li>
+                    </ul>
+                    Assume the instructor will teach at least one class for each area. Use the 
+                    Huntington-Hill method to apportion the classes.</p>
+            </statement>
+            
+            <solution>
+                <p>The standard divisor is <m>146 \div 8 = 18.25</m>
+                    <table>
+                                    <tabular halign = "center">
+                                        <row header = "yes" bottom = "minor">
+                                            <cell>Class</cell>
+                                            <cell>Quota</cell>
+                                            <cell>Lower Quota</cell>
+                                            <cell>Geo Mean</cell>
+                                            <cell>Initial</cell>
+                    
+                                        </row>
+                                        <row>
+                                            <cell>Yoga</cell>
+                                            <cell>3.62</cell>
+                                            <cell>3</cell>
+                                            <cell><m>\sqrt{3\cdot 4}=3.46</m></cell>
+                                            <cell>4</cell>    
+                                            
+                                        </row>
+                                        <row>
+                                            <cell>Karate</cell>
+                                            <cell>2.14</cell>
+                                            <cell>2</cell>
+                                            <cell><m>\sqrt{2\cdot 3}=2.45</m></cell>
+                                            <cell>2</cell>
+                                        </row>
+                                        <row>
+                                            <cell>Weight Lifting</cell>
+                                            <cell>0.99</cell>
+                                            <cell>0</cell>
+                                            <cell><m>\sqrt{0 \cdot 1}=0</m></cell>
+                                            <cell>1</cell>
+                                        </row>
+                                        <row>
+                                            <cell>Meditation</cell>
+                                            <cell>1.26</cell>
+                                            <cell>1</cell>
+                                            <cell><m>\sqrt{1 \cdot 2}=1.41</m></cell>
+                                            <cell>1</cell>
+                                        </row>
+                                        <row>
+                                            <cell>Total</cell>
+                                            <cell></cell>
+                                            <cell></cell>
+                                            <cell></cell>
+                                            <cell>15</cell>
+                                            
+                                        </row>
+                                    </tabular>
+                                </table>
+                    This gives the required total, so we are done.</p>
+            </solution>
+            
+            <answer>
+                <p>Yoga = 4, Karate = 2, Weight Lifting = 1, Meditation = 1</p>
+            </answer>
+                    
+        </exercise>
+
+        
+    </exercises>
+    
+</chapter>

@@ -1,0 +1,2339 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Probability" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Probability</title>
+    <introduction>
+        <p>The probability of a specified event is the chance or likelihood that it will occur. There are several ways of viewing probability. One would be experimental in nature, where we repeatedly conduct an experiment. Suppose we flipped a coin over and over and over again and it came up heads about half of the time; we would expect that in the future whenever we flipped the coin it would turn up heads about half of the time. When a weather reporter says “there is a 10% chance of rain tomorrow,” she is basing that on prior evidence; that out of all days with similar weather patterns, it has rained on 1 out of 10 of those days.</p>
+
+<p>Another view would be subjective in nature, in other words an educated guess. If someone asked you the probability that the Seattle Mariners would win their next baseball game, it would be impossible to conduct an experiment where the same two teams played each other repeatedly, each time with the same starting lineup and starting pitchers, each starting at the same time of day on the same field under the precisely the same conditions. Since there are so many variables to take into account, someone familiar with baseball and with the two teams involved might make an educated guess that there is a 75% chance they will win the game; that is, if the same two teams were to play each other repeatedly under identical conditions, the Mariners would win about three out of every four games. But this is just a guess, with no way to verify its accuracy, and depending upon how educated the educated guesser is, a subjective probability may not be worth very much.</p>
+
+<p>We will return to the experimental and subjective probabilities from time to time, but in this course we will mostly be concerned with theoretical probability, which is defined as follows: Suppose there is a situation with <m>n</m> equally likely possible outcomes and that <m>m</m> of those <m>n</m> outcomes correspond to a particular event; then the probability of that event is defined as <m>\frac{n}{m}</m>.</p>
+        
+    </introduction>
+    
+    <section xml:id = "section-prob-basics"><title>Basics</title>
+        
+        <objectives>
+            <ul>
+                <li>Identify events and outcomes</li>
+                <li>Define certain and impossible events</li>
+                <li>Solve probability problems involving simple events</li>
+            </ul>
+        </objectives>
+
+        <p>If you roll a die, pick a card from deck of playing cards, or randomly select a person and observe their hair color, we are executing an experiment or procedure. In probability, we look at the likelihood of different outcomes. We begin with some terminology.</p>
+
+        <note><title>Events and Outcomes</title>
+        <p>The result of an experiment is called an <term>outcome</term>.</p>
+        <p>An <term>event</term> is any particular outcome or group of outcomes.</p>
+        <p>A <term>simple event</term> is an event that cannot be broken down further.</p>
+        <p>The <term>sample space</term> is the set of all possible simple events.</p>
+    </note>
+
+    <example>
+        <p>If we roll a standard 6-sided die, describe the sample space and some simple events.</p>
+
+        <solution><p>The sample space is the set of all possible simple events:  {1,2,3,4,5,6}</p>
+
+        <p>Some examples of simple events:
+            <ol label = "a">
+        <li>We roll a 1</li>
+        <li>We roll a 5</li>
+    </ol></p>
+
+<p>Some compound events:
+<ol label = "a">
+    <li>We roll a number bigger than 4</li>
+    <li>We roll an even number</li>
+</ol></p>
+
+</solution>
+</example>
+
+<definition><title>Basic Probability</title>
+<p>Given that all outcomes are equally likely, we can compute the probability of an event <m>E</m>
+  using this formula:</p>
+
+  <me>P\left(E\right) = \frac{\text{Number of outcomes corresponding to the event E}}{\text{Total number of 
+    equally-likely outcomes}}</me>
+</definition>
+
+<example>
+<p>If we roll a 6-sided die, calculate
+
+<ol label="a">
+    <li>P(rolling a 1)</li>
+    <li>P(rolling a number bigger than 4)</li>
+</ol></p>
+
+<solution>
+<p>Recall that the sample space is  {1,2,3,4,5,6}</p>
+<p>
+<ol label="a">
+    <li>There is one outcome corresponding to “rolling a 1”, so the probability is  <m>\frac{1}{6}</m></li>
+    <li>There are two outcomes bigger than a 4, so the probability is  <m>\frac{2}{6}=\frac{1}{3}</m></li>
+</ol></p>
+</solution>
+</example>
+
+<p>Probabilities are essentially fractions, and can be reduced to lower terms like fractions.</p>
+
+<example>
+<p>Let's say you have a bag with 20 cherries, 14 sweet and 6 sour. If you pick a cherry at random, what is the probability that it will be sweet?</p>
+
+<solution>
+    <p>There are 20 possible cherries that could be picked, so the number of possible outcomes is 20. Of these 20 possible outcomes, 14 are favorable (sweet), so the probability that the cherry will be sweet is <m>\frac{14}{20}=\frac{7}{10}</m>
+</p>
+</solution>
+</example>
+
+<p>There is one potential complication to this example, however. It must be assumed that the probability of picking any of the cherries is the same as the probability of picking any other. This wouldn't be true if (let us imagine) the sweet cherries are smaller than the sour ones. (The sour cherries would come to hand more readily when you sampled from the bag.) Let us keep in mind, therefore, that when we assess probabilities in terms of the ratio of favorable to all potential cases, we rely heavily on the assumption of equal probability for all outcomes.</p>
+
+<problem><title>Try It Now</title>
+<p>At some random moment, you look at your clock and note the minutes reading.
+<ol label = "a">
+    <li><p>What is probability the minutes reading is 15?</p></li>
+    <li><p>What is the probability the minutes reading is 15 or less?</p></li>
+</ol></p>
+    
+    <answer>
+        <p>
+            <ol label ="a">
+                <li><m>\frac{1}{60}</m></li>
+                <li><m>\frac{16}{60} = \frac{4}{15}</m></li>
+            </ol>
+        </p>
+    </answer>
+</problem>
+
+<note><title>Cards</title>
+<p>A standard deck of 52 playing cards consists of four suits (hearts, spades, diamonds and clubs). Spades and clubs are black while hearts and diamonds are red. Each suit contains 13 cards, each of a different rank: an Ace (which in many games functions as both a low card and a high card), cards numbered 2 through 10, a Jack, a Queen and a King.</p>
+</note>
+
+<example>
+<p>Compute the probability of randomly drawing one card from a deck and getting an Ace.</p>
+
+<solution>
+    <p>There are 52 cards in the deck and 4 Aces so</p>
+    <me>P = \frac{4}{52} = \frac{1}{13} \approx .0769</me>
+    <p>We can also think of probabilities as percents: There is a 7.69% chance that a randomly selected card will be an 
+        Ace.</p>
+    </solution>
+</example>
+
+<p>Notice that the smallest possible probability is 0 - if there are no outcomes that correspond with the event. The largest possible probability is 1 - if all possible outcomes correspond with the event.</p>
+
+<definition><title>Certain and Impossible events</title>
+<p>An <term>impossible event</term> has a probability of 0.</p>
+
+<p>A <term>certain event</term> has a probability of 1.</p>
+
+<p>The probability of any event must be <m>0 \le P\left(E \right) \le 1</m>.
+</p>
+</definition>
+
+<p>In the course of this chapter, if you compute a probability and get an answer that is negative or greater than 1, you have made a mistake and should check your work.</p>
+
+</section>
+
+<section xml:id = "section-prob-events">
+    <objectives>
+            <ul>
+                <li>Find probability of complementary events</li>
+                <li>Identify independent events</li>
+                <li>Solve probability problems involving independent events</li>
+            </ul>
+        </objectives>
+    <title>Working with Events</title>
+    <subsection><title>Complementary Events</title>
+    <p>Now let us examine the probability that an event does not happen. As in the previous section, consider the situation 
+        of rolling a six-sided die and first compute the probability of rolling a six: the answer is <m>P\left( E \right) 
+        = \frac{1}{6}</m>. Now consider the probability that we do not roll a six: there are 5 outcomes that are not a six, so the answer is <m>P\left( \text{not } E \right) = \frac{5}{6}</m>. Notice that</p>
+
+        <me>P\left(\text{six}\right) + P\left( \text{not six}\right) = \frac{1}{6} + \frac{5}{6} = 1</me>
+
+        <p>This is not a coincidence. Consider a generic situation with <m>n</m> possible outcomes and an event 
+        <m>E</m> that corresponds to <m>m</m> of these outcomes. Then the remaining <m>n - m</m> outcomes correspond 
+        to <m>E</m> not happening, thus</p>
+
+        <me>P\left( \text{not } E \right) = \frac{n - m}{n} = \frac{n}{n} - \frac{m}{n} = 1 - P\left(E \right)</me>
+        
+        <definition><title>Complement of an Event</title>
+            <p>The complement of an event is the event “E doesn’t happen”</p>
+
+            <p>The notation <m>E^c</m> is used for the complement of event <m>E</m>.</p>
+
+            <p>We can compute the probability of the complement using <m>P\left(E^c\right) = 
+                1 - P\left(E\right)</m>.</p>
+
+            <p>Notice also that <m>P\left(E\right)=1-P\left(E^c\right)</m></p>
+        </definition>
+
+        <example>
+            <p>If you pull a random card from a deck of playing cards, what is the probability it is not a heart?</p>
+
+            <solution>
+                <p>There are 13 hearts in the deck, so <m>P\left(\text{heart}\right)=\frac{13}{52}=\frac{1}{4}</m>.</p>
+
+                <p>The probability of not drawing a heart is the complement:</p>
+
+                <p><m>P\left(\text{not heart}\right)=1-P\left(\text{heart}\right)=1-\frac{1}{4}=\frac{3}{4}</m></p>
+            </solution>
+        </example>
+        
+    </subsection>
+    
+    <subsection><title>Probability of two independent events</title>
+<example>
+<p>Suppose we flipped a coin and rolled a die, and wanted to know the probability of getting a head on the coin and a 6 on the die.</p>
+
+<solution>
+<p>We could list all possible outcomes: {H1, H2, H3, H4, H5, H6, T1, T2, T3, T4, T5, T6}</p>
+<p>Notice there are  <m>2\cdot 6=12</m> total outcomes. Out of these, only 1 is the desired outcome, so the 
+probability is <m>\frac{1}{12}</m>.
+</p>
+</solution>
+</example>
+
+<p>The prior example was looking at two independent events.</p>
+
+<definition><title>Independent Events</title>
+<p>Events A and B are independent events if the probability of Event B occurring is the same whether or not Event A 
+    occurs.</p>
+</definition>
+
+<example>
+<p>Are these events independent?
+
+<ol label = "a">
+
+<li>A fair coin is tossed two times. The two events are (1) first toss is a head and (2) second toss is a head.</li>
+<li>The two events (1) "It will rain tomorrow in Houston" and (2) "It will rain tomorrow in Galveston” 
+    (a city near Houston).</li>
+<li>You draw a card from a deck, then draw a second card without replacing the first.</li>
+</ol></p>
+
+<solution>
+<p>
+    <ol label = "a">
+        <li>The probability that a head comes up on the second toss is  <m>\frac{1}{2}</m> regardless of whether 
+        or not a head came up on the first toss, so these events are independent.</li>
+        <li>These events are not independent because it is more likely that it will rain in Galveston on days it rains 
+            in Houston than on days it does not.</li>
+        <li>The probability of the second card being red depends on whether the first card is red or not, so these events are not independent.</li>
+    </ol></p>
+</solution>
+</example>
+
+<p>When two events are independent, the probability of both occurring is the product of the probabilities of the individual events.</p>
+
+<note><title>P(<m>A</m> and <m>B</m>) for Independent Events</title>
+<p>If events <m>A</m> and <m>B</m> are independent, then the probability of both <m>A</m>
+and <m>B</m> occurring is</p>
+
+<me>P\left(A \text{ and } B\right)=P\left(A\right)\cdot P\left(B\right)</me> 
+
+<p>where <m>P\left(A \text{ and } B \right)</m> is the probability of events <m>A</m> and 
+<m>B</m> both occurring, <m>P\left(A\right)</m> is the probability of event <m>A</m> occurring, and 
+<m>P\left(B \right)</m> is the probability of event <m>B</m> occurring.</p>
+</note>
+
+<p>If you look back at the coin and die example from earlier, you can see how the number of outcomes of the first event multiplied by the number of outcomes in the second event multiplied to equal the total number of possible outcomes in the combined event.</p>
+
+<example>
+<p>In your drawer you have 10 pairs of socks, 6 of which are white, and 7 tee shirts, 3 of which are white. If you randomly reach in and pull out a pair of socks and a tee shirt, what is the probability both are white?</p>
+
+<solution>
+<p>The probability of choosing a white pair of socks is <m>\frac{6}{10} = \frac{3}{5}</m>.
+<p>The probability of choosing a white tee shirt is <m>\frac{3}{7}</m></p>.
+<p>The probability of both being white is  <m>\frac{3}{5} \cdot \frac{3}{7}=\frac{9}{35}</m></p>
+</p>
+</solution>
+</example>
+
+<problem><title>Try It Now</title>
+<p>A card is pulled a deck of cards and noted. The card is then replaced, the deck is shuffled, and a second card is removed and noted. What is the probability that both cards are Aces?</p>
+<answer><m>\frac{1}{13} \cdot \frac{1}{13} = \frac{1}{169}</m></answer>
+</problem>
+        
+        <p>The previous examples looked at the probability of both events occurring. Now we will look at the probability of 
+            either event occurring.</p>
+
+        <example>
+            <p>Suppose we flipped a coin and rolled a die, and wanted to know the probability of getting a head on the coin 
+                or a 6 on the die.</p>
+            
+            <solution>
+                <p>Here, there are still 12 possible outcomes: {H1,H2,H3,H4,H5,H6,T1,T2,T3,T4,T5,T6}</p>
+                <p>By simply counting, we can see that 7 of the outcomes have a head on the coin or a 6 on the die or both - 
+                    we use or inclusively here (these 7 outcomes are H1, H2, H3, H4, H5, H6, T6), so the probability is
+                    <m>\frac{7}{12}</m>. How could we have found this from the individual probabilities?</p>
+                
+                <p>As we would expect, <m>\frac{1}{2}</m> of these outcomes have a head, and <m>\frac{1}{6}</m> of these 
+                    outcomes have a 6 on the die. If we add these, <m>\frac{1}{2} + \frac{1}{6} 
+                    = \frac{6}{12} + \frac{2}{12} = \frac{8}{12}</m> , which is not the correct 
+                    probability.</p>
+                
+                <p>Looking at the outcomes we can see why: the outcome H6 would have been counted twice, since it contains 
+                    both a head and a 6; the probability of both a head and rolling a 6 is <m>\frac{1}{12}</m>. If we 
+                    subtract out this double count, we have the correct probability: <m>\frac{8}{12} 
+                    - \frac{1}{12} = \frac{7}{12}</m>
+                </p>
+            </solution>
+        </example>
+    
+        <note><title>P(A or B)</title>
+            <p>The probability of either A or B occurring (or both) is</p>
+            <me>P\left(A \text{ or } B\right) = P\left(A\right)+P\left(B\right)-P\left(A\text{ and }B\right)</me>
+        </note>
+
+        <example>
+            <p>Suppose we draw one card from a standard deck. What is the probability that we get a Queen or a King?</p>
+
+            <solution>
+                <p>There are 4 Queens and 4 Kings in the deck, hence 8 outcomes corresponding to a Queen or King out of 52 
+                    possible outcomes. Thus the probability of drawing a Queen or a King is:</p>
+
+                <p>P(King or Queen) = <m>\frac{8}{52} = \frac{2}{13}</m></p>
+                
+                <p>Note that in this case, there are no cards that are both a Queen and a King, so P(King and Queen) = 0. 
+                    Using our probability rule, we could have said:</p>
+
+                <p><m>P</m>(King or Queen)<m>=P</m>(King)<m>+P</m>(Queen)<m>-P</m>(King and Queen)<m>=
+                    \frac{4}{52}+ \frac{4}{52} - 0 = \frac{8}{52}</m></p>
+            </solution>
+        </example>
+
+        <p>In the last example, the events were mutually exclusive, so P(A or B) = P(A) + P(B).</p>
+
+        <example>
+            <p>Suppose we draw one card from a standard deck. What is the probability that we get a red card or a King?</p>
+
+            <solution>
+                <p>Half the cards are red, so <m>P\left(\text{red}\right)=\frac{26}{52}</m></p>
+                <p>There are four kings, so <m>P\left(\text{King}\right)=\frac{4}{52}</m></p>
+                <p>There are two red kings, so <m>P\left(\text{Red and King}\right)=\frac{2}{52}</m></p>
+
+                <p>We can then calculate</p>
+                
+                <p><m>P\left(\text{Red or King}\right) = P\left(\text{Red}\right) + P\left(\text{King}\right)
+                    - P\left(\text{Red and King}\right) = \frac{26}{52}+\frac{4}{52} - \frac{2}{52}
+                    = \frac{28}{52} = \frac{7}{13}</m></p>
+            </solution>
+        </example>
+        
+        <problem><title>Try It Now</title>
+            <p>In your drawer you have 10 pairs of socks, 6 of which are white, and 7 tee shirts, 3 of which are white. If 
+                you reach in and randomly grab a pair of socks and a tee shirt, what the probability at least one is 
+                white?</p>
+            
+            <answer>
+                <p>P(white sock and white tee) = <m>\frac{6}{10} \cdot \frac{3}{7} = \frac{18}{70} = \frac{9}{35}</m></p>
+                <p>P(white sock or white tee) = <m>\frac{6}{10} + \frac{3}{7} - \frac{9}{35} = \frac{27}{35}</m></p>
+            </answer>
+        </problem>
+
+        <example>
+            <p>The table below shows the number of survey subjects who have received and not received a speeding ticket in 
+                the last year, and the color of their car. Find the probability that a randomly chosen person:
+            <ol label = "a">
+                <li>Has a red car and got a speeding ticket.</li>
+                <li>Has a red car or got a speeding ticket.</li>
+            </ol></p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell></cell>
+                        <cell>Speeding Ticket</cell>
+                        <cell>No Speeding Ticket</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row>
+                        <cell><b>Red Car</b></cell>
+                        <cell>15</cell>
+                        <cell>135</cell>
+                        <cell>150</cell>
+                    </row>
+                    <row>
+                        <cell><b>Not Red Car</b></cell>
+                        <cell>45</cell>
+                        <cell>470</cell>
+                        <cell>515</cell>
+                    </row>
+                    <row>
+                        <cell><b>Total</b></cell>
+                        <cell><b>60</b></cell>
+                        <cell><b>605</b></cell>
+                        <cell><b>665</b></cell>
+                    </row>
+                </tabular>
+                </table>
+            
+            <solution>
+                <p>
+                <ol label = "a">
+                    <li>
+                <p>We can see that 15 people of the 665 surveyed had both a red car and got a speeding ticket, so the 
+                    probability is <m>\frac{15}{665} \approx 0.0226</m>.</p>
+
+                <p>Notice that having a red car and getting a speeding ticket are not independent events, so the probability 
+                    of both of them occurring is not simply the product of probabilities of each one occurring.</p></li>
+                    
+                    <li>
+                    <p>We could answer this question by simply adding up the numbers: 15 people with red cars and speeding 
+                        tickets + 135 with red cars but no ticket + 45 with a ticket but no red car = 195 people. So the 
+                        probability is <m>\frac{195}{665} \approx 0.2932</m>.</p>
+
+                        <p>We also could have found this probability by:</p>
+
+                        <p>P(had a red car) + P(got a speeding ticket) - P(had a red car and got a speeding 
+                            ticket)=<m>\frac{150}{665}+\frac{60}{665}-\frac{15}{665}=\frac{195}{665}</m>.</p>
+                    </li>
+                </ol></p>
+                    
+            </solution>
+            </example>
+    </subsection>
+    </section>
+    <section xml:id = "section-prob-conditional">
+        <objectives>
+            <ul>
+                <li>Solve conditional probability problems</li>
+                <li>Apply Bayes Theorem to conditional probability problems</li>
+            </ul>
+        </objectives>
+        <title>Conditional Probability</title>
+        <introduction>Often it is required to compute the probability of an event given that another event has 
+            occurred.</introduction>
+        
+        <subsection><title>Conditional Probability</title>
+
+        <example>
+            <p>What is the probability that two cards drawn at random from a deck of playing cards will both be aces?</p>
+
+            <solution>
+                <p>It might seem that you could use the formula for the probability of two independent events and simply 
+                    multiply  <m>\frac{4}{52}\cdot \frac{4}{52}=\frac{1}{169}</m>.</p>
+
+                <p>This would be incorrect, however, because the two events are not independent. If the first card drawn 
+                    is an ace, then the probability that the second card is also an ace would be lower because there would 
+                    only be three aces left in the deck.</p>
+
+                <p>Once the first card chosen is an ace, the probability that the second card chosen is also an ace is 
+                    called the conditional probability of drawing an ace. In this case the "condition" is that the first 
+                    card is an ace. Symbolically, we write this as:</p>
+                
+                <p>P(ace on second draw | an ace on the first draw).</p>
+
+                <p>The vertical bar "|" is read as "given," so the above expression is short for "The probability that an 
+                    ace is drawn on the second draw given that an ace was drawn on the first draw." What is this  
+                    probability? After an ace is drawn on the first draw, there are 3 aces out of 51 total cards left. 
+                This means that the conditional probability of drawing an ace after one ace has already been drawn is 
+                    <m>\frac{3}{51}=\frac{1}{17}</m>.</p>
+
+                <p>Thus, the probability of both cards being aces is <m>\frac{4}{52}\cdot \frac{3}{51}=
+                    \frac{12}{2652}=\frac{1}{221}</m>.</p>
+                
+            </solution>
+        </example>
+
+        <definition><title>Conditional Probability</title>
+            <p>The probability the event B occurs, given that event A has happened, is represented as:</p>
+            <me>P\left(B | A\right)</me>
+            <p>This is read as “the probability of B given A”</p>
+        </definition>
+
+        <example>
+            <p>Find the probability that a die rolled shows a 6, given that a flipped coin shows a head.</p>
+
+            <solution>
+                <p>These are two independent events, so the probability of the die rolling a 6 is <m>\frac{1}{6}</m>, 
+                    regardless of the result of the coin flip.</p>
+            </solution>
+        </example>
+
+        <example>
+            <p>The table below shows the number of survey subjects who have received and not received a speeding ticket in 
+                the last year, and the color of their car. Find the probability that a randomly chosen person:
+            
+            <ol label = "a">
+                <li>Has a speeding ticket given they have a red car.</li>
+                <li>Has a red car given they have a speeding ticket.</li>
+            </ol></p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell></cell>
+                        <cell>Speeding Ticket</cell>
+                        <cell>No Speeding Ticket</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row>
+                        <cell><b>Red Car</b></cell>
+                        <cell>15</cell>
+                        <cell>135</cell>
+                        <cell>150</cell>
+                    </row>
+                    <row>
+                        <cell><b>Not Red Car</b></cell>
+                        <cell>45</cell>
+                        <cell>470</cell>
+                        <cell>515</cell>
+                    </row>
+                    <row>
+                        <cell><b>Total</b></cell>
+                        <cell><b>60</b></cell>
+                        <cell><b>605</b></cell>
+                        <cell><b>665</b></cell>
+                    </row>
+                </tabular>
+                </table>
+
+            <solution>
+                <p>
+                <ol label = "a">
+                    <li>
+                        <p>Since we know the person has a red car, we are only considering the 150 people in the first row 
+                            of the table. Of those, 15 have a speeding ticket, so</p>
+                        <p><m>P\left(\text{ticket}|\text{red car}\right) = \frac{15}{150}=\frac{1}{10}=0.1</m></p>
+                    </li>
+                    <li>
+                        <p>Since we know the person has a speeding ticket, we are only considering the 60 people in the 
+                            first column of the table. Of those, 15 have a red car, so</p>
+                        <p><m>P\left(\text{red car} | \text{ticket}\right) = \frac{15}{60}=\frac{1}{4}=0.25</m></p>
+                    </li>
+                </ol></p>
+            </solution>
+        </example>
+
+        <p>Notice from the last example that <m>P\left(B|A\right)</m> is not equal to <m>P\left(A|B\right)</m>.</p>
+
+        <p>These kinds of conditional probabilities are what insurance companies use to determine your insurance rates. 
+            They look at the conditional probability of you having accident, given your age, your car, your car color, 
+            your driving history, etc., and price your policy based on that likelihood.</p>
+
+        <note><title>Conditional Probability Formula</title>
+            <p>If Events A and B are not independent, then</p>
+            <me>P\left(A \text{ and } B\right) = P\left(A\right) \cdot P\left(B | A\right)</me>
+        </note>
+
+        <example>
+            <p>If you pull 2 cards out of a deck, what is the probability that both are spades?</p>
+
+            <solution>
+                <p>The probability that the first card is a spade is <m>\frac{13}{52}</m>.</p>
+                <p>The probability that the second card is a spade, given the first was a spade, is 
+                    <m>\frac{12}{51}</m>, since there is one less spade in the deck, and one less total cards.</p>
+
+                <p>The probability that both cards are spades is <m>\frac{13}{52}\cdot\frac{12}{51}=
+                    \frac{156}{2652} \approx 0.0588</m></p>
+            </solution>
+        </example>
+
+        <example>
+            <p>If you draw two cards from a deck, what is the probability that you will get the Ace of Diamonds and a 
+                black card?</p>
+            <solution>
+                <p>You can satisfy this condition by having Case A or Case B, as follows:</p>
+
+                <p>Case A) you can get the Ace of Diamonds first and then a black card or</p>
+
+                <p>Case B) you can get a black card first and then the Ace of Diamonds.</p>
+
+                <p>Let's calculate the probability of Case A. The probability that the first card is the Ace of Diamonds 
+                    is  <m>|frac{1}{52}</m>. The probability that the second card is black given that the first card is 
+                    the Ace of Diamonds is <m>\frac{26}{51}</m> because 26 of the remaining 51 cards are black. The 
+                    probability is therefore <m>\frac{1}{52}\cdot \frac{26}{51}=\frac{1}{102}</m>.</p>
+
+                <p>Now for Case B: the probability that the first card is black is <m>\frac{26}{52}=\frac{1}{2}</m>. The 
+                    probability that the second card is the Ace of Diamonds given that the first card is black is 
+                    <m>\frac{1}{51}</m>. The probability of Case B is therefore <m>\frac{1}{2}\cdot \frac{1}{51}=
+                    \frac{1}{102}</m>, the same as the probability of Case 1.</p>
+
+                <p>Recall that the probability of A or B is <m>P\left( A \right) + P\left(B \right) - P\left(
+                    A\text{ and }B\right)</m> and n this problem, <m>P\left(A\text{ and }B\right)=0</m> since the first 
+                    card cannot be the Ace of Diamonds and be a black card. Therefore, the probability of Case A or Case B 
+                    is <m>\frac{1}{102}+\frac{1}{102}=\frac{2}{102}=\frac{1}{51}</m>.</p>
+                
+                <p>The probability that you will get the Ace of Diamonds and a black card when drawing two cards from a 
+                    deck is <m>\frac{1}{51}</m>.</p>
+                
+            </solution>
+        </example>
+
+        <problem><title>Try It Now</title>
+            <p>In your drawer you have 10 pairs of socks, 6 of which are white. If you reach in and randomly grab two 
+                pairs of socks, what is the probability that both are white?</p>
+            <answer><m>\frac{6}{10}\cdot \frac{5}{9} = \frac{30}{90} = \frac{1}{3}</m></answer>
+        </problem>
+
+        <example>
+            <p>A home pregnancy test was given to women, then pregnancy was verified through blood tests. The following 
+                table shows the home pregnancy test results. Find
+            <ol label = "a">
+                <li>P(not pregnant | positive test result)</li>
+                <li>P(positive test result | not pregnant)</li>
+            </ol></p>
+            
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell></cell>
+                        <cell>Positive Test</cell>
+                        <cell>Negative Test</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row>
+                        <cell>Pregnant</cell>
+                        <cell>70</cell>
+                        <cell>4</cell>
+                        <cell>74</cell>
+                    </row>
+                    <row>
+                        <cell>Not Pregnant</cell>
+                        <cell>5</cell>
+                        <cell>14</cell>
+                        <cell>19</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>75</cell>
+                        <cell>18</cell>
+                        <cell>93</cell>
+                    </row>
+                </tabular>
+            </table>
+
+            <solution>
+                <p>
+                <ol label = "a">
+                    <li>
+                        <p>Since we know the test result was positive, we’re limited to the 75 women in the first column, 
+                            of which 5 were not pregnant.</p>
+                        <p>P(not pregnant | positive test result) = <m>\frac{5}{75}\approx 0.067</m></p>
+                    </li>
+
+                    <li>
+                        <p>Since we know the woman is not pregnant, we are limited to the 19 women in the second row, of 
+                            which 5 had a positive test.</p>
+                        <p>P(positive test result | not pregnant) = <m>\frac{5}{19} \approx 0.263</m></p>
+                    </li>
+
+                    <p>The second result is what is usually called a false positive: A positive result when the woman is 
+                        not actually pregnant.</p>
+                </ol></p>
+            </solution>
+        </example>
+
+
+    </subsection>
+        
+        <subsection><title>Bayes Theorem</title>
+            <p>Let's look at more complex conditional probability problems.</p>
+
+            <example>
+                <p>Suppose a certain disease has an incidence rate of 0.1% (that is, it afflicts 0.1% of the population). 
+                    A test has been devised to detect this disease. The test does not produce false negatives (that is, 
+                    anyone who has the disease will test positive for it), but the false positive rate is 5% (that is, 
+                    about 5% of people who take the test will test positive, even though they do not have the disease). 
+                    Suppose a randomly selected person takes the test and tests positive. What is the probability that 
+                    this person actually has the disease?</p>
+                
+                <solution>
+                    <p>There are two ways to approach the solution to this problem. One involves an important result in 
+                        probability theory called Bayes' theorem. We will discuss this theorem a bit later, but for now we 
+                        will use an alternative and, we hope, much more intuitive approach.</p>
+
+                    <p>Let's break down the information in the problem piece by piece.</p>
+
+                    <p>Suppose a certain disease has an incidence rate of 0.1% (that is, it afflicts 0.1% of the 
+                        population). The percentage 0.1% can be converted to a decimal number by moving the decimal place 
+                        two places to the left, to get 0.001. In turn, 0.001 can be rewritten as a fraction: 1/1000. This 
+                        tells us that about 1 in every 1000 people has the disease. (If we wanted we could write 
+                        P(disease)=0.001.)</p>
+
+                    <p>A test has been devised to detect this disease. The test does not produce false negatives (that is, 
+                        anyone who has the disease will test positive for it). This part is fairly straightforward: 
+                        everyone who has the disease will test positive, or alternatively everyone who tests negative does 
+                        not have the disease. (We could also say P(positive | disease)=1.)</p>
+
+                    <p>The false positive rate is 5% (that is, about 5% of people who take the test will test positive, 
+                        even though they do not have the disease). This is even more straightforward. Another way of 
+                        looking at it is that of every 100 people who are tested and do not have the disease, 5 will test 
+                        positive even though they do not have the disease. (We could also say that P(positive | no 
+                        disease)=0.05.)</p>
+
+                    <p>Suppose a randomly selected person takes the test and tests positive. What is the probability that 
+                        this person actually has the disease? Here we want to compute P(disease|positive). We already know 
+                        that P(positive|disease)=1, but remember that conditional probabilities are not equal if the 
+                        conditions are switched.</p>
+
+                    <p>Rather than thinking in terms of all these probabilities we have developed, let's create a 
+                        hypothetical situation and apply the facts as set out above. First, suppose we randomly select 
+                        1000 people and administer the test. How many do we expect to have the disease? Since about 1/1000 
+                        of all people are afflicted with the disease, <m>\frac{1}{1000}</m> of 1000 people is 1. (Now you 
+                        know why we chose 1000.) Only 1 of 1000 test subjects actually has the disease; the other 999 do 
+                        not.</p>
+                        
+
+                    <p>We also know that 5% of all people who do not have the disease will test positive. There are 999 
+                        disease-free people, so we would expect <m>\left(0.05\right)\left(999\right)=49.95</m> (so, about 
+                        50) people to test positive who do not have the disease.</p>
+
+                    <p>Now back to the original question, computing P(disease|positive). There are 51 people who test 
+                        positive in our example (the one unfortunate person who actually has the disease, plus the 50 
+                        people who tested positive but don't). Only one of these people has the disease, so
+
+                    <me>P\left(\text{disease} | \text{positive}\right) \approx \frac{1}{51} \approx 0.0196</me>
+
+                    or less than 2%. Does this surprise you? This means that of all people who test positive, over 98% do 
+                        not have the disease.</p>
+
+                    <p>The answer we got was slightly approximate, since we rounded 49.95 to 50. We could redo the problem 
+                        with 100,000 test subjects, 100 of whom would have the disease and <m>\left(0.05\right)
+                        \left(99,900\right)=4995</m> test positive but do not have the disease, so the exact probability 
+                        of having the disease if you test positive is
+
+                        <me>P\left(\text{disease} | \text{positive}\right) \approx \frac{100}{5095} \approx 0.0196</me>
+
+                        which is pretty much the same answer.</p>
+                </solution>
+            </example>
+
+            <p>But back to the surprising result. Of all people who test positive, over 98% do not have the disease. If 
+                your guess for the probability a person who tests positive has the disease was wildly different from the 
+                right answer (2%), don't feel bad. The exact same problem was posed to doctors and medical students at the 
+                Harvard Medical School 25 years ago and the results revealed in a 1978 New England Journal of Medicine 
+                article. Only about 18% of the participants got the right answer. Most of the rest thought the answer was 
+                closer to 95% (perhaps they were misled by the false positive rate of 5%).</p>
+
+            <p>So at least you should feel a little better that a bunch of doctors didn't get the right answer either 
+                (assuming you thought the answer was much higher). But the significance of this finding and similar 
+                results from other studies in the intervening years lies not in making math students feel better but in 
+                the possibly catastrophic consequences it might have for patient care. If a doctor thinks the chances that 
+                a positive test result nearly guarantees that a patient has a disease, they might begin an unnecessary and 
+                possibly harmful treatment regimen on a healthy patient. Or worse, as in the early days of the AIDS crisis 
+                when being HIV-positive was often equated with a death sentence, the patient might take a drastic action 
+                and commit suicide.</p>
+
+            <p>As we have seen in this hypothetical example, the most responsible course of action for treating a patient 
+                who tests positive would be to counsel the patient that they most likely do not have the disease and to 
+                order further, more reliable, tests to verify the diagnosis.</p>
+
+            <p>One of the reasons that the doctors and medical students in the study did so poorly is that such problems, 
+                when presented in the types of statistics courses that medical students often take, are solved by use of 
+                Bayes' theorem, which is stated as follows.</p>
+
+            <definition><title>Bayes’ Theorem</title>
+                <p>Bayes' Theorem is:</p>
+                <me>P\left(A|B\right) = \frac{P\left(A\right)\cdot P\left(B|A\right)}{P\left(A\right)\cdot P\left(B|A
+                    \right) + P\left(A^c\right) \cdot P\left(B|A^c\right)}</me>
+            </definition>
+
+            <p>In our earlier example, this translates to</p>
+
+            <me>P\left(\text{disease} | \text{positive} \right)=\frac{P\left(\text{disease}\right)P\left(\text{positive} | 
+                \text{disease} \right)}{P\left(\text{disease} \right)P\left( \text{positive} | \text{disease} \right)
+                +P\left( \text{no disease} \right)P\left( \text{positive} | \text{no disease} \right)}</me>
+
+            <p>Plugging in the numbers gives
+
+            <me>P\left(\text{disease} |\text{positive} \right)=\frac{0.001\cdot 1}{0.001 \cdot 1+0.999 \cdot 0.05}
+                \approx 0.0196</me>
+
+                which is exactly the same answer as our original solution.</p>
+
+            <p>The problem is that you (or the typical medical student, or even the typical math professor) are much more 
+                likely to be able to remember the original solution than to remember Bayes' theorem. Psychologists, such 
+                as Gerd Gigerenzer, author of Calculated Risks: How to Know When Numbers Deceive You, have advocated that 
+                the method involved in the original solution (which Gigerenzer calls the method of "natural frequencies") 
+                be employed in place of Bayes' Theorem. Gigerenzer performed a study and found that those educated in the 
+                natural frequency method were able to recall it far longer than those who were taught Bayes' theorem. When 
+                one considers the possible life-and-death consequences associated with such calculations it seems wise to 
+                heed his advice.</p>
+
+            <example>
+                <p>A certain disease has an incidence rate of 2%. If the false negative rate is 10% and the false positive 
+                    rate is 1%, compute the probability that a person who tests positive actually has the disease.</p>
+
+                <solution>
+                    <p>Imagine 10,000 people who are tested. Of these 10,000, 200 will have the disease; 10% of them, or 
+                        20, will test negative and the remaining 180 will test positive. Of the 9800 who do not have the 
+                        disease, 98 will test positive. So of the 278 total people who test positive, 180 will have the 
+                        disease. Thus
+                        
+                        <me>P\left(\text{disease} | \text{positive} \right)=\frac{180}{278} \approx 0.647</me>
+
+
+                        so about 65% of the people who test positive will have the disease.</p>
+
+                    <p>Using Bayes theorem directly would give the same result:
+
+                    <me>P\left( \text{disease} | \text{positive} \right)=\frac{0.02\cdot 0.90}{0.02\cdot 0.90+0.98 \cdot  
+                        0.01}=\frac{0.018}{0.0278} \approx 0.647</me>
+                    </p>
+                    
+                </solution>
+            </example>
+
+            <problem><title>Try It Now</title>
+                <p>A certain disease has an incidence rate of 0.5%. If there are no false negatives and if the false 
+                    positive rate is 3%, compute the probability that a person who tests positive actually has the 
+                    disease.</p>
+                
+                <answer><p>Out of 100,000 people, 500 would have the disease. Of those, all 500 would test positive. Of 
+                    the 99,500 without the disease, 2,985 would falsely test positive and the other 96,515 would test 
+                    negative.</p>
+
+                    <p>P(disease|positive)=<m>\frac{500}{500+2985}=\frac{500}{3485}\approx 14.3\%</m></p>
+                </answer>
+            </problem>
+        </subsection>
+    
+    </section>
+    
+    <section xml:id = "section-prob-counting">
+        <title>Probability using Permutations and Combinations</title>
+        
+        <objectives>
+            <ul>
+                <li>Use permutations and combinations to calculate probabilities</li>
+            </ul>
+        </objectives>
+
+        <p>We can use permutations and combinations to help us answer more complex probability questions.</p>
+
+        <example>
+            <p>A 4 digit PIN number is selected. What is the probability that there are no repeated digits?</p>
+            <solution>
+                <p>There are 10 possible values for each digit of the PIN (namely: 0,1,2,3,4,5,6,7,8,9), so there are 
+                    <m>10\cdot 10 \cdot 10 \cdot 10=10^4=10000</m> total possible PIN numbers.</p>
+
+                <p>To have no repeated digits, all four digits would have to be different, which is selecting without 
+                    replacement. We could either compute <m>10 \cdot 9 \cdot 8 \cdot 7</m>, or notice that this is the 
+                    same as the permutation <m>_{10}P_{4}=5040</m>.</p>
+
+                <p>The probability of no repeated digits is the number of 4 digit PIN numbers with no repeated digits 
+                    divided by the total number of 4 digit PIN numbers. This probability is <m>\frac{_{10}P_{4}}{10^4}=
+                    \frac{5040}{10000}=0.504</m>.</p>
+            </solution>
+        </example>
+
+        <example>
+            <p>In a certain state's lottery, 48 balls numbered 1 through 48 are placed in a machine and six of them are 
+                drawn at random. If the six numbers drawn match the numbers that a player had chosen, the player wins 
+                $1,000,000. In this lottery, the order the numbers are drawn in doesn’t matter. Compute the probability 
+                that you win the million-dollar prize if you purchase a single lottery ticket.</p>
+
+            <solution>
+                <p>In order to compute the probability, we need to count the total number of ways six numbers can be 
+                    drawn, and the number of ways the six numbers on the player’s ticket could match the six numbers 
+                    drawn from the machine. Since there is no stipulation that the numbers be in any particular order, 
+                    the number of possible outcomes of the lottery drawing is <m>_{48}C_{6}=12,271,512</m>. Of these 
+                    possible outcomes, only one would match all six numbers on the player’s ticket, so the probability of 
+                    winning the grand prize is:
+
+                    <me>\frac{_{6}C_{6}}{_{48}C_{6}}=\frac{1}{12271512}\approx 0.0000000815</me>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <p>In the state lottery from the previous example, if five of the six numbers drawn match the numbers that a 
+                player has chosen, the player wins a second prize of $1,000. Compute the probability that you win the 
+                second prize if you purchase a single lottery ticket.</p>
+
+            <solution>
+                <p>As above, the number of possible outcomes of the lottery drawing is <m>_{48}C_{6}=12,271,512</m>. In 
+                    order to win the second prize, five of the six numbers on the ticket must match five of the six 
+                    winning numbers; in other words, we must have chosen five of the six winning numbers and one of the 
+                    42 losing numbers. The number of ways to choose 5 out of the 6 winning numbers is given by 
+                    <m>_{6}C_{5}=6</m> and the number of ways to choose 1 out of the 42 losing numbers is given by 
+                    <m>_{42}C_{1}=42</m>. Thus the number of favorable outcomes is then given by the Basic Counting Rule: 
+                    <m>_{6}C_{5}\cdot _{42}C_{1}=6\cdot 42=252</m>.</p>
+                <p>So the probability of winning the second prize is <m>\frac{252}{12271512} \approx 0.0000205</m></p>
+            </solution>
+        </example>
+
+        <problem><title>Try It Now</title>
+            <p>A multiple-choice question on an economics quiz contains 10 questions with five possible answers each. 
+                Compute the probability of randomly guessing the answers and getting 9 questions correct.</p>
+            <answer><p>There are <m>5^{10}=9,765,625</m> different ways the exam can be answered. There are 10 possible 
+                locations for the one missed question, and in each of those locations there are 4 wrong answers, so there 
+                are 40 ways the test could be answered with one wrong answer.</p>
+
+                <p>P(9 answers correct)=<m>\frac{40}{5^{10}} \approx 0.0000041</m> chance.</p>
+            </answer>
+        </problem>
+
+        <example>
+            <p>Compute the probability of randomly drawing five cards from a deck and getting exactly one Ace.</p>
+            
+            <solution>
+                <p>In many card games (such as poker) the order in which the cards are drawn is not important (since the 
+                    player may rearrange the cards in his hand any way he chooses); in the problems that follow, we will 
+                    assume that this is the case unless otherwise stated. Thus we use combinations to compute the possible 
+                    number of 5-card hands, <m>_{52}C_{5}</m>. This number will go in the denominator of our probability 
+                    formula, since it is the number of possible outcomes.</p>
+
+                <p>For the numerator, we need the number of ways to draw one Ace and four other cards (none of them Aces) 
+                    from the deck. Since there are four Aces and we want exactly one of them, there will be 
+                    <m>_{4}C_{1}</m> ways to select one Ace; since there are 48 non-Aces and we want 4 of them, there will 
+                    be <m>_{48}C_{4}</m> ways to select the four non-Aces. Now we use the Basic Counting Rule to calculate that there will be <m>_{4}C_{1}\cdot _{48}C_{4}</m> ways to choose one ace and four non-Aces.</p>
+
+                <p>Putting this all together, we have P(one Ace)<m>=\frac{_{4}C_{1} \cdot _{48}C_{4}}
+                    {_{52}C_{5}}=\frac{778320}{2598960} \approx 0.299</m></p>
+            </solution>
+        </example>
+
+        <example>
+            <p>Compute the probability of randomly drawing five cards from a deck and getting exactly two Aces.</p>
+
+            <solution>
+                <p>The solution is similar to the previous example, except now we are choosing 2 Aces out of 4 and 3 non-
+                    Aces out of 48; the denominator remains the same:</p>
+
+                <p>P(two Aces)=<m>\frac{_{4}C_{2}\cdot _{48}C_{3}}{_{52}C_{5}}=\frac{103776}{2598960}
+                    \approx 0.0399</m></p>
+            </solution>
+        </example>
+
+        <p>It is useful to note that these card problems are remarkably similar to the lottery problems discussed 
+            earlier.</p>
+
+        <problem><title>Try It Now</title>
+            <p>Compute the probability of randomly drawing five cards from a deck of cards and getting three Aces and two 
+                Kings.</p>
+            
+            <answer><m>\frac{_{4}C_{3}\cdot _{4}C_{2}}{_{52}C_{5}}=\frac{24}{2598960} \approx 0.0000092</m></answer>
+        </problem>
+
+        <p>Let's take a pause to consider a famous problem in probability theory:</p>
+
+        <p>Suppose you have a room full of 30 people. What is the probability that there is at least one shared 
+            birthday?</p>
+
+        <p>Take a guess at the answer to the above problem. Was your guess fairly low, like around 10%? That seems to be 
+            the intuitive answer (<m>\frac{30}{365}</m>, perhaps?). Let's see if we should listen to our intuition. Let's 
+            start with a simpler problem, however.</p>
+
+        <example>
+            <p>Suppose three people are in a room. What is the probability that there is at least one shared birthday 
+                among these three people?</p>
+            
+            <solution>
+                <p>There are a lot of ways there could be at least one shared birthday. Fortunately there is an easier 
+                    way. We ask ourselves “What is the alternative to having at least one shared birthday?” In this case, 
+                    the alternative is that there are no shared birthdays. In other words, the alternative to “at least 
+                    one” is having none. In other words, since this is a complementary event,</p>
+
+                <p>P(at least one)=1-P(none)</p>
+
+                <p>We will start, then, by computing the probability that there is no shared birthday. Let's imagine that 
+                    you are one of these three people. Your birthday can be anything without conflict, so there are 365 
+                    choices out of 365 for your birthday. What is the probability that the second person does not share 
+                    your birthday? There are 365 days in the year (let's ignore leap years) and removing your birthday 
+                    from contention, there are 364 choices that will guarantee that you do not share a birthday with this 
+                    person, so the probability that the second person does not share your birthday is 
+                    <m>\frac{364}{365}</m>.</p>
+                
+                <p>Now we move to the third person. What is the probability that this third person does not have the same 
+                    birthday as either you or the second person? There are 363 days that will not duplicate your birthday 
+                    or the second person's, so the probability that the third person does not share a birthday with the 
+                    first two is <m>\frac{363}{365}</m>.</p>
+
+                <p>We want the second person not to share a birthday with you and the third person not to share a 
+                    birthday with the first two people, so we use the multiplication rule:</p>
+
+                <p>P(no shared birthday)=<m>\frac{365}{365} \cdot \frac{364}{365} \cdot \frac{363}{365} \approx 
+                    0.9918</m></p>
+
+                <p>and then subtract from 1 to get</p>
+
+                <p>P(shared birthday)= 1 - P(no shared birthday)=<m>1-0.9918=0.0082</m>.</p>
+
+                <p>This is a pretty small number, so maybe it makes sense that the answer to our original problem will be 
+                    small. Let's make our group a bit bigger.</p>
+            </solution>
+        </example>
+        
+        <example>
+            <p>Suppose five people are in a room. What is the probability that there is at least one shared birthday 
+                among these five people?</p>
+
+            <solution>
+                <p>Continuing the pattern of the previous example, the answer should be</p>
+
+                <p>P(shared birthday)=<m>1-\frac{365}{365} \cdot \frac{364}{365} \cdot \frac{363}{365}
+                    \cdot \frac{362}{365}\cdot \frac{361}{365} \approx 0.0271</m></p>
+
+                <p>Note that we could rewrite this more compactly as P(shared birthday)=
+                    <m>1-\frac{_{365}P_{5}}{365^5}\approx 0.0271</m> which makes it a bit easier to type into a 
+                    calculator or computer, and which suggests a nice formula as we continue to expand the population of 
+                    our group.</p>
+            </solution>
+        </example>
+        
+
+        <example>
+            <p>Suppose 30 people are in a room. What is the probability that there is at least one shared birthday among 
+                these 30 people?</p>
+
+            <solution>
+                <p>Here we can calculate P(shared birthday)=<m>1-\frac{_{365}P_{30}}{365^{30}} \approx 0.706</m></p>
+
+                <p>which gives us the surprising result that when you are in a room with 30 people there is a 70% chance 
+                    that there will be at least one shared birthday!</p>
+            </solution>
+        </example>
+
+        <p>If you like to bet, and if you can convince 30 people to reveal their birthdays, you might be able to win some 
+            money by betting a friend that there will be at least two people with the same birthday in the room anytime 
+            you are in a room of 30 or more people. (Of course, you would need to make sure your friend hasn't studied 
+            probability!) You wouldn't be guaranteed to win, but you should win more than half the time.</p>
+
+        <problem><title>Try It Now</title>
+            <p>Suppose 10 people are in a room. What is the probability that there is at least one shared birthday among 
+                these 10 people?</p>
+            
+            <answer>P(shared birthday)=<m>1-\frac{_{365}P_{10}}{365^{10}} \approx 0.117</m></answer>
+     </problem>
+
+ 
+    </section>
+    
+    <section xml:id = "section-prob-ev"><title>Expected Value</title>
+        
+        <objectives>
+            <ul>
+                <li>Compute expected values</li>
+            </ul>
+        </objectives>
+        
+        <p>Expected value is perhaps the most useful probability concept we will discuss.  It has many 
+applications, from insurance policies to making financial decisions, and it's one thing that the 
+casinos and government agencies that run gambling operations and lotteries hope most 
+            people never learn about.  </p>
+ 
+ 
+<example>
+    <p>In the casino game roulette, a wheel with 38 spaces (18 red, 18 
+    black, and 2 green) is spun.  In one possible bet, the player bets 
+    $1 on a single number.  If that number is spun on the wheel, then 
+    they receive $36 (their original $1 + $35).  Otherwise, they lose 
+    their $1.  On average, how much money should a player expect to 
+        win or lose if they play this game repeatedly? </p>
+ 
+    <solution>
+        <p>Suppose you bet $1 on each of the 38 spaces on the wheel, for a 
+    total of $38 bet.  When the winning number is spun, you are paid $36 on that number.  While 
+    you won on that one number, overall you’ve lost $2.  On a per-space basis, you have “won” -
+            $2/$38 = -$0.053.  In other words, on average you lose 5.3 cents per space you bet on. </p>
+    </solution>
+        </example>
+ 
+ <p>We call this average gain or loss the expected value of playing roulette.  Notice that no one 
+ever loses exactly 5.3 cents: most people (in fact, about 37 out of every 38) lose $1 and a 
+very few people (about 1 person out of every 38) gain $35 (the $36 they win minus the $1 
+     they spent to play the game). </p>
+ 
+<p>There is another way to compute expected value without imagining what would happen if we 
+play every possible space.  There are 38 possible outcomes when the wheel spins, so the 
+    probability of winning is <m>\frac{1}{38}</m>. The complement, the probability of losing, is <m>\frac{37}{38}</m>.</p>  
+ 
+        <p>Summarizing these along with the values, we get this table: </p>
+        <table>
+            <tabular halign = "center">
+                <row header = "yes" bottom = "minor">
+                    <cell>Outcome</cell>
+                    <cell>Probability of Outcome</cell>
+                </row>
+                <row>
+                    <cell>$35</cell>
+                    <cell><m>\frac{1}{38}</m></cell>
+                </row>
+                 <row>
+                    <cell>-$1</cell>
+                    <cell><m>\frac{37}{38}</m></cell>
+                </row>
+            </tabular>
+        </table>
+        
+        <p>Notice that if we multiply each outcome by its corresponding probability we get <m>\$35\cdot 
+            \frac{1}{38}=0.9211</m> and <m>-\$1 \cdot \frac{37}{38}=-0.9737</m>, and if we add these numbers we get 
+            <m>0.9211+(-0.9737) \approx -0.053</m>, which is the expected value we computed above.</p>
+        
+        <definition><title>Expected Value</title>
+            <p><term>Expected Value</term> is the average gain or loss of an event if the procedure is repeated many 
+                times.</p>
+            
+            <p>We can compute the expected value by multiplying each outcome by the probability of that outcome, then 
+                adding up the products.</p>
+        </definition>
+
+        <problem><title>Try It Now</title>
+            <p>You purchase a raffle ticket to help out a charity. The raffle ticket costs $5. The charity is selling 
+                2000 tickets. One of them will be drawn and the person holding the ticket will be given a prize worth 
+                $4000. Compute the expected value for this raffle.</p>
+            
+            <answer><m>\left(\$3,995\right) \cdot \frac{1}{2000}+\left(-\$5\right) \cdot \frac{1999}{2000}=-\$3.00</m>
+            </answer>
+        </problem>
+
+        <example>
+            <p>In a certain state's lottery, 48 balls numbered 1 through 48 are placed in a machine and six of them are 
+                drawn at random. If the six numbers drawn match the numbers that a player had chosen, the player wins 
+                $1,000,000. If they match 5 numbers, then win $1,000. It costs $1 to buy a ticket. Find the expected 
+                value.</p>
+            
+            <solution>
+                <p>Earlier, we calculated the probability of matching all 6 numbers and the probability of matching 5 
+                    numbers:</p>
+
+                <p><m>\frac{_{6}C_{6}}{_{48}C_{6}}=\frac{1}{12271512} \approx 0.0000000815</m> for all 6 numbers,</p>
+
+                <p>
+                    <m>\frac{_{6}C_{5} \cdot _{42}C_{1}}{_{48}C_{6}}=\frac{252}{12271512} \approx 0.0000205</m> for 5 
+                    numbers.</p>
+                
+                <p>Our probabilities and outcome values are:</p>
+                
+                <table>
+            <tabular halign = "center">
+                <row header = "yes" bottom = "minor">
+                    <cell>Outcome</cell>
+                    <cell>Probability of Outcome</cell>
+                </row>
+                <row>
+                    <cell>$999,999</cell>
+                    <cell><m>\frac{1}{12271512}</m></cell>
+                </row>
+                  <row>
+                    <cell>$999</cell>
+                    <cell><m>\frac{252}{12271512}</m></cell>
+                </row>
+                 <row>
+                    <cell>-$1</cell>
+                    <cell><m>1 - \frac{253}{12271512} = \frac{12271259}{12271512}</m></cell>
+                </row>
+            </tabular>
+                </table>
+        
+                <p>The expected value, then is:</p>
+
+                    <me>\$999,999 \cdot \frac{1}{12271512}+\$999\cdot \frac{252}{12271512}+
+                        \left(-\$1\right) \cdot \frac{12271259}{12271512} \approx -\$0.898</me>
+
+                <p>On average, one can expect to lose about 90 cents on a lottery ticket. Of course, most players will 
+                    lose $1.</p>
+            </solution>
+        </example>
+
+        <p>In general, if the expected value of a game is negative, it is not a good idea to play the game, since on 
+            average you will lose money. It would be better to play a game with a positive expected value (good luck 
+            trying to find one!), although keep in mind that even if the average winnings are positive it could be the 
+            case that most people lose money and one very fortunate individual wins a great deal of money. If the 
+            expected value of a game is 0, we call it a fair game, since neither side has an advantage.</p>
+
+        <p>Not surprisingly, the expected value for casino games is negative for the player, which is positive for the 
+            casino. It must be positive or they would go out of business. Players just need to keep in mind that when 
+            they play a game repeatedly, their expected value is negative. That is fine so long as you enjoy playing the 
+            game and think it is worth the cost. But it would be wrong to expect to come out ahead.</p>
+
+        <problem><title>Try It Now</title>
+            <p>A friend offers to play a game, in which you roll 3 standard 6-sided dice. If all the dice roll different 
+                values, you give him $1. If any two dice match values, you get $2. What is the expected value of this 
+                game? Would you play?</p>
+            <answer><p>
+                Suppose you roll the first die. The probability the second will be different is <m>\frac{5}{6}</m>. 
+                The probability that 
+                the third roll is different than the previous two is <m>\frac{4}{6}</m>, so the probability that the 
+                three dice are 
+                different is <m>\frac{5}{6}\cdot \frac{4}{6}=\frac{20}{36}</m>. The probability that two dice will match 
+                is the complement, <m>1-\frac{20}{36}=\frac{16}{36}</m>.</p>
+
+                <p>The expected value is: <m>\$2 \cdot \frac{16}{36}+\left(-\$1 \right) \cdot \frac{20}{36}
+                    =\frac{12}{36} \approx \$0.33</m>.</p> 
+                
+                <p>Yes, it is in your advantage to play. On average, you’d win $0.33 per play.</p>
+                
+            </answer>
+        </problem>
+        
+        <p>Expected value also has applications outside of gambling. Expected value is very common in making insurance 
+            decisions.</p>
+
+        <example>
+            <p>A 40-year-old man in the U.S. has a 0.242% risk of dying during the next year. An insurance company 
+                charges $275 for a life-insurance policy that pays a $100,000 death benefit. What is the expected value for 
+                the person buying the insurance?</p>
+
+            <solution>
+                <p>The probabilities and outcomes are</p>
+                
+                  <table>
+            <tabular halign = "center">
+                <row header = "yes" bottom = "minor">
+                    <cell>Outcome</cell>
+                    <cell>Probability of Outcome</cell>
+                </row>
+                <row>
+                    <cell><m>\$100,000-\$275=\$99,725</m></cell>
+                    <cell><m>0.00242</m></cell>
+                </row>
+                  <row>
+                      <cell><m>-\$275</m></cell>
+                    <cell><m>1 - 0.00242 = 0.99758</m></cell>
+                </row>
+            </tabular>
+        </table>
+
+                <p>The expected value is <m>\$99,725\cdot 0.00242+\left(-\$275\right) \cdot 0.99758=-\$33</m>.</p>
+
+            </solution>
+        </example>
+                
+        <p>Not surprisingly, the expected value is negative; the insurance company can only afford to offer policies if 
+            they, on average, make money on each policy. They can afford to pay out the occasional benefit because they 
+            offer enough policies that those benefit payouts are balanced by the rest of the insured people.</p>
+
+        <p>For people buying the insurance, there is a negative expected value, but there is a security that comes from 
+            insurance that is worth that cost.</p>
+
+    </section>
+    
+    <exercises xml:id = "exercises-prob">
+       <exercise xml:id="prob-ex-1">
+        <statement>
+            <p>A ball is drawn randomly from a jar that contains 6 red balls, 2 white balls, and 5 yellow balls. Find the probability of the given event.
+            <ol label = "a">
+                <li>A red ball is drawn</li>
+                <li>A white ball is drawn</li>
+            </ol></p>
+        </statement>
+           
+           <answer><p>
+               <ol label = "a">
+                   <li><m>\frac{6}{13}</m></li>
+                   <li><m>\frac{2}{13}</m></li>
+               </ol>
+               </p>
+           </answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-2">
+        <statement>
+            <p>Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. 
+                What is the probability of drawing one slip of paper from the hat at random and getting:
+                <ol label = "a">
+                    <li>A consonant</li>
+                    <li>A vowel</li>
+                </ol></p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-3">
+        <statement>
+            <p>A group of people were asked if they had run a red light in the last year. 150 responded "yes", and 185 
+                responded "no". Find the probability that if a person is chosen at random, they have run a red light in the 
+                last year.</p>
+        </statement>
+        
+        <answer><m>\frac{150}{335}=0.448</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-4">
+        <statement>
+            <p>In a survey, 205 people indicated they prefer cats, 160 indicated they prefer dogs, and 40 indicated they 
+                don’t enjoy either pet. Find the probability that if a person is chosen at random, they prefer cats.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-5">
+        <statement>
+            <p>Compute the probability of tossing a six-sided die (with sides numbered 1 through 6) and getting a 5.</p>
+        </statement>
+        
+        <answer><m>\frac{1}{6}</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-6">
+        <statement>
+            <p>Compute the probability of tossing a six-sided die and getting a 7.</p>
+        </statement>
+    </exercise>
+        
+         <exercise xml:id="prob-ex-7">
+        <statement>
+            <p>Giving a test to a group of students, the grades and gender are summarized below. </p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell></cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row>
+                        <cell>Male</cell>
+                        <cell>8</cell>
+                        <cell>18</cell>
+                        <cell>13</cell>
+                        <cell>39</cell>
+                    </row>
+                    <row>
+                        <cell>Female</cell>
+                        <cell>10</cell>
+                        <cell>4</cell>
+                        <cell>12</cell>
+                        <cell>26</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>18</cell>
+                        <cell>22</cell>
+                        <cell>25</cell>
+                        <cell>65</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+            <ol label = "a">
+                <li>If one student was chosen at random, find the probability that the student was female.</li>
+                <li>What is the probability that a student chosen at random did NOT earn a C?</li>
+            </ol></p>
+
+        </statement>
+             
+             <answer>
+                 <p>
+                     <ol label = "a">
+                         <li><m>\frac{26}{65}=0.4</m></li>
+                         <li><m>\frac{40}{65}=0.615</m></li>
+                     </ol>
+                 </p>
+             </answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-8">
+        <statement> 
+            <p>The table below shows the number of credit cards owned by a group of individuals.</p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell></cell>
+                        <cell>Zero</cell>
+                        <cell>One</cell>
+                        <cell>Two or More</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row>
+                        <cell>Male</cell>
+                        <cell>9</cell>
+                        <cell>5</cell>
+                        <cell>19</cell>
+                        <cell>33</cell>
+                    </row>
+                    <row>
+                        <cell>Female</cell>
+                        <cell>18</cell>
+                        <cell>10</cell>
+                        <cell>20</cell>
+                        <cell>48</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>27</cell>
+                        <cell>15</cell>
+                        <cell>39</cell>
+                        <cell>81</cell>
+                    </row>
+                </tabular>
+            </table>
+            <p>
+            <ol label = "a">
+                <li>If one person was chosen at random, find the probability that the person had no credit cards.</li>
+                <li>What is the probability that a person chosen at random has at least one credit card?</li>
+            </ol></p>
+
+        </statement>
+        </exercise>
+        
+        <exercise xml:id="prob-ex-9">
+        <statement> 
+            <p>Compute the probability of tossing a six-sided die and getting an even number.</p>
+        </statement>
+            <answer><m>\frac{1}{2}</m></answer>
+    </exercise>
+
+
+    <exercise xml:id="prob-ex-10">
+        <statement> 
+            <p>Compute the probability of tossing a six-sided die and getting a number less than 3.</p>
+        </statement>
+    </exercise>
+
+
+    <exercise xml:id="prob-ex-11">
+        <statement>
+            <p>If you pick one card at random from a standard deck of cards, what is the probability it will be a King?</p>
+        </statement>
+        <answer><m>\frac{1}{13}</m></answer>
+    </exercise>
+
+
+    <exercise xml:id="prob-ex-12">
+        <statement>
+            <p>If you pick one card at random from a standard deck of cards, what is the probability it will be a Diamond?
+            </p>
+        </statement>
+    </exercise>
+
+
+    <exercise xml:id="prob-ex-13">
+        <statement>
+            <p>Compute the probability of rolling a 12-sided die and getting a number other than 8.</p>
+        </statement>
+        <answer><m>\frac{11}{12}</m></answer>
+    </exercise>
+
+
+    <exercise xml:id="prob-ex-14">
+        <statement>
+            <p>If you pick one card at random from a standard deck of cards, what is the probability it is not the Ace of 
+                Spades?</p>
+        </statement>
+    </exercise>
+
+        <exercise xml:id="prob-ex-15">
+        <statement>
+            <p>A six-sided die is rolled twice. What is the probability of showing a 6 on both rolls?</p>
+        </statement>
+            <answer><m>\frac{1}{36}</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-16">
+        <statement>
+            <p>A fair coin is flipped twice. What is the probability of showing heads on both flips?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-17">
+        <statement>
+            <p>A die is rolled twice. What is the probability of showing a 5 on the first roll and an even number on the second roll?</p>
+        </statement>
+        <answer><m>\frac{1}{12}</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-18">
+        <statement>
+            <p>Suppose that 21% of people own dogs. If you pick two people at random, what is the probability that they both own a dog?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-19">
+        <statement>
+            <p>Suppose a jar contains 17 red marbles and 32 blue marbles. If you reach in the jar and pull out 2 marbles at random, find the probability that both are red.</p>
+        </statement>
+        <answer><m>\frac{17}{147}</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-20">
+        <statement>
+            <p>Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. If you pull out two slips at random, find the probability that both are vowels.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-21">
+        <statement>
+            <p>Bert and Ernie each have a well-shuffled standard deck of 52 cards. They each draw one card from their own deck. Compute the probability that:
+
+            <ol label = "a">
+                <li>Bert and Ernie both draw an Ace.</li>
+                <li>Bert draws an Ace but Ernie does not.</li>
+                <li>Neither Bert nor Ernie draws an Ace.</li>
+                <li>Bert and Ernie both draw a heart.</li>
+                <li>Bert gets a card that is not a Jack and Ernie draws a card that is not a heart.</li>
+            </ol></p>
+        </statement>
+        
+        <answer>
+            <p>
+                <ol label = "a">
+                    <li><m>\frac{1}{169}</m></li>
+                    <li><m>\frac{12}{169}</m></li>
+                    <li><m>\frac{144}{169}</m></li>
+                    <li><m>\frac{1}{16}</m></li>
+                    <li><m>\frac{117}{169}</m></li>
+                </ol>
+            </p>
+        </answer>
+                        
+    </exercise>
+
+    <exercise xml:id="prob-ex-22">
+        <statement>
+            <p>Bert has a well-shuffled standard deck of 52 cards, from which he draws one card; Ernie has a 12-sided die, which he rolls at the same time Bert draws a card. Compute the probability that:
+
+            <ol label = "a">
+                <li>Bert gets a Jack and Ernie rolls a five.</li>
+                <li>Bert gets a heart and Ernie rolls a number less than six.</li>
+                <li>Bert gets a face card (Jack, Queen or King) and Ernie rolls an even number.</li>
+                <li>Bert gets a red card and Ernie rolls a fifteen.</li>
+                <li>Bert gets a card that is not a Jack and Ernie rolls a number that is not twelve.</li>
+            </ol></p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-23">
+        <statement>
+            <p>Compute the probability of drawing a King from a deck of cards and then drawing a Queen.</p>
+        </statement>
+        <answer><m>\frac{4}{663}</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-24">
+        <statement>
+            <p>Compute the probability of drawing two spades from a deck of cards.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-25">
+        <statement>
+            <p>A math class consists of 25 students, 14 female and 11 male. Two students are selected at random to participate in a probability experiment. Compute the probability that
+            <ol label = "a">
+                <li>a male is selected, then a female.</li>
+                <li>a female is selected, then a male.</li>
+                <li>two males are selected.</li>
+                <li>two females are selected.</li>
+                <li>no males are selected.</li>
+            </ol></p>
+        </statement>
+        
+        <answer>
+            <p>
+                <ol label = "a">
+                    <li><m>\frac{77}{300}</m></li>
+                    <li><m>\frac{77}{300}</m></li>
+                    <li><m>\frac{11}{60}</m></li>
+                    <li><m>\frac{91}{300}</m></li>
+                    <li><m>\frac{91}{300}</m></li>
+                </ol>
+            </p>
+        </answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-26">
+        <statement>
+            <p>A math class consists of 25 students, 14 female and 11 male. Three students are selected at random to participate in a probability experiment. Compute the probability that
+
+            <ol label = "a">
+                <li>a male is selected, then two females.</li>
+                <li>a female is selected, then two males.</li>
+                <li>two females are selected, then one male.</li>
+                <li>three males are selected.</li>
+                <li>three females are selected.</li>
+            </ol></p>
+        </statement>
+    </exercise>
+
+<exercise xml:id="prob-ex-27">
+        <statement>
+            <p>Giving a test to a group of students, the grades and gender are summarized below.</p>
+
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell></cell>
+                        <cell>A</cell>
+                        <cell>B</cell>
+                        <cell>C</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row>
+                        <cell>Male</cell>
+                        <cell>8</cell>
+                        <cell>18</cell>
+                        <cell>13</cell>
+                        <cell>39</cell>
+                    </row>
+                    <row>
+                        <cell>Female</cell>
+                        <cell>10</cell>
+                        <cell>4</cell>
+                        <cell>12</cell>
+                        <cell>26</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>18</cell>
+                        <cell>22</cell>
+                        <cell>25</cell>
+                        <cell>65</cell>
+                    </row>
+                </tabular>
+            </table>
+<p>
+            <ol label = "a">
+                <li>If one student was chosen at random, find the probability that the student was female and earned an A.
+                </li>
+                <li>Find the probability that a student chosen at random is female or earned a B.</li>
+            </ol></p>
+
+        </statement>
+    
+    <answer>
+        <p>
+            <ol label = "a">
+                <li><m>\frac{2}{13}</m></li>
+                <li><m>\frac{44}{65}</m></li>
+            </ol>
+        </p>
+    </answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-28">
+        <statement> 
+            <p>The table below shows the number of credit cards owned by a group of individuals.</p>
+            <table>
+                <tabular halign = "center">
+                    <row header = "yes" bottom = "minor">
+                        <cell></cell>
+                        <cell>Zero</cell>
+                        <cell>One</cell>
+                        <cell>Two or More</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row>
+                        <cell>Male</cell>
+                        <cell>9</cell>
+                        <cell>5</cell>
+                        <cell>19</cell>
+                        <cell>33</cell>
+                    </row>
+                    <row>
+                        <cell>Female</cell>
+                        <cell>18</cell>
+                        <cell>10</cell>
+                        <cell>20</cell>
+                        <cell>48</cell>
+                    </row>
+                    <row>
+                        <cell>Total</cell>
+                        <cell>27</cell>
+                        <cell>15</cell>
+                        <cell>39</cell>
+                        <cell>81</cell>
+                    </row>
+                </tabular>
+            </table>
+<p>
+            <ol label = "a">
+                <li>If one person was chosen at random, find the probability that the person was male and had two or more credit cards.</li>
+                <li>Find the probability that a person chosen at random is male or has no credit cards.</li>
+            </ol></p>
+
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-29">
+        <statement> 
+            <p>A jar contains 6 red marbles numbered 1 to 6 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is red or odd-numbered.</p>
+        </statement>
+        <answer><m>\frac{5}{7}</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-30">
+        <statement>
+            <p>A jar contains 4 red marbles numbered 1 to 4 and 10 blue marbles numbered 1 to 10. A marble is drawn at random from the jar. Find the probability the marble is blue or even-numbered.</p>
+        </statement>
+    </exercise>
+
+     <exercise xml:id="prob-ex-31">
+        <statement> 
+            <p>Compute the probability of drawing the King of hearts or a Queen from a deck of cards.</p>
+        </statement>
+         
+         <answer><m>\frac{5}{52}</m></answer>
+    </exercise>
+
+     <exercise xml:id="prob-ex-32">
+        <statement> 
+            <p>Compute the probability of drawing a King or a heart from a deck of cards.</p>
+        </statement>
+    </exercise>
+
+     <exercise xml:id="prob-ex-33">
+        <statement> 
+            <p>A jar contains 5 red marbles numbered 1 to 5 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is
+
+            <ol label = "a">
+                <li>Even-numbered given that the marble is red.</li>
+                <li>Red given that the marble is even-numbered.</li>
+            </ol></p>
+        </statement>
+         
+         <answer>
+             <p>
+                 <ol label = "a">
+                     <li><m>\frac{2}{5}</m></li>
+                     <li><m>\frac{1}{3}</m></li>
+                 </ol>
+             </p>
+         </answer>
+    </exercise>
+
+     <exercise xml:id="prob-ex-34">
+        <statement>
+            <p>A jar contains 4 red marbles numbered 1 to 4 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is
+
+            <ol label = "a">
+                <li>Odd-numbered given that the marble is blue.</li>
+                <li>Blue given that the marble is odd-numbered.</li>
+            </ol></p>
+        </statement>
+    </exercise>
+
+     <exercise xml:id="prob-ex-35">
+        <statement> 
+            <p>Compute the probability of flipping a coin and getting heads, given that the previous flip was tails.</p>
+        </statement>
+         <answer><m>\frac{1}{2}</m></answer>
+    </exercise>
+
+     <exercise xml:id="prob-ex-36">
+        <statement>
+            <p>Find the probability of rolling a “1” on a fair die, given that the last 3 rolls were all ones.</p>
+        </statement>
+    </exercise>
+
+     <exercise xml:id="prob-ex-37">
+        <statement>
+            <p>Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student speaks French, given that the student is female.</p>
+        </statement>
+         <answer><m>\frac{3}{14}</m></answer>
+    </exercise>
+
+     <exercise xml:id="prob-ex-38">
+        <statement> 
+            <p>Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student is male, given that the student speaks French.</p>
+        </statement>
+    </exercise>
+
+     <exercise xml:id="prob-ex-39">
+        <statement> 
+            <p>A certain virus infects one in every 400 people. A test used to detect the virus in a person is positive 90% of the time if the person has the virus and 10% of the time if the person does not have the virus.
+
+            <ol label = "a">
+                <li>Find the probability that a person has the virus given that they have tested positive.</li>
+                <li>Find the probability that a person does not have the virus given that they test negative.</li>
+            </ol></p>
+        </statement>
+         
+         <answer>
+             <p>
+                 <ol label = "a">
+                     <li>0.022 = 2.2%</li>
+                     <li>0.9997 = 99.97%</li>
+                 </ol>
+             </p>
+         </answer>
+    </exercise>
+
+     <exercise xml:id="prob-ex-40">
+        <statement>
+            <p>A certain virus infects one in every 2000 people. A test used to detect the virus in a person is positive 96% of the time if the person has the virus and 4% of the time if the person does not have the virus.
+            <ol label = "a">
+                <li>Find the probability that a person has the virus given that they have tested positive</li>
+                <li>Find the probability that a person does not have the virus given that they test negative.</li>
+            </ol></p>
+        </statement>
+         
+         
+    </exercise>
+
+     <exercise xml:id="prob-ex-41">
+        <statement>
+            <p>A certain disease has an incidence rate of 0.3%. If the false negative rate is 6% and the false positive rate is 4%, compute the probability that a person who tests positive actually has the disease.</p>
+        </statement>
+         
+         <answer>0.066 = 6.6%</answer>
+    </exercise>
+        
+         <exercise xml:id="prob-ex-42">
+        <statement>
+            <p>A certain disease has an incidence rate of 0.1%. If the false negative rate is 8% and the false positive rate is 3%, compute the probability that a person who tests positive actually has the disease.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-43">
+        <statement>
+            <p>A certain group of symptom-free women between the ages of 40 and 50 are randomly selected to participate in mammography screening. The incidence rate of breast cancer among such women is 0.8%. The false negative rate for the mammogram is 10%. The false positive rate is 7%. If a the mammogram results for a particular woman are positive (indicating that she has breast cancer), what is the probability that she actually has breast cancer?</p>
+        </statement>
+        <answer>0.094 = 9.4%</answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-44">
+        <statement>
+            <p>About 0.01% of men with no known risk behavior are infected with HIV. The false negative rate for the standard HIV test 0.01% and the false positive rate is also 0.01%. If a randomly selected man with no known risk behavior tests positive for HIV, what is the probability that he is actually infected with HIV?</p>
+        </statement>
+    </exercise>
+    
+        <exercise xml:id="prob-ex-45">
+            <statement>
+                <p>A license plate contains 3 randomly selected letters following by three randomly selected numbers.  What 
+                    is the probability the three letters are QQQ?</p>
+            </statement>
+            
+            <answer><m>\frac{1}{17576}</m></answer>
+        </exercise>
+        
+        <exercise xml:id="prob-ex-46">
+            <statement>
+                <p>You are taking a true/false test with 5 questions. If you randomly guess the answer on all five 
+                    questions, what is the probability that you will get 100% on the test?</p>
+            </statement>
+        </exercise>
+
+    <exercise xml:id="prob-ex-47">
+        <statement>
+            <p>You own 16 CDs. You want to randomly arrange 5 of them in a CD rack. What is the probability that the rack ends up in alphabetical order?</p>
+        </statement>
+        <answer><m>\frac{1}{120}</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-48">
+        <statement>
+            <p>A jury pool consists of 27 people, 14 men and 13 women. Compute the probability that a randomly selected jury of 12 people is all male.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-49">
+        <statement>
+            <p>In a lottery game, a player picks six numbers from 1 to 48. If 5 of the 6 numbers match those drawn, they player wins second prize. What is the probability of winning this prize?</p>
+        </statement>
+        <answer><m>\frac{252}{12271512} \approx 0.00002 \approx 0.002\%</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-50">
+        <statement>
+            <p>In a lottery game, a player picks six numbers from 1 to 48. If 4 of the 6 numbers match those drawn, they player wins third prize. What is the probability of winning this prize?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-51">
+        <statement>
+            <p>Compute the probability that a 5-card poker hand is dealt to you that contains all hearts.</p>
+        </statement>
+        <answer><m>\frac{1287}{2598960} \approx 0.0005 \approx 0.05\%</m></answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-52">
+        <statement>
+            <p>Compute the probability that a 5-card poker hand is dealt to you that contains four Aces.</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-53">
+        <statement>
+            <p>A bag contains 3 gold marbles, 6 silver marbles, and 28 black marbles. Someone offers to play this game: You randomly select on marble from the bag. If it is gold, you win $3. If it is silver, you win $2. If it is black, you lose $1. What is your expected value if you play this game?</p>
+        </statement>
+        <answer>-$0.19</answer>
+        </exercise>
+
+    <exercise xml:id="prob-ex-54">
+        <statement>
+            <p>A friend devises a game that is played by rolling a single six-sided die once. If you roll a 6, he pays you $3; if you roll a 5, he pays you nothing; if you roll a number less than 5, you pay him $1. Compute the expected value for this game. Should you play this game?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-55">
+        <statement>
+            <p>In a lottery game, a player picks six numbers from 1 to 23. If the player matches all six numbers, they win 30,000 dollars. Otherwise, they lose $1. Find the expected value of this game.</p>
+        </statement>
+        <answer>-$0.70</answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-56">
+        <statement>
+            <p>A game is played by picking two cards from a standard deck. If they are the same suit, then you win $5, otherwise you lose $1. What is the expected value of this game?</p>
+        </statement>
+    </exercise>
+
+    <exercise xml:id="prob-ex-57">
+        <statement>
+            <p>A company estimates that 0.7% of their products will fail after the original warranty period but within 2 years of the purchase, with a replacement cost of $350. If they offer a 2 year extended warranty for $48, what is the company's expected value of each warranty sold?</p>
+        </statement>
+        <answer>$45.55</answer>
+    </exercise>
+
+    <exercise xml:id="prob-ex-58">
+        <statement>
+            <p>An insurance company estimates the probability of an earthquake in the next year to be 0.0013. The average damage done by an earthquake it estimates to be $60,000. If the company offers earthquake insurance for $100, what is their expected value of the policy?</p>
+        </statement>
+    </exercise>
+        
+        <exercise xml:id="prob-ex-59">
+            <statement>
+                <p>A magazine subscription is having a contest in which the price is $80,000. If the company receives 1 
+                    million entries, what is the expected value of an entry in the contest?</p>
+            </statement>
+            <answer>$0.08</answer>
+        </exercise>
+        
+        <exercise xml:id="prob-ex-60">
+            <statement>
+                <p>In a game show, four prizes are hidden on a board that contains 20 spaces. One prize is worth $15,000, two are worth $5,000 and the other prize is worth $1,000. The remaining spaces contain no prizes. The game show host offers a guaranteed prize of $1,000 not to play this game. Use expected value to determine whether the contestant should choose the guaranteed $1,000 or play the game?</p>
+            </statement>
+
+        </exercise>
+        
+        <exercise xml:id="prob-ex-61">
+            <statement>
+                <p>A game involves drawing a single card from a standard deck of 52 cards.  If an ace is drawn you ge 
+                    $0.50; if a face card is drawn you get $0.25; if the 2 of clubs is drawn you get $1. If the cost of    
+                    playing is $0.10, should you play the game?</p>
+            </statement>
+            <answer>You should play the game, because the EV > 0. (It is $0.015)</answer>
+        </exercise>
+        
+        <exercise xml:id="prob-ex-62">
+            <statement>
+                <p>The SAT is a multiple-choice test. Each question has five possible choices. The test taker must select 
+                    one answer for each question or leave the question blank. One point is award for each correct answer 
+                    and -1/4 point is subtracted for each incorrect answer. (No points are added or subtracted for 
+                    questions that are left blank.)
+                <ol label = "a">
+                    <li>What is the expected value of randomly guessing the answer to a question</li>
+                    <li>If you can eliminate one of the choices, what is the expected value of randomly guessing
+                        among the remaining four choices? Is it a good strategy to guess? Why or why not?</li>
+                </ol></p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id="prob-ex-63">
+            <statement>
+                <p>A construction company is planning to bid on a building contract. The bid cost the company $1200. the 
+                    probability that the bid is accepted is 0.2. If the bid is accepted the company will make $40,000 minus 
+                    the cost of the bid. Find the expected value of the making the bid.</p>
+            </statement>
+            
+        </exercise>
+              
+    </exercises>
+
+    <exercises xml:id = "prob-ch-test"><title>Chapter Test</title>
+        
+        <exercise>
+            <statement>
+                <p>If we roll a pair of six-sided dice, what is the probability of a rolling
+                    <ol label = "a">
+                        <li>A total of 2?</li>
+                        <li>A total of 6?</li>
+                        <li>A total of 15?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>The size of the sample space is <m>n\left(S\right) = 6 \cdot 6 = 36</m>.  
+                            There is only one way we can get a total of 2—if 
+                            both dice show a 1.  The size of the event space is <m>n\left(E\right) = 1</m>.  
+                            
+                            <me>P\left(E\right) = \frac{1}{36}</me>
+                        </li>
+                        
+                        <li>The size of the sample space is <m>n\left(S\right) = 6 \cdot 6 = 36</m>.  
+                            There are five ways we can get a total of 6:
+                            <me>\{1, 5\}, \{2, 4\}, \{3, 3\}, \{4, 2\}, \{5, 1\}</me>
+                            <me>n\left(E\right) = 5</me>
+                            <me>P\left(E\right) = \frac{5}{36}</me>
+                        </li>
+                        
+                        <li>It is impossible to get a total of 15—the largest possible total would be <m>6 + 6 = 12</m>. 
+                            <me>P\left(E\right) = 0</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li><m>\frac{1}{36}</m></li>
+                        <li><m>\frac{5}{36}</m></li>
+                        <li><m>0</m></li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Four drivers (A, B, C, and D) are entered in a race.  The probability of driver A winning is 0.4.
+                    <ol label = "a">
+                        <li>What is the probability that A will not win?</li>
+                        <li>If the other three drivers have an equal probability of winning, what is the probability that B will 
+                            win?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            <me>P\left(E^c\right) = 1 - 0.4 = 0.6</me>
+                        </li>
+                        <li>Someone must win the race, so the probability must add up to 1.
+                            <me>P\left(A\right) + P\left(B\right) + P\left(C]\right) + P\left(D\right) = 1</me>
+                            We know that P(A) = 0.4 and the other probabilities are the same. Let P(B) = P(C) = P(D) = x,
+                            <me>0.4 + x + x + x = 1</me>
+                            <me>0.4 + 3x = 1</me>
+                            <me>3x = 0.6</me>
+                            <me>x = 0.6 \div 3 = 0.2</me>
+                            <me>P\left(B\right) = 0.2</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>0.6</li>
+                        <li>0.2</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+
+        <exercise>
+            <statement>
+                <p>If we roll a regular six-sided die twice, what is the probability that both rolls will and as even numbers?</p>
+            </statement>
+
+            <solution>
+                <p>Each roll is independent. The probability of the first roll showing an even number is:
+
+                    <me>P\left(even\right) = \frac{3}{6} = \frac{1}{2}</me>
+                    The probability of the 2nd roll showing an even number is also <m>\frac{1}{2}</m>.</p>
+
+                <p>So the probability of both die showing even numbers is:
+
+                    <me>P\left(E\right) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}</me>
+                </p>
+            </solution>
+            
+            <answer>
+                <m>\frac{1}{4}</m>
+            </answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+            <p>A pitching machine throws 70% strikes and 30% balls. If five pitches are thrown by the machine, what is the 
+                probability that all five are balls?</p>
+            </statement>
+            
+            <solution>
+                <p>The probability of the first pitch being a ball is, P(ball) = 0.3.</p>
+                <p>Each pitch is an independent event, so the probability of all five being balls is:
+
+                    <me>P\left(E\right) = 0.3 \cdot 0.3 \cdot 0.3 \cdot 0.3 \cdot 0.3 = (0.3)^5 = 0.00243</me>
+                </p>
+            </solution>
+            
+            <answer>0.00243</answer>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>A standard deck of 52 cards is shuffled and a card is drawn.
+                    <ol label = "a">
+                        <li>What is the probability of drawing a heart?</li>
+                        <li>What is the probability of drawing the King of hearts?</li>
+                        <li>What is the probability of drawing a King or a heart?</li>
+                        <li>Given that you draw a heart, what is the probability that the card is a King?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>There are 13 hearts in a deck of cards,
+                            <me>P\left(\text{heart}\right) = \frac{13}{52} = \frac{1}{4}</me>
+                        </li>
+                        
+                        <li>There is only one King of hearts in the deck,
+                            <me>P\left(\text{King and heart}\right) = \frac{1}{52}</me>
+                        </li>
+                        
+                        <li>Since we don’t want to count the King of hearts twice, use the following to compute the probability of 
+                            drawing a King or a heart.
+                            
+                            <me>P\left(\text{King or heart}\right) = P\left(\text{King}\right) + P\left(\text{heart}\right) - 
+                                P\left(\text{King and heart}\right)</me>
+                            <me>P\left(\text{King}\right) = \frac{4}{52}</me>
+                            <me>P\left(\text{heart}\right) = \frac{13}{52}</me>
+                            <me>P\left(\text{King and heart}\right) = \frac{1}{52}</me>
+                            <me>P\left(\text{King or heart}\right) = \frac{4}{52} + \frac{13}{52} - \frac{1}{52} = \frac{16}{52} = 
+                                \frac{4}{13}</me>
+                        </li>
+                        
+                        <li>If we know we have drawn a heart, n(S) = 13, because there are 13 hearts in the deck.  One of those is a 
+                        King, 
+                            <me>P\left(E\right) = \frac{1}{13}</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li><m>\frac{1}{4}</m></li>
+                        <li><m>\frac{1}{52}</m></li>
+                        <li><m>\frac{4}{13}</m></li>
+                        <li><m>\frac{1}{13}</m></li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>A standard deck of 52 cards is shuffled and two cards are drawn.
+                    <ol label = "a">
+                        <li>What is the probability that both cards are aces?</li>
+                        <li>What is the probability that both cards are hearts?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>There are <m>_{52}C_{2}</m> ways we can draw two cards from a deck.
+                            <me>_{52}C_2 = \frac{52!}{2! 50!} = \frac{52\cdot 51}{2\cdot 1} = 1326</me>
+                            There are <m>_{4}C_{2}</m> ways we can draw two aces.
+                            <me>_4C_2 = \frac{4!}{2!2!} = \frac{4\cdot 3}{2\cdot 1} = 6</me>
+                            <me>P\left(E\right) = \frac{6}{1326} = 0.0045</me>
+                        </li>
+                        
+                        <li>There are <m>1326</m> ways we can draw two cards from a deck (see previous part of the 
+                            problem). There are <m>_{13}C_2</m> ways we can draw two hearts.
+                            <me>_{13}C_2 = \frac{13!}{2!11!} = \frac{13\cdot 12}{2\cdot 1} = 78</me>
+                            <me>P\left(E\right) = \frac{78}{1326} = 0.0588</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>0.0045</li>
+                        <li>0.0588</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>A disease has an incidence rate of 1%. The test for this disease is 97% accurate. What is the probability that a 
+                    person who tests positive actually has the disease?</p>
+            </statement>
+
+            <solution>
+                <p>We can use Bayes theorem or a tree to solve this one.</p>
+                <p>Suppose we start with a population of 1,000 people.  Then <m>0.01\left(1000\right) = 10</m> people have the 
+                    disease.  The other 990 do not have the disease.</p>
+                <p>Since the test is 97% accurate, of the 10 people who have the disease:
+                    <ul>
+                        <li>0.97(10) = 9.7 will test positive</li>
+                        <li>0.03(10) = 0.3 will test negative</li>
+                    </ul>
+                </p>
+                <p>Considering the 990 who do not have the disease:
+                    <ul>
+                        <li>0.97(990) = 960.3 will test negative</li>
+                        <li>0.03(990) = 29.7 will test positive</li>
+                    </ul>
+                </p>
+                <p>There will be a total of 29.7 + 9.7 = 39.4 positive tests.  Only 9.7 of those actually have the disease.  Given 
+                    that a person tests positive, the probability of having the disease is:
+
+                    <me>P\left(E\right) = \frac{9.7}{39.4} = 0.246</me>
+                </p>
+            </solution>
+            
+            <answer>0.246</answer>
+            
+        </exercise>
+
+
+        <exercise>
+            <statement>
+            <p>Five hundred chances are sold at $5 apiece for a raffle. There is a grand prize of $500, two second prizes of $250, 
+                and five third prizes of $100. Calculate the expected value of a raffle ticket. Is this a fair game?</p>
+            </statement>
+            
+            <solution>
+                <p>The table below gives all possible outcomes, as well as their probabilities. 
+                    
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Outcome</cell>
+                                <cell>Value</cell>
+                                <cell>Probability</cell>
+                            </row>
+                            <row>
+                                <cell>Win Grand Prize</cell>
+                                <cell>500 - 5 = 495</cell>
+                                <cell><m>\frac{1}{500}</m></cell>
+                            </row>
+                            <row>
+                                <cell>Win 2nd Prize</cell>
+                                <cell>250 - 5 = 245</cell>
+                                <cell><m>\frac{2}{500}</m></cell>
+                            </row>
+                            <row>
+                                <cell>Win 3rd Prize</cell>
+                                <cell>100 - 5 = 95</cell>
+                                <cell><m>\frac{5}{500}</m></cell>
+                            </row>
+                            <row>
+                                <cell>Win Nothing</cell>
+                                <cell>-5</cell>
+                                <cell><m>\frac{492}{500}</m></cell>
+                            </row>
+                        </tabular>
+                    </table>
+
+                    <me>EV = 495 \cdot \frac{1}{500} + 245 \cdot \frac{2}{500} + 95 \cdot \frac{5}{500} - 5 
+                        \cdot \frac{492}{500} = -2</me>
+                    
+                    No, this is not a fair game because the expected value is not 0.</p>
+            </solution>
+            
+            <answer>-$2; No</answer>
+        </exercise>
+        
+
+        <exercise>
+            <statement>
+                <p>Assume that you have $10,000 to invest in stocks or bonds. The table below shows the probabilities for gains or 
+                    losses for these investments. Find the expected value (in dollars) of both a stock investment and a bond 
+                    investment. For example, there is a 0.5 probability that the stock investment will gain 7%.
+                    Then use expected value to determine whether you should invest in stocks or bonds.
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Stocks</cell>
+                                <cell>Bonds</cell>
+                            </row>
+                            <row>
+                                <cell>Gain 7%; P = 0.5</cell>
+                                <cell>Gain 3%; P = 0.6</cell>
+                            </row>
+                            <row>
+                                <cell>No Change; P = 0.2</cell>
+                                <cell>No Change; P = 0.3</cell>
+                            </row>
+                            <row>
+                                <cell>Lose 5%; P = 0.3</cell>
+                                <cell>Lose 2%; P = 0.1</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                </p>
+            </statement>
+
+
+            <solution>
+                <p>If you put your money in stocks, the following outcomes are possible,
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Outcome</cell>
+                                <cell>Value</cell>
+                                <cell>Probability</cell>
+                            </row>
+                            <row>
+                                <cell>Gain Money</cell>
+                                <cell>0.07(10,000) = 700</cell>
+                                <cell>0.5</cell>
+                            </row>
+                            <row>
+                                <cell>No Change</cell>
+                                <cell>0</cell>
+                                <cell>0.2</cell>
+                            </row>
+                            <row>
+                                <cell>Lose Money</cell>
+                                <cell>-0.05(10,000) = -500</cell>
+                                <cell>0.3</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    
+                    The expected value of investing in stocks is:
+                    
+                    <me>EV = 0.5 \cdot 700 + 0.2 \cdot 0 + 0.3 \cdot -500 = 200</me>
+                    
+                    If you put your money in bonds, the following outcomes are possible,
+                    
+                    <table>
+                        <tabular halign = "center">
+                            <row header = "yes" bottom = "minor">
+                                <cell>Outcome</cell>
+                                <cell>Value</cell>
+                                <cell>Probability</cell>
+                            </row>
+                            <row>
+                                <cell>Gain Money</cell>
+                                <cell>0.03(10,000) = 300</cell>
+                                <cell>0.6</cell>
+                            </row>
+                            <row>
+                                <cell>No Change</cell>
+                                <cell>0</cell>
+                                <cell>0.3</cell>
+                            </row>
+                            <row>
+                                <cell>Lose Money</cell>
+                                <cell>-0.02(10,000) = -200</cell>
+                                <cell>0.1</cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    
+                    The expected value of investing in stocks is:
+                    
+                    <me>EV = 0.6 \cdot 300 + 0.3 \cdot 0 + 0.1 \cdot -200 = 160</me>
+                    
+                    The EV is slightly higher when you invest in stocks, so that would be the better investment.</p>
+                
+            </solution>
+            
+            <answer><p>EV for stocks is $200 and the EV for bonds is $160. Stocks are a better investment, with the higher
+                expected value.</p>
+            </answer>
+        </exercise>
+
+
+
+        
+        
+    </exercises>
+    
+</chapter>

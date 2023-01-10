@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="example example-like"><div class="para">Gasoline consumption in the US has been increasing steadily. Consumption data from 1992 to 2004 is shown below</div> <div class="para">Find a model for this data, and use it to predict consumption in 2016. If the trend continues, when will consumption reach 200 billion gallons?</div> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.6<span class="period">.</span></span><span class="space"> </span>Gas Consumption (1992 - 2004)</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Year</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Consumption (billions of gallons</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1992</td>
+<td class="c m b0 r0 l0 t0 lines">110</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1993</td>
+<td class="c m b0 r0 l0 t0 lines">111</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1994</td>
+<td class="c m b0 r0 l0 t0 lines">113</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1995</td>
+<td class="c m b0 r0 l0 t0 lines">116</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1996</td>
+<td class="c m b0 r0 l0 t0 lines">118</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1997</td>
+<td class="c m b0 r0 l0 t0 lines">119</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1998</td>
+<td class="c m b0 r0 l0 t0 lines">123</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1999</td>
+<td class="c m b0 r0 l0 t0 lines">125</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2000</td>
+<td class="c m b0 r0 l0 t0 lines">126</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2001</td>
+<td class="c m b0 r0 l0 t0 lines">128</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2002</td>
+<td class="c m b0 r0 l0 t0 lines">131</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2003</td>
+<td class="c m b0 r0 l0 t0 lines">133</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2004</td>
+<td class="c m b0 r0 l0 t0 lines">136</td>
+</tr>
+</table></div></figure> <div class="para">Plotting this data, it appears to have an approximately linear relationship:</div> <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear2.svg" role="img" class="contained" alt="A graph containing the points: (1992, 110) (1993, 111) (1994, 113) (1995, 116) (1996, 118) (1997, 119) (1998, 123) (1999, 125) (2000, 126) (2001, 128) (2002, 131) (2003, 133) and (2004, 136). These points lie in a nearly straight line."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.7<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para">While there are more advanced statistical techniques that can be used to find an equation to model the data, to get an idea of what is happening, we can find an equation by using two pieces of the data - perhaps the data from 1993 and 2003.</div> <div class="para">Letting <span class="process-math">\(n = 0\)</span> correspond with 1993 would give <span class="process-math">\(P_0 = 111\)</span> billion gallons.</div> <div class="para">To find <span class="process-math">\(d\text{,}\)</span> we need to know how much the gas consumption increased each year, on average. From 1993 to 2003 the gas consumption increased from 111 billion gallons to 133 billion gallons, a total change of <span class="process-math">\(133 - 111 = 22\)</span> billion gallons, over 10 years. This gives us an average change of <span class="process-math">\(22 \text{ billion gallons} \div 10 \text{ year} = 2.2\)</span> billion gallons per year.</div> <div class="para logical">
+<div class="para">Equivalently,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d = \frac{\text{change in output}}{\text{change in input}}=\frac{133 - 111}{10-0}=\frac{22}{10} = 2.2
+\end{equation*}
+</div>
+</div> <div class="para">We can now write our equation in whichever form is preferred.</div> <div class="para logical">
+<div class="para">Recursive form:</div>
+<div class="displaymath process-math">
+\begin{align*}
+P_0 \amp = 111\\
+P_n \amp = P_{n-1} + 2.2
+\end{align*}
+</div>
+</div> <div class="para logical">
+<div class="para">Explicit form:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_n = 111 + 2.2n
+\end{equation*}
+</div>
+</div> <div class="para">Calculating values using the explicit form and plotting them with the original data shows how well our model fits the data.</div> <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear3.svg" role="img" class="contained" alt="When the line found, P = 111+ 2.2n is graphed with the data points, it does not line up perfectly, but fits the data closely."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.8<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para">We can now use our model to make predictions about the future, assuming that the previous trend continues unchanged. To predict the gasoline consumption in 2016:</div> <div class="para">
+<span class="process-math">\(n = 23\)</span> (2016 - 1993 = 23 years later)</div> <div class="para"><span class="process-math">\(P_{23} = 111 + 2.2(23) = 161.6\)</span></div> <div class="para">Our model predicts that the US will consume 161.6 billion gallons of gasoline in 2016 if the current trend continues.</div> <div class="para">To find when the consumption will reach 200 billion gallons, we would set <span class="process-math">\(P_n = 200\text{,}\)</span> and solve for n:</div> <div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+111 + 2.2n \amp = 200\\
+111 + 2.2n - 111 \amp = 200 - 111\\
+2.2n \amp = 89\\
+\frac{2.2n}{2.2} \amp = \frac{89}{2.2}\\
+n \amp = 40.4545
+\end{align*}
+</div></div> <div class="para">This tells us that consumption will reach 200 billion about 40 years after 1993, which would be in the year 2033.</div></article></body>
+</html>

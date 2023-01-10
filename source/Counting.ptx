@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="Counting" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Counting</title>
+    <introduction>Counting? You already know how to count or you wouldn't be taking a college-level math class, 
+        right? Well yes, but what we'll really be investigating here are ways of counting efficiently. When we 
+        get to the probability situations a bit later in this chapter we will need to count some very large 
+        numbers, like the number of possible winning lottery tickets. One way to do this would be to write down 
+        every possible set of numbers that might show up on a lottery ticket, but believe me: you don't want to 
+        do this.
+    </introduction>
+    
+    <section xml:id = "section-counting-basic"><title>Basic Counting</title>
+        <objectives>
+            <ul>
+                <li>Use lists and trees to solve counting problems.</li>
+                <li>Apply the multiplication rule for counting.</li>
+            </ul>
+        </objectives>
+        <p>We will start, however, with some more reasonable sorts of counting problems in order to develop the 
+            ideas that we will soon need.</p>
+
+        <example>
+            <p>Suppose at a particular restaurant you have three choices for an appetizer (soup, salad or 
+                breadsticks) and five choices for a main course (hamburger, sandwich, quiche, fajita or pizza). 
+                If you are allowed to choose exactly one item from each category for your meal, how many 
+                different meal options do you have?</p>
+            
+            <solution>
+                <p>Solution 1: One way to solve this problem would be to systematically list each possible meal:
+                </p>
+                <sidebyside>
+                <p>
+                    <p>soup + hamburger</p>
+                    <p>soup + fajita</p>
+                    <p>salad + sandwich</p>
+                    <p>salad + pizza</p>
+                    <p>breadsticks + quiche</p>
+                </p>
+                <p>
+                    <p>soup + sandwich</p>
+                    <p>soup + pizza</p>
+                    <p>salad + quiche</p>
+                    <p>breadsticks + hamburger</p>
+                    <p>breadsticks + fajita</p>
+                </p>
+                <p>
+                    <p>soup + quiche</p>
+                    <p>salad + hamburger</p>
+                    <p>salad + fajita</p>
+                    <p>breadsticks + sandwich</p>
+                    <p>breadsticks + pizza</p>
+                </p>
+                </sidebyside>
+                
+            <p>Assuming that we did this systematically and that we neither missed any possibilities nor listed any 
+                possibility more than once, the answer would be 15. Thus you could go to the restaurant 15 nights in a row 
+                and have a different meal each night.</p>
+
+                <p>Solution 2: Another way to solve this problem would be to list all the possibilities in a table:</p>
+                
+                <table>
+                    <tabular halign = "center">
+                        <row header = "yes" bottom = "minor">
+                            <cell>Hamburger</cell>
+                            <cell>Fajita</cell>
+                            <cell>Sandwich</cell>
+                            <cell>Pizza</cell>
+                            <cell>Quiche</cell>
+                        </row>
+                        <row>
+                            <cell>+ breadsticks</cell>
+                            <cell>+ breadsticks</cell>
+                            <cell>+ breadsticks</cell>
+                            <cell>+ breadsticks</cell>
+                            <cell>+ breadsticks</cell>
+                        </row>
+                        <row>
+                            <cell>+ soup</cell>
+                            <cell>+ soup</cell>
+                            <cell>+ soup</cell>
+                            <cell>+ soup</cell>
+                            <cell>+ soup</cell>
+                        </row>
+                        <row>
+                            <cell>+ salad</cell>
+                            <cell>+ salad</cell>
+                            <cell>+ salad</cell>
+                            <cell>+ salad</cell>
+                            <cell>+ salad</cell>
+                        </row>
+                    </tabular>
+                </table>
+
+                <p>In each of the cells in the table we could list the corresponding meal: soup + hamburger in the upper 
+                    left corner, salad + hamburger below it, etc. But if we didn't really care what the possible meals are, 
+                    only how many possible meals there are, we could just count the number of cells and arrive at an answer 
+                    of 15, which matches our answer from the first solution. (It's always good when you solve a problem two 
+                    different ways and get the same answer!)</p>
+
+                <p>Solution 3: We already have two perfectly good solutions. Why do we need a third? The first method was 
+                    not very systematic, and we might easily have made an omission. The second method was better, but 
+                    suppose that in addition to the appetizer and the main course we further complicated the problem by 
+                    adding desserts to the menu: we've used the rows of the table for the appetizers and the columns for the 
+                    main courses—where will the desserts go? We would need a third dimension, and since drawing 3-D tables 
+                    on a 2-D page or computer screen isn't terribly easy, we need a better way in case we have three 
+                    categories to choose form instead of just two.</p>
+
+                <p>So, back to the problem in the example. What else can we do? Let's draw a tree diagram. We can abbreviate 
+                    Breadsticks (B), Soup (SP), and Salad (SD) to make the tree easier to read.</p>
+                
+                <image xml:id = "counting-tree1">
+                    <description>A tree with five inital branches labled hamburger, fajita, pizza, sandwich, and 
+                        quiche. From each of those five branches is another three branches labeled B, SP, and SD.
+                    </description>
+                    <latex-image>
+                    \begin{tikzpicture}
+                        [
+                    level 1/.style = {sibling distance = 3cm},
+                    level 2/.style = {sibling distance = 1cm}
+                    ]
+                       \node {} [level distance = 2cm]
+                            child {node{Hamburger}
+                                    child{node{B}}
+                                    child{node{SP}}
+                                    child{node{SD}}
+                            } 
+                            child {node{Fajita}
+                                    child{node{B}}
+                                    child{node{SP}}
+                                    child{node{SD}}
+                            }
+                            child {node{Pizza}
+                                    child{node{B}}
+                                    child{node{SP}}
+                                    child{node{SD}}
+                            }
+                            child {node{Sandwich}
+                                    child{node{B}}
+                                    child{node{SP}}
+                                    child{node{SD}}
+                            }
+                            child {node{Quiche}
+                                    child{node{B}}
+                                    child{node{SP}}
+                                    child{node{SD}}
+                            }
+                        ;
+                        \end{tikzpicture}
+                        </latex-image>
+                </image>
+
+                <p>This is called a "tree" diagram because at each stage we branch out, like the branches on a tree. In this 
+                    case, we first drew five branches (one for each main course) and then for each of those branches we drew 
+                    three more branches (one for each appetizer). We count the number of branches at the final level and get 
+                    (surprise, surprise!) 15.</p>
+
+                <p>If we wanted, we could instead draw three branches at the first stage for the three appetizers and then 
+                    five branches (one for each main course) branching out of each of those three branches.</p>
+            </solution>
+        </example>
+
+        <p>OK, so now we know how to count possibilities using tables and tree diagrams. These methods will continue to be 
+            useful in certain cases, but imagine a game where you have two decks of cards (with 52 cards in each deck) and 
+            you select one card from each deck. Would you really want to draw a table or tree diagram to determine the 
+            number of outcomes of this game?</p>
+
+        <p>Let's go back to the previous example that involved selecting a meal from three appetizers and five main courses, 
+            and look at the second solution that used a table. Notice that one way to count the number of possible meals is 
+            simply to number each of the appropriate cells in the table, as we have done above. But another way to count the 
+            number of cells in the table would be multiply the number of rows (3) by the number of columns (5) to get 15. 
+            Notice that we could have arrived at the same result without making a table at all by simply multiplying the 
+            number of choices for the appetizer (3) by the number of choices for the main course (5). We generalize this 
+            technique as the basic counting rule:</p>
+
+        <definition><title>Basic Counting Rule</title>
+            <p>If we are asked to choose one item from each of two separate categories where there are <m>m</m> 
+                items in the first category and <m>n</m> items in the second category, then the total number of 
+                available choices is:</p>
+            
+            <me>m \cdot n</me>
+
+            <p>This is sometimes called the multiplication rule for counting.</p>
+        </definition>
+
+        <example>
+            <p>There are 21 novels and 18 volumes of poetry on a reading list for a college English course. How many 
+                different ways can a student select one novel and one volume of poetry to read during the quarter?</p>
+            <solution>
+                <p>There are 21 choices from the first category and 18 for the second, so there are
+                    <m>21\cdot 18=378</m> possibilities.</p>
+            </solution>
+        </example>
+
+        <p>The Basic Counting Rule can be extended when there are more than two categories by applying it repeatedly, as we 
+            see in the next example.</p>
+
+        <example>
+            <p>Suppose at a particular restaurant you have three choices for an appetizer (soup, salad or breadsticks), five 
+                choices for a main course (hamburger, sandwich, quiche, fajita or pasta) and two choices for dessert (pie or 
+                ice cream). If you are allowed to choose exactly one item from each category for your meal, how many 
+                different meal options do you have?</p>
+
+            <solution>
+                <p>There are 3 choices for an appetizer, 5 for the main course and 2 for dessert, so there are
+                    <m>3 \cdot 5 \cdot 2=30</m> possibilities.</p>
+            </solution>
+        </example>
+
+        <example>
+            <p>A quiz consists of 3 true-or-false questions. In how many ways can a student answer the quiz?</p>
+
+            <solution>
+                <p>There are 3 questions. Each question has 2 possible answers (true or false), so the quiz may be answered 
+                    in  <m>2\cdot 2\cdot 2=8</m> different ways. Recall that another way to write  <m>2\cdot 2 \cdot 2</m>
+                    is <m>2^3</m> which is much more compact.</p>
+            </solution>
+            </example>
+
+            <problem><title>Try It Now</title>
+                <p>Suppose at a particular restaurant you have eight choices for an appetizer, eleven choices for a main 
+                    course and five choices for dessert. If you are allowed to choose exactly one item from each category 
+                    for your meal, how many different meal options do you have?</p>
+                <answer>
+                    <m>8 \cdot 11 \cdot 5 = 440</m>
+                </answer>
+            </problem>
+        
+        <example>
+            <p>A keycode contains four-digits (from 0 to 9).  </p>
+            <p>
+            <ol label ="a">
+                <li>How many different keycodes are possible?</li>
+                
+                <li><p>How many keycodes have no repeated digits?</p></li>
+                
+                <li><p>How many keycodes only contain odd digits?</p></li>
+            </ol>
+            </p>
+            
+            <solution>
+                <p>
+                    <ol label ="a">
+                        <li><p>There are 10 possible numbers (0 to 9) that could be in each of the four digits of the
+                    keycode.</p>
+                    <me>10 \cdot 10 \cdot 10 \cdot 10 = 10^4 = 10,000</me>
+                            <p>There are 10,000 different keycodes.</p></li>
+                        <li><p>There are 10 possible numbers (0 to 9) that could be in the first digit of the
+                    keycode. The second digit has to be different from the first, so that leave 9 possible numbers
+                     for the second digit.  The third digit must be different from the first two digits, so there are 8
+                     possible numbers for the thrid digit.  Using the same reasoning, that leave 7 possibilities for the
+                     fourth digit, and:</p>
+                    <me>10 \cdot 9 \cdot 8 \cdot 7 = 5,040</me>
+                            <p>There are 5,040 keycodes that have no repeated digits.</p></li>
+                        <li><p>Since all of the digits have to be odd numbers (1, 3, 5, 7, 9), there are 5 possible numbers
+                     that could be in each of the four digits of the keycode.</p>
+                    <me>5 \cdot 5 \cdot 5 \cdot 5 = 5^4 = 625</me>
+                            <p>There are 625 keycodes that only contain odd numbers.</p></li>
+                    </ol>
+                </p>
+            </solution>
+            
+        </example>
+        
+    </section>
+    
+    <section xml:id = "section-counting-permutation">
+        <title>Permutations</title>
+        
+        <objectives>
+            <ul>
+                <li>Learn when to apply permutations to counting problems.</li>
+                <li>Apply permutations to counting problems.</li>
+            </ul>
+        </objectives>
+        
+        <p>In this section we will develop an even faster way to solve some of the problems we have already learned to solve 
+            by other means. Let's start with a couple examples.</p>
+
+    <example>
+        <p>How many different ways can the letters of the word MATH be rearranged to form a four-letter code word?</p>
+
+        <solution>
+            <p>This problem is a bit different. Instead of choosing one item from each of several different categories, we 
+                are repeatedly 
+                choosing items from the same category (the category is: the letters of the word MATH) and each time we 
+                choose an item we do 
+                not replace it, so there is one fewer choice at the next stage: we have 4 choices for the first letter (say 
+                we choose A), 
+                then 3 choices for the second (M, T and H; say we choose H), then 2 choices for the next letter (M and T; 
+                say we choose M) 
+                and only one choice at the last stage (T). Thus there are  <m>4 \cdot 3 \cdot 2 \cdot 1=24</m> ways to spell 
+                a code worth with the letters MATH.</p>
+            </solution>
+        </example>
+
+        <p>In this example, we needed to calculate <m>n \cdot \left(n - 1 \right) \cdot \left( n - 2 \right) \ldots 3 \cdot 
+            2 \cdot 1</m>.
+        This calculation shows up often in mathematics, and is called the factorial, and is notated <m>n!</m></p>
+
+        <definition><title>Factorial</title>
+        <me>n! = n \cdot \left(n - 1\right) \cdot \left(n - 2 \right) \cdot \cdots 3 \cdot 2 \cdot 1 </me>
+    </definition>
+
+    <example>
+        <p>How many ways can five different door prizes be distributed among five people?</p>
+
+        <solution>There are 5 choices of prize for the first person, 4 choices for the second, and so on. The number of ways 
+            the prizes can be distributed will be  <m>5!=5\cdot 4 \cdot 3 \cdot 2 \cdot 1=120</m> ways.</solution>
+    </example>
+
+    <p>Now we will consider some slightly different examples.</p>
+
+<example><p>A charity benefit is attended by 25 people and three gift certificates are given away as door prizes: one gift 
+    certificate is in the amount of $100, the second is worth $25 and the third is worth $10. Assuming that no person 
+    receives more than one prize, how many different ways can the three gift certificates be awarded?</p>
+
+<solution>
+    <p>Using the Basic Counting Rule, there are 25 choices for the person who receives the  $100 certificate, 24 remaining 
+        choices for the  
+        $25 certificate and 23 choices for the  $10 certificate, so there are  <m>25\cdot 24 \cdot 23=13,800</m> ways in 
+        which the prizes can 
+        be awarded.</p>
+    </solution>
+</example>
+
+<example>
+<p>Eight sprinters have made it to the Olympic finals in the 100-meter race. In how many different ways can the gold, silver 
+    and bronze medals be awarded?</p>
+
+<solution>
+<p>Using the Basic Counting Rule, there are 8 choices for the gold medal winner, 7 remaining choices for the silver, and 6 
+    for the bronze, so there are  <m>8 \cdot 7 \cdot 6=336</m> ways the three medals can be awarded to the 8 runners.</p>
+</solution>
+</example>
+
+<p>Note that in these preceding examples, the gift certificates and the Olympic medals were awarded without replacement; 
+    that is, once we have chosen a winner of the first door prize or the gold medal, they are not eligible for the other 
+    prizes. Thus, at each succeeding stage of the solution there is one fewer choice (25, then 24, then 23 in the first 
+    example; 8, then 7, then 6 in the second). Contrast this with the situation of a multiple choice test, where there might 
+    be five possible answers — A, B, C, D or E — for each question on the test.</p>
+
+<p>Note also that the order of selection was important in each example: for the three door prizes, being chosen first means 
+    that you receive substantially more money; in the Olympics example, coming in first means that you get the gold medal 
+    instead of the silver or bronze. In each case, if we had chosen the same three people in a different order there might 
+    have been a different person who received the $100 prize, or a different goldmedalist. (Contrast this with the situation 
+    where we might draw three names out of a hat to each receive a $10 gift certificate; in this case the order of selection 
+    is not important since each of the three people receive the same prize. Situations where the order is not important will 
+    be discussed in the next section.)</p>
+
+<p>We can generalize the situation in the two examples above to any problem without replacement where the order of selection 
+    is important. If we are arranging in order <m>r</m> items out of <m>n</m> possibilities (instead of 3 out of 25 or 3 out 
+    of 8 as in the previous examples), the number of possible arrangements will be given by</p>
+
+<me>n \cdot \left(n - 1 \right) \cdot \left(n - 2 \right) \cdots \left(n - r + 1\right)</me>
+
+<p>If you don't see why <m>\left( n - r + 1 \right)</m> is the right number to use for the last factor, just think back to 
+    the first example in this section, where we calculated  <m>25\cdot 24 \cdot 23</m>. In this case <m>n=25</m> and 
+    <m>r=3</m>, so <m>n - r + 1 = 
+    25 - 3 + 1 = 23</m>, which is exactly the right number for the final factor.</p>
+
+<p>Now, why would we want to use this complicated formula when it's actually easier to use the Basic Counting Rule, as we 
+    did in the first two examples? Well, we won't actually use this formula all that often, we only developed it so that we 
+    could attach a special notation and a special definition to this situation where we are choosing <m>r</m> items out of 
+    <m>n</m> possibilities <em>without replacement</em> and where the <em>order of selection is important</em>. In this 
+    situation we write:</p>
+
+<definition><title>Permutations</title>
+<p>We say that there are <m>_{n} P_{r}</m> permutations of size <m>r</m> that may be selected from among <m>n</m>
+  choices without replacement when order matters.</p>
+
+  <me>_{n} P_{r} = n \cdot \left(n - 1 \right) \cdots \left(n - r + 1\right)</me>
+
+  <p>It turns out that we can express this result more simply using factorials.</p>
+
+  <me>_{n} P_{r} = \frac{n!}{\left(n - r\right)!}</me>
+</definition>
+
+  <p>In practicality, we usually use technology rather than factorials or repeated multiplication to compute permutations.</p>
+
+  <example>
+    <p>I have nine paintings and have room to display only four of them at a time on my wall. How many different ways could I do this?</p>
+
+    <solution>
+        <p>Since we are choosing 4 paintings out of 9 without replacement where the order of selection is important there are
+            <m> _9 P_4 = 9 \cdot 8 \cdot 7 \cdot 6 = 3,024</m> permutations.
+        </p>
+    </solution>
+</example>
+
+<example>
+    <p>How many ways can a four-person executive committee (president, vice-president, secretary, treasurer) be selected from a 16-member board of directors of a non-profit organization?</p>
+
+    <solution>
+        <p>We want to choose 4 people out of 16 without replacement and where the order of selection is important. So the answer is <m>_{16} P_{4} = 16 \cdot 15 \cdot 14 \cdot 13 = 43,680</m>.
+    </p>
+</solution>
+</example>
+
+        <problem><title>Try It Now</title>
+<p>How many 5 character passwords can be made using the letters A through Z</p>
+<p>
+<ol label = "a">
+<li>if repeats are allowed</li>
+<li>if no repeats are allowed</li>
+</ol>
+            </p>
+
+<answer>
+    <p>
+    <ol label = "a">
+        <li><m>26^5=11,881,376</m></li>
+        <li><m> _{26}P_5 = 26 \cdot 25 \cdot 24 \cdot 23 \cdot 22 = 7,893,600</m></li>
+    </ol>
+    </p>
+</answer>
+        </problem>
+
+    </section>
+    
+    <section xml:id = "section-counting-combinations">
+    <title>Combinations</title>
+        
+        <objectives>
+            <ul>
+                <li>Learn when to apply combinations to counting problems.</li>
+                <li>Use combinations to solve counting problems.</li>
+            </ul>
+        </objectives>
+        
+    <p>In the previous section we considered the situation where we chose <m>r</m>
+  items out of <m>n</m>
+  possibilities without replacement and where the order of selection was important. We now consider a similar situation in which the order of selection is not important.</p>
+
+  <example>
+    <p>A charity benefit is attended by 25 people at which three $50 gift certificates are given away as door prizes. Assuming no person receives more than one prize, how many different ways can the gift certificates be awarded?</p>
+
+    <solution>
+        <p>Using the Basic Counting Rule, there are 25 choices for the first person, 24 remaining choices for the second person and 23 for the third, so there are  <m>25 \cdot 24 \cdot 23=13,800</m> ways to choose three people. Suppose for a moment that Abe is chosen first, Bea second and Cindy third; this is one of the 13,800 possible outcomes. Another way to award the prizes would be to choose Abe first, Cindy second and Bea third; this is another of the 13,800 possible outcomes. But either way Abe, Bea and Cindy each get $50, so it doesn't really matter the order in which we select them. In how many different orders can Abe, Bea and Cindy be selected? It turns out there are 6:</p>
+
+<p>ABC ACB BAC BCA CAB CBA</p>
+
+<p>How can we be sure that we have counted them all? We are really just choosing 3 people out of 3, so there are  
+    <m>3\cdot 2\cdot 1=6</m> ways to do this; we didn't really need to list them all, we can just use permutations!</p>
+
+<p>So, out of the 13,800 ways to select 3 people out of 25, six of them involve Abe, Bea and Cindy. The same argument works for any other group of three people (say Abe, Bea and David or Frank, Gloria and Hildy) so each three-person group is counted six times. Thus the 13,800 figure is six times too big. The number of distinct three-person groups will be 
+    <m>\frac{3,800}{6}=2300</m>
+</p>
+</solution>
+</example>
+
+<p>We can generalize the situation in this example above to any problem of choosing a collection of items without replacement where the order of selection is not important. If we are choosing <m>r</m> items out of <m>n</m> possibilities (instead of 3 out of 25 as in the previous examples), the number of possible choices will be given by , and we could use this formula for computation. However this situation arises so frequently that we attach a special notation and a special definition to this situation where we are choosing <m>r</m> items out of <m>n</m> possibilities without replacement where the order of selection is not important.</p>
+
+<definition><title>Combinations</title>
+<me>_{n} C_{r} = \frac{_n P_r}{r!}</me>
+<p>We say that there are <m>_n C_r</m> combinations of size <m>r</m> that may be selected from among <m>n</m> choices without replacement where order doesn’t matter.</p>
+<p>We can also write the combinations formula in terms of factorials:</p>
+<me>_n C_r= \frac{n!}{\left(n-r\right)!r!}</me>
+</definition>
+
+<example>
+<p>A group of four students is to be chosen from a 35-member class to represent the class on the student council. How many ways can this be done?</p>
+
+<solution>
+<p>Since we are choosing 4 people out of 35 without replacement where the order of selection is not important there are 
+    <m>_{35}C_{4} = \frac{35 \cdot 34 \cdot 33 \cdot 32}{4 \cdot 3 \cdot 2 \cdot 1}  = 52,360</m> combinations.</p>
+</solution>
+</example>
+
+<problem><title>Try It Now</title>
+<p>The United States Senate Appropriations Committee consists of 29 members; the Defense Subcommittee of the Appropriations Committee consists of 19 members. Disregarding party affiliation or any special seats on the Subcommittee, how many different 19-member subcommittees may be chosen from among the 29 Senators on the Appropriations Committee?</p>
+<answer>Order does not matter.  <m>_{29}C_{19}=20,030,010</m> possible subcommittees</answer>
+</problem>
+
+<p>In the preceding Try it Now problem we assumed that the 19 members of the Defense Subcommittee were chosen without regard to party affiliation. In reality this would never happen: if Republicans are in the majority they would never let a majority of Democrats sit on (and thus control) any subcommittee. (The same of course would be true if the Democrats were in control.) So let's consider the problem again, in a slightly more complicated form:</p>
+
+<example>
+<p>The United States Senate Appropriations Committee consists of 29 members, 15 Republicans and 14 Democrats. The Defense Subcommittee consists of 19 members, 10 Republicans and 9 Democrats. How many different ways can the members of the Defense Subcommittee be chosen from among the 29 Senators on the Appropriations Committee?</p>
+<solution>
+<p>In this case we need to choose 10 of the 15 Republicans and 9 of the 14 Democrats. There are <m>_{15}C_{10} = 3003</m> ways to choose the 10 Republicans and <m>_{14}C_{9} = 2002</m> ways to choose the 9 Democrats. But now what? How do we finish the problem?</p>
+<p>Suppose we listed all of the possible 10-member Republican groups on 3003 slips of red paper and all of the possible 9-member Democratic groups on 2002 slips of blue paper. How many ways can we choose one red slip and one blue slip? This is a job for the Basic Counting Rule! We are simply making one choice from the first category and one choice from the second category, just like in the restaurant menu problems from earlier.</p>
+<p>There must be <m>3003 \cdot 2002 = 6,012,006</m> possible ways of selecting the members of the Defense Subcommittee.</p>
+</solution>
+</example>
+   
+    </section>
+    
+    <exercises xml:id = "exercises-counting">
+        <exercise xml:id = "count-ex-1">
+            <statement>
+                <p>A boy owns 2 pairs of pants, 3 shirts, 8 ties, and 2 jackets. How many different outfits can he wear to school if he must wear one of each item?</p>
+            </statement>
+            
+            <answer>96</answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-2">
+            <statement>
+                <p>At a restaurant you can choose from 3 appetizers, 8 entrees, and 2 desserts. How many different three-course meals can you have?</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-3">
+            <statement>
+                <p>How many three-letter "words" can be made from 4 letters "FGHI" if</p>
+                <p>
+                <ol label = "a">
+                    <li>repetition of letters is allowed</li>
+                    <li>repetition of letters is not allowed</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>64</li>
+                        <li>24</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-4">
+            <statement>
+                <p>How many four-letter "words" can be made from 6 letters "AEBWDP" if</p>
+                <p>
+                <ol label = "a">
+                    <li>repetition of letters is allowed</li>
+                    <li>repetition of letters is not allowed</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-5">
+            <statement>
+                <p>All of the license plates in a particular state feature three letters followed by three digits (e.g. ABC 123). How many different license plate numbers are available to the state's Department of Motor Vehicles?</p>
+            </statement>
+            <answer>17,576,000</answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-6">
+            <statement>
+                <p>A computer password must be eight characters long. How many passwords are possible if only the 26 letters of the alphabet are allowed? Assume the password is not case-sensitive.</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-7">
+            <statement>
+                <p>A California license plate starts with a digit other than 0, followed by three capital letters, followed by three more digits (0 through 9)</p>
+                <p>
+                <ol label = "a">
+                    <li>How many different California license plates are possible?</li>
+                    <li>How many different California license plates start with a 5 and end with a 9?</li>
+                    <li>How many different California license plates have no repeated symbols?  (all the digits and all the letters are different)</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>158,184,000</li>
+                        <li>1,757,600</li>
+                        <li>70,761,600</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-8">
+            <statement>
+                <p>A computer password consists of four letters (A through Z) followed by a single digit (0 through 9).  Assume that the passwords are case sensitive (i.e., uppercase letters are considered different from lowercase letters).</p>
+                <p>
+                <ol label = "a">
+                    <li>How many passwords are possible?</li>
+                    <li>How many passwords start with a capital Z?</li>
+                    <li>How many passwords do not start with either z or Z?</li>
+                    <li>How many passwords have no Zs in them (uppercase or lowercase)</li>
+                </ol>
+                </p>
+            </statement>
+        </exercise>
+        
+       
+        <exercise xml:id = "count-ex-9">
+            <statement>
+                <p>A restaurant offers a menu consisting of three different appetizers, two different soups, four salads, and nine main courses</p>
+                <p>
+                <ol label = "a">
+                    <li>How fixed-price lunch consists of a choice of appetizer, salad, and main course. How many different lunch meals are possible?</li>
+                    <li>A fixed-price dinner consists of a choice of appetizer, a choice of soup or salad, and a main course.  How many different dinner meals are possible?</li>
+                </ol>
+                </p>
+            </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>108</li>
+                        <li>162</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-10">
+            <statement>
+                <p>A pianist plans to play 4 pieces at a recital. In how many ways can she arrange these pieces in the program?</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-11">
+            <statement>
+                <p>In how many ways can first, second, and third prizes be awarded in a contest with 210 contestants?</p>
+            </statement>
+            
+            <answer>9,129,120</answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-12">
+            <statement>
+                <p>Seven Olympic sprinters are eligible to compete in the 4 x 100 m relay race for the USA Olympic team. How many four-person relay teams can be selected from among the seven athletes?</p>
+            </statement>
+        </exercise>
+        
+        <exercise xml:id = "count-ex-13">
+            <statement>
+                <p>Twenty newspapers are competing for three awards in journalism. No paper can receive more than one award.
+                    In how many ways can the awards be given, if</p>
+                <p>
+                    <ol label = "a">
+                        <li>the awards are identical?</li>
+                        <li>the awards are all different?</li>
+                    </ol>
+                </p>
+                </statement>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>1,140</li>
+                        <li>6,840</li>
+                    </ol>
+                </p>
+            </answer>
+            </exercise>
+
+            <exercise xml:id = "count-ex-14">
+            <statement>
+                <p>A college is forming a task force with four faculty members and three students.  If there are
+                    20 faculty members and 10 students that are being considered, in how many ways can the task force 
+                    be formed?
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-15">
+            <statement>
+                <p>A computer user has downloaded 25 songs using an online file-sharing program and wants to create a CD-R with ten songs to use in his portable CD player. If the order that the songs are placed on the CD-R is important to him, how many different CD-Rs could he make from the 25 songs available to him?</p>
+            </statement>
+            
+            <answer>11,861,676,288,000</answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-16">
+            <statement>
+                <p>In western music, an octave is divided into 12 pitches. For the film Close Encounters of the Third Kind, director Steven Spielberg asked composer John Williams to write a five-note theme, which aliens would use to communicate with people on Earth. Disregarding rhythm and octave changes, how many five-note themes are possible if no note is repeated?</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-17">
+            <statement>
+                <p>In the early twentieth century, proponents of the Second Viennese School of musical composition (including Arnold Schönberg, Anton Webern and Alban Berg) devised the twelve-tone technique, which utilized a tone row consisting of all 12 pitches from the chromatic scale in any order, but with not pitches repeated in the row. Disregarding rhythm and octave changes, how many tone rows are possible?</p>
+            </statement>
+            
+            <answer>479,001,600</answer>
+        </exercise>
+        
+        <exercise xml:id = "count-ex-18">
+            <statement>In how many ways can 3 students be chosen from a group of 30 to attend a 
+                conference?</statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-19">
+            <statement>
+                <p>In how many ways can 4 pizza toppings be chosen from 12 available toppings?</p>
+            </statement>
+            <answer>495</answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-20">
+            <statement>
+                <p>At a baby shower 17 guests are in attendance and 5 of them are randomly selected to receive a door prize. If all 5 prizes are identical, in how many ways can the prizes be awarded?</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-21">
+            <statement>
+                <p>In the 6/50 lottery game, a player picks six numbers from 1 to 50. How many different choices does the player have if order doesn’t matter?</p>
+            </statement>
+            <answer>15,890,700</answer>
+        </exercise>
+
+        <exercise xml:id = "count-ex-22">
+            <statement>
+                <p>In a lottery daily game, a player picks three numbers from 0 to 9. How many different choices does the player have if order doesn’t matter?</p>
+            </statement>
+        </exercise>
+
+        <exercise xml:id = "count-ex-23">
+            <statement>
+                <p>A jury pool consists of 27 people. How many different ways can 11 people be chosen to serve on a jury and one additional person be chosen to serve as the jury foreman?</p>
+            </statement>
+            <answer>208,606,320</answer>
+        </exercise>
+
+
+        <exercise xml:id = "count-ex-24">
+            <statement>
+                <p>The United States Senate Committee on Commerce, Science, and Transportation consists of 23 members, 12 Republicans and 11 Democrats. The Surface Transportation and Merchant Marine Subcommittee consists of 8 Republicans and 7 Democrats. How many ways can members of the Subcommittee be chosen from the Committee?</p>
+            </statement>
+        </exercise>
+
+
+
+</exercises>
+    
+     <exercises xml:id ="ch-test-counting"><title>Chapter Test</title>
+        
+        <exercise>
+            <statement>
+                <p>In how many different ways can five people line up at the grocery store?</p>
+                
+               
+            </statement>
+             <solution>
+                    <me>5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120</me>
+                </solution>
+                
+                <answer>120</answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>How many different 4-digit pin numbers are possible?</p>
+            </statement>
+            
+            <solution><me>10 \cdot 10 \cdot 10 \cdot 10 = 10,000</me>
+            </solution>
+            
+            <answer>10,000</answer>
+        </exercise>
+        
+        <exercise>
+            <statement>
+                <p>A computer password is made up of 4 characters. Each character can be a capital letter 
+                    (A through Z), a lowercase letter (a through z), or a digit (0 through 9).
+                    <ol label = "a">
+                        <li>How many different computer passwords are possible?</li>
+                        <li>How many passwords have no repeated characters?</li>
+                        <li>How many passwords start with a letter?</li>
+                        <li>How many passwords have 2 letters and 2 digits?</li>
+                    </ol>
+                </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li><p>There are <m>26 + 26 + 10 = 62</m> characters possible for 
+                            each position in the passoword.</p>
+                            <me>62 \cdot 62 \cdot 62 \cdot 62 = 14,776,336</me></li>
+                        <li><me>62 \cdot 61 \cdot 60 \cdot 59 = 13,388,280</me></li>
+                        <li><me>52 \cdot 62 \cdot 62 \cdot 62 = 12,393,056</me></li>
+                        <li><p>There are 6 different ways a password can have two digits (D) 
+                            and two letters (L):</p>
+                            <p>L-L-D-D, L-D-L-D, L-D-D-L, D-L-D-L, D-L-L-D, D-D-L-L</p>
+                            <p>Each of these possiblities can occur in 
+                                <m>52 \cdot 52 \cdot 10 \cdot 10 = 270,400</m> ways.</p>
+                            <p>There are a total of <m>6 \cdot 270,000 = 1,622,400</m> ways
+                                we can have two letters and two digits.</p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+             <answer>
+                <p>
+                    <ol label = "a">
+                        <li>14,776,336</li>
+                        <li>13,388,280</li>
+                        <li>12,393,056</li>
+                        <li>1,622,400</li>
+                    </ol>
+                </p>
+            </answer>
+            
+        </exercise>
+        
+        <exercise>
+            <statement>
+            <p>Compute the following:
+                <ol label = "a">
+                    <li><m>_{8}P_{3}</m></li>
+                    <li><m>_{9}C_{4}</m></li>
+                </ol>
+            </p>
+            </statement>
+            
+            <solution>
+                <p>
+                    <ol label = "a">
+                        <li>
+                            <me>_nP_r = \frac{n!}{(n-r)!}</me>
+                            <me>_8P_3 = \frac{8!}{5!}=\frac{8\cdot 7 \cdot 6 \cdot 5!}{5!}=8\cdot 7 \cdot 6
+                                =336</me>
+                        </li>
+                        <li>
+                            <me>_nC_r = \frac{n!}{(n-r)!r!}</me>
+                            <me>_9C_4 = \frac{9!}{5!4!}=\frac{9\cdot 8 \cdot 7 \cdot 6 \cdot 5!}{5!4!}</me>
+                            <me>_9C_4 = \frac{9 \cdot 8 \cdot 7 \cdot 6}{4 \cdot 3 \cdot 2 \cdot 1}=
+                                \frac{3024}{24}=126</me>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+            
+            <answer>
+                <p>
+                    <ol label = "a">
+                        <li>336</li>
+                        <li>126</li>
+                    </ol>
+                </p>
+            </answer>
+        </exercise>
+        
+        <exercisegroup>
+            <introduction>Use permutations or combinations to find the following.</introduction>
+            
+            <exercise>
+                <statement>
+                    <p>Three employees are selected from a group of 25 to attend a workshop.
+                    In how many ways can this occur?</p>
+                </statement>
+                
+                <answer><m>_{25}C_{3}=2,300</m></answer>
+                
+                <solution><p>Order doesn't matter, so use combinations.
+                    <me>_{25}C_{3}=\frac{25!}{22!3!}=\frac{25 \cdot 24 \cdot 23}{3 \cdot 2 \cdot 1}=
+                        2300</me></p>
+                </solution>
+                
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>20 drivers start a race. Assuming all drivers are equally skilled, how many top five 
+                        finishes are possible?</p>
+                </statement>
+                
+                <answer><m>_{20}P_{5}=1,860,480</m></answer>
+                
+                <solution><p>Order does matter, so use permutations.
+                    <me>_{20}P_{5}=\frac{20!}{15!}=20 \cdot 19 \cdot 18 \cdot 17 \cdot 16 =
+                        1,860,480</me></p>
+                </solution>
+            </exercise>
+            
+            <exercise>
+                <statement>
+                    <p>In how many ways can you select four books from your library of 30 books to 
+                        bring on vacation?
+                    </p>
+                </statement>
+                
+                 <answer><m>_{30}C_{4}=27,405</m></answer>
+                
+                <solution><p>Order doesn't matter, so use combinations.
+                    <me>_{30}C_{4}=\frac{30!}{26!4!}=\frac{30 \cdot 29 \cdot 28 \cdot 27}{4 \cdot 3 \cdot 2 \cdot 1}=
+                        27,405</me></p>
+                </solution>
+                
+            </exercise>
+            
+        </exercisegroup>
+        
+                        
+            
+    </exercises>
+    
+    
+   
+
+
+        </chapter>

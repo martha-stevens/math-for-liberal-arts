@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para">There are two ways to approach the solution to this problem. One involves an important result in probability theory called Bayes' theorem. We will discuss this theorem a bit later, but for now we will use an alternative and, we hope, much more intuitive approach.</div> <div class="para">Let's break down the information in the problem piece by piece.</div> <div class="para">Suppose a certain disease has an incidence rate of 0.1% (that is, it afflicts 0.1% of the population). The percentage 0.1% can be converted to a decimal number by moving the decimal place two places to the left, to get 0.001. In turn, 0.001 can be rewritten as a fraction: 1/1000. This tells us that about 1 in every 1000 people has the disease. (If we wanted we could write P(disease)=0.001.)</div> <div class="para">A test has been devised to detect this disease. The test does not produce false negatives (that is, anyone who has the disease will test positive for it). This part is fairly straightforward: everyone who has the disease will test positive, or alternatively everyone who tests negative does not have the disease. (We could also say P(positive | disease)=1.)</div> <div class="para">The false positive rate is 5% (that is, about 5% of people who take the test will test positive, even though they do not have the disease). This is even more straightforward. Another way of looking at it is that of every 100 people who are tested and do not have the disease, 5 will test positive even though they do not have the disease. (We could also say that P(positive | no disease)=0.05.)</div> <div class="para">Suppose a randomly selected person takes the test and tests positive. What is the probability that this person actually has the disease? Here we want to compute P(disease|positive). We already know that P(positive|disease)=1, but remember that conditional probabilities are not equal if the conditions are switched.</div> <div class="para">Rather than thinking in terms of all these probabilities we have developed, let's create a hypothetical situation and apply the facts as set out above. First, suppose we randomly select 1000 people and administer the test. How many do we expect to have the disease? Since about 1/1000 of all people are afflicted with the disease, <span class="process-math">\(\frac{1}{1000}\)</span> of 1000 people is 1. (Now you know why we chose 1000.) Only 1 of 1000 test subjects actually has the disease; the other 999 do not.</div> <div class="para">We also know that 5% of all people who do not have the disease will test positive. There are 999 disease-free people, so we would expect <span class="process-math">\(\left(0.05\right)\left(999\right)=49.95\)</span> (so, about 50) people to test positive who do not have the disease.</div> <div class="para logical">
+<div class="para">Now back to the original question, computing P(disease|positive). There are 51 people who test positive in our example (the one unfortunate person who actually has the disease, plus the 50 people who tested positive but don't). Only one of these people has the disease, so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P\left(\text{disease} | \text{positive}\right) \approx \frac{1}{51} \approx 0.0196
+\end{equation*}
+</div>
+<div class="para">or less than 2%. Does this surprise you? This means that of all people who test positive, over 98% do not have the disease.</div>
+</div> <div class="para logical">
+<div class="para">The answer we got was slightly approximate, since we rounded 49.95 to 50. We could redo the problem with 100,000 test subjects, 100 of whom would have the disease and <span class="process-math">\(\left(0.05\right)
+\left(99,900\right)=4995\)</span> test positive but do not have the disease, so the exact probability of having the disease if you test positive is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P\left(\text{disease} | \text{positive}\right) \approx \frac{100}{5095} \approx 0.0196
+\end{equation*}
+</div>
+<div class="para">which is pretty much the same answer.</div>
+</div>
+</div></body>
+</html>
