@@ -433,18 +433,18 @@ window.MathJax = {
 </h2>
 <article class="objectives goal-like" id="objectives-39"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc">
-<li id="li-1300"><div class="para" id="p-derived-li-1300">Find the winner of an election using the instant runoff voting</div></li>
-<li id="li-1301"><div class="para" id="p-derived-li-1301">Understand whether an election has violated the monotonicity criterion</div></li>
+<li id="li-1462"><div class="para" id="p-derived-li-1462">Find the winner of an election using the instant runoff voting</div></li>
+<li id="li-1463"><div class="para" id="p-derived-li-1463">Understand whether an election has violated the monotonicity criterion</div></li>
 </ul></article><section class="introduction" id="introduction-54">Instant Runoff Voting (IRV), also called Plurality with Elimination, is a modification of the plurality method that attempts to address the issue of insincere voting.</section><section class="subsection" id="subsection-31"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">11.3.1</span> <span class="title">Instant Runoff Voting (IRV)</span>
 </h3>
-<div class="para" id="p-2584">In IRV, voting is done with preference ballots, and a preference schedule is generated. The choice with the least first-place votes is then eliminated from the election, and any votes for that candidate are redistributed to the voters’ next choice. This continues until a choice has a majority (over 50%).</div>
-<div class="para" id="p-2585">This is similar to the idea of holding runoff elections, but since every voter’s order of preference is recorded on the ballot, the runoff can be computed without requiring a second costly election.</div>
-<div class="para" id="p-2586">This voting method is used in several political elections around the world, including election of members of the Australian House of Representatives, and was used for county positions in Pierce County, Washington until it was eliminated by voters in 2009. A version of IRV is used by the International Olympic Committee to select host nations.</div>
+<div class="para" id="p-2806">In IRV, voting is done with preference ballots, and a preference schedule is generated. The choice with the least first-place votes is then eliminated from the election, and any votes for that candidate are redistributed to the voters’ next choice. This continues until a choice has a majority (over 50%).</div>
+<div class="para" id="p-2807">This is similar to the idea of holding runoff elections, but since every voter’s order of preference is recorded on the ballot, the runoff can be computed without requiring a second costly election.</div>
+<div class="para" id="p-2808">This voting method is used in several political elections around the world, including election of members of the Australian House of Representatives, and was used for county positions in Pierce County, Washington until it was eliminated by voters in 2009. A version of IRV is used by the International Olympic Committee to select host nations.</div>
 <article class="example example-like" id="example-241"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">11.3.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2587">Consider the preference schedule below, in which a company’s advertising team is voting on five different advertising slogans, called A, B, C, D, and E here for simplicity.</div> <figure class="table table-like" id="table-84"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-2809">Consider the preference schedule below, in which a company’s advertising team is voting on five different advertising slogans, called A, B, C, D, and E here for simplicity.</div> <figure class="table table-like" id="table-88"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">3</th>
@@ -499,7 +499,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">D</td>
 <td class="c m b0 r0 l0 t0 lines">C</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2588">If this was a plurality election, note that B would be the winner with 9 first-choice votes, compared to 6 for D, 4 for C, and 1 for E.</div> <div class="para" id="p-2589">There are total of <span class="process-math">\(3+4+4+6+2+1 = 20\)</span> votes. A majority would be <span class="process-math">\(11\)</span> votes. No one yet has a majority, so we proceed to elimination rounds.</div> <div class="para" id="p-2590">Round 1: We make our first elimination. Choice A has the fewest first-place votes, so we remove that choice.</div> <figure class="table table-like" id="table-85"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2810">If this was a plurality election, note that B would be the winner with 9 first-choice votes, compared to 6 for D, 4 for C, and 1 for E.</div> <div class="para" id="p-2811">There are total of <span class="process-math">\(3+4+4+6+2+1 = 20\)</span> votes. A majority would be <span class="process-math">\(11\)</span> votes. No one yet has a majority, so we proceed to elimination rounds.</div> <div class="para" id="p-2812">Round 1: We make our first elimination. Choice A has the fewest first-place votes, so we remove that choice.</div> <figure class="table table-like" id="table-89"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">3</th>
@@ -554,7 +554,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">D</td>
 <td class="c m b0 r0 l0 t0 lines">C</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2591">We then shift everyone’s choices up to fill the gaps. There is still no choice with a majority, so we eliminate again.</div> <figure class="table table-like" id="table-86"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2813">We then shift everyone’s choices up to fill the gaps. There is still no choice with a majority, so we eliminate again.</div> <figure class="table table-like" id="table-90"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">3</th>
@@ -600,7 +600,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">D</td>
 <td class="c m b0 r0 l0 t0 lines">C</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2592">Round 2: We make our second elimination. Choice E has the fewest first-place votes, so we remove that choice, shifting everyone’s options to fill the gaps.</div> <figure class="table table-like" id="table-87"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2814">Round 2: We make our second elimination. Choice E has the fewest first-place votes, so we remove that choice, shifting everyone’s options to fill the gaps.</div> <figure class="table table-like" id="table-91"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">3</th>
@@ -637,7 +637,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">D</td>
 <td class="c m b0 r0 l0 t0 lines">C</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2593">Notice that the first and fifth columns have the same preferences now, we can condense those down to one column.</div> <figure class="table table-like" id="table-88"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2815">Notice that the first and fifth columns have the same preferences now, we can condense those down to one column.</div> <figure class="table table-like" id="table-92"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">5</th>
@@ -670,7 +670,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">B</td>
 <td class="c m b0 r0 l0 t0 lines">C</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2594">Now B has 9 first-choice votes, C has 4 votes, and D has 7 votes. Still no majority, so we eliminate again.</div> <div class="para" id="p-2595">Round 3: We make our third elimination. C has the fewest votes.</div> <figure class="table table-like" id="table-89"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2816">Now B has 9 first-choice votes, C has 4 votes, and D has 7 votes. Still no majority, so we eliminate again.</div> <div class="para" id="p-2817">Round 3: We make our third elimination. C has the fewest votes.</div> <figure class="table table-like" id="table-93"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">3</th>
@@ -698,7 +698,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">D</td>
 <td class="c m b0 r0 l0 t0 lines">B</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2596">Condensing this down:</div> <figure class="table table-like" id="table-90"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2818">Condensing this down:</div> <figure class="table table-like" id="table-94"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">9</th>
@@ -714,9 +714,9 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">D</td>
 <td class="c m b0 r0 l0 t0 lines">B</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2597">D has now gained a majority, and is declared the winner under IRV.</div></article><article class="problem example-like" id="problem-71"><h4 class="heading">
+</table></div></figure> <div class="para" id="p-2819">D has now gained a majority, and is declared the winner under IRV.</div></article><article class="problem example-like" id="problem-71"><h4 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">11.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h4> <div class="para" id="p-2598">Consider again the election,</div> <figure class="table table-like" id="table-91"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</h4> <div class="para" id="p-2820">Consider again the election,</div> <figure class="table table-like" id="table-95"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">14</th>
@@ -757,8 +757,8 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">G</td>
 <td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
-</table></div></figure> <div class="para" id="p-2599">Find the winner using IRV.</div> <a href="" data-knowl="" class="id-ref answer-knowl original has-tabular" data-refid="hk-answer-357" id="answer-357"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-357"><div class="answer solution-like">
-<div class="para" id="p-2600">G has the fewest first-choice votes, so is eliminated first. The 20 voters who did not list a second choice do not get transferred - they simply get eliminated.</div> <figure class="table table-like" id="table-92"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.11<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2821">Find the winner using IRV.</div> <a href="" data-knowl="" class="id-ref answer-knowl original has-tabular" data-refid="hk-answer-581" id="answer-581"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-581"><div class="answer solution-like">
+<div class="para" id="p-2822">G has the fewest first-choice votes, so is eliminated first. The 20 voters who did not list a second choice do not get transferred - they simply get eliminated.</div> <figure class="table table-like" id="table-96"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.11<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">136</th>
@@ -774,14 +774,14 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">B</td>
 <td class="c m b0 r0 l0 t0 lines">M</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2601">McCarthy (M) now has a majority, and is declared the winner.</div>
+</table></div></figure> <div class="para" id="p-2823">McCarthy (M) now has a majority, and is declared the winner.</div>
 </div></div></article></section><section class="subsection" id="subsection-32"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">11.3.2</span> <span class="title">What's Wrong with IRV?</span>
 </h3>
 <article class="example example-like" id="example-242"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">11.3.12</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2602">Let’s return to our City Council Election. Who wins using the IRV method?</div> <figure class="table table-like" id="table-93"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.13<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-2824">Let’s return to our City Council Election. Who wins using the IRV method?</div> <figure class="table table-like" id="table-97"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.13<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">342</th>
@@ -807,7 +807,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">Elle</td>
 </tr>
 </table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-201" id="solution-201"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-201"><div class="solution solution-like">
-<div class="para" id="p-2603">In this election, Don has the smallest number of first place votes, so Don is eliminated in the first round. The 214 people who voted for Don have their votes transferred to their second choice, Key.</div> <figure class="table table-like" id="table-94"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.14<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-2825">In this election, Don has the smallest number of first place votes, so Don is eliminated in the first round. The 214 people who voted for Don have their votes transferred to their second choice, Key.</div> <figure class="table table-like" id="table-98"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.14<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">342</th>
@@ -823,11 +823,11 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">Key</td>
 <td class="c m b0 r0 l0 t0 lines">Elle</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2604">So Key is the winner under the IRV method.</div> <div class="para" id="p-2605">We can immediately notice that in this election, IRV violates the Condorcet Criterion, since we determined earlier that Don was the Condorcet winner. On the other hand, the temptation has been removed for Don’s supporters to vote for Key; they now know their vote will be transferred to Key, not simply discarded.</div>
+</table></div></figure> <div class="para" id="p-2826">So Key is the winner under the IRV method.</div> <div class="para" id="p-2827">We can immediately notice that in this election, IRV violates the Condorcet Criterion, since we determined earlier that Don was the Condorcet winner. On the other hand, the temptation has been removed for Don’s supporters to vote for Key; they now know their vote will be transferred to Key, not simply discarded.</div>
 </div></div></article><article class="example example-like" id="example-243"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">11.3.15</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2606">Consider the voting system below.</div> <figure class="table table-like" id="table-95"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.16<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-2828">Consider the voting system below.</div> <figure class="table table-like" id="table-99"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.16<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">37</th>
@@ -856,7 +856,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">Carter</td>
 <td class="c m b0 r0 l0 t0 lines">Brown</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2607">In this election, Carter would be eliminated in the first round, and Adams would be the winner with 66 votes to 34 for Brown.</div> <div class="para" id="p-2608">Now suppose that the results were announced, but election officials accidentally destroyed the ballots before they could be certified, and the votes had to be recast. Wanting to “jump on the bandwagon”, 10 of the voters who had originally voted in the order Brown, Adams, Carter change their vote to favor the presumed winner, changing those votes to Adams, Brown, Carter.</div> <figure class="table table-like" id="table-96"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.17<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-2829">In this election, Carter would be eliminated in the first round, and Adams would be the winner with 66 votes to 34 for Brown.</div> <div class="para" id="p-2830">Now suppose that the results were announced, but election officials accidentally destroyed the ballots before they could be certified, and the votes had to be recast. Wanting to “jump on the bandwagon”, 10 of the voters who had originally voted in the order Brown, Adams, Carter change their vote to favor the presumed winner, changing those votes to Adams, Brown, Carter.</div> <figure class="table table-like" id="table-100"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11.3.17<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">47</th>
@@ -885,9 +885,9 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">Carter</td>
 <td class="c m b0 r0 l0 t0 lines">Brown</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2609">In this re-vote, Brown will be eliminated in the first round, having the fewest first-place votes. After transferring votes, we find that Carter will win this election with 51 votes to Adams’ 49 votes! Even though the only vote changes made favored Adams, the change ended up costing Adams the election. This doesn’t seem right, and introduces our second fairness criterion.</div></article><article class="definition definition-like" id="definition-91"><h4 class="heading">
+</table></div></figure> <div class="para" id="p-2831">In this re-vote, Brown will be eliminated in the first round, having the fewest first-place votes. After transferring votes, we find that Carter will win this election with 51 votes to Adams’ 49 votes! Even though the only vote changes made favored Adams, the change ended up costing Adams the election. This doesn’t seem right, and introduces our second fairness criterion.</div></article><article class="definition definition-like" id="definition-91"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">11.3.18</span><span class="period">.</span><span class="space"> </span><span class="title">Monotonicity Criterion.</span>
-</h4> <div class="para" id="p-2610">If voters change their votes to increase the preference for a candidate, it should not harm that candidate’s chances of winning.</div></article><div class="para" id="p-2611">This criterion is violated by the election in the previous example. Note that even though the criterion is violated in this particular election, it does not mean that IRV always violates the criterion; just that IRV has the potential to violate the criterion in certain elections.</div></section></section></div>
+</h4> <div class="para" id="p-2832">If voters change their votes to increase the preference for a candidate, it should not harm that candidate’s chances of winning.</div></article><div class="para" id="p-2833">This criterion is violated by the election in the previous example. Note that even though the criterion is violated in this particular election, it does not mean that IRV always violates the criterion; just that IRV has the potential to violate the criterion in certain elections.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-voting-plurality.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-voting-borda.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

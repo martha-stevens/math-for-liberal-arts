@@ -36,7 +36,7 @@
         
         <p>We can often classify items as belonging to sets. If you went the library to search for a book 
             and they asked you to express your search using unions, intersections, and complements of 
-            sets, that would feel a little strange. Instead, we typically using words like “and”, “or”, and 
+            sets, that would feel a little strange. Instead, we typically use words like “and”, “or”, and 
             “not” to connect our keywords together to form a search. These words, which form the basis 
             of Boolean logic, are directly related to our set operations. (Boolean logic was developed by 
             the 19th-century English mathematician George Boole.)</p>
@@ -1774,7 +1774,7 @@ suspended, then our argument looks like this:</p>
 argument.</p>
 </example>
 
-<definition><title>Dijunctive Syllogism</title>
+<definition><title>Disjunctive Syllogism</title>
 <p>In a disjunctive syllogism, the premises consist of an or statement and the negation of
 one of the options. The conclusion is the other option. </p>
 <p>The general form is:</p>
@@ -1839,7 +1839,7 @@ might have been setting off fireworks, etc. </p>
 
 </example>
 
-<definition><title>Fallacy of the Converse</title>
+<definition><title>Fallacy of the Inverse</title>
 <p>The fallacy of the inverse occurs when a conditional and the negation of its antecedent
 are given as premises, and the negation of the consequent is the conclusion. </p>
 <p>The general form is:</p>

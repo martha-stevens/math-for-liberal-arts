@@ -432,20 +432,20 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">12.2</span> <span class="title">Jefferson's Method</span>
 </h2>
 <article class="objectives goal-like" id="objectives-45"><h3 class="heading"><span class="type">Objectives</span></h3>
-<ul class="disc"><li id="li-1418"><div class="para" id="p-derived-li-1418">Apply Jefferson's method to apportionment problems.</div></li></ul></article><div class="para" id="p-2779">Thomas Jefferson proposed a different method for apportionment. After Washington vetoed Hamilton’s method, Jefferson’s method was adopted, and used in Congress from 1791 through 1842. Jefferson, of course, had political reasons for wanting his method to be used rather than Hamilton’s. Primarily, his method favors larger states, and his own home state of Virginia was the largest in the country at the time. He would also argue that it’s the ratio of people to representatives that is the critical thing, and apportionment methods should be based on that. But the paradoxes we saw also provide mathematical reasons for concluding that Hamilton’s method isn’t so good, and while Jefferson’s method might or might not be the best one to replace it, at least we should look for other possibilities.</div>
-<div class="para" id="p-2780">The first steps of Jefferson’s method are the same as Hamilton’s method. He finds the same divisor and the same quota, and cuts off the decimal parts in the same way, giving a total number of representatives that is less than the required total. The difference is in how Jefferson resolves that difference. He says that since we ended up with an answer that is too small, our divisor must have been too big. He changes the divisor by making it smaller, finding new quotas with the new divisor, cutting off the decimal parts, and looking at the new total, until we find a divisor that produces the required total.</div>
+<ul class="disc"><li id="li-1599"><div class="para" id="p-derived-li-1599">Apply Jefferson's method to apportionment problems.</div></li></ul></article><div class="para" id="p-3016">Thomas Jefferson proposed a different method for apportionment. After Washington vetoed Hamilton’s method, Jefferson’s method was adopted, and used in Congress from 1791 through 1842. Jefferson, of course, had political reasons for wanting his method to be used rather than Hamilton’s. Primarily, his method favors larger states, and his own home state of Virginia was the largest in the country at the time. He would also argue that it’s the ratio of people to representatives that is the critical thing, and apportionment methods should be based on that. But the paradoxes we saw also provide mathematical reasons for concluding that Hamilton’s method isn’t so good, and while Jefferson’s method might or might not be the best one to replace it, at least we should look for other possibilities.</div>
+<div class="para" id="p-3017">The first steps of Jefferson’s method are the same as Hamilton’s method. He finds the same divisor and the same quota, and cuts off the decimal parts in the same way, giving a total number of representatives that is less than the required total. The difference is in how Jefferson resolves that difference. He says that since we ended up with an answer that is too small, our divisor must have been too big. He changes the divisor by making it smaller, finding new quotas with the new divisor, cutting off the decimal parts, and looking at the new total, until we find a divisor that produces the required total.</div>
 <article class="definition definition-like" id="definition-99"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Jefferson’s Method.</span>
-</h3> <div class="para logical" id="p-2781"><ol class="decimal">
-<li id="li-1419"><div class="para" id="p-derived-li-1419">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <dfn class="terminology">standard divisor</dfn>.</div></li>
-<li id="li-1420"><div class="para" id="p-derived-li-1420">Divide each state’s population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <dfn class="terminology">quota</dfn>.</div></li>
-<li id="li-1421"><div class="para" id="p-derived-li-1421">Cut off all the decimal parts of all the quotas (but don’t forget what the decimals were). These are the <dfn class="terminology">lower quotas</dfn>. Add up the remaining whole numbers. This answer will always be less than or equal to the total number of representatives.</div></li>
-<li id="li-1422"><div class="para" id="p-derived-li-1422">If the total from the previous step was less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. Continue doing this until the total is equal to the total number of representatives. The divisor we end up using is called the <dfn class="terminology">modified divisor</dfn> or <dfn class="terminology">adjusted divisor</dfn>.</div></li>
+</h3> <div class="para logical" id="p-3018"><ol class="decimal">
+<li id="li-1600"><div class="para" id="p-derived-li-1600">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <dfn class="terminology">standard divisor</dfn>.</div></li>
+<li id="li-1601"><div class="para" id="p-derived-li-1601">Divide each state’s population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <dfn class="terminology">quota</dfn>.</div></li>
+<li id="li-1602"><div class="para" id="p-derived-li-1602">Cut off all the decimal parts of all the quotas (but don’t forget what the decimals were). These are the <dfn class="terminology">lower quotas</dfn>. Add up the remaining whole numbers. This answer will always be less than or equal to the total number of representatives.</div></li>
+<li id="li-1603"><div class="para" id="p-derived-li-1603">If the total from the previous step was less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. Continue doing this until the total is equal to the total number of representatives. The divisor we end up using is called the <dfn class="terminology">modified divisor</dfn> or <dfn class="terminology">adjusted divisor</dfn>.</div></li>
 </ol></div></article><article class="example example-like" id="example-252"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">12.2.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2782">We’ll return to Delaware and apply Jefferson’s method. We begin, as we did with Hamilton’s method, by finding the quotas with the original divisor, <span class="process-math">\(21,900.82927\)</span>
-</div> <figure class="table table-like" id="table-134"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-3019">We’ll return to Delaware and apply Jefferson’s method. We begin, as we did with Hamilton’s method, by finding the quotas with the original divisor, <span class="process-math">\(21,900.82927\)</span>
+</div> <figure class="table table-like" id="table-139"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">County</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Population</th>
@@ -477,7 +477,7 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">40</td>
 </tr>
 </table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-217" id="solution-217"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-217"><div class="solution solution-like">
-<div class="para" id="p-2783">We need 41 representatives, and this divisor gives only 40. We must reduce the divisor until we get 41 representatives. Let’s try <span class="process-math">\(21,500\)</span> as the divisor:</div> <figure class="table table-like" id="table-135"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-3020">We need 41 representatives, and this divisor gives only 40. We must reduce the divisor until we get 41 representatives. Let’s try <span class="process-math">\(21,500\)</span> as the divisor:</div> <figure class="table table-like" id="table-140"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">County</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Population</th>
@@ -508,11 +508,11 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines"></td>
 <td class="c m b0 r0 l0 t0 lines">41</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2784">This gives us the required 41 representatives, so we’re done. If we had fewer than 41, we’d need to reduce the divisor more. If we had more than 41, we’d need to choose a divisor less than the original but greater than the second choice.</div> <div class="para" id="p-2785">Notice that with the new, lower divisor, the quota for New Castle County (the largest county in the state) increased by much more than those of Kent County or Sussex County.</div>
+</table></div></figure> <div class="para" id="p-3021">This gives us the required 41 representatives, so we’re done. If we had fewer than 41, we’d need to reduce the divisor more. If we had more than 41, we’d need to choose a divisor less than the original but greater than the second choice.</div> <div class="para" id="p-3022">Notice that with the new, lower divisor, the quota for New Castle County (the largest county in the state) increased by much more than those of Kent County or Sussex County.</div>
 </div></div></article><article class="example example-like" id="example-253"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">12.2.5</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-2786">We’ll apply Jefferson’s method for Rhode Island. The original divisor of <span class="process-math">\(14,034.22667\)</span> gave these results:</div> <figure class="table table-like" id="table-136"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-3023">We’ll apply Jefferson’s method for Rhode Island. The original divisor of <span class="process-math">\(14,034.22667\)</span> gave these results:</div> <figure class="table table-like" id="table-141"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">County</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Population</th>
@@ -556,8 +556,8 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines">72</td>
 </tr>
 </table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-218" id="solution-218"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-218"><div class="solution solution-like">
-<div class="para" id="p-2787">We need 75 representatives and we only have 72, so we need to use a smaller divisor. Let’s try  <span class="process-math">\(13,500\)</span>
-</div> <figure class="table table-like" id="table-137"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-3024">We need 75 representatives and we only have 72, so we need to use a smaller divisor. Let’s try  <span class="process-math">\(13,500\)</span>
+</div> <figure class="table table-like" id="table-142"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">County</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Population</th>
@@ -600,8 +600,8 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines"></td>
 <td class="c m b0 r0 l0 t0 lines">76</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2788">We’ve gone too far. We need a divisor that’s greater than <span class="process-math">\(13,500\)</span> but less than <span class="process-math">\(14,034.22667\text{.}\)</span> Let’s try <span class="process-math">\(13,700\text{.}\)</span>
-</div> <figure class="table table-like" id="table-138"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</table></div></figure> <div class="para" id="p-3025">We’ve gone too far. We need a divisor that’s greater than <span class="process-math">\(13,500\)</span> but less than <span class="process-math">\(14,034.22667\text{.}\)</span> Let’s try <span class="process-math">\(13,700\text{.}\)</span>
+</div> <figure class="table table-like" id="table-143"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.2.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">County</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Population</th>
@@ -644,8 +644,8 @@ window.MathJax = {
 <td class="c m b0 r0 l0 t0 lines"></td>
 <td class="c m b0 r0 l0 t0 lines">75</td>
 </tr>
-</table></div></figure> <div class="para" id="p-2789">This works.</div>
-</div></div></article><div class="para" id="p-2790">Notice, in comparison to Hamilton’s method, that although the results were the same, they came about in a different way, and the outcome was almost different. Providence County (the largest) almost went up to 46 representatives before Kent (which is much smaller) got to 12. Although that didn’t happen here, it can. Divisor-adjusting methods like Jefferson’s are not guaranteed to follow the quota rule!</div></section></div>
+</table></div></figure> <div class="para" id="p-3026">This works.</div>
+</div></div></article><div class="para" id="p-3027">Notice, in comparison to Hamilton’s method, that although the results were the same, they came about in a different way, and the outcome was almost different. Providence County (the largest) almost went up to 46 representatives before Kent (which is much smaller) got to 12. Although that didn’t happen here, it can. Divisor-adjusting methods like Jefferson’s are not guaranteed to follow the quota rule!</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-apportion-hamilton.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-apportion-webster.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

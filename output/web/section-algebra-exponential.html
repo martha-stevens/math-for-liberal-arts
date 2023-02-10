@@ -433,79 +433,79 @@ window.MathJax = {
 </h2>
 <article class="objectives goal-like" id="objectives-14"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc">
-<li id="li-438"><div class="para" id="p-derived-li-438">Create recursive and explicit exponential models</div></li>
-<li id="li-439"><div class="para" id="p-derived-li-439">Graph exponential models</div></li>
-<li id="li-440"><div class="para" id="p-derived-li-440">Apply exponential models to real world applications</div></li>
-</ul></article><div class="para" id="p-879">Suppose that every year, only 10% of the fish in a lake have surviving offspring. If there were 100 fish in the lake last year, there would now be 110 fish. If there were 1000 fish in the lake last year, there would now be 1100 fish. Absent any inhibiting factors, populations of people and animals tend to grow by a percent of the existing population each year.</div>
-<div class="para" id="p-880">Suppose our lake began with 1000 fish, and 10% of the fish have surviving offspring each year. Since we start with 1000 fish, <span class="process-math">\(P_0 = 1000\text{.}\)</span> How do we calculate <span class="process-math">\(P_1\text{?}\)</span> The new population will be the old population, plus an additional 10%. Symbolically:</div>
-<div class="para" id="p-881"><span class="process-math">\(P_1 = P_0 + 0.10P_0\)</span></div>
-<div class="para" id="p-882">Notice this could be condensed to a shorter form by factoring:</div>
-<div class="para" id="p-883"><span class="process-math">\(P_1 = P_0 + 0.10P_0 = 1P_0 + 0.10P_0 = (1+ 0.10)P_0 = 1.10P_0\)</span></div>
-<div class="para" id="p-884">While 10% is the growth rate, 1.10 is the growth multiplier. Notice that 1.10 can be thought of as “the original 100% plus an additional 10%”</div>
-<div class="para" id="p-885">For our fish population,</div>
-<div class="para" id="p-886"><span class="process-math">\(P_1 = 1.10(1000) = 1100\)</span></div>
-<div class="para" id="p-887">We could then calculate the population in later years:</div>
-<div class="para" id="p-888"><span class="process-math">\(P_2 = 1.10P_1 = 1.10(1100) = 1210\)</span></div>
-<div class="para" id="p-889"><span class="process-math">\(P_3 = 1.10P_2 = 1.10(1210) = 1331\)</span></div>
-<div class="para" id="p-890">Notice that in the first year, the population grew by 100 fish, in the second year, the population grew by 110 fish, and in the third year the population grew by 121 fish. While there is a constant percentage growth, the actual increase in number of fish is increasing each year.</div>
-<div class="para" id="p-891">Graphing these values we see that this growth doesn’t quite appear linear.</div>
+<li id="li-454"><div class="para" id="p-derived-li-454">Create recursive and explicit exponential models</div></li>
+<li id="li-455"><div class="para" id="p-derived-li-455">Graph exponential models</div></li>
+<li id="li-456"><div class="para" id="p-derived-li-456">Apply exponential models to real world applications</div></li>
+</ul></article><div class="para" id="p-941">Suppose that every year, only 10% of the fish in a lake have surviving offspring. If there were 100 fish in the lake last year, there would now be 110 fish. If there were 1000 fish in the lake last year, there would now be 1100 fish. Absent any inhibiting factors, populations of people and animals tend to grow by a percent of the existing population each year.</div>
+<div class="para" id="p-942">Suppose our lake began with 1000 fish, and 10% of the fish have surviving offspring each year. Since we start with 1000 fish, <span class="process-math">\(P_0 = 1000\text{.}\)</span> How do we calculate <span class="process-math">\(P_1\text{?}\)</span> The new population will be the old population, plus an additional 10%. Symbolically:</div>
+<div class="para" id="p-943"><span class="process-math">\(P_1 = P_0 + 0.10P_0\)</span></div>
+<div class="para" id="p-944">Notice this could be condensed to a shorter form by factoring:</div>
+<div class="para" id="p-945"><span class="process-math">\(P_1 = P_0 + 0.10P_0 = 1P_0 + 0.10P_0 = (1+ 0.10)P_0 = 1.10P_0\)</span></div>
+<div class="para" id="p-946">While 10% is the growth rate, 1.10 is the growth multiplier. Notice that 1.10 can be thought of as “the original 100% plus an additional 10%”</div>
+<div class="para" id="p-947">For our fish population,</div>
+<div class="para" id="p-948"><span class="process-math">\(P_1 = 1.10(1000) = 1100\)</span></div>
+<div class="para" id="p-949">We could then calculate the population in later years:</div>
+<div class="para" id="p-950"><span class="process-math">\(P_2 = 1.10P_1 = 1.10(1100) = 1210\)</span></div>
+<div class="para" id="p-951"><span class="process-math">\(P_3 = 1.10P_2 = 1.10(1210) = 1331\)</span></div>
+<div class="para" id="p-952">Notice that in the first year, the population grew by 100 fish, in the second year, the population grew by 110 fish, and in the third year the population grew by 121 fish. While there is a constant percentage growth, the actual increase in number of fish is increasing each year.</div>
+<div class="para" id="p-953">Graphing these values we see that this growth doesn’t quite appear linear.</div>
 <figure class="figure figure-like" id="figure-5"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/exponential1.svg" role="img" class="contained" alt="The points do not lie in a straight line--instead they are growing at an increasing rate."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure><div class="para" id="p-892">To get a better picture of how this percentagebased growth affects things, we need an explicit form, so we can quickly calculate values further out in the future.</div>
-<div class="para" id="p-893">Like we did for the linear model, we will start building from the recursive equation:</div>
-<div class="para" id="p-894"><span class="process-math">\(P_1 = 1.10P_0 = 1.10 \cdot 1000\)</span></div>
-<div class="para" id="p-895"><span class="process-math">\(P_2 = 1.10P_1 = 1.10 \cdot 1.10 \cdot 1000 = 1.10^2 \cdot 1000\)</span></div>
-<div class="para" id="p-896"><span class="process-math">\(P_3 = 1.10P_2 = 1.10 \cdot 1.10^2 \cdot 1000 = 1.10^3 \cdot 1000\)</span></div>
-<div class="para" id="p-897"><span class="process-math">\(P_4 = 1.10P_3 = 1.10 \cdot 1.10^3 \cdot 1000 = 1.10^4 \cdot 1000\)</span></div>
-<div class="para" id="p-898">Observing a pattern, we can generalize the explicit form to be:</div>
-<div class="para" id="p-899">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure><div class="para" id="p-954">To get a better picture of how this percentagebased growth affects things, we need an explicit form, so we can quickly calculate values further out in the future.</div>
+<div class="para" id="p-955">Like we did for the linear model, we will start building from the recursive equation:</div>
+<div class="para" id="p-956"><span class="process-math">\(P_1 = 1.10P_0 = 1.10 \cdot 1000\)</span></div>
+<div class="para" id="p-957"><span class="process-math">\(P_2 = 1.10P_1 = 1.10 \cdot 1.10 \cdot 1000 = 1.10^2 \cdot 1000\)</span></div>
+<div class="para" id="p-958"><span class="process-math">\(P_3 = 1.10P_2 = 1.10 \cdot 1.10^2 \cdot 1000 = 1.10^3 \cdot 1000\)</span></div>
+<div class="para" id="p-959"><span class="process-math">\(P_4 = 1.10P_3 = 1.10 \cdot 1.10^3 \cdot 1000 = 1.10^4 \cdot 1000\)</span></div>
+<div class="para" id="p-960">Observing a pattern, we can generalize the explicit form to be:</div>
+<div class="para" id="p-961">
 <span class="process-math">\(P_n = 1.10^n \cdot 1000\text{,}\)</span> or equivalently, <span class="process-math">\(P_n = 1000 \left(1.10 \right)^n\)</span>
 </div>
-<div class="para" id="p-900">From this, we can quickly calculate the number of fish in 10, 20, or 30 years:</div>
-<div class="para" id="p-901"><span class="process-math">\(P_{10} = 1000 \left(1.10 \right)^{10} = 2594\)</span></div>
-<div class="para" id="p-902"><span class="process-math">\(P_{20} = 1000 \left( 1.10 \right)^{20} = 6727\)</span></div>
-<div class="para" id="p-903"><span class="process-math">\(P_{30} = 1000 \left( 1.10 \right)^{30} = 17449\)</span></div>
-<div class="para" id="p-904">Adding these values to our graph reveals a shape that is definitely not linear. If our fish population had been growing linearly, by 100 fish each year, the population would have only reached 4000 in 30 years compared to almost 18000 with this percent-based growth, called exponential growth.</div>
+<div class="para" id="p-962">From this, we can quickly calculate the number of fish in 10, 20, or 30 years:</div>
+<div class="para" id="p-963"><span class="process-math">\(P_{10} = 1000 \left(1.10 \right)^{10} = 2594\)</span></div>
+<div class="para" id="p-964"><span class="process-math">\(P_{20} = 1000 \left( 1.10 \right)^{20} = 6727\)</span></div>
+<div class="para" id="p-965"><span class="process-math">\(P_{30} = 1000 \left( 1.10 \right)^{30} = 17449\)</span></div>
+<div class="para" id="p-966">Adding these values to our graph reveals a shape that is definitely not linear. If our fish population had been growing linearly, by 100 fish each year, the population would have only reached 4000 in 30 years compared to almost 18000 with this percent-based growth, called exponential growth.</div>
 <figure class="figure figure-like" id="figure-6"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/exponential2.svg" role="img" class="contained" alt="On a larger scale, the graph does not look linear. Instead it is curving upward, as the values are increasing at faster rates."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.2<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure><div class="para" id="p-905">In exponential growth, the population grows proportional to the size of the population, so as the population gets larger, the same percent growth will yield a larger numeric growth.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.2<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure><div class="para" id="p-967">In exponential growth, the population grows proportional to the size of the population, so as the population gets larger, the same percent growth will yield a larger numeric growth.</div>
 <article class="definition definition-like" id="definition-33"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential Growth.</span>
-</h3> <div class="para" id="p-906">If a quantity starts at size <span class="process-math">\(P_0\)</span> and grows by <span class="process-math">\(R\%\)</span> (written as a decimal, <span class="process-math">\(r\)</span>) every time period, then the quantity after <span class="process-math">\(n\)</span> time periods can be determined using either of these relations:</div> <div class="para" id="p-907">Recursive form:</div> <div class="para" id="p-908"><span class="process-math">\(P_n = \left(1+r \right) P_{n-1}\)</span></div> <div class="para" id="p-909">Explicit form:</div> <div class="para" id="p-910"><span class="process-math">\(P_n = P_0 \left(1+r \right)^n\)</span></div> <div class="para" id="p-911">We call <span class="process-math">\(r\)</span> the <dfn class="terminology">growth rate</dfn>.</div> <div class="para" id="p-912">The term <span class="process-math">\(\left(1+r \right)\)</span> is called the <dfn class="terminology">growth multiplier</dfn>, or common ratio.</div></article><article class="example example-like" id="example-93"><h3 class="heading">
+</h3> <div class="para" id="p-968">If a quantity starts at size <span class="process-math">\(P_0\)</span> and grows by <span class="process-math">\(R\%\)</span> (written as a decimal, <span class="process-math">\(r\)</span>) every time period, then the quantity after <span class="process-math">\(n\)</span> time periods can be determined using either of these relations:</div> <div class="para" id="p-969">Recursive form:</div> <div class="para" id="p-970"><span class="process-math">\(P_n = \left(1+r \right) P_{n-1}\)</span></div> <div class="para" id="p-971">Explicit form:</div> <div class="para" id="p-972"><span class="process-math">\(P_n = P_0 \left(1+r \right)^n\)</span></div> <div class="para" id="p-973">We call <span class="process-math">\(r\)</span> the <dfn class="terminology">growth rate</dfn>.</div> <div class="para" id="p-974">The term <span class="process-math">\(\left(1+r \right)\)</span> is called the <dfn class="terminology">growth multiplier</dfn>, or common ratio.</div></article><article class="example example-like" id="example-93"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-913">Between 2007 and 2008, Olympia, WA grew almost 3% to a population of 245 thousand people. If this growth rate was to continue, what would the population of Olympia be in 2014?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-63" id="solution-63"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-63"><div class="solution solution-like">
-<div class="para" id="p-914">As we did before, we first need to define what year will correspond to <span class="process-math">\(n = 0\text{.}\)</span> Since we know the population in 2008, it would make sense to have 2008 correspond to <span class="process-math">\(n = 0\text{,}\)</span> so <span class="process-math">\(P_0 =
+<div class="para" id="p-975">Between 2007 and 2008, Olympia, WA grew almost 3% to a population of 245 thousand people. If this growth rate was to continue, what would the population of Olympia be in 2014?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-63" id="solution-63"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-63"><div class="solution solution-like">
+<div class="para" id="p-976">As we did before, we first need to define what year will correspond to <span class="process-math">\(n = 0\text{.}\)</span> Since we know the population in 2008, it would make sense to have 2008 correspond to <span class="process-math">\(n = 0\text{,}\)</span> so <span class="process-math">\(P_0 =
 245000\text{.}\)</span> The year 2014 would then be <span class="process-math">\(n = 6\text{.}\)</span>
-</div> <div class="para" id="p-915">We know the growth rate is 3%, giving <span class="process-math">\(r = 0.03\text{.}\)</span>
-</div> <div class="para" id="p-916">Using the explicit form:</div> <div class="para" id="p-917"><span class="process-math">\(P_6 = \left( 1+0.03 \right)^6 (245,000) = 1.19405(245,000) = 292,542.25\)</span></div> <div class="para" id="p-918">The model predicts that in 2014, Olympia would have a population of about 293 thousand people.</div>
+</div> <div class="para" id="p-977">We know the growth rate is 3%, giving <span class="process-math">\(r = 0.03\text{.}\)</span>
+</div> <div class="para" id="p-978">Using the explicit form:</div> <div class="para" id="p-979"><span class="process-math">\(P_6 = \left( 1+0.03 \right)^6 (245,000) = 1.19405(245,000) = 292,542.25\)</span></div> <div class="para" id="p-980">The model predicts that in 2014, Olympia would have a population of about 293 thousand people.</div>
 </div></div></article><article class="note remark-like" id="note-16"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">4.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating Exponents on the Calculator.</span>
-</h3> <div class="para" id="p-919">To evaluate expressions like <span class="process-math">\(1.03^6\text{,}\)</span> it will be easier to use a calculator than multiply 1.03 by itself six times. Most scientific calculators have a button for exponents. It is typically either labeled like:</div> <div class="para" id="p-920">
+</h3> <div class="para" id="p-981">To evaluate expressions like <span class="process-math">\(1.03^6\text{,}\)</span> it will be easier to use a calculator than multiply 1.03 by itself six times. Most scientific calculators have a button for exponents. It is typically either labeled like:</div> <div class="para" id="p-982">
 <em class="alert">^</em> , <em class="alert"><span class="process-math">\(y^x\)</span></em>, or <em class="alert"><span class="process-math">\(x^y\)</span></em>
-</div> <div class="para" id="p-921">To evaluate 1.036 we’d type <kbd class="kbdkey">1.03</kbd> <kbd class="kbdkey">^</kbd> <kbd class="kbdkey">6</kbd>. Try it out - you should get an answer around 1.1940523.</div></article><article class="problem example-like" id="problem-23"><h3 class="heading">
+</div> <div class="para" id="p-983">To evaluate 1.036 we’d type <kbd class="kbdkey">1.03</kbd> <kbd class="kbdkey">^</kbd> <kbd class="kbdkey">6</kbd>. Try it out - you should get an answer around 1.1940523.</div></article><article class="problem example-like" id="problem-23"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">4.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h3> <div class="para" id="p-922">India is the second most populous country in the world, with a population in 2008 of about 1.14 billion people. The population is growing by about 1.34% each year. If this trend continues, what will India’s population grow to by 2020?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-130" id="answer-130"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-130"><div class="answer solution-like">Using <span class="process-math">\(n = 0\)</span> corresponding with 2008, <span class="process-math">\(P_{12} = 1.14 \left(1+0.0134 \right)^{12}\)</span> = about 1.337 billion people in 2020</div></div></article><article class="example example-like" id="example-94"><h3 class="heading">
+</h3> <div class="para" id="p-984">India is the second most populous country in the world, with a population in 2008 of about 1.14 billion people. The population is growing by about 1.34% each year. If this trend continues, what will India’s population grow to by 2020?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-192" id="answer-192"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-192"><div class="answer solution-like">Using <span class="process-math">\(n = 0\)</span> corresponding with 2008, <span class="process-math">\(P_{12} = 1.14 \left(1+0.0134 \right)^{12}\)</span> = about 1.337 billion people in 2020</div></div></article><article class="example example-like" id="example-94"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.7</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-923">A friend is using the equation <span class="process-math">\(P_n = 4600 \left(1.072 \right)^n\)</span> to predict the annual tuition at a local college. She says the formula is based on years after 2010. What does this equation tell us?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-64" id="solution-64"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-64"><div class="solution solution-like">
-<div class="para" id="p-924">In the equation, <span class="process-math">\(P_0 = 4600\text{,}\)</span> which is the starting value of the tuition when <span class="process-math">\(n = 0\text{.}\)</span> This tells us that the tuition in 2010 was $4,600.</div> <div class="para" id="p-925">The growth multiplier is 1.072, so the growth rate is 0.072, or 7.2%. This tells us that the tuition is expected to grow by 7.2% each year.</div> <div class="para" id="p-926">Putting this together, we could say that the tuition in 2010 was $4,600, and is expected to grow by 7.2% each year.</div>
+<div class="para" id="p-985">A friend is using the equation <span class="process-math">\(P_n = 4600 \left(1.072 \right)^n\)</span> to predict the annual tuition at a local college. She says the formula is based on years after 2010. What does this equation tell us?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-64" id="solution-64"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-64"><div class="solution solution-like">
+<div class="para" id="p-986">In the equation, <span class="process-math">\(P_0 = 4600\text{,}\)</span> which is the starting value of the tuition when <span class="process-math">\(n = 0\text{.}\)</span> This tells us that the tuition in 2010 was $4,600.</div> <div class="para" id="p-987">The growth multiplier is 1.072, so the growth rate is 0.072, or 7.2%. This tells us that the tuition is expected to grow by 7.2% each year.</div> <div class="para" id="p-988">Putting this together, we could say that the tuition in 2010 was $4,600, and is expected to grow by 7.2% each year.</div>
 </div></div></article><article class="example example-like" id="example-95"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.8</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-927">In 1990, the residential energy use in the US was responsible for 962 million metric tons of carbon dioxide emissions. By the year 2000, that number had risen to 1182 million metric tons. If the emissions grow exponentially and continue at the same rate, what will the emissions grow to by 2050?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-65" id="solution-65"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-65"><div class="solution solution-like">
-<div class="para" id="p-928">Similar to before, we will correspond <span class="process-math">\(n = 0\)</span> with 1990, as that is the year for the first piece of data we have. That will make <span class="process-math">\(P_0 = 962\)</span> (million metric tons of CO2). In this problem, we are not given the growth rate, but instead are given that <span class="process-math">\(P_{10} = 1182\text{.}\)</span>
-</div> <div class="para" id="p-929">When <span class="process-math">\(n = 10\text{,}\)</span> the explicit equation looks like:</div> <div class="para" id="p-930"><span class="process-math">\(P_{10} = P_0 \left(1+r \right)^{10}\)</span></div> <div class="para" id="p-931">We know the value for <span class="process-math">\(P_0\text{,}\)</span> so we can put that into the equation:</div> <div class="para" id="p-932"><span class="process-math">\(P_{10} = 962 \left(1+r \right)^{10}\)</span></div> <div class="para" id="p-933">We also know that <span class="process-math">\(P_{10} = 1182\text{,}\)</span> so substituting that in, we get</div> <div class="para" id="p-934"><span class="process-math">\(1182 = 962 \left(1+r \right)^{10}\)</span></div> <div class="para" id="p-935">We can now solve this equation for the growth rate, r. Start by dividing by 962.</div>
+<div class="para" id="p-989">In 1990, the residential energy use in the US was responsible for 962 million metric tons of carbon dioxide emissions. By the year 2000, that number had risen to 1182 million metric tons. If the emissions grow exponentially and continue at the same rate, what will the emissions grow to by 2050?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-65" id="solution-65"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-65"><div class="solution solution-like">
+<div class="para" id="p-990">Similar to before, we will correspond <span class="process-math">\(n = 0\)</span> with 1990, as that is the year for the first piece of data we have. That will make <span class="process-math">\(P_0 = 962\)</span> (million metric tons of CO2). In this problem, we are not given the growth rate, but instead are given that <span class="process-math">\(P_{10} = 1182\text{.}\)</span>
+</div> <div class="para" id="p-991">When <span class="process-math">\(n = 10\text{,}\)</span> the explicit equation looks like:</div> <div class="para" id="p-992"><span class="process-math">\(P_{10} = P_0 \left(1+r \right)^{10}\)</span></div> <div class="para" id="p-993">We know the value for <span class="process-math">\(P_0\text{,}\)</span> so we can put that into the equation:</div> <div class="para" id="p-994"><span class="process-math">\(P_{10} = 962 \left(1+r \right)^{10}\)</span></div> <div class="para" id="p-995">We also know that <span class="process-math">\(P_{10} = 1182\text{,}\)</span> so substituting that in, we get</div> <div class="para" id="p-996"><span class="process-math">\(1182 = 962 \left(1+r \right)^{10}\)</span></div> <div class="para" id="p-997">We can now solve this equation for the growth rate, r. Start by dividing by 962.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{1182}{962} = \left( 1 + r \right)^{10}
 \end{equation*}
 </div>
-<div class="para" id="p-936">Then take the 10th root of both sides:</div>
+<div class="para" id="p-998">Then take the 10th root of both sides:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sqrt[10]{\frac{1182}{962}}=1 + r
 \end{equation*}
 </div>
-<div class="para" id="p-937">Finally subtract 1 from both sides</div>
+<div class="para" id="p-999">Finally subtract 1 from both sides</div>
 <div class="displaymath process-math">
 \begin{equation*}
 r = \sqrt[10]{\frac{1182}{962}}-1
@@ -516,32 +516,32 @@ r = \sqrt[10]{\frac{1182}{962}}-1
 r = 0.0208 =  2.08\%
 \end{equation*}
 </div>
-<div class="para" id="p-938">So if the emissions are growing exponentially, they are growing by about 2.08% per year. We can now predict the emissions in 2050 by finding <span class="process-math">\(P_{60}\)</span>
-</div> <div class="para" id="p-939">
+<div class="para" id="p-1000">So if the emissions are growing exponentially, they are growing by about 2.08% per year. We can now predict the emissions in 2050 by finding <span class="process-math">\(P_{60}\)</span>
+</div> <div class="para" id="p-1001">
 <span class="process-math">\(P_{60} = 962\left( 1+0.0208n \right)^{60} = 3308.4\)</span> million metric tons of CO2 in 2050</div>
 </div></div></article><article class="note remark-like" id="note-17"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">4.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Rounding.</span>
-</h3> <div class="para" id="p-940">As a note on rounding, notice that if we had rounded the growth rate to 2.1%, our calculation for the emissions in 2050 would have been 3347. Rounding to 2% would have changed our result to 3156. A very small difference in the growth rates gets magnified greatly in exponential growth. For this reason, it is recommended to round the growth rate as little as possible.</div> <div class="para" id="p-941">If you need to round, keep at least three significant digits - numbers after any leading zeros. So 0.4162 could be reasonably rounded to 0.416. A growth rate of 0.001027 could be reasonably rounded to 0.00103.</div></article><article class="note remark-like" id="note-18"><h3 class="heading">
+</h3> <div class="para" id="p-1002">As a note on rounding, notice that if we had rounded the growth rate to 2.1%, our calculation for the emissions in 2050 would have been 3347. Rounding to 2% would have changed our result to 3156. A very small difference in the growth rates gets magnified greatly in exponential growth. For this reason, it is recommended to round the growth rate as little as possible.</div> <div class="para" id="p-1003">If you need to round, keep at least three significant digits - numbers after any leading zeros. So 0.4162 could be reasonably rounded to 0.416. A growth rate of 0.001027 could be reasonably rounded to 0.00103.</div></article><article class="note remark-like" id="note-18"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">4.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating Roots on the calculator.</span>
-</h3> <div class="para" id="p-942">In the previous example, we had to calculate the 10th root of a number. This is different than taking the basic square root, <span class="process-math">\(\sqrt{}\text{.}\)</span> Many scientific calculators have a button for general roots. It is typically labeled like:</div> <div class="para" id="p-943">
+</h3> <div class="para" id="p-1004">In the previous example, we had to calculate the 10th root of a number. This is different than taking the basic square root, <span class="process-math">\(\sqrt{}\text{.}\)</span> Many scientific calculators have a button for general roots. It is typically labeled like:</div> <div class="para" id="p-1005">
 <span class="process-math">\(\sqrt[n]{}\text{,}\)</span> <span class="process-math">\(\sqrt[x]{}\text{,}\)</span> or <span class="process-math">\(\sqrt[y]{x}\)</span>
-</div> <div class="para" id="p-944">To evaluate the 3rd root of 8, for example, we’d either type 3 <span class="process-math">\(\sqrt[n]{}\)</span> 8, or 8 <span class="process-math">\(\sqrt[n]{}\)</span> 3, depending on the calculator. Try it on yours to see which to use - you should get an answer of 2.</div> <div class="para" id="p-945">If your calculator does not have a general root button, all is not lost. You can instead use the property of exponents which states that <span class="process-math">\(\sqrt[n]{a} = a^{1/n}\)</span>
-</div> <div class="para" id="p-946">So, to compute the 3rd root of 8, you could use your calculator’s exponent key to evaluate <span class="process-math">\(8^{1/3}\text{.}\)</span> To do this, type:</div> <div class="para" id="p-947">8 ^ (1/3)</div> <div class="para" id="p-948">The parentheses tell the calculator to divide 1/3 before doing the exponent.</div></article><article class="problem example-like" id="problem-24"><h3 class="heading">
+</div> <div class="para" id="p-1006">To evaluate the 3rd root of 8, for example, we’d either type 3 <span class="process-math">\(\sqrt[n]{}\)</span> 8, or 8 <span class="process-math">\(\sqrt[n]{}\)</span> 3, depending on the calculator. Try it on yours to see which to use - you should get an answer of 2.</div> <div class="para" id="p-1007">If your calculator does not have a general root button, all is not lost. You can instead use the property of exponents which states that <span class="process-math">\(\sqrt[n]{a} = a^{1/n}\)</span>
+</div> <div class="para" id="p-1008">So, to compute the 3rd root of 8, you could use your calculator’s exponent key to evaluate <span class="process-math">\(8^{1/3}\text{.}\)</span> To do this, type:</div> <div class="para" id="p-1009">8 ^ (1/3)</div> <div class="para" id="p-1010">The parentheses tell the calculator to divide 1/3 before doing the exponent.</div></article><article class="problem example-like" id="problem-24"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">4.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h3> <div class="para" id="p-949">The number of users on a social networking site was 45 thousand in February when they officially went public, and grew to 60 thousand by October. If the site is growing exponentially, and growth continues at the same rate, how many users should they expect two years after they went public?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-131" id="answer-131"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-131"><div class="answer solution-like">106.63 thousand users</div></div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-66" id="solution-66"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-66"><div class="solution solution-like">
-<div class="para" id="p-950">Here we will measure n in months rather than years, with <span class="process-math">\(n = 0\)</span> corresponding to the February when they went public. This gives <span class="process-math">\(P_0 = 45\)</span> thousand. October is 8 months later, so <span class="process-math">\(P_8 = 60\)</span> thousand.</div>
+</h3> <div class="para" id="p-1011">The number of users on a social networking site was 45 thousand in February when they officially went public, and grew to 60 thousand by October. If the site is growing exponentially, and growth continues at the same rate, how many users should they expect two years after they went public?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-193" id="answer-193"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-193"><div class="answer solution-like">106.63 thousand users</div></div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-66" id="solution-66"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-66"><div class="solution solution-like">
+<div class="para" id="p-1012">Here we will measure n in months rather than years, with <span class="process-math">\(n = 0\)</span> corresponding to the February when they went public. This gives <span class="process-math">\(P_0 = 45\)</span> thousand. October is 8 months later, so <span class="process-math">\(P_8 = 60\)</span> thousand.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 60 = 45 \left( 1 + r \right)^8
 \end{equation*}
 </div>
-<div class="para" id="p-951">Divide both sides by 45:</div>
+<div class="para" id="p-1013">Divide both sides by 45:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{60}{45} = \left( 1 + r \right)^8
 \end{equation*}
 </div>
-<div class="para" id="p-952">Take the 8th root of both sides:</div>
+<div class="para" id="p-1014">Take the 8th root of both sides:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sqrt[8]{\frac{60}{45}}=1 + r
@@ -557,13 +557,13 @@ r = 0.0208 =  2.08\%
 0.0366 = r
 \end{equation*}
 </div>
-<div class="para" id="p-953">Since r = 0.0366, or 3.66%, the general explicit equation is</div>
+<div class="para" id="p-1015">Since r = 0.0366, or 3.66%, the general explicit equation is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_n = 45 \left(1.0366\right)^n
 \end{equation*}
 </div>
-<div class="para" id="p-954">Predicting 24 months (2 years) after they went public:</div>
+<div class="para" id="p-1016">Predicting 24 months (2 years) after they went public:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_{24} = 45 \left(1.0366 \right)^{24} = 106.63
@@ -572,26 +572,26 @@ P_{24} = 45 \left(1.0366 \right)^{24} = 106.63
 </div></div></article><article class="example example-like" id="example-96"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.12</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-955">Looking back at the last example, for the sake of comparison, what would the carbon emissions be in 2050 if emissions grow linearly at the same rate?</div> <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-67" id="solution-67"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-67"><div class="solution solution-like">
-<div class="para" id="p-956">Again we will get <span class="process-math">\(n = 0\)</span> correspond with 1990, giving <span class="process-math">\(P_0 = 962\text{.}\)</span> To find <span class="process-math">\(d\text{,}\)</span> we could take the same approach as earlier, noting that the emissions increased by 220 million metric tons in 10 years, giving a common difference of 22 million metric tons each year.</div> <div class="para" id="p-957">Alternatively, we could use an approach similar to that which we used to find the exponential equation. When <span class="process-math">\(n = 10\text{,}\)</span> the explicit linear equation looks like:</div>
+<div class="para" id="p-1017">Looking back at the last example, for the sake of comparison, what would the carbon emissions be in 2050 if emissions grow linearly at the same rate?</div> <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-67" id="solution-67"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-67"><div class="solution solution-like">
+<div class="para" id="p-1018">Again we will get <span class="process-math">\(n = 0\)</span> correspond with 1990, giving <span class="process-math">\(P_0 = 962\text{.}\)</span> To find <span class="process-math">\(d\text{,}\)</span> we could take the same approach as earlier, noting that the emissions increased by 220 million metric tons in 10 years, giving a common difference of 22 million metric tons each year.</div> <div class="para" id="p-1019">Alternatively, we could use an approach similar to that which we used to find the exponential equation. When <span class="process-math">\(n = 10\text{,}\)</span> the explicit linear equation looks like:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_{10} = P_0 + 10d
 \end{equation*}
 </div>
-<div class="para" id="p-958">We know the value for <span class="process-math">\(P_0\text{,}\)</span> so we can put that into the equation:</div>
+<div class="para" id="p-1020">We know the value for <span class="process-math">\(P_0\text{,}\)</span> so we can put that into the equation:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_{10} = 962 + 10d
 \end{equation*}
 </div>
-<div class="para" id="p-959">Since we know that <span class="process-math">\(P_{10} = 1182\text{,}\)</span> substituting that in we get</div>
+<div class="para" id="p-1021">Since we know that <span class="process-math">\(P_{10} = 1182\text{,}\)</span> substituting that in we get</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1182 = 962 + 10d
 \end{equation*}
 </div>
-<div class="para" id="p-960">We can now solve this equation for the common difference, d.</div>
+<div class="para" id="p-1022">We can now solve this equation for the common difference, d.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1182 - 962 = 10d
@@ -607,12 +607,12 @@ P_{10} = 962 + 10d
 d = 22
 \end{equation*}
 </div>
-<div class="para" id="p-961">This tells us that if the emissions are changing linearly, they are growing by 22 million metric tons each year.</div> <div class="para" id="p-962">Predicting the emissions in 2050,<span class="process-math">\(P_{60} = 962 + 22(60) = 2282\)</span> million metric tons.</div> <div class="para" id="p-963">You will notice that this number is substantially smaller than the prediction from the exponential growth model. Calculating and plotting more values helps illustrate the differences.</div> <figure class="figure figure-like" id="figure-7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/exponential3.svg" role="img" class="contained" alt="The linear and exponential models are closer together when n is small. But as n gets larger, it becomes clear that the exponential function is growing at a faster rate."></div>
+<div class="para" id="p-1023">This tells us that if the emissions are changing linearly, they are growing by 22 million metric tons each year.</div> <div class="para" id="p-1024">Predicting the emissions in 2050,<span class="process-math">\(P_{60} = 962 + 22(60) = 2282\)</span> million metric tons.</div> <div class="para" id="p-1025">You will notice that this number is substantially smaller than the prediction from the exponential growth model. Calculating and plotting more values helps illustrate the differences.</div> <figure class="figure figure-like" id="figure-7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/exponential3.svg" role="img" class="contained" alt="The linear and exponential models are closer together when n is small. But as n gets larger, it becomes clear that the exponential function is growing at a faster rate."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.13<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure>
-</div></div></article><div class="para" id="p-964">So how do we know which growth model to use when working with data? There are two approaches which should be used together whenever possible:</div>
-<div class="para logical" id="p-965"><ol class="decimal">
-<li id="li-441"><div class="para" id="p-derived-li-441">Find more than two pieces of data. Plot the values, and look for a trend. Does the data appear to be changing like a line, or do the values appear to be curving upwards?</div></li>
-<li id="li-442"><div class="para" id="p-derived-li-442">Consider the factors contributing to the data. Are they things you would expect to change linearly or exponentially? For example, in the case of carbon emissions, we could expect that, absent other factors, they would be tied closely to population values, which tend to change exponentially.</div></li>
+</div></div></article><div class="para" id="p-1026">So how do we know which growth model to use when working with data? There are two approaches which should be used together whenever possible:</div>
+<div class="para logical" id="p-1027"><ol class="decimal">
+<li id="li-457"><div class="para" id="p-derived-li-457">Find more than two pieces of data. Plot the values, and look for a trend. Does the data appear to be changing like a line, or do the values appear to be curving upwards?</div></li>
+<li id="li-458"><div class="para" id="p-derived-li-458">Consider the factors contributing to the data. Are they things you would expect to change linearly or exponentially? For example, in the case of carbon emissions, we could expect that, absent other factors, they would be tied closely to population values, which tend to change exponentially.</div></li>
 </ol></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-algebra-linear.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-algebra-variation.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

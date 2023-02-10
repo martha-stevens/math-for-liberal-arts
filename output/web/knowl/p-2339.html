@@ -12,54 +12,14 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical"><ol class="lower-alpha">
-<li><div class="para">There are 13 hearts in a deck of cards,<div class="displaymath process-math">
-\begin{equation*}
-P\left(\text{heart}\right) = \frac{13}{52} = \frac{1}{4}
-\end{equation*}
-</div>
-</div></li>
-<li><div class="para">There is only one King of hearts in the deck,<div class="displaymath process-math">
-\begin{equation*}
-P\left(\text{King and heart}\right) = \frac{1}{52}
-\end{equation*}
-</div>
-</div></li>
-<li><div class="para">Since we don’t want to count the King of hearts twice, use the following to compute the probability of drawing a King or a heart.<div class="displaymath process-math">
-\begin{equation*}
-P\left(\text{King or heart}\right) = P\left(\text{King}\right) + P\left(\text{heart}\right) - 
-P\left(\text{King and heart}\right)
-\end{equation*}
-</div>
+<div class="para logical">
+<div class="para">In order to compute the probability, we need to count the total number of ways six numbers can be drawn, and the number of ways the six numbers on the player’s ticket could match the six numbers drawn from the machine. Since there is no stipulation that the numbers be in any particular order, the number of possible outcomes of the lottery drawing is <span class="process-math">\(_{48}C_{6}=12,271,512\text{.}\)</span> Of these possible outcomes, only one would match all six numbers on the player’s ticket, so the probability of winning the grand prize is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P\left(\text{King}\right) = \frac{4}{52}
+\frac{_{6}C_{6}}{_{48}C_{6}}=\frac{1}{12271512}\approx 0.0000000815
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-P\left(\text{heart}\right) = \frac{13}{52}
-\end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-P\left(\text{King and heart}\right) = \frac{1}{52}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P\left(\text{King or heart}\right) = \frac{4}{52} + \frac{13}{52} - \frac{1}{52} = \frac{16}{52} = 
-\frac{4}{13}
-\end{equation*}
-</div>
-</div></li>
-<li><div class="para">If we know we have drawn a heart, n(S) = 13, because there are 13 hearts in the deck.  One of those is a King,<div class="displaymath process-math">
-\begin{equation*}
-P\left(E\right) = \frac{1}{13}
-\end{equation*}
-</div>
-</div></li>
-</ol></div>
-<span class="incontext"><a href="prob-ch-test.html#p-2339" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-prob-counting.html#p-2339" class="internal">in-context</a></span>
 </body>
 </html>

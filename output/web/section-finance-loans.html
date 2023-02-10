@@ -433,38 +433,38 @@ window.MathJax = {
 </h2>
 <article class="objectives goal-like" id="objectives-19"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc">
-<li id="li-552"><div class="para" id="p-derived-li-552">Solve applications involving amortized loans</div></li>
-<li id="li-553"><div class="para" id="p-derived-li-553">Create amortization schedules</div></li>
-<li id="li-554"><div class="para" id="p-derived-li-554">Compute the remaining loan balance</div></li>
+<li id="li-597"><div class="para" id="p-derived-li-597">Solve applications involving amortized loans</div></li>
+<li id="li-598"><div class="para" id="p-derived-li-598">Create amortization schedules</div></li>
+<li id="li-599"><div class="para" id="p-derived-li-599">Compute the remaining loan balance</div></li>
 </ul></article><section class="introduction" id="introduction-38">In the last section, you learned about payout annuities. In this section, you will learn about conventional loans (also called amortized loans or installment loans). Examples include auto loans and home mortgages. These techniques do not apply to payday loans, add-on loans, or other loan types where the interest is calculated up front.</section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.1</span> <span class="title">Loans</span>
 </h3>
-<div class="para" id="p-1236">One great thing about loans is that they use exactly the same formula as a payout annuity. To see why, imagine that you had $10,000 invested at a bank, and started taking out payments while earning interest as part of a payout annuity, and after 5 years your balance was zero. Flip that around, and imagine that you are acting as the bank, and a car lender is acting as you. The car lender invests $10,000 in you. Since you’re acting as the bank, you pay interest. The car lender takes payments until the balance is zero.</div>
+<div class="para" id="p-1324">One great thing about loans is that they use exactly the same formula as a payout annuity. To see why, imagine that you had $10,000 invested at a bank, and started taking out payments while earning interest as part of a payout annuity, and after 5 years your balance was zero. Flip that around, and imagine that you are acting as the bank, and a car lender is acting as you. The car lender invests $10,000 in you. Since you’re acting as the bank, you pay interest. The car lender takes payments until the balance is zero.</div>
 <article class="definition definition-like" id="definition-42"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Loans Formula.</span>
-</h4> <div class="para" id="p-1237">The loans formula is</div>
+</h4> <div class="para" id="p-1325">The loans formula is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_0=\frac{d\left(1 - \left(1+\frac{r}{k}\right)^{-Nk}\right)}{\left(\frac{r}{k}\right)}
 \end{equation*}
 </div>
-<div class="para" id="p-1238">
-<span class="process-math">\(P_0\)</span> is the balance in the account at the beginning (the principal, or amount of the loan).</div> <div class="para" id="p-1239">
-<span class="process-math">\(d\)</span> is your loan payment (your monthly payment, annual payment, etc)</div> <div class="para" id="p-1240">
-<span class="process-math">\(r\)</span> is the annual interest rate in decimal form.</div> <div class="para" id="p-1241">
-<span class="process-math">\(k\)</span> is the number of compounding periods in one year.</div> <div class="para" id="p-1242">
-<span class="process-math">\(N\)</span> is the length of the loan, in years</div></article><div class="para" id="p-1243">Like before, the compounding frequency is not always explicitly given, but is determined by how often you make payments.</div>
+<div class="para" id="p-1326">
+<span class="process-math">\(P_0\)</span> is the balance in the account at the beginning (the principal, or amount of the loan).</div> <div class="para" id="p-1327">
+<span class="process-math">\(d\)</span> is your loan payment (your monthly payment, annual payment, etc)</div> <div class="para" id="p-1328">
+<span class="process-math">\(r\)</span> is the annual interest rate in decimal form.</div> <div class="para" id="p-1329">
+<span class="process-math">\(k\)</span> is the number of compounding periods in one year.</div> <div class="para" id="p-1330">
+<span class="process-math">\(N\)</span> is the length of the loan, in years</div></article><div class="para" id="p-1331">Like before, the compounding frequency is not always explicitly given, but is determined by how often you make payments.</div>
 <article class="note remark-like" id="note-26"><h4 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">When do you use this?</span>
-</h4> <div class="para" id="p-1244">The loan formula assumes that you make loan payments on a regular schedule (every month, year, quarter, etc.) and are paying interest on the loan.</div> <div class="para" id="p-1245">Compound interest: One deposit</div> <div class="para" id="p-1246">Annuity: Many deposits.</div> <div class="para" id="p-1247">Payout Annuity: Many withdrawals</div> <div class="para" id="p-1248">Loans: Many payments</div></article><article class="example example-like" id="example-111"><h4 class="heading">
+</h4> <div class="para" id="p-1332">The loan formula assumes that you make loan payments on a regular schedule (every month, year, quarter, etc.) and are paying interest on the loan.</div> <div class="para" id="p-1333">Compound interest: One deposit</div> <div class="para" id="p-1334">Annuity: Many deposits.</div> <div class="para" id="p-1335">Payout Annuity: Many withdrawals</div> <div class="para" id="p-1336">Loans: Many payments</div></article><article class="example example-like" id="example-111"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-1249">You can afford $200 per month as a car payment. If you can get an auto loan at 3% interest for 60 months (5 years), how expensive of a car can you afford? In other words, what amount loan can you pay off with $200 per month?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-87" id="solution-87"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-87"><div class="solution solution-like">
-<div class="para" id="p-1250">In this example,</div> <div class="para" id="p-1251">
-<span class="process-math">\(d = \$200\)</span> the monthly loan payment</div> <div class="para" id="p-1252">
-<span class="process-math">\(r = 0.03\)</span> 3% annual rate</div> <div class="para" id="p-1253">
-<span class="process-math">\(k = 12\)</span> since we’re doing monthly payments, we’ll compound monthly</div> <div class="para" id="p-1254">
-<span class="process-math">\(N = 5\)</span> since we’re making monthly payments for 5 years</div> <div class="para" id="p-1255">We’re looking for <span class="process-math">\(P_0\text{,}\)</span> the starting amount of the loan.</div>
+<div class="para" id="p-1337">You can afford $200 per month as a car payment. If you can get an auto loan at 3% interest for 60 months (5 years), how expensive of a car can you afford? In other words, what amount loan can you pay off with $200 per month?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-87" id="solution-87"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-87"><div class="solution solution-like">
+<div class="para" id="p-1338">In this example,</div> <div class="para" id="p-1339">
+<span class="process-math">\(d = \$200\)</span> the monthly loan payment</div> <div class="para" id="p-1340">
+<span class="process-math">\(r = 0.03\)</span> 3% annual rate</div> <div class="para" id="p-1341">
+<span class="process-math">\(k = 12\)</span> since we’re doing monthly payments, we’ll compound monthly</div> <div class="para" id="p-1342">
+<span class="process-math">\(N = 5\)</span> since we’re making monthly payments for 5 years</div> <div class="para" id="p-1343">We’re looking for <span class="process-math">\(P_0\text{,}\)</span> the starting amount of the loan.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_0=\frac{200\left(1 - \left(1+\frac{0.03}{12}\right)^{-5\cdot 12}\right)}{\left( \frac{0.03}{12}\right)}
@@ -480,16 +480,16 @@ P_0 = \frac{200\left(1-\left(1.0025\right)^{-60}\right)}{0.0025}
 P_0 = 11,120
 \end{equation*}
 </div>
-<div class="para" id="p-1256">You can afford a $11,120 loan.</div> <div class="para" id="p-1257">You will pay a total of $12,000 ($200 per month for 60 months) to the loan company. The difference between the amount you pay and the amount of the loan is the interest paid. In this case, you’re paying $12,000-$11,120 = $880 interest total.</div>
+<div class="para" id="p-1344">You can afford a $11,120 loan.</div> <div class="para" id="p-1345">You will pay a total of $12,000 ($200 per month for 60 months) to the loan company. The difference between the amount you pay and the amount of the loan is the interest paid. In this case, you’re paying $12,000-$11,120 = $880 interest total.</div>
 </div></div></article><article class="example example-like" id="example-112"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-1258">You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like">
-<div class="para" id="p-1259">In this example, we’re looking for d.</div> <div class="para" id="p-1260">
-<span class="process-math">\(r = 0.06\)</span> 6% annual rate</div> <div class="para" id="p-1261">
-<span class="process-math">\(k = 12\)</span> since we’re paying monthly</div> <div class="para" id="p-1262">
-<span class="process-math">\(N = 30\)</span> 30 years</div> <div class="para" id="p-1263">
-<span class="process-math">\(P_0 = \$140,000\)</span> the starting loan amount</div> <div class="para" id="p-1264">In this case, we’re going to have to set up the equation, and solve for d.</div>
+<div class="para" id="p-1346">You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like">
+<div class="para" id="p-1347">In this example, we’re looking for d.</div> <div class="para" id="p-1348">
+<span class="process-math">\(r = 0.06\)</span> 6% annual rate</div> <div class="para" id="p-1349">
+<span class="process-math">\(k = 12\)</span> since we’re paying monthly</div> <div class="para" id="p-1350">
+<span class="process-math">\(N = 30\)</span> 30 years</div> <div class="para" id="p-1351">
+<span class="process-math">\(P_0 = \$140,000\)</span> the starting loan amount</div> <div class="para" id="p-1352">In this case, we’re going to have to set up the equation, and solve for d.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 140000 = \frac{d\left(1 - \left(1 + \frac{0.06}{12}\right)^{-30\cdot 12}\right)}{\left(\frac{0.06}{12}\right)}
@@ -510,17 +510,17 @@ P_0 = 11,120
 d = \frac{140000}{166.792}=\$839.37
 \end{equation*}
 </div>
-<div class="para" id="p-1265">You will make payments of $839.37 per month for 30 years.</div> <div class="para" id="p-1266">You’re paying a total of $302,173.20 to the loan company: $839.37 per month for 360 months. You are paying a total of $302,173.20 - $140,000 = $162,173.20 in interest over the life of the loan.</div>
+<div class="para" id="p-1353">You will make payments of $839.37 per month for 30 years.</div> <div class="para" id="p-1354">You’re paying a total of $302,173.20 to the loan company: $839.37 per month for 360 months. You are paying a total of $302,173.20 - $140,000 = $162,173.20 in interest over the life of the loan.</div>
 </div></div></article><article class="problem example-like" id="problem-28"><h4 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h4> <div class="para" id="p-1267">Janine bought $3,000 of new furniture on credit. Because her credit score isn’t very good, the store is charging her a fairly high interest rate on the loan: 16%. If she agreed to pay off the furniture over 2 years, how much will she have to pay each month?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-156" id="answer-156"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-156"><div class="answer solution-like">
-<div class="para" id="p-1268">Solving for d gives $146.89 as monthly payments.</div> <div class="para" id="p-1269">In total, she will pay $3,525.36 to the store, meaning she will pay $525.36 in interest over the two years.</div>
+</h4> <div class="para" id="p-1355">Janine bought $3,000 of new furniture on credit. Because her credit score isn’t very good, the store is charging her a fairly high interest rate on the loan: 16%. If she agreed to pay off the furniture over 2 years, how much will she have to pay each month?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-246" id="answer-246"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-246"><div class="answer solution-like">
+<div class="para" id="p-1356">Solving for d gives $146.89 as monthly payments.</div> <div class="para" id="p-1357">In total, she will pay $3,525.36 to the store, meaning she will pay $525.36 in interest over the two years.</div>
 </div></div></article></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.2</span> <span class="title">Amortization Schedules</span>
 </h3>
-<div class="para" id="p-1270">Consider a 5-year loan for $10,000 with yearly payments.  If the interest rate is 12%, we can compute the yearly payments.  But how much interest are we paying each year?  How much of our payments are going toward the principal of the loan?</div>
-<div class="para" id="p-1271">We can create a table, also called an <dfn class="terminology">amortization schedule</dfn> to show how the interest is spread out over the payments of the loan.</div>
-<div class="para" id="p-1272">First, using the loans formula, we can solve for <span class="process-math">\(d\text{,}\)</span> or the amount of each payment.</div>
+<div class="para" id="p-1358">Consider a 5-year loan for $10,000 with yearly payments.  If the interest rate is 12%, we can compute the yearly payments.  But how much interest are we paying each year?  How much of our payments are going toward the principal of the loan?</div>
+<div class="para" id="p-1359">We can create a table, also called an <dfn class="terminology">amortization schedule</dfn> to show how the interest is spread out over the payments of the loan.</div>
+<div class="para" id="p-1360">First, using the loans formula, we can solve for <span class="process-math">\(d\text{,}\)</span> or the amount of each payment.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/table-amort.html ./knowl/table-amort.html">
 \begin{equation*}
 10000 = \frac{d\left(1 - \left(1 + \frac{.12}{1}\right)^{-5 \cdot 1}\right)}{\left(\frac{.12}{1}\right)}
@@ -541,8 +541,8 @@ d = \frac{140000}{166.792}=\$839.37
 d = 10000 \div 3.6048 = 2774.08
 \end{equation*}
 </div>
-<div class="para" id="p-1273">We will make 5 annual payments of $2,774.08.  That means, we are paying a total of <span class="process-math">\(2774.08 \times 5 = 13870.40\)</span> to pay off this loan. Since we borrowed $10,000, the difference is interest. $13,870.40 - $10,000 = $3,870.40.</div>
-<div class="para" id="p-1274">Since we owe more money at the beginning of the loan, we should expect to pay more interest in beginning. We can see how this works in <a href="" class="xref" data-knowl="./knowl/table-amort.html" title="Table 5.4.6">Table 5.4.6</a> below.</div>
+<div class="para" id="p-1361">We will make 5 annual payments of $2,774.08.  That means, we are paying a total of <span class="process-math">\(2774.08 \times 5 = 13870.40\)</span> to pay off this loan. Since we borrowed $10,000, the difference is interest. $13,870.40 - $10,000 = $3,870.40.</div>
+<div class="para" id="p-1362">Since we owe more money at the beginning of the loan, we should expect to pay more interest in beginning. We can see how this works in <a href="" class="xref" data-knowl="./knowl/table-amort.html" title="Table 5.4.6">Table 5.4.6</a> below.</div>
 <figure class="table table-like" id="table-amort"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.4.6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Payment</th>
@@ -586,7 +586,7 @@ d = 10000 \div 3.6048 = 2774.08
 <td class="c m b0 r0 l0 t0 lines">$2,476.85</td>
 <td class="c m b0 r0 l0 t0 lines">$0.10</td>
 </tr>
-</table></div></figure><div class="para logical" id="p-1275">
+</table></div></figure><div class="para logical" id="p-1363">
 <div class="para">Before we make our first payment, we owe $10,000.  We will pay 12% annual interest on that amount:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -595,10 +595,10 @@ I = \$10000\cdot .12 \cdot 1 = \$1200
 </div>
 <div class="para">which is $1,200. That means $1,200 of our first payment is interest.  The rest of the $2,774.08 will go toward the principal of the loan.</div>
 </div>
-<div class="para" id="p-1276">Since $2,774.08 - $1,200 = $1,574.08, the balance (or principal) of the loan will be reduced by $1,574.08</div>
-<div class="para" id="p-1277">After our first payment, the balance of the loan is $10,000 - $1,574.08 = $8,425.92</div>
-<div class="para" id="p-1278">This information is summarized in the first row of the amortization schedule in <a href="" class="xref" data-knowl="./knowl/table-amort.html" title="Table 5.4.6">Table 5.4.6</a>.</div>
-<div class="para logical" id="p-1279">
+<div class="para" id="p-1364">Since $2,774.08 - $1,200 = $1,574.08, the balance (or principal) of the loan will be reduced by $1,574.08</div>
+<div class="para" id="p-1365">After our first payment, the balance of the loan is $10,000 - $1,574.08 = $8,425.92</div>
+<div class="para" id="p-1366">This information is summarized in the first row of the amortization schedule in <a href="" class="xref" data-knowl="./knowl/table-amort.html" title="Table 5.4.6">Table 5.4.6</a>.</div>
+<div class="para logical" id="p-1367">
 <div class="para">To determine the interest in that second payment, we have to take 12% of the new balance ($8.425.92):</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -606,15 +606,15 @@ I = \$8,425.92 \cdot .12 \cdot 1 = \$1,011.11
 \end{equation*}
 </div>
 </div>
-<div class="para" id="p-1280">In the second payment, $2,774.08 - $1,011.11 = $1,762.97 will reduce the balance of the loan.  That means, the balance of the loan after the second payment is: $8.425.92 - $1,792.97 = $6,662.95</div>
-<div class="para" id="p-1281">To find the interest in the third payment we can take 12% of this new balance--$6,662.95.</div>
-<div class="para" id="p-1282">We can continue this pattern to complete the rest of the table.</div>
-<div class="para" id="p-1283">The remaining balance of 10 cents at the end of the loan is a result of rounding that was used to compute the loan payments. A lender wouldn't actually do any rounding, and the entire balance of the loan would be paid off at the end of the 5 years.</div>
+<div class="para" id="p-1368">In the second payment, $2,774.08 - $1,011.11 = $1,762.97 will reduce the balance of the loan.  That means, the balance of the loan after the second payment is: $8.425.92 - $1,792.97 = $6,662.95</div>
+<div class="para" id="p-1369">To find the interest in the third payment we can take 12% of this new balance--$6,662.95.</div>
+<div class="para" id="p-1370">We can continue this pattern to complete the rest of the table.</div>
+<div class="para" id="p-1371">The remaining balance of 10 cents at the end of the loan is a result of rounding that was used to compute the loan payments. A lender wouldn't actually do any rounding, and the entire balance of the loan would be paid off at the end of the 5 years.</div>
 <article class="example example-like" id="example-113"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-1284">Create the first two lines of an amortization schedule for a 30-year mortgage for $150,000 at 6% interest with monthly payments.</div> <a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like">
-<div class="para" id="p-1285">First we need to find the amount of the monthly payment (or d) using our loans formula:</div>
+<div class="para" id="p-1372">Create the first two lines of an amortization schedule for a 30-year mortgage for $150,000 at 6% interest with monthly payments.</div> <a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like">
+<div class="para" id="p-1373">First we need to find the amount of the monthly payment (or d) using our loans formula:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 150000 = \frac{d\left(1 - \left(1 + \frac{0.06}{12}\right)^{-30\cdot 12}\right)}{\left(\frac{0.06}{12}\right)}
@@ -635,7 +635,7 @@ I = \$8,425.92 \cdot .12 \cdot 1 = \$1,011.11
 d = \frac{150000}{166.792}=\$899.32
 \end{equation*}
 </div>
-<div class="para" id="p-1286">Now we can compute the amount of interest owed during that first month of the loan. Using our simple interest formula,</div>
+<div class="para" id="p-1374">Now we can compute the amount of interest owed during that first month of the loan. Using our simple interest formula,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 I = P_0 r t
@@ -651,7 +651,7 @@ I = 150000 \left( 0.06 \right) \left(\frac{1}{12}\right)
 I = 750
 \end{equation*}
 </div>
-<div class="para" id="p-1287">Recall, that <span class="process-math">\(t\)</span> is measured in years. One month = <span class="process-math">\(\frac{1}{12}\)</span> year.</div> <div class="para" id="p-1288">This means $750 of our first payment is interest.  The rest, $899.32 - $750 = $149.32, will go toward the balance of the loan.</div> <div class="para" id="p-1289">The new balance of the loan can be obtained by subtracting $149.32 from $150,000 to get $149,850.68.</div> <div class="para" id="p-1290">The first line of the amortization schedule is:</div> <figure class="table table-like" id="table-33"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.4.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-1375">Recall, that <span class="process-math">\(t\)</span> is measured in years. One month = <span class="process-math">\(\frac{1}{12}\)</span> year.</div> <div class="para" id="p-1376">This means $750 of our first payment is interest.  The rest, $899.32 - $750 = $149.32, will go toward the balance of the loan.</div> <div class="para" id="p-1377">The new balance of the loan can be obtained by subtracting $149.32 from $150,000 to get $149,850.68.</div> <div class="para" id="p-1378">The first line of the amortization schedule is:</div> <figure class="table table-like" id="table-33"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.4.8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Payment</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Amount of Payment</th>
@@ -666,7 +666,7 @@ I = 750
 <td class="c m b0 r0 l0 t0 lines">$149.32</td>
 <td class="c m b0 r0 l0 t0 lines">$149,850.68</td>
 </tr>
-</table></div></figure> <div class="para" id="p-1291">Now we repeat the process to fill out the second line of table. To compute the amount of interest owed during the second month of the loan, we can use the simple interest formula,</div>
+</table></div></figure> <div class="para" id="p-1379">Now we repeat the process to fill out the second line of table. To compute the amount of interest owed during the second month of the loan, we can use the simple interest formula,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 I = P_0 r t
@@ -682,7 +682,7 @@ I = 149,850.68\left( 0.06 \right) \left(\frac{1}{12}\right)
 I = 749.25
 \end{equation*}
 </div>
-<div class="para" id="p-1292">Notice that we still <span class="process-math">\(\frac{1}{12}\)</span> year for <span class="process-math">\(t\)</span> because we are interested in the interest that we owe over one month (specifically the second month) of the loan.</div> <div class="para" id="p-1293">This means $749.25 of our second payment is interest.  The rest, $899.32 - $749.25 = $150.07, will go toward the balance of the loan.</div> <div class="para" id="p-1294">The new balance of the loan can be obtained by subtracting $150.07 from $149,850.68 to get $149,700.61.</div> <div class="para" id="p-1295">Now we have the first two lines of the amortization schedule in the table.</div> <figure class="table table-like" id="table-34"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.4.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-1380">Notice that we still <span class="process-math">\(\frac{1}{12}\)</span> year for <span class="process-math">\(t\)</span> because we are interested in the interest that we owe over one month (specifically the second month) of the loan.</div> <div class="para" id="p-1381">This means $749.25 of our second payment is interest.  The rest, $899.32 - $749.25 = $150.07, will go toward the balance of the loan.</div> <div class="para" id="p-1382">The new balance of the loan can be obtained by subtracting $150.07 from $149,850.68 to get $149,700.61.</div> <div class="para" id="p-1383">Now we have the first two lines of the amortization schedule in the table.</div> <figure class="table table-like" id="table-34"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.4.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Payment</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Amount of Payment</th>
@@ -708,17 +708,17 @@ I = 749.25
 </div></div></article></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.3</span> <span class="title">Remaining Loan Balance</span>
 </h3>
-<div class="para" id="p-1296">With loans, it is often desirable to determine what the remaining loan balance will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you have to pay from the sale.</div>
-<div class="para" id="p-1297">To determine the remaining loan balance after some number of years, we first need to know the loan payments, if we don’t already know them. Remember that only a portion of your loan payments go towards the loan balance; a portion is going to go towards interest. For example, if your payments were $1,000 a month, after a year you will not have paid off $12,000 of the loan balance.</div>
-<div class="para" id="p-1298">To determine the remaining loan balance, we can think “how much loan will these loan payments be able to pay off in the remaining time on the loan?”</div>
+<div class="para" id="p-1384">With loans, it is often desirable to determine what the remaining loan balance will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you have to pay from the sale.</div>
+<div class="para" id="p-1385">To determine the remaining loan balance after some number of years, we first need to know the loan payments, if we don’t already know them. Remember that only a portion of your loan payments go towards the loan balance; a portion is going to go towards interest. For example, if your payments were $1,000 a month, after a year you will not have paid off $12,000 of the loan balance.</div>
+<div class="para" id="p-1386">To determine the remaining loan balance, we can think “how much loan will these loan payments be able to pay off in the remaining time on the loan?”</div>
 <article class="example example-like" id="example-114"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.10</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-1299">If a mortgage at a 6% interest rate has payments of $1,000 a month, how much will the loan balance be 10 years from the end the loan?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like">
-<div class="para" id="p-1300">To determine this, we are looking for the amount of the loan that can be paid off by $1,000 a month payments in 10 years. In other words, we’re looking for <span class="process-math">\(P_0\)</span> when</div> <div class="para" id="p-1301">
-<span class="process-math">\(d = \$1,000\)</span> the monthly loan payment</div> <div class="para" id="p-1302">
-<span class="process-math">\(r = 0.06\)</span> 6% annual rate</div> <div class="para" id="p-1303">
-<span class="process-math">\(k = 12\)</span> since we’re doing monthly payments, we’ll compound monthly</div> <div class="para" id="p-1304">
+<div class="para" id="p-1387">If a mortgage at a 6% interest rate has payments of $1,000 a month, how much will the loan balance be 10 years from the end the loan?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like">
+<div class="para" id="p-1388">To determine this, we are looking for the amount of the loan that can be paid off by $1,000 a month payments in 10 years. In other words, we’re looking for <span class="process-math">\(P_0\)</span> when</div> <div class="para" id="p-1389">
+<span class="process-math">\(d = \$1,000\)</span> the monthly loan payment</div> <div class="para" id="p-1390">
+<span class="process-math">\(r = 0.06\)</span> 6% annual rate</div> <div class="para" id="p-1391">
+<span class="process-math">\(k = 12\)</span> since we’re doing monthly payments, we’ll compound monthly</div> <div class="para" id="p-1392">
 <span class="process-math">\(N = 10\)</span> since we’re making monthly payments for 10 more years</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -735,23 +735,23 @@ P_0 = \frac{1000\left(1-\left(1.005\right)^{-120}\right)}{0.005}
 P_0 = 90,073.45
 \end{equation*}
 </div>
-<div class="para" id="p-1305">The loan balance with 10 years remaining on the loan will be $90,073.45</div>
-</div></div></article><div class="para logical" id="p-1306">
+<div class="para" id="p-1393">The loan balance with 10 years remaining on the loan will be $90,073.45</div>
+</div></div></article><div class="para logical" id="p-1394">
 <div class="para">Often times answering remaining balance questions requires two steps:</div>
 <ol class="decimal">
-<li id="li-555"><div class="para" id="p-derived-li-555">Calculating the monthly payments on the loan</div></li>
-<li id="li-556"><div class="para" id="p-derived-li-556">Calculating the remaining loan balance based on the remaining time on the loan</div></li>
+<li id="li-600"><div class="para" id="p-derived-li-600">Calculating the monthly payments on the loan</div></li>
+<li id="li-601"><div class="para" id="p-derived-li-601">Calculating the remaining loan balance based on the remaining time on the loan</div></li>
 </ol>
 </div>
 <article class="example example-like" id="example-115"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.11</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-1307">A couple purchases a home with a $180,000 mortgage at 4% for 30 years with monthly payments. What will the remaining balance on their mortgage be after 5 years?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like">
-<div class="para" id="p-1308">First we will calculate their monthly payments. We’re looking for d.</div> <div class="para" id="p-1309">
-<span class="process-math">\(r = 0.04\)</span> 4% annual rate</div> <div class="para" id="p-1310">
-<span class="process-math">\(k = 12\)</span> since they’re paying monthly</div> <div class="para" id="p-1311">
-<span class="process-math">\(N = 30\)</span> years</div> <div class="para" id="p-1312">
-<span class="process-math">\(P_0 = \$180,000\)</span> the starting loan amount</div> <div class="para" id="p-1313">We set up the equation and solve for d.</div>
+<div class="para" id="p-1395">A couple purchases a home with a $180,000 mortgage at 4% for 30 years with monthly payments. What will the remaining balance on their mortgage be after 5 years?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like">
+<div class="para" id="p-1396">First we will calculate their monthly payments. We’re looking for d.</div> <div class="para" id="p-1397">
+<span class="process-math">\(r = 0.04\)</span> 4% annual rate</div> <div class="para" id="p-1398">
+<span class="process-math">\(k = 12\)</span> since they’re paying monthly</div> <div class="para" id="p-1399">
+<span class="process-math">\(N = 30\)</span> years</div> <div class="para" id="p-1400">
+<span class="process-math">\(P_0 = \$180,000\)</span> the starting loan amount</div> <div class="para" id="p-1401">We set up the equation and solve for d.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 180000 = \frac{d\left(1 - \left(1 + \frac{0.04}{12}\right)^{-30\cdot 12}\right)}{\left(\frac{0.04}{12}\right)}
@@ -772,10 +772,10 @@ P_0 = 90,073.45
 d = \frac{180000}{209.562}=\$858.93
 \end{equation*}
 </div>
-<div class="para" id="p-1314">Now that we know the monthly payments, we can determine the remaining balance. We want the remaining balance after 5 years, when 25 years will be remaining on the loan, so we calculate the loan balance that will be paid off with the monthly payments over those 25 years.</div> <div class="para" id="p-1315">
-<span class="process-math">\(d = \$858.93\)</span> the monthly loan payment we calculated above</div> <div class="para" id="p-1316">
-<span class="process-math">\(r = 0.04\)</span> 4% annual rate</div> <div class="para" id="p-1317">
-<span class="process-math">\(k = 12\)</span> since they’re doing monthly payments</div> <div class="para" id="p-1318">
+<div class="para" id="p-1402">Now that we know the monthly payments, we can determine the remaining balance. We want the remaining balance after 5 years, when 25 years will be remaining on the loan, so we calculate the loan balance that will be paid off with the monthly payments over those 25 years.</div> <div class="para" id="p-1403">
+<span class="process-math">\(d = \$858.93\)</span> the monthly loan payment we calculated above</div> <div class="para" id="p-1404">
+<span class="process-math">\(r = 0.04\)</span> 4% annual rate</div> <div class="para" id="p-1405">
+<span class="process-math">\(k = 12\)</span> since they’re doing monthly payments</div> <div class="para" id="p-1406">
 <span class="process-math">\(N = 25\)</span> since they'd be making monthly payments for 25 more years</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -792,30 +792,30 @@ P_0 = \frac{858.93\left(1-\left(1.00333\right)^{-300}\right)}{0.00333}
 P_0 = 162,758
 \end{equation*}
 </div>
-<div class="para" id="p-1319">The loan balance after 5 years, with 25 years remaining on the loan, will be $162,758</div> <div class="para" id="p-1320">Over that 5 years, the couple has paid off $180,000 - $162,758 = $17,242 of the loan balance. They have paid a total of $858.93 a month for 5 years (60 months), for a total of $51,535.80, so $51,535.80 - $17,242 = $34,292.80 of what they have paid so far has been interest.</div>
+<div class="para" id="p-1407">The loan balance after 5 years, with 25 years remaining on the loan, will be $162,758</div> <div class="para" id="p-1408">Over that 5 years, the couple has paid off $180,000 - $162,758 = $17,242 of the loan balance. They have paid a total of $858.93 a month for 5 years (60 months), for a total of $51,535.80, so $51,535.80 - $17,242 = $34,292.80 of what they have paid so far has been interest.</div>
 </div></div></article></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.4</span> <span class="title">Which Equation to Use?</span>
 </h3>
-<div class="para" id="p-1321">When presented with a finance problem (on an exam or in real life), you're usually not told what type of problem it is or which equation to use. Here are some hints on deciding which equation to use based on the wording of the problem.</div>
-<div class="para" id="p-1322">The easiest types of problem to identify are loans. Loan problems almost always include words like: "loan", "amortize" (the fancy word for loans), "finance (a car)", or "mortgage" (a home loan). Look for these words. If they're there, you're probably looking at a loan problem. To make sure, see if you're given what your monthly (or annual) payment is, or if you're trying to find a monthly payment.</div>
-<div class="para" id="p-1323">If the problem is not a loan, the next question you want to ask is: "Am I putting money in an account and letting it sit, or am I making regular (monthly/annually/quarterly) payments or withdrawals?" If you're letting the money sit in the account with nothing but interest changing the balance, then you're looking at a compound interest problem. The exception would be bonds and other investments where the interest is not reinvested; in those cases you’re looking at simple interest.</div>
-<div class="para" id="p-1324">If you're making regular payments or withdrawals, the next questions is: "Am I putting money into the account, or am I pulling money out?" If you're putting money into the account on a regular basis (monthly/annually/quarterly) then you're looking at a basic Annuity problem. Basic annuities are when you are saving money. Usually in an annuity problem, your account starts empty, and has money in the future.</div>
-<div class="para" id="p-1325">If you're pulling money out of the account on a regular basis, then you're looking at a Payout Annuity problem. Payout annuities are used for things like retirement income, where you start with money in your account, pull money out on a regular basis, and your account ends up empty in the future.</div>
-<div class="para" id="p-1326">Remember, the most important part of answering any kind of question, money or otherwise, is first to correctly identify what the question is really asking, and to determine what approach will best allow you to solve the problem.</div>
+<div class="para" id="p-1409">When presented with a finance problem (on an exam or in real life), you're usually not told what type of problem it is or which equation to use. Here are some hints on deciding which equation to use based on the wording of the problem.</div>
+<div class="para" id="p-1410">The easiest types of problem to identify are loans. Loan problems almost always include words like: "loan", "amortize" (the fancy word for loans), "finance (a car)", or "mortgage" (a home loan). Look for these words. If they're there, you're probably looking at a loan problem. To make sure, see if you're given what your monthly (or annual) payment is, or if you're trying to find a monthly payment.</div>
+<div class="para" id="p-1411">If the problem is not a loan, the next question you want to ask is: "Am I putting money in an account and letting it sit, or am I making regular (monthly/annually/quarterly) payments or withdrawals?" If you're letting the money sit in the account with nothing but interest changing the balance, then you're looking at a compound interest problem. The exception would be bonds and other investments where the interest is not reinvested; in those cases you’re looking at simple interest.</div>
+<div class="para" id="p-1412">If you're making regular payments or withdrawals, the next questions is: "Am I putting money into the account, or am I pulling money out?" If you're putting money into the account on a regular basis (monthly/annually/quarterly) then you're looking at a basic Annuity problem. Basic annuities are when you are saving money. Usually in an annuity problem, your account starts empty, and has money in the future.</div>
+<div class="para" id="p-1413">If you're pulling money out of the account on a regular basis, then you're looking at a Payout Annuity problem. Payout annuities are used for things like retirement income, where you start with money in your account, pull money out on a regular basis, and your account ends up empty in the future.</div>
+<div class="para" id="p-1414">Remember, the most important part of answering any kind of question, money or otherwise, is first to correctly identify what the question is really asking, and to determine what approach will best allow you to solve the problem.</div>
 <article class="problem example-like" id="problem-29"><h4 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.4.12</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h4> <div class="para" id="p-1327">For each of the following scenarios, determine if it is a compound interest problem, a savings annuity problem, a payout annuity problem, or a loans problem. Then solve each problem.</div> <div class="para logical" id="p-1328"><ol class="lower-alpha">
-<li id="li-557"><div class="para" id="p-derived-li-557">Marcy received an inheritance of $20,000, and invested it at 6% interest. She is going to use it for college, withdrawing money for tuition and expenses each quarter. How much can she take out each quarter if she has 3 years of school left?</div></li>
-<li id="li-558"><div class="para" id="p-derived-li-558">Paul wants to buy a new car. Rather than take out a loan, he decides to save $200 a month in an account earning 3% interest compounded monthly. How much will he have saved up after 3 years?</div></li>
-<li id="li-559"><div class="para" id="p-derived-li-559">Keisha is managing investments for a non-profit company. They want to invest some money in an account earning 5% interest compounded annually with the goal to have $30,000 in the account in 6 years. How much should Keisha deposit into the account?</div></li>
-<li id="li-560"><div class="para" id="p-derived-li-560">Miao is going to finance new office equipment at a 2% rate over a 4 year term. If she can afford monthly payments of $100, how much new equipment can she buy?</div></li>
-<li id="li-561"><div class="para" id="p-derived-li-561">How much would you need to save every month in an account earning 4% interest to have $5,000 saved up in two years?</div></li>
-</ol></div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-157" id="answer-157"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-157"><div class="answer solution-like"><div class="para logical" id="p-1329"><ol class="lower-alpha">
-<li id="li-562"><div class="para" id="p-derived-li-562">This is a payout annuity problem. She can pull out $1833.60 a quarter</div></li>
-<li id="li-563"><div class="para" id="p-derived-li-563">This is a savings annuity problem. He will have saved up $7,524.11</div></li>
-<li id="li-564"><div class="para" id="p-derived-li-564">This is compound interest problem. She would need to deposit $22,386.46</div></li>
-<li id="li-565"><div class="para" id="p-derived-li-565">This is a loans problem. She can buy $4,609.33 of new equipment.</div></li>
-<li id="li-566"><div class="para" id="p-derived-li-566">This is a savings annuity problem. You would need to save $200.46 each month</div></li>
+</h4> <div class="para" id="p-1415">For each of the following scenarios, determine if it is a compound interest problem, a savings annuity problem, a payout annuity problem, or a loans problem. Then solve each problem.</div> <div class="para logical" id="p-1416"><ol class="lower-alpha">
+<li id="li-602"><div class="para" id="p-derived-li-602">Marcy received an inheritance of $20,000, and invested it at 6% interest. She is going to use it for college, withdrawing money for tuition and expenses each quarter. How much can she take out each quarter if she has 3 years of school left?</div></li>
+<li id="li-603"><div class="para" id="p-derived-li-603">Paul wants to buy a new car. Rather than take out a loan, he decides to save $200 a month in an account earning 3% interest compounded monthly. How much will he have saved up after 3 years?</div></li>
+<li id="li-604"><div class="para" id="p-derived-li-604">Keisha is managing investments for a non-profit company. They want to invest some money in an account earning 5% interest compounded annually with the goal to have $30,000 in the account in 6 years. How much should Keisha deposit into the account?</div></li>
+<li id="li-605"><div class="para" id="p-derived-li-605">Miao is going to finance new office equipment at a 2% rate over a 4 year term. If she can afford monthly payments of $100, how much new equipment can she buy?</div></li>
+<li id="li-606"><div class="para" id="p-derived-li-606">How much would you need to save every month in an account earning 4% interest to have $5,000 saved up in two years?</div></li>
+</ol></div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-247" id="answer-247"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-247"><div class="answer solution-like"><div class="para logical" id="p-1417"><ol class="lower-alpha">
+<li id="li-607"><div class="para" id="p-derived-li-607">This is a payout annuity problem. She can pull out $1833.60 a quarter</div></li>
+<li id="li-608"><div class="para" id="p-derived-li-608">This is a savings annuity problem. He will have saved up $7,524.11</div></li>
+<li id="li-609"><div class="para" id="p-derived-li-609">This is compound interest problem. She would need to deposit $22,386.46</div></li>
+<li id="li-610"><div class="para" id="p-derived-li-610">This is a loans problem. She can buy $4,609.33 of new equipment.</div></li>
+<li id="li-611"><div class="para" id="p-derived-li-611">This is a savings annuity problem. You would need to save $200.46 each month</div></li>
 </ol></div></div></div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-finance-payout.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="exercises-finance.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

@@ -12,16 +12,34 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">There is a probability of 0.7580 that a value will be above <span class="process-math">\(z = -0.7\text{.}\)</span>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">There are <span class="process-math">\(_{52}C_{2}\)</span> ways we can draw two cards from a deck.<div class="displaymath process-math">
+\begin{equation*}
+_{52}C_2 = \frac{52!}{2! 50!} = \frac{52\cdot 51}{2\cdot 1} = 1326
+\end{equation*}
+</div>There are <span class="process-math">\(_{4}C_{2}\)</span> ways we can draw two aces.<div class="displaymath process-math">
+\begin{equation*}
+_4C_2 = \frac{4!}{2!2!} = \frac{4\cdot 3}{2\cdot 1} = 6
+\end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-1 - 0.7580 = 0.242
+P\left(E\right) = \frac{6}{1326} = 0.0045
 \end{equation*}
 </div>
-<div class="para">There is a probability of 0.242 that a value will be below that z-score.</div>
+</div></li>
+<li><div class="para">There are <span class="process-math">\(1326\)</span> ways we can draw two cards from a deck (see previous part of the problem). There are <span class="process-math">\(_{13}C_2\)</span> ways we can draw two hearts.<div class="displaymath process-math">
+\begin{equation*}
+_{13}C_2 = \frac{13!}{2!11!} = \frac{13\cdot 12}{2\cdot 1} = 78
+\end{equation*}
 </div>
-<span class="incontext"><a href="normal-ch-test.html#p-2529" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+P\left(E\right) = \frac{78}{1326} = 0.0588
+\end{equation*}
+</div>
+</div></li>
+</ol></div>
+<span class="incontext"><a href="prob-ch-test.html#p-2529" class="internal">in-context</a></span>
 </body>
 </html>

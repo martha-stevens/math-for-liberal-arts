@@ -433,57 +433,57 @@ window.MathJax = {
 </h2>
 <article class="objectives goal-like" id="objectives-13"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc">
-<li id="li-435"><div class="para" id="p-derived-li-435">Create recursive and explicit linear models</div></li>
-<li id="li-436"><div class="para" id="p-derived-li-436">Graph linear models</div></li>
-<li id="li-437"><div class="para" id="p-derived-li-437">Apply linear models to real world applications</div></li>
-</ul></article><div class="para" id="p-805">Marco is a collector of antique soda bottles. His collection currently contains 437 bottles. Every year, he budgets enough money to buy 32 new bottles. Can we determine how many bottles he will have in 5 years, and how long it will take for his collection to reach 1000 bottles?</div>
-<div class="para" id="p-806">While both of these questions you could probably solve without an equation or formal mathematics, we are going to formalize our approach to this problem to provide a means to answer more complicated questions.</div>
-<div class="para" id="p-807">Suppose that <span class="process-math">\(P_n\)</span> represents the number, or population, of bottles Marco has after n years. So <span class="process-math">\(P_0\)</span> would represent the number of bottles now, <span class="process-math">\(P_1\)</span> would represent the number of bottles after 1 year, <span class="process-math">\(P_2\)</span> would represent the number of bottles after 2 years, and so on. We could describe how Marco’s bottle collection is changing using:</div>
-<div class="para" id="p-808"><span class="process-math">\(P_0 = 437\)</span></div>
-<div class="para" id="p-809"><span class="process-math">\(P_n = P_{n-1} + 32\)</span></div>
-<div class="para" id="p-810">This is called a recursive relationship. A recursive relationship is a formula which relates the next value in a sequence to the previous values. Here, the number of bottles in year n can be found by adding 32 to the number of bottles in the previous year, <span class="process-math">\(P_{n-1}\text{.}\)</span> Using this relationship, we could calculate:</div>
-<div class="para" id="p-811"><span class="process-math">\(P_1 = P_0 + 32 = 437 + 32 = 469\)</span></div>
-<div class="para" id="p-812"><span class="process-math">\(P_2 = P_1 + 32 = 469 + 32 = 501\)</span></div>
-<div class="para" id="p-813"><span class="process-math">\(P_3 = P_2 + 32 = 501 + 32 = 533\)</span></div>
-<div class="para" id="p-814"><span class="process-math">\(P_4 = P_3 + 32 = 533 + 32 = 565\)</span></div>
-<div class="para" id="p-815"><span class="process-math">\(P_5 = P_4 + 32 = 565 + 32 = 597\)</span></div>
-<div class="para" id="p-816">We have answered the question of how many bottles Marco will have in 5 years. However, solving how long it will take for his collection to reach 1000 bottles would require a lot more calculations.</div>
-<div class="para" id="p-817">While recursive relationships are excellent for describing simply and cleanly how a quantity is changing, they are not convenient for making predictions or solving problems that stretch far into the future. For that, a closed or explicit form for the relationship is preferred. An explicit equation allows us to calculate <span class="process-math">\(P_n\)</span> directly, without needing to know <span class="process-math">\(P_{n-1}\text{.}\)</span> While you may already be able to guess the explicit equation, let us derive it from the recursive formula. We can do so by selectively not simplifying as we go:</div>
-<div class="para" id="p-818"><span class="process-math">\(P_1 = 437 + 32 = 437 + 1(32)\)</span></div>
-<div class="para" id="p-819"><span class="process-math">\(P_2 = P_1 + 32 = 437 + 32 + 32 = 437 + 2(32)\)</span></div>
-<div class="para" id="p-820"><span class="process-math">\(P_3 = P_2 + 32 = (437 + 2(32)) + 32 = 437 + 3(32)\)</span></div>
-<div class="para" id="p-821"><span class="process-math">\(P_4 = P_3 + 32 = (437 + 3(32)) + 32 = 437 + 4(32)\)</span></div>
-<div class="para" id="p-822">You can probably see the pattern now, and generalize that</div>
-<div class="para" id="p-823"><span class="process-math">\(P_n = 437 + n(32) = 437 + 32n\)</span></div>
-<div class="para" id="p-824">Using this equation, we can calculate how many bottles he’ll have after 5 years:</div>
-<div class="para" id="p-825"><span class="process-math">\(P_5 = 437 + 32(5) = 437 + 160 = 597\)</span></div>
-<div class="para" id="p-826">We can now also solve for when the collection will reach 1000 bottles by substituting in 1000 for Pn and solving for n</div>
-<div class="para" id="p-827"><span class="process-math">\(1000 = 437 + 32n\)</span></div>
-<div class="para" id="p-828"><span class="process-math">\(563 = 32n\)</span></div>
-<div class="para" id="p-829"><span class="process-math">\(n = 563 \div 32 = 17.59\)</span></div>
-<div class="para" id="p-830">So Marco will reach 1000 bottles in 18 years.</div>
-<div class="para" id="p-831">the same number of bottles every year. This constant change is the defining characteristic of linear growth. Plotting the values we calculated for Marco’s collection, we can see the values form a straight line, the shape of linear growth.</div>
+<li id="li-451"><div class="para" id="p-derived-li-451">Create recursive and explicit linear models</div></li>
+<li id="li-452"><div class="para" id="p-derived-li-452">Graph linear models</div></li>
+<li id="li-453"><div class="para" id="p-derived-li-453">Apply linear models to real world applications</div></li>
+</ul></article><div class="para" id="p-867">Marco is a collector of antique soda bottles. His collection currently contains 437 bottles. Every year, he budgets enough money to buy 32 new bottles. Can we determine how many bottles he will have in 5 years, and how long it will take for his collection to reach 1000 bottles?</div>
+<div class="para" id="p-868">While both of these questions you could probably solve without an equation or formal mathematics, we are going to formalize our approach to this problem to provide a means to answer more complicated questions.</div>
+<div class="para" id="p-869">Suppose that <span class="process-math">\(P_n\)</span> represents the number, or population, of bottles Marco has after n years. So <span class="process-math">\(P_0\)</span> would represent the number of bottles now, <span class="process-math">\(P_1\)</span> would represent the number of bottles after 1 year, <span class="process-math">\(P_2\)</span> would represent the number of bottles after 2 years, and so on. We could describe how Marco’s bottle collection is changing using:</div>
+<div class="para" id="p-870"><span class="process-math">\(P_0 = 437\)</span></div>
+<div class="para" id="p-871"><span class="process-math">\(P_n = P_{n-1} + 32\)</span></div>
+<div class="para" id="p-872">This is called a recursive relationship. A recursive relationship is a formula which relates the next value in a sequence to the previous values. Here, the number of bottles in year n can be found by adding 32 to the number of bottles in the previous year, <span class="process-math">\(P_{n-1}\text{.}\)</span> Using this relationship, we could calculate:</div>
+<div class="para" id="p-873"><span class="process-math">\(P_1 = P_0 + 32 = 437 + 32 = 469\)</span></div>
+<div class="para" id="p-874"><span class="process-math">\(P_2 = P_1 + 32 = 469 + 32 = 501\)</span></div>
+<div class="para" id="p-875"><span class="process-math">\(P_3 = P_2 + 32 = 501 + 32 = 533\)</span></div>
+<div class="para" id="p-876"><span class="process-math">\(P_4 = P_3 + 32 = 533 + 32 = 565\)</span></div>
+<div class="para" id="p-877"><span class="process-math">\(P_5 = P_4 + 32 = 565 + 32 = 597\)</span></div>
+<div class="para" id="p-878">We have answered the question of how many bottles Marco will have in 5 years. However, solving how long it will take for his collection to reach 1000 bottles would require a lot more calculations.</div>
+<div class="para" id="p-879">While recursive relationships are excellent for describing simply and cleanly how a quantity is changing, they are not convenient for making predictions or solving problems that stretch far into the future. For that, a closed or explicit form for the relationship is preferred. An explicit equation allows us to calculate <span class="process-math">\(P_n\)</span> directly, without needing to know <span class="process-math">\(P_{n-1}\text{.}\)</span> While you may already be able to guess the explicit equation, let us derive it from the recursive formula. We can do so by selectively not simplifying as we go:</div>
+<div class="para" id="p-880"><span class="process-math">\(P_1 = 437 + 32 = 437 + 1(32)\)</span></div>
+<div class="para" id="p-881"><span class="process-math">\(P_2 = P_1 + 32 = 437 + 32 + 32 = 437 + 2(32)\)</span></div>
+<div class="para" id="p-882"><span class="process-math">\(P_3 = P_2 + 32 = (437 + 2(32)) + 32 = 437 + 3(32)\)</span></div>
+<div class="para" id="p-883"><span class="process-math">\(P_4 = P_3 + 32 = (437 + 3(32)) + 32 = 437 + 4(32)\)</span></div>
+<div class="para" id="p-884">You can probably see the pattern now, and generalize that</div>
+<div class="para" id="p-885"><span class="process-math">\(P_n = 437 + n(32) = 437 + 32n\)</span></div>
+<div class="para" id="p-886">Using this equation, we can calculate how many bottles he’ll have after 5 years:</div>
+<div class="para" id="p-887"><span class="process-math">\(P_5 = 437 + 32(5) = 437 + 160 = 597\)</span></div>
+<div class="para" id="p-888">We can now also solve for when the collection will reach 1000 bottles by substituting in 1000 for Pn and solving for n</div>
+<div class="para" id="p-889"><span class="process-math">\(1000 = 437 + 32n\)</span></div>
+<div class="para" id="p-890"><span class="process-math">\(563 = 32n\)</span></div>
+<div class="para" id="p-891"><span class="process-math">\(n = 563 \div 32 = 17.59\)</span></div>
+<div class="para" id="p-892">So Marco will reach 1000 bottles in 18 years.</div>
+<div class="para" id="p-893">the same number of bottles every year. This constant change is the defining characteristic of linear growth. Plotting the values we calculated for Marco’s collection, we can see the values form a straight line, the shape of linear growth.</div>
 <figure class="figure figure-like" id="fig-tikz"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear1.svg" role="img" class="contained" alt="A graph of a line connecting the points (0, 437), (1, 469), (2, 501), (3, 533), (4, 565), and (5, 597)."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.1<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure><article class="definition definition-like" id="definition-32"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Linear Growth.</span>
-</h3> <div class="para" id="p-832">If a quantity starts at size P0 and grows by d every time period, then the quantity after n time periods can be determined using either of these relations:</div> <div class="para" id="p-833">Recursive form: <span class="process-math">\(P_n = P_{n-1} + d\)</span>
-</div> <div class="para" id="p-834">Explicit form: <span class="process-math">\(P_n = P_0 + d n\)</span>
-</div> <div class="para" id="p-835">In this equation, <span class="process-math">\(d\)</span> represents the common difference - the amount that the population changes each time n increases by 1</div></article><article class="note remark-like" id="note-14"><h3 class="heading">
+</h3> <div class="para" id="p-894">If a quantity starts at size P0 and grows by d every time period, then the quantity after n time periods can be determined using either of these relations:</div> <div class="para" id="p-895">Recursive form: <span class="process-math">\(P_n = P_{n-1} + d\)</span>
+</div> <div class="para" id="p-896">Explicit form: <span class="process-math">\(P_n = P_0 + d n\)</span>
+</div> <div class="para" id="p-897">In this equation, <span class="process-math">\(d\)</span> represents the common difference - the amount that the population changes each time n increases by 1</div></article><article class="note remark-like" id="note-14"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Connection to Prior Learning.</span>
-</h3> <div class="para" id="p-836">You may recognize the common difference, d, in our linear equation as slope. In fact, the entire explicit equation should look familiar - it is the same linear equation you learned in algebra, probably stated as <span class="process-math">\(y = mx + b\text{.}\)</span>
-</div> <div class="para" id="p-837">In the standard algebraic equation <span class="process-math">\(y = mx + b\text{,}\)</span> <span class="process-math">\(b\)</span> was the y-intercept, or the y value when x was zero. In the form of the equation we’re using, we are using <span class="process-math">\(P_0\)</span> to represent that initial amount.</div> <div class="para" id="p-838">In the <span class="process-math">\(y = mx + b\)</span> equation, recall that m was the slope. You might remember this as “rise over run”, or the change in y divided by the change in x. Either way, it represents the same thing as the common difference, <span class="process-math">\(d\text{,}\)</span> we are using - the amount the output Pn changes when the input n increases by 1.</div> <div class="para" id="p-839">The equations <span class="process-math">\(y = mx + b\)</span> and <span class="process-math">\(P_n = P_0 + d n\)</span> mean the same thing and can be used the same ways, we’re just writing it somewhat differently.</div></article><article class="example example-like" id="example-89"><h3 class="heading">
+</h3> <div class="para" id="p-898">You may recognize the common difference, d, in our linear equation as slope. In fact, the entire explicit equation should look familiar - it is the same linear equation you learned in algebra, probably stated as <span class="process-math">\(y = mx + b\text{.}\)</span>
+</div> <div class="para" id="p-899">In the standard algebraic equation <span class="process-math">\(y = mx + b\text{,}\)</span> <span class="process-math">\(b\)</span> was the y-intercept, or the y value when x was zero. In the form of the equation we’re using, we are using <span class="process-math">\(P_0\)</span> to represent that initial amount.</div> <div class="para" id="p-900">In the <span class="process-math">\(y = mx + b\)</span> equation, recall that m was the slope. You might remember this as “rise over run”, or the change in y divided by the change in x. Either way, it represents the same thing as the common difference, <span class="process-math">\(d\text{,}\)</span> we are using - the amount the output Pn changes when the input n increases by 1.</div> <div class="para" id="p-901">The equations <span class="process-math">\(y = mx + b\)</span> and <span class="process-math">\(P_n = P_0 + d n\)</span> mean the same thing and can be used the same ways, we’re just writing it somewhat differently.</div></article><article class="example example-like" id="example-89"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-840">The population of elk in a national forest was measured to be 12,000 in 2003, and was measured again to be 15,000 in 2007. If the population continues to grow linearly at this rate, what will the elk population be in 2014?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-61" id="solution-61"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-61"><div class="solution solution-like">
-<div class="para" id="p-841">To begin, we need to define how we’re going to measure <span class="process-math">\(n\text{.}\)</span> Remember that <span class="process-math">\(P_0\)</span> is the population when <span class="process-math">\(n = 0\text{,}\)</span> so we probably don’t want to literally use the year 0. Since we already know the population in 2003, let us define <span class="process-math">\(n = 0\)</span> to be the year 2003. Then <span class="process-math">\(P_0 = 12,000\text{.}\)</span>
-</div> <div class="para" id="p-842">Next we need to find <span class="process-math">\(d\text{.}\)</span> Remember <span class="process-math">\(d\)</span> is the growth per time period, in this case growth per year. Between the two measurements, the population grew by <span class="process-math">\(15,000-12,000 = 3,000\text{,}\)</span> but it took 2007-2003 = 4 years to grow that much. To find the growth per year, we can divide: <span class="process-math">\(\frac{3000\text{ elk}}{4\text{ years}} = 750\)</span> elk in 1 year.</div> <div class="para" id="p-843">Alternatively, you can use the slope formula from algebra to determine the common difference, noting that the population is the output of the formula, and time is the input.</div>
+<div class="para" id="p-902">The population of elk in a national forest was measured to be 12,000 in 2003, and was measured again to be 15,000 in 2007. If the population continues to grow linearly at this rate, what will the elk population be in 2014?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-61" id="solution-61"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-61"><div class="solution solution-like">
+<div class="para" id="p-903">To begin, we need to define how we’re going to measure <span class="process-math">\(n\text{.}\)</span> Remember that <span class="process-math">\(P_0\)</span> is the population when <span class="process-math">\(n = 0\text{,}\)</span> so we probably don’t want to literally use the year 0. Since we already know the population in 2003, let us define <span class="process-math">\(n = 0\)</span> to be the year 2003. Then <span class="process-math">\(P_0 = 12,000\text{.}\)</span>
+</div> <div class="para" id="p-904">Next we need to find <span class="process-math">\(d\text{.}\)</span> Remember <span class="process-math">\(d\)</span> is the growth per time period, in this case growth per year. Between the two measurements, the population grew by <span class="process-math">\(15,000-12,000 = 3,000\text{,}\)</span> but it took 2007-2003 = 4 years to grow that much. To find the growth per year, we can divide: <span class="process-math">\(\frac{3000\text{ elk}}{4\text{ years}} = 750\)</span> elk in 1 year.</div> <div class="para" id="p-905">Alternatively, you can use the slope formula from algebra to determine the common difference, noting that the population is the output of the formula, and time is the input.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 d = \text{slope}=\frac{\text{change in output}}{\text{change in input}}=\frac{15000-12000}{2007 -2003}=
 \frac{3000}{4}=750
 \end{equation*}
 </div>
-<div class="para" id="p-844">We can now write our equation in whichever form is preferred.</div> <div class="para logical" id="p-845">
+<div class="para" id="p-906">We can now write our equation in whichever form is preferred.</div> <div class="para logical" id="p-907">
 <div class="para">Recursive form:</div>
 <div class="displaymath process-math" id="md-1">
 \begin{align*}
@@ -491,19 +491,19 @@ P_0 \amp = 12,000\\
 P_n \amp = P_{n-1} + 750
 \end{align*}
 </div>
-</div> <div class="para logical" id="p-846">
+</div> <div class="para logical" id="p-908">
 <div class="para">Explicit form:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_n = 12,000 + 750n
 \end{equation*}
 </div>
-</div> <div class="para" id="p-847">To answer the question, we need to first note that the year 2014 will be <span class="process-math">\(n = 11\text{,}\)</span> since 2014 is 11 years after 2003. The explicit form will be easier to use for this calculation:</div> <div class="para" id="p-848">
+</div> <div class="para" id="p-909">To answer the question, we need to first note that the year 2014 will be <span class="process-math">\(n = 11\text{,}\)</span> since 2014 is 11 years after 2003. The explicit form will be easier to use for this calculation:</div> <div class="para" id="p-910">
 <span class="process-math">\(P_{11} = 12,000 + 750(11) = 20,250\)</span> elk</div>
 </div></div></article><article class="example example-like" id="example-90"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-849">Gasoline consumption in the US has been increasing steadily. Consumption data from 1992 to 2004 is shown below</div> <div class="para" id="p-850">Find a model for this data, and use it to predict consumption in 2016. If the trend continues, when will consumption reach 200 billion gallons?</div> <figure class="table table-like" id="table-22"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.6<span class="period">.</span></span><span class="space"> </span>Gas Consumption (1992 - 2004)</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="p-911">Gasoline consumption in the US has been increasing steadily. Consumption data from 1992 to 2004 is shown below</div> <div class="para" id="p-912">Find a model for this data, and use it to predict consumption in 2016. If the trend continues, when will consumption reach 200 billion gallons?</div> <figure class="table table-like" id="table-22"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.6<span class="period">.</span></span><span class="space"> </span>Gas Consumption (1992 - 2004)</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Year</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Consumption (billions of gallons</th>
@@ -560,15 +560,15 @@ P_n = 12,000 + 750n
 <td class="c m b0 r0 l0 t0 lines">2004</td>
 <td class="c m b0 r0 l0 t0 lines">136</td>
 </tr>
-</table></div></figure> <div class="para" id="p-851">Plotting this data, it appears to have an approximately linear relationship:</div> <figure class="figure figure-like" id="figure-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear2.svg" role="img" class="contained" alt="A graph containing the points: (1992, 110) (1993, 111) (1994, 113) (1995, 116) (1996, 118) (1997, 119) (1998, 123) (1999, 125) (2000, 126) (2001, 128) (2002, 131) (2003, 133) and (2004, 136). These points lie in a nearly straight line."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.7<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para" id="p-852">While there are more advanced statistical techniques that can be used to find an equation to model the data, to get an idea of what is happening, we can find an equation by using two pieces of the data - perhaps the data from 1993 and 2003.</div> <div class="para" id="p-853">Letting <span class="process-math">\(n = 0\)</span> correspond with 1993 would give <span class="process-math">\(P_0 = 111\)</span> billion gallons.</div> <div class="para" id="p-854">To find <span class="process-math">\(d\text{,}\)</span> we need to know how much the gas consumption increased each year, on average. From 1993 to 2003 the gas consumption increased from 111 billion gallons to 133 billion gallons, a total change of <span class="process-math">\(133 - 111 = 22\)</span> billion gallons, over 10 years. This gives us an average change of <span class="process-math">\(22 \text{ billion gallons} \div 10 \text{ year} = 2.2\)</span> billion gallons per year.</div> <div class="para logical" id="p-855">
+</table></div></figure> <div class="para" id="p-913">Plotting this data, it appears to have an approximately linear relationship:</div> <figure class="figure figure-like" id="figure-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear2.svg" role="img" class="contained" alt="A graph containing the points: (1992, 110) (1993, 111) (1994, 113) (1995, 116) (1996, 118) (1997, 119) (1998, 123) (1999, 125) (2000, 126) (2001, 128) (2002, 131) (2003, 133) and (2004, 136). These points lie in a nearly straight line."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.7<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para" id="p-914">While there are more advanced statistical techniques that can be used to find an equation to model the data, to get an idea of what is happening, we can find an equation by using two pieces of the data - perhaps the data from 1993 and 2003.</div> <div class="para" id="p-915">Letting <span class="process-math">\(n = 0\)</span> correspond with 1993 would give <span class="process-math">\(P_0 = 111\)</span> billion gallons.</div> <div class="para" id="p-916">To find <span class="process-math">\(d\text{,}\)</span> we need to know how much the gas consumption increased each year, on average. From 1993 to 2003 the gas consumption increased from 111 billion gallons to 133 billion gallons, a total change of <span class="process-math">\(133 - 111 = 22\)</span> billion gallons, over 10 years. This gives us an average change of <span class="process-math">\(22 \text{ billion gallons} \div 10 \text{ year} = 2.2\)</span> billion gallons per year.</div> <div class="para logical" id="p-917">
 <div class="para">Equivalently,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 d = \frac{\text{change in output}}{\text{change in input}}=\frac{133 - 111}{10-0}=\frac{22}{10} = 2.2
 \end{equation*}
 </div>
-</div> <div class="para" id="p-856">We can now write our equation in whichever form is preferred.</div> <div class="para logical" id="p-857">
+</div> <div class="para" id="p-918">We can now write our equation in whichever form is preferred.</div> <div class="para logical" id="p-919">
 <div class="para">Recursive form:</div>
 <div class="displaymath process-math" id="md-2">
 \begin{align*}
@@ -576,16 +576,16 @@ P_0 \amp = 111\\
 P_n \amp = P_{n-1} + 2.2
 \end{align*}
 </div>
-</div> <div class="para logical" id="p-858">
+</div> <div class="para logical" id="p-920">
 <div class="para">Explicit form:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_n = 111 + 2.2n
 \end{equation*}
 </div>
-</div> <div class="para" id="p-859">Calculating values using the explicit form and plotting them with the original data shows how well our model fits the data.</div> <figure class="figure figure-like" id="figure-4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear3.svg" role="img" class="contained" alt="When the line found, P = 111+ 2.2n is graphed with the data points, it does not line up perfectly, but fits the data closely."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.8<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para" id="p-860">We can now use our model to make predictions about the future, assuming that the previous trend continues unchanged. To predict the gasoline consumption in 2016:</div> <div class="para" id="p-861">
-<span class="process-math">\(n = 23\)</span> (2016 - 1993 = 23 years later)</div> <div class="para" id="p-862"><span class="process-math">\(P_{23} = 111 + 2.2(23) = 161.6\)</span></div> <div class="para" id="p-863">Our model predicts that the US will consume 161.6 billion gallons of gasoline in 2016 if the current trend continues.</div> <div class="para" id="p-864">To find when the consumption will reach 200 billion gallons, we would set <span class="process-math">\(P_n = 200\text{,}\)</span> and solve for n:</div> <div class="para logical" id="p-865"><div class="displaymath process-math" id="md-3">
+</div> <div class="para" id="p-921">Calculating values using the explicit form and plotting them with the original data shows how well our model fits the data.</div> <figure class="figure figure-like" id="figure-4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear3.svg" role="img" class="contained" alt="When the line found, P = 111+ 2.2n is graphed with the data points, it does not line up perfectly, but fits the data closely."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.8<span class="period">.</span></span><span class="space"> </span>Image Credit: RRCC</figcaption></figure> <div class="para" id="p-922">We can now use our model to make predictions about the future, assuming that the previous trend continues unchanged. To predict the gasoline consumption in 2016:</div> <div class="para" id="p-923">
+<span class="process-math">\(n = 23\)</span> (2016 - 1993 = 23 years later)</div> <div class="para" id="p-924"><span class="process-math">\(P_{23} = 111 + 2.2(23) = 161.6\)</span></div> <div class="para" id="p-925">Our model predicts that the US will consume 161.6 billion gallons of gasoline in 2016 if the current trend continues.</div> <div class="para" id="p-926">To find when the consumption will reach 200 billion gallons, we would set <span class="process-math">\(P_n = 200\text{,}\)</span> and solve for n:</div> <div class="para logical" id="p-927"><div class="displaymath process-math" id="md-3">
 \begin{align*}
 111 + 2.2n \amp = 200\\
 111 + 2.2n - 111 \amp = 200 - 111\\
@@ -593,14 +593,14 @@ P_n = 111 + 2.2n
 \frac{2.2n}{2.2} \amp = \frac{89}{2.2}\\
 n \amp = 40.4545
 \end{align*}
-</div></div> <div class="para" id="p-866">This tells us that consumption will reach 200 billion about 40 years after 1993, which would be in the year 2033.</div></article><article class="example example-like" id="example-91"><h3 class="heading">
+</div></div> <div class="para" id="p-928">This tells us that consumption will reach 200 billion about 40 years after 1993, which would be in the year 2033.</div></article><article class="example example-like" id="example-91"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-867">The cost, in dollars, of a gym membership for n months can be described by the explicit equation <span class="process-math">\(P_n = 70 + 30n\text{.}\)</span> What does this equation tell us?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-62" id="solution-62"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-62"><div class="solution solution-like">
-<div class="para" id="p-868">The value for <span class="process-math">\(P_0\)</span> in this equation is 70, so the initial starting cost is $70. This tells us that there must be an initiation or start-up fee of $70 to join the gym.</div> <div class="para" id="p-869">The value for <span class="process-math">\(d\)</span> in the equation is 30, so the cost increases by $30 each month. This tells us that the monthly membership fee for the gym is $30 a month.</div>
+<div class="para" id="p-929">The cost, in dollars, of a gym membership for n months can be described by the explicit equation <span class="process-math">\(P_n = 70 + 30n\text{.}\)</span> What does this equation tell us?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-62" id="solution-62"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-62"><div class="solution solution-like">
+<div class="para" id="p-930">The value for <span class="process-math">\(P_0\)</span> in this equation is 70, so the initial starting cost is $70. This tells us that there must be an initiation or start-up fee of $70 to join the gym.</div> <div class="para" id="p-931">The value for <span class="process-math">\(d\)</span> in the equation is 30, so the cost increases by $30 each month. This tells us that the monthly membership fee for the gym is $30 a month.</div>
 </div></div></article><article class="problem example-like" id="problem-22"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h3> <div class="para" id="p-870">The number of stay-at-home fathers in Canada has been growing steadily. While the trend is not perfectly linear, it is fairly linear. Use the data from 1976 and 2010 to find an explicit formula for the number of stay-at-home fathers, then use it to predict the number if 2020.</div> <figure class="table table-like" id="table-23"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.11<span class="period">.</span></span><span class="space"> </span>Number of Stay-at-Home Fathers</figcaption><div class="tabular-box natural-width"><table class="tabular">
+</h3> <div class="para" id="p-932">The number of stay-at-home fathers in Canada has been growing steadily. While the trend is not perfectly linear, it is fairly linear. Use the data from 1976 and 2010 to find an explicit formula for the number of stay-at-home fathers, then use it to predict the number if 2020.</div> <figure class="table table-like" id="table-23"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.11<span class="period">.</span></span><span class="space"> </span>Number of Stay-at-Home Fathers</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Year</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Number of stay-at-home fathers</th>
@@ -625,25 +625,25 @@ n \amp = 40.4545
 <td class="c m b0 r0 l0 t0 lines">2010</td>
 <td class="c m b0 r0 l0 t0 lines">53,555</td>
 </tr>
-</table></div></figure> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-129" id="answer-129"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-129"><div class="answer solution-like"><span class="process-math">\(P_n = 20610 + 969n\)</span></div></div></article><article class="note remark-like" id="note-15"><h3 class="heading">
+</table></div></figure> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-191" id="answer-191"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-191"><div class="answer solution-like"><span class="process-math">\(P_n = 20610 + 969n\)</span></div></div></article><article class="note remark-like" id="note-15"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">4.1.12</span><span class="period">.</span><span class="space"> </span><span class="title">When good models go bad.</span>
-</h3> <div class="para" id="p-871">When using mathematical models to predict future behavior, it is important to keep in mind that very few trends will continue indefinitely.</div></article><article class="example example-like" id="example-92"><h3 class="heading">
+</h3> <div class="para" id="p-933">When using mathematical models to predict future behavior, it is important to keep in mind that very few trends will continue indefinitely.</div></article><article class="example example-like" id="example-92"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.13</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-872">Suppose a four year old boy is currently 39 inches tall, and you are told to expect him to grow 2.5 inches a year.</div> <div class="para" id="p-873">We can set up a growth model, with <span class="process-math">\(n = 0\)</span> corresponding to 4 years old.</div> <div class="para" id="p-874">Recursive form:</div>
+<div class="para" id="p-934">Suppose a four year old boy is currently 39 inches tall, and you are told to expect him to grow 2.5 inches a year.</div> <div class="para" id="p-935">We can set up a growth model, with <span class="process-math">\(n = 0\)</span> corresponding to 4 years old.</div> <div class="para" id="p-936">Recursive form:</div>
 <div class="displaymath process-math" id="md-4">
 \begin{align*}
 P_0 \amp = 39\\
 P_n \amp = P_{n-1} + 2.5
 \end{align*}
 </div>
-<div class="para" id="p-875">Explicit form:</div>
+<div class="para" id="p-937">Explicit form:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_n = 39 + 2.5n
 \end{equation*}
 </div>
-<div class="para" id="p-876">So at 6 years old, we would expect him to be <span class="process-math">\(P_2 = 39 + 2.5(2) = 44\)</span> inches tall.</div> <div class="para" id="p-877">Any mathematical model will break down eventually. Certainly, we shouldn’t expect this boy to continue to grow at the same rate all his life. If he did, at age 50 he would be <span class="process-math">\(P_{46} = 39 + 2.5(46) = 154\)</span> inches tall = 12.8 feet tall!</div></article><div class="para" id="p-878">When using any mathematical model, we have to consider which inputs are reasonable to use. Whenever we extrapolate, or make predictions into the future, we are assuming the model will continue to be valid.</div></section></div>
+<div class="para" id="p-938">So at 6 years old, we would expect him to be <span class="process-math">\(P_2 = 39 + 2.5(2) = 44\)</span> inches tall.</div> <div class="para" id="p-939">Any mathematical model will break down eventually. Certainly, we shouldn’t expect this boy to continue to grow at the same rate all his life. If he did, at age 50 he would be <span class="process-math">\(P_{46} = 39 + 2.5(46) = 154\)</span> inches tall = 12.8 feet tall!</div></article><div class="para" id="p-940">When using any mathematical model, we have to consider which inputs are reasonable to use. Whenever we extrapolate, or make predictions into the future, we are assuming the model will continue to be valid.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="Growth.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-algebra-exponential.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

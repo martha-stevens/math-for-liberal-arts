@@ -1519,7 +1519,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "2.5",
   "title": "Exercises",
-  "body": " Exercises   List out the elements of the set “The letters of the word Mississippi”  {m, i, s, p}   List out the elements of the set “Months of the year\"    Is a subset of the set of odd integers?  Yes   Is a subset of the set of letters of the alphabet?     Consider the sets below and indicate if each statement is true or false.  = {numbers from 0 to 10}   True. 3 is an element in set B   True. All elements in B are also in set A.   False. The elements in set C are not in set B.      Draw a bag diagram and find the cardinal number of each set.   4   1   1    List all subsets of { }, {math}, {history}, {English}, {math, history}, {math, English}, {history, English}, {math, history, English}  List all subsets of {tea, muffin, cookie}  How many subsets does {Colorado, Utah, Wyoming, Montana, Idaho} have? 32  How many subsets does {lily, daisy, sunflower, rose, iris, daffodil} have? How many of those subsets are proper subsets?    Use the sets below to find the following    {1, 2, 3, 4, 5, 7}   {5, 7}   {1, 2, 3, 4, 5, 7, 9}   {2, 4, 6, 8, 9, 10}   {4}      Let D = {b, a, c, k}, E = {t, a, s, k}, F = {b, a, t, h}. Using these sets, find the following:   {t, s}   {a, k, b, t, h}   {b, c, k}      Create a Venn diagram to illustrate each of the following:            Write an expression for each shaded region.    The shaded region includes where B overlaps with either A or C.  One possible answer:    The shaded region includes the part of set B that does not overlap with any other sets (A or C).    The shaded region include all of set C, as well as the part of set A that does not overlap with set B.    The shaded region includes everything in sets A and B, as well as parts of set A or B that do not overlap with set C.      The Venn diagram here shows the cardinality of each set. Use this to find the cardinality of each set.  Numbers in the Venn diagram are: only A = 7; only A and B = 3; only B = 5; A, B, and C = 1; only A and C = 4; only B and C = 2; only C = 8; outside all sets = 6      15       5       3      Let  Find the cardinality of the given sets.   5   6    If , find . 45  If , find ,  A survey was given asking whether they watch movies at home from Netflix, Redbox, or a video store. Use the results to determine how many people use Redbox.  52 only use Netflix  24 only use a video store  62 only use Redbox  16 use only a video store and Redbox  48 use only Netflix and Redbox  30 use only a video store and Netflix  10 use all three  25 use none of these    136  A survey asked buyers whether color, size, or brand influenced their choice of cell phone. The results are below. How many people were influenced by brand?  5 said only color  8 only said size  16 only said brand  20 said only color and size  42 said only color and brand  53 said only size and brand  102 said all three  20 said none of these     Use the given information to complete a Venn diagram, then determine: a) how many students have seen exactly one of these movies, and b) how many had seen only Star Wars.  18 had seen The Matrix  24 had seen Star Wars  20 had seen Lord of the Rings  10 had seen the Matrix and Star Wars  14 had seen Lord of the Rings and Star Wars  12 had seen the Matrix and Lord of the Rings  6 had seen all three    a) 8 b) 6  A survey asked people what alternative transportation modes they use. Using the data to complete a Venn diagram, then determine: a) what percent of people only ride the bus, and b) how many people don’t use any alternate transportation.  30% use the bus  20% ride a bicycle  25% walk  5% use the bus and ride a bicycle  10% ride a bicycle and walk  12% use the bus and walk  2% use all three     A group of students was surveyed about the student services they use. The results are summarized below.  6 use the rec center, library, and computer labs  16 use the rec center and library  28 use the library  14 use the library and computer labs  9 use the rec center and computer labs, but not library  23 use the rec center, but not library  18 were using only computer labs  37 were using none of these services    How many students were surveyed?  How many students were using only the rec center?  How many students were using computer labs?      106  14  41    A survey is taken of one hundred people who vacationed at a resort. The following information was obtained,  17 took tennis lesson, attended the Saturday night barbecue, and rented a surfboard  28 attended the barbecue and rented a surfboard  24 took tennis lessons and rented a surfboard  42 took tennis lessons, but didn't attend the barbecue  86 took tennis lessons or rented a surfboard  14 only rented a surfboard  14 did none of these things    How many attended the barbecue?  How many rented a surfboard?    A survey was made of 200 city residents to study the use of mass transit facilities. According to the survey:  83 did not use mass transit  68 used the train  44 only used the subway  59 used the bus    Explain how you can use this information to deduce that some residents must use both the bus and train.   "
+  "body": " Exercises   List out the elements of the set “The letters of the word Mississippi”  {m, i, s, p}   List out the elements of the set “Months of the year\"   {january, february, march, april, may, june, july, august, september, october, november, december}    Is a subset of the set of odd integers?  Yes   Is a subset of the set of letters of the alphabet?   Yes     Consider the sets below and indicate if each statement is true or false.  = {numbers from 0 to 10}   True. 3 is an element in set B   False   True. All elements in B are also in set A.   False   False. The elements in set C are not in set B.   True      Draw a bag diagram and find the cardinal number of each set.   4   2   1   3   1   0    List all subsets of { }, {math}, {history}, {English}, {math, history}, {math, English}, {history, English}, {math, history, English}  List all subsets of {tea, muffin, cookie}  {}, {tea}, {muffin}, {cookie}, {tea, muffin}, {tea, cookie}, {muffin, cookie}, {tea, muffin, cookie}   How many subsets does {Colorado, Utah, Wyoming, Montana, Idaho} have? 32  How many subsets does {lily, daisy, sunflower, rose, iris, daffodil} have? How many of those subsets are proper subsets?      Use the sets below to find the following    {1, 2, 3, 4, 5, 7}   {1, 3}   {5, 7}   {1, 3, 5, 7, 9}   {1, 2, 3, 4, 5, 7, 9}     {2, 4, 6, 8, 9, 10}   {5, 6, 7, 8, 9, 10}   {4}   {1, 2, 3, 4, 6, 8, 9, 10}      Let D = {b, a, c, k}, E = {t, a, s, k}, F = {b, a, t, h}. Using these sets, find the following:   {t, s}   {c, k}   {a, k, b, t, h}   {b, a, k}   {b, c, k}   {h}      Create a Venn diagram to illustrate each of the following:            Write an expression for each shaded region.    The shaded region includes where B overlaps with either A or C.  One possible answer:    The shaded region includes the part of set B that does not overlap with any other sets (A or C).      The shaded region include all of set C, as well as the part of set A that does not overlap with set B.    The shaded region includes everything in sets A and B, as well as parts of set A or B that do not overlap with set C.   One possibility:      The Venn diagram here shows the cardinality of each set. Use this to find the cardinality of each set.  Numbers in the Venn diagram are: only A = 7; only A and B = 3; only B = 5; A, B, and C = 1; only A and C = 4; only B and C = 2; only C = 8; outside all sets = 6      15     11     5     23     3   4      Let  Find the cardinality of the given sets.   5   3   6   1    If , find . 45  If , find ,  9   A survey was given asking whether they watch movies at home from Netflix, Redbox, or a video store. Use the results to determine how many people use Redbox.  52 only use Netflix  24 only use a video store  62 only use Redbox  16 use only a video store and Redbox  48 use only Netflix and Redbox  30 use only a video store and Netflix  10 use all three  25 use none of these    136  A survey asked buyers whether color, size, or brand influenced their choice of cell phone. The results are below. How many people were influenced by brand?  5 said only color  8 only said size  16 only said brand  20 said only color and size  42 said only color and brand  53 said only size and brand  102 said all three  20 said none of these     213   Use the given information to complete a Venn diagram, then determine: a) how many students have seen exactly one of these movies, and b) how many had seen only Star Wars.  18 had seen The Matrix  24 had seen Star Wars  20 had seen Lord of the Rings  10 had seen the Matrix and Star Wars  14 had seen Lord of the Rings and Star Wars  12 had seen the Matrix and Lord of the Rings  6 had seen all three    a) 8 b) 6  A survey asked people what alternative transportation modes they use. Using the data to complete a Venn diagram, then determine: a) what percent of people only ride the bus, and b) how many people don’t use any alternate transportation.  30% use the bus  20% ride a bicycle  25% walk  5% use the bus and ride a bicycle  10% ride a bicycle and walk  12% use the bus and walk  2% use all three    a. 15%; b. 50%    A group of students was surveyed about the student services they use. The results are summarized below.  6 use the rec center, library, and computer labs  16 use the rec center and library  28 use the library  14 use the library and computer labs  9 use the rec center and computer labs, but not library  23 use the rec center, but not library  18 were using only computer labs  37 were using none of these services    How many students were surveyed?  How many students were using only the rec center?  How many students were using computer labs?      106  14  41    A survey is taken of one hundred people who vacationed at a resort. The following information was obtained,  17 took tennis lesson, attended the Saturday night barbecue, and rented a surfboard  28 attended the barbecue and rented a surfboard  24 took tennis lessons and rented a surfboard  42 took tennis lessons, but didn't attend the barbecue  86 took tennis lessons or rented a surfboard  14 only rented a surfboard  14 did none of these things    How many attended the barbecue?  How many rented a surfboard?     30  49    A survey was made of 200 city residents to study the use of mass transit facilities. According to the survey:  83 did not use mass transit  68 used the train  44 only used the subway  59 used the bus    Explain how you can use this information to deduce that some residents must use both the bus and train.   83 did not use any mass transit and 14 people only used the subway--that leaves 103 people that are using the train or bus. However, n(B) = 59 and n(T) = 68. Since , there must be some people using both the train and bus.   "
 },
 {
   "id": "sets-ex-1",
@@ -1537,7 +1537,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.2",
   "title": "",
-  "body": " List out the elements of the set “Months of the year\"  "
+  "body": " List out the elements of the set “Months of the year\"   {january, february, march, april, may, june, july, august, september, october, november, december}  "
 },
 {
   "id": "sets-ex-3",
@@ -1555,7 +1555,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.4",
   "title": "",
-  "body": " Is a subset of the set of letters of the alphabet?  "
+  "body": " Is a subset of the set of letters of the alphabet?   Yes  "
 },
 {
   "id": "sets-ex-5",
@@ -1573,7 +1573,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.6",
   "title": "",
-  "body": ""
+  "body": " False  "
 },
 {
   "id": "sets-ex-7",
@@ -1591,7 +1591,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.8",
   "title": "",
-  "body": ""
+  "body": " False  "
 },
 {
   "id": "sets-ex-9",
@@ -1609,7 +1609,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.10",
   "title": "",
-  "body": ""
+  "body": " True  "
 },
 {
   "id": "sets-ex-11",
@@ -1627,7 +1627,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.12",
   "title": "",
-  "body": ""
+  "body": " 2  "
 },
 {
   "id": "sets-ex-13",
@@ -1645,7 +1645,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.14",
   "title": "",
-  "body": ""
+  "body": " 3  "
 },
 {
   "id": "sets-ex-15",
@@ -1663,7 +1663,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.16",
   "title": "",
-  "body": ""
+  "body": " 0  "
 },
 {
   "id": "sets-ex-17",
@@ -1681,7 +1681,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.18",
   "title": "",
-  "body": "List all subsets of {tea, muffin, cookie} "
+  "body": "List all subsets of {tea, muffin, cookie}  {}, {tea}, {muffin}, {cookie}, {tea, muffin}, {tea, cookie}, {muffin, cookie}, {tea, muffin, cookie}  "
 },
 {
   "id": "sets-ex-19",
@@ -1699,7 +1699,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.20",
   "title": "",
-  "body": "How many subsets does {lily, daisy, sunflower, rose, iris, daffodil} have? How many of those subsets are proper subsets? "
+  "body": "How many subsets does {lily, daisy, sunflower, rose, iris, daffodil} have? How many of those subsets are proper subsets?   "
 },
 {
   "id": "sets-ex-21",
@@ -1717,7 +1717,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.22",
   "title": "",
-  "body": ""
+  "body": " {1, 3}  "
 },
 {
   "id": "sets-ex-23",
@@ -1735,7 +1735,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.24",
   "title": "",
-  "body": ""
+  "body": " {1, 3, 5, 7, 9}  "
 },
 {
   "id": "sets-ex-25",
@@ -1753,7 +1753,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.26",
   "title": "",
-  "body": ""
+  "body": "  "
 },
 {
   "id": "sets-ex-27",
@@ -1771,7 +1771,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.28",
   "title": "",
-  "body": ""
+  "body": " {5, 6, 7, 8, 9, 10}  "
 },
 {
   "id": "sets-ex-29",
@@ -1789,7 +1789,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.30",
   "title": "",
-  "body": ""
+  "body": " {1, 2, 3, 4, 6, 8, 9, 10}  "
 },
 {
   "id": "sets-ex-31",
@@ -1807,7 +1807,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.32",
   "title": "",
-  "body": ""
+  "body": " {c, k}  "
 },
 {
   "id": "sets-ex-33",
@@ -1825,7 +1825,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.34",
   "title": "",
-  "body": ""
+  "body": " {b, a, k}  "
 },
 {
   "id": "sets-ex-35",
@@ -1843,7 +1843,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.36",
   "title": "",
-  "body": ""
+  "body": " {h}  "
 },
 {
   "id": "sets-ex-37",
@@ -1915,7 +1915,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.44",
   "title": "",
-  "body": " The shaded region includes the part of set B that does not overlap with any other sets (A or C).  "
+  "body": " The shaded region includes the part of set B that does not overlap with any other sets (A or C).    "
 },
 {
   "id": "sets-ex-45",
@@ -1933,7 +1933,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.46",
   "title": "",
-  "body": " The shaded region includes everything in sets A and B, as well as parts of set A or B that do not overlap with set C.  "
+  "body": " The shaded region includes everything in sets A and B, as well as parts of set A or B that do not overlap with set C.   One possibility:  "
 },
 {
   "id": "sets-ex-47",
@@ -1951,7 +1951,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.48",
   "title": "",
-  "body": "  "
+  "body": "   11  "
 },
 {
   "id": "sets-ex-49",
@@ -1969,7 +1969,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.50",
   "title": "",
-  "body": "  "
+  "body": "   23  "
 },
 {
   "id": "sets-ex-51",
@@ -1987,7 +1987,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.52",
   "title": "",
-  "body": ""
+  "body": " 4  "
 },
 {
   "id": "sets-ex-53",
@@ -2005,7 +2005,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.54",
   "title": "",
-  "body": ""
+  "body": " 3  "
 },
 {
   "id": "sets-ex-55",
@@ -2023,7 +2023,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.56",
   "title": "",
-  "body": ""
+  "body": " 1  "
 },
 {
   "id": "sets-ex-57",
@@ -2041,7 +2041,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.58",
   "title": "",
-  "body": "If , find , "
+  "body": "If , find ,  9  "
 },
 {
   "id": "sets-ex-59",
@@ -2059,7 +2059,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.60",
   "title": "",
-  "body": "A survey asked buyers whether color, size, or brand influenced their choice of cell phone. The results are below. How many people were influenced by brand?  5 said only color  8 only said size  16 only said brand  20 said only color and size  42 said only color and brand  53 said only size and brand  102 said all three  20 said none of these    "
+  "body": "A survey asked buyers whether color, size, or brand influenced their choice of cell phone. The results are below. How many people were influenced by brand?  5 said only color  8 only said size  16 only said brand  20 said only color and size  42 said only color and brand  53 said only size and brand  102 said all three  20 said none of these     213  "
 },
 {
   "id": "sets-ex-61",
@@ -2077,7 +2077,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.62",
   "title": "",
-  "body": "A survey asked people what alternative transportation modes they use. Using the data to complete a Venn diagram, then determine: a) what percent of people only ride the bus, and b) how many people don’t use any alternate transportation.  30% use the bus  20% ride a bicycle  25% walk  5% use the bus and ride a bicycle  10% ride a bicycle and walk  12% use the bus and walk  2% use all three   "
+  "body": "A survey asked people what alternative transportation modes they use. Using the data to complete a Venn diagram, then determine: a) what percent of people only ride the bus, and b) how many people don’t use any alternate transportation.  30% use the bus  20% ride a bicycle  25% walk  5% use the bus and ride a bicycle  10% ride a bicycle and walk  12% use the bus and walk  2% use all three    a. 15%; b. 50%  "
 },
 {
   "id": "sets-ex-63",
@@ -2095,7 +2095,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.64",
   "title": "",
-  "body": "A survey is taken of one hundred people who vacationed at a resort. The following information was obtained,  17 took tennis lesson, attended the Saturday night barbecue, and rented a surfboard  28 attended the barbecue and rented a surfboard  24 took tennis lessons and rented a surfboard  42 took tennis lessons, but didn't attend the barbecue  86 took tennis lessons or rented a surfboard  14 only rented a surfboard  14 did none of these things    How many attended the barbecue?  How many rented a surfboard?   "
+  "body": "A survey is taken of one hundred people who vacationed at a resort. The following information was obtained,  17 took tennis lesson, attended the Saturday night barbecue, and rented a surfboard  28 attended the barbecue and rented a surfboard  24 took tennis lessons and rented a surfboard  42 took tennis lessons, but didn't attend the barbecue  86 took tennis lessons or rented a surfboard  14 only rented a surfboard  14 did none of these things    How many attended the barbecue?  How many rented a surfboard?     30  49   "
 },
 {
   "id": "sets-ex-65",
@@ -2104,7 +2104,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.5.65",
   "title": "",
-  "body": "A survey was made of 200 city residents to study the use of mass transit facilities. According to the survey:  83 did not use mass transit  68 used the train  44 only used the subway  59 used the bus    Explain how you can use this information to deduce that some residents must use both the bus and train.  "
+  "body": "A survey was made of 200 city residents to study the use of mass transit facilities. According to the survey:  83 did not use mass transit  68 used the train  44 only used the subway  59 used the bus    Explain how you can use this information to deduce that some residents must use both the bus and train.   83 did not use any mass transit and 14 people only used the subway--that leaves 103 people that are using the train or bus. However, n(B) = 59 and n(T) = 68. Since , there must be some people using both the train and bus.  "
 },
 {
   "id": "sets-ch-test",
@@ -2284,7 +2284,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Introduction to Logic",
-  "body": "Introduction to Logic    Introduce Boolean logic.  Define conditional statements.  Discuss quantified statements and how to negate them.  Write statements in symbolic form.    Logic is, basically, the study of valid reasoning. When searching the internet, we use Boolean logic - terms like “and” and “or” - to help us find specific web pages that fit in the sets we are interested in. After exploring this form of logic, we will look at logical arguments and how we can determine the validity of a claim.  Boolean Logic  We can often classify items as belonging to sets. If you went the library to search for a book and they asked you to express your search using unions, intersections, and complements of sets, that would feel a little strange. Instead, we typically using words like “and”, “or”, and “not” to connect our keywords together to form a search. These words, which form the basis of Boolean logic, are directly related to our set operations. (Boolean logic was developed by the 19th-century English mathematician George Boole.)  Boolean Logic  Boolean logic combines multiple statements that are either true or false into an expression that is either true or false.  In connection to sets, a search is true if the element is part of the set.   Suppose M is the set of all mystery books, and C is the set of all comedy books. If we search for “mystery”, we are looking for all the books that are an element of the set M; the search is true for books that are in the set.  When we search for “mystery and comedy”, we are looking for a book that is an element of both sets, in the intersection. If we were to search for “mystery or comedy”, we are looking for a book that is a mystery, a comedy, or both, which is the union of the sets. If we searched for “not comedy”, we are looking for any book in the library that is not a comedy, the complement of the set C.   Connection to Set Operations  A and B: elements in the intersection  A or B: elements in the union  not A: elements in the complement   Notice here that or is not exclusive. This is a difference between the Boolean logic use of the word and common everyday use. When your significant other asks “do you want to go to the park or the movies?” they usually are proposing an exclusive choice - one option or the other, but not both. In Boolean logic, the or is not exclusive - more like being asked at a restaurant “would you like fries or a drink with that?” Answering “both, please” is an acceptable answer.   Suppose we are searching a library database for Mexican universities. Express a reasonable search using Boolean logic.  We could start with the search “Mexico and university”, but would be likely to find results for the U.S. state New Mexico. To account for this, we could revise our search to read: Mexico and university not “New Mexico”.   In most internet search engines, it is not necessary to include the word and; the search engine assumes that if you provide two keywords you are looking for both. In Google’s search, the keyword or has be capitalized as OR, and a negative sign in front of a word is used to indicate not. Quotes around a phrase indicate that the entire phrase should be looked for. The search from the previous example on Google could be written: Mexico university -“New Mexico”.   Describe the numbers that meet the condition:  even and less than 10 and greater than 0  The numbers that satisfy all three requirements are {2, 4, 6, 8}   Sometimes statements made in English can be ambiguous. For this reason, Boolean logic uses parentheses to show precedent, just like in algebraic order of operations.   Describe the numbers that meet the condition:  odd number and less than 20 and greater than 0 and (multiple of 3 or multiple of 5)  The first three conditions limit us to the set {1, 3, 5, 7, 9, 11, 13, 15, 17, 19}  The last grouped conditions tell us to find elements of this set that are also either a multiple of 3 or a multiple of 5. This leaves us with the set {3, 5, 9, 15}  Notice that we would have gotten a very different result if we had written  (odd number and less than 20 and greater than 0 and multiple of 3) or multiple of 5  The first grouped set of conditions would give {3, 9, 15}. When combined with the last condition, though, this set expands without limits:  {3, 5, 9, 15, 20, 25, 30, 35, 40, 45, …}    The English phrase “Go to the store and buy me eggs and bagels or cereal” is ambiguous; it is not clear whether the requestors is asking for eggs always along with either bagels or cereal, or whether they’re asking for either the combination of eggs and bagels, or just cereal.  For this reason, using parentheses clarifies the intent:  Eggs and (bagels or cereal) means Option 1: Eggs and bagels, Option 2: Eggs and cereal  (Eggs and bagels) or cereal means Option 1: Eggs and bagels, Option 2: Cereal   Be aware that when a string of conditions is written without grouping symbols, it is often interpreted from the left to right, resulting in the latter interpretation.   Conditional Statements  Beyond searching, Boolean logic is commonly used in spreadsheet applications like Excel to do conditional calculations. A statement is something that is either true or false. A statement like is true; a statement like “a rat is a fish” is false. A statement like ” is true for some values of x and false for others. When an action is taken or not depending on the value of a statement, it forms a conditional.  Statements and Conditionals  A statement is either true or false.  A conditional is a compound statement of the form “if p then q” or “if p then q, else s”.    In common language, an example of a conditional statement would be “If it is raining, then we’ll go to the mall. Otherwise we’ll go for a hike.”  The statement “If it is raining” is the condition - this may be true or false for any given day. If the condition is true, then we will follow the first course of action, and go to the mall. If the condition is false, then we will use the alternative, and go for a hike.     A parent might say to their child “if you clean your room and take out the garbage, then you can have ice cream.”  Here, there are two simpler conditions:  The child cleaning her room.  The child taking out the garbage   Since these conditions were joined with and, the combined conditional will be true only if both simpler conditions are true; if either chore is not completed, then the parent’s condition is not met.  Notice that if the parent had said “if you clean your room or take out the garbage, then you can have ice cream”, then the child would need to complete only one chore to meet the condition.    Quantified Statements  Words that describe an entire set, such as “all”, “every”, or “none”, are called universal quantifiers because that set could be considered a universal set. In contrast, words or phrases such as “some”, “one”, or “at least one” are called existential quantifiers because they describe the existence of at least one element in a set.  Quantifiers  A universal quantifier states that an entire set of things share a characteristic.  An existential quantifier states that a set contains at least one element.   Something interesting happens when we negate - or state the opposite of - a quantified statement.   Suppose your friend says “Everybody cheats on their taxes.” What is the minimum amount of evidence you would need to prove your friend wrong?  To show that it is not true that everybody cheats on their taxes, all you need is one person who does not cheat on their taxes. It would be perfectly fine to produce more people who do not cheat, but one counterexample is all you need.  It is important to note that you do not need to show that absolutely nobody cheats on their taxes.    Suppose your friend says “One of these six cartons of milk is leaking.” What is the minimum amount of evidence you would need to prove your friend wrong?  In this case, you would need to check all six cartons and show that none of them is leaking. You cannot disprove your friend’s statement by checking only one of the cartons.   When we negate a statement with a universal quantifier, we get a statement with an existential quantifier, and vice-versa.  Negating a quantified statement  The negation of “all A are B” is “at least one A is not B”.  The negation of “no A are B” is “at least one A is B”.  The negation of “at least one A is B” is “no A are B”.  The negation of “at least one A is not B” is “all A are B”    “Somebody brought a flashlight.” Write the negation of this statement.  The negation is “Nobody brought a flashlight.”    “There are no prime numbers that are even.” Write the negation of this statement.  The negation is “At least one prime number is even.   Try It Now  Write the negation of “All Icelandic children learn English in school.”  At least one Icelandic child did not learn English in school.    Statements in Symbolic Form.  Before we focus on truth tables, we’re going to introduce some symbols that are commonly used for and, or, and not.  Symbols  Some of the symbols that are used for and, or, and not are:  The symbol is used for and : A and B is notated  The symbol is used for or : A or B is notated  The symbol is used for not : not A is notated   You can remember the first two symbols by relating them to the shapes for the union and intersection. would be the elements that exist in both sets, in . Likewise, would be the elements that exist in either set, in . When we are working with sets, we use the rounded version of the symbols; when we are working with statements, we use the pointy version.   Translate each statement into symbolic notation. Let P represent “I like Pepsi” and let C represent “I like Coke”.    I like Pepsi or I like Coke.  I like Pepsi and I like Coke.  I do not like Pepsi.  It is not the case that I like Pepsi or Coke.  I like Pepsi and I do not like Coke.             As you can see, we can use parentheses to organize more complicated statements.    Try It Now  Translate “We have carrots or we will not make soup” into symbols. Let C represent “we have carrots” and let S represent “we will make soup”.     "
+  "body": "Introduction to Logic    Introduce Boolean logic.  Define conditional statements.  Discuss quantified statements and how to negate them.  Write statements in symbolic form.    Logic is, basically, the study of valid reasoning. When searching the internet, we use Boolean logic - terms like “and” and “or” - to help us find specific web pages that fit in the sets we are interested in. After exploring this form of logic, we will look at logical arguments and how we can determine the validity of a claim.  Boolean Logic  We can often classify items as belonging to sets. If you went the library to search for a book and they asked you to express your search using unions, intersections, and complements of sets, that would feel a little strange. Instead, we typically use words like “and”, “or”, and “not” to connect our keywords together to form a search. These words, which form the basis of Boolean logic, are directly related to our set operations. (Boolean logic was developed by the 19th-century English mathematician George Boole.)  Boolean Logic  Boolean logic combines multiple statements that are either true or false into an expression that is either true or false.  In connection to sets, a search is true if the element is part of the set.   Suppose M is the set of all mystery books, and C is the set of all comedy books. If we search for “mystery”, we are looking for all the books that are an element of the set M; the search is true for books that are in the set.  When we search for “mystery and comedy”, we are looking for a book that is an element of both sets, in the intersection. If we were to search for “mystery or comedy”, we are looking for a book that is a mystery, a comedy, or both, which is the union of the sets. If we searched for “not comedy”, we are looking for any book in the library that is not a comedy, the complement of the set C.   Connection to Set Operations  A and B: elements in the intersection  A or B: elements in the union  not A: elements in the complement   Notice here that or is not exclusive. This is a difference between the Boolean logic use of the word and common everyday use. When your significant other asks “do you want to go to the park or the movies?” they usually are proposing an exclusive choice - one option or the other, but not both. In Boolean logic, the or is not exclusive - more like being asked at a restaurant “would you like fries or a drink with that?” Answering “both, please” is an acceptable answer.   Suppose we are searching a library database for Mexican universities. Express a reasonable search using Boolean logic.  We could start with the search “Mexico and university”, but would be likely to find results for the U.S. state New Mexico. To account for this, we could revise our search to read: Mexico and university not “New Mexico”.   In most internet search engines, it is not necessary to include the word and; the search engine assumes that if you provide two keywords you are looking for both. In Google’s search, the keyword or has be capitalized as OR, and a negative sign in front of a word is used to indicate not. Quotes around a phrase indicate that the entire phrase should be looked for. The search from the previous example on Google could be written: Mexico university -“New Mexico”.   Describe the numbers that meet the condition:  even and less than 10 and greater than 0  The numbers that satisfy all three requirements are {2, 4, 6, 8}   Sometimes statements made in English can be ambiguous. For this reason, Boolean logic uses parentheses to show precedent, just like in algebraic order of operations.   Describe the numbers that meet the condition:  odd number and less than 20 and greater than 0 and (multiple of 3 or multiple of 5)  The first three conditions limit us to the set {1, 3, 5, 7, 9, 11, 13, 15, 17, 19}  The last grouped conditions tell us to find elements of this set that are also either a multiple of 3 or a multiple of 5. This leaves us with the set {3, 5, 9, 15}  Notice that we would have gotten a very different result if we had written  (odd number and less than 20 and greater than 0 and multiple of 3) or multiple of 5  The first grouped set of conditions would give {3, 9, 15}. When combined with the last condition, though, this set expands without limits:  {3, 5, 9, 15, 20, 25, 30, 35, 40, 45, …}    The English phrase “Go to the store and buy me eggs and bagels or cereal” is ambiguous; it is not clear whether the requestors is asking for eggs always along with either bagels or cereal, or whether they’re asking for either the combination of eggs and bagels, or just cereal.  For this reason, using parentheses clarifies the intent:  Eggs and (bagels or cereal) means Option 1: Eggs and bagels, Option 2: Eggs and cereal  (Eggs and bagels) or cereal means Option 1: Eggs and bagels, Option 2: Cereal   Be aware that when a string of conditions is written without grouping symbols, it is often interpreted from the left to right, resulting in the latter interpretation.   Conditional Statements  Beyond searching, Boolean logic is commonly used in spreadsheet applications like Excel to do conditional calculations. A statement is something that is either true or false. A statement like is true; a statement like “a rat is a fish” is false. A statement like ” is true for some values of x and false for others. When an action is taken or not depending on the value of a statement, it forms a conditional.  Statements and Conditionals  A statement is either true or false.  A conditional is a compound statement of the form “if p then q” or “if p then q, else s”.    In common language, an example of a conditional statement would be “If it is raining, then we’ll go to the mall. Otherwise we’ll go for a hike.”  The statement “If it is raining” is the condition - this may be true or false for any given day. If the condition is true, then we will follow the first course of action, and go to the mall. If the condition is false, then we will use the alternative, and go for a hike.     A parent might say to their child “if you clean your room and take out the garbage, then you can have ice cream.”  Here, there are two simpler conditions:  The child cleaning her room.  The child taking out the garbage   Since these conditions were joined with and, the combined conditional will be true only if both simpler conditions are true; if either chore is not completed, then the parent’s condition is not met.  Notice that if the parent had said “if you clean your room or take out the garbage, then you can have ice cream”, then the child would need to complete only one chore to meet the condition.    Quantified Statements  Words that describe an entire set, such as “all”, “every”, or “none”, are called universal quantifiers because that set could be considered a universal set. In contrast, words or phrases such as “some”, “one”, or “at least one” are called existential quantifiers because they describe the existence of at least one element in a set.  Quantifiers  A universal quantifier states that an entire set of things share a characteristic.  An existential quantifier states that a set contains at least one element.   Something interesting happens when we negate - or state the opposite of - a quantified statement.   Suppose your friend says “Everybody cheats on their taxes.” What is the minimum amount of evidence you would need to prove your friend wrong?  To show that it is not true that everybody cheats on their taxes, all you need is one person who does not cheat on their taxes. It would be perfectly fine to produce more people who do not cheat, but one counterexample is all you need.  It is important to note that you do not need to show that absolutely nobody cheats on their taxes.    Suppose your friend says “One of these six cartons of milk is leaking.” What is the minimum amount of evidence you would need to prove your friend wrong?  In this case, you would need to check all six cartons and show that none of them is leaking. You cannot disprove your friend’s statement by checking only one of the cartons.   When we negate a statement with a universal quantifier, we get a statement with an existential quantifier, and vice-versa.  Negating a quantified statement  The negation of “all A are B” is “at least one A is not B”.  The negation of “no A are B” is “at least one A is B”.  The negation of “at least one A is B” is “no A are B”.  The negation of “at least one A is not B” is “all A are B”    “Somebody brought a flashlight.” Write the negation of this statement.  The negation is “Nobody brought a flashlight.”    “There are no prime numbers that are even.” Write the negation of this statement.  The negation is “At least one prime number is even.   Try It Now  Write the negation of “All Icelandic children learn English in school.”  At least one Icelandic child did not learn English in school.    Statements in Symbolic Form.  Before we focus on truth tables, we’re going to introduce some symbols that are commonly used for and, or, and not.  Symbols  Some of the symbols that are used for and, or, and not are:  The symbol is used for and : A and B is notated  The symbol is used for or : A or B is notated  The symbol is used for not : not A is notated   You can remember the first two symbols by relating them to the shapes for the union and intersection. would be the elements that exist in both sets, in . Likewise, would be the elements that exist in either set, in . When we are working with sets, we use the rounded version of the symbols; when we are working with statements, we use the pointy version.   Translate each statement into symbolic notation. Let P represent “I like Pepsi” and let C represent “I like Coke”.    I like Pepsi or I like Coke.  I like Pepsi and I like Coke.  I do not like Pepsi.  It is not the case that I like Pepsi or Coke.  I like Pepsi and I do not like Coke.             As you can see, we can use parentheses to organize more complicated statements.    Try It Now  Translate “We have carrots or we will not make soup” into symbols. Let C represent “we have carrots” and let S represent “we will make soup”.     "
 },
 {
   "id": "objectives-9",
@@ -2737,9 +2737,9 @@ var ptx_lunr_docs = [
   "body": "Try It Now  “If you go swimming less than an hour after eating lunch, then you will get cramps.” Which of the following statements is equivalent to the negation of this statement?  I went swimming more than an hour after eating lunch and I got cramps.  I went swimming less than an hour after eating lunch and I didn’t get cramps.  I went swimming more than an hour after eating lunch and I didn’t get cramps.   Choice b is equivalent to the negation; it keeps the first part the same and negates the second part.  "
 },
 {
-  "id": "p-563",
+  "id": "p-593",
   "level": "2",
-  "url": "section-logic-conditional.html#p-563",
+  "url": "section-logic-conditional.html#p-593",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2788,7 +2788,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Arguments",
-  "body": "Arguments    Identify inductive and deductive reasoning.  Evaluate arguments with truth tables.  Discover forms of valid and invalid arguments.  Discuss logical fallacies.    A logical argument is a claim that a set of premises support a conclusion. This section will define the different arguments types and discuss how truth tables can be used to determine whether an arugment is valid or invalid.  Argument Types  There are two general types of arguments:  An inductive argument uses a collection of specific examples as its premises and uses them to propose a general conclusion.  A deductive argument uses a collection of general statements as its premises and uses them to propose a specific situation as the conclusion.   The argument “when I went to the store last week I forgot my purse, and when I went today I forgot my purse. I always forget my purse when I go the store” is an inductive argument.  The premises are:  I forgot my purse last week  I forgot my purse today   The conclusion is:  I always forget my purse   Notice that the premises are specific situations, while the conclusion is a general statement. In this case, this is a fairly weak argument, since it is based on only two instances.    The argument “every day for the past year, a plane flies over my house at 2:00 P.M. A plane will fly over my house every day at 2:00 P.M.” is a stronger inductive argument, since it is based on a larger set of evidence. While it is not necessarily true—the airline may have cancelled its afternoon flight—it is probably a safe bet.    Evaluating inductive arguments  An inductive argument is never able to prove the conclusion true, but it can provide either weak or strong evidence to suggest that it may be true.   Many scientific theories, such as the big bang theory, can never be proven. Instead, they are inductive arguments supported by a wide variety of evidence. Usually in science, an idea is considered a hypothesis until it has been well tested, at which point it graduates to being considered a theory. Common scientific theories, like Newton’s theory of gravity, have all stood up to years of testing and evidence, though sometimes they need to be adjusted based on new evidence, such as when Einstein proposed the theory of general relativity  A deductive argument is more clearly valid or not, which makes it easier to evaluate.  Evaluating deductive arguments  A deductive argument is considered valid if, assuming that all the premises are true, the conclusion follows logically from those premises. In other words, when the premises are all true, the conclusion must be true.     Evaluating Dedutive Arguments with Truth Tables  Arguments can also be analyzed using truth tables, although this can be a lot of work.  To analyze an argument with a truth table:    Represent each of the premises and the conclusion symbolically  Create truth tables for each premise and for the conclusion.  The argument is valid if and only if the conclusion is true when all premises are true.    Consider the argument  Premise: If you bought bread, then you went to the store.  Premise: You bought bread.  Conclusion: You went to the store.  While this example is fairly obviously a valid argument, we can analyze it by representing the argument symbolically and then creating truth tables for the premises and conclusion.  We’ll let b represent “you bought bread” and s represent “you went to the store”. Then the argument becomes:  Premise:  Premise:  Conclusion:   Verifying an Argument    Variable 1:  Variable 2:  Premise 1:  Premise 2:  Conclusion:    T  T  T  T  T    T  F  T  F  F    F  T  F  T  T    F  F  F  T  F     The only row where both premises are true is the first one. The conclusion is also true in the first row. Since the conclusion is true when both premises are true, this is a valid argument.   Try It Now  Use truth tables to determine whether the argument is valid:  If I have a shovel, I can dig a hole.  I dug a hole.  Therefore, I had a shovel.   Let s represent \"I have shovel\" and d represent \"I dug a hole.\"  In symbolic form, the argument is:     The truth tables for this argument are:   Verifying an Argument    Variable 1:  Variable 2:  Premise 1:  Premise 2:  Conclusion:    T  T  T  T  T    T  F  F  F  T    F  T  T  T  F    F  F  T  F  F     Both premises are true in both the first and third rows of the table. However, the conclusion is false in the third row. Since there is a situation where both premises are true and the conclusion is false (the third row of the table), this is an invalid argument.     Forms of Arguments  Rather than making a truth table for every argument, we may be able to recognize certain common forms of arguments that are valid (or invalid). If we can determine that an argument fits one of the common forms, we can immediately state whether it is valid or invalid.  Law of Detachment  The law of detachment applies when a conditional and its antecedent are given as premises, and the consequent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:    Recall this argument from an earlier example:  Premise: If you bought bread, then you went to the store.  Premise: You bought bread.  Conclusion: You went to the store.  In symbolic form:  Premise:  Premise:  Conclusion:  This argument has the structure described by the law of detachment. (The second premise and the conclusion are simply the two parts of the first premise detached from each other.) Instead of making a truth table, we can say that this argument is valid by stating that it satisfies the law of detachment.   Law of Contraposition  The law of contraposition applies when a conditional and the negation of its consequent are given as premises, and the negation of its antecedent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:   Notice that the second premise and the conclusion look like the contrapositive of the first premise, , but they have been detached. You can think of the law of contraposition as a combination of the law of detachment and the fact that the contrapositive is logically equivalent to the original statement.   Premise: If I drop my phone into the swimming pool, my phone will be ruined.  Premise: My phone isn’t ruined.  Conclusion: I didn’t drop my phone into the swimming pool.  If we let d = I drop the phone in the pool and r = the phone is ruined, then we can represent the argument this way:  Premise:  Premise:  Conclusion:  The form of this argument matches what we need to invoke the law of contraposition, so it is a valid argument.   Try It Now  Is this argument valid?  Premise: If you brushed your teeth before bed, then your toothbrush will be wet.  Premise: Your toothbrush is dry.  Conclusion: You didn’t brush your teeth before bed.  Yes, by the Law of Contraposition   The Transitive Property  The transitive property has as its premises a series of conditionals, where the consequent of one is the antecedent of the next. The conclusion is a conditional with the same antecedent as the first premise and the same consequent as the final premise.  The general form is:  Premise:  Premise:  Conclusion:    Premise: If a soccer player commits a reckless foul, she will receive a yellow card.  Premise: If Hayley receives a yellow card, she will be suspended for the next match.  Conclusion: If Hayley commits a reckless foul, she will be suspended for the next match.  If we let r = committing a reckless foul, y = receiving a yellow card, and s = being suspended, then our argument looks like this:  Premise  Premise  Conclusion:  This argument has the exact structure required to use the transitive property, so it is a valid argument.   Dijunctive Syllogism  In a disjunctive syllogism, the premises consist of an or statement and the negation of one of the options. The conclusion is the other option.  The general form is:  Premise:  Premise:  Conclusion:    The order of the two parts of the disjunction isn’t important. In other words, we could have the premises and , and the conclusion .   Premise: I can either drive or take the train.  Premise: I refuse to drive.  Conclusion: I will take the train.  If we let d = I drive and t = I take the train, then the symbolic representation of the argument is:  Premise  Premise  Conclusion:  This argument is valid because it has the form of a disjunctive syllogism. I have two choices, and one of them is not going to happen, so the other one must happen.   Keep in mind that, when you are determining the validity of an argument, you must assume that the premises are true. If you don’t agree with one of the premises, you need to keep your personal opinion out of it. Your job is to pretend that the premises are true and then determine whether they force you to accept the conclusion. You may attack the premises in a court of law or a political discussion, of course, but here we are focusing on the structure of the arguments, not the truth of what they actually say.  We have just looked at four forms of valid arguments; there are two common forms that represent invalid arguments, which are also called fallacies .  Fallacy of the Converse  The fallacy of the converse arises when a conditional and its consequent are given as premises, and the antecedent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:   Notice that the second premise and the conclusion look like the converse of the first premise, , but they have been detached. The fallacy of the converse incorrectly tries to assert that the converse of a statement is equivalent to that statement.   Premise: If I drink coffee after noon, then I have a hard time falling asleep that night.  Premise: I had a hard time falling asleep last night.  Conclusion: I drank coffee after noon yesterday.  If we let c = I drink coffee after noon and h = I have a hard time falling asleep, then our argument looks like this:  Premise:  Premise:  Conclusion:  This argument uses converse reasoning, so it is an invalid argument. There could be plenty of other reasons why I couldn’t fall asleep: I could be worried about money, my neighbors might have been setting off fireworks, etc.   Fallacy of the Converse  The fallacy of the inverse occurs when a conditional and the negation of its antecedent are given as premises, and the negation of the consequent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:   Again, notice that the second premise and the conclusion look like the inverse of the first premise, , but they have been detached. The fallacy of the inverse incorrectly tries to assert that the inverse of a statement is equivalent to that statement.   Premise: If you listen to the Grateful Dead, then you are a hippie.  Premise: Sky doesn’t listen to the Grateful Dead.  Conclusion: Sky is not a hippie.  If we let g = listen to the Grateful Dead and h = is a hippie, then this is the argument:  Premise:  Premise:  Conclusion:  This argument is invalid because it uses inverse reasoning. The first premise does not imply that all hippies listen to the Grateful Dead; there could be some hippies who listen to Phish instead.   Of course, arguments are not limited to these six basic forms; some arguments have more premises, or premises that need to be rearranged before you can see what is really happening. There are plenty of other forms of arguments that are invalid. If an argument doesn’t seem to fit the pattern of any of these common forms, though, you may want to use a Venn diagram or a truth table instead.  Lewis Carroll, author of Alice’s Adventures in Wonderland, was a math and logic teacher, and wrote two books on logic. In them, he would propose premises as a puzzle, to be connected using syllogisms. The following example is one such puzzle.   Solve the puzzle. In other words, find a logical conclusion from these premises.  All babies are illogical.  Nobody is despised who can manage a crocodile.  Illogical persons are despised.  Let b = is a baby, d = is despised, i = is illogical, and m = can manage a crocodile. Then we can write the premises as:     Writing the second premise correctly can be a challenge; it can be rephrased as “If you can manage a crocodile, then you are not despised.”  Using the transitive property with the first and third premises, we can conclude that ; that all babies are despised. Using the contrapositive of the second premise, , we can then use the transitive property with to conclude that ; that babies cannot manage crocodiles. While it is silly, this is a logical conclusion from the given premises.   Try It Now  Is this argument valid?  Premise: If I go to the party, I’ll be really tired tomorrow.  Premise: If I go to the party, I’ll get to see friends.  Conclusion: If I don’t see friends, I won’t be tired tomorrow   Let p = go to party, t = be tired, and f = see friends.  Premise:  Premise:  Conclusion:  We could try to rewrite the second premise using the contrapositive to state , but that does not allow us to form a syllogism. If I don’t see friends, then I didn’t go the party, but that is not sufficient to claim I won’t be tired tomorrow. Maybe I stayed up all night watching movies.     Logical Fallacies in Common Language  In the previous discussion, we saw that logical arguments can be invalid when the premises are not true, when the premises are not sufficient to guarantee the conclusion, or when there are invalid chains in logic. There are a number of other ways in which arguments can be invalid, a sampling of which are given here.  Ad hominem  An ad hominem argument attacks the person making the argument, ignoring the argument itself.    “Jane says that whales aren’t fish, but she’s only in the second grade, so she can’t be right.”  Here the argument is attacking Jane, not the validity of her claim, so this is an ad hominem argument.    “Jane says that whales aren’t fish, but everyone knows that they’re really mammals. She’s so stupid.”  This certainly isn’t very nice, but it is not ad hominem since a valid counterargument is made along with the personal insult.   Appeal to ignorance  This type of argument assumes something it true because it hasn’t been proven false    “Nobody has proven that photo isn’t of Bigfoot, so it must be Bigfoot.”   Appeal to authority  These arguments attempt to use the authority of a person to prove a claim. While often authority can provide strength to an argument, problems can occur when the person’s opinion is not shared by other experts, or when the authority is irrelevant to the claim.    “A diet high in bacon can be healthy; Doctor Atkins said so.”  Here, an appeal to the authority of a doctor is used for the argument. This generally would provide strength to the argument, except that the opinion that eating a diet high in saturated fat runs counter to general medical opinion. More supporting evidence would be needed to justify this claim.    “Jennifer Hudson lost weight with Weight Watchers, so their program must work.”  Here, there is an appeal to the authority of a celebrity. While her experience does provide evidence, it provides no more than any other person’s experience would.   Appeal to consequence  An appeal to consequence concludes that a premise is true or false based on whether the consequences are desirable or not.    “Humans will travel faster than light: faster-than-light travel would be beneficial for space travel.”   False dilemma  A false dilemma argument falsely frames an argument as an “either or” choice, without allowing for additional options.    “Either those lights in the sky were an airplane or aliens. There are no airplanes scheduled for tonight, so it must be aliens.”  This argument ignores the possibility that the lights could be something other than an airplane or aliens.   Circular reasoning  Circular reasoning is an argument that relies on the conclusion being true for the premise to be true.    “I shouldn’t have gotten a C in that class; I’m an A student!”  In this argument, the student is claiming that because they’re an A student, though shouldn’t have gotten a C. But because they got a C, they’re not an A student.   Post hoc (post hoc ergo propter hoc)  A post hoc argument claims that because two things happened sequentially, then the first must have caused the second.    “Today I wore a red shirt, and my football team won! I need to wear a red shirt every time they play to make sure they keep winning.”  Straw man A straw man argument involves misrepresenting the argument in a less favorable way to make it easier to attack.   “Senator Jones has proposed reducing military funding by 10%. Apparently he wants to leave us defenseless against attacks by terrorists”  Here the arguer has represented a 10% funding cut as equivalent to leaving us defenseless, making it easier to attack Senator Jones’ position.   Correlation implies causation  Similar to post hoc, but without the requirement of sequence, this fallacy assumes that just because two things are related one must have caused the other. Often there is a third variable not considered.   “Months with high ice cream sales also have a high rate of deaths by drowning. Therefore, ice cream must be causing people to drown.”  This argument is implying a causal relation, when really both are more likely dependent on the weather; that ice cream and drowning are both more likely during warm summer months.   Try It Now  Identify the logical fallacy in each of the arguments    Only an untrustworthy person would run for office. The fact that politicians are untrustworthy is proof of this.  Since the 1950s, both the atmospheric carbon dioxide level and obesity levels have increased sharply. Hence, atmospheric carbon dioxide causes obesity.  The oven was working fine until you started using it, so you must have broken it.  You can’t give me a D in the class because I can’t afford to retake it.  The senator wants to increase support for food stamps. He wants to take the taxpayers’ hard-earned money and give it away to lazy people. This isn’t fair, so we shouldn’t do it.      Circular  Correlation does not imply causation  Post hoc  Appeal to consequence  Staw man      It may be difficult to identify one particular fallacy for an argument. Consider this argument: “Emma Watson says she’s a feminist, but she posed for these racy pictures. I’m a feminist, and no self-respecting feminist would do that.” Could this be ad hominem, saying that Emma Watson has no self-respect? Could it be appealing to authority because the person making the argument claims to be a feminist? Could it be a false dilemma because the argument assumes that a woman is either a feminist or not, with no gray area in between?   "
+  "body": "Arguments    Identify inductive and deductive reasoning.  Evaluate arguments with truth tables.  Discover forms of valid and invalid arguments.  Discuss logical fallacies.    A logical argument is a claim that a set of premises support a conclusion. This section will define the different arguments types and discuss how truth tables can be used to determine whether an arugment is valid or invalid.  Argument Types  There are two general types of arguments:  An inductive argument uses a collection of specific examples as its premises and uses them to propose a general conclusion.  A deductive argument uses a collection of general statements as its premises and uses them to propose a specific situation as the conclusion.   The argument “when I went to the store last week I forgot my purse, and when I went today I forgot my purse. I always forget my purse when I go the store” is an inductive argument.  The premises are:  I forgot my purse last week  I forgot my purse today   The conclusion is:  I always forget my purse   Notice that the premises are specific situations, while the conclusion is a general statement. In this case, this is a fairly weak argument, since it is based on only two instances.    The argument “every day for the past year, a plane flies over my house at 2:00 P.M. A plane will fly over my house every day at 2:00 P.M.” is a stronger inductive argument, since it is based on a larger set of evidence. While it is not necessarily true—the airline may have cancelled its afternoon flight—it is probably a safe bet.    Evaluating inductive arguments  An inductive argument is never able to prove the conclusion true, but it can provide either weak or strong evidence to suggest that it may be true.   Many scientific theories, such as the big bang theory, can never be proven. Instead, they are inductive arguments supported by a wide variety of evidence. Usually in science, an idea is considered a hypothesis until it has been well tested, at which point it graduates to being considered a theory. Common scientific theories, like Newton’s theory of gravity, have all stood up to years of testing and evidence, though sometimes they need to be adjusted based on new evidence, such as when Einstein proposed the theory of general relativity  A deductive argument is more clearly valid or not, which makes it easier to evaluate.  Evaluating deductive arguments  A deductive argument is considered valid if, assuming that all the premises are true, the conclusion follows logically from those premises. In other words, when the premises are all true, the conclusion must be true.     Evaluating Dedutive Arguments with Truth Tables  Arguments can also be analyzed using truth tables, although this can be a lot of work.  To analyze an argument with a truth table:    Represent each of the premises and the conclusion symbolically  Create truth tables for each premise and for the conclusion.  The argument is valid if and only if the conclusion is true when all premises are true.    Consider the argument  Premise: If you bought bread, then you went to the store.  Premise: You bought bread.  Conclusion: You went to the store.  While this example is fairly obviously a valid argument, we can analyze it by representing the argument symbolically and then creating truth tables for the premises and conclusion.  We’ll let b represent “you bought bread” and s represent “you went to the store”. Then the argument becomes:  Premise:  Premise:  Conclusion:   Verifying an Argument    Variable 1:  Variable 2:  Premise 1:  Premise 2:  Conclusion:    T  T  T  T  T    T  F  T  F  F    F  T  F  T  T    F  F  F  T  F     The only row where both premises are true is the first one. The conclusion is also true in the first row. Since the conclusion is true when both premises are true, this is a valid argument.   Try It Now  Use truth tables to determine whether the argument is valid:  If I have a shovel, I can dig a hole.  I dug a hole.  Therefore, I had a shovel.   Let s represent \"I have shovel\" and d represent \"I dug a hole.\"  In symbolic form, the argument is:     The truth tables for this argument are:   Verifying an Argument    Variable 1:  Variable 2:  Premise 1:  Premise 2:  Conclusion:    T  T  T  T  T    T  F  F  F  T    F  T  T  T  F    F  F  T  F  F     Both premises are true in both the first and third rows of the table. However, the conclusion is false in the third row. Since there is a situation where both premises are true and the conclusion is false (the third row of the table), this is an invalid argument.     Forms of Arguments  Rather than making a truth table for every argument, we may be able to recognize certain common forms of arguments that are valid (or invalid). If we can determine that an argument fits one of the common forms, we can immediately state whether it is valid or invalid.  Law of Detachment  The law of detachment applies when a conditional and its antecedent are given as premises, and the consequent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:    Recall this argument from an earlier example:  Premise: If you bought bread, then you went to the store.  Premise: You bought bread.  Conclusion: You went to the store.  In symbolic form:  Premise:  Premise:  Conclusion:  This argument has the structure described by the law of detachment. (The second premise and the conclusion are simply the two parts of the first premise detached from each other.) Instead of making a truth table, we can say that this argument is valid by stating that it satisfies the law of detachment.   Law of Contraposition  The law of contraposition applies when a conditional and the negation of its consequent are given as premises, and the negation of its antecedent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:   Notice that the second premise and the conclusion look like the contrapositive of the first premise, , but they have been detached. You can think of the law of contraposition as a combination of the law of detachment and the fact that the contrapositive is logically equivalent to the original statement.   Premise: If I drop my phone into the swimming pool, my phone will be ruined.  Premise: My phone isn’t ruined.  Conclusion: I didn’t drop my phone into the swimming pool.  If we let d = I drop the phone in the pool and r = the phone is ruined, then we can represent the argument this way:  Premise:  Premise:  Conclusion:  The form of this argument matches what we need to invoke the law of contraposition, so it is a valid argument.   Try It Now  Is this argument valid?  Premise: If you brushed your teeth before bed, then your toothbrush will be wet.  Premise: Your toothbrush is dry.  Conclusion: You didn’t brush your teeth before bed.  Yes, by the Law of Contraposition   The Transitive Property  The transitive property has as its premises a series of conditionals, where the consequent of one is the antecedent of the next. The conclusion is a conditional with the same antecedent as the first premise and the same consequent as the final premise.  The general form is:  Premise:  Premise:  Conclusion:    Premise: If a soccer player commits a reckless foul, she will receive a yellow card.  Premise: If Hayley receives a yellow card, she will be suspended for the next match.  Conclusion: If Hayley commits a reckless foul, she will be suspended for the next match.  If we let r = committing a reckless foul, y = receiving a yellow card, and s = being suspended, then our argument looks like this:  Premise  Premise  Conclusion:  This argument has the exact structure required to use the transitive property, so it is a valid argument.   Disjunctive Syllogism  In a disjunctive syllogism, the premises consist of an or statement and the negation of one of the options. The conclusion is the other option.  The general form is:  Premise:  Premise:  Conclusion:    The order of the two parts of the disjunction isn’t important. In other words, we could have the premises and , and the conclusion .   Premise: I can either drive or take the train.  Premise: I refuse to drive.  Conclusion: I will take the train.  If we let d = I drive and t = I take the train, then the symbolic representation of the argument is:  Premise  Premise  Conclusion:  This argument is valid because it has the form of a disjunctive syllogism. I have two choices, and one of them is not going to happen, so the other one must happen.   Keep in mind that, when you are determining the validity of an argument, you must assume that the premises are true. If you don’t agree with one of the premises, you need to keep your personal opinion out of it. Your job is to pretend that the premises are true and then determine whether they force you to accept the conclusion. You may attack the premises in a court of law or a political discussion, of course, but here we are focusing on the structure of the arguments, not the truth of what they actually say.  We have just looked at four forms of valid arguments; there are two common forms that represent invalid arguments, which are also called fallacies .  Fallacy of the Converse  The fallacy of the converse arises when a conditional and its consequent are given as premises, and the antecedent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:   Notice that the second premise and the conclusion look like the converse of the first premise, , but they have been detached. The fallacy of the converse incorrectly tries to assert that the converse of a statement is equivalent to that statement.   Premise: If I drink coffee after noon, then I have a hard time falling asleep that night.  Premise: I had a hard time falling asleep last night.  Conclusion: I drank coffee after noon yesterday.  If we let c = I drink coffee after noon and h = I have a hard time falling asleep, then our argument looks like this:  Premise:  Premise:  Conclusion:  This argument uses converse reasoning, so it is an invalid argument. There could be plenty of other reasons why I couldn’t fall asleep: I could be worried about money, my neighbors might have been setting off fireworks, etc.   Fallacy of the Inverse  The fallacy of the inverse occurs when a conditional and the negation of its antecedent are given as premises, and the negation of the consequent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:   Again, notice that the second premise and the conclusion look like the inverse of the first premise, , but they have been detached. The fallacy of the inverse incorrectly tries to assert that the inverse of a statement is equivalent to that statement.   Premise: If you listen to the Grateful Dead, then you are a hippie.  Premise: Sky doesn’t listen to the Grateful Dead.  Conclusion: Sky is not a hippie.  If we let g = listen to the Grateful Dead and h = is a hippie, then this is the argument:  Premise:  Premise:  Conclusion:  This argument is invalid because it uses inverse reasoning. The first premise does not imply that all hippies listen to the Grateful Dead; there could be some hippies who listen to Phish instead.   Of course, arguments are not limited to these six basic forms; some arguments have more premises, or premises that need to be rearranged before you can see what is really happening. There are plenty of other forms of arguments that are invalid. If an argument doesn’t seem to fit the pattern of any of these common forms, though, you may want to use a Venn diagram or a truth table instead.  Lewis Carroll, author of Alice’s Adventures in Wonderland, was a math and logic teacher, and wrote two books on logic. In them, he would propose premises as a puzzle, to be connected using syllogisms. The following example is one such puzzle.   Solve the puzzle. In other words, find a logical conclusion from these premises.  All babies are illogical.  Nobody is despised who can manage a crocodile.  Illogical persons are despised.  Let b = is a baby, d = is despised, i = is illogical, and m = can manage a crocodile. Then we can write the premises as:     Writing the second premise correctly can be a challenge; it can be rephrased as “If you can manage a crocodile, then you are not despised.”  Using the transitive property with the first and third premises, we can conclude that ; that all babies are despised. Using the contrapositive of the second premise, , we can then use the transitive property with to conclude that ; that babies cannot manage crocodiles. While it is silly, this is a logical conclusion from the given premises.   Try It Now  Is this argument valid?  Premise: If I go to the party, I’ll be really tired tomorrow.  Premise: If I go to the party, I’ll get to see friends.  Conclusion: If I don’t see friends, I won’t be tired tomorrow   Let p = go to party, t = be tired, and f = see friends.  Premise:  Premise:  Conclusion:  We could try to rewrite the second premise using the contrapositive to state , but that does not allow us to form a syllogism. If I don’t see friends, then I didn’t go the party, but that is not sufficient to claim I won’t be tired tomorrow. Maybe I stayed up all night watching movies.     Logical Fallacies in Common Language  In the previous discussion, we saw that logical arguments can be invalid when the premises are not true, when the premises are not sufficient to guarantee the conclusion, or when there are invalid chains in logic. There are a number of other ways in which arguments can be invalid, a sampling of which are given here.  Ad hominem  An ad hominem argument attacks the person making the argument, ignoring the argument itself.    “Jane says that whales aren’t fish, but she’s only in the second grade, so she can’t be right.”  Here the argument is attacking Jane, not the validity of her claim, so this is an ad hominem argument.    “Jane says that whales aren’t fish, but everyone knows that they’re really mammals. She’s so stupid.”  This certainly isn’t very nice, but it is not ad hominem since a valid counterargument is made along with the personal insult.   Appeal to ignorance  This type of argument assumes something it true because it hasn’t been proven false    “Nobody has proven that photo isn’t of Bigfoot, so it must be Bigfoot.”   Appeal to authority  These arguments attempt to use the authority of a person to prove a claim. While often authority can provide strength to an argument, problems can occur when the person’s opinion is not shared by other experts, or when the authority is irrelevant to the claim.    “A diet high in bacon can be healthy; Doctor Atkins said so.”  Here, an appeal to the authority of a doctor is used for the argument. This generally would provide strength to the argument, except that the opinion that eating a diet high in saturated fat runs counter to general medical opinion. More supporting evidence would be needed to justify this claim.    “Jennifer Hudson lost weight with Weight Watchers, so their program must work.”  Here, there is an appeal to the authority of a celebrity. While her experience does provide evidence, it provides no more than any other person’s experience would.   Appeal to consequence  An appeal to consequence concludes that a premise is true or false based on whether the consequences are desirable or not.    “Humans will travel faster than light: faster-than-light travel would be beneficial for space travel.”   False dilemma  A false dilemma argument falsely frames an argument as an “either or” choice, without allowing for additional options.    “Either those lights in the sky were an airplane or aliens. There are no airplanes scheduled for tonight, so it must be aliens.”  This argument ignores the possibility that the lights could be something other than an airplane or aliens.   Circular reasoning  Circular reasoning is an argument that relies on the conclusion being true for the premise to be true.    “I shouldn’t have gotten a C in that class; I’m an A student!”  In this argument, the student is claiming that because they’re an A student, though shouldn’t have gotten a C. But because they got a C, they’re not an A student.   Post hoc (post hoc ergo propter hoc)  A post hoc argument claims that because two things happened sequentially, then the first must have caused the second.    “Today I wore a red shirt, and my football team won! I need to wear a red shirt every time they play to make sure they keep winning.”  Straw man A straw man argument involves misrepresenting the argument in a less favorable way to make it easier to attack.   “Senator Jones has proposed reducing military funding by 10%. Apparently he wants to leave us defenseless against attacks by terrorists”  Here the arguer has represented a 10% funding cut as equivalent to leaving us defenseless, making it easier to attack Senator Jones’ position.   Correlation implies causation  Similar to post hoc, but without the requirement of sequence, this fallacy assumes that just because two things are related one must have caused the other. Often there is a third variable not considered.   “Months with high ice cream sales also have a high rate of deaths by drowning. Therefore, ice cream must be causing people to drown.”  This argument is implying a causal relation, when really both are more likely dependent on the weather; that ice cream and drowning are both more likely during warm summer months.   Try It Now  Identify the logical fallacy in each of the arguments    Only an untrustworthy person would run for office. The fact that politicians are untrustworthy is proof of this.  Since the 1950s, both the atmospheric carbon dioxide level and obesity levels have increased sharply. Hence, atmospheric carbon dioxide causes obesity.  The oven was working fine until you started using it, so you must have broken it.  You can’t give me a D in the class because I can’t afford to retake it.  The senator wants to increase support for food stamps. He wants to take the taxpayers’ hard-earned money and give it away to lazy people. This isn’t fair, so we shouldn’t do it.      Circular  Correlation does not imply causation  Post hoc  Appeal to consequence  Staw man      It may be difficult to identify one particular fallacy for an argument. Consider this argument: “Emma Watson says she’s a feminist, but she posed for these racy pictures. I’m a feminist, and no self-respecting feminist would do that.” Could this be ad hominem, saying that Emma Watson has no self-respect? Could it be appealing to authority because the person making the argument claims to be a feminist? Could it be a false dilemma because the argument assumes that a woman is either a feminist or not, with no gray area in between?   "
 },
 {
   "id": "objectives-12",
@@ -2800,18 +2800,18 @@ var ptx_lunr_docs = [
   "body": "  Identify inductive and deductive reasoning.  Evaluate arguments with truth tables.  Discover forms of valid and invalid arguments.  Discuss logical fallacies.   "
 },
 {
-  "id": "p-572",
+  "id": "p-602",
   "level": "2",
-  "url": "section-logic-arguments.html#p-572",
+  "url": "section-logic-arguments.html#p-602",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "inductive argument "
 },
 {
-  "id": "p-573",
+  "id": "p-603",
   "level": "2",
-  "url": "section-logic-arguments.html#p-573",
+  "url": "section-logic-arguments.html#p-603",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2940,8 +2940,8 @@ var ptx_lunr_docs = [
   "url": "section-logic-arguments.html#definition-20",
   "type": "Definition",
   "number": "3.4.16",
-  "title": "Dijunctive Syllogism.",
-  "body": "Dijunctive Syllogism  In a disjunctive syllogism, the premises consist of an or statement and the negation of one of the options. The conclusion is the other option.  The general form is:  Premise:  Premise:  Conclusion:   "
+  "title": "Disjunctive Syllogism.",
+  "body": "Disjunctive Syllogism  In a disjunctive syllogism, the premises consist of an or statement and the negation of one of the options. The conclusion is the other option.  The general form is:  Premise:  Premise:  Conclusion:   "
 },
 {
   "id": "example-74",
@@ -2976,8 +2976,8 @@ var ptx_lunr_docs = [
   "url": "section-logic-arguments.html#definition-22",
   "type": "Definition",
   "number": "3.4.20",
-  "title": "Fallacy of the Converse.",
-  "body": "Fallacy of the Converse  The fallacy of the inverse occurs when a conditional and the negation of its antecedent are given as premises, and the negation of the consequent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:  "
+  "title": "Fallacy of the Inverse.",
+  "body": "Fallacy of the Inverse  The fallacy of the inverse occurs when a conditional and the negation of its antecedent are given as premises, and the negation of the consequent is the conclusion.  The general form is:  Premise:  Premise:  Conclusion:  "
 },
 {
   "id": "example-76",
@@ -3202,7 +3202,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "3.5",
   "title": "Exercises",
-  "body": "Exercises   For the exercises below, list the set of integers that satisfy the given conditions.  A positive multiple of 5 and not a multiple of 2 {5, 15, 25, ...}  Greater than 12 and less than or equal to 18    Write the negation of each quantified statement.  Everyone failed the quiz today. At least one person did not fail the quiz today.  Someone in the car needs to use the restroom.  Some restaurants take reservations. No restaurants take reservations.  All students drive to campus.   Translate each statement from symbolic notation into English sentences. Let A represent “Elvis is alive” and let G represent “Elvis gained weight.\"         Elvis is alive or he gained weight.  It is not true that Elvis is alive and gained weight.  If Elvis gained weight, then he is not alive.  Elvis is alive if and only if he did not gain weight.    Translate each statement into words if represents \"dessert is included\" and represents \"the bill was less than $20\".        Let, p represent \"I will attend the hockey game\" and let q represent \"I will enjoy the hockey game.\" Let r represent \"I will watch a movie at home.\" Write each statement in symbolic form.  I will attend the hockey game, but I will not enjoy it  I’ll either attend the hockey game or watch a movie at home.  It is not true that I will attend the hockey game and enjoy it.           Let p represent \"Rent is due on Friday\" and q represent \"We will go skiing.\" Translate each statement in symbolic form.   If rent isn't due on Friday, then we will go skiing.  Rent is due on Friday and we will go skiing.     Create a truth table for each statement.  FTFF   FTFF   FTFF   TTTT   TTTT   In this lesson, we have been studying the inclusive or, which allows both A and B to be true. The exclusive or does not allow both to be true; it translates to “either A or B, but not both.”  For each situation, decide whether the “or” is most likely exclusive or inclusive.  An entrée at a restaurant includes soup or a salad.  You should bring an umbrella or a raincoat with you.  We can keep driving on I-5 or get on I-405 at the next exit.  You should save this document on your computer or a flash drive.    Translate each sentence into if-then form:  All triangle are polygons.  Every dog is happy.    Consider the statement “If you are under age 17, then you cannot attend this movie.”  Write the converse.  Write the inverse.  Write the contrapositive.    Write the converse of \"If you are older than 65, you will qualify for a discount.\" If you qualify for the discount, then you are older than 65.  Write the inverse of \"I will go Saturday if I get paid.\"  Write the contrapositive of \"If I don't receive my paycheck tomorrow, I won't pay you back.\"  Assume that the statement “If you swear, then you will get your mouth washed out with soap” is true. Which of the following statements must also be true?  If you don’t swear, then you won’t get your mouth washed out with soap.  If you don’t get your mouth washed out with soap, then you didn’t swear.  If you get your mouth washed out with soap, then you swore.     Write the negation of each conditional statement.  If Luke faces Vader, then Obi-Wan cannot interfere. Luke faces Vader and Obi-Wan interferes.  If you don’t look both ways before crossing the street, then you will get hit by a car.  If you weren’t talking, then you wouldn’t have missed the instructions.   Assume that the biconditional statement “You will play in the game if and only if you attend all practices this week” is true. Which of the following situations could happen?  You attended all practices this week and didn’t play in the game.  You didn’t attend all practices this week and played in the game.  You didn’t attend all practices this week and didn’t play in the game.     Are the following examples of inductive or deductive reasoning?  Erika brought cookies to class last Thursday, so she will bring cookies this Thursday.  Roberto earned a 94% in math class. Any grade above a 90% gets an A. Therefore, Roberto will get an A in math class.  All even numbers are divisible by 2. Eight is an even number. Therefore, 8 is divisble by 2.  My sister didn't go home for Thanksgiving last year, so she won't go home for Thanksgiving this year.  The roses in my backyard have bloomed every other year for the past 10 years. They didn't bloom last year, so they will bloom this year.    Use De Morgan’s Laws to rewrite each conjunction as a disjunction, or each disjunction as a conjunction.  It is not true that Tina likes Sprite or 7-Up.  It is not the case that you need a dated receipt and your credit card to return this item. You don’t need a dated receipt or you don’t need your credit card to return this item.    Use truth table to decide whether each argument is valid or invalid.  All dogs go to heaven. Charlie is a dog. Therefore, Charlie will go to heaven.  If Ronald eats pancakes before his test, he will ace it! Ronald aces his test. Therefore, he ate pancakes. Invalid  If you like animals, you'll love my cat. You don't love my cat. Therefore, you don't like animals.  If a person is on this reality show, they must be self-absorbed. Laura is not self-absorbed. Therefore, Laura cannot be on this reality show. Valid  If you are a triathlete, then you have outstanding endurance. LeBron James is not a triathlete. Therefore, LeBron does not have outstanding endurance.  Jamie must scrub the toilets or hose down the garbage cans. Jamie refuses to scrub the toilets. Therefore, Jamie will hose down the garbage cans. Valid  Every student brought a pencil or a pen. Marcie brought a pencil. Therefore, Marcie did not bring a pen.  If Aaron doesn't buy season tickets for the Seattle Kraken, he won't be able to go to the playoffs. Aaron went to the playoffs. Therefore, he bought season tickets. Valid  If you miss the bus, you will be late for work. You didn't miss the bus. Therefore, you won't be late for work.    Write each argument in symbolic form. Then identify the form of the argument. Is it a valid or invalid argument?  If the Vikings lose their next game, then the Packers will win. If the Packers win, they will go to the Super Bowl. Therefore, if the Vikings lose, the Packers will go to the Super Bowl. Valid; Transistive Property  Sal has to work overtime or he won't be able to take Monday off. Sal was able to take Monday off. Therefore, he worked overtime.  If I eat that piece of cake, then I will go to bed happy. I went to bed happy. Therefore, I ate that piece of cake.  If Erik rents his house, then he can travel next month. Erik didn't rent his house. Therefore, he can't travel next month.    Name the type of logical fallacy being used.  If you don’t want to drive from Boston to New York, then you will have to take the train. False dilemma; you could fly, take a bus, hitchhike…  New England Patriots quarterback Tom Brady likes his footballs slightly underinflated. The “Cheatriots” have a history of bending or breaking the rules, so Brady must have told the equipment manager to make sure that the footballs were underinflated.  Whenever our smoke detector beeps, my kids eat cereal for dinner.   "
+  "body": "Exercises   For the exercises below, list the set of integers that satisfy the given conditions.  A positive multiple of 5 and not a multiple of 2 {5, 15, 25, ...}  Greater than 12 and less than or equal to 18  {13, 14, 15, 16, 17, 18}     Write the negation of each quantified statement.  Everyone failed the quiz today. At least one person did not fail the quiz today.  Someone in the car needs to use the restroom.  No one in the car needs to use the restroom.   Some restaurants take reservations. No restaurants take reservations.  All students drive to campus.  At least on student does not drive to campus.    Translate each statement from symbolic notation into English sentences. Let A represent “Elvis is alive” and let G represent “Elvis gained weight.\"         Elvis is alive or he gained weight.  It is not true that Elvis is alive and gained weight.  If Elvis gained weight, then he is not alive.  Elvis is alive if and only if he did not gain weight.    Translate each statement into words if represents \"dessert is included\" and represents \"the bill was less than $20\".          Dessert was included and the bill was less than $20  It is not true that dessert is included or the bill was less than $20.  If the bill is not less than $20, then dessert is included.     Let, p represent \"I will attend the hockey game\" and let q represent \"I will enjoy the hockey game.\" Let r represent \"I will watch a movie at home.\" Write each statement in symbolic form.  I will attend the hockey game, but I will not enjoy it  I’ll either attend the hockey game or watch a movie at home.  It is not true that I will attend the hockey game and enjoy it.           Let p represent \"Rent is due on Friday\" and q represent \"We will go skiing.\" Translate each statement in symbolic form.   If rent isn't due on Friday, then we will go skiing.  Rent is due on Friday and we will go skiing.            Create a truth table for each statement.  FTFF   FTTT   FTFF   TTFT   FTFF   FTTT   TTTT   TTTT   TTTT   In this lesson, we have been studying the inclusive or, which allows both A and B to be true. The exclusive or does not allow both to be true; it translates to “either A or B, but not both.”  For each situation, decide whether the “or” is most likely exclusive or inclusive.  An entrée at a restaurant includes soup or a salad.  You should bring an umbrella or a raincoat with you.  We can keep driving on I-5 or get on I-405 at the next exit.  You should save this document on your computer or a flash drive.      Exclusive  Inclusive  Exclusive  Inclusive     Translate each sentence into if-then form:  All triangle are polygons.  Every dog is happy.      If it is a triangle, then it is a polygon.  If it is a dog, then it is happy.     Consider the statement “If you are under age 17, then you cannot attend this movie.”  Write the converse.  Write the inverse.  Write the contrapositive.      If you cannot attend this movie, then you are under age 17.  If you are not under age 17, then you can attend this movie.  If you can attend this movie, then you are not under age 17.     Write the converse of \"If you are older than 65, you will qualify for a discount.\" If you qualify for the discount, then you are older than 65.  Write the inverse of \"I will go Saturday if I get paid.\"  If I don't get paid, then I won't go Saturday.   Write the contrapositive of \"If I don't receive my paycheck tomorrow, I won't pay you back.\"  Assume that the statement “If you swear, then you will get your mouth washed out with soap” is true. Which of the following statements must also be true?  If you don’t swear, then you won’t get your mouth washed out with soap.  If you don’t get your mouth washed out with soap, then you didn’t swear.  If you get your mouth washed out with soap, then you swore.    b    Write the negation of each conditional statement.  If Luke faces Vader, then Obi-Wan cannot interfere. Luke faces Vader and Obi-Wan interferes.  If you don’t look both ways before crossing the street, then you will get hit by a car.  You don't look both ways and you don't get hit by a car.   If you weren’t talking, then you wouldn’t have missed the instructions.  You weren't talking and you missed the instructions.    Assume that the biconditional statement “You will play in the game if and only if you attend all practices this week” is true. Which of the following situations could happen?  You attended all practices this week and didn’t play in the game.  You didn’t attend all practices this week and played in the game.  You didn’t attend all practices this week and didn’t play in the game.    c    Are the following examples of inductive or deductive reasoning?  Erika brought cookies to class last Thursday, so she will bring cookies this Thursday.  Inductive   Roberto earned a 94% in math class. Any grade above a 90% gets an A. Therefore, Roberto will get an A in math class.  Deductive   All even numbers are divisible by 2. Eight is an even number. Therefore, 8 is divisble by 2.  Deductive   My sister didn't go home for Thanksgiving last year, so she won't go home for Thanksgiving this year.  Inductive   The roses in my backyard have bloomed every other year for the past 10 years. They didn't bloom last year, so they will bloom this year.  Inductive     Use De Morgan’s Laws to rewrite each conjunction as a disjunction, or each disjunction as a conjunction.  It is not true that Tina likes Sprite or 7-Up.  Tina does not like Sprite and does not like 7-Up.   It is not the case that you need a dated receipt and your credit card to return this item. You don’t need a dated receipt or you don’t need your credit card to return this item.    Use truth table to decide whether each argument is valid or invalid.  All dogs go to heaven. Charlie is a dog. Therefore, Charlie will go to heaven.  Valid   If Ronald eats pancakes before his test, he will ace it! Ronald aces his test. Therefore, he ate pancakes. Invalid  If you like animals, you'll love my cat. You don't love my cat. Therefore, you don't like animals.  Valid   If a person is on this reality show, they must be self-absorbed. Laura is not self-absorbed. Therefore, Laura cannot be on this reality show. Valid  If you are a triathlete, then you have outstanding endurance. LeBron James is not a triathlete. Therefore, LeBron does not have outstanding endurance.  Invalid   Jamie must scrub the toilets or hose down the garbage cans. Jamie refuses to scrub the toilets. Therefore, Jamie will hose down the garbage cans. Valid  Every student brought a pencil or a pen. Marcie brought a pencil. Therefore, Marcie did not bring a pen.  Invalid   If Aaron doesn't buy season tickets for the Seattle Kraken, he won't be able to go to the playoffs. Aaron went to the playoffs. Therefore, he bought season tickets. Valid  If you miss the bus, you will be late for work. You didn't miss the bus. Therefore, you won't be late for work.  Invalid     Write each argument in symbolic form. Then identify the form of the argument. Is it a valid or invalid argument?  If the Vikings lose their next game, then the Packers will win. If the Packers win, they will go to the Super Bowl. Therefore, if the Vikings lose, the Packers will go to the Super Bowl. Valid; Transistive Property  Sal has to work overtime or he won't be able to take Monday off. Sal was able to take Monday off. Therefore, he worked overtime.  Valid; Disjunctive Syllogism   If I eat that piece of cake, then I will go to bed happy. I went to bed happy. Therefore, I ate that piece of cake.  Invalid; Fallacy of the converse   If Erik rents his house, then he can travel next month. Erik didn't rent his house. Therefore, he can't travel next month.  Invalid; Fallacy of the inverse     Name the type of logical fallacy being used.  If you don’t want to drive from Boston to New York, then you will have to take the train. False dilemma; you could fly, take a bus, hitchhike…  New England Patriots quarterback Tom Brady likes his footballs slightly underinflated. The “Cheatriots” have a history of bending or breaking the rules, so Brady must have told the equipment manager to make sure that the footballs were underinflated.  Circular reasoning   Whenever our smoke detector beeps, my kids eat cereal for dinner.   "
 },
 {
   "id": "logic-ex-1",
@@ -3220,7 +3220,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.2",
   "title": "",
-  "body": "Greater than 12 and less than or equal to 18 "
+  "body": "Greater than 12 and less than or equal to 18  {13, 14, 15, 16, 17, 18}  "
 },
 {
   "id": "logic-ex-3",
@@ -3238,7 +3238,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.4",
   "title": "",
-  "body": "Someone in the car needs to use the restroom. "
+  "body": "Someone in the car needs to use the restroom.  No one in the car needs to use the restroom.  "
 },
 {
   "id": "logic-ex-5",
@@ -3256,7 +3256,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.6",
   "title": "",
-  "body": "All students drive to campus. "
+  "body": "All students drive to campus.  At least on student does not drive to campus.  "
 },
 {
   "id": "logic-ex-7",
@@ -3274,7 +3274,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.8",
   "title": "",
-  "body": "Translate each statement into words if represents \"dessert is included\" and represents \"the bill was less than $20\".       "
+  "body": "Translate each statement into words if represents \"dessert is included\" and represents \"the bill was less than $20\".          Dessert was included and the bill was less than $20  It is not true that dessert is included or the bill was less than $20.  If the bill is not less than $20, then dessert is included.    "
 },
 {
   "id": "logic-ex-9",
@@ -3292,7 +3292,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.10",
   "title": "",
-  "body": "Let p represent \"Rent is due on Friday\" and q represent \"We will go skiing.\" Translate each statement in symbolic form.   If rent isn't due on Friday, then we will go skiing.  Rent is due on Friday and we will go skiing.   "
+  "body": "Let p represent \"Rent is due on Friday\" and q represent \"We will go skiing.\" Translate each statement in symbolic form.   If rent isn't due on Friday, then we will go skiing.  Rent is due on Friday and we will go skiing.          "
 },
 {
   "id": "logic-ex-11",
@@ -3310,7 +3310,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.12",
   "title": "",
-  "body": ""
+  "body": " FTTT  "
 },
 {
   "id": "logic-ex-13",
@@ -3328,7 +3328,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.14",
   "title": "",
-  "body": ""
+  "body": " TTFT  "
 },
 {
   "id": "logic-ex-15",
@@ -3346,7 +3346,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.16",
   "title": "",
-  "body": ""
+  "body": " FTTT  "
 },
 {
   "id": "logic-ex-17",
@@ -3364,7 +3364,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.18",
   "title": "",
-  "body": ""
+  "body": " TTTT  "
 },
 {
   "id": "logic-ex-19",
@@ -3382,7 +3382,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.20",
   "title": "",
-  "body": "In this lesson, we have been studying the inclusive or, which allows both A and B to be true. The exclusive or does not allow both to be true; it translates to “either A or B, but not both.”  For each situation, decide whether the “or” is most likely exclusive or inclusive.  An entrée at a restaurant includes soup or a salad.  You should bring an umbrella or a raincoat with you.  We can keep driving on I-5 or get on I-405 at the next exit.  You should save this document on your computer or a flash drive.   "
+  "body": "In this lesson, we have been studying the inclusive or, which allows both A and B to be true. The exclusive or does not allow both to be true; it translates to “either A or B, but not both.”  For each situation, decide whether the “or” is most likely exclusive or inclusive.  An entrée at a restaurant includes soup or a salad.  You should bring an umbrella or a raincoat with you.  We can keep driving on I-5 or get on I-405 at the next exit.  You should save this document on your computer or a flash drive.      Exclusive  Inclusive  Exclusive  Inclusive    "
 },
 {
   "id": "logic-ex-21",
@@ -3391,7 +3391,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.21",
   "title": "",
-  "body": "Translate each sentence into if-then form:  All triangle are polygons.  Every dog is happy.   "
+  "body": "Translate each sentence into if-then form:  All triangle are polygons.  Every dog is happy.      If it is a triangle, then it is a polygon.  If it is a dog, then it is happy.    "
 },
 {
   "id": "logic-ex-22",
@@ -3400,7 +3400,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.22",
   "title": "",
-  "body": "Consider the statement “If you are under age 17, then you cannot attend this movie.”  Write the converse.  Write the inverse.  Write the contrapositive.   "
+  "body": "Consider the statement “If you are under age 17, then you cannot attend this movie.”  Write the converse.  Write the inverse.  Write the contrapositive.      If you cannot attend this movie, then you are under age 17.  If you are not under age 17, then you can attend this movie.  If you can attend this movie, then you are not under age 17.    "
 },
 {
   "id": "logic-ex-23",
@@ -3418,7 +3418,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.24",
   "title": "",
-  "body": "Write the inverse of \"I will go Saturday if I get paid.\" "
+  "body": "Write the inverse of \"I will go Saturday if I get paid.\"  If I don't get paid, then I won't go Saturday.  "
 },
 {
   "id": "logic-ex-25",
@@ -3436,7 +3436,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.26",
   "title": "",
-  "body": "Assume that the statement “If you swear, then you will get your mouth washed out with soap” is true. Which of the following statements must also be true?  If you don’t swear, then you won’t get your mouth washed out with soap.  If you don’t get your mouth washed out with soap, then you didn’t swear.  If you get your mouth washed out with soap, then you swore.   "
+  "body": "Assume that the statement “If you swear, then you will get your mouth washed out with soap” is true. Which of the following statements must also be true?  If you don’t swear, then you won’t get your mouth washed out with soap.  If you don’t get your mouth washed out with soap, then you didn’t swear.  If you get your mouth washed out with soap, then you swore.    b  "
 },
 {
   "id": "logic-ex-27",
@@ -3454,7 +3454,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.28",
   "title": "",
-  "body": "If you don’t look both ways before crossing the street, then you will get hit by a car. "
+  "body": "If you don’t look both ways before crossing the street, then you will get hit by a car.  You don't look both ways and you don't get hit by a car.  "
 },
 {
   "id": "logic-ex-29",
@@ -3463,7 +3463,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.29",
   "title": "",
-  "body": "If you weren’t talking, then you wouldn’t have missed the instructions. "
+  "body": "If you weren’t talking, then you wouldn’t have missed the instructions.  You weren't talking and you missed the instructions.  "
 },
 {
   "id": "logic-ex-30",
@@ -3472,7 +3472,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.30",
   "title": "",
-  "body": "Assume that the biconditional statement “You will play in the game if and only if you attend all practices this week” is true. Which of the following situations could happen?  You attended all practices this week and didn’t play in the game.  You didn’t attend all practices this week and played in the game.  You didn’t attend all practices this week and didn’t play in the game.   "
+  "body": "Assume that the biconditional statement “You will play in the game if and only if you attend all practices this week” is true. Which of the following situations could happen?  You attended all practices this week and didn’t play in the game.  You didn’t attend all practices this week and played in the game.  You didn’t attend all practices this week and didn’t play in the game.    c  "
 },
 {
   "id": "logic-ex-31",
@@ -3481,7 +3481,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.31",
   "title": "",
-  "body": "Erika brought cookies to class last Thursday, so she will bring cookies this Thursday. "
+  "body": "Erika brought cookies to class last Thursday, so she will bring cookies this Thursday.  Inductive  "
 },
 {
   "id": "logic-ex-32",
@@ -3490,7 +3490,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.32",
   "title": "",
-  "body": "Roberto earned a 94% in math class. Any grade above a 90% gets an A. Therefore, Roberto will get an A in math class. "
+  "body": "Roberto earned a 94% in math class. Any grade above a 90% gets an A. Therefore, Roberto will get an A in math class.  Deductive  "
 },
 {
   "id": "logic-ex-33",
@@ -3499,7 +3499,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.33",
   "title": "",
-  "body": "All even numbers are divisible by 2. Eight is an even number. Therefore, 8 is divisble by 2. "
+  "body": "All even numbers are divisible by 2. Eight is an even number. Therefore, 8 is divisble by 2.  Deductive  "
 },
 {
   "id": "logic-ex-34",
@@ -3508,7 +3508,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.34",
   "title": "",
-  "body": "My sister didn't go home for Thanksgiving last year, so she won't go home for Thanksgiving this year. "
+  "body": "My sister didn't go home for Thanksgiving last year, so she won't go home for Thanksgiving this year.  Inductive  "
 },
 {
   "id": "logic-ex-35",
@@ -3517,7 +3517,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.35",
   "title": "",
-  "body": "The roses in my backyard have bloomed every other year for the past 10 years. They didn't bloom last year, so they will bloom this year. "
+  "body": "The roses in my backyard have bloomed every other year for the past 10 years. They didn't bloom last year, so they will bloom this year.  Inductive  "
 },
 {
   "id": "logic-ex-36",
@@ -3526,7 +3526,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.36",
   "title": "",
-  "body": "It is not true that Tina likes Sprite or 7-Up. "
+  "body": "It is not true that Tina likes Sprite or 7-Up.  Tina does not like Sprite and does not like 7-Up.  "
 },
 {
   "id": "logic-ex-37",
@@ -3544,7 +3544,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.38",
   "title": "",
-  "body": "All dogs go to heaven. Charlie is a dog. Therefore, Charlie will go to heaven. "
+  "body": "All dogs go to heaven. Charlie is a dog. Therefore, Charlie will go to heaven.  Valid  "
 },
 {
   "id": "logic-ex-39",
@@ -3562,7 +3562,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.40",
   "title": "",
-  "body": "If you like animals, you'll love my cat. You don't love my cat. Therefore, you don't like animals. "
+  "body": "If you like animals, you'll love my cat. You don't love my cat. Therefore, you don't like animals.  Valid  "
 },
 {
   "id": "logic-ex-41",
@@ -3580,7 +3580,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.42",
   "title": "",
-  "body": "If you are a triathlete, then you have outstanding endurance. LeBron James is not a triathlete. Therefore, LeBron does not have outstanding endurance. "
+  "body": "If you are a triathlete, then you have outstanding endurance. LeBron James is not a triathlete. Therefore, LeBron does not have outstanding endurance.  Invalid  "
 },
 {
   "id": "logic-ex-43",
@@ -3598,7 +3598,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.44",
   "title": "",
-  "body": "Every student brought a pencil or a pen. Marcie brought a pencil. Therefore, Marcie did not bring a pen. "
+  "body": "Every student brought a pencil or a pen. Marcie brought a pencil. Therefore, Marcie did not bring a pen.  Invalid  "
 },
 {
   "id": "logic-ex-45",
@@ -3616,7 +3616,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.46",
   "title": "",
-  "body": "If you miss the bus, you will be late for work. You didn't miss the bus. Therefore, you won't be late for work. "
+  "body": "If you miss the bus, you will be late for work. You didn't miss the bus. Therefore, you won't be late for work.  Invalid  "
 },
 {
   "id": "logic-ex-47",
@@ -3634,7 +3634,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.48",
   "title": "",
-  "body": "Sal has to work overtime or he won't be able to take Monday off. Sal was able to take Monday off. Therefore, he worked overtime. "
+  "body": "Sal has to work overtime or he won't be able to take Monday off. Sal was able to take Monday off. Therefore, he worked overtime.  Valid; Disjunctive Syllogism  "
 },
 {
   "id": "logic-ex-49",
@@ -3643,7 +3643,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.49",
   "title": "",
-  "body": "If I eat that piece of cake, then I will go to bed happy. I went to bed happy. Therefore, I ate that piece of cake. "
+  "body": "If I eat that piece of cake, then I will go to bed happy. I went to bed happy. Therefore, I ate that piece of cake.  Invalid; Fallacy of the converse  "
 },
 {
   "id": "logic-ex-50",
@@ -3652,7 +3652,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.50",
   "title": "",
-  "body": "If Erik rents his house, then he can travel next month. Erik didn't rent his house. Therefore, he can't travel next month. "
+  "body": "If Erik rents his house, then he can travel next month. Erik didn't rent his house. Therefore, he can't travel next month.  Invalid; Fallacy of the inverse  "
 },
 {
   "id": "logic-ex-51",
@@ -3670,7 +3670,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "3.5.52",
   "title": "",
-  "body": "New England Patriots quarterback Tom Brady likes his footballs slightly underinflated. The “Cheatriots” have a history of bending or breaking the rules, so Brady must have told the equipment manager to make sure that the footballs were underinflated. "
+  "body": "New England Patriots quarterback Tom Brady likes his footballs slightly underinflated. The “Cheatriots” have a history of bending or breaking the rules, so Brady must have told the equipment manager to make sure that the footballs were underinflated.  Circular reasoning  "
 },
 {
   "id": "logic-ex-53",
@@ -4147,7 +4147,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "4.4",
   "title": "Exercises",
-  "body": " Exercises   Let . If , find , , and .   The population of a city is growing according to the formula,   Complete the table of values.        0  457    1     2     3     4       Graph your results.  Write an explicit equation for .  Use your equation to predict the population in 50 years.     Marko currently has 20 tulips in his yard. Each year he plants 5 more.  Write a recursive formula for the number of tulips Marko has.  Write an explicit formula for the number of tulips Marko has.          Pam is a Disc Jockey. Every week she buys 3 new albums to keep her collection current. She currently owns 450 albums.  Write a recursive formula for the number of albums Pam has.  Write an explicit formula for the number of albums Pam has.    A store’s sales (in thousands of dollars) grow according to the recursive rule , with initial population .  Calculate and .  Find an explicit formula for .  Use your formula to predict the store’s sales in 10 years.  When will the store’s sales exceed $100,000?       190 thousand dollars  n = 4 years     The number of houses in a town has been growing according to the recursive rule , with initial population .  Calculate and .  Find an explicit formula for .  Use your formula to predict the number of houses in 10 years.  When will the number of houses reach 400 houses?    A population of beetles is growing according to a linear growth model. The initial population (week 0) was , and the population after 8 weeks is .  Find an explicit formula for the beetle population in week .  After how many weeks will the beetle population reach 187?      23 weeks     The number of streetlights in a town is growing linearly. Four months ago ( ) there were 130 lights. Now ( ) there are 146 lights. If this trend continues,  Find an explicit formula for the number of lights in month .  How many months will it take to reach 200 lights?    The revenue of a company (in millions) n years after 2005 is given in the graph. Write an equation that models the revenue n years after 2005.   Image Credit: RRCC  A linear function that passes through the points (0, 1.5) and (1, 2).       The cost of tuition years after 2010 is shown in the graph. Write an equation that models the tuition and use your model to predict the tuition in the year 2030.  Image Credit: RRCC   A linear function that passes through the points (0, 1200) and (2, 1500)      The number of miles driven after hours is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.    The value of a car years after it was purchased is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.    Tacoma's population in 2000 was about 200 thousand, and had been growing by about 9% each year.  Write a recursive formula for the population of Tacoma.  Write an explicit formula for the population of Tacoma.  If this trend continues, what will Tacoma's population be in 2016?            Portland's population in 2007 was about 568 thousand, and had been growing by about 1.1% each year.  Write a recursive formula for the population of Portland.  Write an explicit formula for the population of Portland.  If this trend continues, what will Portland's population be in 2016?    Diseases tend to spread according to the exponential growth model. In the early days of AIDS, the growth rate was around 190%. In 1983, about 1700 people in the U.S. died of AIDS. If the trend had continued unchecked, how many people would have died from AIDS in 2005? 25 trillion  The population of the world in 1987 was 5 billion and the annual growth rate was estimated at 2 percent per year. Assuming that the world population follows an exponential growth model, find the projected world population in 2015.  A bacteria culture is started with 300 bacteria. After 4 hours, the population has grown to 500 bacteria. If the population grows exponentially,  Write a recursive formula for the number of bacteria.  Write an explicit formula for the number of bacteria.  If this trend continues, how many bacteria will there be in 1 day?        6400 bacteria     A native wolf species has been reintroduced into a national forest. Originally 200 wolves were transplanted. After 3 years, the population had grown to 270 wolves. If the population grows exponentially,  Write a recursive formula for the number of wolves.  Write an explicit formula for the number of wolves.  If this trend continues, how many wolves will there be in 10 years?    The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing.  The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing.  A new truck costs $32,000. The car’s value will depreciate over time, which means it will lose value. For tax purposes, depreciation is usually calculated linearly. If the truck is worth $24,500 after three years, write an explicit formula for the value of the car after n years.  Inflation causes things to cost more, and for our money to buy less (hence your grandparents saying, \"In my day, you could buy a cup of coffee for a nickel\"). Suppose inflation decreases the value of money by 5% each year. In other words, if you have $1 this year, next year it will only buy you $0.95 worth of stuff. How much will $100 buy you in 20 years?  Suppose that you have a bowl of 500 M & M candies, and each day you eat of the candies you have. Is the number of candies left changing linearly or exponentially? Write an equation to model the number of candies left after days.  The table below shows the atmospheric pressure (in millibars) at various altitudes (in kilometers).    Altitude (n)  Pressure (P)    0  1013    2  795      Use the data in the table to find a linear equation that gives the pressure kilometers above sea-level.  Use the data in the table to find an exponential equation that gives the pressure kilometers above sea-level.  If the pressure on top of Mt Everest (which has an altitude of 8.8 km) is 325 mb, is the linear or exponential equation a better model of atmospheric pressure? Explain.    A small business buys a computer for $4,000. After 4 years, the value of the computer is expected to be $200.  If the value of the computer decreased linearly, find an explicit linear equation that gives the value of the computer years after it was purchased.  If the value of the computer decreased exponentially, find an equation that gives the value of the computer years after it was purchased.  Use both your linear and exponential model to predict the value of the computer 6 years after it was purchased. Which model do you think is more accurate? Explain.    Recursive equations can be very handy for modeling complicated situations for which explicit equations would be hard to interpret. As an example, consider a lake in which 2000 fish currently reside. The fish population grows by 10% each year, but every year 100 fish are harvested from the lake by people fishing.  Write a recursive equation for the number of fish in the lake after n years.  Calculate the population after 1 and 2 years. Does the population appear to be increasing or decreasing?  What is the maximum number of fish that could be harvested each year without causing the fish population to decrease in the long run?     For the following exercises, write an equation describing the relationship of the given variables.  varies directly as and when , .  varies directly as the square of and when , .  varies inversely as and when , .  varies inverse as the square of and when , .   If varies directly as and when , what is when ?  30  If varies directly with the square of and when , what is when ?   If varies inversely with the square of and when , what is when ?  3  If varies directly with and when , what is when ?   If varies inversely with and when , what is when ?   If varies inversely with and when , what is when ?   The fuel consumption (mpg) of a car varies inversely with its weight. A car that weighs 3800 pounds gets 33 mpg on the highway. What would be the fuel consumption of a car that weighs 5500 pounds? 22.8 mpg  The length a spring stretches varies directly with the weight placed at the end of the spring. When a 5-pound weight is placed on a spring, it stretches 2 inches. How far would the spring stretch if a 9-pound weight is placed on it?  The distance that an object falls varies directly as the square of the time of the fall. If an object falls 16 feet in one second, how long for it to fall 144 feet? 3 seconds  The number of hours it takes ice to melt varies inversely with the air temperature. A block of ice melts in 2.5 hours when the temperature is 54 degrees. How long would it take for the same block to melt if the temperature were 45 degrees?  The intensity of light measured in foot-candles varies inversely with the square of the distance from the light source. Suppose the intensity of a light bulb is 0.1 foot-candles at a distance of 3 meters. Find the intensity at 8 meters. 0.014 ft-candles  The weight of an object above the surface of the earth varies inversely with the distance from the center of the earth. If a person weighs 150 pounds when he is on the surface of the earth (3,960 miles from center), find the weight of the person if he is 20 miles above the surface.  "
+  "body": " Exercises   Let . If , find , , and .   The population of a city is growing according to the formula,   Complete the table of values.        0  457    1     2     3     4       Graph your results.  Write an explicit equation for .  Use your equation to predict the population in 50 years.       511; 565; 619; 673  Not shown   3157     Marko currently has 20 tulips in his yard. Each year he plants 5 more.  Write a recursive formula for the number of tulips Marko has.  Write an explicit formula for the number of tulips Marko has.          Pam is a Disc Jockey. Every week she buys 3 new albums to keep her collection current. She currently owns 450 albums.  Write a recursive formula for the number of albums Pam has.  Write an explicit formula for the number of albums Pam has.           A store’s sales (in thousands of dollars) grow according to the recursive rule , with initial population .  Calculate and .  Find an explicit formula for .  Use your formula to predict the store’s sales in 10 years.  When will the store’s sales exceed $100,000?       190 thousand dollars  n = 4 years     The number of houses in a town has been growing according to the recursive rule , with initial population .  Calculate and .  Find an explicit formula for .  Use your formula to predict the number of houses in 10 years.  When will the number of houses reach 400 houses?           A population of beetles is growing according to a linear growth model. The initial population (week 0) was , and the population after 8 weeks is .  Find an explicit formula for the beetle population in week .  After how many weeks will the beetle population reach 187?      23 weeks     The number of streetlights in a town is growing linearly. Four months ago ( ) there were 130 lights. Now ( ) there are 146 lights. If this trend continues,  Find an explicit formula for the number of lights in month .  How many months will it take to reach 200 lights?       17.5 months     The revenue of a company (in millions) n years after 2005 is given in the graph. Write an equation that models the revenue n years after 2005.   Image Credit: RRCC  A linear function that passes through the points (0, 1.5) and (1, 2).       The cost of tuition years after 2010 is shown in the graph. Write an equation that models the tuition and use your model to predict the tuition in the year 2030.  Image Credit: RRCC   A linear function that passes through the points (0, 1200) and (2, 1500)          The number of miles driven after hours is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.      45  The number of miles driven increases by 45 miles\/hour.     The value of a car years after it was purchased is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.      -625  The value is going down by $625 per year.     Tacoma's population in 2000 was about 200 thousand, and had been growing by about 9% each year.  Write a recursive formula for the population of Tacoma.  Write an explicit formula for the population of Tacoma.  If this trend continues, what will Tacoma's population be in 2016?            Portland's population in 2007 was about 568 thousand, and had been growing by about 1.1% each year.  Write a recursive formula for the population of Portland.  Write an explicit formula for the population of Portland.  If this trend continues, what will Portland's population be in 2016?        626.77 thousand     Diseases tend to spread according to the exponential growth model. In the early days of AIDS, the growth rate was around 190%. In 1983, about 1700 people in the U.S. died of AIDS. If the trend had continued unchecked, how many people would have died from AIDS in 2005? 25 trillion  The population of the world in 1987 was 5 billion and the annual growth rate was estimated at 2 percent per year. Assuming that the world population follows an exponential growth model, find the projected world population in 2015.  8.7 billion   A bacteria culture is started with 300 bacteria. After 4 hours, the population has grown to 500 bacteria. If the population grows exponentially,  Write a recursive formula for the number of bacteria.  Write an explicit formula for the number of bacteria.  If this trend continues, how many bacteria will there be in 1 day?        6400 bacteria     A native wolf species has been reintroduced into a national forest. Originally 200 wolves were transplanted. After 3 years, the population had grown to 270 wolves. If the population grows exponentially,  Write a recursive formula for the number of wolves.  Write an explicit formula for the number of wolves.  If this trend continues, how many wolves will there be in 10 years?        543 wolves     The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing.  The population was 4,000 in 2005 and is growing by 70 people per year.   The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing.  The population was 4,000 in 2005 and is growing by 4% per year.   A new truck costs $32,000. The car’s value will depreciate over time, which means it will lose value. For tax purposes, depreciation is usually calculated linearly. If the truck is worth $24,500 after three years, write an explicit formula for the value of the car after n years.      Inflation causes things to cost more, and for our money to buy less (hence your grandparents saying, \"In my day, you could buy a cup of coffee for a nickel\"). Suppose inflation decreases the value of money by 5% each year. In other words, if you have $1 this year, next year it will only buy you $0.95 worth of stuff. How much will $100 buy you in 20 years?  $35.85   Suppose that you have a bowl of 500 M & M candies, and each day you eat of the candies you have. Is the number of candies left changing linearly or exponentially? Write an equation to model the number of candies left after days.      The table below shows the atmospheric pressure (in millibars) at various altitudes (in kilometers).    Altitude (n)  Pressure (P)    0  1013    2  795      Use the data in the table to find a linear equation that gives the pressure kilometers above sea-level.  Use the data in the table to find an exponential equation that gives the pressure kilometers above sea-level.  If the pressure on top of Mt Everest (which has an altitude of 8.8 km) is 325 mb, is the linear or exponential equation a better model of atmospheric pressure? Explain.        The linear model gives and the exponential model gives , so the exponential model is better since it gives a value closer to the actual pressure at 8.8 km.     A small business buys a computer for $4,000. After 4 years, the value of the computer is expected to be $200.  If the value of the computer decreased linearly, find an explicit linear equation that gives the value of the computer years after it was purchased.  If the value of the computer decreased exponentially, find an equation that gives the value of the computer years after it was purchased.  Use both your linear and exponential model to predict the value of the computer 6 years after it was purchased. Which model do you think is more accurate? Explain.        In the linear model, . The exponential model gives, . It doesn't make sense for the value to be negatives, so the exponential model is probabaly more accurate.     Recursive equations can be very handy for modeling complicated situations for which explicit equations would be hard to interpret. As an example, consider a lake in which 2000 fish currently reside. The fish population grows by 10% each year, but every year 100 fish are harvested from the lake by people fishing.  Write a recursive equation for the number of fish in the lake after n years.  Calculate the population after 1 and 2 years. Does the population appear to be increasing or decreasing?  What is the maximum number of fish that could be harvested each year without causing the fish population to decrease in the long run?       , the values appear to be increasing.  If 200 fish are harvested each year, the population will be constant. More than that and the population will decrease.      For the following exercises, write an equation describing the relationship of the given variables.  varies directly as and when , .  varies directly as the square of and when , .      varies inversely as and when , .  varies inverse as the square of and when , .       If varies directly as and when , what is when ?  30  If varies directly with the square of and when , what is when ?       If varies inversely with the square of and when , what is when ?  3  If varies directly with and when , what is when ?   19.2   If varies inversely with and when , what is when ?   If varies inversely with and when , what is when ?   1   The fuel consumption (mpg) of a car varies inversely with its weight. A car that weighs 3800 pounds gets 33 mpg on the highway. What would be the fuel consumption of a car that weighs 5500 pounds? 22.8 mpg  The length a spring stretches varies directly with the weight placed at the end of the spring. When a 5-pound weight is placed on a spring, it stretches 2 inches. How far would the spring stretch if a 9-pound weight is placed on it?  3.6 inches   The distance that an object falls varies directly as the square of the time of the fall. If an object falls 16 feet in one second, how long for it to fall 144 feet? 3 seconds  The number of hours it takes ice to melt varies inversely with the air temperature. A block of ice melts in 2.5 hours when the temperature is 54 degrees. How long would it take for the same block to melt if the temperature were 45 degrees?  3 hours   The intensity of light measured in foot-candles varies inversely with the square of the distance from the light source. Suppose the intensity of a light bulb is 0.1 foot-candles at a distance of 3 meters. Find the intensity at 8 meters. 0.014 ft-candles  The weight of an object above the surface of the earth varies inversely with the distance from the center of the earth. If a person weighs 150 pounds when he is on the surface of the earth (3,960 miles from center), find the weight of the person if he is 20 miles above the surface.  149.2 lbs   "
 },
 {
   "id": "algebra-ex-1",
@@ -4165,7 +4165,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.2",
   "title": "",
-  "body": "The population of a city is growing according to the formula,   Complete the table of values.        0  457    1     2     3     4       Graph your results.  Write an explicit equation for .  Use your equation to predict the population in 50 years.    "
+  "body": "The population of a city is growing according to the formula,   Complete the table of values.        0  457    1     2     3     4       Graph your results.  Write an explicit equation for .  Use your equation to predict the population in 50 years.       511; 565; 619; 673  Not shown   3157    "
 },
 {
   "id": "algebra-ex-3",
@@ -4183,7 +4183,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.4",
   "title": "",
-  "body": "Pam is a Disc Jockey. Every week she buys 3 new albums to keep her collection current. She currently owns 450 albums.  Write a recursive formula for the number of albums Pam has.  Write an explicit formula for the number of albums Pam has.   "
+  "body": "Pam is a Disc Jockey. Every week she buys 3 new albums to keep her collection current. She currently owns 450 albums.  Write a recursive formula for the number of albums Pam has.  Write an explicit formula for the number of albums Pam has.          "
 },
 {
   "id": "algebra-ex-5",
@@ -4201,7 +4201,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.6",
   "title": "",
-  "body": "The number of houses in a town has been growing according to the recursive rule , with initial population .  Calculate and .  Find an explicit formula for .  Use your formula to predict the number of houses in 10 years.  When will the number of houses reach 400 houses?   "
+  "body": "The number of houses in a town has been growing according to the recursive rule , with initial population .  Calculate and .  Find an explicit formula for .  Use your formula to predict the number of houses in 10 years.  When will the number of houses reach 400 houses?          "
 },
 {
   "id": "algebra-ex-7",
@@ -4219,7 +4219,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.8",
   "title": "",
-  "body": "The number of streetlights in a town is growing linearly. Four months ago ( ) there were 130 lights. Now ( ) there are 146 lights. If this trend continues,  Find an explicit formula for the number of lights in month .  How many months will it take to reach 200 lights?   "
+  "body": "The number of streetlights in a town is growing linearly. Four months ago ( ) there were 130 lights. Now ( ) there are 146 lights. If this trend continues,  Find an explicit formula for the number of lights in month .  How many months will it take to reach 200 lights?       17.5 months    "
 },
 {
   "id": "algebra-ex-9",
@@ -4237,7 +4237,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.10",
   "title": "",
-  "body": "The cost of tuition years after 2010 is shown in the graph. Write an equation that models the tuition and use your model to predict the tuition in the year 2030.  Image Credit: RRCC   A linear function that passes through the points (0, 1200) and (2, 1500)     "
+  "body": "The cost of tuition years after 2010 is shown in the graph. Write an equation that models the tuition and use your model to predict the tuition in the year 2030.  Image Credit: RRCC   A linear function that passes through the points (0, 1200) and (2, 1500)         "
 },
 {
   "id": "algebra-ex-11",
@@ -4246,7 +4246,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.11",
   "title": "",
-  "body": "The number of miles driven after hours is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.   "
+  "body": "The number of miles driven after hours is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.      45  The number of miles driven increases by 45 miles\/hour.    "
 },
 {
   "id": "algebra-ex-12",
@@ -4255,7 +4255,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.12",
   "title": "",
-  "body": "The value of a car years after it was purchased is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.   "
+  "body": "The value of a car years after it was purchased is given by the equation .  What is the common difference?  Write a sentence to describe what the common difference is telling us in this context. Include units.      -625  The value is going down by $625 per year.    "
 },
 {
   "id": "algebra-ex-13",
@@ -4273,7 +4273,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.14",
   "title": "",
-  "body": "Portland's population in 2007 was about 568 thousand, and had been growing by about 1.1% each year.  Write a recursive formula for the population of Portland.  Write an explicit formula for the population of Portland.  If this trend continues, what will Portland's population be in 2016?   "
+  "body": "Portland's population in 2007 was about 568 thousand, and had been growing by about 1.1% each year.  Write a recursive formula for the population of Portland.  Write an explicit formula for the population of Portland.  If this trend continues, what will Portland's population be in 2016?        626.77 thousand    "
 },
 {
   "id": "algebra-ex-15",
@@ -4291,7 +4291,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.16",
   "title": "",
-  "body": "The population of the world in 1987 was 5 billion and the annual growth rate was estimated at 2 percent per year. Assuming that the world population follows an exponential growth model, find the projected world population in 2015. "
+  "body": "The population of the world in 1987 was 5 billion and the annual growth rate was estimated at 2 percent per year. Assuming that the world population follows an exponential growth model, find the projected world population in 2015.  8.7 billion  "
 },
 {
   "id": "algebra-ex-17",
@@ -4309,7 +4309,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.18",
   "title": "",
-  "body": "A native wolf species has been reintroduced into a national forest. Originally 200 wolves were transplanted. After 3 years, the population had grown to 270 wolves. If the population grows exponentially,  Write a recursive formula for the number of wolves.  Write an explicit formula for the number of wolves.  If this trend continues, how many wolves will there be in 10 years?   "
+  "body": "A native wolf species has been reintroduced into a national forest. Originally 200 wolves were transplanted. After 3 years, the population had grown to 270 wolves. If the population grows exponentially,  Write a recursive formula for the number of wolves.  Write an explicit formula for the number of wolves.  If this trend continues, how many wolves will there be in 10 years?        543 wolves    "
 },
 {
   "id": "algebra-ex-19",
@@ -4318,7 +4318,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.19",
   "title": "",
-  "body": "The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing. "
+  "body": "The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing.  The population was 4,000 in 2005 and is growing by 70 people per year.  "
 },
 {
   "id": "algebra-ex-20",
@@ -4327,7 +4327,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.20",
   "title": "",
-  "body": "The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing. "
+  "body": "The population of a small town can be described by the equation , where is the number of years after 2005. Explain in words what this equation tells us about how the population is changing.  The population was 4,000 in 2005 and is growing by 4% per year.  "
 },
 {
   "id": "algebra-ex-21",
@@ -4336,7 +4336,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.21",
   "title": "",
-  "body": "A new truck costs $32,000. The car’s value will depreciate over time, which means it will lose value. For tax purposes, depreciation is usually calculated linearly. If the truck is worth $24,500 after three years, write an explicit formula for the value of the car after n years. "
+  "body": "A new truck costs $32,000. The car’s value will depreciate over time, which means it will lose value. For tax purposes, depreciation is usually calculated linearly. If the truck is worth $24,500 after three years, write an explicit formula for the value of the car after n years.     "
 },
 {
   "id": "algebra-ex-22",
@@ -4345,7 +4345,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.22",
   "title": "",
-  "body": "Inflation causes things to cost more, and for our money to buy less (hence your grandparents saying, \"In my day, you could buy a cup of coffee for a nickel\"). Suppose inflation decreases the value of money by 5% each year. In other words, if you have $1 this year, next year it will only buy you $0.95 worth of stuff. How much will $100 buy you in 20 years? "
+  "body": "Inflation causes things to cost more, and for our money to buy less (hence your grandparents saying, \"In my day, you could buy a cup of coffee for a nickel\"). Suppose inflation decreases the value of money by 5% each year. In other words, if you have $1 this year, next year it will only buy you $0.95 worth of stuff. How much will $100 buy you in 20 years?  $35.85  "
 },
 {
   "id": "algebra-ex-23",
@@ -4354,7 +4354,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.23",
   "title": "",
-  "body": "Suppose that you have a bowl of 500 M & M candies, and each day you eat of the candies you have. Is the number of candies left changing linearly or exponentially? Write an equation to model the number of candies left after days. "
+  "body": "Suppose that you have a bowl of 500 M & M candies, and each day you eat of the candies you have. Is the number of candies left changing linearly or exponentially? Write an equation to model the number of candies left after days.     "
 },
 {
   "id": "algebra-ex-24",
@@ -4363,7 +4363,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.24",
   "title": "",
-  "body": "The table below shows the atmospheric pressure (in millibars) at various altitudes (in kilometers).    Altitude (n)  Pressure (P)    0  1013    2  795      Use the data in the table to find a linear equation that gives the pressure kilometers above sea-level.  Use the data in the table to find an exponential equation that gives the pressure kilometers above sea-level.  If the pressure on top of Mt Everest (which has an altitude of 8.8 km) is 325 mb, is the linear or exponential equation a better model of atmospheric pressure? Explain.   "
+  "body": "The table below shows the atmospheric pressure (in millibars) at various altitudes (in kilometers).    Altitude (n)  Pressure (P)    0  1013    2  795      Use the data in the table to find a linear equation that gives the pressure kilometers above sea-level.  Use the data in the table to find an exponential equation that gives the pressure kilometers above sea-level.  If the pressure on top of Mt Everest (which has an altitude of 8.8 km) is 325 mb, is the linear or exponential equation a better model of atmospheric pressure? Explain.        The linear model gives and the exponential model gives , so the exponential model is better since it gives a value closer to the actual pressure at 8.8 km.    "
 },
 {
   "id": "algebra-ex-25",
@@ -4372,7 +4372,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.25",
   "title": "",
-  "body": "A small business buys a computer for $4,000. After 4 years, the value of the computer is expected to be $200.  If the value of the computer decreased linearly, find an explicit linear equation that gives the value of the computer years after it was purchased.  If the value of the computer decreased exponentially, find an equation that gives the value of the computer years after it was purchased.  Use both your linear and exponential model to predict the value of the computer 6 years after it was purchased. Which model do you think is more accurate? Explain.   "
+  "body": "A small business buys a computer for $4,000. After 4 years, the value of the computer is expected to be $200.  If the value of the computer decreased linearly, find an explicit linear equation that gives the value of the computer years after it was purchased.  If the value of the computer decreased exponentially, find an equation that gives the value of the computer years after it was purchased.  Use both your linear and exponential model to predict the value of the computer 6 years after it was purchased. Which model do you think is more accurate? Explain.        In the linear model, . The exponential model gives, . It doesn't make sense for the value to be negatives, so the exponential model is probabaly more accurate.    "
 },
 {
   "id": "algebra-ex-26",
@@ -4381,7 +4381,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.26",
   "title": "",
-  "body": "Recursive equations can be very handy for modeling complicated situations for which explicit equations would be hard to interpret. As an example, consider a lake in which 2000 fish currently reside. The fish population grows by 10% each year, but every year 100 fish are harvested from the lake by people fishing.  Write a recursive equation for the number of fish in the lake after n years.  Calculate the population after 1 and 2 years. Does the population appear to be increasing or decreasing?  What is the maximum number of fish that could be harvested each year without causing the fish population to decrease in the long run?   "
+  "body": "Recursive equations can be very handy for modeling complicated situations for which explicit equations would be hard to interpret. As an example, consider a lake in which 2000 fish currently reside. The fish population grows by 10% each year, but every year 100 fish are harvested from the lake by people fishing.  Write a recursive equation for the number of fish in the lake after n years.  Calculate the population after 1 and 2 years. Does the population appear to be increasing or decreasing?  What is the maximum number of fish that could be harvested each year without causing the fish population to decrease in the long run?       , the values appear to be increasing.  If 200 fish are harvested each year, the population will be constant. More than that and the population will decrease.    "
 },
 {
   "id": "algebra-ex-27",
@@ -4399,7 +4399,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.28",
   "title": "",
-  "body": "varies directly as the square of and when , . "
+  "body": "varies directly as the square of and when , .     "
 },
 {
   "id": "algebra-ex-29",
@@ -4417,7 +4417,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.30",
   "title": "",
-  "body": "varies inverse as the square of and when , . "
+  "body": "varies inverse as the square of and when , .     "
 },
 {
   "id": "algebra-ex-31",
@@ -4435,7 +4435,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.32",
   "title": "",
-  "body": "If varies directly with the square of and when , what is when ?  "
+  "body": "If varies directly with the square of and when , what is when ?      "
 },
 {
   "id": "algebra-ex-33",
@@ -4453,7 +4453,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.34",
   "title": "",
-  "body": "If varies directly with and when , what is when ?  "
+  "body": "If varies directly with and when , what is when ?   19.2  "
 },
 {
   "id": "algebra-ex-35",
@@ -4471,7 +4471,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.36",
   "title": "",
-  "body": "If varies inversely with and when , what is when ?  "
+  "body": "If varies inversely with and when , what is when ?   1  "
 },
 {
   "id": "algebra-ex-37",
@@ -4489,7 +4489,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.38",
   "title": "",
-  "body": "The length a spring stretches varies directly with the weight placed at the end of the spring. When a 5-pound weight is placed on a spring, it stretches 2 inches. How far would the spring stretch if a 9-pound weight is placed on it? "
+  "body": "The length a spring stretches varies directly with the weight placed at the end of the spring. When a 5-pound weight is placed on a spring, it stretches 2 inches. How far would the spring stretch if a 9-pound weight is placed on it?  3.6 inches  "
 },
 {
   "id": "algebra-ex-39",
@@ -4507,7 +4507,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.40",
   "title": "",
-  "body": "The number of hours it takes ice to melt varies inversely with the air temperature. A block of ice melts in 2.5 hours when the temperature is 54 degrees. How long would it take for the same block to melt if the temperature were 45 degrees? "
+  "body": "The number of hours it takes ice to melt varies inversely with the air temperature. A block of ice melts in 2.5 hours when the temperature is 54 degrees. How long would it take for the same block to melt if the temperature were 45 degrees?  3 hours  "
 },
 {
   "id": "algebra-ex-41",
@@ -4525,7 +4525,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "4.4.42",
   "title": "",
-  "body": "The weight of an object above the surface of the earth varies inversely with the distance from the center of the earth. If a person weighs 150 pounds when he is on the surface of the earth (3,960 miles from center), find the weight of the person if he is 20 miles above the surface. "
+  "body": "The weight of an object above the surface of the earth varies inversely with the distance from the center of the earth. If a person weighs 150 pounds when he is on the surface of the earth (3,960 miles from center), find the weight of the person if he is 20 miles above the surface.  149.2 lbs  "
 },
 {
   "id": "algebra-ch-test",
@@ -4618,9 +4618,9 @@ var ptx_lunr_docs = [
   "body": "  Set up and solve simple interest problems  Set up and solve compound interest problems  Compare simple and compound interest   "
 },
 {
-  "id": "p-1072",
+  "id": "p-1160",
   "level": "2",
-  "url": "section-finance-interest.html#p-1072",
+  "url": "section-finance-interest.html#p-1160",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4978,9 +4978,9 @@ var ptx_lunr_docs = [
   "body": "Try It Now  Janine bought $3,000 of new furniture on credit. Because her credit score isn’t very good, the store is charging her a fairly high interest rate on the loan: 16%. If she agreed to pay off the furniture over 2 years, how much will she have to pay each month?  Solving for d gives $146.89 as monthly payments.  In total, she will pay $3,525.36 to the store, meaning she will pay $525.36 in interest over the two years.   "
 },
 {
-  "id": "p-1271",
+  "id": "p-1359",
   "level": "2",
-  "url": "section-finance-loans.html#p-1271",
+  "url": "section-finance-loans.html#p-1359",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5038,7 +5038,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "5.5",
   "title": "Exercises",
-  "body": "  Paul borrowed $1500 at 21% simple interest. What is the total amount to be repaid 55 days later? $1,547.47  Quincy borrowed $5,550 at 14.5% simple interest. What is the total amount to be repaid 3 years later?  If $1,000 is invested at 8% simple interest, how will it take for the investment to grow to $1500? 6.25 years  Owen buys a bond that pays 4% simple interest for $500. How long will it take for that bond to grow to a value of $550.  Randy invests $350 at simple interest for 5 years. At the end of 5 years, he has $490. What simple interest rate did he invest at? 8%  Serge wants to save $5,000 for a vacation in 3 years. How much should he invest at 8% simple interest to reach his goal?  Suppose you obtain a $3,000 T-note with a 3% annual rate, paid quarterly, with maturity in 5 years. How much interest will you earn? $450  A T-bill is a type of bond that is sold at a discount over the face value. For example, suppose you buy a 13-week T-bill with a face value of $10,000 for $9,800. This means that in 13 weeks, the government will give you the face value, earning you $200. What annual interest rate have you earned?  Suppose you are looking to buy a $5000 face value 26-week T-bill. If you want to earn at least 1% annual interest, what is the most you should pay for the T-bill? $4,975.12   If $20,000 is invested at 5.9% interest for 30 years, find the future value if the interest is:  simple  compounded annually  compounded monthly  compounded daily     You deposit $300 in an account earning 5% interest compounded annually. How much will you have in the account in 10 years? $488.67  How much will $1000 deposited in an account earning 7% interest compounded annually be worth in 20 years?  You deposit $2000 in an account earning 3% interest compounded monthly.  How much will you have in the account in 20 years?  How much interest will you earn?       $3,641.51  $1,641.51     You deposit $10,000 in an account earning 4% interest compounded monthly.  How much will you have in the account in 25 years?  How much interest will you earn?     How much would you need to deposit in an account now in order to have $6,000 in the account in 8 years? Assume the account earns 6% interest compounded monthly. $3,717.14  How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% interest compounded quarterly.  Tray wants to earn $200 in interest on a $700 investment after two years. If the interest is compounded monthly, what interest rate must he invest at? 12.6%  You have $2,000 to invest, and want it to grow to $3,000 in two years. What interest rate (compounded annually) would you need to find to make this possible?  You have $5,000 to invest, and want it to grow to $20,000 in ten years. What interest rate (compounded annually) would you need to find to make this possible? 14.9%   You deposit $200 each month into an account earning 3% interest compounded monthly.  How much will you have in the account in 30 years?  How much total money will you put into the account?  How much total interest will you earn?      You deposit $1000 each year into an account earning 8% compounded annually.  How much will you have in the account in 10 years?  How much total money will you put into the account?  How much total interest will you earn?       $14,486.56  $10,000  $4,486.56     Jose has determined he needs to have $800,000 for retirement in 30 years. His account earns 6% interest.  How much would he need to deposit in the account each month?  How much total money will he put into the account?  How much total interest will he earn?     You wish to have $3000 in 2 years to buy a fancy new stereo system. How much should you deposit each quarter into an account paying 8% compounded quarterly?  $349.53  Suppose you invest $50 a month for 5 years into an account earning 8% compounded monthly. After 5 years, you leave the money, without making additional deposits, in the account for another 25 years. How much will you have in the end?   If you make deposits of $50 a month for 25 years into an account earning 8% compounded monthly, how much will you have in the end?  $47,551.32    You want to be able to withdraw $30,000 each year for 25 years. Your account earns 8% interest.  How much do you need in your account at the beginning?  How much total money will you pull out of the account?  How much of that money is interest?      How much money will I need to have at retirement so I can withdraw $60,000 a year for 20 years from an account earning 8% compounded annually?  How much do you need in your account at the beginning?  How much total money will you pull out of the account?  How much of that money is interest?       $589,088.84  $1,200,000  $610,911.16     You have $500,000 saved for retirement. Your account earns 6% interest. How much will you be able to pull out each month, if you want to be able to take withdrawals for 20 years?   Loren already knows that he will have $500,000 when he retires. If he sets up a payout annuity for 30 years in an account paying 10% interest, how much could the annuity provide each month?  $4,387.86  Mike plans to make contributions to his retirement account for 15 years. After the last contribution, he will start withdrawing $10,000 a quarter for 10 years. Assuming Mike's account earns 8% compounded quarterly, how large must his quarterly contributions be during the first 15 years, in order to accomplish his goal?   Kendra wants to be able to make withdrawals of $60,000 a year for 30 years after retiring in 35 years. How much will she have to save each year up until retirement if her account earns 7% interest?  $5,386   You can afford a $700 per month mortgage payment. You’ve found a 30 year loan at 5% interest.  How big of a loan can you afford?  How much total money will you pay the loan company?  How much of that money is interest?    Marie can afford a $250 per month car payment. She’s found a 5 year loan at 7% interest.  How expensive of a car can she afford?  How much total money will she pay the loan company?  How much of that money is interest?      $12,625.50  $15,000  $2,374.50     You want to buy a $25,000 car. The company is offering a 2% interest rate for 48 months (4 years). What will your monthly payments be?   You decide finance a $12,000 car at 3% compounded monthly for 4 years. What will your monthly payments be? How much interest will you pay over the life of the loan?  $265.61 per month; $749.28 in interest   You want to buy a $200,000 home. You plan to pay 10% as a down payment, and take out a 30 year loan for the rest.  How much is the loan amount going to be?  What will your monthly payments be if the interest rate is 5%?  What will your monthly payments be if the interest rate is 6%?     Lynn bought a $300,000 house, paying 10% down, and financing the rest at 6% interest for 30 years.  Find her monthly payments.  How much interest will she pay over the life of the loan?      $1,618.79  $312,764.40     Emile bought a car for $24,000 three years ago. The loan had a 5 year term at 3% interest rate, making monthly payments. How much does he still owe on the car?   A friend bought a house 15 years ago, taking out a $120,000 mortgage at 6% for 30 years, making monthly payments. How much does she still owe on the mortgage? $85,258.54  Suppose your gross monthly income is $5,500. If your bank will allow you to pay up to 36% of your gross monthly income for a monthly house payment, what is the maximum loan you can obtain if the rate for a 30-year mortgage is 4.25%?   Complete the first 3 lines of an amortization schedule for a 30-year mortgage of $200,000 at 3.9% interest. Assume monthly payments.      Payment  Amount of Payment  Interest  Paid to Principal  New Balance    1  $943.34  $650  $293.34  $199,706.66    2  $943.34  $649.05  $294.29  $199,412.37    3  $943.34  $648.09  $295.25  $199,117.12       Complete the first 3 lines of an amortization schedule for a 5-year loan of $10,000 at 15% interest. Assume monthly payments.    Consider a 30-year mortgage of $418,000 at 4.375%  What are the monthly payments?  What is the total amount of interest that will be paid over the life of the loan?  Suppose you reduce the term of the loan to 20 years. What will the monthly payments be?  How much will you save over the life of the loan if you take the 20-year loan instead of the 30-year loan?      $2087.01  $333,323.60  $2616.35  =$123,399.60      Suppose that 10 years ago you bought a home for $110,000, paying 10% as a down payment, and financing the rest at 9% interest for 30 years.   Let's consider your existing mortgage:  How much money did you pay as your down payment?  How much money was your mortgage (loan) for?  What is your current monthly payment?  How much total interest will you pay over the life of the loan?    This year, you check your loan balance. Only part of your payments have been going to pay down the loan; the rest has been going towards interest. You see that you still have $88,536 left to pay on your loan. Your house is now valued at $150,000.  How much of the loan have you paid off? (i.e., how much have you reduced the loan balance by? Keep in mind that interest is charged each month - it's not part of the loan balance.)  How much money have you paid to the loan company so far?  How much interest have you paid so far?  How much equity do you have in your home (equity is value minus remaining debt)    Since interest rates have dropped, you consider refinancing your mortgage at a lower 6% rate.  If you took out a new 30 year mortgage at 6% for your remaining loan balance, what would your new monthly payments be?  How much interest will you pay over the life of the new loan?    Notice that if you refinance, you are going to be making payments on your home for another 30 years. In addition to the 10 years you've already been paying, that's 40 years total.  How much will you save each month because of the lower monthly payment?  How much total interest will you be paying?  Does it make sense to refinance? (there isn't a correct answer to this question. Just give your opinion and your reason.)     "
+  "body": "  Paul borrowed $1500 at 21% simple interest. What is the total amount to be repaid 55 days later? $1,547.47  Quincy borrowed $5,550 at 14.5% simple interest. What is the total amount to be repaid 3 years later?  $7964.25   If $1,000 is invested at 8% simple interest, how will it take for the investment to grow to $1500? 6.25 years  Owen buys a bond that pays 4% simple interest for $500. How long will it take for that bond to grow to a value of $550.  2.5 years   Randy invests $350 at simple interest for 5 years. At the end of 5 years, he has $490. What simple interest rate did he invest at? 8%  Serge wants to save $5,000 for a vacation in 3 years. How much should he invest at 8% simple interest to reach his goal?  $4,032.26   Suppose you obtain a $3,000 T-note with a 3% annual rate, paid quarterly, with maturity in 5 years. How much interest will you earn? $450  A T-bill is a type of bond that is sold at a discount over the face value. For example, suppose you buy a 13-week T-bill with a face value of $10,000 for $9,800. This means that in 13 weeks, the government will give you the face value, earning you $200. What annual interest rate have you earned?  8.2%   Suppose you are looking to buy a $5000 face value 26-week T-bill. If you want to earn at least 1% annual interest, what is the most you should pay for the T-bill? $4,975.12   If $20,000 is invested at 5.9% interest for 30 years, find the future value if the interest is:  simple  compounded annually  compounded monthly  compounded daily       $55,400  $111,662.87  $116,908.93  $117,400.27     You deposit $300 in an account earning 5% interest compounded annually. How much will you have in the account in 10 years? $488.67  How much will $1000 deposited in an account earning 7% interest compounded annually be worth in 20 years?  $3869.68   You deposit $2000 in an account earning 3% interest compounded monthly.  How much will you have in the account in 20 years?  How much interest will you earn?       $3,641.51  $1,641.51     You deposit $10,000 in an account earning 4% interest compounded monthly.  How much will you have in the account in 25 years?  How much interest will you earn?       $27,137.65  $17,137.65     How much would you need to deposit in an account now in order to have $6,000 in the account in 8 years? Assume the account earns 6% interest compounded monthly. $3,717.14  How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% interest compounded quarterly.  $16,394.93   Tray wants to earn $200 in interest on a $700 investment after two years. If the interest is compounded monthly, what interest rate must he invest at? 12.6%  You have $2,000 to invest, and want it to grow to $3,000 in two years. What interest rate (compounded annually) would you need to find to make this possible?  22.5%   You have $5,000 to invest, and want it to grow to $20,000 in ten years. What interest rate (compounded annually) would you need to find to make this possible? 14.9%   You deposit $200 each month into an account earning 3% interest compounded monthly.  How much will you have in the account in 30 years?  How much total money will you put into the account?  How much total interest will you earn?       $116,547.38  $72,000  $44,547.38      You deposit $1000 each year into an account earning 8% compounded annually.  How much will you have in the account in 10 years?  How much total money will you put into the account?  How much total interest will you earn?       $14,486.56  $10,000  $4,486.56     Jose has determined he needs to have $800,000 for retirement in 30 years. His account earns 6% interest.  How much would he need to deposit in the account each month?  How much total money will he put into the account?  How much total interest will he earn?       $796.40  $286,705.51  $513,294.49     You wish to have $3000 in 2 years to buy a fancy new stereo system. How much should you deposit each quarter into an account paying 8% compounded quarterly?  $349.53  Suppose you invest $50 a month for 5 years into an account earning 8% compounded monthly. After 5 years, you leave the money, without making additional deposits, in the account for another 25 years. How much will you have in the end?   $26,966.25   If you make deposits of $50 a month for 25 years into an account earning 8% compounded monthly, how much will you have in the end?  $47,551.32    You want to be able to withdraw $30,000 each year for 25 years. Your account earns 8% interest.  How much do you need in your account at the beginning?  How much total money will you pull out of the account?  How much of that money is interest?       $320,243.29  $750,000  $429,756.71      How much money will I need to have at retirement so I can withdraw $60,000 a year for 20 years from an account earning 8% compounded annually?  How much do you need in your account at the beginning?  How much total money will you pull out of the account?  How much of that money is interest?       $589,088.84  $1,200,000  $610,911.16     You have $500,000 saved for retirement. Your account earns 6% interest. How much will you be able to pull out each month, if you want to be able to take withdrawals for 20 years?   $3582.16   Loren already knows that he will have $500,000 when he retires. If he sets up a payout annuity for 30 years in an account paying 10% interest, how much could the annuity provide each month?  $4,387.86  Mike plans to make contributions to his retirement account for 15 years. After the last contribution, he will start withdrawing $10,000 a quarter for 10 years. Assuming Mike's account earns 8% compounded quarterly, how large must his quarterly contributions be during the first 15 years, in order to accomplish his goal?   $2398.52   Kendra wants to be able to make withdrawals of $60,000 a year for 30 years after retiring in 35 years. How much will she have to save each year up until retirement if her account earns 7% interest?  $5,386   You can afford a $700 per month mortgage payment. You’ve found a 30 year loan at 5% interest.  How big of a loan can you afford?  How much total money will you pay the loan company?  How much of that money is interest?      $130,397.13  $252,000  $121,602.87     Marie can afford a $250 per month car payment. She’s found a 5 year loan at 7% interest.  How expensive of a car can she afford?  How much total money will she pay the loan company?  How much of that money is interest?      $12,625.50  $15,000  $2,374.50     You want to buy a $25,000 car. The company is offering a 2% interest rate for 48 months (4 years). What will your monthly payments be?   $542.38   You decide finance a $12,000 car at 3% compounded monthly for 4 years. What will your monthly payments be? How much interest will you pay over the life of the loan?  $265.61 per month; $749.28 in interest   You want to buy a $200,000 home. You plan to pay 10% as a down payment, and take out a 30 year loan for the rest.  How much is the loan amount going to be?  What will your monthly payments be if the interest rate is 5%?  What will your monthly payments be if the interest rate is 6%?      $180,000  $966.28  $1079.19      Lynn bought a $300,000 house, paying 10% down, and financing the rest at 6% interest for 30 years.  Find her monthly payments.  How much interest will she pay over the life of the loan?      $1,618.79  $312,764.40     Emile bought a car for $24,000 three years ago. The loan had a 5 year term at 3% interest rate, making monthly payments. How much does he still owe on the car?   $10,033.45   A friend bought a house 15 years ago, taking out a $120,000 mortgage at 6% for 30 years, making monthly payments. How much does she still owe on the mortgage? $85,258.54  Suppose your gross monthly income is $5,500. If your bank will allow you to pay up to 36% of your gross monthly income for a monthly house payment, what is the maximum loan you can obtain if the rate for a 30-year mortgage is 4.25%?   $402,488.20   Complete the first 3 lines of an amortization schedule for a 30-year mortgage of $200,000 at 3.9% interest. Assume monthly payments.      Payment  Amount of Payment  Interest  Paid to Principal  New Balance    1  $943.34  $650  $293.34  $199,706.66    2  $943.34  $649.05  $294.29  $199,412.37    3  $943.34  $648.09  $295.25  $199,117.12       Complete the first 3 lines of an amortization schedule for a 5-year loan of $10,000 at 15% interest. Assume monthly payments.       Payment  Interest  Paid to Principal  New Balance    $237.90  $125  $112.90  $9887.10    $237.90  $123.59  $114.31  $9772.79    $237.90  $122.16  $115.74  $9657.05        Consider a 30-year mortgage of $418,000 at 4.375%  What are the monthly payments?  What is the total amount of interest that will be paid over the life of the loan?  Suppose you reduce the term of the loan to 20 years. What will the monthly payments be?  How much will you save over the life of the loan if you take the 20-year loan instead of the 30-year loan?      $2087.01  $333,323.60  $2616.35  =$123,399.60      Suppose that 10 years ago you bought a home for $110,000, paying 10% as a down payment, and financing the rest at 9% interest for 30 years.   Let's consider your existing mortgage:  How much money did you pay as your down payment?  How much money was your mortgage (loan) for?  What is your current monthly payment?  How much total interest will you pay over the life of the loan?      $11,000  $99,000  $796.58     This year, you check your loan balance. Only part of your payments have been going to pay down the loan; the rest has been going towards interest. You see that you still have $88,536 left to pay on your loan. Your house is now valued at $150,000.  How much of the loan have you paid off? (i.e., how much have you reduced the loan balance by? Keep in mind that interest is charged each month - it's not part of the loan balance.)  How much money have you paid to the loan company so far?  How much interest have you paid so far?  How much equity do you have in your home (equity is value minus remaining debt)      $10,464  $95,589.60  $85,125.60  $61,464     Since interest rates have dropped, you consider refinancing your mortgage at a lower 6% rate.  If you took out a new 30 year mortgage at 6% for your remaining loan balance, what would your new monthly payments be?  How much interest will you pay over the life of the new loan?      $530.82  $102,559.20     Notice that if you refinance, you are going to be making payments on your home for another 30 years. In addition to the 10 years you've already been paying, that's 40 years total.  How much will you save each month because of the lower monthly payment?  How much total interest will you be paying?  Does it make sense to refinance? (there isn't a correct answer to this question. Just give your opinion and your reason.)      $265.76  $187,684.80      "
 },
 {
   "id": "finance-ex-1",
@@ -5056,7 +5056,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.2",
   "title": "",
-  "body": "Quincy borrowed $5,550 at 14.5% simple interest. What is the total amount to be repaid 3 years later? "
+  "body": "Quincy borrowed $5,550 at 14.5% simple interest. What is the total amount to be repaid 3 years later?  $7964.25  "
 },
 {
   "id": "finance-ex-3",
@@ -5074,7 +5074,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.4",
   "title": "",
-  "body": "Owen buys a bond that pays 4% simple interest for $500. How long will it take for that bond to grow to a value of $550. "
+  "body": "Owen buys a bond that pays 4% simple interest for $500. How long will it take for that bond to grow to a value of $550.  2.5 years  "
 },
 {
   "id": "finance-ex-5",
@@ -5092,7 +5092,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.6",
   "title": "",
-  "body": "Serge wants to save $5,000 for a vacation in 3 years. How much should he invest at 8% simple interest to reach his goal? "
+  "body": "Serge wants to save $5,000 for a vacation in 3 years. How much should he invest at 8% simple interest to reach his goal?  $4,032.26  "
 },
 {
   "id": "finance-ex-7",
@@ -5110,7 +5110,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.8",
   "title": "",
-  "body": "A T-bill is a type of bond that is sold at a discount over the face value. For example, suppose you buy a 13-week T-bill with a face value of $10,000 for $9,800. This means that in 13 weeks, the government will give you the face value, earning you $200. What annual interest rate have you earned? "
+  "body": "A T-bill is a type of bond that is sold at a discount over the face value. For example, suppose you buy a 13-week T-bill with a face value of $10,000 for $9,800. This means that in 13 weeks, the government will give you the face value, earning you $200. What annual interest rate have you earned?  8.2%  "
 },
 {
   "id": "finance-ex-9",
@@ -5128,7 +5128,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.10",
   "title": "",
-  "body": "If $20,000 is invested at 5.9% interest for 30 years, find the future value if the interest is:  simple  compounded annually  compounded monthly  compounded daily    "
+  "body": "If $20,000 is invested at 5.9% interest for 30 years, find the future value if the interest is:  simple  compounded annually  compounded monthly  compounded daily       $55,400  $111,662.87  $116,908.93  $117,400.27    "
 },
 {
   "id": "finance-ex-11",
@@ -5146,7 +5146,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.12",
   "title": "",
-  "body": "How much will $1000 deposited in an account earning 7% interest compounded annually be worth in 20 years? "
+  "body": "How much will $1000 deposited in an account earning 7% interest compounded annually be worth in 20 years?  $3869.68  "
 },
 {
   "id": "finance-ex-13",
@@ -5164,7 +5164,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.14",
   "title": "",
-  "body": "You deposit $10,000 in an account earning 4% interest compounded monthly.  How much will you have in the account in 25 years?  How much interest will you earn?    "
+  "body": "You deposit $10,000 in an account earning 4% interest compounded monthly.  How much will you have in the account in 25 years?  How much interest will you earn?       $27,137.65  $17,137.65    "
 },
 {
   "id": "finance-ex-15",
@@ -5182,7 +5182,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.16",
   "title": "",
-  "body": "How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% interest compounded quarterly. "
+  "body": "How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% interest compounded quarterly.  $16,394.93  "
 },
 {
   "id": "finance-ex-17",
@@ -5200,7 +5200,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.18",
   "title": "",
-  "body": "You have $2,000 to invest, and want it to grow to $3,000 in two years. What interest rate (compounded annually) would you need to find to make this possible? "
+  "body": "You have $2,000 to invest, and want it to grow to $3,000 in two years. What interest rate (compounded annually) would you need to find to make this possible?  22.5%  "
 },
 {
   "id": "finance-ex-19",
@@ -5218,7 +5218,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.20",
   "title": "",
-  "body": "You deposit $200 each month into an account earning 3% interest compounded monthly.  How much will you have in the account in 30 years?  How much total money will you put into the account?  How much total interest will you earn?    "
+  "body": "You deposit $200 each month into an account earning 3% interest compounded monthly.  How much will you have in the account in 30 years?  How much total money will you put into the account?  How much total interest will you earn?       $116,547.38  $72,000  $44,547.38    "
 },
 {
   "id": "finance-ex-21",
@@ -5236,7 +5236,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.22",
   "title": "",
-  "body": "Jose has determined he needs to have $800,000 for retirement in 30 years. His account earns 6% interest.  How much would he need to deposit in the account each month?  How much total money will he put into the account?  How much total interest will he earn?    "
+  "body": "Jose has determined he needs to have $800,000 for retirement in 30 years. His account earns 6% interest.  How much would he need to deposit in the account each month?  How much total money will he put into the account?  How much total interest will he earn?       $796.40  $286,705.51  $513,294.49    "
 },
 {
   "id": "finance-ex-23",
@@ -5254,7 +5254,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.24",
   "title": "",
-  "body": "Suppose you invest $50 a month for 5 years into an account earning 8% compounded monthly. After 5 years, you leave the money, without making additional deposits, in the account for another 25 years. How much will you have in the end?  "
+  "body": "Suppose you invest $50 a month for 5 years into an account earning 8% compounded monthly. After 5 years, you leave the money, without making additional deposits, in the account for another 25 years. How much will you have in the end?   $26,966.25  "
 },
 {
   "id": "finance-ex-25",
@@ -5272,7 +5272,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.26",
   "title": "",
-  "body": " You want to be able to withdraw $30,000 each year for 25 years. Your account earns 8% interest.  How much do you need in your account at the beginning?  How much total money will you pull out of the account?  How much of that money is interest?    "
+  "body": " You want to be able to withdraw $30,000 each year for 25 years. Your account earns 8% interest.  How much do you need in your account at the beginning?  How much total money will you pull out of the account?  How much of that money is interest?       $320,243.29  $750,000  $429,756.71    "
 },
 {
   "id": "finance-ex-27",
@@ -5290,7 +5290,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.28",
   "title": "",
-  "body": "You have $500,000 saved for retirement. Your account earns 6% interest. How much will you be able to pull out each month, if you want to be able to take withdrawals for 20 years?  "
+  "body": "You have $500,000 saved for retirement. Your account earns 6% interest. How much will you be able to pull out each month, if you want to be able to take withdrawals for 20 years?   $3582.16  "
 },
 {
   "id": "finance-ex-29",
@@ -5308,7 +5308,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.30",
   "title": "",
-  "body": "Mike plans to make contributions to his retirement account for 15 years. After the last contribution, he will start withdrawing $10,000 a quarter for 10 years. Assuming Mike's account earns 8% compounded quarterly, how large must his quarterly contributions be during the first 15 years, in order to accomplish his goal?  "
+  "body": "Mike plans to make contributions to his retirement account for 15 years. After the last contribution, he will start withdrawing $10,000 a quarter for 10 years. Assuming Mike's account earns 8% compounded quarterly, how large must his quarterly contributions be during the first 15 years, in order to accomplish his goal?   $2398.52  "
 },
 {
   "id": "finance-ex-31",
@@ -5326,7 +5326,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.32",
   "title": "",
-  "body": "You can afford a $700 per month mortgage payment. You’ve found a 30 year loan at 5% interest.  How big of a loan can you afford?  How much total money will you pay the loan company?  How much of that money is interest?   "
+  "body": "You can afford a $700 per month mortgage payment. You’ve found a 30 year loan at 5% interest.  How big of a loan can you afford?  How much total money will you pay the loan company?  How much of that money is interest?      $130,397.13  $252,000  $121,602.87    "
 },
 {
   "id": "finance-ex-33",
@@ -5344,7 +5344,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.34",
   "title": "",
-  "body": "You want to buy a $25,000 car. The company is offering a 2% interest rate for 48 months (4 years). What will your monthly payments be?  "
+  "body": "You want to buy a $25,000 car. The company is offering a 2% interest rate for 48 months (4 years). What will your monthly payments be?   $542.38  "
 },
 {
   "id": "finance-ex-35",
@@ -5362,7 +5362,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.36",
   "title": "",
-  "body": " You want to buy a $200,000 home. You plan to pay 10% as a down payment, and take out a 30 year loan for the rest.  How much is the loan amount going to be?  What will your monthly payments be if the interest rate is 5%?  What will your monthly payments be if the interest rate is 6%?   "
+  "body": " You want to buy a $200,000 home. You plan to pay 10% as a down payment, and take out a 30 year loan for the rest.  How much is the loan amount going to be?  What will your monthly payments be if the interest rate is 5%?  What will your monthly payments be if the interest rate is 6%?      $180,000  $966.28  $1079.19    "
 },
 {
   "id": "finance-ex-37",
@@ -5380,7 +5380,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.38",
   "title": "",
-  "body": "Emile bought a car for $24,000 three years ago. The loan had a 5 year term at 3% interest rate, making monthly payments. How much does he still owe on the car?  "
+  "body": "Emile bought a car for $24,000 three years ago. The loan had a 5 year term at 3% interest rate, making monthly payments. How much does he still owe on the car?   $10,033.45  "
 },
 {
   "id": "finance-ex-39",
@@ -5398,7 +5398,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.40",
   "title": "",
-  "body": "Suppose your gross monthly income is $5,500. If your bank will allow you to pay up to 36% of your gross monthly income for a monthly house payment, what is the maximum loan you can obtain if the rate for a 30-year mortgage is 4.25%?  "
+  "body": "Suppose your gross monthly income is $5,500. If your bank will allow you to pay up to 36% of your gross monthly income for a monthly house payment, what is the maximum loan you can obtain if the rate for a 30-year mortgage is 4.25%?   $402,488.20  "
 },
 {
   "id": "finance-ex-41",
@@ -5416,7 +5416,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.42",
   "title": "",
-  "body": " Complete the first 3 lines of an amortization schedule for a 5-year loan of $10,000 at 15% interest. Assume monthly payments.  "
+  "body": " Complete the first 3 lines of an amortization schedule for a 5-year loan of $10,000 at 15% interest. Assume monthly payments.       Payment  Interest  Paid to Principal  New Balance    $237.90  $125  $112.90  $9887.10    $237.90  $123.59  $114.31  $9772.79    $237.90  $122.16  $115.74  $9657.05      "
 },
 {
   "id": "finance-ex-43",
@@ -5434,7 +5434,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.44",
   "title": "",
-  "body": " Let's consider your existing mortgage:  How much money did you pay as your down payment?  How much money was your mortgage (loan) for?  What is your current monthly payment?  How much total interest will you pay over the life of the loan?   "
+  "body": " Let's consider your existing mortgage:  How much money did you pay as your down payment?  How much money was your mortgage (loan) for?  What is your current monthly payment?  How much total interest will you pay over the life of the loan?      $11,000  $99,000  $796.58    "
 },
 {
   "id": "finance-ex-45",
@@ -5443,7 +5443,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.45",
   "title": "",
-  "body": "This year, you check your loan balance. Only part of your payments have been going to pay down the loan; the rest has been going towards interest. You see that you still have $88,536 left to pay on your loan. Your house is now valued at $150,000.  How much of the loan have you paid off? (i.e., how much have you reduced the loan balance by? Keep in mind that interest is charged each month - it's not part of the loan balance.)  How much money have you paid to the loan company so far?  How much interest have you paid so far?  How much equity do you have in your home (equity is value minus remaining debt)   "
+  "body": "This year, you check your loan balance. Only part of your payments have been going to pay down the loan; the rest has been going towards interest. You see that you still have $88,536 left to pay on your loan. Your house is now valued at $150,000.  How much of the loan have you paid off? (i.e., how much have you reduced the loan balance by? Keep in mind that interest is charged each month - it's not part of the loan balance.)  How much money have you paid to the loan company so far?  How much interest have you paid so far?  How much equity do you have in your home (equity is value minus remaining debt)      $10,464  $95,589.60  $85,125.60  $61,464    "
 },
 {
   "id": "finance-ex-46",
@@ -5452,7 +5452,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.46",
   "title": "",
-  "body": "Since interest rates have dropped, you consider refinancing your mortgage at a lower 6% rate.  If you took out a new 30 year mortgage at 6% for your remaining loan balance, what would your new monthly payments be?  How much interest will you pay over the life of the new loan?   "
+  "body": "Since interest rates have dropped, you consider refinancing your mortgage at a lower 6% rate.  If you took out a new 30 year mortgage at 6% for your remaining loan balance, what would your new monthly payments be?  How much interest will you pay over the life of the new loan?      $530.82  $102,559.20    "
 },
 {
   "id": "finance-ex-47",
@@ -5461,7 +5461,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.5.47",
   "title": "",
-  "body": "Notice that if you refinance, you are going to be making payments on your home for another 30 years. In addition to the 10 years you've already been paying, that's 40 years total.  How much will you save each month because of the lower monthly payment?  How much total interest will you be paying?  Does it make sense to refinance? (there isn't a correct answer to this question. Just give your opinion and your reason.)   "
+  "body": "Notice that if you refinance, you are going to be making payments on your home for another 30 years. In addition to the 10 years you've already been paying, that's 40 years total.  How much will you save each month because of the lower monthly payment?  How much total interest will you be paying?  Does it make sense to refinance? (there isn't a correct answer to this question. Just give your opinion and your reason.)      $265.76  $187,684.80    "
 },
 {
   "id": "finance-ch-test",
@@ -6118,7 +6118,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "6.4",
   "title": "Exercises",
-  "body": "  A political scientist surveys 28 of the current 106 representatives in a state's congress. Of them, 14 said they were supporting a new education bill, 12 said there were not supporting the bill, and 2 were undecided.  What is the population of this survey?  What is the size of the population?  What is the size of the sample?  Give the sample statistic for the proportion of voters surveyed who said they were supporting the education bill.  Based on this sample, we might expect how many of the representatives to support the education bill?       Population is the current representatives in the state’s congress  106  the 28 representatives surveyed   53 representatives      The city of Raleigh has 9500 registered voters. There are two candidates for city council in an upcoming election: Brown and Feliz. The day before the election, a telephone poll of 350 randomly selected registered voters was conducted. 112 said they'd vote for Brown, 207 said they'd vote for Feliz, and 31 were undecided.  What is the population of this survey?  What is the size of the population?  What is the size of the sample?  Give the sample statistic for the proportion of voters surveyed who said they'd vote for Brown.  Based on this sample, we might expect how many of the 9500 voters to vote for Brown?      As part of a math project, a student take a container filled with red and green candies that are well-mixed. The student pulls out 30 candies with the goal of estimating the number of red candies in the jar. Of the 30 candies, 12 of them are red.  Describe the target population.  Describe the sample.  What sampling method is used?  Give the sample statistic for the proportion of candies that are red.  If the jar contains 800 candies, esimate how many of them are red.     Identify the most relevant source of bias in this situation: A survey asks the following: Should the mall prohibit loud and annoying rock music in clothing stores catering to teenagers?  Identify the most relevant source of bias in this situation: To determine opinions on voter support for a downtown renovation project, a surveyor randomly questions people working in downtown businesses.  Identify the most relevant source of bias in this situation: A survey asks people to report their actual income and the income they reported on their IRS tax form.  Identify the most relevant source of bias in this situation: A survey randomly calls people from the phone book and asks them to answer a long series of questions.  Identify the most relevant source of bias in this situation: A survey asks the following: Should the death penalty be permitted if innocent people might die?  Identify the most relevant source of bias in this situation: A study seeks to investigate whether a new pain medication is safe to market to the public. They test by randomly selecting 300 men from a set of volunteers.  In a study, you ask the subjects their age in years. Is this data qualitative or quantitative?  In a study, you ask the subjects their gender. Is this data qualitative or quantitative?  Does this describe an observational study or an experiment: The temperature on randomly selected days throughout the year was measured.  Does this describe an observational study or an experiment? A group of students are told to listen to music while taking a test and their results are compared to a group not listening to music.  In a study, the sample is chosen by separating all cars by size, and selecting 10 of each size grouping. What is the sampling method?  In a study, the sample is chosen by writing everyone’s name on a playing card, shuffling the deck, then choosing the top 20 cards. What is the sampling method?   A researcher wants to study the effectiveness of a \"test-taking-energy-drink\". They select 1,000 volunteers from colleges around the country and divide them into two groups. Those enrolled in English classes were given the real drink, and those enrolled in math classes were given a fake drink. None of the students knew which drink they were getting, but the researchers knew. The researchers compared test scores of both groups of students and concluded that the student who received the test-taking drink performed significantly betters on tests.  Describe the target population.  Describe the control group and the treatment group in this experiment.  Is this experiment blind? Double-blind?  Why might the results of this experiment be unreliable?      A team of researchers is testing the effectiveness of a new HPV vaccine. They randomly divide the subjects into two groups. Group 1 receives new HPV vaccine, and Group 2 receives the existing HPV vaccine. The patients in the study do not know which group they are in.  Which is the treatment group?  Which is the control group (if there is one)?  Is this study blind, double-blind, or neither?  Is this best described as an experiment, a controlled experiment, or a placebo controlled experiment?       Group 1, receiving the vaccine  Group 2 is acting as a control group. They are not receiving the treatment (new vaccine).  The study is at least blind. We are not provided enough information to determine if it is double-blind.  This is a controlled experiment.      For the clinical trials of a weight loss drug containing Garcinia cambogia the subjects were randomly divided into two groups. The first received an inert pill along with an exercise and diet plan, while the second received the test medicine along with the same exercise and diet plan. The patients do not know which group they are in, nor do the fitness and nutrition advisors.  Which is the treatment group?  Which is the control group (if there is one)?  Is this study blind, double-blind, or neither?  Is this best described as an experiment, a controlled experiment, or a placebo controlled experiment?      A teacher wishes to know whether the males in his\/her class have more conservative attitudes than the females. A questionnaire is distributed assessing attitudes.  Is this a sampling or a census?  Is this an observational study or an experiment?  Are there any possible sources of bias in this study?       Census  Observational study      A study is conducted to determine whether people learn better with spaced or massed practice. Subjects volunteer from an introductory psychology class. At the beginning of the semester 12 subjects volunteer and are assigned to the massed-practice group. At the end of the semester 12 subjects volunteer and are assigned to the spaced-practice condition.  Is this a sampling or a census?  Is this an observational study or an experiment?  This study involves two kinds of non-random sampling: (1) Subjects are not randomly sampled from some specified population and (2) Subjects are not randomly assigned to groups. Which problem is more serious? What affect on the results does each have?     A farmer believes that playing Barry Manilow songs to his peas will increase their yield. Describe a controlled experiment the farmer could use to test his theory.  A sports psychologist believes that people are more likely to be extroverted as adults if they played team sports as children. Describe two possible studies to test this theory. Design one as an observational study and the other as an experiment. Which is more practical?   Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment program. Suppose that a new AIDS antibody drug is currently under study. It is given to patients once the AIDS symptoms have revealed themselves. Of interest is the average length of time in months patients live once starting the treatment. Two researchers each follow a different set of 50 AIDS patients from the start of treatment until their deaths.  What is the population of this study?  List two reasons why the data may differ.  Can you tell if one researcher is correct and the other one is incorrect? Why?  Would you expect the data to be identical? Why or why not?  If the first researcher collected her data by randomly selecting 40 states, then selecting 1 person from each of those states. What sampling method is that?  If the second researcher collected his data by choosing 40 patients he knew. What sampling method would that researcher have used? What concerns would you have about this data set, based upon the data collection method?     Find a newspaper or magazine article, or the online equivalent, describing the results of a recent study (the results of a poll are not sufficient). Give a summary of the study’s findings, then analyze whether the article provided enough information to determine the validity of the conclusions. If not, produce a list of things that are missing from the article that would help you determine the validity of the study. Look for the things discussed in the text: population, sample, randomness, blind, control, placebos, etc.  "
+  "body": "  A political scientist surveys 28 of the current 106 representatives in a state's congress. Of them, 14 said they were supporting a new education bill, 12 said there were not supporting the bill, and 2 were undecided.  What is the population of this survey?  What is the size of the population?  What is the size of the sample?  Give the sample statistic for the proportion of voters surveyed who said they were supporting the education bill.  Based on this sample, we might expect how many of the representatives to support the education bill?       Population is the current representatives in the state’s congress  106  the 28 representatives surveyed   53 representatives      The city of Raleigh has 9500 registered voters. There are two candidates for city council in an upcoming election: Brown and Feliz. The day before the election, a telephone poll of 350 randomly selected registered voters was conducted. 112 said they'd vote for Brown, 207 said they'd vote for Feliz, and 31 were undecided.  What is the population of this survey?  What is the size of the population?  What is the size of the sample?  Give the sample statistic for the proportion of voters surveyed who said they'd vote for Brown.  Based on this sample, we might expect how many of the 9500 voters to vote for Brown?       All registered voters in Raliegh  9500  350   3040      As part of a math project, a student take a container filled with red and green candies that are well-mixed. The student pulls out 30 candies with the goal of estimating the number of red candies in the jar. Of the 30 candies, 12 of them are red.  Describe the target population.  Describe the sample.  What sampling method is used?  Give the sample statistic for the proportion of candies that are red.  If the jar contains 800 candies, esimate how many of them are red.       All candies in the jar  30  simple random sampling   320Z     Identify the most relevant source of bias in this situation: A survey asks the following: Should the mall prohibit loud and annoying rock music in clothing stores catering to teenagers?  Leading question bias: the music is described in a negative way.   Identify the most relevant source of bias in this situation: To determine opinions on voter support for a downtown renovation project, a surveyor randomly questions people working in downtown businesses.  Sampling bias: only those who work downtown were surveyed--they might have different opinions than the rest of the target population.   Identify the most relevant source of bias in this situation: A survey asks people to report their actual income and the income they reported on their IRS tax form.  Response bias: people may not want to answer honestly if they lied on their taxes.   Identify the most relevant source of bias in this situation: A survey randomly calls people from the phone book and asks them to answer a long series of questions.  Non-response bias: people may not have time to answer a long questionaire.   Identify the most relevant source of bias in this situation: A survey asks the following: Should the death penalty be permitted if innocent people might die?  Leading question bias: the question makes an argument for one answer.   Identify the most relevant source of bias in this situation: A study seeks to investigate whether a new pain medication is safe to market to the public. They test by randomly selecting 300 men from a set of volunteers.  Sampling bias: only men were selected, but the target population included all genders.   In a study, you ask the subjects their age in years. Is this data qualitative or quantitative?  Quantitative   In a study, you ask the subjects their gender. Is this data qualitative or quantitative?  Qualitative   Does this describe an observational study or an experiment: The temperature on randomly selected days throughout the year was measured.  Observational Study   Does this describe an observational study or an experiment? A group of students are told to listen to music while taking a test and their results are compared to a group not listening to music.  Experiment   In a study, the sample is chosen by separating all cars by size, and selecting 10 of each size grouping. What is the sampling method?  Stratified sampling   In a study, the sample is chosen by writing everyone’s name on a playing card, shuffling the deck, then choosing the top 20 cards. What is the sampling method?  Simple random sampling    A researcher wants to study the effectiveness of a \"test-taking-energy-drink\". They select 1,000 volunteers from colleges around the country and divide them into two groups. Those enrolled in English classes were given the real drink, and those enrolled in math classes were given a fake drink. None of the students knew which drink they were getting, but the researchers knew. The researchers compared test scores of both groups of students and concluded that the student who received the test-taking drink performed significantly betters on tests.  Describe the target population.  Describe the control group and the treatment group in this experiment.  Is this experiment blind? Double-blind?  Why might the results of this experiment be unreliable?       All test-takers  The control group is the set of volunteers enrolled in math classes and the treatment group is the set of volunteers enrolled in English classes.  Blind  There may be confounding variables since the treatment and control groups are enrolled in different types of classes.      A team of researchers is testing the effectiveness of a new HPV vaccine. They randomly divide the subjects into two groups. Group 1 receives new HPV vaccine, and Group 2 receives the existing HPV vaccine. The patients in the study do not know which group they are in.  Which is the treatment group?  Which is the control group (if there is one)?  Is this study blind, double-blind, or neither?  Is this best described as an experiment, a controlled experiment, or a placebo controlled experiment?       Group 1, receiving the vaccine  Group 2 is acting as a control group. They are not receiving the treatment (new vaccine).  The study is at least blind. We are not provided enough information to determine if it is double-blind.  This is a controlled experiment.      For the clinical trials of a weight loss drug containing Garcinia cambogia the subjects were randomly divided into two groups. The first received an inert pill along with an exercise and diet plan, while the second received the test medicine along with the same exercise and diet plan. The patients do not know which group they are in, nor do the fitness and nutrition advisors.  Which is the treatment group?  Which is the control group (if there is one)?  Is this study blind, double-blind, or neither?  Is this best described as an experiment, a controlled experiment, or a placebo controlled experiment?       The treatment group is the second group--those who received the actual medicine.  The control group is the first group--those who received a placebo.  Double-blind  Placebo controlled experiment      A teacher wishes to know whether the males in his\/her class have more conservative attitudes than the females. A questionnaire is distributed assessing attitudes.  Is this a sampling or a census?  Is this an observational study or an experiment?  Are there any possible sources of bias in this study?       Census  Observational study      A study is conducted to determine whether people learn better with spaced or massed practice. Subjects volunteer from an introductory psychology class. At the beginning of the semester 12 subjects volunteer and are assigned to the massed-practice group. At the end of the semester 12 subjects volunteer and are assigned to the spaced-practice condition.  Is this a sampling or a census?  Is this an observational study or an experiment?  This study involves two kinds of non-random sampling: (1) Subjects are not randomly sampled from some specified population and (2) Subjects are not randomly assigned to groups. Which problem is more serious? What affect on the results does each have?       Sampling  Experiment     A farmer believes that playing Barry Manilow songs to his peas will increase their yield. Describe a controlled experiment the farmer could use to test his theory.  A sports psychologist believes that people are more likely to be extroverted as adults if they played team sports as children. Describe two possible studies to test this theory. Design one as an observational study and the other as an experiment. Which is more practical?   Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment program. Suppose that a new AIDS antibody drug is currently under study. It is given to patients once the AIDS symptoms have revealed themselves. Of interest is the average length of time in months patients live once starting the treatment. Two researchers each follow a different set of 50 AIDS patients from the start of treatment until their deaths.  What is the population of this study?  List two reasons why the data may differ.  Can you tell if one researcher is correct and the other one is incorrect? Why?  Would you expect the data to be identical? Why or why not?  If the first researcher collected her data by randomly selecting 40 states, then selecting 1 person from each of those states. What sampling method is that?  If the second researcher collected his data by choosing 40 patients he knew. What sampling method would that researcher have used? What concerns would you have about this data set, based upon the data collection method?     Find a newspaper or magazine article, or the online equivalent, describing the results of a recent study (the results of a poll are not sufficient). Give a summary of the study’s findings, then analyze whether the article provided enough information to determine the validity of the conclusions. If not, produce a list of things that are missing from the article that would help you determine the validity of the study. Look for the things discussed in the text: population, sample, randomness, blind, control, placebos, etc.  "
 },
 {
   "id": "stats-ex-1",
@@ -6136,7 +6136,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.2",
   "title": "",
-  "body": " The city of Raleigh has 9500 registered voters. There are two candidates for city council in an upcoming election: Brown and Feliz. The day before the election, a telephone poll of 350 randomly selected registered voters was conducted. 112 said they'd vote for Brown, 207 said they'd vote for Feliz, and 31 were undecided.  What is the population of this survey?  What is the size of the population?  What is the size of the sample?  Give the sample statistic for the proportion of voters surveyed who said they'd vote for Brown.  Based on this sample, we might expect how many of the 9500 voters to vote for Brown?    "
+  "body": " The city of Raleigh has 9500 registered voters. There are two candidates for city council in an upcoming election: Brown and Feliz. The day before the election, a telephone poll of 350 randomly selected registered voters was conducted. 112 said they'd vote for Brown, 207 said they'd vote for Feliz, and 31 were undecided.  What is the population of this survey?  What is the size of the population?  What is the size of the sample?  Give the sample statistic for the proportion of voters surveyed who said they'd vote for Brown.  Based on this sample, we might expect how many of the 9500 voters to vote for Brown?       All registered voters in Raliegh  9500  350   3040    "
 },
 {
   "id": "stats-ex-3",
@@ -6145,7 +6145,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.3",
   "title": "",
-  "body": " As part of a math project, a student take a container filled with red and green candies that are well-mixed. The student pulls out 30 candies with the goal of estimating the number of red candies in the jar. Of the 30 candies, 12 of them are red.  Describe the target population.  Describe the sample.  What sampling method is used?  Give the sample statistic for the proportion of candies that are red.  If the jar contains 800 candies, esimate how many of them are red.    "
+  "body": " As part of a math project, a student take a container filled with red and green candies that are well-mixed. The student pulls out 30 candies with the goal of estimating the number of red candies in the jar. Of the 30 candies, 12 of them are red.  Describe the target population.  Describe the sample.  What sampling method is used?  Give the sample statistic for the proportion of candies that are red.  If the jar contains 800 candies, esimate how many of them are red.       All candies in the jar  30  simple random sampling   320Z    "
 },
 {
   "id": "stats-ex-4",
@@ -6154,7 +6154,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.4",
   "title": "",
-  "body": "Identify the most relevant source of bias in this situation: A survey asks the following: Should the mall prohibit loud and annoying rock music in clothing stores catering to teenagers? "
+  "body": "Identify the most relevant source of bias in this situation: A survey asks the following: Should the mall prohibit loud and annoying rock music in clothing stores catering to teenagers?  Leading question bias: the music is described in a negative way.  "
 },
 {
   "id": "stats-ex-5",
@@ -6163,7 +6163,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.5",
   "title": "",
-  "body": "Identify the most relevant source of bias in this situation: To determine opinions on voter support for a downtown renovation project, a surveyor randomly questions people working in downtown businesses. "
+  "body": "Identify the most relevant source of bias in this situation: To determine opinions on voter support for a downtown renovation project, a surveyor randomly questions people working in downtown businesses.  Sampling bias: only those who work downtown were surveyed--they might have different opinions than the rest of the target population.  "
 },
 {
   "id": "stats-ex-6",
@@ -6172,7 +6172,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.6",
   "title": "",
-  "body": "Identify the most relevant source of bias in this situation: A survey asks people to report their actual income and the income they reported on their IRS tax form. "
+  "body": "Identify the most relevant source of bias in this situation: A survey asks people to report their actual income and the income they reported on their IRS tax form.  Response bias: people may not want to answer honestly if they lied on their taxes.  "
 },
 {
   "id": "stats-ex-7",
@@ -6181,7 +6181,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.7",
   "title": "",
-  "body": "Identify the most relevant source of bias in this situation: A survey randomly calls people from the phone book and asks them to answer a long series of questions. "
+  "body": "Identify the most relevant source of bias in this situation: A survey randomly calls people from the phone book and asks them to answer a long series of questions.  Non-response bias: people may not have time to answer a long questionaire.  "
 },
 {
   "id": "stats-ex-8",
@@ -6190,7 +6190,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.8",
   "title": "",
-  "body": "Identify the most relevant source of bias in this situation: A survey asks the following: Should the death penalty be permitted if innocent people might die? "
+  "body": "Identify the most relevant source of bias in this situation: A survey asks the following: Should the death penalty be permitted if innocent people might die?  Leading question bias: the question makes an argument for one answer.  "
 },
 {
   "id": "stats-ex-9",
@@ -6199,7 +6199,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.9",
   "title": "",
-  "body": "Identify the most relevant source of bias in this situation: A study seeks to investigate whether a new pain medication is safe to market to the public. They test by randomly selecting 300 men from a set of volunteers. "
+  "body": "Identify the most relevant source of bias in this situation: A study seeks to investigate whether a new pain medication is safe to market to the public. They test by randomly selecting 300 men from a set of volunteers.  Sampling bias: only men were selected, but the target population included all genders.  "
 },
 {
   "id": "stats-ex-10",
@@ -6208,7 +6208,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.10",
   "title": "",
-  "body": "In a study, you ask the subjects their age in years. Is this data qualitative or quantitative? "
+  "body": "In a study, you ask the subjects their age in years. Is this data qualitative or quantitative?  Quantitative  "
 },
 {
   "id": "stats-ex-11",
@@ -6217,7 +6217,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.11",
   "title": "",
-  "body": "In a study, you ask the subjects their gender. Is this data qualitative or quantitative? "
+  "body": "In a study, you ask the subjects their gender. Is this data qualitative or quantitative?  Qualitative  "
 },
 {
   "id": "stats-ex-12",
@@ -6226,7 +6226,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.12",
   "title": "",
-  "body": "Does this describe an observational study or an experiment: The temperature on randomly selected days throughout the year was measured. "
+  "body": "Does this describe an observational study or an experiment: The temperature on randomly selected days throughout the year was measured.  Observational Study  "
 },
 {
   "id": "stats-ex-13",
@@ -6235,7 +6235,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.13",
   "title": "",
-  "body": "Does this describe an observational study or an experiment? A group of students are told to listen to music while taking a test and their results are compared to a group not listening to music. "
+  "body": "Does this describe an observational study or an experiment? A group of students are told to listen to music while taking a test and their results are compared to a group not listening to music.  Experiment  "
 },
 {
   "id": "stats-ex-14",
@@ -6244,7 +6244,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.14",
   "title": "",
-  "body": "In a study, the sample is chosen by separating all cars by size, and selecting 10 of each size grouping. What is the sampling method? "
+  "body": "In a study, the sample is chosen by separating all cars by size, and selecting 10 of each size grouping. What is the sampling method?  Stratified sampling  "
 },
 {
   "id": "stats-ex-15",
@@ -6253,7 +6253,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.15",
   "title": "",
-  "body": "In a study, the sample is chosen by writing everyone’s name on a playing card, shuffling the deck, then choosing the top 20 cards. What is the sampling method? "
+  "body": "In a study, the sample is chosen by writing everyone’s name on a playing card, shuffling the deck, then choosing the top 20 cards. What is the sampling method?  Simple random sampling  "
 },
 {
   "id": "stats-ex-16",
@@ -6262,7 +6262,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.16",
   "title": "",
-  "body": " A researcher wants to study the effectiveness of a \"test-taking-energy-drink\". They select 1,000 volunteers from colleges around the country and divide them into two groups. Those enrolled in English classes were given the real drink, and those enrolled in math classes were given a fake drink. None of the students knew which drink they were getting, but the researchers knew. The researchers compared test scores of both groups of students and concluded that the student who received the test-taking drink performed significantly betters on tests.  Describe the target population.  Describe the control group and the treatment group in this experiment.  Is this experiment blind? Double-blind?  Why might the results of this experiment be unreliable?    "
+  "body": " A researcher wants to study the effectiveness of a \"test-taking-energy-drink\". They select 1,000 volunteers from colleges around the country and divide them into two groups. Those enrolled in English classes were given the real drink, and those enrolled in math classes were given a fake drink. None of the students knew which drink they were getting, but the researchers knew. The researchers compared test scores of both groups of students and concluded that the student who received the test-taking drink performed significantly betters on tests.  Describe the target population.  Describe the control group and the treatment group in this experiment.  Is this experiment blind? Double-blind?  Why might the results of this experiment be unreliable?       All test-takers  The control group is the set of volunteers enrolled in math classes and the treatment group is the set of volunteers enrolled in English classes.  Blind  There may be confounding variables since the treatment and control groups are enrolled in different types of classes.    "
 },
 {
   "id": "stats-ex-17",
@@ -6280,7 +6280,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.18",
   "title": "",
-  "body": " For the clinical trials of a weight loss drug containing Garcinia cambogia the subjects were randomly divided into two groups. The first received an inert pill along with an exercise and diet plan, while the second received the test medicine along with the same exercise and diet plan. The patients do not know which group they are in, nor do the fitness and nutrition advisors.  Which is the treatment group?  Which is the control group (if there is one)?  Is this study blind, double-blind, or neither?  Is this best described as an experiment, a controlled experiment, or a placebo controlled experiment?    "
+  "body": " For the clinical trials of a weight loss drug containing Garcinia cambogia the subjects were randomly divided into two groups. The first received an inert pill along with an exercise and diet plan, while the second received the test medicine along with the same exercise and diet plan. The patients do not know which group they are in, nor do the fitness and nutrition advisors.  Which is the treatment group?  Which is the control group (if there is one)?  Is this study blind, double-blind, or neither?  Is this best described as an experiment, a controlled experiment, or a placebo controlled experiment?       The treatment group is the second group--those who received the actual medicine.  The control group is the first group--those who received a placebo.  Double-blind  Placebo controlled experiment    "
 },
 {
   "id": "stats-ex-19",
@@ -6298,7 +6298,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.4.20",
   "title": "",
-  "body": " A study is conducted to determine whether people learn better with spaced or massed practice. Subjects volunteer from an introductory psychology class. At the beginning of the semester 12 subjects volunteer and are assigned to the massed-practice group. At the end of the semester 12 subjects volunteer and are assigned to the spaced-practice condition.  Is this a sampling or a census?  Is this an observational study or an experiment?  This study involves two kinds of non-random sampling: (1) Subjects are not randomly sampled from some specified population and (2) Subjects are not randomly assigned to groups. Which problem is more serious? What affect on the results does each have?    "
+  "body": " A study is conducted to determine whether people learn better with spaced or massed practice. Subjects volunteer from an introductory psychology class. At the beginning of the semester 12 subjects volunteer and are assigned to the massed-practice group. At the end of the semester 12 subjects volunteer and are assigned to the spaced-practice condition.  Is this a sampling or a census?  Is this an observational study or an experiment?  This study involves two kinds of non-random sampling: (1) Subjects are not randomly sampled from some specified population and (2) Subjects are not randomly assigned to groups. Which problem is more serious? What affect on the results does each have?       Sampling  Experiment    "
 },
 {
   "id": "stats-ex-21",
@@ -6562,9 +6562,9 @@ var ptx_lunr_docs = [
   "body": "Try It Now  Create a bar graph and a pie chart to illustrate the grades on a history exam below.  A: 12 students, B: 19 students, C: 14 students, D: 4 students, F: 5 students    A bar graph with A, B, C, D, and F on the horizontal axis and frequencies of each on the vertical axis. A pie chart with five wedges: A (22%), B (36%), C (26%), D (7%) and F (9%)    "
 },
 {
-  "id": "p-1600",
+  "id": "p-1730",
   "level": "2",
-  "url": "section-data-graphs.html#p-1600",
+  "url": "section-data-graphs.html#p-1730",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -6886,9 +6886,9 @@ var ptx_lunr_docs = [
   "body": "Standard Deviation  The standard deviation is a measure of variation based on measuring how far each data value deviates, or is \\ different, from the mean. A few important characteristics:    Standard deviation is always positive. Standard deviation will be zero if all the data values are equal, and will get larger as the data spreads out.  Standard deviation has the same units as the original data.  Standard deviation, like the mean, can be highly influenced by outliers.    "
 },
 {
-  "id": "table-47",
+  "id": "table-48",
   "level": "2",
-  "url": "section-data-spread.html#table-47",
+  "url": "section-data-spread.html#table-48",
   "type": "Table",
   "number": "7.3.4",
   "title": "",
@@ -6922,9 +6922,9 @@ var ptx_lunr_docs = [
   "body": "Try It Now  The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99. Find the standard deviation of the prices.  $0.261  "
 },
 {
-  "id": "p-1718",
+  "id": "p-1848",
   "level": "2",
-  "url": "section-data-spread.html#p-1718",
+  "url": "section-data-spread.html#p-1848",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -7081,7 +7081,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "7.4",
   "title": "Exercises",
-  "body": " Scores on a Math test are listed below.  80, 90, 50, 100, 50, 80, 90, 70, 70, 30, 70, 80, 100, 80, 60, 70, 70, 100, 80, 60, 70, 60, 50, 50    Complete the frequency table for the Math test scores  Construct a bar graph of the data  Construct a pie chart of the data     A group of adults where asked how many cars they had in their household. Their results are listed below.  1, 1, 4, 2, 2, 1, 2, 3, 1, 2, 2, 2, 3, 1, 3, 2, 1, 1, 4, 1, 2, 1, 2, 2    Complete the frequency table for the car number data  Construct a bar graph of the data  Construct a pie chart of the data     A group of adults were asked how many children they have in their families. The bar graph shows the number of adults who indicated each number of children.   Image Credit: RRCC   Bars labeled with numbers of children of 0, 1, 2, 3, 4, and 5 have corresponding frequencies of 5, 3, 4, 2, 0 and 1       How many adults were questioned?  What percentage of the adults questioned had 0 children?       15  33%     Jasmine was interested in how many days it would take an order from an online store to arrive at her door. The graph below shows the data she collected.   Image Credit: RRCC   A bars labeled with the shipping times 1, 2, 3, 4, and 5 have corresponding frequencies of 4, 8, 6, 0 and 1.       How many orders did she place?  What percentage of orders arrived in one day?     The bar graph below shows the percentage of students who received each letter grade on their last English paper. The class contains 20 students. What number of students earned an A on their paper?   Image Credit: RRCC   Bars labeled A, B, C, and D have corresponding frequencies of 25, 35, 25, and 15.     5  Kori categorized her spending for this month into four categories: Rent, Food, Fun, and Other. The percents she spent in each category are pictured here. If she spent a total of $2600 this month, how much did she spend on rent?   A pie chart with four wedges labeled: Fun (16%), Food (24%), Rent (26%) and Other (34%)    The data below gives the price (in dollars) of a gallon of gasoline at several gas stations in the area.  2.54, 2.78, 3.23, 3.56, 2.98, 2.77, 3.15, 3.24, 3.35, 2.87, 2.49, 2.63, 3.15    Group the data into class intervals of width 50 cents, starting at $2.00.  Create a histogram of the data.      A rec center counted the number of people using the center once every hour on Sundays to decide if it should reduce its hours. The results they obtained are summarized in the graph below.   Image Credit: RRCC   Bars with labeled with numbers of vistors of 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and 12 have corresponding frequencies of 7, 8, 5, 0, 3, 8, 10, 7, 9, 5, 0, 3 and 2.       What was the smallest number of visitors in the rec center and how many times did it occur?  For how many hours were visitors counted?  For what percent of the hours counted were there fewer than 5 visitors in the rec center?  If you were deciding whether to reduce hours on Sundays would you want any additional information?     For the dataset: {2, 5, 8, 10, 15, 25, 25}    Find the mean  Find the median  Find the mode  Find the first quartile  Find the third quartile       12.86  10  25  5  25      The table shows Joe’s golf scores from last week:     Golf Score  Frequency    2  6    3  8    4  11    5  4    6  3    7  1    8  2    10  1       What was the total number of holes of golf that Joe played last week?  What was Joe’s average golf score?  What was Joe’s median golf score?      The graph represents the number of stars earned by 150 performers in a talent competition. What was the mean number of stars earned?   Image Credit: RRCC   Bars labeled with 1, 2, 3, 4, and 5 stars have corresponding frequencies of 20, 25, 40, 35, and 30.     3.2   The scores on a 50-point multiple choice exam are given in the following frequency table.     Exam Score  Frequency    38  6    40  2    41  5    43  2    45  1    46  1    49  2    50  4       What was the mean score on the exam?  The median score?  The first quartile?  The third quartile?     A group of diners were asked how much they would pay for a meal. Their responses were:  $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00    Find the mean  Find the median  Write the 5-number summary for this data  Find the standard deviation of this data       $7.78  $7.75  $7.00, $7.375, $7.75, $8.125, $9.00  0.637     You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were:  15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.    Find the mean  Find the median  Write the 5-number summary for this data  Find the standard deviation of this data     Refer back to the bar graph about the group of adults who were asked about the number of children they have.     Compute the mean number of children for the group surveyed  Compute the median number of children for the group surveyed  Write the 5-number summary for this data.  Create box plot.       1.4667  Median is 8th data value: 1 child  0,0 1,2,5     Refer back to bar graph analyzing the number shipping days for an online order to arrive.     Compute the mean number of shipping days  Compute the median number of shipping days  Write the 5-number summary for this data.  Create box plot.      The box plot below shows salaries for Actuaries and CPAs.   Image Credit: RRCC   The box for CPA is drawn from 40 to 90 with whiskers extending from 30 to 100. A line is drawn through the box at 75. The box for the Actuary is drawn from 75 to 95 with whiskers extending from 40 to 105. A line is drawn through the box at 90.       Kendra makes the median salary for an Actuary.Kelsey makes the first quartile salary for a CPA. Who makes more money? How much more?  What percentage of actuaries makes more than the median salary of a CPA?      The dataset below summarizes the starting salaries of 20 recent graduates. Find the standard deviation of this dataset.     Salary  Frequency    20,000  1    30,000  4    40,000  5    50,000  9    150,000  1      The test scores in a history class had a mean of 76% with a standard deviation of 4%. If an A is given to anyone with a test score 2 standard deviations above the mean, what is the cutoff score to earn an A? 84%   A manager of a human resources department is investigating the number of sick days employees took during the last year. For employees in marketing, the average number of sick days was 4.5 with a standard deviation of 2. For those in accounting the mean number of sick days was 5.8 with a standard deviation of 3. Compute and compare the coefficients of variation for each set of data.   Ellen’s average commute time is 30 minutes with a standard deviation of 8 minutes. Zac’s commute takes an average of 45 minutes with a standard deviation of 10 minutes. Whose commute has more consistent times? Compare the coefficients of variation. Zac's commute times are more consistent. (The coefficent of variation is 0.22 for Zac and 0.27 for Ellen.)  Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment program. Suppose that a new AIDS antibody drug is currently under study. It is given to patients once the AIDS symptoms have revealed themselves. Of interest is the average length of time in months patients live once starting the treatment. Two researchers each follow a different set of 40 AIDS patients from the start of treatment until their deaths. The following data (in months) are collected.  Researcher 1: 3; 4; 11; 15; 16; 17; 22; 44; 37; 16; 14; 24; 25; 15; 26; 27; 33; 29; 35; 44; 13; 21; 22; 10; 12; 8; 40; 32; 26; 27; 31; 34; 29; 17; 8; 24; 18; 47; 33; 34  Researcher 2: 3; 14; 11; 5; 16; 17; 28; 41; 31; 18; 14; 14; 26; 25; 21; 22; 31; 2; 35; 44; 23; 21; 21; 16; 12; 18; 41; 22; 16; 25; 33; 34; 29; 13; 18; 24; 23; 42; 33; 29    Create comparative histograms of the data  Create comparative boxplots of the data      A graph appears below showing the number of adults and children who prefer each type of soda. There were 130 adults and kids surveyed. Discuss some ways in which the graph below could be improved.   A 3-dimensional bar graph compares the number of adults and number of who prefer Coke, Diet Coke, Sprite, and Cherry Coke. The vertical axis starts at 20 and goes up 45. Frequncies are not labeled but can be estimated.    Make up three data sets with 5 numbers each that have:    the same mean but different standard deviations.  the same mean but different medians.  the same median but different means.     "
+  "body": " Scores on a Math test are listed below.  80, 90, 50, 100, 50, 80, 90, 70, 70, 30, 70, 80, 100, 80, 60, 70, 70, 100, 80, 60, 70, 60, 50, 50    Complete the frequency table for the Math test scores  Construct a bar graph of the data  Construct a pie chart of the data         Test Score  Frequency    30  1    50  4    60  3    70  6    80  5    90  2    100  3       A group of adults where asked how many cars they had in their household. Their results are listed below.  1, 1, 4, 2, 2, 1, 2, 3, 1, 2, 2, 2, 3, 1, 3, 2, 1, 1, 4, 1, 2, 1, 2, 2    Complete the frequency table for the car number data  Construct a bar graph of the data  Construct a pie chart of the data         Number of cars  Frequency    1  9    2  10    3  3    4  2       A group of adults were asked how many children they have in their families. The bar graph shows the number of adults who indicated each number of children.   Image Credit: RRCC   Bars labeled with numbers of children of 0, 1, 2, 3, 4, and 5 have corresponding frequencies of 5, 3, 4, 2, 0 and 1       How many adults were questioned?  What percentage of the adults questioned had 0 children?       15  33%     Jasmine was interested in how many days it would take an order from an online store to arrive at her door. The graph below shows the data she collected.   Image Credit: RRCC   A bars labeled with the shipping times 1, 2, 3, 4, and 5 have corresponding frequencies of 4, 8, 6, 0 and 1.       How many orders did she place?  What percentage of orders arrived in one day?       19  21%     The bar graph below shows the percentage of students who received each letter grade on their last English paper. The class contains 20 students. What number of students earned an A on their paper?   Image Credit: RRCC   Bars labeled A, B, C, and D have corresponding frequencies of 25, 35, 25, and 15.     5  Kori categorized her spending for this month into four categories: Rent, Food, Fun, and Other. The percents she spent in each category are pictured here. If she spent a total of $2600 this month, how much did she spend on rent?   A pie chart with four wedges labeled: Fun (16%), Food (24%), Rent (26%) and Other (34%)   $676    The data below gives the price (in dollars) of a gallon of gasoline at several gas stations in the area.  2.54, 2.78, 3.23, 3.56, 2.98, 2.77, 3.15, 3.24, 3.35, 2.87, 2.49, 2.63, 3.15    Group the data into class intervals of width 50 cents, starting at $2.00.  Create a histogram of the data.         Price  Frequency    $2.00 - $2.50  1    $2.50 - $3.00  6    $3.00 - $3.50  5    $3.50 - $4.00  1        A rec center counted the number of people using the center once every hour on Sundays to decide if it should reduce its hours. The results they obtained are summarized in the graph below.   Image Credit: RRCC   Bars with labeled with numbers of vistors of 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and 12 have corresponding frequencies of 7, 8, 5, 0, 3, 8, 10, 7, 9, 5, 0, 3 and 2.       What was the smallest number of visitors in the rec center and how many times did it occur?  For how many hours were visitors counted?  For what percent of the hours counted were there fewer than 5 visitors in the rec center?  If you were deciding whether to reduce hours on Sundays would you want any additional information?       0 people; It occured 7 times  67  34%  I would want to know which times were observed. When were the fewest people at the rec center, etc.     For the dataset: {2, 5, 8, 10, 15, 25, 25}    Find the mean  Find the median  Find the mode  Find the first quartile  Find the third quartile       12.86  10  25  5  25      The table shows Joe’s golf scores from last week:     Golf Score  Frequency    2  6    3  8    4  11    5  4    6  3    7  1    8  2    10  1       What was the total number of holes of golf that Joe played last week?  What was Joe’s average golf score?  What was Joe’s median golf score?       36  4.19  4      The graph represents the number of stars earned by 150 performers in a talent competition. What was the mean number of stars earned?   Image Credit: RRCC   Bars labeled with 1, 2, 3, 4, and 5 stars have corresponding frequencies of 20, 25, 40, 35, and 30.     3.2   The scores on a 50-point multiple choice exam are given in the following frequency table.     Exam Score  Frequency    38  6    40  2    41  5    43  2    45  1    46  1    49  2    50  4       What was the mean score on the exam?  The median score?  The first quartile?  The third quartile?       42.96        A group of diners were asked how much they would pay for a meal. Their responses were:  $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00    Find the mean  Find the median  Write the 5-number summary for this data  Find the standard deviation of this data       $7.78  $7.75  $7.00, $7.375, $7.75, $8.125, $9.00  0.637     You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were:  15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.    Find the mean  Find the median  Write the 5-number summary for this data  Find the standard deviation of this data       20.8  19.95  {15.2, 19.05, 19.95, 21.95, 29.4}  4.07     Refer back to the bar graph about the group of adults who were asked about the number of children they have.     Compute the mean number of children for the group surveyed  Compute the median number of children for the group surveyed  Write the 5-number summary for this data.  Create box plot.       1.4667  Median is 8th data value: 1 child  0,0 1,2,5     Refer back to bar graph analyzing the number shipping days for an online order to arrive.     Compute the mean number of shipping days  Compute the median number of shipping days  Write the 5-number summary for this data.  Create box plot.       2.3   {1, 2, 2, 3, 5}      The box plot below shows salaries for Actuaries and CPAs.   Image Credit: RRCC   The box for CPA is drawn from 40 to 90 with whiskers extending from 30 to 100. A line is drawn through the box at 75. The box for the Actuary is drawn from 75 to 95 with whiskers extending from 40 to 105. A line is drawn through the box at 90.       Kendra makes the median salary for an Actuary.Kelsey makes the first quartile salary for a CPA. Who makes more money? How much more?  What percentage of actuaries makes more than the median salary of a CPA?       Kendra makes $50,000 more than Kelsey.  75%      The dataset below summarizes the starting salaries of 20 recent graduates. Find the standard deviation of this dataset.     Salary  Frequency    20,000  1    30,000  4    40,000  5    50,000  9    150,000  1      About $26,000   The test scores in a history class had a mean of 76% with a standard deviation of 4%. If an A is given to anyone with a test score 2 standard deviations above the mean, what is the cutoff score to earn an A? 84%   A manager of a human resources department is investigating the number of sick days employees took during the last year. For employees in marketing, the average number of sick days was 4.5 with a standard deviation of 2. For those in accounting the mean number of sick days was 5.8 with a standard deviation of 3. Compute and compare the coefficients of variation for each set of data.   The CV for Marketing sick days is 0.44 and for Accounting sick days is 0.52. This means there was slightly more variablility in the number of sick days that those in accounting took.   Ellen’s average commute time is 30 minutes with a standard deviation of 8 minutes. Zac’s commute takes an average of 45 minutes with a standard deviation of 10 minutes. Whose commute has more consistent times? Compare the coefficients of variation. Zac's commute times are more consistent. (The coefficent of variation is 0.22 for Zac and 0.27 for Ellen.)  Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment program. Suppose that a new AIDS antibody drug is currently under study. It is given to patients once the AIDS symptoms have revealed themselves. Of interest is the average length of time in months patients live once starting the treatment. Two researchers each follow a different set of 40 AIDS patients from the start of treatment until their deaths. The following data (in months) are collected.  Researcher 1: 3; 4; 11; 15; 16; 17; 22; 44; 37; 16; 14; 24; 25; 15; 26; 27; 33; 29; 35; 44; 13; 21; 22; 10; 12; 8; 40; 32; 26; 27; 31; 34; 29; 17; 8; 24; 18; 47; 33; 34  Researcher 2: 3; 14; 11; 5; 16; 17; 28; 41; 31; 18; 14; 14; 26; 25; 21; 22; 31; 2; 35; 44; 23; 21; 21; 16; 12; 18; 41; 22; 16; 25; 33; 34; 29; 13; 18; 24; 23; 42; 33; 29    Create comparative histograms of the data  Create comparative boxplots of the data      A graph appears below showing the number of adults and children who prefer each type of soda. There were 130 adults and kids surveyed. Discuss some ways in which the graph below could be improved.   A 3-dimensional bar graph compares the number of adults and number of who prefer Coke, Diet Coke, Sprite, and Cherry Coke. The vertical axis starts at 20 and goes up 45. Frequncies are not labeled but can be estimated.    Make up three data sets with 5 numbers each that have:    the same mean but different standard deviations.  the same mean but different medians.  the same median but different means.     "
 },
 {
   "id": "data-ex-1",
@@ -7090,7 +7090,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.1",
   "title": "",
-  "body": "Scores on a Math test are listed below.  80, 90, 50, 100, 50, 80, 90, 70, 70, 30, 70, 80, 100, 80, 60, 70, 70, 100, 80, 60, 70, 60, 50, 50    Complete the frequency table for the Math test scores  Construct a bar graph of the data  Construct a pie chart of the data    "
+  "body": "Scores on a Math test are listed below.  80, 90, 50, 100, 50, 80, 90, 70, 70, 30, 70, 80, 100, 80, 60, 70, 70, 100, 80, 60, 70, 60, 50, 50    Complete the frequency table for the Math test scores  Construct a bar graph of the data  Construct a pie chart of the data         Test Score  Frequency    30  1    50  4    60  3    70  6    80  5    90  2    100  3      "
 },
 {
   "id": "data-ex-2",
@@ -7099,7 +7099,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.2",
   "title": "",
-  "body": "A group of adults where asked how many cars they had in their household. Their results are listed below.  1, 1, 4, 2, 2, 1, 2, 3, 1, 2, 2, 2, 3, 1, 3, 2, 1, 1, 4, 1, 2, 1, 2, 2    Complete the frequency table for the car number data  Construct a bar graph of the data  Construct a pie chart of the data    "
+  "body": "A group of adults where asked how many cars they had in their household. Their results are listed below.  1, 1, 4, 2, 2, 1, 2, 3, 1, 2, 2, 2, 3, 1, 3, 2, 1, 1, 4, 1, 2, 1, 2, 2    Complete the frequency table for the car number data  Construct a bar graph of the data  Construct a pie chart of the data         Number of cars  Frequency    1  9    2  10    3  3    4  2      "
 },
 {
   "id": "data-ex-3",
@@ -7117,7 +7117,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.4",
   "title": "",
-  "body": "Jasmine was interested in how many days it would take an order from an online store to arrive at her door. The graph below shows the data she collected.   Image Credit: RRCC   A bars labeled with the shipping times 1, 2, 3, 4, and 5 have corresponding frequencies of 4, 8, 6, 0 and 1.       How many orders did she place?  What percentage of orders arrived in one day?    "
+  "body": "Jasmine was interested in how many days it would take an order from an online store to arrive at her door. The graph below shows the data she collected.   Image Credit: RRCC   A bars labeled with the shipping times 1, 2, 3, 4, and 5 have corresponding frequencies of 4, 8, 6, 0 and 1.       How many orders did she place?  What percentage of orders arrived in one day?       19  21%    "
 },
 {
   "id": "data-ex-5",
@@ -7135,7 +7135,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.6",
   "title": "",
-  "body": "Kori categorized her spending for this month into four categories: Rent, Food, Fun, and Other. The percents she spent in each category are pictured here. If she spent a total of $2600 this month, how much did she spend on rent?   A pie chart with four wedges labeled: Fun (16%), Food (24%), Rent (26%) and Other (34%)  "
+  "body": "Kori categorized her spending for this month into four categories: Rent, Food, Fun, and Other. The percents she spent in each category are pictured here. If she spent a total of $2600 this month, how much did she spend on rent?   A pie chart with four wedges labeled: Fun (16%), Food (24%), Rent (26%) and Other (34%)   $676  "
 },
 {
   "id": "data-ex-7",
@@ -7144,7 +7144,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.7",
   "title": "",
-  "body": " The data below gives the price (in dollars) of a gallon of gasoline at several gas stations in the area.  2.54, 2.78, 3.23, 3.56, 2.98, 2.77, 3.15, 3.24, 3.35, 2.87, 2.49, 2.63, 3.15    Group the data into class intervals of width 50 cents, starting at $2.00.  Create a histogram of the data.    "
+  "body": " The data below gives the price (in dollars) of a gallon of gasoline at several gas stations in the area.  2.54, 2.78, 3.23, 3.56, 2.98, 2.77, 3.15, 3.24, 3.35, 2.87, 2.49, 2.63, 3.15    Group the data into class intervals of width 50 cents, starting at $2.00.  Create a histogram of the data.         Price  Frequency    $2.00 - $2.50  1    $2.50 - $3.00  6    $3.00 - $3.50  5    $3.50 - $4.00  1      "
 },
 {
   "id": "data-ex-8",
@@ -7153,7 +7153,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.8",
   "title": "",
-  "body": " A rec center counted the number of people using the center once every hour on Sundays to decide if it should reduce its hours. The results they obtained are summarized in the graph below.   Image Credit: RRCC   Bars with labeled with numbers of vistors of 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and 12 have corresponding frequencies of 7, 8, 5, 0, 3, 8, 10, 7, 9, 5, 0, 3 and 2.       What was the smallest number of visitors in the rec center and how many times did it occur?  For how many hours were visitors counted?  For what percent of the hours counted were there fewer than 5 visitors in the rec center?  If you were deciding whether to reduce hours on Sundays would you want any additional information?    "
+  "body": " A rec center counted the number of people using the center once every hour on Sundays to decide if it should reduce its hours. The results they obtained are summarized in the graph below.   Image Credit: RRCC   Bars with labeled with numbers of vistors of 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and 12 have corresponding frequencies of 7, 8, 5, 0, 3, 8, 10, 7, 9, 5, 0, 3 and 2.       What was the smallest number of visitors in the rec center and how many times did it occur?  For how many hours were visitors counted?  For what percent of the hours counted were there fewer than 5 visitors in the rec center?  If you were deciding whether to reduce hours on Sundays would you want any additional information?       0 people; It occured 7 times  67  34%  I would want to know which times were observed. When were the fewest people at the rec center, etc.    "
 },
 {
   "id": "data-ex-9",
@@ -7171,7 +7171,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.10",
   "title": "",
-  "body": " The table shows Joe’s golf scores from last week:     Golf Score  Frequency    2  6    3  8    4  11    5  4    6  3    7  1    8  2    10  1       What was the total number of holes of golf that Joe played last week?  What was Joe’s average golf score?  What was Joe’s median golf score?    "
+  "body": " The table shows Joe’s golf scores from last week:     Golf Score  Frequency    2  6    3  8    4  11    5  4    6  3    7  1    8  2    10  1       What was the total number of holes of golf that Joe played last week?  What was Joe’s average golf score?  What was Joe’s median golf score?       36  4.19  4    "
 },
 {
   "id": "data-ex-11",
@@ -7189,7 +7189,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.12",
   "title": "",
-  "body": " The scores on a 50-point multiple choice exam are given in the following frequency table.     Exam Score  Frequency    38  6    40  2    41  5    43  2    45  1    46  1    49  2    50  4       What was the mean score on the exam?  The median score?  The first quartile?  The third quartile?    "
+  "body": " The scores on a 50-point multiple choice exam are given in the following frequency table.     Exam Score  Frequency    38  6    40  2    41  5    43  2    45  1    46  1    49  2    50  4       What was the mean score on the exam?  The median score?  The first quartile?  The third quartile?       42.96       "
 },
 {
   "id": "data-ex-13",
@@ -7207,7 +7207,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.14",
   "title": "",
-  "body": "You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were:  15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.    Find the mean  Find the median  Write the 5-number summary for this data  Find the standard deviation of this data    "
+  "body": "You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were:  15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.    Find the mean  Find the median  Write the 5-number summary for this data  Find the standard deviation of this data       20.8  19.95  {15.2, 19.05, 19.95, 21.95, 29.4}  4.07    "
 },
 {
   "id": "data-ex-15",
@@ -7225,7 +7225,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.16",
   "title": "",
-  "body": "Refer back to bar graph analyzing the number shipping days for an online order to arrive.     Compute the mean number of shipping days  Compute the median number of shipping days  Write the 5-number summary for this data.  Create box plot.    "
+  "body": "Refer back to bar graph analyzing the number shipping days for an online order to arrive.     Compute the mean number of shipping days  Compute the median number of shipping days  Write the 5-number summary for this data.  Create box plot.       2.3   {1, 2, 2, 3, 5}    "
 },
 {
   "id": "data-ex-17",
@@ -7234,7 +7234,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.17",
   "title": "",
-  "body": " The box plot below shows salaries for Actuaries and CPAs.   Image Credit: RRCC   The box for CPA is drawn from 40 to 90 with whiskers extending from 30 to 100. A line is drawn through the box at 75. The box for the Actuary is drawn from 75 to 95 with whiskers extending from 40 to 105. A line is drawn through the box at 90.       Kendra makes the median salary for an Actuary.Kelsey makes the first quartile salary for a CPA. Who makes more money? How much more?  What percentage of actuaries makes more than the median salary of a CPA?    "
+  "body": " The box plot below shows salaries for Actuaries and CPAs.   Image Credit: RRCC   The box for CPA is drawn from 40 to 90 with whiskers extending from 30 to 100. A line is drawn through the box at 75. The box for the Actuary is drawn from 75 to 95 with whiskers extending from 40 to 105. A line is drawn through the box at 90.       Kendra makes the median salary for an Actuary.Kelsey makes the first quartile salary for a CPA. Who makes more money? How much more?  What percentage of actuaries makes more than the median salary of a CPA?       Kendra makes $50,000 more than Kelsey.  75%    "
 },
 {
   "id": "data-ex-18",
@@ -7243,7 +7243,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.18",
   "title": "",
-  "body": " The dataset below summarizes the starting salaries of 20 recent graduates. Find the standard deviation of this dataset.     Salary  Frequency    20,000  1    30,000  4    40,000  5    50,000  9    150,000  1     "
+  "body": " The dataset below summarizes the starting salaries of 20 recent graduates. Find the standard deviation of this dataset.     Salary  Frequency    20,000  1    30,000  4    40,000  5    50,000  9    150,000  1      About $26,000  "
 },
 {
   "id": "data-ex-19",
@@ -7261,7 +7261,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "7.4.20",
   "title": "",
-  "body": " A manager of a human resources department is investigating the number of sick days employees took during the last year. For employees in marketing, the average number of sick days was 4.5 with a standard deviation of 2. For those in accounting the mean number of sick days was 5.8 with a standard deviation of 3. Compute and compare the coefficients of variation for each set of data.  "
+  "body": " A manager of a human resources department is investigating the number of sick days employees took during the last year. For employees in marketing, the average number of sick days was 4.5 with a standard deviation of 2. For those in accounting the mean number of sick days was 5.8 with a standard deviation of 3. Compute and compare the coefficients of variation for each set of data.   The CV for Marketing sick days is 0.44 and for Accounting sick days is 0.52. This means there was slightly more variablility in the number of sick days that those in accounting took.  "
 },
 {
   "id": "data-ex-21",
@@ -7612,7 +7612,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "8.4",
   "title": "Exercises",
-  "body": "  A boy owns 2 pairs of pants, 3 shirts, 8 ties, and 2 jackets. How many different outfits can he wear to school if he must wear one of each item?  96   At a restaurant you can choose from 3 appetizers, 8 entrees, and 2 desserts. How many different three-course meals can you have?    How many three-letter \"words\" can be made from 4 letters \"FGHI\" if    repetition of letters is allowed  repetition of letters is not allowed       64  24      How many four-letter \"words\" can be made from 6 letters \"AEBWDP\" if    repetition of letters is allowed  repetition of letters is not allowed      All of the license plates in a particular state feature three letters followed by three digits (e.g. ABC 123). How many different license plate numbers are available to the state's Department of Motor Vehicles?  17,576,000   A computer password must be eight characters long. How many passwords are possible if only the 26 letters of the alphabet are allowed? Assume the password is not case-sensitive.    A California license plate starts with a digit other than 0, followed by three capital letters, followed by three more digits (0 through 9)    How many different California license plates are possible?  How many different California license plates start with a 5 and end with a 9?  How many different California license plates have no repeated symbols? (all the digits and all the letters are different)       158,184,000  1,757,600  70,761,600      A computer password consists of four letters (A through Z) followed by a single digit (0 through 9). Assume that the passwords are case sensitive (i.e., uppercase letters are considered different from lowercase letters).    How many passwords are possible?  How many passwords start with a capital Z?  How many passwords do not start with either z or Z?  How many passwords have no Zs in them (uppercase or lowercase)      A restaurant offers a menu consisting of three different appetizers, two different soups, four salads, and nine main courses    How fixed-price lunch consists of a choice of appetizer, salad, and main course. How many different lunch meals are possible?  A fixed-price dinner consists of a choice of appetizer, a choice of soup or salad, and a main course. How many different dinner meals are possible?       108  162      A pianist plans to play 4 pieces at a recital. In how many ways can she arrange these pieces in the program?    In how many ways can first, second, and third prizes be awarded in a contest with 210 contestants?  9,129,120   Seven Olympic sprinters are eligible to compete in the 4 x 100 m relay race for the USA Olympic team. How many four-person relay teams can be selected from among the seven athletes?    Twenty newspapers are competing for three awards in journalism. No paper can receive more than one award. In how many ways can the awards be given, if    the awards are identical?  the awards are all different?       1,140  6,840      A college is forming a task force with four faculty members and three students. If there are 20 faculty members and 10 students that are being considered, in how many ways can the task force be formed?    A computer user has downloaded 25 songs using an online file-sharing program and wants to create a CD-R with ten songs to use in his portable CD player. If the order that the songs are placed on the CD-R is important to him, how many different CD-Rs could he make from the 25 songs available to him?  11,861,676,288,000   In western music, an octave is divided into 12 pitches. For the film Close Encounters of the Third Kind, director Steven Spielberg asked composer John Williams to write a five-note theme, which aliens would use to communicate with people on Earth. Disregarding rhythm and octave changes, how many five-note themes are possible if no note is repeated?    In the early twentieth century, proponents of the Second Viennese School of musical composition (including Arnold Schönberg, Anton Webern and Alban Berg) devised the twelve-tone technique, which utilized a tone row consisting of all 12 pitches from the chromatic scale in any order, but with not pitches repeated in the row. Disregarding rhythm and octave changes, how many tone rows are possible?  479,001,600  In how many ways can 3 students be chosen from a group of 30 to attend a conference?   In how many ways can 4 pizza toppings be chosen from 12 available toppings?  495   At a baby shower 17 guests are in attendance and 5 of them are randomly selected to receive a door prize. If all 5 prizes are identical, in how many ways can the prizes be awarded?    In the 6\/50 lottery game, a player picks six numbers from 1 to 50. How many different choices does the player have if order doesn’t matter?  15,890,700   In a lottery daily game, a player picks three numbers from 0 to 9. How many different choices does the player have if order doesn’t matter?    A jury pool consists of 27 people. How many different ways can 11 people be chosen to serve on a jury and one additional person be chosen to serve as the jury foreman?  208,606,320   The United States Senate Committee on Commerce, Science, and Transportation consists of 23 members, 12 Republicans and 11 Democrats. The Surface Transportation and Merchant Marine Subcommittee consists of 8 Republicans and 7 Democrats. How many ways can members of the Subcommittee be chosen from the Committee?   "
+  "body": "  A boy owns 2 pairs of pants, 3 shirts, 8 ties, and 2 jackets. How many different outfits can he wear to school if he must wear one of each item?  96   At a restaurant you can choose from 3 appetizers, 8 entrees, and 2 desserts. How many different three-course meals can you have?   48    How many three-letter \"words\" can be made from 4 letters \"FGHI\" if    repetition of letters is allowed  repetition of letters is not allowed       64  24      How many four-letter \"words\" can be made from 6 letters \"AEBWDP\" if    repetition of letters is allowed  repetition of letters is not allowed       1296  360      All of the license plates in a particular state feature three letters followed by three digits (e.g. ABC 123). How many different license plate numbers are available to the state's Department of Motor Vehicles?  17,576,000   A computer password must be eight characters long. How many passwords are possible if only the 26 letters of the alphabet are allowed? Assume the password is not case-sensitive.   Approximately 208 billion    A California license plate starts with a digit other than 0, followed by three capital letters, followed by three more digits (0 through 9)    How many different California license plates are possible?  How many different California license plates start with a 5 and end with a 9?  How many different California license plates have no repeated symbols? (all the digits and all the letters are different)       158,184,000  1,757,600  70,761,600      A computer password consists of four letters (A through Z) followed by a single digit (0 through 9). Assume that the passwords are case sensitive (i.e., uppercase letters are considered different from lowercase letters).    How many passwords are possible?  How many passwords start with a capital Z?  How many passwords do not start with either z or Z?  How many passwords have no Zs in them (uppercase or lowercase)       73,116,160  1,406,080  70,304,000  62,500,000      A restaurant offers a menu consisting of three different appetizers, two different soups, four salads, and nine main courses    How fixed-price lunch consists of a choice of appetizer, salad, and main course. How many different lunch meals are possible?  A fixed-price dinner consists of a choice of appetizer, a choice of soup or salad, and a main course. How many different dinner meals are possible?       108  162      A pianist plans to play 4 pieces at a recital. In how many ways can she arrange these pieces in the program?   24    In how many ways can first, second, and third prizes be awarded in a contest with 210 contestants?  9,129,120   Seven Olympic sprinters are eligible to compete in the 4 x 100 m relay race for the USA Olympic team. How many four-person relay teams can be selected from among the seven athletes?   35    Twenty newspapers are competing for three awards in journalism. No paper can receive more than one award. In how many ways can the awards be given, if    the awards are identical?  the awards are all different?       1,140  6,840      A college is forming a task force with four faculty members and three students. If there are 20 faculty members and 10 students that are being considered, in how many ways can the task force be formed?   581,400    A computer user has downloaded 25 songs using an online file-sharing program and wants to create a CD-R with ten songs to use in his portable CD player. If the order that the songs are placed on the CD-R is important to him, how many different CD-Rs could he make from the 25 songs available to him?  11,861,676,288,000   In western music, an octave is divided into 12 pitches. For the film Close Encounters of the Third Kind, director Steven Spielberg asked composer John Williams to write a five-note theme, which aliens would use to communicate with people on Earth. Disregarding rhythm and octave changes, how many five-note themes are possible if no note is repeated?   95,040    In the early twentieth century, proponents of the Second Viennese School of musical composition (including Arnold Schönberg, Anton Webern and Alban Berg) devised the twelve-tone technique, which utilized a tone row consisting of all 12 pitches from the chromatic scale in any order, but with not pitches repeated in the row. Disregarding rhythm and octave changes, how many tone rows are possible?  479,001,600  In how many ways can 3 students be chosen from a group of 30 to attend a conference?  4,060    In how many ways can 4 pizza toppings be chosen from 12 available toppings?  495   At a baby shower 17 guests are in attendance and 5 of them are randomly selected to receive a door prize. If all 5 prizes are identical, in how many ways can the prizes be awarded?   6188    In the 6\/50 lottery game, a player picks six numbers from 1 to 50. How many different choices does the player have if order doesn’t matter?  15,890,700   In a lottery daily game, a player picks three numbers from 0 to 9. How many different choices does the player have if order doesn’t matter?   120    A jury pool consists of 27 people. How many different ways can 11 people be chosen to serve on a jury and one additional person be chosen to serve as the jury foreman?  208,606,320   The United States Senate Committee on Commerce, Science, and Transportation consists of 23 members, 12 Republicans and 11 Democrats. The Surface Transportation and Merchant Marine Subcommittee consists of 8 Republicans and 7 Democrats. How many ways can members of the Subcommittee be chosen from the Committee?   163,350   "
 },
 {
   "id": "count-ex-1",
@@ -7630,7 +7630,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.2",
   "title": "",
-  "body": " At a restaurant you can choose from 3 appetizers, 8 entrees, and 2 desserts. How many different three-course meals can you have?  "
+  "body": " At a restaurant you can choose from 3 appetizers, 8 entrees, and 2 desserts. How many different three-course meals can you have?   48  "
 },
 {
   "id": "count-ex-3",
@@ -7648,7 +7648,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.4",
   "title": "",
-  "body": " How many four-letter \"words\" can be made from 6 letters \"AEBWDP\" if    repetition of letters is allowed  repetition of letters is not allowed    "
+  "body": " How many four-letter \"words\" can be made from 6 letters \"AEBWDP\" if    repetition of letters is allowed  repetition of letters is not allowed       1296  360    "
 },
 {
   "id": "count-ex-5",
@@ -7666,7 +7666,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.6",
   "title": "",
-  "body": " A computer password must be eight characters long. How many passwords are possible if only the 26 letters of the alphabet are allowed? Assume the password is not case-sensitive.  "
+  "body": " A computer password must be eight characters long. How many passwords are possible if only the 26 letters of the alphabet are allowed? Assume the password is not case-sensitive.   Approximately 208 billion  "
 },
 {
   "id": "count-ex-7",
@@ -7684,7 +7684,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.8",
   "title": "",
-  "body": " A computer password consists of four letters (A through Z) followed by a single digit (0 through 9). Assume that the passwords are case sensitive (i.e., uppercase letters are considered different from lowercase letters).    How many passwords are possible?  How many passwords start with a capital Z?  How many passwords do not start with either z or Z?  How many passwords have no Zs in them (uppercase or lowercase)    "
+  "body": " A computer password consists of four letters (A through Z) followed by a single digit (0 through 9). Assume that the passwords are case sensitive (i.e., uppercase letters are considered different from lowercase letters).    How many passwords are possible?  How many passwords start with a capital Z?  How many passwords do not start with either z or Z?  How many passwords have no Zs in them (uppercase or lowercase)       73,116,160  1,406,080  70,304,000  62,500,000    "
 },
 {
   "id": "count-ex-9",
@@ -7702,7 +7702,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.10",
   "title": "",
-  "body": " A pianist plans to play 4 pieces at a recital. In how many ways can she arrange these pieces in the program?  "
+  "body": " A pianist plans to play 4 pieces at a recital. In how many ways can she arrange these pieces in the program?   24  "
 },
 {
   "id": "count-ex-11",
@@ -7720,7 +7720,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.12",
   "title": "",
-  "body": " Seven Olympic sprinters are eligible to compete in the 4 x 100 m relay race for the USA Olympic team. How many four-person relay teams can be selected from among the seven athletes?  "
+  "body": " Seven Olympic sprinters are eligible to compete in the 4 x 100 m relay race for the USA Olympic team. How many four-person relay teams can be selected from among the seven athletes?   35  "
 },
 {
   "id": "count-ex-13",
@@ -7738,7 +7738,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.14",
   "title": "",
-  "body": " A college is forming a task force with four faculty members and three students. If there are 20 faculty members and 10 students that are being considered, in how many ways can the task force be formed?  "
+  "body": " A college is forming a task force with four faculty members and three students. If there are 20 faculty members and 10 students that are being considered, in how many ways can the task force be formed?   581,400  "
 },
 {
   "id": "count-ex-15",
@@ -7756,7 +7756,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.16",
   "title": "",
-  "body": " In western music, an octave is divided into 12 pitches. For the film Close Encounters of the Third Kind, director Steven Spielberg asked composer John Williams to write a five-note theme, which aliens would use to communicate with people on Earth. Disregarding rhythm and octave changes, how many five-note themes are possible if no note is repeated?  "
+  "body": " In western music, an octave is divided into 12 pitches. For the film Close Encounters of the Third Kind, director Steven Spielberg asked composer John Williams to write a five-note theme, which aliens would use to communicate with people on Earth. Disregarding rhythm and octave changes, how many five-note themes are possible if no note is repeated?   95,040  "
 },
 {
   "id": "count-ex-17",
@@ -7774,7 +7774,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.18",
   "title": "",
-  "body": "In how many ways can 3 students be chosen from a group of 30 to attend a conference? "
+  "body": "In how many ways can 3 students be chosen from a group of 30 to attend a conference?  4,060  "
 },
 {
   "id": "count-ex-19",
@@ -7792,7 +7792,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.20",
   "title": "",
-  "body": " At a baby shower 17 guests are in attendance and 5 of them are randomly selected to receive a door prize. If all 5 prizes are identical, in how many ways can the prizes be awarded?  "
+  "body": " At a baby shower 17 guests are in attendance and 5 of them are randomly selected to receive a door prize. If all 5 prizes are identical, in how many ways can the prizes be awarded?   6188  "
 },
 {
   "id": "count-ex-21",
@@ -7810,7 +7810,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.22",
   "title": "",
-  "body": " In a lottery daily game, a player picks three numbers from 0 to 9. How many different choices does the player have if order doesn’t matter?  "
+  "body": " In a lottery daily game, a player picks three numbers from 0 to 9. How many different choices does the player have if order doesn’t matter?   120  "
 },
 {
   "id": "count-ex-23",
@@ -7828,7 +7828,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.4.24",
   "title": "",
-  "body": " The United States Senate Committee on Commerce, Science, and Transportation consists of 23 members, 12 Republicans and 11 Democrats. The Surface Transportation and Merchant Marine Subcommittee consists of 8 Republicans and 7 Democrats. How many ways can members of the Subcommittee be chosen from the Committee?  "
+  "body": " The United States Senate Committee on Commerce, Science, and Transportation consists of 23 members, 12 Republicans and 11 Democrats. The Surface Transportation and Merchant Marine Subcommittee consists of 8 Republicans and 7 Democrats. How many ways can members of the Subcommittee be chosen from the Committee?   163,350  "
 },
 {
   "id": "ch-test-counting",
@@ -8425,9 +8425,9 @@ var ptx_lunr_docs = [
   "body": " In the casino game roulette, a wheel with 38 spaces (18 red, 18 black, and 2 green) is spun. In one possible bet, the player bets $1 on a single number. If that number is spun on the wheel, then they receive $36 (their original $1 + $35). Otherwise, they lose their $1. On average, how much money should a player expect to win or lose if they play this game repeatedly?   Suppose you bet $1 on each of the 38 spaces on the wheel, for a total of $38 bet. When the winning number is spun, you are paid $36 on that number. While you won on that one number, overall you’ve lost $2. On a per-space basis, you have “won” - $2\/$38 = -$0.053. In other words, on average you lose 5.3 cents per space you bet on.   "
 },
 {
-  "id": "table-64",
+  "id": "table-68",
   "level": "2",
-  "url": "section-prob-ev.html#table-64",
+  "url": "section-prob-ev.html#table-68",
   "type": "Table",
   "number": "9.5.2",
   "title": "",
@@ -8485,7 +8485,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "9.6",
   "title": "Exercises",
-  "body": "  A ball is drawn randomly from a jar that contains 6 red balls, 2 white balls, and 5 yellow balls. Find the probability of the given event.  A red ball is drawn  A white ball is drawn           Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. What is the probability of drawing one slip of paper from the hat at random and getting:  A consonant  A vowel     A group of people were asked if they had run a red light in the last year. 150 responded \"yes\", and 185 responded \"no\". Find the probability that if a person is chosen at random, they have run a red light in the last year.    In a survey, 205 people indicated they prefer cats, 160 indicated they prefer dogs, and 40 indicated they don’t enjoy either pet. Find the probability that if a person is chosen at random, they prefer cats.    Compute the probability of tossing a six-sided die (with sides numbered 1 through 6) and getting a 5.    Compute the probability of tossing a six-sided die and getting a 7.    Giving a test to a group of students, the grades and gender are summarized below.      A  B  C  Total    Male  8  18  13  39    Female  10  4  12  26    Total  18  22  25  65       If one student was chosen at random, find the probability that the student was female.  What is the probability that a student chosen at random did NOT earn a C?            The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person had no credit cards.  What is the probability that a person chosen at random has at least one credit card?     Compute the probability of tossing a six-sided die and getting an even number.    Compute the probability of tossing a six-sided die and getting a number less than 3.    If you pick one card at random from a standard deck of cards, what is the probability it will be a King?    If you pick one card at random from a standard deck of cards, what is the probability it will be a Diamond?    Compute the probability of rolling a 12-sided die and getting a number other than 8.    If you pick one card at random from a standard deck of cards, what is the probability it is not the Ace of Spades?    A six-sided die is rolled twice. What is the probability of showing a 6 on both rolls?    A fair coin is flipped twice. What is the probability of showing heads on both flips?    A die is rolled twice. What is the probability of showing a 5 on the first roll and an even number on the second roll?    Suppose that 21% of people own dogs. If you pick two people at random, what is the probability that they both own a dog?    Suppose a jar contains 17 red marbles and 32 blue marbles. If you reach in the jar and pull out 2 marbles at random, find the probability that both are red.    Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. If you pull out two slips at random, find the probability that both are vowels.    Bert and Ernie each have a well-shuffled standard deck of 52 cards. They each draw one card from their own deck. Compute the probability that:  Bert and Ernie both draw an Ace.  Bert draws an Ace but Ernie does not.  Neither Bert nor Ernie draws an Ace.  Bert and Ernie both draw a heart.  Bert gets a card that is not a Jack and Ernie draws a card that is not a heart.               Bert has a well-shuffled standard deck of 52 cards, from which he draws one card; Ernie has a 12-sided die, which he rolls at the same time Bert draws a card. Compute the probability that:  Bert gets a Jack and Ernie rolls a five.  Bert gets a heart and Ernie rolls a number less than six.  Bert gets a face card (Jack, Queen or King) and Ernie rolls an even number.  Bert gets a red card and Ernie rolls a fifteen.  Bert gets a card that is not a Jack and Ernie rolls a number that is not twelve.     Compute the probability of drawing a King from a deck of cards and then drawing a Queen.    Compute the probability of drawing two spades from a deck of cards.    A math class consists of 25 students, 14 female and 11 male. Two students are selected at random to participate in a probability experiment. Compute the probability that  a male is selected, then a female.  a female is selected, then a male.  two males are selected.  two females are selected.  no males are selected.               A math class consists of 25 students, 14 female and 11 male. Three students are selected at random to participate in a probability experiment. Compute the probability that  a male is selected, then two females.  a female is selected, then two males.  two females are selected, then one male.  three males are selected.  three females are selected.     Giving a test to a group of students, the grades and gender are summarized below.      A  B  C  Total    Male  8  18  13  39    Female  10  4  12  26    Total  18  22  25  65       If one student was chosen at random, find the probability that the student was female and earned an A.  Find the probability that a student chosen at random is female or earned a B.            The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person was male and had two or more credit cards.  Find the probability that a person chosen at random is male or has no credit cards.     A jar contains 6 red marbles numbered 1 to 6 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is red or odd-numbered.    A jar contains 4 red marbles numbered 1 to 4 and 10 blue marbles numbered 1 to 10. A marble is drawn at random from the jar. Find the probability the marble is blue or even-numbered.    Compute the probability of drawing the King of hearts or a Queen from a deck of cards.    Compute the probability of drawing a King or a heart from a deck of cards.    A jar contains 5 red marbles numbered 1 to 5 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is  Even-numbered given that the marble is red.  Red given that the marble is even-numbered.            A jar contains 4 red marbles numbered 1 to 4 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is  Odd-numbered given that the marble is blue.  Blue given that the marble is odd-numbered.     Compute the probability of flipping a coin and getting heads, given that the previous flip was tails.    Find the probability of rolling a “1” on a fair die, given that the last 3 rolls were all ones.    Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student speaks French, given that the student is female.    Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student is male, given that the student speaks French.    A certain virus infects one in every 400 people. A test used to detect the virus in a person is positive 90% of the time if the person has the virus and 10% of the time if the person does not have the virus.  Find the probability that a person has the virus given that they have tested positive.  Find the probability that a person does not have the virus given that they test negative.      0.022 = 2.2%  0.9997 = 99.97%      A certain virus infects one in every 2000 people. A test used to detect the virus in a person is positive 96% of the time if the person has the virus and 4% of the time if the person does not have the virus.  Find the probability that a person has the virus given that they have tested positive  Find the probability that a person does not have the virus given that they test negative.     A certain disease has an incidence rate of 0.3%. If the false negative rate is 6% and the false positive rate is 4%, compute the probability that a person who tests positive actually has the disease.  0.066 = 6.6%   A certain disease has an incidence rate of 0.1%. If the false negative rate is 8% and the false positive rate is 3%, compute the probability that a person who tests positive actually has the disease.    A certain group of symptom-free women between the ages of 40 and 50 are randomly selected to participate in mammography screening. The incidence rate of breast cancer among such women is 0.8%. The false negative rate for the mammogram is 10%. The false positive rate is 7%. If a the mammogram results for a particular woman are positive (indicating that she has breast cancer), what is the probability that she actually has breast cancer?  0.094 = 9.4%   About 0.01% of men with no known risk behavior are infected with HIV. The false negative rate for the standard HIV test 0.01% and the false positive rate is also 0.01%. If a randomly selected man with no known risk behavior tests positive for HIV, what is the probability that he is actually infected with HIV?    A license plate contains 3 randomly selected letters following by three randomly selected numbers. What is the probability the three letters are QQQ?    You are taking a true\/false test with 5 questions. If you randomly guess the answer on all five questions, what is the probability that you will get 100% on the test?    You own 16 CDs. You want to randomly arrange 5 of them in a CD rack. What is the probability that the rack ends up in alphabetical order?    A jury pool consists of 27 people, 14 men and 13 women. Compute the probability that a randomly selected jury of 12 people is all male.    In a lottery game, a player picks six numbers from 1 to 48. If 5 of the 6 numbers match those drawn, they player wins second prize. What is the probability of winning this prize?    In a lottery game, a player picks six numbers from 1 to 48. If 4 of the 6 numbers match those drawn, they player wins third prize. What is the probability of winning this prize?    Compute the probability that a 5-card poker hand is dealt to you that contains all hearts.    Compute the probability that a 5-card poker hand is dealt to you that contains four Aces.    A bag contains 3 gold marbles, 6 silver marbles, and 28 black marbles. Someone offers to play this game: You randomly select on marble from the bag. If it is gold, you win $3. If it is silver, you win $2. If it is black, you lose $1. What is your expected value if you play this game?  -$0.19   A friend devises a game that is played by rolling a single six-sided die once. If you roll a 6, he pays you $3; if you roll a 5, he pays you nothing; if you roll a number less than 5, you pay him $1. Compute the expected value for this game. Should you play this game?    In a lottery game, a player picks six numbers from 1 to 23. If the player matches all six numbers, they win 30,000 dollars. Otherwise, they lose $1. Find the expected value of this game.  -$0.70   A game is played by picking two cards from a standard deck. If they are the same suit, then you win $5, otherwise you lose $1. What is the expected value of this game?    A company estimates that 0.7% of their products will fail after the original warranty period but within 2 years of the purchase, with a replacement cost of $350. If they offer a 2 year extended warranty for $48, what is the company's expected value of each warranty sold?  $45.55   An insurance company estimates the probability of an earthquake in the next year to be 0.0013. The average damage done by an earthquake it estimates to be $60,000. If the company offers earthquake insurance for $100, what is their expected value of the policy?    A magazine subscription is having a contest in which the price is $80,000. If the company receives 1 million entries, what is the expected value of an entry in the contest?  $0.08   In a game show, four prizes are hidden on a board that contains 20 spaces. One prize is worth $15,000, two are worth $5,000 and the other prize is worth $1,000. The remaining spaces contain no prizes. The game show host offers a guaranteed prize of $1,000 not to play this game. Use expected value to determine whether the contestant should choose the guaranteed $1,000 or play the game?    A game involves drawing a single card from a standard deck of 52 cards. If an ace is drawn you ge $0.50; if a face card is drawn you get $0.25; if the 2 of clubs is drawn you get $1. If the cost of playing is $0.10, should you play the game?  You should play the game, because the EV > 0. (It is $0.015)   The SAT is a multiple-choice test. Each question has five possible choices. The test taker must select one answer for each question or leave the question blank. One point is award for each correct answer and -1\/4 point is subtracted for each incorrect answer. (No points are added or subtracted for questions that are left blank.)  What is the expected value of randomly guessing the answer to a question  If you can eliminate one of the choices, what is the expected value of randomly guessing among the remaining four choices? Is it a good strategy to guess? Why or why not?     A construction company is planning to bid on a building contract. The bid cost the company $1200. the probability that the bid is accepted is 0.2. If the bid is accepted the company will make $40,000 minus the cost of the bid. Find the expected value of the making the bid.   "
+  "body": "  A ball is drawn randomly from a jar that contains 6 red balls, 2 white balls, and 5 yellow balls. Find the probability of the given event.  A red ball is drawn  A white ball is drawn           Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. What is the probability of drawing one slip of paper from the hat at random and getting:  A consonant  A vowel            A group of people were asked if they had run a red light in the last year. 150 responded \"yes\", and 185 responded \"no\". Find the probability that if a person is chosen at random, they have run a red light in the last year.    In a survey, 205 people indicated they prefer cats, 160 indicated they prefer dogs, and 40 indicated they don’t enjoy either pet. Find the probability that if a person is chosen at random, they prefer cats.       Compute the probability of tossing a six-sided die (with sides numbered 1 through 6) and getting a 5.    Compute the probability of tossing a six-sided die and getting a 7.   0    Giving a test to a group of students, the grades and gender are summarized below.      A  B  C  Total    Male  8  18  13  39    Female  10  4  12  26    Total  18  22  25  65       If one student was chosen at random, find the probability that the student was female.  What is the probability that a student chosen at random did NOT earn a C?            The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person had no credit cards.  What is the probability that a person chosen at random has at least one credit card?            Compute the probability of tossing a six-sided die and getting an even number.    Compute the probability of tossing a six-sided die and getting a number less than 3.       If you pick one card at random from a standard deck of cards, what is the probability it will be a King?    If you pick one card at random from a standard deck of cards, what is the probability it will be a Diamond?       Compute the probability of rolling a 12-sided die and getting a number other than 8.    If you pick one card at random from a standard deck of cards, what is the probability it is not the Ace of Spades?       A six-sided die is rolled twice. What is the probability of showing a 6 on both rolls?    A fair coin is flipped twice. What is the probability of showing heads on both flips?       A die is rolled twice. What is the probability of showing a 5 on the first roll and an even number on the second roll?    Suppose that 21% of people own dogs. If you pick two people at random, what is the probability that they both own a dog?   0.0441    Suppose a jar contains 17 red marbles and 32 blue marbles. If you reach in the jar and pull out 2 marbles at random, find the probability that both are red.    Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. If you pull out two slips at random, find the probability that both are vowels.       Bert and Ernie each have a well-shuffled standard deck of 52 cards. They each draw one card from their own deck. Compute the probability that:  Bert and Ernie both draw an Ace.  Bert draws an Ace but Ernie does not.  Neither Bert nor Ernie draws an Ace.  Bert and Ernie both draw a heart.  Bert gets a card that is not a Jack and Ernie draws a card that is not a heart.               Bert has a well-shuffled standard deck of 52 cards, from which he draws one card; Ernie has a 12-sided die, which he rolls at the same time Bert draws a card. Compute the probability that:  Bert gets a Jack and Ernie rolls a five.  Bert gets a heart and Ernie rolls a number less than six.  Bert gets a face card (Jack, Queen or King) and Ernie rolls an even number.  Bert gets a red card and Ernie rolls a fifteen.  Bert gets a card that is not a Jack and Ernie rolls a number that is not twelve.         0       Compute the probability of drawing a King from a deck of cards and then drawing a Queen.    Compute the probability of drawing two spades from a deck of cards.       A math class consists of 25 students, 14 female and 11 male. Two students are selected at random to participate in a probability experiment. Compute the probability that  a male is selected, then a female.  a female is selected, then a male.  two males are selected.  two females are selected.  no males are selected.               A math class consists of 25 students, 14 female and 11 male. Three students are selected at random to participate in a probability experiment. Compute the probability that  a male is selected, then two females.  a female is selected, then two males.  two females are selected, then one male.  three males are selected.  three females are selected.      0.145  0.112  0.145  0.072  0.158      Giving a test to a group of students, the grades and gender are summarized below.      A  B  C  Total    Male  8  18  13  39    Female  10  4  12  26    Total  18  22  25  65       If one student was chosen at random, find the probability that the student was female and earned an A.  Find the probability that a student chosen at random is female or earned a B.            The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person was male and had two or more credit cards.  Find the probability that a person chosen at random is male or has no credit cards.            A jar contains 6 red marbles numbered 1 to 6 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is red or odd-numbered.    A jar contains 4 red marbles numbered 1 to 4 and 10 blue marbles numbered 1 to 10. A marble is drawn at random from the jar. Find the probability the marble is blue or even-numbered.       Compute the probability of drawing the King of hearts or a Queen from a deck of cards.    Compute the probability of drawing a King or a heart from a deck of cards.       A jar contains 5 red marbles numbered 1 to 5 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is  Even-numbered given that the marble is red.  Red given that the marble is even-numbered.            A jar contains 4 red marbles numbered 1 to 4 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is  Odd-numbered given that the marble is blue.  Blue given that the marble is odd-numbered.            Compute the probability of flipping a coin and getting heads, given that the previous flip was tails.    Find the probability of rolling a “1” on a fair die, given that the last 3 rolls were all ones.       Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student speaks French, given that the student is female.    Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student is male, given that the student speaks French.       A certain virus infects one in every 400 people. A test used to detect the virus in a person is positive 90% of the time if the person has the virus and 10% of the time if the person does not have the virus.  Find the probability that a person has the virus given that they have tested positive.  Find the probability that a person does not have the virus given that they test negative.      0.022 = 2.2%  0.9997 = 99.97%      A certain virus infects one in every 2000 people. A test used to detect the virus in a person is positive 96% of the time if the person has the virus and 4% of the time if the person does not have the virus.  Find the probability that a person has the virus given that they have tested positive  Find the probability that a person does not have the virus given that they test negative.      0.012  0.99998      A certain disease has an incidence rate of 0.3%. If the false negative rate is 6% and the false positive rate is 4%, compute the probability that a person who tests positive actually has the disease.  0.066 = 6.6%   A certain disease has an incidence rate of 0.1%. If the false negative rate is 8% and the false positive rate is 3%, compute the probability that a person who tests positive actually has the disease.   0.030    A certain group of symptom-free women between the ages of 40 and 50 are randomly selected to participate in mammography screening. The incidence rate of breast cancer among such women is 0.8%. The false negative rate for the mammogram is 10%. The false positive rate is 7%. If a the mammogram results for a particular woman are positive (indicating that she has breast cancer), what is the probability that she actually has breast cancer?  0.094 = 9.4%   About 0.01% of men with no known risk behavior are infected with HIV. The false negative rate for the standard HIV test 0.01% and the false positive rate is also 0.01%. If a randomly selected man with no known risk behavior tests positive for HIV, what is the probability that he is actually infected with HIV?   0.5    A license plate contains 3 randomly selected letters following by three randomly selected numbers. What is the probability the three letters are QQQ?    You are taking a true\/false test with 5 questions. If you randomly guess the answer on all five questions, what is the probability that you will get 100% on the test?       You own 16 CDs. You want to randomly arrange 5 of them in a CD rack. What is the probability that the rack ends up in alphabetical order?    A jury pool consists of 27 people, 14 men and 13 women. Compute the probability that a randomly selected jury of 12 people is all male.       In a lottery game, a player picks six numbers from 1 to 48. If 5 of the 6 numbers match those drawn, they player wins second prize. What is the probability of winning this prize?    In a lottery game, a player picks six numbers from 1 to 48. If 4 of the 6 numbers match those drawn, they player wins third prize. What is the probability of winning this prize?       Compute the probability that a 5-card poker hand is dealt to you that contains all hearts.    Compute the probability that a 5-card poker hand is dealt to you that contains four Aces.       A bag contains 3 gold marbles, 6 silver marbles, and 28 black marbles. Someone offers to play this game: You randomly select on marble from the bag. If it is gold, you win $3. If it is silver, you win $2. If it is black, you lose $1. What is your expected value if you play this game?  -$0.19   A friend devises a game that is played by rolling a single six-sided die once. If you roll a 6, he pays you $3; if you roll a 5, he pays you nothing; if you roll a number less than 5, you pay him $1. Compute the expected value for this game. Should you play this game?   -0.17; No, you should not play because the expected value is negative.    In a lottery game, a player picks six numbers from 1 to 23. If the player matches all six numbers, they win 30,000 dollars. Otherwise, they lose $1. Find the expected value of this game.  -$0.70   A game is played by picking two cards from a standard deck. If they are the same suit, then you win $5, otherwise you lose $1. What is the expected value of this game?   $0.41    A company estimates that 0.7% of their products will fail after the original warranty period but within 2 years of the purchase, with a replacement cost of $350. If they offer a 2 year extended warranty for $48, what is the company's expected value of each warranty sold?  $45.55   An insurance company estimates the probability of an earthquake in the next year to be 0.0013. The average damage done by an earthquake it estimates to be $60,000. If the company offers earthquake insurance for $100, what is their expected value of the policy?   $22    A magazine subscription is having a contest in which the price is $80,000. If the company receives 1 million entries, what is the expected value of an entry in the contest?  $0.08   In a game show, four prizes are hidden on a board that contains 20 spaces. One prize is worth $15,000, two are worth $5,000 and the other prize is worth $1,000. The remaining spaces contain no prizes. The game show host offers a guaranteed prize of $1,000 not to play this game. Use expected value to determine whether the contestant should choose the guaranteed $1,000 or play the game?   Expected value of playing is $1300. They should play since $1300 > $1000.    A game involves drawing a single card from a standard deck of 52 cards. If an ace is drawn you ge $0.50; if a face card is drawn you get $0.25; if the 2 of clubs is drawn you get $1. If the cost of playing is $0.10, should you play the game?  You should play the game, because the EV > 0. (It is $0.015)   The SAT is a multiple-choice test. Each question has five possible choices. The test taker must select one answer for each question or leave the question blank. One point is award for each correct answer and -1\/4 point is subtracted for each incorrect answer. (No points are added or subtracted for questions that are left blank.)  What is the expected value of randomly guessing the answer to a question  If you can eliminate one of the choices, what is the expected value of randomly guessing among the remaining four choices? Is it a good strategy to guess? Why or why not?      0  0.0625; You should guess since the expected value is positive      A construction company is planning to bid on a building contract. The bid cost the company $1200. the probability that the bid is accepted is 0.2. If the bid is accepted the company will make $40,000 minus the cost of the bid. Find the expected value of the making the bid.   $6800   "
 },
 {
   "id": "prob-ex-1",
@@ -8503,7 +8503,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.2",
   "title": "",
-  "body": " Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. What is the probability of drawing one slip of paper from the hat at random and getting:  A consonant  A vowel   "
+  "body": " Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. What is the probability of drawing one slip of paper from the hat at random and getting:  A consonant  A vowel          "
 },
 {
   "id": "prob-ex-3",
@@ -8521,7 +8521,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.4",
   "title": "",
-  "body": " In a survey, 205 people indicated they prefer cats, 160 indicated they prefer dogs, and 40 indicated they don’t enjoy either pet. Find the probability that if a person is chosen at random, they prefer cats.  "
+  "body": " In a survey, 205 people indicated they prefer cats, 160 indicated they prefer dogs, and 40 indicated they don’t enjoy either pet. Find the probability that if a person is chosen at random, they prefer cats.     "
 },
 {
   "id": "prob-ex-5",
@@ -8539,7 +8539,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.6",
   "title": "",
-  "body": " Compute the probability of tossing a six-sided die and getting a 7.  "
+  "body": " Compute the probability of tossing a six-sided die and getting a 7.   0  "
 },
 {
   "id": "prob-ex-7",
@@ -8557,7 +8557,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.8",
   "title": "",
-  "body": " The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person had no credit cards.  What is the probability that a person chosen at random has at least one credit card?   "
+  "body": " The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person had no credit cards.  What is the probability that a person chosen at random has at least one credit card?          "
 },
 {
   "id": "prob-ex-9",
@@ -8575,7 +8575,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.10",
   "title": "",
-  "body": " Compute the probability of tossing a six-sided die and getting a number less than 3.  "
+  "body": " Compute the probability of tossing a six-sided die and getting a number less than 3.     "
 },
 {
   "id": "prob-ex-11",
@@ -8593,7 +8593,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.12",
   "title": "",
-  "body": " If you pick one card at random from a standard deck of cards, what is the probability it will be a Diamond?  "
+  "body": " If you pick one card at random from a standard deck of cards, what is the probability it will be a Diamond?     "
 },
 {
   "id": "prob-ex-13",
@@ -8611,7 +8611,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.14",
   "title": "",
-  "body": " If you pick one card at random from a standard deck of cards, what is the probability it is not the Ace of Spades?  "
+  "body": " If you pick one card at random from a standard deck of cards, what is the probability it is not the Ace of Spades?     "
 },
 {
   "id": "prob-ex-15",
@@ -8629,7 +8629,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.16",
   "title": "",
-  "body": " A fair coin is flipped twice. What is the probability of showing heads on both flips?  "
+  "body": " A fair coin is flipped twice. What is the probability of showing heads on both flips?     "
 },
 {
   "id": "prob-ex-17",
@@ -8647,7 +8647,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.18",
   "title": "",
-  "body": " Suppose that 21% of people own dogs. If you pick two people at random, what is the probability that they both own a dog?  "
+  "body": " Suppose that 21% of people own dogs. If you pick two people at random, what is the probability that they both own a dog?   0.0441  "
 },
 {
   "id": "prob-ex-19",
@@ -8665,7 +8665,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.20",
   "title": "",
-  "body": " Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. If you pull out two slips at random, find the probability that both are vowels.  "
+  "body": " Suppose you write each letter of the alphabet on a different slip of paper and put the slips into a hat. If you pull out two slips at random, find the probability that both are vowels.     "
 },
 {
   "id": "prob-ex-21",
@@ -8683,7 +8683,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.22",
   "title": "",
-  "body": " Bert has a well-shuffled standard deck of 52 cards, from which he draws one card; Ernie has a 12-sided die, which he rolls at the same time Bert draws a card. Compute the probability that:  Bert gets a Jack and Ernie rolls a five.  Bert gets a heart and Ernie rolls a number less than six.  Bert gets a face card (Jack, Queen or King) and Ernie rolls an even number.  Bert gets a red card and Ernie rolls a fifteen.  Bert gets a card that is not a Jack and Ernie rolls a number that is not twelve.   "
+  "body": " Bert has a well-shuffled standard deck of 52 cards, from which he draws one card; Ernie has a 12-sided die, which he rolls at the same time Bert draws a card. Compute the probability that:  Bert gets a Jack and Ernie rolls a five.  Bert gets a heart and Ernie rolls a number less than six.  Bert gets a face card (Jack, Queen or King) and Ernie rolls an even number.  Bert gets a red card and Ernie rolls a fifteen.  Bert gets a card that is not a Jack and Ernie rolls a number that is not twelve.         0     "
 },
 {
   "id": "prob-ex-23",
@@ -8701,7 +8701,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.24",
   "title": "",
-  "body": " Compute the probability of drawing two spades from a deck of cards.  "
+  "body": " Compute the probability of drawing two spades from a deck of cards.     "
 },
 {
   "id": "prob-ex-25",
@@ -8719,7 +8719,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.26",
   "title": "",
-  "body": " A math class consists of 25 students, 14 female and 11 male. Three students are selected at random to participate in a probability experiment. Compute the probability that  a male is selected, then two females.  a female is selected, then two males.  two females are selected, then one male.  three males are selected.  three females are selected.   "
+  "body": " A math class consists of 25 students, 14 female and 11 male. Three students are selected at random to participate in a probability experiment. Compute the probability that  a male is selected, then two females.  a female is selected, then two males.  two females are selected, then one male.  three males are selected.  three females are selected.      0.145  0.112  0.145  0.072  0.158    "
 },
 {
   "id": "prob-ex-27",
@@ -8737,7 +8737,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.28",
   "title": "",
-  "body": " The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person was male and had two or more credit cards.  Find the probability that a person chosen at random is male or has no credit cards.   "
+  "body": " The table below shows the number of credit cards owned by a group of individuals.      Zero  One  Two or More  Total    Male  9  5  19  33    Female  18  10  20  48    Total  27  15  39  81       If one person was chosen at random, find the probability that the person was male and had two or more credit cards.  Find the probability that a person chosen at random is male or has no credit cards.          "
 },
 {
   "id": "prob-ex-29",
@@ -8755,7 +8755,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.30",
   "title": "",
-  "body": " A jar contains 4 red marbles numbered 1 to 4 and 10 blue marbles numbered 1 to 10. A marble is drawn at random from the jar. Find the probability the marble is blue or even-numbered.  "
+  "body": " A jar contains 4 red marbles numbered 1 to 4 and 10 blue marbles numbered 1 to 10. A marble is drawn at random from the jar. Find the probability the marble is blue or even-numbered.     "
 },
 {
   "id": "prob-ex-31",
@@ -8773,7 +8773,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.32",
   "title": "",
-  "body": " Compute the probability of drawing a King or a heart from a deck of cards.  "
+  "body": " Compute the probability of drawing a King or a heart from a deck of cards.     "
 },
 {
   "id": "prob-ex-33",
@@ -8791,7 +8791,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.34",
   "title": "",
-  "body": " A jar contains 4 red marbles numbered 1 to 4 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is  Odd-numbered given that the marble is blue.  Blue given that the marble is odd-numbered.   "
+  "body": " A jar contains 4 red marbles numbered 1 to 4 and 8 blue marbles numbered 1 to 8. A marble is drawn at random from the jar. Find the probability the marble is  Odd-numbered given that the marble is blue.  Blue given that the marble is odd-numbered.          "
 },
 {
   "id": "prob-ex-35",
@@ -8809,7 +8809,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.36",
   "title": "",
-  "body": " Find the probability of rolling a “1” on a fair die, given that the last 3 rolls were all ones.  "
+  "body": " Find the probability of rolling a “1” on a fair die, given that the last 3 rolls were all ones.     "
 },
 {
   "id": "prob-ex-37",
@@ -8827,7 +8827,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.38",
   "title": "",
-  "body": " Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student is male, given that the student speaks French.  "
+  "body": " Suppose a math class contains 25 students, 14 females (three of whom speak French) and 11 males (two of whom speak French). Compute the probability that a randomly selected student is male, given that the student speaks French.     "
 },
 {
   "id": "prob-ex-39",
@@ -8845,7 +8845,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.40",
   "title": "",
-  "body": " A certain virus infects one in every 2000 people. A test used to detect the virus in a person is positive 96% of the time if the person has the virus and 4% of the time if the person does not have the virus.  Find the probability that a person has the virus given that they have tested positive  Find the probability that a person does not have the virus given that they test negative.   "
+  "body": " A certain virus infects one in every 2000 people. A test used to detect the virus in a person is positive 96% of the time if the person has the virus and 4% of the time if the person does not have the virus.  Find the probability that a person has the virus given that they have tested positive  Find the probability that a person does not have the virus given that they test negative.      0.012  0.99998    "
 },
 {
   "id": "prob-ex-41",
@@ -8863,7 +8863,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.42",
   "title": "",
-  "body": " A certain disease has an incidence rate of 0.1%. If the false negative rate is 8% and the false positive rate is 3%, compute the probability that a person who tests positive actually has the disease.  "
+  "body": " A certain disease has an incidence rate of 0.1%. If the false negative rate is 8% and the false positive rate is 3%, compute the probability that a person who tests positive actually has the disease.   0.030  "
 },
 {
   "id": "prob-ex-43",
@@ -8881,7 +8881,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.44",
   "title": "",
-  "body": " About 0.01% of men with no known risk behavior are infected with HIV. The false negative rate for the standard HIV test 0.01% and the false positive rate is also 0.01%. If a randomly selected man with no known risk behavior tests positive for HIV, what is the probability that he is actually infected with HIV?  "
+  "body": " About 0.01% of men with no known risk behavior are infected with HIV. The false negative rate for the standard HIV test 0.01% and the false positive rate is also 0.01%. If a randomly selected man with no known risk behavior tests positive for HIV, what is the probability that he is actually infected with HIV?   0.5  "
 },
 {
   "id": "prob-ex-45",
@@ -8899,7 +8899,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.46",
   "title": "",
-  "body": " You are taking a true\/false test with 5 questions. If you randomly guess the answer on all five questions, what is the probability that you will get 100% on the test?  "
+  "body": " You are taking a true\/false test with 5 questions. If you randomly guess the answer on all five questions, what is the probability that you will get 100% on the test?     "
 },
 {
   "id": "prob-ex-47",
@@ -8917,7 +8917,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.48",
   "title": "",
-  "body": " A jury pool consists of 27 people, 14 men and 13 women. Compute the probability that a randomly selected jury of 12 people is all male.  "
+  "body": " A jury pool consists of 27 people, 14 men and 13 women. Compute the probability that a randomly selected jury of 12 people is all male.     "
 },
 {
   "id": "prob-ex-49",
@@ -8935,7 +8935,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.50",
   "title": "",
-  "body": " In a lottery game, a player picks six numbers from 1 to 48. If 4 of the 6 numbers match those drawn, they player wins third prize. What is the probability of winning this prize?  "
+  "body": " In a lottery game, a player picks six numbers from 1 to 48. If 4 of the 6 numbers match those drawn, they player wins third prize. What is the probability of winning this prize?     "
 },
 {
   "id": "prob-ex-51",
@@ -8953,7 +8953,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.52",
   "title": "",
-  "body": " Compute the probability that a 5-card poker hand is dealt to you that contains four Aces.  "
+  "body": " Compute the probability that a 5-card poker hand is dealt to you that contains four Aces.     "
 },
 {
   "id": "prob-ex-53",
@@ -8971,7 +8971,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.54",
   "title": "",
-  "body": " A friend devises a game that is played by rolling a single six-sided die once. If you roll a 6, he pays you $3; if you roll a 5, he pays you nothing; if you roll a number less than 5, you pay him $1. Compute the expected value for this game. Should you play this game?  "
+  "body": " A friend devises a game that is played by rolling a single six-sided die once. If you roll a 6, he pays you $3; if you roll a 5, he pays you nothing; if you roll a number less than 5, you pay him $1. Compute the expected value for this game. Should you play this game?   -0.17; No, you should not play because the expected value is negative.  "
 },
 {
   "id": "prob-ex-55",
@@ -8989,7 +8989,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.56",
   "title": "",
-  "body": " A game is played by picking two cards from a standard deck. If they are the same suit, then you win $5, otherwise you lose $1. What is the expected value of this game?  "
+  "body": " A game is played by picking two cards from a standard deck. If they are the same suit, then you win $5, otherwise you lose $1. What is the expected value of this game?   $0.41  "
 },
 {
   "id": "prob-ex-57",
@@ -9007,7 +9007,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.58",
   "title": "",
-  "body": " An insurance company estimates the probability of an earthquake in the next year to be 0.0013. The average damage done by an earthquake it estimates to be $60,000. If the company offers earthquake insurance for $100, what is their expected value of the policy?  "
+  "body": " An insurance company estimates the probability of an earthquake in the next year to be 0.0013. The average damage done by an earthquake it estimates to be $60,000. If the company offers earthquake insurance for $100, what is their expected value of the policy?   $22  "
 },
 {
   "id": "prob-ex-59",
@@ -9025,7 +9025,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.60",
   "title": "",
-  "body": " In a game show, four prizes are hidden on a board that contains 20 spaces. One prize is worth $15,000, two are worth $5,000 and the other prize is worth $1,000. The remaining spaces contain no prizes. The game show host offers a guaranteed prize of $1,000 not to play this game. Use expected value to determine whether the contestant should choose the guaranteed $1,000 or play the game?  "
+  "body": " In a game show, four prizes are hidden on a board that contains 20 spaces. One prize is worth $15,000, two are worth $5,000 and the other prize is worth $1,000. The remaining spaces contain no prizes. The game show host offers a guaranteed prize of $1,000 not to play this game. Use expected value to determine whether the contestant should choose the guaranteed $1,000 or play the game?   Expected value of playing is $1300. They should play since $1300 > $1000.  "
 },
 {
   "id": "prob-ex-61",
@@ -9043,7 +9043,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.62",
   "title": "",
-  "body": " The SAT is a multiple-choice test. Each question has five possible choices. The test taker must select one answer for each question or leave the question blank. One point is award for each correct answer and -1\/4 point is subtracted for each incorrect answer. (No points are added or subtracted for questions that are left blank.)  What is the expected value of randomly guessing the answer to a question  If you can eliminate one of the choices, what is the expected value of randomly guessing among the remaining four choices? Is it a good strategy to guess? Why or why not?   "
+  "body": " The SAT is a multiple-choice test. Each question has five possible choices. The test taker must select one answer for each question or leave the question blank. One point is award for each correct answer and -1\/4 point is subtracted for each incorrect answer. (No points are added or subtracted for questions that are left blank.)  What is the expected value of randomly guessing the answer to a question  If you can eliminate one of the choices, what is the expected value of randomly guessing among the remaining four choices? Is it a good strategy to guess? Why or why not?      0  0.0625; You should guess since the expected value is positive    "
 },
 {
   "id": "prob-ex-63",
@@ -9052,7 +9052,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "9.6.63",
   "title": "",
-  "body": " A construction company is planning to bid on a building contract. The bid cost the company $1200. the probability that the bid is accepted is 0.2. If the bid is accepted the company will make $40,000 minus the cost of the bid. Find the expected value of the making the bid.  "
+  "body": " A construction company is planning to bid on a building contract. The bid cost the company $1200. the probability that the bid is accepted is 0.2. If the bid is accepted the company will make $40,000 minus the cost of the bid. Find the expected value of the making the bid.   $6800  "
 },
 {
   "id": "prob-ch-test",
@@ -9484,7 +9484,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "10.4",
   "title": "Exercises",
-  "body": "  For the exercises below, describe the rarity of an event using the following scale:  0% - < 1% probability = very rare  1% - < 5% = rare  5% - < 34% = uncommon  34% - < 50% = common  50% - 100% = likely      Scores on a certain standardized test have a mean of 500, and a standard deviation of 100. How common is a score between 600 and 700?  Likely   Considering a full-grown show-quality male Siberian Husky has a mean weight of 52.5 lbs, with SD of 7.5 lbs, how common are male huskies in the 37.5 - 45 lbs range?    In a population with , and , how common are values in the range?  Common   In a population with and , how common are values between and ?    A 12 oz can of soda has a mean volume of 12 oz, with a standard deviation of .25 oz. How common are cans with between 11 and 11.5 oz of soda?  Rare   If and , how common are values between 0.0045 and 0.005?    The American Robin Redbreast has a mean weight of 77 g, with a standard deviation of 6 g. How common are Robins in the 59 g-71 g range?  Uncommon   Assuming population has a mean of 1130 and a standard deviaton of 5, how common are values between 1125 and 1135?    A population has and , how common are values between and ?  Likely    Given mean 63 and standard deviation of 168, find the approximate percentage of the distribution that lies between -105 and 567.    Given standard deviation of 74 and mean of 124, approximately what percentage of the values are greater than 198?  16%   Given and , approximately what percentage of the values are less than ?    Given a mean of 92 and standard deviation of 189, find the approximate percentage of the distribution that lies between -286 and 470.  95%   Approximately what percent of a normal distribution lies between and ?    Given standard deviation of 113 and mean 81, approximately what percentage of the values are less than -145?  2.5%   Given mean 23 and standard deviation 157, find the approximate percentage of the distribution that lies between 23 and 337.    Given and , approximately what percentage of the values are less than ?  97.5%   Approximately what percent of a normal distribution is between and ?    Given mean 118 and standard deviation 145, find the approximate percentage of the distribution that lies between -27 and 118.  34%   Given standard deviation of 81 and mean 67, approximately what percentage of values are greater than 310?    Approximately what percent of a normal distribution is less than 2 standard deviations from the mean?  2.5%   Given and , find the approximate percentage of the distribution that lies between and .    Given and , approximately what percentage of the values are greater than ?  99.85%   Suppose people’s heights are normally distributed with a mean of 66 inches and a standard deviation of 3 inches.  What percent of people would you expect to be taller than 66 inches?  What percent of people would you expect to be taller than 69 inches?  What percent of people would you expect to be taller than 72 inches?     300 students take a final exam. The scores are normally distributed with a mean of 75 and a standard deviation of 9. Use the 68-95-99.7 rule to determine:  How many students scored more than 75 points?  How many students scored more than 84 points?  How many students scored between 66 and 84 points?  2.5% of the students received a score above what value?     The life of batteries are normally distributed with a mean of 215 hours and a standard deviation of 21 hours. Use the 68-95-99.7 rule to determine:  If you randomly select a battery, what is the probability that is will last more than 257 hours?  If a shipment of 500 batteries, how many would you expect to last less than 194 hours?     Birth weight is normally distributed with a mean of 6.5 pounds and a standard deviation of 1.5 pounds. Last year, 445 babies were born at a hospital. Use the 68-95-99.7 rule to determine:  How many babies would you expect to weigh more than 8 pounds?  How many babies would you expect to weigh less than 6.5 pounds?  How many babies would you expect to weigh between 6.5 and 8 pounds?  How many babies would you expect to weigh more than 9.5 pounds?      71 babies  223 babies  151 babies  11 babies      The number of candies in machine-filled boxes are normally distributed with a mean of 30 candies and a standard deviation of 1 candy. Use the 68-95-99.7 rule to determine:  What is the probability that a box of candies will contain more than 32 candies?  What percent of boxes would you expect to contain more than 27 candies?  What percent of boxes would you expect to contain between 32 and 33 candies?  In a shipment of 2,000 boxes, how many would you expect to have less than 28 candies?      Given a distribution with a mean of 70 and standard deviation of 62, find a value with a z-score of -1.82.  -42.84   What does a z-score of 3.4 mean?    Given a distribution with a mean of 60 and standard deviation of 98, find the z-score of 120.76.  z = 0.62   Given a distribution with a mean of 60 and standard deviation of 21, find a value with a z-score of 2.19.    Find the z-score of 187.37, given a distribution with a mean of 185 and standard deviation of 1.  2.37   Find the z-score of 125.18, given a distribution with a mean of 101 and standard deviation of 62.    What does a z-score of -3.8 mean?  The value is 3.8 standard deviations below the mean.   Given a distribution with a mean of 117 and standard deviation of 42, find a value with a z-score of -0.94.    Given a distribution with a mean of 126 and standard deviation of 100, find a value with a z-score of -0.75.  51   Find the z-score of 264.16, given and .    Find a value with a z-score of -0.2, given and .  133.8   Find a value with a z-score of 1.2, given and .    Find the probabilities, using the z-score table, from .  What is the probability of a z-score less than +2.02? 0.9783  What is the probability of a z-score less than -1.97?  What is the probability of a z-score greater than +2.02? 0.0217  What is the probability of a z-score greater than -1.97?  What is the probability of a z-score less than -0.02? 0.492  What is the probability of a z-score less than +0.09?   What is the probability of the random occurrence of a value greater than 56 from a normally distributed population with mean 62 and standard deviation 4.5? 0.9082  What is the probability of a value of 329 or greater, assuming a normally distributed set with mean 290 and standard deviation 32?  What is the probability of getting a value below 1.2 from the random output of a normally distributed set with and ? 0.0594   Find the probabilities, using the z-score table, from  What is the probability of a z-score between +1.99 and +2.02?  What is the probability of a z-score between -1.99 and +2.02? 0.955  What is the probability of a z-score between -1.20 and -1.97?  What is the probability of a z-score between +2.33 and -0.97? 0.8241  What is P(1.42 < Z < 2.01)?  What is P(1.77 < Z < 2.22)? 0.0252  What is P(-2.33 < Z < -1.19)?   What is the probability of the random occurrence of a value between 56 and 61 from a normally distributed population with mean 62 and standard deviation 4.5? 0.3211  What is the probability of a value between 301 and 329, assuming a normally distributed set with mean 290 and standard deviation 32?  40% of the data in a normal disribution is above what z-score? z = 0.25  30% of the data in a normal disribution is above what z-score?  The annual rainfall in a city is normally distributed with a mean of 28.4 inches and a standard deviation of 1.7 inches. What is the probability that a year will have less than 24 inches of rain? 0.0048  The diameter of a pipe is normally distributed with a mean of 0.5 inches and a standard deviation of 0.04 inches. What is the probability that the diameter of a randomly selected pipe will exceed 0.6 inches?   The lifetime of a light bulb is normally distributed with a mean of 95 hours and a standard deviation of 12 hours.  What percentage of light bulbs will last more than 100 hours?  What percentage of light bulbs will last less than 75 hours?      33.72%  4.75%      Grades on a test are normally distributed with a mean of 50 pts and a standard deviation of 8 pts. In a class of 150 students,  How many students scored more than 60 pts?  How many students scored between 40 and 60 pts     A pizza place wants to give coupons those with the top 10% of wait times for their deliveries. Assuming the wait times are normally distributed with a mean delivery time of 30 minutes and a standard deviation of 8 minutes, what delivery times will earn coupons?  Those who wait more than 40 minutes (40.24 minutes to be exact) will earn a coupon.   Race times are normally distributed with a mean of 23 minutes and a standard deviation of 4 minutes. If the top 20% of finishers will move on to the State Championship, what is the cutoff time for the State Championship?    A pizza place has a mean delivery time of 30 minutes with a standard deviation of 8 minutes. Assuming the times are normally distributed, what is the probability that your pizza will be delivered in less than 20 minutes?   "
+  "body": "  For the exercises below, describe the rarity of an event using the following scale:  0% - < 1% probability = very rare  1% - < 5% = rare  5% - < 34% = uncommon  34% - < 50% = common  50% - 100% = likely      Scores on a certain standardized test have a mean of 500, and a standard deviation of 100. How common is a score between 600 and 700?  Likely   Considering a full-grown show-quality male Siberian Husky has a mean weight of 52.5 lbs, with SD of 7.5 lbs, how common are male huskies in the 37.5 - 45 lbs range?   uncommon    In a population with , and , how common are values in the range?  Common   In a population with and , how common are values between and ?   common    A 12 oz can of soda has a mean volume of 12 oz, with a standard deviation of .25 oz. How common are cans with between 11 and 11.5 oz of soda?  Rare   If and , how common are values between 0.0045 and 0.005?   very rare    The American Robin Redbreast has a mean weight of 77 g, with a standard deviation of 6 g. How common are Robins in the 59 g-71 g range?  Uncommon   Assuming population has a mean of 1130 and a standard deviaton of 5, how common are values between 1125 and 1135?   likely    A population has and , how common are values between and ?  Likely    Given mean 63 and standard deviation of 168, find the approximate percentage of the distribution that lies between -105 and 567.   83.85%    Given standard deviation of 74 and mean of 124, approximately what percentage of the values are greater than 198?  16%   Given and , approximately what percentage of the values are less than ?   2.5%    Given a mean of 92 and standard deviation of 189, find the approximate percentage of the distribution that lies between -286 and 470.  95%   Approximately what percent of a normal distribution lies between and ?   13.5%    Given standard deviation of 113 and mean 81, approximately what percentage of the values are less than -145?  2.5%   Given mean 23 and standard deviation 157, find the approximate percentage of the distribution that lies between 23 and 337.   47.5%    Given and , approximately what percentage of the values are less than ?  97.5%   Approximately what percent of a normal distribution is between and ?   34%    Given mean 118 and standard deviation 145, find the approximate percentage of the distribution that lies between -27 and 118.  34%   Given standard deviation of 81 and mean 67, approximately what percentage of values are greater than 310?   0.15%    Approximately what percent of a normal distribution is less than 2 standard deviations from the mean?  2.5%   Given and , find the approximate percentage of the distribution that lies between and .   47.5%    Given and , approximately what percentage of the values are greater than ?  99.85%   Suppose people’s heights are normally distributed with a mean of 66 inches and a standard deviation of 3 inches.  What percent of people would you expect to be taller than 66 inches?  What percent of people would you expect to be taller than 69 inches?  What percent of people would you expect to be taller than 72 inches?      50%  16%  2.5%      300 students take a final exam. The scores are normally distributed with a mean of 75 and a standard deviation of 9. Use the 68-95-99.7 rule to determine:  How many students scored more than 75 points?  How many students scored more than 84 points?  How many students scored between 66 and 84 points?  2.5% of the students received a score above what value?      150 students  48 students  204 students  93      The life of batteries are normally distributed with a mean of 215 hours and a standard deviation of 21 hours. Use the 68-95-99.7 rule to determine:  If you randomly select a battery, what is the probability that is will last more than 257 hours?  If a shipment of 500 batteries, how many would you expect to last less than 194 hours?      0.025  80      Birth weight is normally distributed with a mean of 6.5 pounds and a standard deviation of 1.5 pounds. Last year, 445 babies were born at a hospital. Use the 68-95-99.7 rule to determine:  How many babies would you expect to weigh more than 8 pounds?  How many babies would you expect to weigh less than 6.5 pounds?  How many babies would you expect to weigh between 6.5 and 8 pounds?  How many babies would you expect to weigh more than 9.5 pounds?      71 babies  223 babies  151 babies  11 babies      The number of candies in machine-filled boxes are normally distributed with a mean of 30 candies and a standard deviation of 1 candy. Use the 68-95-99.7 rule to determine:  What is the probability that a box of candies will contain more than 32 candies?  What percent of boxes would you expect to contain more than 27 candies?  What percent of boxes would you expect to contain between 32 and 33 candies?  In a shipment of 2,000 boxes, how many would you expect to have less than 28 candies?       0.025  99.85%  2.35%  50      Given a distribution with a mean of 70 and standard deviation of 62, find a value with a z-score of -1.82.  -42.84   What does a z-score of 3.4 mean?   The value is 3.4 standard deviations above the mean.    Given a distribution with a mean of 60 and standard deviation of 98, find the z-score of 120.76.  z = 0.62   Given a distribution with a mean of 60 and standard deviation of 21, find a value with a z-score of 2.19.   105.99    Find the z-score of 187.37, given a distribution with a mean of 185 and standard deviation of 1.  2.37   Find the z-score of 125.18, given a distribution with a mean of 101 and standard deviation of 62.   0.39    What does a z-score of -3.8 mean?  The value is 3.8 standard deviations below the mean.   Given a distribution with a mean of 117 and standard deviation of 42, find a value with a z-score of -0.94.   77.52    Given a distribution with a mean of 126 and standard deviation of 100, find a value with a z-score of -0.75.  51   Find the z-score of 264.16, given and .   1.19    Find a value with a z-score of -0.2, given and .  133.8   Find a value with a z-score of 1.2, given and .   54    Find the probabilities, using the z-score table, from .  What is the probability of a z-score less than +2.02? 0.9783  What is the probability of a z-score less than -1.97?  0.0244   What is the probability of a z-score greater than +2.02? 0.0217  What is the probability of a z-score greater than -1.97?  0.9756   What is the probability of a z-score less than -0.02? 0.492  What is the probability of a z-score less than +0.09?  0.5359    What is the probability of the random occurrence of a value greater than 56 from a normally distributed population with mean 62 and standard deviation 4.5? 0.9082  What is the probability of a value of 329 or greater, assuming a normally distributed set with mean 290 and standard deviation 32?  0.1112   What is the probability of getting a value below 1.2 from the random output of a normally distributed set with and ? 0.0594   Find the probabilities, using the z-score table, from  What is the probability of a z-score between +1.99 and +2.02?  0.0016   What is the probability of a z-score between -1.99 and +2.02? 0.955  What is the probability of a z-score between -1.20 and -1.97?  0.0907   What is the probability of a z-score between +2.33 and -0.97? 0.8241  What is P(1.42 < Z < 2.01)?  0.0556   What is P(1.77 < Z < 2.22)? 0.0252  What is P(-2.33 < Z < -1.19)?  0.1071    What is the probability of the random occurrence of a value between 56 and 61 from a normally distributed population with mean 62 and standard deviation 4.5? 0.3211  What is the probability of a value between 301 and 329, assuming a normally distributed set with mean 290 and standard deviation 32?  0.2557   40% of the data in a normal disribution is above what z-score? z = 0.25  30% of the data in a normal disribution is above what z-score?   0.52  The annual rainfall in a city is normally distributed with a mean of 28.4 inches and a standard deviation of 1.7 inches. What is the probability that a year will have less than 24 inches of rain? 0.0048  The diameter of a pipe is normally distributed with a mean of 0.5 inches and a standard deviation of 0.04 inches. What is the probability that the diameter of a randomly selected pipe will exceed 0.6 inches?  0.0062    The lifetime of a light bulb is normally distributed with a mean of 95 hours and a standard deviation of 12 hours.  What percentage of light bulbs will last more than 100 hours?  What percentage of light bulbs will last less than 75 hours?      33.72%  4.75%      Grades on a test are normally distributed with a mean of 50 pts and a standard deviation of 8 pts. In a class of 150 students,  How many students scored more than 60 pts?  How many students scored between 40 and 60 pts      10.56% = 16 students  78.88% = 118 students      A pizza place wants to give coupons those with the top 10% of wait times for their deliveries. Assuming the wait times are normally distributed with a mean delivery time of 30 minutes and a standard deviation of 8 minutes, what delivery times will earn coupons?  Those who wait more than 40 minutes (40.24 minutes to be exact) will earn a coupon.   Race times are normally distributed with a mean of 23 minutes and a standard deviation of 4 minutes. If the top 20% of finishers will move on to the State Championship, what is the cutoff time for the State Championship?   19.64 minutes    A pizza place has a mean delivery time of 30 minutes with a standard deviation of 8 minutes. Assuming the times are normally distributed, what is the probability that your pizza will be delivered in less than 20 minutes?   0.1056   "
 },
 {
   "id": "normal-ex-1",
@@ -9502,7 +9502,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.2",
   "title": "",
-  "body": " Considering a full-grown show-quality male Siberian Husky has a mean weight of 52.5 lbs, with SD of 7.5 lbs, how common are male huskies in the 37.5 - 45 lbs range?  "
+  "body": " Considering a full-grown show-quality male Siberian Husky has a mean weight of 52.5 lbs, with SD of 7.5 lbs, how common are male huskies in the 37.5 - 45 lbs range?   uncommon  "
 },
 {
   "id": "normal-ex-3",
@@ -9520,7 +9520,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.4",
   "title": "",
-  "body": " In a population with and , how common are values between and ?  "
+  "body": " In a population with and , how common are values between and ?   common  "
 },
 {
   "id": "normal-ex-5",
@@ -9538,7 +9538,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.6",
   "title": "",
-  "body": " If and , how common are values between 0.0045 and 0.005?  "
+  "body": " If and , how common are values between 0.0045 and 0.005?   very rare  "
 },
 {
   "id": "normal-ex-7",
@@ -9556,7 +9556,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.8",
   "title": "",
-  "body": " Assuming population has a mean of 1130 and a standard deviaton of 5, how common are values between 1125 and 1135?  "
+  "body": " Assuming population has a mean of 1130 and a standard deviaton of 5, how common are values between 1125 and 1135?   likely  "
 },
 {
   "id": "normal-ex-9",
@@ -9574,7 +9574,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.10",
   "title": "",
-  "body": " Given mean 63 and standard deviation of 168, find the approximate percentage of the distribution that lies between -105 and 567.  "
+  "body": " Given mean 63 and standard deviation of 168, find the approximate percentage of the distribution that lies between -105 and 567.   83.85%  "
 },
 {
   "id": "normal-ex-11",
@@ -9592,7 +9592,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.12",
   "title": "",
-  "body": " Given and , approximately what percentage of the values are less than ?  "
+  "body": " Given and , approximately what percentage of the values are less than ?   2.5%  "
 },
 {
   "id": "normal-ex-13",
@@ -9610,7 +9610,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.14",
   "title": "",
-  "body": " Approximately what percent of a normal distribution lies between and ?  "
+  "body": " Approximately what percent of a normal distribution lies between and ?   13.5%  "
 },
 {
   "id": "normal-ex-15",
@@ -9628,7 +9628,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.16",
   "title": "",
-  "body": " Given mean 23 and standard deviation 157, find the approximate percentage of the distribution that lies between 23 and 337.  "
+  "body": " Given mean 23 and standard deviation 157, find the approximate percentage of the distribution that lies between 23 and 337.   47.5%  "
 },
 {
   "id": "normal-ex-17",
@@ -9646,7 +9646,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.18",
   "title": "",
-  "body": " Approximately what percent of a normal distribution is between and ?  "
+  "body": " Approximately what percent of a normal distribution is between and ?   34%  "
 },
 {
   "id": "normal-ex-19",
@@ -9664,7 +9664,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.20",
   "title": "",
-  "body": " Given standard deviation of 81 and mean 67, approximately what percentage of values are greater than 310?  "
+  "body": " Given standard deviation of 81 and mean 67, approximately what percentage of values are greater than 310?   0.15%  "
 },
 {
   "id": "normal-ex-21",
@@ -9682,7 +9682,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.22",
   "title": "",
-  "body": " Given and , find the approximate percentage of the distribution that lies between and .  "
+  "body": " Given and , find the approximate percentage of the distribution that lies between and .   47.5%  "
 },
 {
   "id": "normal-ex-23",
@@ -9700,7 +9700,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.24",
   "title": "",
-  "body": " Suppose people’s heights are normally distributed with a mean of 66 inches and a standard deviation of 3 inches.  What percent of people would you expect to be taller than 66 inches?  What percent of people would you expect to be taller than 69 inches?  What percent of people would you expect to be taller than 72 inches?   "
+  "body": " Suppose people’s heights are normally distributed with a mean of 66 inches and a standard deviation of 3 inches.  What percent of people would you expect to be taller than 66 inches?  What percent of people would you expect to be taller than 69 inches?  What percent of people would you expect to be taller than 72 inches?      50%  16%  2.5%    "
 },
 {
   "id": "normal-ex-25",
@@ -9709,7 +9709,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.25",
   "title": "",
-  "body": " 300 students take a final exam. The scores are normally distributed with a mean of 75 and a standard deviation of 9. Use the 68-95-99.7 rule to determine:  How many students scored more than 75 points?  How many students scored more than 84 points?  How many students scored between 66 and 84 points?  2.5% of the students received a score above what value?   "
+  "body": " 300 students take a final exam. The scores are normally distributed with a mean of 75 and a standard deviation of 9. Use the 68-95-99.7 rule to determine:  How many students scored more than 75 points?  How many students scored more than 84 points?  How many students scored between 66 and 84 points?  2.5% of the students received a score above what value?      150 students  48 students  204 students  93    "
 },
 {
   "id": "normal-ex-26",
@@ -9718,7 +9718,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.26",
   "title": "",
-  "body": " The life of batteries are normally distributed with a mean of 215 hours and a standard deviation of 21 hours. Use the 68-95-99.7 rule to determine:  If you randomly select a battery, what is the probability that is will last more than 257 hours?  If a shipment of 500 batteries, how many would you expect to last less than 194 hours?   "
+  "body": " The life of batteries are normally distributed with a mean of 215 hours and a standard deviation of 21 hours. Use the 68-95-99.7 rule to determine:  If you randomly select a battery, what is the probability that is will last more than 257 hours?  If a shipment of 500 batteries, how many would you expect to last less than 194 hours?      0.025  80    "
 },
 {
   "id": "normal-ex-27",
@@ -9736,7 +9736,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.28",
   "title": "",
-  "body": " The number of candies in machine-filled boxes are normally distributed with a mean of 30 candies and a standard deviation of 1 candy. Use the 68-95-99.7 rule to determine:  What is the probability that a box of candies will contain more than 32 candies?  What percent of boxes would you expect to contain more than 27 candies?  What percent of boxes would you expect to contain between 32 and 33 candies?  In a shipment of 2,000 boxes, how many would you expect to have less than 28 candies?    "
+  "body": " The number of candies in machine-filled boxes are normally distributed with a mean of 30 candies and a standard deviation of 1 candy. Use the 68-95-99.7 rule to determine:  What is the probability that a box of candies will contain more than 32 candies?  What percent of boxes would you expect to contain more than 27 candies?  What percent of boxes would you expect to contain between 32 and 33 candies?  In a shipment of 2,000 boxes, how many would you expect to have less than 28 candies?       0.025  99.85%  2.35%  50    "
 },
 {
   "id": "normal-ex-29",
@@ -9754,7 +9754,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.30",
   "title": "",
-  "body": " What does a z-score of 3.4 mean?  "
+  "body": " What does a z-score of 3.4 mean?   The value is 3.4 standard deviations above the mean.  "
 },
 {
   "id": "normal-ex-31",
@@ -9772,7 +9772,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.32",
   "title": "",
-  "body": " Given a distribution with a mean of 60 and standard deviation of 21, find a value with a z-score of 2.19.  "
+  "body": " Given a distribution with a mean of 60 and standard deviation of 21, find a value with a z-score of 2.19.   105.99  "
 },
 {
   "id": "normal-ex-33",
@@ -9790,7 +9790,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.34",
   "title": "",
-  "body": " Find the z-score of 125.18, given a distribution with a mean of 101 and standard deviation of 62.  "
+  "body": " Find the z-score of 125.18, given a distribution with a mean of 101 and standard deviation of 62.   0.39  "
 },
 {
   "id": "normal-ex-35",
@@ -9808,7 +9808,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.36",
   "title": "",
-  "body": " Given a distribution with a mean of 117 and standard deviation of 42, find a value with a z-score of -0.94.  "
+  "body": " Given a distribution with a mean of 117 and standard deviation of 42, find a value with a z-score of -0.94.   77.52  "
 },
 {
   "id": "normal-ex-37",
@@ -9826,7 +9826,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.38",
   "title": "",
-  "body": " Find the z-score of 264.16, given and .  "
+  "body": " Find the z-score of 264.16, given and .   1.19  "
 },
 {
   "id": "normal-ex-39",
@@ -9844,7 +9844,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.40",
   "title": "",
-  "body": " Find a value with a z-score of 1.2, given and .  "
+  "body": " Find a value with a z-score of 1.2, given and .   54  "
 },
 {
   "id": "normal-ex-41",
@@ -9862,7 +9862,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.42",
   "title": "",
-  "body": "What is the probability of a z-score less than -1.97? "
+  "body": "What is the probability of a z-score less than -1.97?  0.0244  "
 },
 {
   "id": "normal-ex-43",
@@ -9880,7 +9880,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.44",
   "title": "",
-  "body": "What is the probability of a z-score greater than -1.97? "
+  "body": "What is the probability of a z-score greater than -1.97?  0.9756  "
 },
 {
   "id": "normal-ex-45",
@@ -9898,7 +9898,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.46",
   "title": "",
-  "body": "What is the probability of a z-score less than +0.09? "
+  "body": "What is the probability of a z-score less than +0.09?  0.5359  "
 },
 {
   "id": "normal-ex-47",
@@ -9916,7 +9916,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.48",
   "title": "",
-  "body": "What is the probability of a value of 329 or greater, assuming a normally distributed set with mean 290 and standard deviation 32? "
+  "body": "What is the probability of a value of 329 or greater, assuming a normally distributed set with mean 290 and standard deviation 32?  0.1112  "
 },
 {
   "id": "normal-ex-49",
@@ -9934,7 +9934,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.50",
   "title": "",
-  "body": "What is the probability of a z-score between +1.99 and +2.02? "
+  "body": "What is the probability of a z-score between +1.99 and +2.02?  0.0016  "
 },
 {
   "id": "normal-ex-51",
@@ -9952,7 +9952,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.52",
   "title": "",
-  "body": "What is the probability of a z-score between -1.20 and -1.97? "
+  "body": "What is the probability of a z-score between -1.20 and -1.97?  0.0907  "
 },
 {
   "id": "normal-ex-53",
@@ -9970,7 +9970,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.54",
   "title": "",
-  "body": "What is P(1.42 < Z < 2.01)? "
+  "body": "What is P(1.42 < Z < 2.01)?  0.0556  "
 },
 {
   "id": "normal-ex-55",
@@ -9988,7 +9988,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.56",
   "title": "",
-  "body": "What is P(-2.33 < Z < -1.19)? "
+  "body": "What is P(-2.33 < Z < -1.19)?  0.1071  "
 },
 {
   "id": "normal-ex-57",
@@ -10006,7 +10006,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.58",
   "title": "",
-  "body": "What is the probability of a value between 301 and 329, assuming a normally distributed set with mean 290 and standard deviation 32? "
+  "body": "What is the probability of a value between 301 and 329, assuming a normally distributed set with mean 290 and standard deviation 32?  0.2557  "
 },
 {
   "id": "normal-ex-59",
@@ -10024,7 +10024,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.60",
   "title": "",
-  "body": "30% of the data in a normal disribution is above what z-score? "
+  "body": "30% of the data in a normal disribution is above what z-score?   0.52 "
 },
 {
   "id": "exercise-558",
@@ -10042,7 +10042,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.62",
   "title": "",
-  "body": "The diameter of a pipe is normally distributed with a mean of 0.5 inches and a standard deviation of 0.04 inches. What is the probability that the diameter of a randomly selected pipe will exceed 0.6 inches? "
+  "body": "The diameter of a pipe is normally distributed with a mean of 0.5 inches and a standard deviation of 0.04 inches. What is the probability that the diameter of a randomly selected pipe will exceed 0.6 inches?  0.0062  "
 },
 {
   "id": "normal-ex-63",
@@ -10060,7 +10060,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.64",
   "title": "",
-  "body": " Grades on a test are normally distributed with a mean of 50 pts and a standard deviation of 8 pts. In a class of 150 students,  How many students scored more than 60 pts?  How many students scored between 40 and 60 pts   "
+  "body": " Grades on a test are normally distributed with a mean of 50 pts and a standard deviation of 8 pts. In a class of 150 students,  How many students scored more than 60 pts?  How many students scored between 40 and 60 pts      10.56% = 16 students  78.88% = 118 students    "
 },
 {
   "id": "normal-ex-65",
@@ -10078,7 +10078,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.66",
   "title": "",
-  "body": " Race times are normally distributed with a mean of 23 minutes and a standard deviation of 4 minutes. If the top 20% of finishers will move on to the State Championship, what is the cutoff time for the State Championship?  "
+  "body": " Race times are normally distributed with a mean of 23 minutes and a standard deviation of 4 minutes. If the top 20% of finishers will move on to the State Championship, what is the cutoff time for the State Championship?   19.64 minutes  "
 },
 {
   "id": "normal-ex-67",
@@ -10087,7 +10087,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "10.4.67",
   "title": "",
-  "body": " A pizza place has a mean delivery time of 30 minutes with a standard deviation of 8 minutes. Assuming the times are normally distributed, what is the probability that your pizza will be delivered in less than 20 minutes?  "
+  "body": " A pizza place has a mean delivery time of 30 minutes with a standard deviation of 8 minutes. Assuming the times are normally distributed, what is the probability that your pizza will be delivered in less than 20 minutes?   0.1056  "
 },
 {
   "id": "normal-ch-test",
@@ -10252,18 +10252,18 @@ var ptx_lunr_docs = [
   "body": "Try It Now  Three candidates are running in an election for County Executive: Goings (G), McCarthy (M), and Bunney (B). The voting schedule is shown below. Which candidate wins under the plurality method?      14  44  20  70  22  80  39    1st choice  G  G  G  M  M  B  B    2nd choice  M  B   G  B  M     3rd choice  B  M   B  G  G      Note: In the third column and last column, those voters only recorded a first-place vote, so we don’t know who their second and third choices would have been.  Using plurality method:  G gets first-choice votes  M gets first-choice votes  B gets first-choice votes  Bunney (B) wins under plurality method.   "
 },
 {
-  "id": "table-80",
+  "id": "table-84",
   "level": "2",
-  "url": "section-voting-plurality.html#table-80",
+  "url": "section-voting-plurality.html#table-84",
   "type": "Table",
   "number": "11.2.6",
   "title": "",
   "body": "    1  3  3  3    1st choice  A  A  O  H    2nd choice  O  H  H  A    3rd choice  H  O  A  O    "
 },
 {
-  "id": "table-81",
+  "id": "table-85",
   "level": "2",
-  "url": "section-voting-plurality.html#table-81",
+  "url": "section-voting-plurality.html#table-85",
   "type": "Table",
   "number": "11.2.7",
   "title": "",
@@ -10522,9 +10522,9 @@ var ptx_lunr_docs = [
   "body": "Arrow’s Impossibility Theorem  Arrow’s Impossibility Theorem states, roughly, that it is not possible for a voting method to satisfy every fairness criteria that we’ve discussed.  "
 },
 {
-  "id": "table-104",
+  "id": "table-108",
   "level": "2",
-  "url": "section-voting-arrow.html#table-104",
+  "url": "section-voting-arrow.html#table-108",
   "type": "Table",
   "number": "11.6.2",
   "title": "",
@@ -10576,9 +10576,9 @@ var ptx_lunr_docs = [
   "body": " Consider the voting schedule:      80  15  5    1st Choice  A  B  C    2nd Choice  B  C  B    3rd Choice  C  A  A      Clearly A is the majority winner. Now suppose that this election was held using Approval Voting, and every voter marked approval of their top two candidates.  A would receive approval from 80 voters  B would receive approval from 100 voters  C would receive approval from 20 voters  B would be the winner.   "
 },
 {
-  "id": "table-108",
+  "id": "table-112",
   "level": "2",
-  "url": "section-voting-approval.html#table-108",
+  "url": "section-voting-approval.html#table-112",
   "type": "Table",
   "number": "11.7.7",
   "title": "",
@@ -10591,7 +10591,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "11.8",
   "title": "Exercises",
-  "body": "  To decide on a new website design, the designer asks people to rank three designs that have been created (labeled A, B, and C). The individual ballots are shown below. Create a preference table.  ABC, ABC, ACB, BAC, BCA, BCA, ACB, CAB, CAB, BCA, ACB, ABC      Number of Voters  3  3  1  3  2    1st Choice  A  A  B  B  C    2nd Choice  B  C  A  C  A    3rd Choice  C  B  C  A  B       To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.  CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC    The planning committee for a renewable energy trade show is trying to decide what city to hold their next show in. The votes are shown below.     Number of voters  9  19  11  8    1st Choice  Buffalo  Atlanta  Chicago  Buffalo    2nd Choice  Atlanta  Buffalo  Buffalo  Chicago    3rd Choice  Chicago  Chicago  Atlanta  Atlanta       How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      47  24 for majority; 16 for plurality (though a choice would need a minimum of 17 votes to actually win under the Plurality method)  Atlanta, with 19 first-choice votes  Atlanta 94, Buffalo 111, Chicago 77. Winner: Buffalo  Chicago eliminated, 11 votes go to Buffalo. Winner: Buffalo  B gets 2 pts, A 1 pt. Buffalo wins.      A non-profit agency is electing a new chair of the board. The votes are shown below.     Number of voters  11  5  10  3    1st Choice  Atkins  Cortez  Burke  Atkins    2nd Choice  Cortez  Burke  Cortez  Burke    3rd Choice  Burke  Atkins  Atkins  Cortez       How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.     The student government is holding elections for president. There are four candidates (labeled A, B, C, and D for convenience). The preference schedule for the election is:     Number of voters  120  50  40  90  60  100    1st Choice  C  B  D  A  A  D    2nd Choice  D  C  A  C  D  B    3rd Choice  B  A  B  B  C  A    4th Choice  A  D  C  D  B  C      How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      460  231 for majority; 116 for plurality  A with 150 first choice votes  A 1140, B 1060, C 1160, D 1240. Winner: D  B eliminated, votes to C. D eliminated, votes to A. Winner: A  A 1pt, B 1pt, C 2pt, D 2pt. Tie between C and D. Winner would probably be C since C was preferred over D      The homeowners association is deciding a new set of neighborhood standards for architecture, yard maintenance, etc. Four options have been proposed. The votes are:     Number of voters  8  9  11  7  7  5    1st Choice  B  A  D  A  B  C    2nd Choice  C  D  B  B  A  D    3rd Choice  A  C  C  D  C  A   4th Choice  D  B  A  C  D  B      How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.     Consider an election with 129 votes.  If there are 4 candidates, what is the smallest number of votes that a plurality candidate could have?  If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?      33  17      Consider an election with 953 votes.  If there are 7 candidates, what is the smallest number of votes that a plurality candidate could have?  If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?     Does this voting system having a Condorcet Candidate? If so, find it.     Number of voters  14  15  2    1st Choice  A  C  B    2nd Choice  B  B  C    3rd Choice  C  A  A     Yes, B   Does this voting system having a Condorcet Candidate? If so, find it.     Number of voters  8  7  6    1st Choice  A  C  B    2nd Choice  B  B  C    3rd Choice  C  A  A       For the preference schedule shown below:      12  15  9  13    1st Choice  A  B  C  A    2nd Choice  B  C  B  D    3rd Choice  C  A  D  B    4th Choice  D  D  A  C       Determine the winner using the Borda count method.  Was the majority criterion violated? Why or why not?     Consider the following preference schedule      13  10  5    1st Choice  A  B  C    2nd Choice  B  C  B    3rd Choice  C  A  A       Who wins using the instant runoff method?  If the last 5 voters change their ballots from 'CBA' to 'CAB', who will win using the instant runoff method?  Is this a violation of the monotonicity criterion? Explain.     The marketing committee at a company decides to vote on a new company logo. They decide to use approval voting. Their results are tallied below. Each column shows the number of voters with the particular approval vote. Which logo wins under approval voting?     Number of voters  8  7  6  3    A  X  X      B  X   X  X    C   X  X  X       The downtown business association is electing a new chairperson, and decides to use approval voting. The tally is below, where each column shows the number of voters with the particular approval vote. Which candidate wins under approval voting?     Number of voters  8  7  6  3  4  2  5    A  X  X    X   X    B  X   X  X    X    C   X  X  X   X        An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and C decided to drop out of the election, which caused B to become the winner, which is the primary fairness criterion violated in this election?    An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and many people who had voted for C switched their preferences to favor A, which caused B to become the winner, which is the primary fairness criterion violated in this election?    An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If in a head-to-head comparison a majority of people prefer B to A or C, which is the primary fairness criterion violated in this election?    An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If B had received a majority of first place votes, which is the primary fairness criterion violated in this election?    In the election shown below under the Plurality method, explain why voters in the third column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  96  90  10    1st Choice  A  B  C    2nd Choice  B  A  B    3rd Choice  C  C  A       In the election shown below under the Borda Count method, explain why voters in the second column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  20  18    1st Choice  A  B    2nd Choice  B  A    3rd Choice  C  C      "
+  "body": "  To decide on a new website design, the designer asks people to rank three designs that have been created (labeled A, B, and C). The individual ballots are shown below. Create a preference table.  ABC, ABC, ACB, BAC, BCA, BCA, ACB, CAB, CAB, BCA, ACB, ABC      Number of Voters  3  3  1  3  2    1st Choice  A  A  B  B  C    2nd Choice  B  C  A  C  A    3rd Choice  C  B  C  A  B       To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.  CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC       Number of Voters  3  3  2  2  2    1st Choice  C  C  B  B  A    2nd Choice  A  B  A  C  B    3rd Choice  B  A  C  A  C        The planning committee for a renewable energy trade show is trying to decide what city to hold their next show in. The votes are shown below.     Number of voters  9  19  11  8    1st Choice  Buffalo  Atlanta  Chicago  Buffalo    2nd Choice  Atlanta  Buffalo  Buffalo  Chicago    3rd Choice  Chicago  Chicago  Atlanta  Atlanta       How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      47  24 for majority; 16 for plurality (though a choice would need a minimum of 17 votes to actually win under the Plurality method)  Atlanta, with 19 first-choice votes  Atlanta 94, Buffalo 111, Chicago 77. Winner: Buffalo  Chicago eliminated, 11 votes go to Buffalo. Winner: Buffalo  B gets 2 pts, A 1 pt. Buffalo wins.      A non-profit agency is electing a new chair of the board. The votes are shown below.     Number of voters  11  5  10  3    1st Choice  Atkins  Cortez  Burke  Atkins    2nd Choice  Cortez  Burke  Cortez  Burke    3rd Choice  Burke  Atkins  Atkins  Cortez       How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      29  15 for a majority; 11 for a plurality (10 would create a tie)  Atkins  Cortez with 60 pts (A and B both have 57 pts)  Burke  Cortez      The student government is holding elections for president. There are four candidates (labeled A, B, C, and D for convenience). The preference schedule for the election is:     Number of voters  120  50  40  90  60  100    1st Choice  C  B  D  A  A  D    2nd Choice  D  C  A  C  D  B    3rd Choice  B  A  B  B  C  A    4th Choice  A  D  C  D  B  C      How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      460  231 for majority; 116 for plurality  A with 150 first choice votes  A 1140, B 1060, C 1160, D 1240. Winner: D  B eliminated, votes to C. D eliminated, votes to A. Winner: A  A 1pt, B 1pt, C 2pt, D 2pt. Tie between C and D. Winner would probably be C since C was preferred over D      The homeowners association is deciding a new set of neighborhood standards for architecture, yard maintenance, etc. Four options have been proposed. The votes are:     Number of voters  8  9  11  7  7  5    1st Choice  B  A  D  A  B  C    2nd Choice  C  D  B  B  A  D    3rd Choice  A  C  C  D  C  A   4th Choice  D  B  A  C  D  B      How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      47  24 for a majority; 13 for a plurality (12 would create a tie)  A  B with 128 pts (A has 122, C has 105 and D has 115 pts)  A  B and D both have 2 pts. D would probably be the winner since it can beat B in a head-to-head competition.      Consider an election with 129 votes.  If there are 4 candidates, what is the smallest number of votes that a plurality candidate could have?  If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?      33  17      Consider an election with 953 votes.  If there are 7 candidates, what is the smallest number of votes that a plurality candidate could have?  If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?      137  120      Does this voting system having a Condorcet Candidate? If so, find it.     Number of voters  14  15  2    1st Choice  A  C  B    2nd Choice  B  B  C    3rd Choice  C  A  A     Yes, B   Does this voting system having a Condorcet Candidate? If so, find it.     Number of voters  8  7  6    1st Choice  A  C  B    2nd Choice  B  B  C    3rd Choice  C  A  A      Yes, B    For the preference schedule shown below:      12  15  9  13    1st Choice  A  B  C  A    2nd Choice  B  C  B  D    3rd Choice  C  A  D  B    4th Choice  D  D  A  C       Determine the winner using the Borda count method.  Was the majority criterion violated? Why or why not?      B with 149 pts  Yes, A had 25 (more than half) of the first place votes and A did not win.      Consider the following preference schedule      13  10  5    1st Choice  A  B  C    2nd Choice  B  C  B    3rd Choice  C  A  A       Who wins using the instant runoff method?  If the last 5 voters change their ballots from 'CBA' to 'CAB', who will win using the instant runoff method?  Is this a violation of the monotonicity criterion? Explain.      B  A  No, because the changes made did not favor the orginal winner--B was placed lower on the ballots.      The marketing committee at a company decides to vote on a new company logo. They decide to use approval voting. Their results are tallied below. Each column shows the number of voters with the particular approval vote. Which logo wins under approval voting?     Number of voters  8  7  6  3    A  X  X      B  X   X  X    C   X  X  X      B    The downtown business association is electing a new chairperson, and decides to use approval voting. The tally is below, where each column shows the number of voters with the particular approval vote. Which candidate wins under approval voting?     Number of voters  8  7  6  3  4  2  5    A  X  X    X   X    B  X   X  X    X    C   X  X  X   X       A    An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and C decided to drop out of the election, which caused B to become the winner, which is the primary fairness criterion violated in this election?   Independence of Irrelevant Alternatives    An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and many people who had voted for C switched their preferences to favor A, which caused B to become the winner, which is the primary fairness criterion violated in this election?   Monotonicity    An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If in a head-to-head comparison a majority of people prefer B to A or C, which is the primary fairness criterion violated in this election?   Condorcet Criterion    An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If B had received a majority of first place votes, which is the primary fairness criterion violated in this election?   Majority Criterion    In the election shown below under the Plurality method, explain why voters in the third column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  96  90  10    1st Choice  A  B  C    2nd Choice  B  A  B    3rd Choice  C  C  A      If they moved B to first place, then B would be the winner.    In the election shown below under the Borda Count method, explain why voters in the second column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  20  18    1st Choice  A  B    2nd Choice  B  A    3rd Choice  C  C      If they moved A in last place then B would be the winner.   "
 },
 {
   "id": "vote-ex-1",
@@ -10609,7 +10609,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.2",
   "title": "",
-  "body": " To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.  CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC  "
+  "body": " To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.  CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC       Number of Voters  3  3  2  2  2    1st Choice  C  C  B  B  A    2nd Choice  A  B  A  C  B    3rd Choice  B  A  C  A  C      "
 },
 {
   "id": "vote-ex-3",
@@ -10627,7 +10627,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.4",
   "title": "",
-  "body": " A non-profit agency is electing a new chair of the board. The votes are shown below.     Number of voters  11  5  10  3    1st Choice  Atkins  Cortez  Burke  Atkins    2nd Choice  Cortez  Burke  Cortez  Burke    3rd Choice  Burke  Atkins  Atkins  Cortez       How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.   "
+  "body": " A non-profit agency is electing a new chair of the board. The votes are shown below.     Number of voters  11  5  10  3    1st Choice  Atkins  Cortez  Burke  Atkins    2nd Choice  Cortez  Burke  Cortez  Burke    3rd Choice  Burke  Atkins  Atkins  Cortez       How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      29  15 for a majority; 11 for a plurality (10 would create a tie)  Atkins  Cortez with 60 pts (A and B both have 57 pts)  Burke  Cortez    "
 },
 {
   "id": "vote-ex-5",
@@ -10645,7 +10645,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.6",
   "title": "",
-  "body": " The homeowners association is deciding a new set of neighborhood standards for architecture, yard maintenance, etc. Four options have been proposed. The votes are:     Number of voters  8  9  11  7  7  5    1st Choice  B  A  D  A  B  C    2nd Choice  C  D  B  B  A  D    3rd Choice  A  C  C  D  C  A   4th Choice  D  B  A  C  D  B      How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.   "
+  "body": " The homeowners association is deciding a new set of neighborhood standards for architecture, yard maintenance, etc. Four options have been proposed. The votes are:     Number of voters  8  9  11  7  7  5    1st Choice  B  A  D  A  B  C    2nd Choice  C  D  B  B  A  D    3rd Choice  A  C  C  D  C  A   4th Choice  D  B  A  C  D  B      How many voters voted in this election?  How many votes are needed for a majority? A plurality?  Find the winner under the plurality method.  Find the winner under the Borda Count Method.  Find the winner under the Instant Runoff Voting method.  Find the winner under Copeland’s method.      47  24 for a majority; 13 for a plurality (12 would create a tie)  A  B with 128 pts (A has 122, C has 105 and D has 115 pts)  A  B and D both have 2 pts. D would probably be the winner since it can beat B in a head-to-head competition.    "
 },
 {
   "id": "vote-ex-7",
@@ -10663,7 +10663,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.8",
   "title": "",
-  "body": " Consider an election with 953 votes.  If there are 7 candidates, what is the smallest number of votes that a plurality candidate could have?  If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?   "
+  "body": " Consider an election with 953 votes.  If there are 7 candidates, what is the smallest number of votes that a plurality candidate could have?  If there are 8 candidates, what is the smallest number of votes that a plurality candidate could have?      137  120    "
 },
 {
   "id": "vote-ex-9",
@@ -10681,7 +10681,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.10",
   "title": "",
-  "body": " Does this voting system having a Condorcet Candidate? If so, find it.     Number of voters  8  7  6    1st Choice  A  C  B    2nd Choice  B  B  C    3rd Choice  C  A  A     "
+  "body": " Does this voting system having a Condorcet Candidate? If so, find it.     Number of voters  8  7  6    1st Choice  A  C  B    2nd Choice  B  B  C    3rd Choice  C  A  A      Yes, B  "
 },
 {
   "id": "vote-ex-11",
@@ -10690,7 +10690,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.11",
   "title": "",
-  "body": " For the preference schedule shown below:      12  15  9  13    1st Choice  A  B  C  A    2nd Choice  B  C  B  D    3rd Choice  C  A  D  B    4th Choice  D  D  A  C       Determine the winner using the Borda count method.  Was the majority criterion violated? Why or why not?   "
+  "body": " For the preference schedule shown below:      12  15  9  13    1st Choice  A  B  C  A    2nd Choice  B  C  B  D    3rd Choice  C  A  D  B    4th Choice  D  D  A  C       Determine the winner using the Borda count method.  Was the majority criterion violated? Why or why not?      B with 149 pts  Yes, A had 25 (more than half) of the first place votes and A did not win.    "
 },
 {
   "id": "vote-ex-12",
@@ -10699,7 +10699,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.12",
   "title": "",
-  "body": " Consider the following preference schedule      13  10  5    1st Choice  A  B  C    2nd Choice  B  C  B    3rd Choice  C  A  A       Who wins using the instant runoff method?  If the last 5 voters change their ballots from 'CBA' to 'CAB', who will win using the instant runoff method?  Is this a violation of the monotonicity criterion? Explain.   "
+  "body": " Consider the following preference schedule      13  10  5    1st Choice  A  B  C    2nd Choice  B  C  B    3rd Choice  C  A  A       Who wins using the instant runoff method?  If the last 5 voters change their ballots from 'CBA' to 'CAB', who will win using the instant runoff method?  Is this a violation of the monotonicity criterion? Explain.      B  A  No, because the changes made did not favor the orginal winner--B was placed lower on the ballots.    "
 },
 {
   "id": "vote-ex-13",
@@ -10708,7 +10708,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.13",
   "title": "",
-  "body": " The marketing committee at a company decides to vote on a new company logo. They decide to use approval voting. Their results are tallied below. Each column shows the number of voters with the particular approval vote. Which logo wins under approval voting?     Number of voters  8  7  6  3    A  X  X      B  X   X  X    C   X  X  X     "
+  "body": " The marketing committee at a company decides to vote on a new company logo. They decide to use approval voting. Their results are tallied below. Each column shows the number of voters with the particular approval vote. Which logo wins under approval voting?     Number of voters  8  7  6  3    A  X  X      B  X   X  X    C   X  X  X      B  "
 },
 {
   "id": "vote-ex-14",
@@ -10717,7 +10717,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.14",
   "title": "",
-  "body": " The downtown business association is electing a new chairperson, and decides to use approval voting. The tally is below, where each column shows the number of voters with the particular approval vote. Which candidate wins under approval voting?     Number of voters  8  7  6  3  4  2  5    A  X  X    X   X    B  X   X  X    X    C   X  X  X   X      "
+  "body": " The downtown business association is electing a new chairperson, and decides to use approval voting. The tally is below, where each column shows the number of voters with the particular approval vote. Which candidate wins under approval voting?     Number of voters  8  7  6  3  4  2  5    A  X  X    X   X    B  X   X  X    X    C   X  X  X   X       A  "
 },
 {
   "id": "vote-ex-15",
@@ -10726,7 +10726,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.15",
   "title": "",
-  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and C decided to drop out of the election, which caused B to become the winner, which is the primary fairness criterion violated in this election?  "
+  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and C decided to drop out of the election, which caused B to become the winner, which is the primary fairness criterion violated in this election?   Independence of Irrelevant Alternatives  "
 },
 {
   "id": "vote-ex-16",
@@ -10735,7 +10735,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.16",
   "title": "",
-  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and many people who had voted for C switched their preferences to favor A, which caused B to become the winner, which is the primary fairness criterion violated in this election?  "
+  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If for some reason the election had to be held again and many people who had voted for C switched their preferences to favor A, which caused B to become the winner, which is the primary fairness criterion violated in this election?   Monotonicity  "
 },
 {
   "id": "vote-ex-17",
@@ -10744,7 +10744,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.17",
   "title": "",
-  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If in a head-to-head comparison a majority of people prefer B to A or C, which is the primary fairness criterion violated in this election?  "
+  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If in a head-to-head comparison a majority of people prefer B to A or C, which is the primary fairness criterion violated in this election?   Condorcet Criterion  "
 },
 {
   "id": "vote-ex-18",
@@ -10753,7 +10753,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.18",
   "title": "",
-  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If B had received a majority of first place votes, which is the primary fairness criterion violated in this election?  "
+  "body": " An election resulted in Candidate A winning, with Candidate B coming in a close second, and candidate C being a distant third. If B had received a majority of first place votes, which is the primary fairness criterion violated in this election?   Majority Criterion  "
 },
 {
   "id": "vote-ex-19",
@@ -10762,7 +10762,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.19",
   "title": "",
-  "body": " In the election shown below under the Plurality method, explain why voters in the third column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  96  90  10    1st Choice  A  B  C    2nd Choice  B  A  B    3rd Choice  C  C  A     "
+  "body": " In the election shown below under the Plurality method, explain why voters in the third column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  96  90  10    1st Choice  A  B  C    2nd Choice  B  A  B    3rd Choice  C  C  A      If they moved B to first place, then B would be the winner.  "
 },
 {
   "id": "vote-ex-20",
@@ -10771,7 +10771,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "11.8.20",
   "title": "",
-  "body": " In the election shown below under the Borda Count method, explain why voters in the second column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  20  18    1st Choice  A  B    2nd Choice  B  A    3rd Choice  C  C     "
+  "body": " In the election shown below under the Borda Count method, explain why voters in the second column might be inclined to vote insincerely. How could it affect the outcome of the election?     Number of voters  20  18    1st Choice  A  B    2nd Choice  B  A    3rd Choice  C  C      If they moved A in last place then B would be the winner.  "
 },
 {
   "id": "ch-test-voting",
@@ -10783,9 +10783,9 @@ var ptx_lunr_docs = [
   "body": "Chapter Test    Use the preference table to answer the questions.     12  15  9  13    1st Choice  A  B  C  A    2nd Choice  B  C  B  D    3rd Choice  C  A  D  B    4th Choice  D  D  A  C        How many voted in this election?  49   How many votes are needed for a majority?  25   Does anyone have a majority? If so, who?  Yes, A has 25 first place votes.   Determine the winner using the Borda Count method.  B      B wins with 149 pts    Determine the winner using Copeland’s method (pairwise comparisons).  A  A (25) v B (24): A wins  A (25) v C (24): A wins  A (40) v D (9): A wins  B (40) v C (9): B wins  B (36) v D (13): B wins  C (36) v D (13): C wins  A = 3 pts; B = 2 pts; C = 1pt; D = 0 pts  A wins      Answer the following questions using the preference schedule     15  7  13  5  2    1st  T  E  F  P  E    2nd  P  P  G  G  F    3rd  E  G  E  F  G    4th  F  F  P  E  P    5th  G  T  T  T  T        Find the winner with the plurality method.  T  T = 15, E = 9, F = 13, P = 5, G =0  T has the most first place votes, T wins.    Find the winner with the instant runoff method.  F  Round 1: G has 0 first place votes and is eliminated.   Round 2: P has the fewest votes and is eliminated. Those five votes go to F, since their 2nd choice (G) was already eliminated.   Round 3: E is eliminated. All 9 votes go to F.   F is the winner.      Consider the following preference schedule:     80  70  50    1st  A  B  C    2nd  C  A  B    3rd  B  C  A        Is there a Condorcet candidate? If so, who? If not, why not?  No. No one can beat all other candidates in a head-to-head comparison.  A (80) v B (120): B wins  A (150) v C (50): A wins  B (70) v C (130): C wins  No one can beat all the other candidates, so there is no Condorcet candidate.    Who wins using the Borda Count method?  A     A wins    If C drops out of the race, who will using the Borda Count method? Was one of the fairness criteria violated? If so, which one?  B wins. Since the winner changed when a losing candidate (C), dropped out of the race, the IIA (Independence of Irrelevant Alternatives) criterion was violated.  The preference schedule is now:     80  70  50    1st Choice  A  B  B    2nd Choice  B  A  A        B wins  Since the winner changed when a losing candidate (C), dropped out of the race, the IIA (Independence of Irrelevant Alternatives) criterion was violated.    "
 },
 {
-  "id": "table-122",
+  "id": "table-127",
   "level": "2",
-  "url": "ch-test-voting.html#table-122",
+  "url": "ch-test-voting.html#table-127",
   "type": "Table",
   "number": "11.9.1",
   "title": "",
@@ -10837,9 +10837,9 @@ var ptx_lunr_docs = [
   "body": " Determine the winner using Copeland’s method (pairwise comparisons).  A  A (25) v B (24): A wins  A (25) v C (24): A wins  A (40) v D (9): A wins  B (40) v C (9): B wins  B (36) v D (13): B wins  C (36) v D (13): C wins  A = 3 pts; B = 2 pts; C = 1pt; D = 0 pts  A wins  "
 },
 {
-  "id": "table-123",
+  "id": "table-128",
   "level": "2",
-  "url": "ch-test-voting.html#table-123",
+  "url": "ch-test-voting.html#table-128",
   "type": "Table",
   "number": "11.9.2",
   "title": "",
@@ -10864,9 +10864,9 @@ var ptx_lunr_docs = [
   "body": " Find the winner with the instant runoff method.  F  Round 1: G has 0 first place votes and is eliminated.   Round 2: P has the fewest votes and is eliminated. Those five votes go to F, since their 2nd choice (G) was already eliminated.   Round 3: E is eliminated. All 9 votes go to F.   F is the winner.  "
 },
 {
-  "id": "table-124",
+  "id": "table-129",
   "level": "2",
-  "url": "ch-test-voting.html#table-124",
+  "url": "ch-test-voting.html#table-129",
   "type": "Table",
   "number": "11.9.3",
   "title": "",
@@ -10954,27 +10954,27 @@ var ptx_lunr_docs = [
   "body": "Quota Rule  The Quota Rule says that the final number of representatives a state gets should be within one of that state’s quota. Since we’re dealing with whole numbers for our final answers, that means that each state should either go up to the next whole number above its quota, or down to the next whole number below its quota.  "
 },
 {
-  "id": "p-2776",
+  "id": "p-3013",
   "level": "2",
-  "url": "section-apportion-hamilton.html#p-2776",
+  "url": "section-apportion-hamilton.html#p-3013",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Alabama Paradox "
 },
 {
-  "id": "p-2777",
+  "id": "p-3014",
   "level": "2",
-  "url": "section-apportion-hamilton.html#p-2777",
+  "url": "section-apportion-hamilton.html#p-3014",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "New States Paradox "
 },
 {
-  "id": "p-2778",
+  "id": "p-3015",
   "level": "2",
-  "url": "section-apportion-hamilton.html#p-2778",
+  "url": "section-apportion-hamilton.html#p-3015",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -11167,7 +11167,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "12.5",
   "title": "Exercises",
-  "body": "  In the exercises below, determine the apportionment using:    Hamilton’s Method  Jefferson’s Method  Webster’s Method  Huntington-Hill Method      A college offers tutoring in Math, English, Chemistry, and Biology. The number of students enrolled in each subject is listed below. If the college can only afford to hire 15 tutors, determine how many tutors should be assigned to each subject.    Math: 330  English: 265  Chemistry: 130  Biology: 70       Math: 6, English: 5, Chemistry: 3, Biology: 1  Math: 7, English: 5, Chemistry: 2, Biology: 1  Math: 6, English: 5, Chemistry: 3, Biology: 1  Math: 6, English: 5, Chemistry: 3, Biology: 1      Reapportion the previous problem if the college can hire 20 tutors.    The number of salespeople assigned to work during a shift is apportioned based on the average number of customers during that shift. Apportion 20 salespeople given the information below.     Shift  Morning  Midday  Afternoon  Evening    Average number of customers  95  305  435  515        Morning: 1, Midday: 5, Afternoon: 6, Evening: 8  Morning: 1, Midday: 4, Afternoon: 7, Evening: 8  Morning: 1, Midday: 5, Afternoon: 6, Evening: 8  Morning: 1, Midday: 5, Afternoon: 6, Evening: 8      Reapportion the previous problem if the store has 25 salespeople.    Three people invest in a treasure dive, each investing the amount listed below. The dive results in 36 gold coins. Apportion those coins to the investors.    Alice: $7,600  Ben: $5,900  Carlos: $1,400       Alice: 18, Ben: 14, Carlos: 4  Alice: 19, Ben: 14, Carlos: 3  Alice: 19, Ben: 14, Carlos: 3  Alice: 19, Ben: 14, Carlos: 3      Reapportion the previous problem if 37 gold coins are recovered.    A small country consists of five states, whose populations are listed below. If the legislature has 119 seats, apportion the seats.  A: 810,000  B: 473,000  C: 292,000  D: 594,000  E: 211,000       A: 40, B: 24, C: 15, D: 30, E: 10  A: 41, B: 24, C: 14, D: 30, E: 10  A: 40, B: 24, C: 15, D: 30, E: 10  A: 40, B: 24, C: 15, D: 30, E: 10      A small country consists of six states, whose populations are listed below. If the legislature has 200 seats, apportion the seats.  A: 3,411  B: 2,421  C: 11,586  D: 4,494  E: 3,126  F: 4,962       A small country consists of three states, whose populations are listed below.  A: 6,000  B: 6,000  C: 2,000      If the legislature has 10 seats, use Hamilton’s method to apportion the seats.  If the legislature grows to 11 seats, use Hamilton’s method to apportion the seats.  Which apportionment paradox does this illustrate?      A state with five counties has 50 seats in their legislature. Using Hamilton’s method, apportion the seats based on the 2000 census, then again using the 2010 census. Which apportionment paradox does this illustrate?     County  Population 2000  Population 2010    Jefferson  60,000  60,000    Clay  31,200  31,200    Madison  69,200  72,400    Jackson  81,600  81,600    Franklin  118,000  118,400       A school district has two high schools: Lowell, serving 1715 students, and Fairview, serving 7364. The district could only afford to hire 13 guidance counselors.    Determine how many counselors should be assigned to each school using Hamilton's method.  The following year, the district expands to include a third school, serving 2989 students. Based on the divisor from above, how many additional counselors should be hired for the new school?  After hiring that many new counselors, the district recalculates the reapportion using Hamilton's method. Determine the outcome.  Does this situation illustrate any apportionment issues?      A small country consists of four states, whose populations are listed below. If the legislature has 116 seats, apportion the seats using Hamilton’s method. Does this illustrate any apportionment issues?    A: 33,700  B: 559,500  C: 141,300  D: 89,100     "
+  "body": "  In the exercises below, determine the apportionment using:    Hamilton’s Method  Jefferson’s Method  Webster’s Method  Huntington-Hill Method      A college offers tutoring in Math, English, Chemistry, and Biology. The number of students enrolled in each subject is listed below. If the college can only afford to hire 15 tutors, determine how many tutors should be assigned to each subject.    Math: 330  English: 265  Chemistry: 130  Biology: 70       Math: 6, English: 5, Chemistry: 3, Biology: 1  Math: 7, English: 5, Chemistry: 2, Biology: 1  Math: 6, English: 5, Chemistry: 3, Biology: 1  Math: 6, English: 5, Chemistry: 3, Biology: 1      Reapportion the previous problem if the college can hire 20 tutors.     M = 8, E = 7, C = 3, B = 2  M = 9, E = 7, C = 3, B = 1  M = 8, E = 7, C = 3, B = 2  M = 8, E = 7, C = 3, B = 2      The number of salespeople assigned to work during a shift is apportioned based on the average number of customers during that shift. Apportion 20 salespeople given the information below.     Shift  Morning  Midday  Afternoon  Evening    Average number of customers  95  305  435  515        Morning: 1, Midday: 5, Afternoon: 6, Evening: 8  Morning: 1, Midday: 4, Afternoon: 7, Evening: 8  Morning: 1, Midday: 5, Afternoon: 6, Evening: 8  Morning: 1, Midday: 5, Afternoon: 6, Evening: 8      Reapportion the previous problem if the store has 25 salespeople.     AM = 2, MD = 6, PM = 8, EVE = 9  AM = 1, MD = 6, PM = 8, EVE = 10  AM = 2, MD = 6, PM = 8, EVE = 9  AM = 2, MD = 6, PM = 8, EVEN = 9      Three people invest in a treasure dive, each investing the amount listed below. The dive results in 36 gold coins. Apportion those coins to the investors.    Alice: $7,600  Ben: $5,900  Carlos: $1,400       Alice: 18, Ben: 14, Carlos: 4  Alice: 19, Ben: 14, Carlos: 3  Alice: 19, Ben: 14, Carlos: 3  Alice: 19, Ben: 14, Carlos: 3      Reapportion the previous problem if 37 gold coins are recovered.     A = 19, B = 15, C = 3  A = 19, B = 15, C = 3  A = 19, B = 15, C = 3  A = 19, B = 15, C = 3      A small country consists of five states, whose populations are listed below. If the legislature has 119 seats, apportion the seats.  A: 810,000  B: 473,000  C: 292,000  D: 594,000  E: 211,000       A: 40, B: 24, C: 15, D: 30, E: 10  A: 41, B: 24, C: 14, D: 30, E: 10  A: 40, B: 24, C: 15, D: 30, E: 10  A: 40, B: 24, C: 15, D: 30, E: 10      A small country consists of six states, whose populations are listed below. If the legislature has 200 seats, apportion the seats.  A: 3,411  B: 2,421  C: 11,586  D: 4,494  E: 3,126  F: 4,962       A = 23, B = 16, C = 77, D = 30, E = 21, F = 33  A = 22, B = 16, C = 78, D = 30, E = 21, F = 33  A = 23, B = 16, C = 77, D = 30, E = 21, F = 33  A = 23, B = 16, C = 77, D = 30, E = 21, F = 33       A small country consists of three states, whose populations are listed below.  A: 6,000  B: 6,000  C: 2,000      If the legislature has 10 seats, use Hamilton’s method to apportion the seats.  If the legislature grows to 11 seats, use Hamilton’s method to apportion the seats.  Which apportionment paradox does this illustrate?       A = 4, B = 4, C = 2  A = 5, B = 5, C = 1  Alabama Paradox      A state with five counties has 50 seats in their legislature. Using Hamilton’s method, apportion the seats based on the 2000 census, then again using the 2010 census. Which apportionment paradox does this illustrate?     County  Population 2000  Population 2010    Jefferson  60,000  60,000    Clay  31,200  31,200    Madison  69,200  72,400    Jackson  81,600  81,600    Franklin  118,000  118,400      In 2000, the apportionment is:  Jefferson = 8  Clay = 4  Madison = 10  Jackson = 11  Franklin = 17    In 2010, the apportionment is:  Jefferson = 8  Clay = 5  Madison = 10  Jackson = 11  Franklin = 16    This illustrates the population paradox--Franklin's population increased while Clay's stayed constant. Yet, Franklin lost a seat and Clay gained a seat.    A school district has two high schools: Lowell, serving 1715 students, and Fairview, serving 7364. The district could only afford to hire 13 guidance counselors.    Determine how many counselors should be assigned to each school using Hamilton's method.  The following year, the district expands to include a third school, serving 2989 students. Based on the divisor from above, how many additional counselors should be hired for the new school?  After hiring that many new counselors, the district recalculates the reapportion using Hamilton's method. Determine the outcome.  Does this situation illustrate any apportionment issues?       L = 2, F = 11  4 more  L = 3, F = 10, New School = 4  This is the New States Paradox      A small country consists of four states, whose populations are listed below. If the legislature has 116 seats, apportion the seats using Hamilton’s method. Does this illustrate any apportionment issues?    A: 33,700  B: 559,500  C: 141,300  D: 89,100     A = 5, B = 79, C = 20, D = 12   "
 },
 {
   "id": "apportion-ex-1",
@@ -11185,7 +11185,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.2",
   "title": "",
-  "body": " Reapportion the previous problem if the college can hire 20 tutors.  "
+  "body": " Reapportion the previous problem if the college can hire 20 tutors.     M = 8, E = 7, C = 3, B = 2  M = 9, E = 7, C = 3, B = 1  M = 8, E = 7, C = 3, B = 2  M = 8, E = 7, C = 3, B = 2    "
 },
 {
   "id": "apportion-ex-3",
@@ -11203,7 +11203,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.4",
   "title": "",
-  "body": " Reapportion the previous problem if the store has 25 salespeople.  "
+  "body": " Reapportion the previous problem if the store has 25 salespeople.     AM = 2, MD = 6, PM = 8, EVE = 9  AM = 1, MD = 6, PM = 8, EVE = 10  AM = 2, MD = 6, PM = 8, EVE = 9  AM = 2, MD = 6, PM = 8, EVEN = 9    "
 },
 {
   "id": "apportion-ex-5",
@@ -11221,7 +11221,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.6",
   "title": "",
-  "body": " Reapportion the previous problem if 37 gold coins are recovered.  "
+  "body": " Reapportion the previous problem if 37 gold coins are recovered.     A = 19, B = 15, C = 3  A = 19, B = 15, C = 3  A = 19, B = 15, C = 3  A = 19, B = 15, C = 3    "
 },
 {
   "id": "apportion-ex-7",
@@ -11239,7 +11239,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.8",
   "title": "",
-  "body": " A small country consists of six states, whose populations are listed below. If the legislature has 200 seats, apportion the seats.  A: 3,411  B: 2,421  C: 11,586  D: 4,494  E: 3,126  F: 4,962    "
+  "body": " A small country consists of six states, whose populations are listed below. If the legislature has 200 seats, apportion the seats.  A: 3,411  B: 2,421  C: 11,586  D: 4,494  E: 3,126  F: 4,962       A = 23, B = 16, C = 77, D = 30, E = 21, F = 33  A = 22, B = 16, C = 78, D = 30, E = 21, F = 33  A = 23, B = 16, C = 77, D = 30, E = 21, F = 33  A = 23, B = 16, C = 77, D = 30, E = 21, F = 33    "
 },
 {
   "id": "apportion-ex-9",
@@ -11248,7 +11248,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.9",
   "title": "",
-  "body": " A small country consists of three states, whose populations are listed below.  A: 6,000  B: 6,000  C: 2,000      If the legislature has 10 seats, use Hamilton’s method to apportion the seats.  If the legislature grows to 11 seats, use Hamilton’s method to apportion the seats.  Which apportionment paradox does this illustrate?    "
+  "body": " A small country consists of three states, whose populations are listed below.  A: 6,000  B: 6,000  C: 2,000      If the legislature has 10 seats, use Hamilton’s method to apportion the seats.  If the legislature grows to 11 seats, use Hamilton’s method to apportion the seats.  Which apportionment paradox does this illustrate?       A = 4, B = 4, C = 2  A = 5, B = 5, C = 1  Alabama Paradox    "
 },
 {
   "id": "apportion-ex-10",
@@ -11257,7 +11257,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.10",
   "title": "",
-  "body": " A state with five counties has 50 seats in their legislature. Using Hamilton’s method, apportion the seats based on the 2000 census, then again using the 2010 census. Which apportionment paradox does this illustrate?     County  Population 2000  Population 2010    Jefferson  60,000  60,000    Clay  31,200  31,200    Madison  69,200  72,400    Jackson  81,600  81,600    Franklin  118,000  118,400     "
+  "body": " A state with five counties has 50 seats in their legislature. Using Hamilton’s method, apportion the seats based on the 2000 census, then again using the 2010 census. Which apportionment paradox does this illustrate?     County  Population 2000  Population 2010    Jefferson  60,000  60,000    Clay  31,200  31,200    Madison  69,200  72,400    Jackson  81,600  81,600    Franklin  118,000  118,400      In 2000, the apportionment is:  Jefferson = 8  Clay = 4  Madison = 10  Jackson = 11  Franklin = 17    In 2010, the apportionment is:  Jefferson = 8  Clay = 5  Madison = 10  Jackson = 11  Franklin = 16    This illustrates the population paradox--Franklin's population increased while Clay's stayed constant. Yet, Franklin lost a seat and Clay gained a seat.  "
 },
 {
   "id": "apportion-ex-11",
@@ -11266,7 +11266,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.11",
   "title": "",
-  "body": " A school district has two high schools: Lowell, serving 1715 students, and Fairview, serving 7364. The district could only afford to hire 13 guidance counselors.    Determine how many counselors should be assigned to each school using Hamilton's method.  The following year, the district expands to include a third school, serving 2989 students. Based on the divisor from above, how many additional counselors should be hired for the new school?  After hiring that many new counselors, the district recalculates the reapportion using Hamilton's method. Determine the outcome.  Does this situation illustrate any apportionment issues?    "
+  "body": " A school district has two high schools: Lowell, serving 1715 students, and Fairview, serving 7364. The district could only afford to hire 13 guidance counselors.    Determine how many counselors should be assigned to each school using Hamilton's method.  The following year, the district expands to include a third school, serving 2989 students. Based on the divisor from above, how many additional counselors should be hired for the new school?  After hiring that many new counselors, the district recalculates the reapportion using Hamilton's method. Determine the outcome.  Does this situation illustrate any apportionment issues?       L = 2, F = 11  4 more  L = 3, F = 10, New School = 4  This is the New States Paradox    "
 },
 {
   "id": "apportion-ex-12",
@@ -11275,7 +11275,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "12.5.12",
   "title": "",
-  "body": " A small country consists of four states, whose populations are listed below. If the legislature has 116 seats, apportion the seats using Hamilton’s method. Does this illustrate any apportionment issues?    A: 33,700  B: 559,500  C: 141,300  D: 89,100    "
+  "body": " A small country consists of four states, whose populations are listed below. If the legislature has 116 seats, apportion the seats using Hamilton’s method. Does this illustrate any apportionment issues?    A: 33,700  B: 559,500  C: 141,300  D: 89,100     A = 5, B = 79, C = 20, D = 12  "
 },
 {
   "id": "ch-test-apportion",

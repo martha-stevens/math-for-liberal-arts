@@ -432,34 +432,34 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Annuities</span>
 </h2>
 <article class="objectives goal-like" id="objectives-17"><h3 class="heading"><span class="type">Objectives</span></h3>
-<ul class="disc"><li id="li-550"><div class="para" id="p-derived-li-550">Solve applications involving annuities</div></li></ul></article><div class="para" id="p-1163">For most of us, we aren’t able to put a large sum of money in the bank today. Instead, we save for the future by depositing a smaller amount of money from each paycheck into the bank. This idea is called a savings annuity. Most retirement plans like 401k plans or IRA plans are examples of savings annuities.</div>
-<div class="para" id="p-1164">An annuity can be described recursively in a fairly simple way. Recall that basic compound interest follows from the relationship</div>
+<ul class="disc"><li id="li-595"><div class="para" id="p-derived-li-595">Solve applications involving annuities</div></li></ul></article><div class="para" id="p-1251">For most of us, we aren’t able to put a large sum of money in the bank today. Instead, we save for the future by depositing a smaller amount of money from each paycheck into the bank. This idea is called a savings annuity. Most retirement plans like 401k plans or IRA plans are examples of savings annuities.</div>
+<div class="para" id="p-1252">An annuity can be described recursively in a fairly simple way. Recall that basic compound interest follows from the relationship</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_m = \left(1 + \frac{r}{k}\right) P_{m-1}
 \end{equation*}
 </div>
-<div class="para" id="p-1165">For a savings annuity, we simply need to add a deposit, <span class="process-math">\(d\text{,}\)</span> to the account with each compounding period:</div>
+<div class="para" id="p-1253">For a savings annuity, we simply need to add a deposit, <span class="process-math">\(d\text{,}\)</span> to the account with each compounding period:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_m = \left( 1 + \frac{r}{k}\right) P_{m-1} + d
 \end{equation*}
 </div>
-<div class="para" id="p-1166">Taking this equation from recursive form to explicit form is a bit trickier than with compound interest. It will be easiest to see by working with an example rather than working in general.</div>
-<div class="para" id="p-1167">Suppose we will deposit $100 each month into an account paying 6% interest. We assume that the account is compounded with the same frequency as we make deposits unless stated otherwise. In this example:</div>
-<div class="para" id="p-1168">
+<div class="para" id="p-1254">Taking this equation from recursive form to explicit form is a bit trickier than with compound interest. It will be easiest to see by working with an example rather than working in general.</div>
+<div class="para" id="p-1255">Suppose we will deposit $100 each month into an account paying 6% interest. We assume that the account is compounded with the same frequency as we make deposits unless stated otherwise. In this example:</div>
+<div class="para" id="p-1256">
 <span class="process-math">\(r = 0.06\)</span> (6%)</div>
-<div class="para" id="p-1169">
+<div class="para" id="p-1257">
 <span class="process-math">\(k = 12\)</span> (12 compounds/deposits per year)</div>
-<div class="para" id="p-1170">
+<div class="para" id="p-1258">
 <span class="process-math">\(d = \$100\)</span> (our deposit per month)</div>
-<div class="para" id="p-1171">Writing out the recursive equation gives</div>
+<div class="para" id="p-1259">Writing out the recursive equation gives</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_m = \left(1 + \frac{0.06}{12}\right)P_{m-1} + 100 = \left(1.005\right)P_{m-1} + 100
 \end{equation*}
 </div>
-<div class="para" id="p-1172">Assuming we start with an empty account, we can begin using this relationship:</div>
+<div class="para" id="p-1260">Assuming we start with an empty account, we can begin using this relationship:</div>
 <div class="displaymath process-math" id="md-10">
 \begin{align*}
 P_0 \amp= 0\\
@@ -469,20 +469,20 @@ P_3 \amp= \left(1.005\right)P_2+100=\left(1.005 \right)\left(100\left( 1.005\rig
 100\left( 1.005 \right)^2 + 100\left(1.005 \right) + 100
 \end{align*}
 </div>
-<div class="para" id="p-1173">Continuing this pattern, after m deposits, we’d have saved:</div>
+<div class="para" id="p-1261">Continuing this pattern, after m deposits, we’d have saved:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_m = 100\left(1.005\right)^{m-1} + 100\left(1.005\right)^{m-2}+ \ldots + 100\left(1.005\right) + 100
 \end{equation*}
 </div>
-<div class="para" id="p-1174">In other words, after <span class="process-math">\(m\)</span> months, the first deposit will have earned compound interest for <span class="process-math">\(m-1\)</span> months. The second deposit will have earned interest for <span class="process-math">\(m-2\)</span> months. Last months deposit would have earned only one month worth of interest. The most recent deposit will have earned no interest yet.</div>
-<div class="para" id="p-1175">This equation leaves a lot to be desired, though - it doesn’t make calculating the ending balance any easier! To simplify things, multiply both sides of the equation by 1.005, and distribute on on the right side of the equation:</div>
+<div class="para" id="p-1262">In other words, after <span class="process-math">\(m\)</span> months, the first deposit will have earned compound interest for <span class="process-math">\(m-1\)</span> months. The second deposit will have earned interest for <span class="process-math">\(m-2\)</span> months. Last months deposit would have earned only one month worth of interest. The most recent deposit will have earned no interest yet.</div>
+<div class="para" id="p-1263">This equation leaves a lot to be desired, though - it doesn’t make calculating the ending balance any easier! To simplify things, multiply both sides of the equation by 1.005, and distribute on on the right side of the equation:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1.005P_m = 100\left(1.005\right)^{m}+100\left(1.005\right)^{m-1} + \ldots + 100\left(1.005\right)^2 + 100\left(1.005\right)
 \end{equation*}
 </div>
-<div class="para" id="p-1176">Now we’ll line this up with like terms from our original equation, and subtract each side</div>
+<div class="para" id="p-1264">Now we’ll line this up with like terms from our original equation, and subtract each side</div>
 <div class="displaymath process-math" id="md-11">
 \begin{align*}
 1.005P_m \amp= 100\left(1.005\right)^m +\amp 100\left(1.005\right)^{m-1} \amp+ \ldots \amp+ 
@@ -491,13 +491,13 @@ P_m \amp= \amp 100\left(1.005\right)^{m-1}+\amp \ldots \amp+
 100\left(1.005\right) + 100
 \end{align*}
 </div>
-<div class="para" id="p-1177">Almost all the terms cancel on the right hand side when we subtract, leaving</div>
+<div class="para" id="p-1265">Almost all the terms cancel on the right hand side when we subtract, leaving</div>
 <div class="displaymath process-math">
 \begin{equation*}
 1.005P_m - P_m = 100\left(1.005\right)^m - 100
 \end{equation*}
 </div>
-<div class="para" id="p-1178">Solving for <span class="process-math">\(P_m\)</span>
+<div class="para" id="p-1266">Solving for <span class="process-math">\(P_m\)</span>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -509,35 +509,35 @@ P_m \amp= \amp 100\left(1.005\right)^{m-1}+\amp \ldots \amp+
 P_m = \frac{100\left(1.005^m -1\right)}{0.005}
 \end{equation*}
 </div>
-<div class="para" id="p-1179">Replacing <span class="process-math">\(m\)</span> months with <span class="process-math">\(12N\text{,}\)</span> where <span class="process-math">\(N\)</span> is measured in years, gives</div>
+<div class="para" id="p-1267">Replacing <span class="process-math">\(m\)</span> months with <span class="process-math">\(12N\text{,}\)</span> where <span class="process-math">\(N\)</span> is measured in years, gives</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_N = \frac{100\left(1.005^{12N} -1\right)}{0.005}
 \end{equation*}
 </div>
-<div class="para" id="p-1180">Recall 0.005 was r/k and 100 was the deposit d. 12 was k, the number of deposit each year. Generalizing this result, we get the saving annuity formula.</div>
+<div class="para" id="p-1268">Recall 0.005 was r/k and 100 was the deposit d. 12 was k, the number of deposit each year. Generalizing this result, we get the saving annuity formula.</div>
 <article class="definition definition-like" id="definition-40"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Annuity Formula.</span>
-</h3> <div class="para" id="p-1181">To compute the value of an annutiy after <span class="process-math">\(N\)</span> years,</div>
+</h3> <div class="para" id="p-1269">To compute the value of an annutiy after <span class="process-math">\(N\)</span> years,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_N = \frac{d\left(\left(1+\frac{r}{k}\right)^{Nk}-1\right)}{\left(\frac{r}{k}\right)}
 \end{equation*}
 </div>
-<div class="para" id="p-1182">
-<span class="process-math">\(P_N\)</span> is the balance in the account after <span class="process-math">\(N\)</span> years.</div> <div class="para" id="p-1183">
-<span class="process-math">\(d\)</span> is the regular deposit (the amount you deposit each year, each month, etc.)</div> <div class="para" id="p-1184">
-<span class="process-math">\(r\)</span> is the annual interest rate in decimal form.</div> <div class="para" id="p-1185">
-<span class="process-math">\(k\)</span> is the number of compounding periods in one year.</div> <div class="para" id="p-1186">If the compounding frequency is not explicitly stated, assume there are the same number of compounds in a year as there are deposits made in a year.</div></article><div class="para" id="p-1187">For example, if the compounding frequency isn’t stated:</div>
-<div class="para" id="p-1188">If you make your deposits every month, use monthly compounding, k = 12.</div>
-<div class="para" id="p-1189">If you make your deposits every year, use yearly compounding, k = 1, etc.</div>
+<div class="para" id="p-1270">
+<span class="process-math">\(P_N\)</span> is the balance in the account after <span class="process-math">\(N\)</span> years.</div> <div class="para" id="p-1271">
+<span class="process-math">\(d\)</span> is the regular deposit (the amount you deposit each year, each month, etc.)</div> <div class="para" id="p-1272">
+<span class="process-math">\(r\)</span> is the annual interest rate in decimal form.</div> <div class="para" id="p-1273">
+<span class="process-math">\(k\)</span> is the number of compounding periods in one year.</div> <div class="para" id="p-1274">If the compounding frequency is not explicitly stated, assume there are the same number of compounds in a year as there are deposits made in a year.</div></article><div class="para" id="p-1275">For example, if the compounding frequency isn’t stated:</div>
+<div class="para" id="p-1276">If you make your deposits every month, use monthly compounding, k = 12.</div>
+<div class="para" id="p-1277">If you make your deposits every year, use yearly compounding, k = 1, etc.</div>
 <article class="note remark-like" id="note-23"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">When do you use this?</span>
-</h3> <div class="para" id="p-1190">Annuities assume that you put money in the account on a regular schedule (every month, year, quarter, etc.) and let it sit there earning interest.</div> <div class="para" id="p-1191">Compound interest assumes that you put money in the account once and let it sit there earning interest.</div> <div class="para" id="p-1192">Compound interest: One deposit</div> <div class="para" id="p-1193">Annuity: Many deposits.</div></article><article class="example example-like" id="example-107"><h3 class="heading">
+</h3> <div class="para" id="p-1278">Annuities assume that you put money in the account on a regular schedule (every month, year, quarter, etc.) and let it sit there earning interest.</div> <div class="para" id="p-1279">Compound interest assumes that you put money in the account once and let it sit there earning interest.</div> <div class="para" id="p-1280">Compound interest: One deposit</div> <div class="para" id="p-1281">Annuity: Many deposits.</div></article><article class="example example-like" id="example-107"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1194">A traditional individual retirement account (IRA) is a special type of retirement account in which the money you invest is exempt from income taxes until you withdraw it. If you deposit $100 each month into an IRA earning 6% interest, how much will you have in the account after 20 years?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-83" id="solution-83"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-83"><div class="solution solution-like">
-<div class="para" id="p-1195">In this example,</div>
+<div class="para" id="p-1282">A traditional individual retirement account (IRA) is a special type of retirement account in which the money you invest is exempt from income taxes until you withdraw it. If you deposit $100 each month into an IRA earning 6% interest, how much will you have in the account after 20 years?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-83" id="solution-83"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-83"><div class="solution solution-like">
+<div class="para" id="p-1283">In this example,</div>
 <div class="displaymath process-math" id="md-12">
 \begin{align*}
 d \amp= \$100\\
@@ -546,7 +546,7 @@ k \amp= 12\\
 N \amp = 20
 \end{align*}
 </div>
-<div class="para" id="p-1196">Putting this into the equation:</div>
+<div class="para" id="p-1284">Putting this into the equation:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P_N =\frac{100\left( \left(1+\frac{0.06}{12}\right)^{20\cdot 12} - 1\right)}{\left(\frac{.06}{12}\right)}
@@ -567,12 +567,12 @@ P_N =\frac{100\left(3.310 - 1\right)}{0.005}
 P_N =\frac{100\left(2.210\right)}{0.005}=\$46200
 \end{equation*}
 </div>
-<div class="para" id="p-1197">The account will grow to $46,200 after 20 years.</div> <div class="para" id="p-1198">Notice that you deposited into the account a total of $24,000 ($100 a month for 240 months). The difference between what you end up with and how much you put in is the interest earned. In this case it is $46,200 - $24,000 = $22,200.</div>
+<div class="para" id="p-1285">The account will grow to $46,200 after 20 years.</div> <div class="para" id="p-1286">Notice that you deposited into the account a total of $24,000 ($100 a month for 240 months). The difference between what you end up with and how much you put in is the interest earned. In this case it is $46,200 - $24,000 = $22,200.</div>
 </div></div></article><article class="example example-like" id="example-108"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-1199">You want to have $200,000 in your account when you retire in 30 years. Your retirement account earns 8% interest. How much do you need to deposit each month to meet your retirement goal?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-84" id="solution-84"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-84"><div class="solution solution-like">
-<div class="para" id="p-1200">In this example, we are looking for <span class="process-math">\(d\text{.}\)</span>
+<div class="para" id="p-1287">You want to have $200,000 in your account when you retire in 30 years. Your retirement account earns 8% interest. How much do you need to deposit each month to meet your retirement goal?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-84" id="solution-84"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-84"><div class="solution solution-like">
+<div class="para" id="p-1288">In this example, we are looking for <span class="process-math">\(d\text{.}\)</span>
 </div>
 <div class="displaymath process-math" id="md-13">
 \begin{align*}
@@ -582,7 +582,7 @@ N \amp = 30\\
 P_{30} \amp = \$200000
 \end{align*}
 </div>
-<div class="para" id="p-1201">In this case, we’re going to have to set up the equation, and solve for d.</div>
+<div class="para" id="p-1289">In this case, we’re going to have to set up the equation, and solve for d.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 200000 = \frac{d \left( \left( 1+\frac{0.08}{12}\right)^{30 \cdot 12}-1\right)}{\left(\frac{.08}{12}\right)}
@@ -603,11 +603,11 @@ P_{30} \amp = \$200000
 d = \frac{200000}{1491.57} = \$134.09
 \end{equation*}
 </div>
-<div class="para" id="p-1202">So you would need to deposit $134.09 each month to have $200,000 in 30 years if your account earns 8% interest.</div>
+<div class="para" id="p-1290">So you would need to deposit $134.09 each month to have $200,000 in 30 years if your account earns 8% interest.</div>
 </div></div></article><article class="problem example-like" id="problem-26"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h3> <div class="para" id="p-1203">A more conservative investment account pays 3% interest. If you deposit $5 a day into this account, how much will you have after 10 years? How much is from interest?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-154" id="answer-154"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-154"><div class="answer solution-like">
-<div class="para" id="p-1204">We will have <span class="process-math">\(P_{10}= \$21,282.07\)</span> after 10 years.</div> <div class="para" id="p-1205">
+</h3> <div class="para" id="p-1291">A more conservative investment account pays 3% interest. If you deposit $5 a day into this account, how much will you have after 10 years? How much is from interest?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-244" id="answer-244"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-244"><div class="answer solution-like">
+<div class="para" id="p-1292">We will have <span class="process-math">\(P_{10}= \$21,282.07\)</span> after 10 years.</div> <div class="para" id="p-1293">
 <span class="process-math">\(\$3,032.07\)</span> is from interest.</div>
 </div></div></article></section></div>
 <div class="ptx-content-footer">

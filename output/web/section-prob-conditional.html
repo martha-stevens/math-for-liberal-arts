@@ -433,41 +433,41 @@ window.MathJax = {
 </h2>
 <article class="objectives goal-like" id="objectives-31"><h3 class="heading"><span class="type">Objectives</span></h3>
 <ul class="disc">
-<li id="li-1037"><div class="para" id="p-derived-li-1037">Solve conditional probability problems</div></li>
-<li id="li-1038"><div class="para" id="p-derived-li-1038">Apply Bayes Theorem to conditional probability problems</div></li>
+<li id="li-1162"><div class="para" id="p-derived-li-1162">Solve conditional probability problems</div></li>
+<li id="li-1163"><div class="para" id="p-derived-li-1163">Apply Bayes Theorem to conditional probability problems</div></li>
 </ul></article><section class="introduction" id="introduction-46">Often it is required to compute the probability of an event given that another event has occurred.</section><section class="subsection" id="subsection-24"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.3.1</span> <span class="title">Conditional Probability</span>
 </h3>
 <article class="example example-like" id="example-204"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2112">What is the probability that two cards drawn at random from a deck of playing cards will both be aces?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-149" id="solution-149"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-149"><div class="solution solution-like">
-<div class="para" id="p-2113">It might seem that you could use the formula for the probability of two independent events and simply multiply  <span class="process-math">\(\frac{4}{52}\cdot \frac{4}{52}=\frac{1}{169}\text{.}\)</span>
-</div> <div class="para" id="p-2114">This would be incorrect, however, because the two events are not independent. If the first card drawn is an ace, then the probability that the second card is also an ace would be lower because there would only be three aces left in the deck.</div> <div class="para" id="p-2115">Once the first card chosen is an ace, the probability that the second card chosen is also an ace is called the conditional probability of drawing an ace. In this case the "condition" is that the first card is an ace. Symbolically, we write this as:</div> <div class="para" id="p-2116">P(ace on second draw | an ace on the first draw).</div> <div class="para" id="p-2117">The vertical bar "|" is read as "given," so the above expression is short for "The probability that an ace is drawn on the second draw given that an ace was drawn on the first draw." What is this probability? After an ace is drawn on the first draw, there are 3 aces out of 51 total cards left. This means that the conditional probability of drawing an ace after one ace has already been drawn is <span class="process-math">\(\frac{3}{51}=\frac{1}{17}\text{.}\)</span>
-</div> <div class="para" id="p-2118">Thus, the probability of both cards being aces is <span class="process-math">\(\frac{4}{52}\cdot \frac{3}{51}=
+<div class="para" id="p-2267">What is the probability that two cards drawn at random from a deck of playing cards will both be aces?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-149" id="solution-149"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-149"><div class="solution solution-like">
+<div class="para" id="p-2268">It might seem that you could use the formula for the probability of two independent events and simply multiply  <span class="process-math">\(\frac{4}{52}\cdot \frac{4}{52}=\frac{1}{169}\text{.}\)</span>
+</div> <div class="para" id="p-2269">This would be incorrect, however, because the two events are not independent. If the first card drawn is an ace, then the probability that the second card is also an ace would be lower because there would only be three aces left in the deck.</div> <div class="para" id="p-2270">Once the first card chosen is an ace, the probability that the second card chosen is also an ace is called the conditional probability of drawing an ace. In this case the "condition" is that the first card is an ace. Symbolically, we write this as:</div> <div class="para" id="p-2271">P(ace on second draw | an ace on the first draw).</div> <div class="para" id="p-2272">The vertical bar "|" is read as "given," so the above expression is short for "The probability that an ace is drawn on the second draw given that an ace was drawn on the first draw." What is this probability? After an ace is drawn on the first draw, there are 3 aces out of 51 total cards left. This means that the conditional probability of drawing an ace after one ace has already been drawn is <span class="process-math">\(\frac{3}{51}=\frac{1}{17}\text{.}\)</span>
+</div> <div class="para" id="p-2273">Thus, the probability of both cards being aces is <span class="process-math">\(\frac{4}{52}\cdot \frac{3}{51}=
 \frac{12}{2652}=\frac{1}{221}\text{.}\)</span>
 </div>
 </div></div></article><article class="definition definition-like" id="definition-84"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Conditional Probability.</span>
-</h4> <div class="para" id="p-2119">The probability the event B occurs, given that event A has happened, is represented as:</div>
+</h4> <div class="para" id="p-2274">The probability the event B occurs, given that event A has happened, is represented as:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P\left(B | A\right)
 \end{equation*}
 </div>
-<div class="para" id="p-2120">This is read as “the probability of B given A”</div></article><article class="example example-like" id="example-205"><h4 class="heading">
+<div class="para" id="p-2275">This is read as “the probability of B given A”</div></article><article class="example example-like" id="example-205"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2121">Find the probability that a die rolled shows a 6, given that a flipped coin shows a head.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-150" id="solution-150"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-150"><div class="solution solution-like"><div class="para" id="p-2122">These are two independent events, so the probability of the die rolling a 6 is <span class="process-math">\(\frac{1}{6}\text{,}\)</span> regardless of the result of the coin flip.</div></div></div></article><article class="example example-like" id="example-206"><h4 class="heading">
+<div class="para" id="p-2276">Find the probability that a die rolled shows a 6, given that a flipped coin shows a head.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-150" id="solution-150"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-150"><div class="solution solution-like"><div class="para" id="p-2277">These are two independent events, so the probability of the die rolling a 6 is <span class="process-math">\(\frac{1}{6}\text{,}\)</span> regardless of the result of the coin flip.</div></div></div></article><article class="example example-like" id="example-206"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.4</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-2123">
+<div class="para logical" id="p-2278">
 <div class="para">The table below shows the number of survey subjects who have received and not received a speeding ticket in the last year, and the color of their car. Find the probability that a randomly chosen person:</div>
 <ol class="lower-alpha">
-<li id="li-1039"><div class="para" id="p-derived-li-1039">Has a speeding ticket given they have a red car.</div></li>
-<li id="li-1040"><div class="para" id="p-derived-li-1040">Has a red car given they have a speeding ticket.</div></li>
+<li id="li-1164"><div class="para" id="p-derived-li-1164">Has a speeding ticket given they have a red car.</div></li>
+<li id="li-1165"><div class="para" id="p-derived-li-1165">Has a red car given they have a speeding ticket.</div></li>
 </ol>
-</div> <figure class="table table-like" id="table-62"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.3.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div> <figure class="table table-like" id="table-66"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.3.5<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Speeding Ticket</th>
@@ -492,21 +492,21 @@ P\left(B | A\right)
 <td class="c m b0 r0 l0 t0 lines">605</td>
 <td class="c m b0 r0 l0 t0 lines">665</td>
 </tr>
-</table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-151" id="solution-151"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-151"><div class="solution solution-like"><div class="para logical" id="p-2124"><ol class="lower-alpha">
-<li id="li-1041">
-<div class="para" id="p-2125">Since we know the person has a red car, we are only considering the 150 people in the first row of the table. Of those, 15 have a speeding ticket, so</div>
-<div class="para" id="p-2126"><span class="process-math">\(P\left(\text{ticket}|\text{red car}\right) = \frac{15}{150}=\frac{1}{10}=0.1\)</span></div>
+</table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-151" id="solution-151"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-151"><div class="solution solution-like"><div class="para logical" id="p-2279"><ol class="lower-alpha">
+<li id="li-1166">
+<div class="para" id="p-2280">Since we know the person has a red car, we are only considering the 150 people in the first row of the table. Of those, 15 have a speeding ticket, so</div>
+<div class="para" id="p-2281"><span class="process-math">\(P\left(\text{ticket}|\text{red car}\right) = \frac{15}{150}=\frac{1}{10}=0.1\)</span></div>
 </li>
-<li id="li-1042">
-<div class="para" id="p-2127">Since we know the person has a speeding ticket, we are only considering the 60 people in the first column of the table. Of those, 15 have a red car, so</div>
-<div class="para" id="p-2128"><span class="process-math">\(P\left(\text{red car} | \text{ticket}\right) = \frac{15}{60}=\frac{1}{4}=0.25\)</span></div>
+<li id="li-1167">
+<div class="para" id="p-2282">Since we know the person has a speeding ticket, we are only considering the 60 people in the first column of the table. Of those, 15 have a red car, so</div>
+<div class="para" id="p-2283"><span class="process-math">\(P\left(\text{red car} | \text{ticket}\right) = \frac{15}{60}=\frac{1}{4}=0.25\)</span></div>
 </li>
-</ol></div></div></div></article><div class="para" id="p-2129">Notice from the last example that <span class="process-math">\(P\left(B|A\right)\)</span> is not equal to <span class="process-math">\(P\left(A|B\right)\text{.}\)</span>
+</ol></div></div></div></article><div class="para" id="p-2284">Notice from the last example that <span class="process-math">\(P\left(B|A\right)\)</span> is not equal to <span class="process-math">\(P\left(A|B\right)\text{.}\)</span>
 </div>
-<div class="para" id="p-2130">These kinds of conditional probabilities are what insurance companies use to determine your insurance rates. They look at the conditional probability of you having accident, given your age, your car, your car color, your driving history, etc., and price your policy based on that likelihood.</div>
+<div class="para" id="p-2285">These kinds of conditional probabilities are what insurance companies use to determine your insurance rates. They look at the conditional probability of you having accident, given your age, your car, your car color, your driving history, etc., and price your policy based on that likelihood.</div>
 <article class="note remark-like" id="note-37"><h4 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">9.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Conditional Probability Formula.</span>
-</h4> <div class="para" id="p-2131">If Events A and B are not independent, then</div>
+</h4> <div class="para" id="p-2286">If Events A and B are not independent, then</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P\left(A \text{ and } B\right) = P\left(A\right) \cdot P\left(B | A\right)
@@ -514,33 +514,33 @@ P\left(A \text{ and } B\right) = P\left(A\right) \cdot P\left(B | A\right)
 </div></article><article class="example example-like" id="example-207"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2132">If you pull 2 cards out of a deck, what is the probability that both are spades?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-152" id="solution-152"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-152"><div class="solution solution-like">
-<div class="para" id="p-2133">The probability that the first card is a spade is <span class="process-math">\(\frac{13}{52}\text{.}\)</span>
-</div> <div class="para" id="p-2134">The probability that the second card is a spade, given the first was a spade, is <span class="process-math">\(\frac{12}{51}\text{,}\)</span> since there is one less spade in the deck, and one less total cards.</div> <div class="para" id="p-2135">The probability that both cards are spades is <span class="process-math">\(\frac{13}{52}\cdot\frac{12}{51}=
+<div class="para" id="p-2287">If you pull 2 cards out of a deck, what is the probability that both are spades?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-152" id="solution-152"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-152"><div class="solution solution-like">
+<div class="para" id="p-2288">The probability that the first card is a spade is <span class="process-math">\(\frac{13}{52}\text{.}\)</span>
+</div> <div class="para" id="p-2289">The probability that the second card is a spade, given the first was a spade, is <span class="process-math">\(\frac{12}{51}\text{,}\)</span> since there is one less spade in the deck, and one less total cards.</div> <div class="para" id="p-2290">The probability that both cards are spades is <span class="process-math">\(\frac{13}{52}\cdot\frac{12}{51}=
 \frac{156}{2652} \approx 0.0588\)</span>
 </div>
 </div></div></article><article class="example example-like" id="example-208"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2136">If you draw two cards from a deck, what is the probability that you will get the Ace of Diamonds and a black card?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-153" id="solution-153"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-153"><div class="solution solution-like">
-<div class="para" id="p-2137">You can satisfy this condition by having Case A or Case B, as follows:</div> <div class="para" id="p-2138">Case A) you can get the Ace of Diamonds first and then a black card or</div> <div class="para" id="p-2139">Case B) you can get a black card first and then the Ace of Diamonds.</div> <div class="para" id="p-2140">Let's calculate the probability of Case A. The probability that the first card is the Ace of Diamonds is  <span class="process-math">\(|frac{1}{52}\text{.}\)</span> The probability that the second card is black given that the first card is the Ace of Diamonds is <span class="process-math">\(\frac{26}{51}\)</span> because 26 of the remaining 51 cards are black. The probability is therefore <span class="process-math">\(\frac{1}{52}\cdot \frac{26}{51}=\frac{1}{102}\text{.}\)</span>
-</div> <div class="para" id="p-2141">Now for Case B: the probability that the first card is black is <span class="process-math">\(\frac{26}{52}=\frac{1}{2}\text{.}\)</span> The probability that the second card is the Ace of Diamonds given that the first card is black is <span class="process-math">\(\frac{1}{51}\text{.}\)</span> The probability of Case B is therefore <span class="process-math">\(\frac{1}{2}\cdot \frac{1}{51}=
-\frac{1}{102}\text{,}\)</span> the same as the probability of Case 1.</div> <div class="para" id="p-2142">Recall that the probability of A or B is <span class="process-math">\(P\left( A \right) + P\left(B \right) - P\left(
+<div class="para" id="p-2291">If you draw two cards from a deck, what is the probability that you will get the Ace of Diamonds and a black card?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-153" id="solution-153"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-153"><div class="solution solution-like">
+<div class="para" id="p-2292">You can satisfy this condition by having Case A or Case B, as follows:</div> <div class="para" id="p-2293">Case A) you can get the Ace of Diamonds first and then a black card or</div> <div class="para" id="p-2294">Case B) you can get a black card first and then the Ace of Diamonds.</div> <div class="para" id="p-2295">Let's calculate the probability of Case A. The probability that the first card is the Ace of Diamonds is  <span class="process-math">\(|frac{1}{52}\text{.}\)</span> The probability that the second card is black given that the first card is the Ace of Diamonds is <span class="process-math">\(\frac{26}{51}\)</span> because 26 of the remaining 51 cards are black. The probability is therefore <span class="process-math">\(\frac{1}{52}\cdot \frac{26}{51}=\frac{1}{102}\text{.}\)</span>
+</div> <div class="para" id="p-2296">Now for Case B: the probability that the first card is black is <span class="process-math">\(\frac{26}{52}=\frac{1}{2}\text{.}\)</span> The probability that the second card is the Ace of Diamonds given that the first card is black is <span class="process-math">\(\frac{1}{51}\text{.}\)</span> The probability of Case B is therefore <span class="process-math">\(\frac{1}{2}\cdot \frac{1}{51}=
+\frac{1}{102}\text{,}\)</span> the same as the probability of Case 1.</div> <div class="para" id="p-2297">Recall that the probability of A or B is <span class="process-math">\(P\left( A \right) + P\left(B \right) - P\left(
 A\text{ and }B\right)\)</span> and n this problem, <span class="process-math">\(P\left(A\text{ and }B\right)=0\)</span> since the first card cannot be the Ace of Diamonds and be a black card. Therefore, the probability of Case A or Case B is <span class="process-math">\(\frac{1}{102}+\frac{1}{102}=\frac{2}{102}=\frac{1}{51}\text{.}\)</span>
-</div> <div class="para" id="p-2143">The probability that you will get the Ace of Diamonds and a black card when drawing two cards from a deck is <span class="process-math">\(\frac{1}{51}\text{.}\)</span>
+</div> <div class="para" id="p-2298">The probability that you will get the Ace of Diamonds and a black card when drawing two cards from a deck is <span class="process-math">\(\frac{1}{51}\text{.}\)</span>
 </div>
 </div></div></article><article class="problem example-like" id="problem-51"><h4 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">9.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h4> <div class="para" id="p-2144">In your drawer you have 10 pairs of socks, 6 of which are white. If you reach in and randomly grab two pairs of socks, what is the probability that both are white?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-257" id="answer-257"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-257"><div class="answer solution-like"><span class="process-math">\(\frac{6}{10}\cdot \frac{5}{9} = \frac{30}{90} = \frac{1}{3}\)</span></div></div></article><article class="example example-like" id="example-209"><h4 class="heading">
+</h4> <div class="para" id="p-2299">In your drawer you have 10 pairs of socks, 6 of which are white. If you reach in and randomly grab two pairs of socks, what is the probability that both are white?</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-414" id="answer-414"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-414"><div class="answer solution-like"><span class="process-math">\(\frac{6}{10}\cdot \frac{5}{9} = \frac{30}{90} = \frac{1}{3}\)</span></div></div></article><article class="example example-like" id="example-209"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.10</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-2145">
+<div class="para logical" id="p-2300">
 <div class="para">A home pregnancy test was given to women, then pregnancy was verified through blood tests. The following table shows the home pregnancy test results. Find</div>
 <ol class="lower-alpha">
-<li id="li-1043"><div class="para" id="p-derived-li-1043">P(not pregnant | positive test result)</div></li>
-<li id="li-1044"><div class="para" id="p-derived-li-1044">P(positive test result | not pregnant)</div></li>
+<li id="li-1168"><div class="para" id="p-derived-li-1168">P(not pregnant | positive test result)</div></li>
+<li id="li-1169"><div class="para" id="p-derived-li-1169">P(positive test result | not pregnant)</div></li>
 </ol>
-</div> <figure class="table table-like" id="table-63"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.3.11<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div> <figure class="table table-like" id="table-67"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">9.3.11<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Positive Test</th>
@@ -565,26 +565,26 @@ A\text{ and }B\right)\)</span> and n this problem, <span class="process-math">\(
 <td class="c m b0 r0 l0 t0 lines">18</td>
 <td class="c m b0 r0 l0 t0 lines">93</td>
 </tr>
-</table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-154" id="solution-154"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-154"><div class="solution solution-like"><div class="para logical" id="p-2146"><ol class="lower-alpha">
-<li id="li-1045">
-<div class="para" id="p-2147">Since we know the test result was positive, we’re limited to the 75 women in the first column, of which 5 were not pregnant.</div>
-<div class="para" id="p-2148">P(not pregnant | positive test result) = <span class="process-math">\(\frac{5}{75}\approx 0.067\)</span>
+</table></div></figure> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-154" id="solution-154"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-154"><div class="solution solution-like"><div class="para logical" id="p-2301"><ol class="lower-alpha">
+<li id="li-1170">
+<div class="para" id="p-2302">Since we know the test result was positive, we’re limited to the 75 women in the first column, of which 5 were not pregnant.</div>
+<div class="para" id="p-2303">P(not pregnant | positive test result) = <span class="process-math">\(\frac{5}{75}\approx 0.067\)</span>
 </div>
 </li>
-<li id="li-1046">
-<div class="para" id="p-2149">Since we know the woman is not pregnant, we are limited to the 19 women in the second row, of which 5 had a positive test.</div>
-<div class="para" id="p-2150">P(positive test result | not pregnant) = <span class="process-math">\(\frac{5}{19} \approx 0.263\)</span>
+<li id="li-1171">
+<div class="para" id="p-2304">Since we know the woman is not pregnant, we are limited to the 19 women in the second row, of which 5 had a positive test.</div>
+<div class="para" id="p-2305">P(positive test result | not pregnant) = <span class="process-math">\(\frac{5}{19} \approx 0.263\)</span>
 </div>
 </li>
 </ol></div></div></div></article></section><section class="subsection" id="subsection-25"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.3.2</span> <span class="title">Bayes Theorem</span>
 </h3>
-<div class="para" id="p-2152">Let's look at more complex conditional probability problems.</div>
+<div class="para" id="p-2307">Let's look at more complex conditional probability problems.</div>
 <article class="example example-like" id="example-210"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.12</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2153">Suppose a certain disease has an incidence rate of 0.1% (that is, it afflicts 0.1% of the population). A test has been devised to detect this disease. The test does not produce false negatives (that is, anyone who has the disease will test positive for it), but the false positive rate is 5% (that is, about 5% of people who take the test will test positive, even though they do not have the disease). Suppose a randomly selected person takes the test and tests positive. What is the probability that this person actually has the disease?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-155" id="solution-155"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-155"><div class="solution solution-like">
-<div class="para" id="p-2154">There are two ways to approach the solution to this problem. One involves an important result in probability theory called Bayes' theorem. We will discuss this theorem a bit later, but for now we will use an alternative and, we hope, much more intuitive approach.</div> <div class="para" id="p-2155">Let's break down the information in the problem piece by piece.</div> <div class="para" id="p-2156">Suppose a certain disease has an incidence rate of 0.1% (that is, it afflicts 0.1% of the population). The percentage 0.1% can be converted to a decimal number by moving the decimal place two places to the left, to get 0.001. In turn, 0.001 can be rewritten as a fraction: 1/1000. This tells us that about 1 in every 1000 people has the disease. (If we wanted we could write P(disease)=0.001.)</div> <div class="para" id="p-2157">A test has been devised to detect this disease. The test does not produce false negatives (that is, anyone who has the disease will test positive for it). This part is fairly straightforward: everyone who has the disease will test positive, or alternatively everyone who tests negative does not have the disease. (We could also say P(positive | disease)=1.)</div> <div class="para" id="p-2158">The false positive rate is 5% (that is, about 5% of people who take the test will test positive, even though they do not have the disease). This is even more straightforward. Another way of looking at it is that of every 100 people who are tested and do not have the disease, 5 will test positive even though they do not have the disease. (We could also say that P(positive | no disease)=0.05.)</div> <div class="para" id="p-2159">Suppose a randomly selected person takes the test and tests positive. What is the probability that this person actually has the disease? Here we want to compute P(disease|positive). We already know that P(positive|disease)=1, but remember that conditional probabilities are not equal if the conditions are switched.</div> <div class="para" id="p-2160">Rather than thinking in terms of all these probabilities we have developed, let's create a hypothetical situation and apply the facts as set out above. First, suppose we randomly select 1000 people and administer the test. How many do we expect to have the disease? Since about 1/1000 of all people are afflicted with the disease, <span class="process-math">\(\frac{1}{1000}\)</span> of 1000 people is 1. (Now you know why we chose 1000.) Only 1 of 1000 test subjects actually has the disease; the other 999 do not.</div> <div class="para" id="p-2161">We also know that 5% of all people who do not have the disease will test positive. There are 999 disease-free people, so we would expect <span class="process-math">\(\left(0.05\right)\left(999\right)=49.95\)</span> (so, about 50) people to test positive who do not have the disease.</div> <div class="para logical" id="p-2162">
+<div class="para" id="p-2308">Suppose a certain disease has an incidence rate of 0.1% (that is, it afflicts 0.1% of the population). A test has been devised to detect this disease. The test does not produce false negatives (that is, anyone who has the disease will test positive for it), but the false positive rate is 5% (that is, about 5% of people who take the test will test positive, even though they do not have the disease). Suppose a randomly selected person takes the test and tests positive. What is the probability that this person actually has the disease?</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-155" id="solution-155"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-155"><div class="solution solution-like">
+<div class="para" id="p-2309">There are two ways to approach the solution to this problem. One involves an important result in probability theory called Bayes' theorem. We will discuss this theorem a bit later, but for now we will use an alternative and, we hope, much more intuitive approach.</div> <div class="para" id="p-2310">Let's break down the information in the problem piece by piece.</div> <div class="para" id="p-2311">Suppose a certain disease has an incidence rate of 0.1% (that is, it afflicts 0.1% of the population). The percentage 0.1% can be converted to a decimal number by moving the decimal place two places to the left, to get 0.001. In turn, 0.001 can be rewritten as a fraction: 1/1000. This tells us that about 1 in every 1000 people has the disease. (If we wanted we could write P(disease)=0.001.)</div> <div class="para" id="p-2312">A test has been devised to detect this disease. The test does not produce false negatives (that is, anyone who has the disease will test positive for it). This part is fairly straightforward: everyone who has the disease will test positive, or alternatively everyone who tests negative does not have the disease. (We could also say P(positive | disease)=1.)</div> <div class="para" id="p-2313">The false positive rate is 5% (that is, about 5% of people who take the test will test positive, even though they do not have the disease). This is even more straightforward. Another way of looking at it is that of every 100 people who are tested and do not have the disease, 5 will test positive even though they do not have the disease. (We could also say that P(positive | no disease)=0.05.)</div> <div class="para" id="p-2314">Suppose a randomly selected person takes the test and tests positive. What is the probability that this person actually has the disease? Here we want to compute P(disease|positive). We already know that P(positive|disease)=1, but remember that conditional probabilities are not equal if the conditions are switched.</div> <div class="para" id="p-2315">Rather than thinking in terms of all these probabilities we have developed, let's create a hypothetical situation and apply the facts as set out above. First, suppose we randomly select 1000 people and administer the test. How many do we expect to have the disease? Since about 1/1000 of all people are afflicted with the disease, <span class="process-math">\(\frac{1}{1000}\)</span> of 1000 people is 1. (Now you know why we chose 1000.) Only 1 of 1000 test subjects actually has the disease; the other 999 do not.</div> <div class="para" id="p-2316">We also know that 5% of all people who do not have the disease will test positive. There are 999 disease-free people, so we would expect <span class="process-math">\(\left(0.05\right)\left(999\right)=49.95\)</span> (so, about 50) people to test positive who do not have the disease.</div> <div class="para logical" id="p-2317">
 <div class="para">Now back to the original question, computing P(disease|positive). There are 51 people who test positive in our example (the one unfortunate person who actually has the disease, plus the 50 people who tested positive but don't). Only one of these people has the disease, so</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -592,7 +592,7 @@ P\left(\text{disease} | \text{positive}\right) \approx \frac{1}{51} \approx 0.01
 \end{equation*}
 </div>
 <div class="para">or less than 2%. Does this surprise you? This means that of all people who test positive, over 98% do not have the disease.</div>
-</div> <div class="para logical" id="p-2163">
+</div> <div class="para logical" id="p-2318">
 <div class="para">The answer we got was slightly approximate, since we rounded 49.95 to 50. We could redo the problem with 100,000 test subjects, 100 of whom would have the disease and <span class="process-math">\(\left(0.05\right)
 \left(99,900\right)=4995\)</span> test positive but do not have the disease, so the exact probability of having the disease if you test positive is</div>
 <div class="displaymath process-math">
@@ -602,19 +602,19 @@ P\left(\text{disease} | \text{positive}\right) \approx \frac{100}{5095} \approx 
 </div>
 <div class="para">which is pretty much the same answer.</div>
 </div>
-</div></div></article><div class="para" id="p-2164">But back to the surprising result. Of all people who test positive, over 98% do not have the disease. If your guess for the probability a person who tests positive has the disease was wildly different from the right answer (2%), don't feel bad. The exact same problem was posed to doctors and medical students at the Harvard Medical School 25 years ago and the results revealed in a 1978 New England Journal of Medicine article. Only about 18% of the participants got the right answer. Most of the rest thought the answer was closer to 95% (perhaps they were misled by the false positive rate of 5%).</div>
-<div class="para" id="p-2165">So at least you should feel a little better that a bunch of doctors didn't get the right answer either (assuming you thought the answer was much higher). But the significance of this finding and similar results from other studies in the intervening years lies not in making math students feel better but in the possibly catastrophic consequences it might have for patient care. If a doctor thinks the chances that a positive test result nearly guarantees that a patient has a disease, they might begin an unnecessary and possibly harmful treatment regimen on a healthy patient. Or worse, as in the early days of the AIDS crisis when being HIV-positive was often equated with a death sentence, the patient might take a drastic action and commit suicide.</div>
-<div class="para" id="p-2166">As we have seen in this hypothetical example, the most responsible course of action for treating a patient who tests positive would be to counsel the patient that they most likely do not have the disease and to order further, more reliable, tests to verify the diagnosis.</div>
-<div class="para" id="p-2167">One of the reasons that the doctors and medical students in the study did so poorly is that such problems, when presented in the types of statistics courses that medical students often take, are solved by use of Bayes' theorem, which is stated as follows.</div>
+</div></div></article><div class="para" id="p-2319">But back to the surprising result. Of all people who test positive, over 98% do not have the disease. If your guess for the probability a person who tests positive has the disease was wildly different from the right answer (2%), don't feel bad. The exact same problem was posed to doctors and medical students at the Harvard Medical School 25 years ago and the results revealed in a 1978 New England Journal of Medicine article. Only about 18% of the participants got the right answer. Most of the rest thought the answer was closer to 95% (perhaps they were misled by the false positive rate of 5%).</div>
+<div class="para" id="p-2320">So at least you should feel a little better that a bunch of doctors didn't get the right answer either (assuming you thought the answer was much higher). But the significance of this finding and similar results from other studies in the intervening years lies not in making math students feel better but in the possibly catastrophic consequences it might have for patient care. If a doctor thinks the chances that a positive test result nearly guarantees that a patient has a disease, they might begin an unnecessary and possibly harmful treatment regimen on a healthy patient. Or worse, as in the early days of the AIDS crisis when being HIV-positive was often equated with a death sentence, the patient might take a drastic action and commit suicide.</div>
+<div class="para" id="p-2321">As we have seen in this hypothetical example, the most responsible course of action for treating a patient who tests positive would be to counsel the patient that they most likely do not have the disease and to order further, more reliable, tests to verify the diagnosis.</div>
+<div class="para" id="p-2322">One of the reasons that the doctors and medical students in the study did so poorly is that such problems, when presented in the types of statistics courses that medical students often take, are solved by use of Bayes' theorem, which is stated as follows.</div>
 <article class="definition definition-like" id="definition-85"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">Bayes’ Theorem.</span>
-</h4> <div class="para" id="p-2168">Bayes' Theorem is:</div>
+</h4> <div class="para" id="p-2323">Bayes' Theorem is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P\left(A|B\right) = \frac{P\left(A\right)\cdot P\left(B|A\right)}{P\left(A\right)\cdot P\left(B|A
 \right) + P\left(A^c\right) \cdot P\left(B|A^c\right)}
 \end{equation*}
-</div></article><div class="para" id="p-2169">In our earlier example, this translates to</div>
+</div></article><div class="para" id="p-2324">In our earlier example, this translates to</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P\left(\text{disease} | \text{positive} \right)=\frac{P\left(\text{disease}\right)P\left(\text{positive} | 
@@ -622,7 +622,7 @@ P\left(\text{disease} | \text{positive} \right)=\frac{P\left(\text{disease}\righ
 +P\left( \text{no disease} \right)P\left( \text{positive} | \text{no disease} \right)}
 \end{equation*}
 </div>
-<div class="para logical" id="p-2170">
+<div class="para logical" id="p-2325">
 <div class="para">Plugging in the numbers gives</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -632,12 +632,12 @@ P\left(\text{disease} |\text{positive} \right)=\frac{0.001\cdot 1}{0.001 \cdot 1
 </div>
 <div class="para">which is exactly the same answer as our original solution.</div>
 </div>
-<div class="para" id="p-2171">The problem is that you (or the typical medical student, or even the typical math professor) are much more likely to be able to remember the original solution than to remember Bayes' theorem. Psychologists, such as Gerd Gigerenzer, author of Calculated Risks: How to Know When Numbers Deceive You, have advocated that the method involved in the original solution (which Gigerenzer calls the method of "natural frequencies") be employed in place of Bayes' Theorem. Gigerenzer performed a study and found that those educated in the natural frequency method were able to recall it far longer than those who were taught Bayes' theorem. When one considers the possible life-and-death consequences associated with such calculations it seems wise to heed his advice.</div>
+<div class="para" id="p-2326">The problem is that you (or the typical medical student, or even the typical math professor) are much more likely to be able to remember the original solution than to remember Bayes' theorem. Psychologists, such as Gerd Gigerenzer, author of Calculated Risks: How to Know When Numbers Deceive You, have advocated that the method involved in the original solution (which Gigerenzer calls the method of "natural frequencies") be employed in place of Bayes' Theorem. Gigerenzer performed a study and found that those educated in the natural frequency method were able to recall it far longer than those who were taught Bayes' theorem. When one considers the possible life-and-death consequences associated with such calculations it seems wise to heed his advice.</div>
 <article class="example example-like" id="example-211"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.14</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2172">A certain disease has an incidence rate of 2%. If the false negative rate is 10% and the false positive rate is 1%, compute the probability that a person who tests positive actually has the disease.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-156" id="solution-156"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-156"><div class="solution solution-like">
-<div class="para logical" id="p-2173">
+<div class="para" id="p-2327">A certain disease has an incidence rate of 2%. If the false negative rate is 10% and the false positive rate is 1%, compute the probability that a person who tests positive actually has the disease.</div> <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-156" id="solution-156"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-156"><div class="solution solution-like">
+<div class="para logical" id="p-2328">
 <div class="para">Imagine 10,000 people who are tested. Of these 10,000, 200 will have the disease; 10% of them, or 20, will test negative and the remaining 180 will test positive. Of the 9800 who do not have the disease, 98 will test positive. So of the 278 total people who test positive, 180 will have the disease. Thus</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -645,7 +645,7 @@ P\left(\text{disease} | \text{positive} \right)=\frac{180}{278} \approx 0.647
 \end{equation*}
 </div>
 <div class="para">so about 65% of the people who test positive will have the disease.</div>
-</div> <div class="para logical" id="p-2174">
+</div> <div class="para logical" id="p-2329">
 <div class="para">Using Bayes theorem directly would give the same result:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -656,8 +656,8 @@ P\left( \text{disease} | \text{positive} \right)=\frac{0.02\cdot 0.90}{0.02\cdot
 </div>
 </div></div></article><article class="problem example-like" id="problem-52"><h4 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">9.3.15</span><span class="period">.</span><span class="space"> </span><span class="title">Try It Now.</span>
-</h4> <div class="para" id="p-2175">A certain disease has an incidence rate of 0.5%. If there are no false negatives and if the false positive rate is 3%, compute the probability that a person who tests positive actually has the disease.</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-258" id="answer-258"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-258"><div class="answer solution-like">
-<div class="para" id="p-2176">Out of 100,000 people, 500 would have the disease. Of those, all 500 would test positive. Of the 99,500 without the disease, 2,985 would falsely test positive and the other 96,515 would test negative.</div> <div class="para" id="p-2177">P(disease|positive)=<span class="process-math">\(\frac{500}{500+2985}=\frac{500}{3485}\approx 14.3\%\)</span>
+</h4> <div class="para" id="p-2330">A certain disease has an incidence rate of 0.5%. If there are no false negatives and if the false positive rate is 3%, compute the probability that a person who tests positive actually has the disease.</div> <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-415" id="answer-415"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-415"><div class="answer solution-like">
+<div class="para" id="p-2331">Out of 100,000 people, 500 would have the disease. Of those, all 500 would test positive. Of the 99,500 without the disease, 2,985 would falsely test positive and the other 96,515 would test negative.</div> <div class="para" id="p-2332">P(disease|positive)=<span class="process-math">\(\frac{500}{500+2985}=\frac{500}{3485}\approx 14.3\%\)</span>
 </div>
 </div></div></article></section></section></div>
 <div class="ptx-content-footer">
